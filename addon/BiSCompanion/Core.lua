@@ -29,6 +29,7 @@ B.SLOT_NAMES = {
 B.SLOT_ORDER = { "head", "neck", "shoulder", "back", "chest", "wrist", "hands",
   "waist", "legs", "feet", "finger", "trinket", "mainhand", "offhand", "ranged" }
 B.WORN = { finger = 2, trinket = 2 }
+B.SHORT_EXP = { tbc = "TBC", wotlk = "WotLK" }
 
 function B:InitDB()
   BiSCompanionDB = BiSCompanionDB or {}
@@ -38,6 +39,7 @@ function B:InitDB()
   if not BISC_DATA[c.expansion] then c.expansion = self.EXPANSION_DEFAULT end
   c.bracket = c.bracket or "preraid"
   c.tab = c.tab or "gear"
+  c.showBothFactions = c.showBothFactions or false
   self.db = c
 end
 
@@ -53,6 +55,23 @@ end
 
 function B:ExpData()
   return BISC_DATA[self.db.expansion]
+end
+
+-- The other expansion's key, only if we actually have data loaded for it.
+function B:OtherExpansion()
+  local other = (self.db.expansion == "tbc") and "wotlk" or "tbc"
+  return BISC_DATA[other] and other or nil
+end
+
+-- Used by the UI's expansion-toggle button: switch expansion and reset
+-- spec/bracket selection (mirrors the /bis reset slash command), since a
+-- manually-picked spec id from one expansion won't necessarily exist in
+-- the other.
+function B:SwitchExpansion(exp)
+  if not BISC_DATA[exp] then return false end
+  self.db.expansion = exp
+  self.db.spec, self.db.bracket = nil, "preraid"
+  return true
 end
 
 function B:ClassData()
@@ -106,6 +125,54 @@ function B:SlotItems(bracket, slotKey)
   return out
 end
 
+-- Case-insensitive substring search for `query` across every bracket of
+-- `spec` (in ascending bracket order, i.e. lowest level bracket first),
+-- faction-filtered, deduped by item id (or name for id-less items) keeping
+-- the first (lowest-bracket) hit. Returns { {item=..., slot=..., bracketId=...}, ... }.
+function B:SearchSpecItems(spec, query)
+  local out = {}
+  if not spec or not spec.brackets or not query or query == "" then return out end
+  local q = query:lower()
+  local myFaction = self:PlayerFaction()
+  local seen = {}
+  for _, br in ipairs(spec.brackets) do
+    for _, slotKey in ipairs(self.SLOT_ORDER) do
+      local items = br.slots and br.slots[slotKey]
+      if items then
+        for _, it in ipairs(items) do
+          if not it.faction or it.faction == "both" or it.faction == myFaction then
+            local key = (it.id and it.id > 0) and it.id or ("n-" .. tostring(it.name))
+            if not seen[key] then
+              local nm = (it.name or ""):lower()
+              if nm:find(q, 1, true) then
+                seen[key] = true
+                table.insert(out, { item = it, slot = slotKey, bracketId = br.id })
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+  return out
+end
+
+-- Worn BiS pieces (rank-1 per slot, top-2 rings/trinkets), faction-filtered,
+-- with their slot and 1-based worn index — used by both the progress
+-- counter and the shopping list.
+function B:WornItems(bracket)
+  local out = {}
+  if not bracket then return out end
+  for _, slotKey in ipairs(self.SLOT_ORDER) do
+    local items = self:SlotItems(bracket, slotKey)
+    local n = math.min(self.WORN[slotKey] or 1, #items)
+    for i = 1, n do
+      table.insert(out, { slot = slotKey, item = items[i], index = i })
+    end
+  end
+  return out
+end
+
 -- "Have it" = equipped, in bags, or in bank.
 function B:HasItem(itemId)
   if not itemId or itemId == 0 then return false end
@@ -118,6 +185,7 @@ function B:Instances()
 end
 
 function B:QuestVisible(q)
+  if self.db.showBothFactions then return true end
   local f = self:PlayerFaction()
   return not q.faction or q.faction == "both" or q.faction == f
 end
@@ -132,13 +200,9 @@ end
 -- Collected count across worn BiS pieces for the progress line.
 function B:Progress(bracket)
   local have, total = 0, 0
-  for _, slotKey in ipairs(self.SLOT_ORDER) do
-    local items = self:SlotItems(bracket, slotKey)
-    local n = math.min(self.WORN[slotKey] or 1, #items)
-    for i = 1, n do
-      total = total + 1
-      if self:HasItem(items[i].id) then have = have + 1 end
-    end
+  for _, w in ipairs(self:WornItems(bracket)) do
+    total = total + 1
+    if self:HasItem(w.item.id) then have = have + 1 end
   end
   return have, total
 end
@@ -176,8 +240,11 @@ SlashCmdList.BISCOMPANION = function(msg)
     B.db.spec, B.db.bracket = nil, "preraid"
     if B.UI then B.UI:Refresh() end
     return
+  elseif msg == "shop" or msg == "shopping" then
+    if B.UI then B.UI:ShowTab("shopping") end
+    return
   elseif msg ~= "" and msg ~= "show" then
-    print("|cff80ff40BiS Companion|r commands: /bis · /bis tbc · /bis wotlk · /bis reset")
+    print("|cff80ff40BiS Companion|r commands: /bis · /bis tbc · /bis wotlk · /bis reset · /bis shop")
     return
   end
   if B.UI then B.UI:Toggle() end

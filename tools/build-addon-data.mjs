@@ -47,6 +47,8 @@ for (const cd of bis) {
       name: spec.name,
       role: spec.role,
       statPriority: spec.statPriority || null,
+      notes: spec.notes || null,
+      enchants: spec.enchants && Object.keys(spec.enchants).length ? spec.enchants : null,
       brackets: (spec.brackets || []).map(br => ({
         id: br.id,
         slots: Object.fromEntries(Object.entries(br.slots || {}).map(([k, items]) => [k,
@@ -57,6 +59,8 @@ for (const cd of bis) {
             rank: it.rank || 1,
             faction: it.faction && it.faction !== 'both' ? it.faction : null,
             sourceText: sourceText(it) || null,
+            sourceType: (it.source && it.source.type) || null,
+            sourceInstance: (it.source && it.source.instance) || null,
             note: it.note || null,
           })),
         ])),
@@ -74,6 +78,10 @@ for (const qd of quests) {
       id: inst.id,
       name: inst.name,
       type: inst.type,
+      zone: inst.zone || null,
+      levelRange: inst.levelRange || null,
+      phase: inst.phase || null,
+      notes: inst.notes || null,
       attunement: inst.attunement || null,
       quests: (inst.quests || []).map(q => ({
         id: q.id || 0,
@@ -82,6 +90,9 @@ for (const qd of quests) {
         questGiver: q.questGiver || null,
         prereq: q.prereq || null,
         note: q.note || null,
+        rewards: q.rewards && q.rewards.length
+          ? q.rewards.map(r => ({ id: r.id || 0, name: r.name, quality: r.quality || null }))
+          : null,
       })),
       __phase: PHASE_ORDER[inst.phase] ?? 9,
       __type: inst.type === 'dungeon' ? 0 : 1,
