@@ -51,10 +51,12 @@ app itself works offline, but items will show as plain text links.
 The addon ships ready to use — `addon/BiSCompanion/Data.lua` is prebuilt, so no
 build step is needed unless you've edited the data (see [Data](#data)).
 
-1. **Find your AddOns folder.** For Burning Crusade Classic (Anniversary) it's
-   inside the `_classic_` install, e.g. on Windows:
+1. **Find your AddOns folder.** It's inside your WoW install's client folder —
+   `_anniversary_` for the Anniversary Edition, `_classic_` for standard
+   Classic installs. Examples on Windows:
 
    ```
+   D:\Games\World of Warcraft\_anniversary_\Interface\AddOns\
    C:\Program Files (x86)\World of Warcraft\_classic_\Interface\AddOns\
    ```
 
@@ -66,7 +68,7 @@ build step is needed unless you've edited the data (see [Data](#data)).
    install:
 
    ```sh
-   cp -r addon/BiSCompanion "/mnt/c/Program Files (x86)/World of Warcraft/_classic_/Interface/AddOns/"
+   cp -r addon/BiSCompanion "/mnt/d/Games/World of Warcraft/_anniversary_/Interface/AddOns/"
    ```
 
 3. **Enable it.** Fully restart WoW if it was running (a `/reload` is enough for
