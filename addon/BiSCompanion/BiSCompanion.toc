@@ -1,0 +1,11 @@
+## Interface: 20504
+## Title: |cff80ff40BiS|r Companion
+## Notes: Best-in-slot gear lists and instance quest checklists — in-game, no alt-tabbing.
+## Author: David Stinson
+## Version: 1.0.0
+## SavedVariables: BiSCompanionDB
+## SavedVariablesPerCharacter: BiSCompanionCharDB
+
+Data.lua
+Core.lua
+UI.lua

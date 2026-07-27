@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-exp="tbc">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BiS Companion — Burning Crusade Classic</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>⚔️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>
+  // Wowhead tooltip config — must be defined before their script loads.
+  const whTooltips = { colorLinks: true, iconizeLinks: true, renameLinks: false, iconSize: 'small' };
+</script>
+<script src="https://wow.zamimg.com/js/tooltips.js" defer></script>
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <div class="brand-sigil">⚔</div>
+    <div class="brand-text">
+      <h1>BiS Companion</h1>
+      <span id="brand-sub">The Burning Crusade Classic</span>
+    </div>
+  </div>
+
+  <div class="search-wrap">
+    <input id="search-input" type="search" placeholder="Search items… ( / )" autocomplete="off" spellcheck="false">
+    <div id="search-results" class="search-results hidden"></div>
+  </div>
+
+  <div class="exp-toggle" id="exp-toggle" role="tablist" aria-label="Expansion">
+    <button data-exp-btn="tbc" class="active" title="The Burning Crusade">TBC</button>
+    <button data-exp-btn="wotlk" title="Wrath of the Lich King">WotLK</button>
+  </div>
+</header>
+
+<nav class="tabs" id="main-tabs">
+  <button data-tab="gear" class="active"><span class="tab-ico">🛡</span> Best in Slot</button>
+  <button data-tab="quests"><span class="tab-ico">📜</span> Instance Quests</button>
+  <button data-tab="shopping"><span class="tab-ico">🗺</span> Shopping List</button>
+</nav>
+
+<div class="layout">
+
+  <!-- ======== Character setup sidebar ======== -->
+  <aside class="sidebar panel">
+    <h2 class="panel-title">Characters</h2>
+
+    <div class="field">
+      <div class="roster" id="roster"></div>
+    </div>
+
+    <div class="field">
+      <label>Faction</label>
+      <div class="faction-toggle" id="faction-toggle"></div>
+    </div>
+
+    <div class="field">
+      <label>Race</label>
+      <div class="race-grid" id="race-grid"></div>
+    </div>
+
+    <div class="field">
+      <label>Class</label>
+      <div class="class-grid" id="class-grid"></div>
+    </div>
+
+    <div class="field">
+      <label>Specialization</label>
+      <div class="spec-list" id="spec-list"></div>
+    </div>
+
+    <div class="field">
+      <label>Level / Progression</label>
+      <div class="bracket-list" id="bracket-list"></div>
+    </div>
+
+    <div class="racial-card" id="racial-card"></div>
+  </aside>
+
+  <!-- ======== Main content ======== -->
+  <main class="content">
+
+    <!-- Gear tab -->
+    <section id="tab-gear" class="tab-panel active">
+      <div class="spec-banner panel" id="spec-banner"></div>
+      <div class="gear-layout">
+        <div class="doll panel" id="gear-doll"></div>
+        <div class="slot-detail panel" id="slot-detail">
+          <div class="detail-empty">Select a slot to compare the best item with its alternates.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quests tab -->
+    <section id="tab-quests" class="tab-panel">
+      <div class="quests-layout">
+        <div class="instance-list panel" id="instance-list"></div>
+        <div class="instance-detail panel" id="instance-detail">
+          <div class="detail-empty">Pick a dungeon or raid to see every quest you can clear in one run.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shopping list tab -->
+    <section id="tab-shopping" class="tab-panel">
+      <div class="shopping panel" id="shopping-list"></div>
+    </section>
+
+  </main>
+</div>
+
+<footer class="statusbar" id="statusbar"></footer>
+
+<!-- Data pipeline: registry → core → datasets → app -->
+<script src="js/registry.js"></script>
+<script src="data/core.data.js"></script>
+<script src="data/tbc/warrior.data.js"></script>
+<script src="data/tbc/paladin.data.js"></script>
+<script src="data/tbc/hunter.data.js"></script>
+<script src="data/tbc/rogue.data.js"></script>
+<script src="data/tbc/priest.data.js"></script>
+<script src="data/tbc/shaman.data.js"></script>
+<script src="data/tbc/mage.data.js"></script>
+<script src="data/tbc/warlock.data.js"></script>
+<script src="data/tbc/druid.data.js"></script>
+<script src="data/tbc/warrior-leveling.data.js"></script>
+<script src="data/tbc/paladin-leveling.data.js"></script>
+<script src="data/tbc/hunter-leveling.data.js"></script>
+<script src="data/tbc/rogue-leveling.data.js"></script>
+<script src="data/tbc/priest-leveling.data.js"></script>
+<script src="data/tbc/shaman-leveling.data.js"></script>
+<script src="data/tbc/mage-leveling.data.js"></script>
+<script src="data/tbc/warlock-leveling.data.js"></script>
+<script src="data/tbc/druid-leveling.data.js"></script>
+<script src="data/tbc/quests-dungeons.data.js"></script>
+<script src="data/tbc/quests-raids.data.js"></script>
+<script src="data/tbc/quests-classic-low.data.js"></script>
+<script src="data/tbc/quests-classic-high.data.js"></script>
+<script src="data/tbc/quests-classic-raids.data.js"></script>
+<script src="data/wotlk/preview.data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
