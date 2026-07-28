@@ -552,6 +552,29 @@ safeCall("minimap+levelup", function()
   print("@@LEVELUP@@ bracket now " .. tostring(BISC.db.bracket))
   if BISC.db.bracket ~= "lvl29" then error("level 24 should move to lvl29, got " .. tostring(BISC.db.bracket)) end
 end)
+-- bracket stepping (< > buttons and menu selection)
+safeCall("bracket-stepping", function()
+  if not BISC:ClassData() then return end
+  BISC.UI:ShowTab("gear")
+  local before = BISC.db.bracket
+  BISC.UI:StepBracket(1)
+  if BISC.db.bracket == before then error("StepBracket(1) did not advance from " .. tostring(before)) end
+  BISC.UI:StepBracket(-1)
+  if BISC.db.bracket ~= before then
+    error("StepBracket(-1) landed on " .. tostring(BISC.db.bracket) .. ", expected " .. tostring(before))
+  end
+  for _ = 1, 30 do BISC.UI:StepBracket(1) end
+  local top = BISC.db.bracket
+  BISC.UI:StepBracket(1)
+  if BISC.db.bracket ~= top then error("stepping ran past the last bracket") end
+  if not BISC.db.bracketPinned then error("looking ahead should pin the bracket") end
+  for _ = 1, 30 do BISC.UI:StepBracket(-1) end
+  local bottom = BISC.db.bracket
+  print("@@BRACKET@@ " .. tostring(before) .. " -> top " .. tostring(top) .. " -> bottom " .. tostring(bottom))
+  -- picking the level-appropriate bracket hands control back to auto
+  BISC.UI:SetBracket(BISC:DefaultBracket())
+  if BISC.db.bracketPinned then error("selecting the level-matched bracket should unpin") end
+end)
 -- zone-change / instance auto-select check
 IsInInstance = function() return true, "party" end
 GetInstanceInfo = function() return "Ragefire Chasm" end

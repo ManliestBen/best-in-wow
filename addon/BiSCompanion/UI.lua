@@ -393,16 +393,17 @@ end
 
 function Menu:Layout()
   local items = self.items
+  local listWidth = self.listWidth or self.width
   local shown = math.min(#items, MENU_MAX_ROWS)
   local maxOffset = math.max(0, #items - MENU_MAX_ROWS)
   if self.offset > maxOffset then self.offset = maxOffset end
 
-  self.list:SetSize(self.width, shown * MENU_ROW_H + 16)
+  self.list:SetSize(listWidth, shown * MENU_ROW_H + 16)
   for i = 1, shown do
     local row = self.rows[i]
     if not row then
       row = CreateFrame("Button", nil, self.list)
-      row:SetSize(self.width - 16, MENU_ROW_H)
+      row:SetSize((self.listWidth or self.width) - 16, MENU_ROW_H)
       row:SetPoint("TOPLEFT", 8, -8 - (i - 1) * MENU_ROW_H)
       row.text = row:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
       row.text:SetPoint("LEFT", 4, 0)
@@ -482,6 +483,8 @@ local function CreateMenu(parent, width, placeholder)
     fs:SetPoint("LEFT", 8, 0)
     fs:SetPoint("RIGHT", -16, 0)
     fs:SetJustifyH("LEFT")
+    fs:SetWordWrap(false)      -- long labels must clip, not wrap over the frame
+    if fs.SetMaxLines then fs:SetMaxLines(1) end
   end
   local arrow = m.button:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
   arrow:SetPoint("RIGHT", -5, -1)
@@ -613,12 +616,42 @@ local function CreateMainFrame()
     B.db.spec = value; offset = 0; expandedSlot = nil; UI:Refresh()
   end
 
-  f.bracketMenu = CreateMenu(f, 200, "Bracket")
-  f.bracketMenu.button:SetPoint("LEFT", f.specMenu.button, "RIGHT", 8, 0)
+  f.bracketPrev = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
+  f.bracketPrev:SetSize(22, 22)
+  f.bracketPrev:SetPoint("LEFT", f.specMenu.button, "RIGHT", 8, 0)
+  f.bracketPrev:SetText("<")
+  f.bracketPrev:SetScript("OnClick", safe("bracket-prev", function() UI:StepBracket(-1) end))
+
+  f.bracketMenu = CreateMenu(f, 168, "Bracket")
+  f.bracketMenu.button:SetPoint("LEFT", f.bracketPrev, "RIGHT", 2, 0)
+  f.bracketMenu.listWidth = 300      -- descriptions need more room than the button
   f.bracketMenu.onSelect = function(value)
-    B.db.bracket, B.db.bracketPinned = value, true
-    offset = 0; expandedSlot = nil; UI:Refresh()
+    UI:SetBracket(value)
   end
+
+  f.bracketNext = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
+  f.bracketNext:SetSize(22, 22)
+  f.bracketNext:SetPoint("LEFT", f.bracketMenu.button, "RIGHT", 2, 0)
+  f.bracketNext:SetText(">")
+  f.bracketNext:SetScript("OnClick", safe("bracket-next", function() UI:StepBracket(1) end))
+
+  local function BracketTip(self)
+    local spec = B:DetectSpec()
+    local cur = B:CurrentBracket(spec)
+    GameTooltip:SetOwner(self, "ANCHOR_BOTTOM")
+    GameTooltip:AddLine("Gear progression")
+    local exp = B:ExpData()
+    for _, br in ipairs((exp and exp.brackets) or {}) do
+      if cur and br.id == cur.id then
+        GameTooltip:AddLine(br.name .. (br.sub and (" — " .. br.sub) or ""), 1, 1, 1)
+      end
+    end
+    GameTooltip:AddLine("Click to jump to any bracket; < > step through them.", 0.7, 0.7, 0.7)
+    GameTooltip:AddLine("Looking ahead is fine — it won't change on level-up until you /bis reset.", 0.7, 0.7, 0.7, true)
+    GameTooltip:Show()
+  end
+  f.bracketMenu.button:SetScript("OnEnter", safe("bracket-tip", BracketTip))
+  f.bracketMenu.button:SetScript("OnLeave", function() GameTooltip:Hide() end)
 
   f.instanceMenu = CreateMenu(f, 300, "Instance")
   f.instanceMenu.button:SetPoint("TOPLEFT", 14, -64)
@@ -798,6 +831,8 @@ function UI:UpdateDropdowns()
   local showSpecBracket = (tab == "gear" or tab == "shopping")
   local showInstance = (tab == "quests")
   f.specMenu:SetShown(showSpecBracket)
+  f.bracketPrev:SetShown(showSpecBracket)
+  f.bracketNext:SetShown(showSpecBracket)
   f.bracketMenu:SetShown(showSpecBracket)
   f.instanceMenu:SetShown(showInstance)
   f.bothFactionsCB:SetShown(showInstance)
@@ -831,7 +866,10 @@ function UI:UpdateDropdowns()
         if sb.id == br.id then hasData = true end
       end
       if hasData then
-        table.insert(bracketItems, { text = br.name, value = br.id })
+        table.insert(bracketItems, {
+          text = br.name .. (br.sub and (" |cff9d8253— " .. br.sub .. "|r") or ""),
+          value = br.id,
+        })
         if cur and br.id == cur.id then curMeta = br end
       end
     end
@@ -862,6 +900,35 @@ function UI:SelectInstanceByIndex(idx)
   selectedInstance = idx
   offset = 0
   if f and f:IsShown() then UI:Refresh() end
+end
+
+-- Selecting a bracket pins it so looking ahead survives a level-up; choosing
+-- the one that matches your level hands control back to the automatic pick.
+function UI:SetBracket(id)
+  B.db.bracket = id
+  B.db.bracketPinned = (id ~= B:DefaultBracket()) or nil
+  offset, expandedSlot = 0, nil
+  UI:Refresh()
+end
+
+-- Step through the brackets this spec has data for (the < > buttons).
+function UI:StepBracket(delta)
+  local spec = B:DetectSpec()
+  if not spec then return end
+  local exp = B:ExpData()
+  local ordered, curIndex = {}, 1
+  local cur = B:CurrentBracket(spec)
+  for _, br in ipairs((exp and exp.brackets) or {}) do
+    for _, sb in ipairs(spec.brackets or {}) do
+      if sb.id == br.id then
+        table.insert(ordered, br.id)
+        if cur and cur.id == br.id then curIndex = #ordered end
+      end
+    end
+  end
+  if #ordered == 0 then return end
+  local nextIndex = math.max(1, math.min(#ordered, curIndex + delta))
+  if ordered[nextIndex] ~= (cur and cur.id) then UI:SetBracket(ordered[nextIndex]) end
 end
 
 function UI:IsShown()

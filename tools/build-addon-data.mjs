@@ -29,7 +29,9 @@ const data = {};
 for (const [expId, expCfg] of Object.entries(core.expansions)) {
   data[expId] = {
     name: expCfg.name,
-    brackets: expCfg.brackets.map(b => ({ id: b.id, name: `${b.name} — ${b.sub}` })),
+    // name and sub stay separate: the addon's bracket button is narrow and
+    // shows the short name, with the description in the menu and tooltip.
+    brackets: expCfg.brackets.map(b => ({ id: b.id, name: b.name, sub: b.sub || null })),
     classes: {},
     instances: [],
   };

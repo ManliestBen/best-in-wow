@@ -8,55 +8,68 @@ BISC_DATA = {
     brackets = {
       {
         id = "lvl19",
-        name = "Levels 10–19 — Early dungeons & quests",
+        name = "Levels 10–19",
+        sub = "Early dungeons & quests",
       },
       {
         id = "lvl29",
-        name = "Levels 20–29 — SFK · BFD · Stockade era",
+        name = "Levels 20–29",
+        sub = "SFK · BFD · Stockade era",
       },
       {
         id = "lvl39",
-        name = "Levels 30–39 — SM · RFK · Uldaman era",
+        name = "Levels 30–39",
+        sub = "SM · RFK · Uldaman era",
       },
       {
         id = "lvl49",
-        name = "Levels 40–49 — ZF · Mara · ST era",
+        name = "Levels 40–49",
+        sub = "ZF · Mara · ST era",
       },
       {
         id = "lvl59",
-        name = "Levels 50–57 — BRD · LBRS · Strat/Scholo era",
+        name = "Levels 50–57",
+        sub = "BRD · LBRS · Strat/Scholo era",
       },
       {
         id = "lvl60",
-        name = "Levels 58–64 — Outland leveling",
+        name = "Levels 58–64",
+        sub = "Outland leveling",
       },
       {
         id = "lvl65",
-        name = "Levels 65–69 — Late Outland leveling",
+        name = "Levels 65–69",
+        sub = "Late Outland leveling",
       },
       {
         id = "preraid",
-        name = "70 · Pre-Raid — Dungeons, heroics, crafted, rep",
+        name = "70 · Pre-Raid",
+        sub = "Dungeons, heroics, crafted, rep",
       },
       {
         id = "p1",
-        name = "Phase 1 — Karazhan · Gruul · Magtheridon",
+        name = "Phase 1",
+        sub = "Karazhan · Gruul · Magtheridon",
       },
       {
         id = "p2",
-        name = "Phase 2 — Serpentshrine · Tempest Keep",
+        name = "Phase 2",
+        sub = "Serpentshrine · Tempest Keep",
       },
       {
         id = "p3",
-        name = "Phase 3 — Mount Hyjal · Black Temple",
+        name = "Phase 3",
+        sub = "Mount Hyjal · Black Temple",
       },
       {
         id = "p4",
-        name = "Phase 4 — Zul'Aman",
+        name = "Phase 4",
+        sub = "Zul'Aman",
       },
       {
         id = "p5",
-        name = "Phase 5 — Sunwell Plateau",
+        name = "Phase 5",
+        sub = "Sunwell Plateau",
       },
     },
     classes = {
@@ -65484,27 +65497,33 @@ BISC_DATA = {
     brackets = {
       {
         id = "preraid",
-        name = "80 · Pre-Raid — Dungeons, heroics, crafted, rep",
+        name = "80 · Pre-Raid",
+        sub = "Dungeons, heroics, crafted, rep",
       },
       {
         id = "p1",
-        name = "Phase 1 — Naxxramas · OS · EoE",
+        name = "Phase 1",
+        sub = "Naxxramas · OS · EoE",
       },
       {
         id = "p2",
-        name = "Phase 2 — Ulduar",
+        name = "Phase 2",
+        sub = "Ulduar",
       },
       {
         id = "p3",
-        name = "Phase 3 — Trial of the Crusader",
+        name = "Phase 3",
+        sub = "Trial of the Crusader",
       },
       {
         id = "p4",
-        name = "Phase 4 — Icecrown Citadel",
+        name = "Phase 4",
+        sub = "Icecrown Citadel",
       },
       {
         id = "p5",
-        name = "Phase 5 — Ruby Sanctum",
+        name = "Phase 5",
+        sub = "Ruby Sanctum",
       },
     },
     classes = {
