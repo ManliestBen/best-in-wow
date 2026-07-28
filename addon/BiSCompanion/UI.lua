@@ -340,6 +340,7 @@ local function UpdateRows()
       f.instanceInfo:SetText("")
       f.instanceInfo:Hide()
     end
+    f.statLine:SetText("")
     f.progressBar:Hide()
     f.notesBtn:Hide()
   end
@@ -655,6 +656,24 @@ local function CreateMainFrame()
 
   f.instanceMenu = CreateMenu(f, 300, "Instance")
   f.instanceMenu.button:SetPoint("TOPLEFT", 14, -64)
+  f.instanceMenu.button:SetScript("OnEnter", safe("instance-tip", function(self)
+    local inst = B:Instances()[selectedInstance]
+    if not inst then return end
+    GameTooltip:SetOwner(self, "ANCHOR_BOTTOM")
+    GameTooltip:AddLine(inst.name)
+    if inst.zone then GameTooltip:AddLine(inst.zone, 0.8, 0.8, 0.8) end
+    local r = inst.levelRange
+    if r and r[1] and r[2] then
+      GameTooltip:AddLine("Levels " .. r[1] .. "-" .. r[2], 0.8, 0.8, 0.8)
+    end
+    if inst.notes then GameTooltip:AddLine(inst.notes, 1, 1, 1, true) end
+    if inst.attunement then
+      GameTooltip:AddLine(" ")
+      GameTooltip:AddLine("Attunement: " .. inst.attunement, 1, 0.82, 0, true)
+    end
+    GameTooltip:Show()
+  end))
+  f.instanceMenu.button:SetScript("OnLeave", function() GameTooltip:Hide() end)
   f.instanceMenu.onSelect = function(value)
     selectedInstance = value; offset = 0; UI:Refresh()
   end
@@ -697,7 +716,7 @@ local function CreateMainFrame()
   f.instanceInfo:SetPoint("TOPLEFT", 16, -96)
   f.instanceInfo:SetPoint("TOPRIGHT", -16, -96)
   f.instanceInfo:SetJustifyH("LEFT")
-  f.instanceInfo:SetWordWrap(true)
+  f.instanceInfo:SetWordWrap(false)
   f.instanceInfo:SetTextColor(0.7, 0.7, 0.7)
 
   -- list rows
@@ -818,6 +837,11 @@ local function CreateMainFrame()
   -- an open dropdown must not outlive the window (Escape closes the frame)
   f:SetScript("OnHide", CloseOpenMenu)
 
+  -- CreateFrame returns a *visible* frame, so without this the first /bis
+  -- built the window and then Toggle immediately hid it again — the command
+  -- appeared to do nothing until you typed it a second time.
+  f:Hide()
+
   -- refresh when item info streams in from the server
   f:RegisterEvent("GET_ITEM_INFO_RECEIVED")
   f:RegisterEvent("BAG_UPDATE_DELAYED")
@@ -838,6 +862,8 @@ function UI:UpdateDropdowns()
   f.bothFactionsCB:SetShown(showInstance)
   f.searchBox:SetShown(tab == "gear")
   f.instanceInfo:SetShown(showInstance)
+  -- statLine and instanceInfo share the same anchor; only one may ever show
+  f.statLine:SetShown(not showInstance)
 
   -- highlight the active tab (all three looked identical before)
   for id, btn in pairs(f.tabButtons or {}) do

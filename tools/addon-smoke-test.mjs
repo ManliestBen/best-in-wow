@@ -108,7 +108,9 @@ HARNESS = {
 local function makeAutoFrame(kind, name, parent, template)
   local obj = {
     __kind = kind, __name = name, __parent = parent, __template = template,
-    __shown = false, __scripts = {}, __events = {}, __text = "", __checked = false,
+    -- WoW hands back a VISIBLE frame from CreateFrame; mirroring that is what
+    -- exposes "first /bis does nothing" style toggle bugs.
+    __shown = true, __scripts = {}, __events = {}, __text = "", __checked = false,
     __points = {}, __children = {}, __clicks = {}, __min = 0, __max = 1, __value = 0,
   }
 
@@ -552,6 +554,28 @@ safeCall("minimap+levelup", function()
   print("@@LEVELUP@@ bracket now " .. tostring(BISC.db.bracket))
   if BISC.db.bracket ~= "lvl29" then error("level 24 should move to lvl29, got " .. tostring(BISC.db.bracket)) end
 end)
+-- statLine (gear) and instanceInfo (quests) share one anchor; if both ever
+-- show at once their text draws on top of itself.
+safeCall("no-overlapping-headers", function()
+  local frame = _G["BiSCompanionFrame"]
+  if not frame then error("BiSCompanionFrame not found") end
+  local sl, ii = frame.statLine, frame.instanceInfo
+  if not (sl and ii) then error("statLine/instanceInfo missing") end
+
+  BISC.UI:ShowTab("quests")
+  local slText = (sl.GetText and sl:GetText()) or ""
+  local slShown = (sl.IsShown and sl:IsShown()) and true or false
+  if slShown and slText ~= "" then
+    error("stat-priority line still drawn on the Quests tab (overlaps instance info): '" .. slText .. "'")
+  end
+
+  BISC.UI:ShowTab("gear")
+  if (ii.IsShown and ii:IsShown()) then
+    error("instance-info line still drawn on the Gear tab (overlaps stat priority)")
+  end
+  print("@@OVERLAP@@ header lines are mutually exclusive")
+end)
+
 -- bracket stepping (< > buttons and menu selection)
 safeCall("bracket-stepping", function()
   if not BISC:ClassData() then return end
