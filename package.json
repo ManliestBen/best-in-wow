@@ -1,0 +1,27 @@
+{
+  "name": "wow-helpers",
+  "version": "1.0.0",
+  "description": "A best-in-slot gear planner and instance-quest tracker for **WoW Burning Crusade Classic (Anniversary)**, with a **WotLK toggle** ready for when Wrath re-releases — delivered as both a desktop web app and an in-game addon that share one data source.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManliestBen/best-in-wow.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ManliestBen/best-in-wow/issues"
+  },
+  "homepage": "https://github.com/ManliestBen/best-in-wow#readme",
+  "dependencies": {
+    "fengari": "^0.1.5"
+  }
+}

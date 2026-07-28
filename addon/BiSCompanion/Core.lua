@@ -35,8 +35,8 @@ B.SHORT_EXP = { tbc = "TBC", wotlk = "WotLK" }
 -- doesn't open the addon to a level-70 pre-raid list. Falls back to "preraid"
 -- at max level and for expansions with no leveling brackets (CurrentBracket
 -- also falls back to the spec's first bracket if this one has no data).
-function B:DefaultBracket()
-  local lvl = UnitLevel("player") or 0
+function B:DefaultBracket(lvl)
+  lvl = lvl or UnitLevel("player") or 0
   if lvl <= 0 then return "preraid" end
   if lvl <= 19 then return "lvl19"
   elseif lvl <= 29 then return "lvl29"
@@ -59,7 +59,46 @@ function B:InitDB()
   -- info exists, so UnitLevel() isn't trustworthy yet. PLAYER_LOGIN fills it in.
   c.tab = c.tab or "gear"
   c.showBothFactions = c.showBothFactions or false
+  if c.tooltips == nil then c.tooltips = true end
+  if c.zoneAlerts == nil then c.zoneAlerts = true end
   self.db = c
+end
+
+-- The client swallows Lua errors raised inside addon callbacks unless the
+-- player has turned script errors on, so a broken handler just silently does
+-- nothing. Route our own entry points through this and say so in chat.
+function B:Safe(label, fn, ...)
+  local ok, err = pcall(fn, ...)
+  if not ok then
+    print("|cffff4040BiS Companion error|r [" .. tostring(label) .. "] " .. tostring(err))
+    print("|cffff4040Please send this to the author.|r")
+  end
+  return ok
+end
+
+function B:Diagnostics()
+  local out = {}
+  local function add(s) table.insert(out, s) end
+  add("|cff80ff40BiS Companion diagnostics|r")
+  add("  data loaded: " .. (BISC_DATA and "yes" or "NO — Data.lua failed to load"))
+  if BISC_DATA then
+    local exps = {}
+    for k in pairs(BISC_DATA) do table.insert(exps, k) end
+    table.sort(exps)
+    add("  expansions: " .. table.concat(exps, ", "))
+  end
+  add("  player: " .. tostring(self:PlayerClass()) .. " lvl " .. tostring(UnitLevel("player")) ..
+    " " .. tostring(self:PlayerFaction()))
+  add("  viewing: " .. tostring(self.db and self.db.expansion) .. " / bracket " ..
+    tostring(self.db and self.db.bracket) .. " / tab " .. tostring(self.db and self.db.tab))
+  local cd = self:ClassData()
+  add("  class data: " .. (cd and (#(cd.specs or {}) .. " specs") or "NONE for this class"))
+  local spec = self:DetectSpec()
+  add("  detected spec: " .. (spec and (spec.name .. " (" .. spec.id .. ")") or "none"))
+  local br = self:CurrentBracket(spec)
+  add("  bracket data: " .. (br and (br.id .. ", " .. #self:WornItems(br) .. " worn items") or "none"))
+  add("  instances: " .. #self:Instances())
+  for _, line in ipairs(out) do print(line) end
 end
 
 function B:PlayerClass()
@@ -90,6 +129,7 @@ function B:SwitchExpansion(exp)
   if not BISC_DATA[exp] then return false end
   self.db.expansion = exp
   self.db.spec, self.db.bracket = nil, self:DefaultBracket()
+  if self.InvalidateTooltipIndex then self:InvalidateTooltipIndex() end
   return true
 end
 
@@ -198,9 +238,133 @@ function B:HasItem(itemId)
   return (GetItemCount(itemId, true) or 0) > 0
 end
 
+-- Instances ordered dungeons-then-raids and then by level, so the list reads in
+-- the order you'd actually run them (the compiled data is in phase order, which
+-- put Blackfathom Deeps first for everyone). Sorted once per expansion.
+local instanceCache = {}
 function B:Instances()
   local exp = self:ExpData()
-  return exp and exp.instances or {}
+  if not exp or not exp.instances then return {} end
+  local key = self.db.expansion
+  if not instanceCache[key] then
+    local list = {}
+    for _, inst in ipairs(exp.instances) do table.insert(list, inst) end
+    table.sort(list, function(a, b)
+      local at = (a.type == "raid") and 1 or 0
+      local bt = (b.type == "raid") and 1 or 0
+      if at ~= bt then return at < bt end
+      local al = (a.levelRange and a.levelRange[1]) or 0
+      local bl = (b.levelRange and b.levelRange[1]) or 0
+      if al ~= bl then return al < bl end
+      return (a.name or "") < (b.name or "")
+    end)
+    instanceCache[key] = list
+  end
+  return instanceCache[key]
+end
+
+-- Match a zone/instance name from the client against our instance list.
+-- Names differ in small ways ("The Deadmines" vs "Deadmines", wing names for
+-- Scarlet Monastery), so fall back to a containment match.
+function B:FindInstanceByName(name)
+  if not name or name == "" then return nil end
+  local function norm(s)
+    s = tostring(s):lower()
+    s = s:gsub("^the ", "")
+    return s
+  end
+  local want = norm(name)
+  local list = self:Instances()
+  for i, inst in ipairs(list) do
+    if norm(inst.name) == want then return i, inst end
+  end
+  for i, inst in ipairs(list) do
+    local n = norm(inst.name)
+    if n:find(want, 1, true) or want:find(n, 1, true) then return i, inst end
+  end
+  return nil
+end
+
+-- When you zone into a dungeon or raid, point the Quests tab at it and say how
+-- much is still open there, so a run isn't wasted on quests you could have
+-- picked up first.
+function B:OnZoneChanged()
+  if not self.db or not self.db.zoneAlerts then return end
+  if type(IsInInstance) ~= "function" then return end
+  local inInstance, kind = IsInInstance()
+  if not inInstance then self._lastInstance = nil; return end
+  if kind ~= "party" and kind ~= "raid" then return end
+
+  local name
+  if type(GetInstanceInfo) == "function" then name = GetInstanceInfo() end
+  if (not name or name == "") and type(GetRealZoneText) == "function" then name = GetRealZoneText() end
+  if not name or name == "" or name == self._lastInstance then return end
+  self._lastInstance = name
+
+  local idx, inst = self:FindInstanceByName(name)
+  if not idx then return end
+  if self.UI and self.UI.SelectInstanceByIndex then self.UI:SelectInstanceByIndex(idx) end
+
+  local total, done = 0, 0
+  for _, q in ipairs(inst.quests or {}) do
+    if self:QuestVisible(q) then
+      total = total + 1
+      if self:QuestDone(q) then done = done + 1 end
+    end
+  end
+  if total > 0 and done < total then
+    print("|cff80ff40BiS Companion|r " .. inst.name .. ": |cfff0d08c" .. (total - done) ..
+      "|r of " .. total .. " quests still open here — /bis to see them.")
+  elseif total > 0 then
+    print("|cff80ff40BiS Companion|r " .. inst.name .. ": all " .. total .. " quests done here.")
+  end
+end
+
+-- Bracket follows you up the levels unless you picked one by hand, so the
+-- gear list doesn't silently stay on the 10-19 set after you out-level it.
+function B:OnLevelUp(newLevel)
+  if not self.db or self.db.bracketPinned then return end
+  local want = self:DefaultBracket(newLevel)
+  if want and want ~= self.db.bracket then
+    self.db.bracket = want
+    local label = want
+    local exp = self:ExpData()
+    for _, br in ipairs((exp and exp.brackets) or {}) do
+      if br.id == want then label = br.name end
+    end
+    print("|cff80ff40BiS Companion|r now showing |cfff0d08c" .. label ..
+      "|r. (/bis reset returns to automatic if you pin one.)")
+    if self.UI then self.UI:Refresh() end
+  end
+end
+
+function B:InstanceLabel(inst)
+  if not inst then return "" end
+  local r = inst.levelRange
+  if r and r[1] and r[2] then
+    return "[" .. r[1] .. "-" .. r[2] .. "] " .. (inst.name or "")
+  end
+  return inst.name or ""
+end
+
+-- Instance nearest the player's level, so the Quests tab opens on something
+-- they can actually run rather than whatever sorted first.
+function B:DefaultInstanceIndex()
+  local list = self:Instances()
+  if #list == 0 then return 1 end
+  local lvl = UnitLevel("player") or 0
+  if lvl <= 0 then return 1 end
+  local best, bestDist = 1, nil
+  for i, inst in ipairs(list) do
+    local r = inst.levelRange
+    local lo = (r and r[1]) or 0
+    local hi = (r and r[2]) or lo
+    local dist = 0
+    if lvl < lo then dist = lo - lvl
+    elseif lvl > hi then dist = lvl - hi end
+    if bestDist == nil or dist < bestDist then best, bestDist = i, dist end
+  end
+  return best
 end
 
 function B:QuestVisible(q)
@@ -230,9 +394,16 @@ end
 local frame = CreateFrame("Frame")
 frame:RegisterEvent("ADDON_LOADED")
 frame:RegisterEvent("PLAYER_LOGIN")
+frame:RegisterEvent("PLAYER_ENTERING_WORLD")
+frame:RegisterEvent("ZONE_CHANGED_NEW_AREA")
+frame:RegisterEvent("PLAYER_LEVEL_UP")
 frame:SetScript("OnEvent", function(_, event, arg1)
   if event == "ADDON_LOADED" and arg1 == ADDON then
     B:InitDB()
+  elseif event == "PLAYER_LEVEL_UP" then
+    B:Safe("level-up", function() B:OnLevelUp(tonumber(arg1)) end)
+  elseif event == "PLAYER_ENTERING_WORLD" or event == "ZONE_CHANGED_NEW_AREA" then
+    B:Safe("zone-change", function() B:OnZoneChanged() end)
   elseif event == "PLAYER_LOGIN" then
     if B.db and not B.db.bracket then B.db.bracket = B:DefaultBracket() end
     if B.db and not BiSCompanionDB.greeted then
@@ -256,14 +427,33 @@ SlashCmdList.BISCOMPANION = function(msg)
     end
     return
   elseif msg == "reset" then
-    B.db.spec, B.db.bracket = nil, B:DefaultBracket()
+    B.db.spec, B.db.bracket, B.db.bracketPinned = nil, B:DefaultBracket(), nil
     if B.UI then B.UI:Refresh() end
+    return
+  elseif msg == "minimap" then
+    B.db.hideMinimap = not B.db.hideMinimap
+    if B.UpdateMinimapButton then B:UpdateMinimapButton() end
+    print("|cff80ff40BiS Companion|r minimap button " ..
+      (B.db.hideMinimap and "|cffff4040hidden|r" or "|cff80ff40shown|r"))
+    return
+  elseif msg == "zone" then
+    B.db.zoneAlerts = not B.db.zoneAlerts
+    print("|cff80ff40BiS Companion|r instance alerts " ..
+      (B.db.zoneAlerts and "|cff80ff40on|r" or "|cffff4040off|r"))
+    return
+  elseif msg == "tips" or msg == "tooltips" then
+    B.db.tooltips = not B.db.tooltips
+    print("|cff80ff40BiS Companion|r item tooltips " ..
+      (B.db.tooltips and "|cff80ff40on|r" or "|cffff4040off|r"))
+    return
+  elseif msg == "debug" or msg == "diag" then
+    B:Diagnostics()
     return
   elseif msg == "shop" or msg == "shopping" then
     if B.UI then B.UI:ShowTab("shopping") end
     return
   elseif msg ~= "" and msg ~= "show" then
-    print("|cff80ff40BiS Companion|r commands: /bis · /bis tbc · /bis wotlk · /bis reset · /bis shop")
+    print("|cff80ff40BiS Companion|r commands: /bis · /bis tbc · /bis wotlk · /bis reset · /bis shop · /bis tips · /bis zone · /bis minimap · /bis debug")
     return
   end
   if B.UI then B.UI:Toggle() end

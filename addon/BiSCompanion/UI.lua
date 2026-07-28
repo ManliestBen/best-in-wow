@@ -11,10 +11,15 @@ local rows = {}
 local listData = {}   -- flat row descriptors for the current view
 local offset = 0
 local expandedSlot = nil
-local selectedInstance = 1
+local selectedInstance = nil   -- resolved from player level on first use
 local searchQuery = ""
 
 -- ---------------- helpers ----------------
+-- Wrap a widget handler so a Lua error reports itself in chat instead of
+-- being swallowed by the client (which looks exactly like a dead button).
+local function safe(label, fn)
+  return function(...) return B:Safe(label, fn, ...) end
+end
 local function ItemColor(it)
   local q = QUALITY_NUM[it.quality or "rare"] or 3
   local c = ITEM_QUALITY_COLORS[q]
@@ -114,7 +119,7 @@ local function BuildQuestList()
     PushNoData("quest data")
     return
   end
-  if selectedInstance > #instances then selectedInstance = 1 end
+  if not selectedInstance or selectedInstance > #instances then selectedInstance = B:DefaultInstanceIndex() end
   local inst = instances[selectedInstance]
   if inst.attunement then
     table.insert(listData, { kind = "msg", text = "|cffc8aa6eAttunement:|r " .. inst.attunement, wrap = true })
@@ -334,16 +339,169 @@ end
 
 function UI:Refresh()
   if not f or not f:IsShown() then return end
-  BuildList()
-  UpdateRows()
-  UI:UpdateDropdowns()
+  B:Safe("refresh", function()
+    BuildList()
+    UpdateRows()
+    UI:UpdateDropdowns()
+  end)
 end
 
 -- ---------------- frame construction ----------------
-local function MakeDropdown(name, parent, width)
-  local dd = CreateFrame("Frame", name, parent, "UIDropDownMenuTemplate")
-  UIDropDownMenu_SetWidth(dd, width)
-  return dd
+-- ---------------- dropdown menu widget ----------------
+-- Rolled by hand instead of using UIDropDownMenuTemplate: Blizzard's widget
+-- only reacts to clicks on its small arrow (clicking the wide text area does
+-- nothing, which reads as "the dropdown is broken"), and its menus don't
+-- scroll, which is unusable for the 51-instance list. Here the entire control
+-- is clickable and long lists scroll with the mousewheel.
+local MENU_ROW_H, MENU_MAX_ROWS = 18, 20
+local openMenu, menuCatcher
+
+local function CloseOpenMenu()
+  if openMenu then
+    openMenu.list:Hide()
+    openMenu = nil
+  end
+  if menuCatcher then menuCatcher:Hide() end
+end
+
+local Menu = {}
+Menu.__index = Menu
+
+function Menu:SetItems(items, selectedValue)
+  self.items = items or {}
+  self.selected = selectedValue
+  if self.list:IsShown() then self:Layout() end
+end
+
+function Menu:SetLabel(text)
+  self.button:SetText(text or "")
+end
+
+function Menu:Layout()
+  local items = self.items
+  local shown = math.min(#items, MENU_MAX_ROWS)
+  local maxOffset = math.max(0, #items - MENU_MAX_ROWS)
+  if self.offset > maxOffset then self.offset = maxOffset end
+
+  self.list:SetSize(self.width, shown * MENU_ROW_H + 16)
+  for i = 1, shown do
+    local row = self.rows[i]
+    if not row then
+      row = CreateFrame("Button", nil, self.list)
+      row:SetSize(self.width - 16, MENU_ROW_H)
+      row:SetPoint("TOPLEFT", 8, -8 - (i - 1) * MENU_ROW_H)
+      row.text = row:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+      row.text:SetPoint("LEFT", 4, 0)
+      row.text:SetPoint("RIGHT", -4, 0)
+      row.text:SetJustifyH("LEFT")
+      row:SetHighlightTexture("Interface\\QuestFrame\\UI-QuestTitleHighlight", "ADD")
+      row:SetScript("OnClick", safe("menu-row", function(self2)
+        local item = self2.item
+        if not item or item.title then return end
+        CloseOpenMenu()
+        if self.onSelect then self.onSelect(item.value, item) end
+      end))
+      self.rows[i] = row
+    end
+    local item = items[i + self.offset]
+    row.item = item
+    if item then
+      local label = item.text or ""
+      if item.title then
+        row.text:SetText("|cff9d8253" .. label .. "|r")
+      elseif item.value ~= nil and item.value == self.selected then
+        row.text:SetText("|cff80ff40" .. label .. "|r")
+      else
+        row.text:SetText("|cffe8ddc7" .. label .. "|r")
+      end
+      row:Show()
+    else
+      row:Hide()
+    end
+  end
+  for i = shown + 1, #self.rows do self.rows[i]:Hide() end
+end
+
+function Menu:Toggle()
+  if openMenu == self then CloseOpenMenu(); return end
+  CloseOpenMenu()
+  if #self.items == 0 then return end
+  -- open scrolled to the current selection, not at the top of a 50-entry list
+  self.offset = 0
+  if self.selected ~= nil then
+    for i, item in ipairs(self.items) do
+      if item.value ~= nil and item.value == self.selected then
+        if i > MENU_MAX_ROWS then
+          self.offset = math.max(0, math.min(i - math.floor(MENU_MAX_ROWS / 2),
+            #self.items - MENU_MAX_ROWS))
+        end
+        break
+      end
+    end
+  end
+  self:Layout()
+  self.list:Show()
+  openMenu = self
+  if menuCatcher then
+    menuCatcher:SetFrameStrata("FULLSCREEN_DIALOG")
+    menuCatcher:Show()
+    local lvl = menuCatcher:GetFrameLevel()
+    if type(lvl) ~= "number" then lvl = 0 end
+    self.list:SetFrameLevel(lvl + 10)
+  end
+end
+
+function Menu:SetShown(shown)
+  self.button:SetShown(shown)
+  if not shown and openMenu == self then CloseOpenMenu() end
+end
+
+local function CreateMenu(parent, width, placeholder)
+  local m = setmetatable({ width = width, items = {}, rows = {}, offset = 0 }, Menu)
+
+  m.button = CreateFrame("Button", nil, parent, "UIPanelButtonTemplate")
+  m.button:SetSize(width, 22)
+  m.button:SetText(placeholder or "")
+  local fs = m.button:GetFontString()
+  if fs then
+    fs:ClearAllPoints()
+    fs:SetPoint("LEFT", 8, 0)
+    fs:SetPoint("RIGHT", -16, 0)
+    fs:SetJustifyH("LEFT")
+  end
+  local arrow = m.button:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+  arrow:SetPoint("RIGHT", -5, -1)
+  arrow:SetText("|cffc8aa6ev|r")   -- plain ASCII: the font has no glyph for arrows
+  m.button:SetScript("OnClick", safe("menu-open", function() m:Toggle() end))
+
+  if not menuCatcher then
+    -- One shared full-screen catcher so clicking anywhere else closes the menu.
+    menuCatcher = CreateFrame("Button", nil, UIParent)
+    menuCatcher:SetAllPoints(UIParent)
+    menuCatcher:SetFrameStrata("FULLSCREEN_DIALOG")
+    menuCatcher:Hide()
+    menuCatcher:SetScript("OnClick", CloseOpenMenu)
+  end
+
+  m.list = CreateFrame("Frame", nil, UIParent, "BackdropTemplate")
+  m.list:SetPoint("TOPLEFT", m.button, "BOTTOMLEFT", 0, -2)
+  m.list:SetBackdrop({
+    bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background-Dark",
+    edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Border",
+    tile = true, tileSize = 32, edgeSize = 16,
+    insets = { left = 4, right = 4, top = 4, bottom = 4 },
+  })
+  m.list:SetFrameStrata("FULLSCREEN_DIALOG")
+  m.list:EnableMouse(true)
+  m.list:EnableMouseWheel(true)
+  m.list:SetScript("OnMouseWheel", safe("menu-scroll", function(_, delta)
+    local maxOffset = math.max(0, #m.items - MENU_MAX_ROWS)
+    m.offset = math.max(0, math.min(m.offset - delta * 3, maxOffset))
+    m:Layout()
+  end))
+  m.list:Hide()
+
+  return m
 end
 
 local function CreateMainFrame()
@@ -376,25 +534,25 @@ local function CreateMainFrame()
   f.expBtn = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
   f.expBtn:SetSize(78, 20)
   f.expBtn:SetPoint("TOPLEFT", 12, -12)
-  f.expBtn:SetScript("OnClick", function()
+  f.expBtn:SetScript("OnClick", safe("expansion-toggle", function()
     local other = B:OtherExpansion()
     if other and B:SwitchExpansion(other) then
-      offset, expandedSlot, selectedInstance = 0, nil, 1
+      offset, expandedSlot, selectedInstance = 0, nil, nil
       searchQuery = ""
       if f.searchBox then f.searchBox:SetText("") end
       print("|cff80ff40BiS Companion|r now showing |cfff0d08c" ..
         (B.SHORT_EXP[other] or other:upper()) .. "|r data.")
       UI:Refresh()
     end
-  end)
-  f.expBtn:SetScript("OnEnter", function(self)
+  end))
+  f.expBtn:SetScript("OnEnter", safe("expansion-tooltip", function(self)
     local other = B:OtherExpansion()
     if not other then return end
     GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
     GameTooltip:AddLine("Viewing " .. (B.SHORT_EXP[B.db.expansion] or B.db.expansion) .. " data")
     GameTooltip:AddLine("Click to switch to " .. (B.SHORT_EXP[other] or other), 1, 1, 1)
     GameTooltip:Show()
-  end)
+  end))
   f.expBtn:SetScript("OnLeave", function() GameTooltip:Hide() end)
 
   -- tab buttons
@@ -402,19 +560,19 @@ local function CreateMainFrame()
   gearBtn:SetSize(90, 22)
   gearBtn:SetPoint("TOPLEFT", 14, -38)
   gearBtn:SetText("Gear")
-  gearBtn:SetScript("OnClick", function() UI:ShowTab("gear") end)
+  gearBtn:SetScript("OnClick", safe("tab-gear", function() UI:ShowTab("gear") end))
 
   local questBtn = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
   questBtn:SetSize(90, 22)
   questBtn:SetPoint("LEFT", gearBtn, "RIGHT", 6, 0)
   questBtn:SetText("Quests")
-  questBtn:SetScript("OnClick", function() UI:ShowTab("quests") end)
+  questBtn:SetScript("OnClick", safe("tab-quests", function() UI:ShowTab("quests") end))
 
   local shopBtn = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
   shopBtn:SetSize(90, 22)
   shopBtn:SetPoint("LEFT", questBtn, "RIGHT", 6, 0)
   shopBtn:SetText("Shopping")
-  shopBtn:SetScript("OnClick", function() UI:ShowTab("shopping") end)
+  shopBtn:SetScript("OnClick", safe("tab-shopping", function() UI:ShowTab("shopping") end))
 
   f.tabButtons = { gear = gearBtn, quests = questBtn, shopping = shopBtn }
 
@@ -423,11 +581,11 @@ local function CreateMainFrame()
   f.searchBox:SetAutoFocus(false)
   f.searchBox:SetSize(140, 20)
   f.searchBox:SetPoint("TOPRIGHT", -30, -40)
-  f.searchBox:SetScript("OnTextChanged", function(self)
+  f.searchBox:SetScript("OnTextChanged", safe("search", function(self)
     searchQuery = self:GetText() or ""
     offset = 0
     UI:Refresh()
-  end)
+  end))
   f.searchBox:SetScript("OnEscapePressed", function(self)
     self:SetText("")
     self:ClearFocus()
@@ -435,12 +593,24 @@ local function CreateMainFrame()
   f.searchBox:SetScript("OnEnterPressed", function(self) self:ClearFocus() end)
 
   -- dropdowns
-  f.specDD = MakeDropdown("BiSCompanionSpecDD", f, 120)
-  f.specDD:SetPoint("TOPLEFT", 2, -64)
-  f.bracketDD = MakeDropdown("BiSCompanionBracketDD", f, 150)
-  f.bracketDD:SetPoint("LEFT", f.specDD, "RIGHT", 100, 0)
-  f.instanceDD = MakeDropdown("BiSCompanionInstanceDD", f, 260)
-  f.instanceDD:SetPoint("TOPLEFT", 2, -64)
+  f.specMenu = CreateMenu(f, 150, "Spec")
+  f.specMenu.button:SetPoint("TOPLEFT", 14, -64)
+  f.specMenu.onSelect = function(value)
+    B.db.spec = value; offset = 0; expandedSlot = nil; UI:Refresh()
+  end
+
+  f.bracketMenu = CreateMenu(f, 200, "Bracket")
+  f.bracketMenu.button:SetPoint("LEFT", f.specMenu.button, "RIGHT", 8, 0)
+  f.bracketMenu.onSelect = function(value)
+    B.db.bracket, B.db.bracketPinned = value, true
+    offset = 0; expandedSlot = nil; UI:Refresh()
+  end
+
+  f.instanceMenu = CreateMenu(f, 300, "Instance")
+  f.instanceMenu.button:SetPoint("TOPLEFT", 14, -64)
+  f.instanceMenu.onSelect = function(value)
+    selectedInstance = value; offset = 0; UI:Refresh()
+  end
 
   -- "both factions" checkbox — quests tab only
   f.bothFactionsCB = CreateFrame("CheckButton", "BiSCompanionBothFactionsCB", f, "UICheckButtonTemplate")
@@ -448,11 +618,11 @@ local function CreateMainFrame()
   f.bothFactionsCB:SetPoint("TOPRIGHT", -120, -66)
   local bfText = _G[f.bothFactionsCB:GetName() .. "Text"]
   if bfText then bfText:SetText("Both factions") end
-  f.bothFactionsCB:SetScript("OnClick", function(self)
+  f.bothFactionsCB:SetScript("OnClick", safe("both-factions", function(self)
     B.db.showBothFactions = self:GetChecked() and true or false
     offset = 0
     UI:Refresh()
-  end)
+  end))
 
   f.statLine = f:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
   f.statLine:SetPoint("TOPLEFT", 16, -96)
@@ -465,14 +635,14 @@ local function CreateMainFrame()
   f.notesBtn:SetSize(20, 18)
   f.notesBtn:SetPoint("TOPRIGHT", -14, -94)
   f.notesBtn:SetText("?")
-  f.notesBtn:SetScript("OnEnter", function(self)
+  f.notesBtn:SetScript("OnEnter", safe("spec-notes", function(self)
     local spec = B:DetectSpec()
     if not spec or not spec.notes then return end
     GameTooltip:SetOwner(self, "ANCHOR_LEFT")
     GameTooltip:AddLine("|cffc8aa6eSpec notes|r")
     GameTooltip:AddLine(spec.notes, 1, 1, 1, true)
     GameTooltip:Show()
-  end)
+  end))
   f.notesBtn:SetScript("OnLeave", function() GameTooltip:Hide() end)
 
   -- instance zone/notes line — quests tab only, below the instance dropdown
@@ -508,7 +678,7 @@ local function CreateMainFrame()
 
     row:SetHighlightTexture("Interface\\QuestFrame\\UI-QuestTitleHighlight", "ADD")
 
-    row:SetScript("OnEnter", function(self)
+    row:SetScript("OnEnter", safe("row-tooltip", function(self)
       local d = self.data
       if not d then return end
       if d.kind == "header" then return end
@@ -552,10 +722,10 @@ local function CreateMainFrame()
         end
         GameTooltip:Show()
       end
-    end)
+    end))
     row:SetScript("OnLeave", function() GameTooltip:Hide() end)
     row:RegisterForClicks("LeftButtonUp", "RightButtonUp")
-    row:SetScript("OnClick", function(self, button)
+    row:SetScript("OnClick", safe("row-click", function(self, button)
       local d = self.data
       if not d then return end
       if d.kind == "item" then
@@ -571,16 +741,16 @@ local function CreateMainFrame()
         local r = d.quest.rewards and d.quest.rewards[1]
         if r and r.id and r.id > 0 then LinkItem(r) end
       end
-    end)
+    end))
     rows[i] = row
   end
 
   -- mousewheel scrolling
   f:EnableMouseWheel(true)
-  f:SetScript("OnMouseWheel", function(_, delta)
+  f:SetScript("OnMouseWheel", safe("list-scroll", function(_, delta)
     offset = math.max(0, math.min(offset - delta * 3, math.max(0, #listData - ROWS)))
     UpdateRows()
-  end)
+  end))
 
   -- thin BiS-collected progress bar, gear tab only, just above the footer
   f.progressBar = CreateFrame("StatusBar", nil, f)
@@ -598,6 +768,9 @@ local function CreateMainFrame()
   f.footer = f:CreateFontString(nil, "OVERLAY", "GameFontNormal")
   f.footer:SetPoint("BOTTOM", 0, 16)
 
+  -- an open dropdown must not outlive the window (Escape closes the frame)
+  f:SetScript("OnHide", CloseOpenMenu)
+
   -- refresh when item info streams in from the server
   f:RegisterEvent("GET_ITEM_INFO_RECEIVED")
   f:RegisterEvent("BAG_UPDATE_DELAYED")
@@ -610,9 +783,9 @@ function UI:UpdateDropdowns()
   local tab = B.db.tab
   local showSpecBracket = (tab == "gear" or tab == "shopping")
   local showInstance = (tab == "quests")
-  f.specDD:SetShown(showSpecBracket)
-  f.bracketDD:SetShown(showSpecBracket)
-  f.instanceDD:SetShown(showInstance)
+  f.specMenu:SetShown(showSpecBracket)
+  f.bracketMenu:SetShown(showSpecBracket)
+  f.instanceMenu:SetShown(showInstance)
   f.bothFactionsCB:SetShown(showInstance)
   f.searchBox:SetShown(tab == "gear")
   f.instanceInfo:SetShown(showInstance)
@@ -625,81 +798,56 @@ function UI:UpdateDropdowns()
   if showSpecBracket then
     local cd = B:ClassData()
     local active = B:DetectSpec()
-    UIDropDownMenu_Initialize(f.specDD, function()
-      if not cd then return end
-      for _, s in ipairs(cd.specs) do
-        local info = UIDropDownMenu_CreateInfo()
-        info.text = s.name
-        info.checked = (active and active.id == s.id)
-        info.func = function()
-          B.db.spec = s.id; offset = 0; UI:Refresh()
-        end
-        UIDropDownMenu_AddButton(info)
+
+    local specItems = {}
+    if cd then
+      for _, s in ipairs(cd.specs or {}) do
+        table.insert(specItems, { text = s.name, value = s.id })
       end
-    end)
-    UIDropDownMenu_SetText(f.specDD, active and active.name or "Spec")
+    end
+    f.specMenu:SetItems(specItems, active and active.id or nil)
+    f.specMenu:SetLabel(active and active.name or "Spec")
 
     local exp = B:ExpData()
-    local brackets = exp and exp.brackets or {}
     local cur = B:CurrentBracket(active)
-    UIDropDownMenu_Initialize(f.bracketDD, function()
-      for _, br in ipairs(brackets) do
-        local hasData = false
-        if active then
-          for _, sb in ipairs(active.brackets or {}) do
-            if sb.id == br.id then hasData = true end
-          end
-        end
-        if hasData then
-          local info = UIDropDownMenu_CreateInfo()
-          info.text = br.name
-          info.checked = (cur and cur.id == br.id)
-          info.func = function()
-            B.db.bracket = br.id; offset = 0; UI:Refresh()
-          end
-          UIDropDownMenu_AddButton(info)
-        end
+    local bracketItems, curMeta = {}, nil
+    for _, br in ipairs((exp and exp.brackets) or {}) do
+      local hasData = false
+      for _, sb in ipairs((active and active.brackets) or {}) do
+        if sb.id == br.id then hasData = true end
       end
-    end)
-    local curMeta
-    for _, br in ipairs(brackets) do if cur and br.id == cur.id then curMeta = br end end
-    UIDropDownMenu_SetText(f.bracketDD, curMeta and curMeta.name or (cur and cur.id) or "Bracket")
+      if hasData then
+        table.insert(bracketItems, { text = br.name, value = br.id })
+        if cur and br.id == cur.id then curMeta = br end
+      end
+    end
+    f.bracketMenu:SetItems(bracketItems, cur and cur.id or nil)
+    f.bracketMenu:SetLabel(curMeta and curMeta.name or (cur and cur.id) or "Bracket")
   end
 
   if showInstance then
     local instances = B:Instances()
-    if selectedInstance > #instances then selectedInstance = 1 end
     f.bothFactionsCB:SetChecked(B.db.showBothFactions)
 
-    local function InstanceLabel(inst)
-      local lvl = inst.levelRange
-      local prefix = (lvl and lvl[1] and lvl[2]) and ("[" .. lvl[1] .. "-" .. lvl[2] .. "] ") or ""
-      return prefix .. inst.name
-    end
-
-    UIDropDownMenu_Initialize(f.instanceDD, function()
-      local lastType = nil
-      for idx, inst in ipairs(instances) do
-        if inst.type ~= lastType then
-          local header = UIDropDownMenu_CreateInfo()
-          header.text = (inst.type == "raid") and "— Raids —" or "— Dungeons —"
-          header.isTitle = true
-          header.notCheckable = true
-          UIDropDownMenu_AddButton(header)
-          lastType = inst.type
-        end
-        local info = UIDropDownMenu_CreateInfo()
-        info.text = InstanceLabel(inst)
-        info.checked = (idx == selectedInstance)
-        info.func = function()
-          selectedInstance = idx; offset = 0; UI:Refresh()
-        end
-        UIDropDownMenu_AddButton(info)
+    local items, lastType = {}, nil
+    for idx, inst in ipairs(instances) do
+      if inst.type ~= lastType then
+        table.insert(items, { text = (inst.type == "raid") and "-- Raids --" or "-- Dungeons --", title = true })
+        lastType = inst.type
       end
-    end)
+      table.insert(items, { text = B:InstanceLabel(inst), value = idx })
+    end
+    f.instanceMenu:SetItems(items, selectedInstance)
     local inst = instances[selectedInstance]
-    UIDropDownMenu_SetText(f.instanceDD, inst and InstanceLabel(inst) or "Instance")
+    f.instanceMenu:SetLabel(inst and B:InstanceLabel(inst) or "Instance")
   end
+end
+
+-- Called by the zone watcher when you walk into a dungeon we have data for.
+function UI:SelectInstanceByIndex(idx)
+  selectedInstance = idx
+  offset = 0
+  if f and f:IsShown() then UI:Refresh() end
 end
 
 function UI:IsShown()
