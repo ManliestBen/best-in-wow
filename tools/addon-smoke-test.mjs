@@ -430,14 +430,25 @@ safeCall("slash:/bis", SlashCmdList.BISCOMPANION, "")
 assertTrue("slash:/bis", BISC.UI and BISC.UI:IsShown(), "BISC.UI:IsShown() is false after /bis — window did not open")
 
 -- (c) walk every tab, verify real rows render
+-- Quests never depend on class (BISC:Instances() is expansion-only data), but
+-- gear/shopping legitimately render nothing for a class with no ClassData for
+-- this expansion (e.g. Death Knight on tbc, pre-WotLK) — that's correct
+-- behavior, not a bug, so only hard-assert non-empty rows where data should
+-- actually exist.
+local classHasData = BISC:ClassData() ~= nil
 local tabRowCounts = {}
 for _, tab in ipairs({ "gear", "quests", "shopping" }) do
   safeCall("ShowTab:" .. tab, function() BISC.UI:ShowTab(tab) end)
   assertTrue("ShowTab:" .. tab, BISC.db.tab == tab, "BISC.db.tab did not update to '" .. tab .. "'")
   local shown, real = summarizeRows(tab)
   tabRowCounts[tab] = { shown = shown, real = real }
-  assertTrue("ShowTab:" .. tab, real > 0, "tab '" .. tab .. "' rendered zero real item/quest rows for a fresh " ..
-    tostring(BISC.db.expansion) .. " " .. tostring(BISC:PlayerClass()) .. " character (only headers/messages, or nothing)")
+  if tab == "quests" or classHasData then
+    assertTrue("ShowTab:" .. tab, real > 0, "tab '" .. tab .. "' rendered zero real item/quest rows for a fresh " ..
+      tostring(BISC.db.expansion) .. " " .. tostring(BISC:PlayerClass()) .. " character (only headers/messages, or nothing)")
+  else
+    print("@@SMOKE@@ note|" .. tab .. "|skipped non-empty-rows check: BISC:ClassData() is nil for " ..
+      tostring(BISC:PlayerClass()) .. " on " .. tostring(BISC.db.expansion) .. " (no data for this class — expected)")
+  end
 end
 
 -- (d) exercise every clickable control the addon created: every stored
@@ -564,7 +575,12 @@ safeCall("tooltip-hits", function()
       end
     end
   end
-  if not probeId then error("no item id found in class data to probe") end
+  if not probeId then
+    -- A class with no ClassData for this expansion (e.g. Death Knight on
+    -- tbc) has nothing to probe — that's expected, not a bug; skip quietly.
+    print("@@SMOKE@@ note|tooltip-hits|skipped: BISC:ClassData() is nil for " .. tostring(BISC:PlayerClass()))
+    return
+  end
   local hits = BISC:TooltipHits(probeId)
   if not hits or #hits == 0 then error("TooltipHits(" .. probeId .. ") returned nothing") end
   print("@@TIPS@@ " .. #hits .. " hit(s); first = " .. hits[1].specName .. " / " .. hits[1].bracketName .. " / " .. hits[1].slot .. " rank " .. hits[1].rank)
@@ -582,7 +598,9 @@ if searchBox then
   if onChanged then
     safeCall("search:OnTextChanged('band')", onChanged, searchBox)
     local shown, real = summarizeRows("gear-search-band")
-    assertTrue("search", real > 0, "searching \"band\" produced zero result rows (expected real TBC item matches)")
+    if classHasData then
+      assertTrue("search", real > 0, "searching \"band\" produced zero result rows (expected real TBC item matches)")
+    end
   end
   -- clear the query so later state is sane
   searchBox:SetText("")

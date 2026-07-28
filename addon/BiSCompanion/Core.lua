@@ -347,25 +347,41 @@ function B:InstanceLabel(inst)
   return inst.name or ""
 end
 
--- Instance nearest the player's level, so the Quests tab opens on something
--- they can actually run rather than whatever sorted first.
+-- How many of an instance's quests this character would actually see.
+function B:VisibleQuestCount(inst)
+  local n = 0
+  for _, q in ipairs((inst and inst.quests) or {}) do
+    if self:QuestVisible(q) then n = n + 1 end
+  end
+  return n
+end
+
+-- Instance nearest the player's level that actually has quests they can see.
+-- Level proximity alone lands Alliance characters on Ragefire Chasm and Horde
+-- characters on The Stockade, whose quests are all other-faction, leaving the
+-- Quests tab blank on first open.
 function B:DefaultInstanceIndex()
   local list = self:Instances()
   if #list == 0 then return 1 end
   local lvl = UnitLevel("player") or 0
-  if lvl <= 0 then return 1 end
-  local best, bestDist = 1, nil
+  local best, bestDist, fallback, fallbackDist = nil, nil, 1, nil
   for i, inst in ipairs(list) do
     local r = inst.levelRange
     local lo = (r and r[1]) or 0
     local hi = (r and r[2]) or lo
-    local dist = 0
-    if lvl < lo then dist = lo - lvl
-    elseif lvl > hi then dist = lvl - hi end
-    if bestDist == nil or dist < bestDist then best, bestDist = i, dist end
+    local dist = lo
+    if lvl > 0 then
+      dist = 0
+      if lvl < lo then dist = lo - lvl elseif lvl > hi then dist = lvl - hi end
+    end
+    if fallbackDist == nil or dist < fallbackDist then fallback, fallbackDist = i, dist end
+    if self:VisibleQuestCount(inst) > 0 and (bestDist == nil or dist < bestDist) then
+      best, bestDist = i, dist
+    end
   end
-  return best
+  return best or fallback
 end
+
 
 function B:QuestVisible(q)
   if self.db.showBothFactions then return true end

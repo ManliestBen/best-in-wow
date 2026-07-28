@@ -124,9 +124,23 @@ local function BuildQuestList()
   if inst.attunement then
     table.insert(listData, { kind = "msg", text = "|cffc8aa6eAttunement:|r " .. inst.attunement, wrap = true })
   end
+  local shown = 0
   for _, q in ipairs(inst.quests or {}) do
     if B:QuestVisible(q) then
       table.insert(listData, { kind = "quest", quest = q })
+      shown = shown + 1
+    end
+  end
+  -- An instance can hold quests yet show none: Ragefire Chasm is Horde-only,
+  -- The Stockade Alliance-only. Say so instead of rendering an empty list.
+  if shown == 0 then
+    if #(inst.quests or {}) > 0 then
+      table.insert(listData, { kind = "msg",
+        text = "No " .. B:PlayerFaction() .. " quests inside " .. inst.name .. "." })
+      table.insert(listData, { kind = "msg",
+        text = "Tick |cfff0d08cBoth factions|r above to see the other faction's." })
+    else
+      table.insert(listData, { kind = "msg", text = "No quests recorded inside " .. inst.name .. "." })
     end
   end
 end
