@@ -138,6 +138,55 @@ function B:ClassData()
   return exp and exp.classes and exp.classes[self:PlayerClass()] or nil
 end
 
+-- Points spent in a talent tab.
+--
+-- GetTalentTabInfo's return positions are NOT stable across client builds: on
+-- the 2.5.6 Anniversary client its third value is a string, so reading points
+-- positionally blew up with "attempt to compare number with string". Summing
+-- talent ranks uses GetTalentInfo, whose rank position has been stable, and
+-- falls back to scanning the tab info for a plausible points value.
+local function TabPoints(tab)
+  if type(GetNumTalents) == "function" and type(GetTalentInfo) == "function" then
+    local total, n = 0, GetNumTalents(tab)
+    if type(n) == "number" then
+      for i = 1, n do
+        local _, _, _, _, rank = GetTalentInfo(tab, i)
+        if type(rank) == "number" then total = total + rank end
+      end
+      return total
+    end
+  end
+  if type(GetTalentTabInfo) == "function" then
+    local a, b, c, d, e = GetTalentTabInfo(tab)
+    for _, v in ipairs({ a, b, c, d, e }) do
+      -- 71 = most points obtainable at level 70; the icon fileID is far bigger
+      if type(v) == "number" and v >= 0 and v <= 71 then return v end
+    end
+  end
+  return 0
+end
+
+-- Recomputed only when talents can actually have changed; DetectSpec runs on
+-- every refresh, including bag updates.
+local bestTabCache
+function B:InvalidateTalents() bestTabCache = nil end
+
+function B:BestTalentTab()
+  if bestTabCache then return bestTabCache end
+  local numTabs = 3
+  if type(GetNumTalentTabs) == "function" then
+    local n = GetNumTalentTabs()
+    if type(n) == "number" and n > 0 then numTabs = n end
+  end
+  local bestTab, bestPts = 1, -1
+  for tab = 1, numTabs do
+    local pts = TabPoints(tab)
+    if pts > bestPts then bestPts, bestTab = pts, tab end
+  end
+  bestTabCache = bestTab
+  return bestTab
+end
+
 -- Guess spec from talent point distribution; returns a spec table from our data.
 function B:DetectSpec()
   local cd = self:ClassData()
@@ -148,14 +197,8 @@ function B:DetectSpec()
       if s.id == self.db.spec then return s end
     end
   end
-  local bestTab, bestPts = 1, -1
-  for i = 1, GetNumTalentTabs and GetNumTalentTabs() or 3 do
-    local _, _, pts = GetTalentTabInfo(i)
-    pts = pts or 0
-    if pts > bestPts then bestPts, bestTab = pts, i end
-  end
   local map = self.SPEC_BY_TAB[self:PlayerClass()]
-  local wanted = map and map[bestTab]
+  local wanted = map and map[self:BestTalentTab()]
   for _, s in ipairs(cd.specs) do
     if s.id == wanted then return s end
   end
@@ -413,9 +456,14 @@ frame:RegisterEvent("PLAYER_LOGIN")
 frame:RegisterEvent("PLAYER_ENTERING_WORLD")
 frame:RegisterEvent("ZONE_CHANGED_NEW_AREA")
 frame:RegisterEvent("PLAYER_LEVEL_UP")
+frame:RegisterEvent("CHARACTER_POINTS_CHANGED")
+frame:RegisterEvent("SPELLS_CHANGED")
 frame:SetScript("OnEvent", function(_, event, arg1)
   if event == "ADDON_LOADED" and arg1 == ADDON then
     B:InitDB()
+  elseif event == "CHARACTER_POINTS_CHANGED" or event == "SPELLS_CHANGED" then
+    B:InvalidateTalents()
+    if B.UI and B.UI.Refresh then B.UI:Refresh() end
   elseif event == "PLAYER_LEVEL_UP" then
     B:Safe("level-up", function() B:OnLevelUp(tonumber(arg1)) end)
   elseif event == "PLAYER_ENTERING_WORLD" or event == "ZONE_CHANGED_NEW_AREA" then

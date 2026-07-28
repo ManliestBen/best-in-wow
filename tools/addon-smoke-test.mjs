@@ -287,8 +287,17 @@ function GetNumTalentTabs()
   return 3
 end
 local TALENT_POINTS = { 5, 30, 10 } -- tab 2 deliberately highest
+-- Mirror the real 2.5.6 client, where the third return is a STRING. Reading
+-- points positionally must fail here, the way it failed in game.
 function GetTalentTabInfo(i)
-  return "Talent Tab " .. tostring(i), "Interface\\\\Icons\\\\INV_Misc_QuestionMark", TALENT_POINTS[i] or 0
+  return "Talent Tab " .. tostring(i), 134400, "Interface\\\\TalentFrame\\\\bg" .. tostring(i), TALENT_POINTS[i] or 0
+end
+-- Rank-summing path: 1 talent per tab holding all the points.
+function GetNumTalents(tab)
+  return 1
+end
+function GetTalentInfo(tab, index)
+  return "Talent " .. tostring(tab) .. "-" .. tostring(index), 134400, 1, 1, TALENT_POINTS[tab] or 0, 5
 end
 
 -- ---- UIDropDownMenu_* mocks ----
