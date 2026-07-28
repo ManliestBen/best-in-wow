@@ -31,13 +31,32 @@ B.SLOT_ORDER = { "head", "neck", "shoulder", "back", "chest", "wrist", "hands",
 B.WORN = { finger = 2, trinket = 2 }
 B.SHORT_EXP = { tbc = "TBC", wotlk = "WotLK" }
 
+-- Bracket that matches the character's current level, so a leveling character
+-- doesn't open the addon to a level-70 pre-raid list. Falls back to "preraid"
+-- at max level and for expansions with no leveling brackets (CurrentBracket
+-- also falls back to the spec's first bracket if this one has no data).
+function B:DefaultBracket()
+  local lvl = UnitLevel("player") or 0
+  if lvl <= 0 then return "preraid" end
+  if lvl <= 19 then return "lvl19"
+  elseif lvl <= 29 then return "lvl29"
+  elseif lvl <= 39 then return "lvl39"
+  elseif lvl <= 49 then return "lvl49"
+  elseif lvl <= 57 then return "lvl59"
+  elseif lvl <= 64 then return "lvl60"
+  elseif lvl <= 69 then return "lvl65"
+  end
+  return "preraid"
+end
+
 function B:InitDB()
   BiSCompanionDB = BiSCompanionDB or {}
   BiSCompanionCharDB = BiSCompanionCharDB or {}
   local c = BiSCompanionCharDB
   c.expansion = c.expansion or self.EXPANSION_DEFAULT
   if not BISC_DATA[c.expansion] then c.expansion = self.EXPANSION_DEFAULT end
-  c.bracket = c.bracket or "preraid"
+  -- c.bracket is left nil here on a first run: ADDON_LOADED fires before player
+  -- info exists, so UnitLevel() isn't trustworthy yet. PLAYER_LOGIN fills it in.
   c.tab = c.tab or "gear"
   c.showBothFactions = c.showBothFactions or false
   self.db = c
@@ -70,7 +89,7 @@ end
 function B:SwitchExpansion(exp)
   if not BISC_DATA[exp] then return false end
   self.db.expansion = exp
-  self.db.spec, self.db.bracket = nil, "preraid"
+  self.db.spec, self.db.bracket = nil, self:DefaultBracket()
   return true
 end
 
@@ -215,7 +234,7 @@ frame:SetScript("OnEvent", function(_, event, arg1)
   if event == "ADDON_LOADED" and arg1 == ADDON then
     B:InitDB()
   elseif event == "PLAYER_LOGIN" then
-    local exp = B.db and B.db.expansion or "?"
+    if B.db and not B.db.bracket then B.db.bracket = B:DefaultBracket() end
     if B.db and not BiSCompanionDB.greeted then
       BiSCompanionDB.greeted = true
       print("|cff80ff40BiS Companion|r loaded — type |cfff0d08c/bis|r to open.")
@@ -237,7 +256,7 @@ SlashCmdList.BISCOMPANION = function(msg)
     end
     return
   elseif msg == "reset" then
-    B.db.spec, B.db.bracket = nil, "preraid"
+    B.db.spec, B.db.bracket = nil, B:DefaultBracket()
     if B.UI then B.UI:Refresh() end
     return
   elseif msg == "shop" or msg == "shopping" then

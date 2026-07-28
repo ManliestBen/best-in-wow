@@ -47,13 +47,28 @@ local function SlotLabel(slotKey, index)
   return B.SLOT_NAMES[slotKey]
 end
 
+-- Empty-state text that names the expansion you're on and, when the other one
+-- has data, points at the button that gets you back — WotLK is only a small
+-- preview dataset, so landing there looks like a broken addon otherwise.
+-- Two short rows rather than one long one: list rows are fixed-height and
+-- don't wrap, so a single sentence would be truncated.
+local function PushNoData(what)
+  local cur = B.SHORT_EXP[B.db.expansion] or B.db.expansion:upper()
+  table.insert(listData, { kind = "msg", text = "No " .. cur .. " " .. what .. " yet." })
+  local other = B:OtherExpansion()
+  if other then
+    table.insert(listData, { kind = "msg", text = "Click the |cfff0d08c" .. cur ..
+      "|r button (top-left) to switch to " .. (B.SHORT_EXP[other] or other) .. "." })
+  end
+end
+
 -- ---------------- list building ----------------
 local function BuildGearList()
   wipe(listData)
   local spec = B:DetectSpec()
   local bracket = B:CurrentBracket(spec)
   if not spec or not bracket then
-    table.insert(listData, { kind = "msg", text = "No data for your class in this expansion yet." })
+    PushNoData("gear data for your class")
     return
   end
 
@@ -96,7 +111,7 @@ local function BuildQuestList()
   wipe(listData)
   local instances = B:Instances()
   if #instances == 0 then
-    table.insert(listData, { kind = "msg", text = "No quest data for this expansion yet." })
+    PushNoData("quest data")
     return
   end
   if selectedInstance > #instances then selectedInstance = 1 end
@@ -127,7 +142,7 @@ local function BuildShoppingList()
   local spec = B:DetectSpec()
   local bracket = B:CurrentBracket(spec)
   if not spec or not bracket then
-    table.insert(listData, { kind = "msg", text = "No data for your class in this expansion yet." })
+    PushNoData("gear data for your class")
     return
   end
 
@@ -310,14 +325,11 @@ local function UpdateRows()
     f.notesBtn:Hide()
   end
 
-  -- expansion toggle button always reflects the currently-loaded "other" expansion
-  local other = B:OtherExpansion()
-  if other then
-    f.expBtn:SetText("|cffc8aa6e→ " .. (B.SHORT_EXP[other] or other:upper()) .. "|r")
-    f.expBtn:Show()
-  else
-    f.expBtn:Hide()
-  end
+  -- Expansion button shows the expansion you are CURRENTLY viewing; clicking
+  -- swaps to the other one (label said "-> other" before, which read as a tab).
+  local cur = B.SHORT_EXP[B.db.expansion] or B.db.expansion:upper()
+  f.expBtn:SetText(cur)
+  f.expBtn:SetShown(B:OtherExpansion() ~= nil)
 end
 
 function UI:Refresh()
@@ -370,9 +382,20 @@ local function CreateMainFrame()
       offset, expandedSlot, selectedInstance = 0, nil, 1
       searchQuery = ""
       if f.searchBox then f.searchBox:SetText("") end
+      print("|cff80ff40BiS Companion|r now showing |cfff0d08c" ..
+        (B.SHORT_EXP[other] or other:upper()) .. "|r data.")
       UI:Refresh()
     end
   end)
+  f.expBtn:SetScript("OnEnter", function(self)
+    local other = B:OtherExpansion()
+    if not other then return end
+    GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+    GameTooltip:AddLine("Viewing " .. (B.SHORT_EXP[B.db.expansion] or B.db.expansion) .. " data")
+    GameTooltip:AddLine("Click to switch to " .. (B.SHORT_EXP[other] or other), 1, 1, 1)
+    GameTooltip:Show()
+  end)
+  f.expBtn:SetScript("OnLeave", function() GameTooltip:Hide() end)
 
   -- tab buttons
   local gearBtn = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
@@ -392,6 +415,8 @@ local function CreateMainFrame()
   shopBtn:SetPoint("LEFT", questBtn, "RIGHT", 6, 0)
   shopBtn:SetText("Shopping")
   shopBtn:SetScript("OnClick", function() UI:ShowTab("shopping") end)
+
+  f.tabButtons = { gear = gearBtn, quests = questBtn, shopping = shopBtn }
 
   -- search box — gear tab only, top-right, clear of the close button and tabs
   f.searchBox = CreateFrame("EditBox", "BiSCompanionSearchBox", f, "InputBoxTemplate")
@@ -591,6 +616,11 @@ function UI:UpdateDropdowns()
   f.bothFactionsCB:SetShown(showInstance)
   f.searchBox:SetShown(tab == "gear")
   f.instanceInfo:SetShown(showInstance)
+
+  -- highlight the active tab (all three looked identical before)
+  for id, btn in pairs(f.tabButtons or {}) do
+    if id == tab then btn:LockHighlight() else btn:UnlockHighlight() end
+  end
 
   if showSpecBracket then
     local cd = B:ClassData()
