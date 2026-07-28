@@ -1,4 +1,4 @@
-## Interface: 20504
+## Interface: 20506, 20505, 20504
 ## Title: |cff80ff40BiS|r Companion
 ## Notes: Best-in-slot gear lists and instance quest checklists — in-game, no alt-tabbing.
 ## Author: David Stinson
