@@ -359,9 +359,17 @@ function B:SetTarget(slotKey, index, itemId)
   local k = targetKey(self, slotKey, index)
   if itemId == nil or self.db.targets[k] == itemId then
     self.db.targets[k] = nil
-  else
-    self.db.targets[k] = itemId
+    return
   end
+  -- Rings and trinkets come in pairs, but the same item can't fill both, so
+  -- claiming it for one position releases it from the other.
+  local worn = self.WORN[slotKey] or 1
+  for w = 1, worn do
+    if w ~= index and self.db.targets[targetKey(self, slotKey, w)] == itemId then
+      self.db.targets[targetKey(self, slotKey, w)] = nil
+    end
+  end
+  self.db.targets[k] = itemId
 end
 
 -- The item being chased for a slot position: their pick if still listed, else

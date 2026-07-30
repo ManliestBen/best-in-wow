@@ -595,6 +595,25 @@ safeCall("no-overlapping-headers", function()
   print("@@OVERLAP@@ header lines are mutually exclusive")
 end)
 
+-- the same ring can't be worn in both ring slots
+safeCall("no-duplicate-worn", function()
+  if not BISC:ClassData() then return end
+  local spec = BISC:DetectSpec()
+  local br = BISC:CurrentBracket(spec)
+  local rings = BISC:SlotItems(br, "finger")
+  if #rings < 2 then print("@@PAIR@@ skipped: fewer than two rings listed") return end
+
+  BISC:SetTarget("finger", 1, rings[2].id)
+  BISC:SetTarget("finger", 2, rings[2].id)     -- claim the same ring for both
+  local a = BISC:ChosenItem(rings, "finger", 1)
+  local b = BISC:ChosenItem(rings, "finger", 2)
+  if a and b and a.id == b.id then
+    error("the same ring ended up in both ring slots (" .. tostring(a.name) .. ")")
+  end
+  BISC:SetTarget("finger", 1, nil); BISC:SetTarget("finger", 2, nil)
+  print("@@PAIR@@ claiming a ring for slot 2 released it from slot 1")
+end)
+
 -- a BiS item dropping should announce itself
 safeCall("loot-alert", function()
   if not BISC:ClassData() then return end

@@ -201,7 +201,19 @@ function targetKey(slotKey, wornIndex) {
 function targetIdFor(slotKey, wornIndex) { return state.targets[targetKey(slotKey, wornIndex)]; }
 function setTarget(slotKey, wornIndex, itemId) {
   const k = targetKey(slotKey, wornIndex);
-  if (itemId == null) delete state.targets[k]; else state.targets[k] = itemId;
+  if (itemId == null) { delete state.targets[k]; }
+  else {
+    // Rings and trinkets are worn in pairs, but you can't wear the same one
+    // twice — claiming it for one position releases it from the other.
+    const slotMeta = core.slots.find(x => x.key === slotKey);
+    const worn = (slotMeta && slotMeta.worn) || 1;
+    for (let w = 0; w < worn; w++) {
+      if (w !== wornIndex && state.targets[targetKey(slotKey, w)] === itemId) {
+        delete state.targets[targetKey(slotKey, w)];
+      }
+    }
+    state.targets[k] = itemId;
+  }
   save();
   renderGearTab();
   if (state.tab === 'shopping') renderShopping();
