@@ -94,7 +94,13 @@ The web app reads it directly; the addon gets it compiled by the build script.
 ```sh
 node tools/validate-data.mjs      # schema check + coverage report
 node tools/build-addon-data.mjs   # regenerate addon/BiSCompanion/Data.lua
+node tools/audit-items.mjs        # every item vs its Wowhead tooltip (must be 0 findings)
+node tools/app-smoke-test.mjs     # run the web app headlessly and drive its controls
+node tools/addon-smoke-test.mjs   # run the addon's Lua against a mocked WoW API
 ```
+
+Both smoke tests accept flags to vary the character, e.g.
+`node tools/app-smoke-test.mjs --class hunter --spec beastmastery --bracket lvl25 --faction horde`.
 
 To fix a wrong item or add a phase: edit the data file, refresh the browser,
 re-run the build script for the addon. Item IDs are Wowhead IDs

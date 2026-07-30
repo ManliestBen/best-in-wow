@@ -669,6 +669,24 @@ function visibleQuests(inst) {
 }
 function questKey(inst, q) { return `${state.expansion}:${q.id || inst.id + ':' + q.name}`; }
 
+/* Pick an instance the character can actually quest in, nearest their current
+   bracket. Choosing purely by list order lands Alliance characters on Ragefire
+   Chasm and Horde characters on The Stockade, whose quests are all
+   other-faction, so the tab renders empty. */
+function defaultInstanceId(instances) {
+  const bMeta = (expCfg().brackets || []).find(b => b.id === state.bracket);
+  const lvl = bMeta && bMeta.levelRange ? bMeta.levelRange[1] : 70;
+  let best = null, bestDist = null;
+  for (const inst of instances) {
+    if (!visibleQuests(inst).length) continue;
+    const r = inst.levelRange || [];
+    const lo = r[0] || 0, hi = r[1] || lo;
+    const dist = lvl < lo ? lo - lvl : (lvl > hi ? lvl - hi : 0);
+    if (bestDist === null || dist < bestDist) { best = inst; bestDist = dist; }
+  }
+  return (best || instances[0]).id;
+}
+
 function renderInstanceList() {
   const el = $('#instance-list');
   const instances = WOWDATA.questsFor(state.expansion)
@@ -680,7 +698,9 @@ function renderInstanceList() {
     $('#instance-detail').innerHTML = '<div class="detail-empty">Quest data coming soon for this expansion.</div>';
     return;
   }
-  if (!instances.some(i => i.id === state.selectedInstance)) state.selectedInstance = instances[0].id;
+  if (!instances.some(i => i.id === state.selectedInstance)) {
+    state.selectedInstance = defaultInstanceId(instances);
+  }
 
   const groups = [['dungeon', 'Dungeons'], ['raid', 'Raids']];
   el.innerHTML = groups.map(([type, label]) => {
@@ -724,6 +744,12 @@ function renderInstanceDetail() {
         ${state.showBothFactions ? 'Showing both factions' : `Showing ${esc(state.faction)} only`}</button>
       <button class="mini-btn" id="reset-instance">Reset checkmarks</button>
     </div>
+    ${qs.length === 0 ? `<div class="detail-empty">
+      ${(inst.quests || []).length
+        ? `No ${esc(state.faction)} quests inside ${esc(inst.name)}.<br>
+           Turn on <b>${esc(state.showBothFactions ? 'Showing both factions' : 'both factions')}</b> above to see the other faction's.`
+        : `No quests recorded inside ${esc(inst.name)}.`}
+    </div>` : ''}
     ${qs.map((q, i) => {
       const k = questKey(inst, q);
       const checked = !!state.questDone[k];
