@@ -1,6 +1,4 @@
-/* BiS Companion data — TBC Classic Warlock leveling gear (levels 10-69), shared across Destruction and Affliction. */
-WOWDATA.register(
-{
+WOWDATA.register({
   "kind": "bis",
   "expansion": "tbc",
   "class": "warlock",
@@ -327,26 +325,16 @@ WOWDATA.register(
             ],
             "mainhand": [
               {
-                "id": 2816,
-                "name": "Death Speaker Scepter",
+                "id": 6505,
+                "name": "Crescent Staff",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
-                  "type": "drop",
-                  "instance": "Razorfen Kraul",
-                  "boss": "Death Speaker Jargba"
-                }
-              },
-              {
-                "id": 3414,
-                "name": "Crested Scepter",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Blackfathom Deeps",
-                  "detail": "trash"
-                }
+                  "type": "quest",
+                  "quest": "Leaders of the Fang",
+                  "instance": "Wailing Caverns"
+                },
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
               }
             ]
           }
@@ -532,20 +520,6 @@ WOWDATA.register(
                   "instance": "Scarlet Monastery",
                   "boss": "Arcanist Doan",
                   "detail": "Library wing"
-                }
-              }
-            ],
-            "offhand": [
-              {
-                "id": 7685,
-                "name": "Orb of the Forgotten Seer",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scarlet Monastery",
-                  "boss": "Bloodmage Thalnos",
-                  "detail": "Graveyard wing"
                 }
               }
             ],
@@ -756,20 +730,6 @@ WOWDATA.register(
                   "instance": "Maraudon",
                   "boss": "Razorlash"
                 }
-              }
-            ],
-            "offhand": [
-              {
-                "id": 15108,
-                "name": "Orb of Dar'Orahil",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "The Completed Orb of Dar'Orahil",
-                  "zone": "The Barrens"
-                },
-                "note": "Warlock class-quest reward"
               }
             ],
             "mainhand": [
@@ -1226,30 +1186,6 @@ WOWDATA.register(
                 }
               }
             ],
-            "offhand": [
-              {
-                "id": 17737,
-                "name": "Cloud Stone",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Maraudon",
-                  "boss": "Landslide"
-                }
-              },
-              {
-                "id": 23156,
-                "name": "Blackwood's Thigh",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scholomance",
-                  "boss": "Lord Blackwood"
-                }
-              }
-            ],
             "ranged": [
               {
                 "id": 18338,
@@ -1637,20 +1573,6 @@ WOWDATA.register(
                   "boss": "Mennu the Betrayer"
                 }
               }
-            ],
-            "offhand": [
-              {
-                "id": 17737,
-                "name": "Cloud Stone",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Maraudon",
-                  "boss": "Landslide"
-                },
-                "note": "Carries over — no stronger held item drops in this bracket's content"
-              }
             ]
           }
         },
@@ -1947,41 +1869,15 @@ WOWDATA.register(
             ],
             "mainhand": [
               {
-                "id": 27937,
-                "name": "Sky Breaker",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Auchenai Crypts",
-                  "boss": "Avatar of the Martyred"
-                },
-                "note": "Best-in-slot leveling mainhand — huge spell damage roll"
-              },
-              {
                 "id": 25950,
                 "name": "Staff of Polarities",
                 "quality": "rare",
-                "rank": 2,
+                "rank": 1,
                 "source": {
                   "type": "drop",
                   "instance": "Mana-Tombs",
                   "boss": "Tavarok"
                 }
-              }
-            ],
-            "offhand": [
-              {
-                "id": 29330,
-                "name": "The Saga of Terokk",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "Terokk's Legacy",
-                  "instance": "Sethekk Halls"
-                },
-                "note": "Pairs with the 1H Sky Breaker; leave empty if using the 2H Staff of Polarities"
               }
             ]
           }
@@ -2308,26 +2204,16 @@ WOWDATA.register(
             ],
             "mainhand": [
               {
-                "id": 2816,
-                "name": "Death Speaker Scepter",
+                "id": 6505,
+                "name": "Crescent Staff",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
-                  "type": "drop",
-                  "instance": "Razorfen Kraul",
-                  "boss": "Death Speaker Jargba"
-                }
-              },
-              {
-                "id": 3414,
-                "name": "Crested Scepter",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Blackfathom Deeps",
-                  "detail": "trash"
-                }
+                  "type": "quest",
+                  "quest": "Leaders of the Fang",
+                  "instance": "Wailing Caverns"
+                },
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
               }
             ]
           }
@@ -2513,20 +2399,6 @@ WOWDATA.register(
                   "instance": "Scarlet Monastery",
                   "boss": "Arcanist Doan",
                   "detail": "Library wing"
-                }
-              }
-            ],
-            "offhand": [
-              {
-                "id": 7685,
-                "name": "Orb of the Forgotten Seer",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scarlet Monastery",
-                  "boss": "Bloodmage Thalnos",
-                  "detail": "Graveyard wing"
                 }
               }
             ],
@@ -2737,20 +2609,6 @@ WOWDATA.register(
                   "instance": "Maraudon",
                   "boss": "Razorlash"
                 }
-              }
-            ],
-            "offhand": [
-              {
-                "id": 15108,
-                "name": "Orb of Dar'Orahil",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "The Completed Orb of Dar'Orahil",
-                  "zone": "The Barrens"
-                },
-                "note": "Warlock class-quest reward"
               }
             ],
             "mainhand": [
@@ -3207,30 +3065,6 @@ WOWDATA.register(
                 }
               }
             ],
-            "offhand": [
-              {
-                "id": 17737,
-                "name": "Cloud Stone",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Maraudon",
-                  "boss": "Landslide"
-                }
-              },
-              {
-                "id": 23156,
-                "name": "Blackwood's Thigh",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scholomance",
-                  "boss": "Lord Blackwood"
-                }
-              }
-            ],
             "ranged": [
               {
                 "id": 18338,
@@ -3618,20 +3452,6 @@ WOWDATA.register(
                   "boss": "Mennu the Betrayer"
                 }
               }
-            ],
-            "offhand": [
-              {
-                "id": 17737,
-                "name": "Cloud Stone",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Maraudon",
-                  "boss": "Landslide"
-                },
-                "note": "Carries over — no stronger held item drops in this bracket's content"
-              }
             ]
           }
         },
@@ -3928,41 +3748,15 @@ WOWDATA.register(
             ],
             "mainhand": [
               {
-                "id": 27937,
-                "name": "Sky Breaker",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Auchenai Crypts",
-                  "boss": "Avatar of the Martyred"
-                },
-                "note": "Best-in-slot leveling mainhand — huge spell damage roll"
-              },
-              {
                 "id": 25950,
                 "name": "Staff of Polarities",
                 "quality": "rare",
-                "rank": 2,
+                "rank": 1,
                 "source": {
                   "type": "drop",
                   "instance": "Mana-Tombs",
                   "boss": "Tavarok"
                 }
-              }
-            ],
-            "offhand": [
-              {
-                "id": 29330,
-                "name": "The Saga of Terokk",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "Terokk's Legacy",
-                  "instance": "Sethekk Halls"
-                },
-                "note": "Pairs with the 1H Sky Breaker; leave empty if using the 2H Staff of Polarities"
               }
             ]
           }
@@ -3970,5 +3764,4 @@ WOWDATA.register(
       ]
     }
   ]
-}
-);
+});

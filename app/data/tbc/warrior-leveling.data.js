@@ -168,30 +168,6 @@ WOWDATA.register({
                 }
               }
             ],
-            "finger": [
-              {
-                "id": 1156,
-                "name": "Lavishly Jeweled Ring",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Deadmines",
-                  "boss": "Gilnid"
-                },
-                "note": "Unique-Equipped"
-              },
-              {
-                "id": 12996,
-                "name": "Band of Purification",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "world-drop"
-                },
-                "note": "BoE, may need AH"
-              }
-            ],
             "mainhand": [
               {
                 "id": 1566,
@@ -261,21 +237,6 @@ WOWDATA.register({
                   "instance": "Razorfen Kraul",
                   "boss": "Overlord Ramtusk"
                 }
-              }
-            ],
-            "neck": [
-              {
-                "id": 6695,
-                "name": "Stygian Bone Amulet",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Razorfen Kraul",
-                  "boss": "Groyat the Blind Hunter",
-                  "detail": "Rare spawn"
-                },
-                "note": "Stamina/Spirit itemization, but the best neck available this early"
               }
             ],
             "shoulder": [
@@ -405,21 +366,10 @@ WOWDATA.register({
             ],
             "finger": [
               {
-                "id": 2039,
-                "name": "Plains Ring",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "world-drop",
-                  "zone": "Razorfen Kraul"
-                },
-                "note": "Stamina/Intellect filler, Unique-Equipped, BoE"
-              },
-              {
                 "id": 1076,
                 "name": "Defias Renegade Ring",
                 "quality": "uncommon",
-                "rank": 2,
+                "rank": 1,
                 "source": {
                   "type": "drop",
                   "instance": "The Stockade",
@@ -485,19 +435,6 @@ WOWDATA.register({
                 "source": {
                   "type": "crafted",
                   "detail": "Blacksmithing"
-                }
-              }
-            ],
-            "neck": [
-              {
-                "id": 7731,
-                "name": "Ghostshard Talisman",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scarlet Monastery - Graveyard",
-                  "boss": "Azshir the Sleepless"
                 }
               }
             ],
@@ -637,16 +574,6 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Scarlet Monastery"
                 }
-              },
-              {
-                "id": 12996,
-                "name": "Band of Purification",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "world-drop"
-                },
-                "note": "BoE, may need AH"
               }
             ],
             "mainhand": [
@@ -1905,30 +1832,6 @@ WOWDATA.register({
                 }
               }
             ],
-            "finger": [
-              {
-                "id": 1156,
-                "name": "Lavishly Jeweled Ring",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Deadmines",
-                  "boss": "Gilnid"
-                },
-                "note": "Unique-Equipped"
-              },
-              {
-                "id": 12996,
-                "name": "Band of Purification",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "world-drop"
-                },
-                "note": "BoE, may need AH"
-              }
-            ],
             "mainhand": [
               {
                 "id": 6472,
@@ -1991,21 +1894,6 @@ WOWDATA.register({
                   "instance": "Razorfen Kraul",
                   "boss": "Overlord Ramtusk"
                 }
-              }
-            ],
-            "neck": [
-              {
-                "id": 6695,
-                "name": "Stygian Bone Amulet",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Razorfen Kraul",
-                  "boss": "Groyat the Blind Hunter",
-                  "detail": "Rare spawn"
-                },
-                "note": "Stamina/Spirit itemization, but the best neck available this early"
               }
             ],
             "shoulder": [
@@ -2135,21 +2023,10 @@ WOWDATA.register({
             ],
             "finger": [
               {
-                "id": 2039,
-                "name": "Plains Ring",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "world-drop",
-                  "zone": "Razorfen Kraul"
-                },
-                "note": "Stamina/Intellect filler, Unique-Equipped, BoE"
-              },
-              {
                 "id": 1076,
                 "name": "Defias Renegade Ring",
                 "quality": "uncommon",
-                "rank": 2,
+                "rank": 1,
                 "source": {
                   "type": "drop",
                   "instance": "The Stockade",
@@ -2229,19 +2106,6 @@ WOWDATA.register({
                 "source": {
                   "type": "crafted",
                   "detail": "Blacksmithing"
-                }
-              }
-            ],
-            "neck": [
-              {
-                "id": 7731,
-                "name": "Ghostshard Talisman",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scarlet Monastery - Graveyard",
-                  "boss": "Azshir the Sleepless"
                 }
               }
             ],
@@ -2381,16 +2245,6 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Scarlet Monastery"
                 }
-              },
-              {
-                "id": 12996,
-                "name": "Band of Purification",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "world-drop"
-                },
-                "note": "BoE, may need AH"
               }
             ],
             "mainhand": [
@@ -3688,22 +3542,10 @@ WOWDATA.register({
             ],
             "finger": [
               {
-                "id": 1156,
-                "name": "Lavishly Jeweled Ring",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Deadmines",
-                  "boss": "Gilnid"
-                },
-                "note": "Unique-Equipped"
-              },
-              {
                 "id": 12996,
                 "name": "Band of Purification",
                 "quality": "rare",
-                "rank": 2,
+                "rank": 1,
                 "source": {
                   "type": "world-drop"
                 },

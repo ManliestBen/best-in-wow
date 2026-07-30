@@ -1,7 +1,4 @@
-/* BiS Companion data — TBC Classic Hunter (Beast Mastery / Marksmanship / Survival) best-in-slot gear.
-   Sources: Wowhead TBC Classic & Icy Veins TBC Classic hunter BiS guides; all item IDs verified against wowhead.com/tbc tooltips. */
-WOWDATA.register(
-{
+WOWDATA.register({
   "kind": "bis",
   "expansion": "tbc",
   "class": "hunter",
@@ -3719,20 +3716,6 @@ WOWDATA.register(
                 }
               }
             ],
-            "offhand": [
-              {
-                "id": 34329,
-                "name": "Crux of the Apocalypse",
-                "quality": "epic",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Sunwell Plateau",
-                  "boss": "Kil'jaeden"
-                },
-                "note": "Only when dual-wielding instead of the 2H Shivering Felspine"
-              }
-            ],
             "ranged": [
               {
                 "id": 34334,
@@ -3763,5 +3746,4 @@ WOWDATA.register(
       ]
     }
   ]
-}
-);
+});

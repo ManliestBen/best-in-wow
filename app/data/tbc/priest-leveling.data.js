@@ -164,20 +164,6 @@ WOWDATA.register({
                   "quest": "The Unsent Letter",
                   "zone": "Stormwind City"
                 }
-              },
-              {
-                "id": 6414,
-                "name": "Seal of Sylvanas",
-                "quality": "rare",
-                "rank": 3,
-                "faction": "horde",
-                "source": {
-                  "type": "quest",
-                  "quest": "Arugal Must Die",
-                  "zone": "Sepulcher, Silverpine Forest",
-                  "detail": "Shadowfang Keep lead-in chain"
-                },
-                "note": "Str/Stam rather than caster stats, but fills Horde's 2nd ring slot"
               }
             ],
             "neck": [
@@ -701,21 +687,6 @@ WOWDATA.register({
                 }
               }
             ],
-            "offhand": [
-              {
-                "id": 7685,
-                "name": "Orb of the Forgotten Seer",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scarlet Monastery",
-                  "boss": "Bloodmage Thalnos",
-                  "detail": "Graveyard wing"
-                },
-                "note": "Pairs with the 1H Hand of Righteousness; leave empty if using the 2H Illusionary Rod"
-              }
-            ],
             "wrist": [
               {
                 "id": 13106,
@@ -971,20 +942,6 @@ WOWDATA.register({
                   "boss": "Witch Doctor Zum'rah",
                   "detail": "two-handed staff"
                 }
-              }
-            ],
-            "offhand": [
-              {
-                "id": 17737,
-                "name": "Cloud Stone",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Maraudon",
-                  "boss": "Landslide"
-                },
-                "note": "Only useful with a 1H mainhand; this slot stays empty while using the 2H Zum'rah's Vexing Cane"
               }
             ],
             "back": [
@@ -1309,21 +1266,6 @@ WOWDATA.register({
                   "boss": "Skul"
                 }
               }
-            ],
-            "offhand": [
-              {
-                "id": 11904,
-                "name": "Spirit of Aquementas",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "It's Dangerous to Go Alone",
-                  "zone": "Un'Goro Crater",
-                  "detail": "Linken's Boomerang chain"
-                },
-                "note": "BoP; +20 spell dmg/healing. Pairs with the 1H Hammer of Grace below; leave empty if using the 2H Staff of Balzaphon"
-              }
             ]
           }
         },
@@ -1553,22 +1495,6 @@ WOWDATA.register({
                 "note": "BoP"
               }
             ],
-            "offhand": [
-              {
-                "id": 13353,
-                "name": "Book of the Dead",
-                "quality": "epic",
-                "rank": 1,
-                "faction": "both",
-                "source": {
-                  "type": "drop",
-                  "instance": "Stratholme",
-                  "boss": "Balnazzar",
-                  "detail": "Undead side, final boss"
-                },
-                "note": "BoP"
-              }
-            ],
             "ranged": [
               {
                 "id": 25939,
@@ -1782,20 +1708,6 @@ WOWDATA.register({
                   "zone": "Blade's Edge Mountains"
                 },
                 "note": "BoP, Unique; distinct from Keeper's Ring of Piety"
-              }
-            ],
-            "offhand": [
-              {
-                "id": 29330,
-                "name": "The Saga of Terokk",
-                "quality": "rare",
-                "rank": 1,
-                "faction": "both",
-                "source": {
-                  "type": "quest",
-                  "instance": "Sethekk Halls",
-                  "quest": "Terokk's Legacy"
-                }
               }
             ],
             "mainhand": [
@@ -2059,20 +1971,6 @@ WOWDATA.register({
                   "quest": "The Unsent Letter",
                   "zone": "Stormwind City"
                 }
-              },
-              {
-                "id": 6414,
-                "name": "Seal of Sylvanas",
-                "quality": "rare",
-                "rank": 3,
-                "faction": "horde",
-                "source": {
-                  "type": "quest",
-                  "quest": "Arugal Must Die",
-                  "zone": "Sepulcher, Silverpine Forest",
-                  "detail": "Shadowfang Keep lead-in chain"
-                },
-                "note": "Str/Stam rather than caster stats, but fills Horde's 2nd ring slot"
               }
             ],
             "neck": [
@@ -2596,21 +2494,6 @@ WOWDATA.register({
                 }
               }
             ],
-            "offhand": [
-              {
-                "id": 7685,
-                "name": "Orb of the Forgotten Seer",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scarlet Monastery",
-                  "boss": "Bloodmage Thalnos",
-                  "detail": "Graveyard wing"
-                },
-                "note": "Pairs with the 1H Hand of Righteousness; leave empty if using the 2H Illusionary Rod"
-              }
-            ],
             "wrist": [
               {
                 "id": 13106,
@@ -2866,20 +2749,6 @@ WOWDATA.register({
                   "boss": "Witch Doctor Zum'rah",
                   "detail": "two-handed staff"
                 }
-              }
-            ],
-            "offhand": [
-              {
-                "id": 17737,
-                "name": "Cloud Stone",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Maraudon",
-                  "boss": "Landslide"
-                },
-                "note": "Only useful with a 1H mainhand; this slot stays empty while using the 2H Zum'rah's Vexing Cane"
               }
             ],
             "back": [
@@ -3204,21 +3073,6 @@ WOWDATA.register({
                   "boss": "Skul"
                 }
               }
-            ],
-            "offhand": [
-              {
-                "id": 11904,
-                "name": "Spirit of Aquementas",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "It's Dangerous to Go Alone",
-                  "zone": "Un'Goro Crater",
-                  "detail": "Linken's Boomerang chain"
-                },
-                "note": "BoP; +20 spell dmg/healing. Pairs with the 1H Hammer of Grace below; leave empty if using the 2H Staff of Balzaphon"
-              }
             ]
           }
         },
@@ -3448,22 +3302,6 @@ WOWDATA.register({
                 "note": "BoP"
               }
             ],
-            "offhand": [
-              {
-                "id": 13353,
-                "name": "Book of the Dead",
-                "quality": "epic",
-                "rank": 1,
-                "faction": "both",
-                "source": {
-                  "type": "drop",
-                  "instance": "Stratholme",
-                  "boss": "Balnazzar",
-                  "detail": "Undead side, final boss"
-                },
-                "note": "BoP"
-              }
-            ],
             "ranged": [
               {
                 "id": 25939,
@@ -3677,20 +3515,6 @@ WOWDATA.register({
                   "zone": "Blade's Edge Mountains"
                 },
                 "note": "BoP, Unique; distinct from Keeper's Ring of Piety"
-              }
-            ],
-            "offhand": [
-              {
-                "id": 29330,
-                "name": "The Saga of Terokk",
-                "quality": "rare",
-                "rank": 1,
-                "faction": "both",
-                "source": {
-                  "type": "quest",
-                  "instance": "Sethekk Halls",
-                  "quest": "Terokk's Legacy"
-                }
               }
             ],
             "mainhand": [
@@ -3954,20 +3778,6 @@ WOWDATA.register({
                   "quest": "The Unsent Letter",
                   "zone": "Stormwind City"
                 }
-              },
-              {
-                "id": 6414,
-                "name": "Seal of Sylvanas",
-                "quality": "rare",
-                "rank": 3,
-                "faction": "horde",
-                "source": {
-                  "type": "quest",
-                  "quest": "Arugal Must Die",
-                  "zone": "Sepulcher, Silverpine Forest",
-                  "detail": "Shadowfang Keep lead-in chain"
-                },
-                "note": "Str/Stam rather than caster stats, but fills Horde's 2nd ring slot"
               }
             ],
             "neck": [
@@ -4491,21 +4301,6 @@ WOWDATA.register({
                 }
               }
             ],
-            "offhand": [
-              {
-                "id": 7685,
-                "name": "Orb of the Forgotten Seer",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scarlet Monastery",
-                  "boss": "Bloodmage Thalnos",
-                  "detail": "Graveyard wing"
-                },
-                "note": "Pairs with the 1H Hand of Righteousness; leave empty if using the 2H Illusionary Rod"
-              }
-            ],
             "wrist": [
               {
                 "id": 13106,
@@ -4761,20 +4556,6 @@ WOWDATA.register({
                   "boss": "Witch Doctor Zum'rah",
                   "detail": "two-handed staff"
                 }
-              }
-            ],
-            "offhand": [
-              {
-                "id": 17737,
-                "name": "Cloud Stone",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Maraudon",
-                  "boss": "Landslide"
-                },
-                "note": "Only useful with a 1H mainhand; this slot stays empty while using the 2H Zum'rah's Vexing Cane"
               }
             ],
             "back": [
@@ -5099,21 +4880,6 @@ WOWDATA.register({
                   "boss": "Skul"
                 }
               }
-            ],
-            "offhand": [
-              {
-                "id": 11904,
-                "name": "Spirit of Aquementas",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "It's Dangerous to Go Alone",
-                  "zone": "Un'Goro Crater",
-                  "detail": "Linken's Boomerang chain"
-                },
-                "note": "BoP; +20 spell dmg/healing. Pairs with the 1H Hammer of Grace below; leave empty if using the 2H Staff of Balzaphon"
-              }
             ]
           }
         },
@@ -5343,22 +5109,6 @@ WOWDATA.register({
                 "note": "BoP"
               }
             ],
-            "offhand": [
-              {
-                "id": 13353,
-                "name": "Book of the Dead",
-                "quality": "epic",
-                "rank": 1,
-                "faction": "both",
-                "source": {
-                  "type": "drop",
-                  "instance": "Stratholme",
-                  "boss": "Balnazzar",
-                  "detail": "Undead side, final boss"
-                },
-                "note": "BoP"
-              }
-            ],
             "ranged": [
               {
                 "id": 25939,
@@ -5572,20 +5322,6 @@ WOWDATA.register({
                   "zone": "Blade's Edge Mountains"
                 },
                 "note": "BoP, Unique; distinct from Keeper's Ring of Piety"
-              }
-            ],
-            "offhand": [
-              {
-                "id": 29330,
-                "name": "The Saga of Terokk",
-                "quality": "rare",
-                "rank": 1,
-                "faction": "both",
-                "source": {
-                  "type": "quest",
-                  "instance": "Sethekk Halls",
-                  "quest": "Terokk's Legacy"
-                }
               }
             ],
             "mainhand": [

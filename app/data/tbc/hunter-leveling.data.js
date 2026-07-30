@@ -103,17 +103,6 @@ WOWDATA.register({
                   "type": "crafted",
                   "detail": "Leatherworking — same recipe line as Deviate Scale Belt, cheap BoE"
                 }
-              },
-              {
-                "id": 10401,
-                "name": "Blackened Defias Gloves",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Deadmines",
-                  "boss": "Edwin VanCleef"
-                }
               }
             ],
             "waist": [
@@ -264,19 +253,6 @@ WOWDATA.register({
             29
           ],
           "slots": {
-            "head": [
-              {
-                "id": 6686,
-                "name": "Tusken Helm",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Razorfen Kraul",
-                  "boss": "Overlord Ramtusk"
-                }
-              }
-            ],
             "neck": [
               {
                 "id": 6695,
@@ -332,17 +308,6 @@ WOWDATA.register({
                   "zone": "Westfall",
                   "detail": "Final reward, quest giver Gryan Stoutmantle"
                 }
-              },
-              {
-                "id": 1488,
-                "name": "Avenger's Armor",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "world-drop",
-                  "zone": "Razorfen Kraul"
-                },
-                "note": "BoE — faction-neutral alternative to the Alliance-only Tunic of Westfall"
               }
             ],
             "wrist": [
@@ -355,19 +320,6 @@ WOWDATA.register({
                   "type": "world-drop"
                 },
                 "note": "BoE"
-              }
-            ],
-            "hands": [
-              {
-                "id": 6906,
-                "name": "Algae Fists",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Blackfathom Deeps",
-                  "boss": "Gelihast"
-                }
               }
             ],
             "waist": [
@@ -392,19 +344,6 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Wailing Caverns"
                 }
-              }
-            ],
-            "feet": [
-              {
-                "id": 3484,
-                "name": "Green Iron Boots",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "crafted",
-                  "detail": "Blacksmithing"
-                },
-                "note": "Can be pricey on AH without a Blacksmithing crafter"
               }
             ],
             "finger": [
@@ -572,30 +511,6 @@ WOWDATA.register({
                 }
               }
             ],
-            "wrist": [
-              {
-                "id": 9409,
-                "name": "Ironaya's Bracers",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Uldaman",
-                  "boss": "Ironaya"
-                }
-              },
-              {
-                "id": 10333,
-                "name": "Scarlet Wristguards",
-                "quality": "uncommon",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scarlet Monastery",
-                  "detail": "Armory trash"
-                }
-              }
-            ],
             "chest": [
               {
                 "id": 7374,
@@ -720,20 +635,6 @@ WOWDATA.register({
                   "detail": "Rare elite"
                 },
                 "note": "Two-hand sword; strong stat-stick even though ranged stays primary"
-              }
-            ],
-            "offhand": [
-              {
-                "id": 10761,
-                "name": "Coldrage Dagger",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Razorfen Downs",
-                  "boss": "Amnennar the Coldbringer"
-                },
-                "note": "Frost proc; pairs with a second 1H if not running the X'caliboar two-hander (hunters dual-wield from level 20)"
               }
             ],
             "ranged": [
@@ -969,14 +870,17 @@ WOWDATA.register({
             ],
             "offhand": [
               {
-                "id": 7943,
-                "name": "Wicked Mithril Blade",
-                "quality": "uncommon",
+                "id": 6802,
+                "name": "Sword of Omen",
+                "quality": "rare",
                 "rank": 1,
+                "faction": "horde",
                 "source": {
-                  "type": "crafted",
-                  "detail": "Blacksmithing (skill 225); pairs with Dazzling Mithril Rapier for dual-wield"
-                }
+                  "type": "quest",
+                  "quest": "Into the Scarlet Monastery",
+                  "zone": "Scarlet Monastery"
+                },
+                "note": "Horde-only"
               }
             ],
             "ranged": [
@@ -1022,17 +926,6 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Dire Maul",
                   "boss": "Immol'thar"
-                }
-              },
-              {
-                "id": 11755,
-                "name": "Verek's Collar",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Blackrock Depths",
-                  "boss": "Verek"
                 }
               }
             ],
@@ -1095,17 +988,6 @@ WOWDATA.register({
                   "instance": "Scholomance"
                 },
                 "note": "Rogue Cadaverous Garb set piece; solid Agility/Stamina leather regardless of class"
-              },
-              {
-                "id": 13944,
-                "name": "Tombstone Breastplate",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scholomance",
-                  "boss": "Darkmaster Gandling"
-                }
               }
             ],
             "wrist": [
@@ -1482,39 +1364,16 @@ WOWDATA.register({
             ],
             "offhand": [
               {
-                "id": 24356,
-                "name": "Wastewalker Shiv",
+                "id": 25764,
+                "name": "Mag'hari Fury Brand",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
-                  "type": "drop",
-                  "instance": "The Slave Pens",
-                  "boss": "Mennu the Betrayer"
-                }
-              }
-            ],
-            "ranged": [
-              {
-                "id": 25249,
-                "name": "Ranger's Recurved Bow",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "world-drop",
-                  "zone": "Hellfire Peninsula",
-                  "detail": "Drops from Shattered Hand Sharpshooter trash"
-                }
-              },
-              {
-                "id": 25248,
-                "name": "Talbuk Hunting Bow",
-                "quality": "uncommon",
-                "rank": 2,
-                "source": {
-                  "type": "world-drop",
-                  "zone": "Hellfire Peninsula",
-                  "detail": "Drops from Restless Shade trash"
-                }
+                  "type": "quest",
+                  "quest": "The Ring of Blood: The Final Challenge",
+                  "zone": "Nagrand"
+                },
+                "note": "Fist weapon"
               }
             ]
           }
@@ -1940,17 +1799,6 @@ WOWDATA.register({
                   "type": "crafted",
                   "detail": "Leatherworking — same recipe line as Deviate Scale Belt, cheap BoE"
                 }
-              },
-              {
-                "id": 10401,
-                "name": "Blackened Defias Gloves",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Deadmines",
-                  "boss": "Edwin VanCleef"
-                }
               }
             ],
             "waist": [
@@ -2101,19 +1949,6 @@ WOWDATA.register({
             29
           ],
           "slots": {
-            "head": [
-              {
-                "id": 6686,
-                "name": "Tusken Helm",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Razorfen Kraul",
-                  "boss": "Overlord Ramtusk"
-                }
-              }
-            ],
             "neck": [
               {
                 "id": 6695,
@@ -2169,17 +2004,6 @@ WOWDATA.register({
                   "zone": "Westfall",
                   "detail": "Final reward, quest giver Gryan Stoutmantle"
                 }
-              },
-              {
-                "id": 1488,
-                "name": "Avenger's Armor",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "world-drop",
-                  "zone": "Razorfen Kraul"
-                },
-                "note": "BoE — faction-neutral alternative to the Alliance-only Tunic of Westfall"
               }
             ],
             "wrist": [
@@ -2192,19 +2016,6 @@ WOWDATA.register({
                   "type": "world-drop"
                 },
                 "note": "BoE"
-              }
-            ],
-            "hands": [
-              {
-                "id": 6906,
-                "name": "Algae Fists",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Blackfathom Deeps",
-                  "boss": "Gelihast"
-                }
               }
             ],
             "waist": [
@@ -2229,19 +2040,6 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Wailing Caverns"
                 }
-              }
-            ],
-            "feet": [
-              {
-                "id": 3484,
-                "name": "Green Iron Boots",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "crafted",
-                  "detail": "Blacksmithing"
-                },
-                "note": "Can be pricey on AH without a Blacksmithing crafter"
               }
             ],
             "finger": [
@@ -2409,30 +2207,6 @@ WOWDATA.register({
                 }
               }
             ],
-            "wrist": [
-              {
-                "id": 9409,
-                "name": "Ironaya's Bracers",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Uldaman",
-                  "boss": "Ironaya"
-                }
-              },
-              {
-                "id": 10333,
-                "name": "Scarlet Wristguards",
-                "quality": "uncommon",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scarlet Monastery",
-                  "detail": "Armory trash"
-                }
-              }
-            ],
             "chest": [
               {
                 "id": 7374,
@@ -2557,20 +2331,6 @@ WOWDATA.register({
                   "detail": "Rare elite"
                 },
                 "note": "Two-hand sword; strong stat-stick even though ranged stays primary"
-              }
-            ],
-            "offhand": [
-              {
-                "id": 10761,
-                "name": "Coldrage Dagger",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Razorfen Downs",
-                  "boss": "Amnennar the Coldbringer"
-                },
-                "note": "Frost proc; pairs with a second 1H if not running the X'caliboar two-hander (hunters dual-wield from level 20)"
               }
             ],
             "ranged": [
@@ -2806,14 +2566,17 @@ WOWDATA.register({
             ],
             "offhand": [
               {
-                "id": 7943,
-                "name": "Wicked Mithril Blade",
-                "quality": "uncommon",
+                "id": 6802,
+                "name": "Sword of Omen",
+                "quality": "rare",
                 "rank": 1,
+                "faction": "horde",
                 "source": {
-                  "type": "crafted",
-                  "detail": "Blacksmithing (skill 225); pairs with Dazzling Mithril Rapier for dual-wield"
-                }
+                  "type": "quest",
+                  "quest": "Into the Scarlet Monastery",
+                  "zone": "Scarlet Monastery"
+                },
+                "note": "Horde-only"
               }
             ],
             "ranged": [
@@ -2859,17 +2622,6 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Dire Maul",
                   "boss": "Immol'thar"
-                }
-              },
-              {
-                "id": 11755,
-                "name": "Verek's Collar",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Blackrock Depths",
-                  "boss": "Verek"
                 }
               }
             ],
@@ -2932,17 +2684,6 @@ WOWDATA.register({
                   "instance": "Scholomance"
                 },
                 "note": "Rogue Cadaverous Garb set piece; solid Agility/Stamina leather regardless of class"
-              },
-              {
-                "id": 13944,
-                "name": "Tombstone Breastplate",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scholomance",
-                  "boss": "Darkmaster Gandling"
-                }
               }
             ],
             "wrist": [
@@ -3319,39 +3060,16 @@ WOWDATA.register({
             ],
             "offhand": [
               {
-                "id": 24356,
-                "name": "Wastewalker Shiv",
+                "id": 25764,
+                "name": "Mag'hari Fury Brand",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
-                  "type": "drop",
-                  "instance": "The Slave Pens",
-                  "boss": "Mennu the Betrayer"
-                }
-              }
-            ],
-            "ranged": [
-              {
-                "id": 25249,
-                "name": "Ranger's Recurved Bow",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "world-drop",
-                  "zone": "Hellfire Peninsula",
-                  "detail": "Drops from Shattered Hand Sharpshooter trash"
-                }
-              },
-              {
-                "id": 25248,
-                "name": "Talbuk Hunting Bow",
-                "quality": "uncommon",
-                "rank": 2,
-                "source": {
-                  "type": "world-drop",
-                  "zone": "Hellfire Peninsula",
-                  "detail": "Drops from Restless Shade trash"
-                }
+                  "type": "quest",
+                  "quest": "The Ring of Blood: The Final Challenge",
+                  "zone": "Nagrand"
+                },
+                "note": "Fist weapon"
               }
             ]
           }
@@ -3777,17 +3495,6 @@ WOWDATA.register({
                   "type": "crafted",
                   "detail": "Leatherworking — same recipe line as Deviate Scale Belt, cheap BoE"
                 }
-              },
-              {
-                "id": 10401,
-                "name": "Blackened Defias Gloves",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Deadmines",
-                  "boss": "Edwin VanCleef"
-                }
               }
             ],
             "waist": [
@@ -3938,19 +3645,6 @@ WOWDATA.register({
             29
           ],
           "slots": {
-            "head": [
-              {
-                "id": 6686,
-                "name": "Tusken Helm",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Razorfen Kraul",
-                  "boss": "Overlord Ramtusk"
-                }
-              }
-            ],
             "neck": [
               {
                 "id": 6695,
@@ -4006,17 +3700,6 @@ WOWDATA.register({
                   "zone": "Westfall",
                   "detail": "Final reward, quest giver Gryan Stoutmantle"
                 }
-              },
-              {
-                "id": 1488,
-                "name": "Avenger's Armor",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "world-drop",
-                  "zone": "Razorfen Kraul"
-                },
-                "note": "BoE — faction-neutral alternative to the Alliance-only Tunic of Westfall"
               }
             ],
             "wrist": [
@@ -4029,19 +3712,6 @@ WOWDATA.register({
                   "type": "world-drop"
                 },
                 "note": "BoE"
-              }
-            ],
-            "hands": [
-              {
-                "id": 6906,
-                "name": "Algae Fists",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Blackfathom Deeps",
-                  "boss": "Gelihast"
-                }
               }
             ],
             "waist": [
@@ -4066,19 +3736,6 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Wailing Caverns"
                 }
-              }
-            ],
-            "feet": [
-              {
-                "id": 3484,
-                "name": "Green Iron Boots",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "crafted",
-                  "detail": "Blacksmithing"
-                },
-                "note": "Can be pricey on AH without a Blacksmithing crafter"
               }
             ],
             "finger": [
@@ -4246,30 +3903,6 @@ WOWDATA.register({
                 }
               }
             ],
-            "wrist": [
-              {
-                "id": 9409,
-                "name": "Ironaya's Bracers",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Uldaman",
-                  "boss": "Ironaya"
-                }
-              },
-              {
-                "id": 10333,
-                "name": "Scarlet Wristguards",
-                "quality": "uncommon",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scarlet Monastery",
-                  "detail": "Armory trash"
-                }
-              }
-            ],
             "chest": [
               {
                 "id": 7374,
@@ -4394,20 +4027,6 @@ WOWDATA.register({
                   "detail": "Rare elite"
                 },
                 "note": "Two-hand sword; strong stat-stick even though ranged stays primary"
-              }
-            ],
-            "offhand": [
-              {
-                "id": 10761,
-                "name": "Coldrage Dagger",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Razorfen Downs",
-                  "boss": "Amnennar the Coldbringer"
-                },
-                "note": "Frost proc; pairs with a second 1H if not running the X'caliboar two-hander (hunters dual-wield from level 20)"
               }
             ],
             "ranged": [
@@ -4643,14 +4262,17 @@ WOWDATA.register({
             ],
             "offhand": [
               {
-                "id": 7943,
-                "name": "Wicked Mithril Blade",
-                "quality": "uncommon",
+                "id": 6802,
+                "name": "Sword of Omen",
+                "quality": "rare",
                 "rank": 1,
+                "faction": "horde",
                 "source": {
-                  "type": "crafted",
-                  "detail": "Blacksmithing (skill 225); pairs with Dazzling Mithril Rapier for dual-wield"
-                }
+                  "type": "quest",
+                  "quest": "Into the Scarlet Monastery",
+                  "zone": "Scarlet Monastery"
+                },
+                "note": "Horde-only"
               }
             ],
             "ranged": [
@@ -4696,17 +4318,6 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Dire Maul",
                   "boss": "Immol'thar"
-                }
-              },
-              {
-                "id": 11755,
-                "name": "Verek's Collar",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Blackrock Depths",
-                  "boss": "Verek"
                 }
               }
             ],
@@ -4769,17 +4380,6 @@ WOWDATA.register({
                   "instance": "Scholomance"
                 },
                 "note": "Rogue Cadaverous Garb set piece; solid Agility/Stamina leather regardless of class"
-              },
-              {
-                "id": 13944,
-                "name": "Tombstone Breastplate",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scholomance",
-                  "boss": "Darkmaster Gandling"
-                }
               }
             ],
             "wrist": [
@@ -5156,39 +4756,16 @@ WOWDATA.register({
             ],
             "offhand": [
               {
-                "id": 24356,
-                "name": "Wastewalker Shiv",
+                "id": 25764,
+                "name": "Mag'hari Fury Brand",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
-                  "type": "drop",
-                  "instance": "The Slave Pens",
-                  "boss": "Mennu the Betrayer"
-                }
-              }
-            ],
-            "ranged": [
-              {
-                "id": 25249,
-                "name": "Ranger's Recurved Bow",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "world-drop",
-                  "zone": "Hellfire Peninsula",
-                  "detail": "Drops from Shattered Hand Sharpshooter trash"
-                }
-              },
-              {
-                "id": 25248,
-                "name": "Talbuk Hunting Bow",
-                "quality": "uncommon",
-                "rank": 2,
-                "source": {
-                  "type": "world-drop",
-                  "zone": "Hellfire Peninsula",
-                  "detail": "Drops from Restless Shade trash"
-                }
+                  "type": "quest",
+                  "quest": "The Ring of Blood: The Final Challenge",
+                  "zone": "Nagrand"
+                },
+                "note": "Fist weapon"
               }
             ]
           }

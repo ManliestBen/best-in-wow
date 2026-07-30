@@ -366,15 +366,16 @@ WOWDATA.register({
             ],
             "mainhand": [
               {
-                "id": 2816,
-                "name": "Death Speaker Scepter",
+                "id": 6505,
+                "name": "Crescent Staff",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
-                  "type": "drop",
-                  "instance": "Razorfen Kraul",
-                  "boss": "Death Speaker Jargba"
-                }
+                  "type": "quest",
+                  "quest": "Leaders of the Fang",
+                  "instance": "Wailing Caverns"
+                },
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
               }
             ]
           }
@@ -566,7 +567,7 @@ WOWDATA.register({
                 "id": 6806,
                 "name": "Dancing Flame",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 2,
                 "faction": "horde",
                 "source": {
                   "type": "quest",
@@ -845,33 +846,6 @@ WOWDATA.register({
                   "detail": "Requires level 42"
                 }
               }
-            ],
-            "offhand": [
-              {
-                "id": 7515,
-                "name": "Celestial Orb",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "Power in Uldaman",
-                  "instance": "Uldaman",
-                  "boss": "Obsidian Sentinel",
-                  "detail": "Choice reward alongside Celestial Stave; requires level 40; has a mana-restore use effect"
-                }
-              },
-              {
-                "id": 17737,
-                "name": "Cloud Stone",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Maraudon",
-                  "boss": "Landslide",
-                  "detail": "Requires level 48"
-                }
-              }
             ]
           }
         },
@@ -1074,20 +1048,10 @@ WOWDATA.register({
                 }
               },
               {
-                "id": 14545,
-                "name": "Ghostloom Leggings",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scholomance"
-                }
-              },
-              {
                 "id": 13170,
                 "name": "Skyshroud Leggings",
                 "quality": "rare",
-                "rank": 3,
+                "rank": 2,
                 "source": {
                   "type": "drop",
                   "instance": "Blackrock Spire",
@@ -1137,7 +1101,7 @@ WOWDATA.register({
                 "id": 12545,
                 "name": "Eye of Orgrimmar",
                 "quality": "rare",
-                "rank": 2,
+                "rank": 3,
                 "faction": "horde",
                 "source": {
                   "type": "quest",
@@ -1183,20 +1147,6 @@ WOWDATA.register({
                   "instance": "Stratholme",
                   "boss": "Balzaphon"
                 }
-              }
-            ],
-            "offhand": [
-              {
-                "id": 23156,
-                "name": "Blackwood's Thigh",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scholomance",
-                  "boss": "Lord Blackwood"
-                },
-                "note": "Requires level 57"
               }
             ],
             "ranged": [
@@ -1421,21 +1371,6 @@ WOWDATA.register({
                 }
               }
             ],
-            "offhand": [
-              {
-                "id": 17737,
-                "name": "Cloud Stone",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Maraudon",
-                  "boss": "Landslide",
-                  "detail": "Requires level 48"
-                },
-                "note": "Carries over — pairs with a 1H alt; empty once you're using the 2H Crystalfire Staff"
-              }
-            ],
             "ranged": [
               {
                 "id": 25939,
@@ -1657,16 +1592,15 @@ WOWDATA.register({
             ],
             "mainhand": [
               {
-                "id": 27937,
-                "name": "Sky Breaker",
+                "id": 27868,
+                "name": "Runesong Dagger",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
-                  "instance": "Auchenai Crypts",
-                  "boss": "Avatar of the Martyred"
-                },
-                "note": "1H mace — huge spell damage roll"
+                  "instance": "The Shattered Halls",
+                  "boss": "Warbringer O'mrogg"
+                }
               }
             ],
             "offhand": [
@@ -2072,15 +2006,16 @@ WOWDATA.register({
             ],
             "mainhand": [
               {
-                "id": 2816,
-                "name": "Death Speaker Scepter",
+                "id": 6505,
+                "name": "Crescent Staff",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
-                  "type": "drop",
-                  "instance": "Razorfen Kraul",
-                  "boss": "Death Speaker Jargba"
-                }
+                  "type": "quest",
+                  "quest": "Leaders of the Fang",
+                  "instance": "Wailing Caverns"
+                },
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
               }
             ]
           }
@@ -2272,7 +2207,7 @@ WOWDATA.register({
                 "id": 6806,
                 "name": "Dancing Flame",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 2,
                 "faction": "horde",
                 "source": {
                   "type": "quest",
@@ -2551,33 +2486,6 @@ WOWDATA.register({
                   "detail": "Requires level 42"
                 }
               }
-            ],
-            "offhand": [
-              {
-                "id": 7515,
-                "name": "Celestial Orb",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "Power in Uldaman",
-                  "instance": "Uldaman",
-                  "boss": "Obsidian Sentinel",
-                  "detail": "Choice reward alongside Celestial Stave; requires level 40; has a mana-restore use effect"
-                }
-              },
-              {
-                "id": 17737,
-                "name": "Cloud Stone",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Maraudon",
-                  "boss": "Landslide",
-                  "detail": "Requires level 48"
-                }
-              }
             ]
           }
         },
@@ -2792,20 +2700,10 @@ WOWDATA.register({
                 }
               },
               {
-                "id": 14545,
-                "name": "Ghostloom Leggings",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scholomance"
-                }
-              },
-              {
                 "id": 13170,
                 "name": "Skyshroud Leggings",
                 "quality": "rare",
-                "rank": 3,
+                "rank": 2,
                 "source": {
                   "type": "drop",
                   "instance": "Blackrock Spire",
@@ -2855,7 +2753,7 @@ WOWDATA.register({
                 "id": 12545,
                 "name": "Eye of Orgrimmar",
                 "quality": "rare",
-                "rank": 2,
+                "rank": 3,
                 "faction": "horde",
                 "source": {
                   "type": "quest",
@@ -2901,20 +2799,6 @@ WOWDATA.register({
                   "instance": "Stratholme",
                   "boss": "Balzaphon"
                 }
-              }
-            ],
-            "offhand": [
-              {
-                "id": 23156,
-                "name": "Blackwood's Thigh",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scholomance",
-                  "boss": "Lord Blackwood"
-                },
-                "note": "Requires level 57"
               }
             ],
             "ranged": [
@@ -3139,21 +3023,6 @@ WOWDATA.register({
                 }
               }
             ],
-            "offhand": [
-              {
-                "id": 17737,
-                "name": "Cloud Stone",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Maraudon",
-                  "boss": "Landslide",
-                  "detail": "Requires level 48"
-                },
-                "note": "Carries over — pairs with a 1H alt; empty once you're using the 2H Crystalfire Staff"
-              }
-            ],
             "ranged": [
               {
                 "id": 25939,
@@ -3375,16 +3244,15 @@ WOWDATA.register({
             ],
             "mainhand": [
               {
-                "id": 27937,
-                "name": "Sky Breaker",
+                "id": 27868,
+                "name": "Runesong Dagger",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
-                  "instance": "Auchenai Crypts",
-                  "boss": "Avatar of the Martyred"
-                },
-                "note": "1H mace — huge spell damage roll"
+                  "instance": "The Shattered Halls",
+                  "boss": "Warbringer O'mrogg"
+                }
               }
             ],
             "offhand": [
@@ -3790,15 +3658,16 @@ WOWDATA.register({
             ],
             "mainhand": [
               {
-                "id": 2816,
-                "name": "Death Speaker Scepter",
+                "id": 6505,
+                "name": "Crescent Staff",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
-                  "type": "drop",
-                  "instance": "Razorfen Kraul",
-                  "boss": "Death Speaker Jargba"
-                }
+                  "type": "quest",
+                  "quest": "Leaders of the Fang",
+                  "instance": "Wailing Caverns"
+                },
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
               }
             ]
           }
@@ -3990,7 +3859,7 @@ WOWDATA.register({
                 "id": 6806,
                 "name": "Dancing Flame",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 2,
                 "faction": "horde",
                 "source": {
                   "type": "quest",
@@ -4269,33 +4138,6 @@ WOWDATA.register({
                   "detail": "Requires level 42"
                 }
               }
-            ],
-            "offhand": [
-              {
-                "id": 7515,
-                "name": "Celestial Orb",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "Power in Uldaman",
-                  "instance": "Uldaman",
-                  "boss": "Obsidian Sentinel",
-                  "detail": "Choice reward alongside Celestial Stave; requires level 40; has a mana-restore use effect"
-                }
-              },
-              {
-                "id": 17737,
-                "name": "Cloud Stone",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Maraudon",
-                  "boss": "Landslide",
-                  "detail": "Requires level 48"
-                }
-              }
             ]
           }
         },
@@ -4498,20 +4340,10 @@ WOWDATA.register({
                 }
               },
               {
-                "id": 14545,
-                "name": "Ghostloom Leggings",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scholomance"
-                }
-              },
-              {
                 "id": 13170,
                 "name": "Skyshroud Leggings",
                 "quality": "rare",
-                "rank": 3,
+                "rank": 2,
                 "source": {
                   "type": "drop",
                   "instance": "Blackrock Spire",
@@ -4561,7 +4393,7 @@ WOWDATA.register({
                 "id": 12545,
                 "name": "Eye of Orgrimmar",
                 "quality": "rare",
-                "rank": 2,
+                "rank": 3,
                 "faction": "horde",
                 "source": {
                   "type": "quest",
@@ -4858,21 +4690,6 @@ WOWDATA.register({
                 }
               }
             ],
-            "offhand": [
-              {
-                "id": 17737,
-                "name": "Cloud Stone",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Maraudon",
-                  "boss": "Landslide",
-                  "detail": "Requires level 48"
-                },
-                "note": "Carries over — pairs with a 1H alt; empty once you're using the 2H Crystalfire Staff"
-              }
-            ],
             "ranged": [
               {
                 "id": 25939,
@@ -5094,16 +4911,15 @@ WOWDATA.register({
             ],
             "mainhand": [
               {
-                "id": 27937,
-                "name": "Sky Breaker",
+                "id": 27868,
+                "name": "Runesong Dagger",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
-                  "instance": "Auchenai Crypts",
-                  "boss": "Avatar of the Martyred"
-                },
-                "note": "1H mace — huge spell damage roll"
+                  "instance": "The Shattered Halls",
+                  "boss": "Warbringer O'mrogg"
+                }
               }
             ],
             "offhand": [

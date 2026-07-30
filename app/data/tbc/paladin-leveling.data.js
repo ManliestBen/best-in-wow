@@ -1,8 +1,4 @@
-/* BiS Companion data — TBC Classic Paladin leveling gear (lvl19-lvl65 brackets).
-   Endgame brackets (preraid/p1-p5) and spec metadata live in paladin.data.js.
-   All item IDs verified against nether.wowhead.com/tbc/tooltip/item/<id>. */
-WOWDATA.register(
-{
+WOWDATA.register({
   "kind": "bis",
   "expansion": "tbc",
   "class": "paladin",
@@ -58,18 +54,6 @@ WOWDATA.register(
                   "instance": "Wailing Caverns",
                   "quest": "The Glowing Shard chain"
                 }
-              },
-              {
-                "id": 5254,
-                "name": "Rugged Spaulders",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Shadowfang Keep",
-                  "boss": "Rethilgore"
-                },
-                "note": "Alliance-side pick"
               }
             ],
             "back": [
@@ -96,32 +80,6 @@ WOWDATA.register(
                   "instance": "The Deadmines",
                   "boss": "Captain Greenskin"
                 }
-              }
-            ],
-            "feet": [
-              {
-                "id": 10402,
-                "name": "Blackened Defias Boots",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Deadmines"
-                }
-              }
-            ],
-            "offhand": [
-              {
-                "id": 13245,
-                "name": "Kresh's Back",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Wailing Caverns",
-                  "boss": "Kresh"
-                },
-                "note": "stat-poor filler; no caster off-hand item exists this low"
               }
             ],
             "hands": [
@@ -381,18 +339,6 @@ WOWDATA.register(
                   "type": "drop",
                   "instance": "Razorfen Kraul",
                   "detail": "trash"
-                }
-              },
-              {
-                "id": 5351,
-                "name": "Bounty Hunter's Ring",
-                "quality": "uncommon",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "zone": "The Barrens",
-                  "boss": "Hezrul Bloodmark",
-                  "detail": "rare spawn"
                 }
               }
             ],
@@ -670,22 +616,10 @@ WOWDATA.register(
                 }
               },
               {
-                "id": 7686,
-                "name": "Ironspine's Eye",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scarlet Monastery",
-                  "boss": "Ironspine",
-                  "detail": "Graveyard wing, rare spawn"
-                }
-              },
-              {
                 "id": 2262,
                 "name": "Mark of Kern",
                 "quality": "rare",
-                "rank": 3,
+                "rank": 2,
                 "source": {
                   "type": "drop",
                   "instance": "Scarlet Monastery"
@@ -917,19 +851,6 @@ WOWDATA.register(
                 "source": {
                   "type": "crafted",
                   "detail": "Alchemy 200, BoP"
-                }
-              }
-            ],
-            "back": [
-              {
-                "id": 17739,
-                "name": "Grovekeeper's Drape",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Maraudon",
-                  "boss": "Celebras the Cursed"
                 }
               }
             ],
@@ -1222,7 +1143,7 @@ WOWDATA.register(
                 "id": 12545,
                 "name": "Eye of Orgrimmar",
                 "quality": "rare",
-                "rank": 2,
+                "rank": 3,
                 "faction": "horde",
                 "source": {
                   "type": "quest",
@@ -1980,21 +1901,10 @@ WOWDATA.register(
             ],
             "finger": [
               {
-                "id": 1156,
-                "name": "Lavishly Jeweled Ring",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Deadmines",
-                  "boss": "Gilnid"
-                }
-              },
-              {
                 "id": 12996,
                 "name": "Band of Purification",
                 "quality": "rare",
-                "rank": 2,
+                "rank": 1,
                 "source": {
                   "type": "world-drop"
                 },
@@ -2013,18 +1923,6 @@ WOWDATA.register(
                   "instance": "Ragefire Chasm",
                   "boss": "Jergosh the Invoker"
                 }
-              },
-              {
-                "id": 1974,
-                "name": "Mindthrust Bracers",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Shadowfang Keep",
-                  "detail": "trash (Son of Arugal)"
-                },
-                "note": "Alliance-side pick"
               }
             ],
             "legs": [
@@ -2273,19 +2171,6 @@ WOWDATA.register(
                 "source": {
                   "type": "crafted",
                   "detail": "Leatherworking; pattern sold by Kalldan Felmoon near Wailing Caverns, requires Deviate Scale farmed in the instance"
-                }
-              }
-            ],
-            "waist": [
-              {
-                "id": 6392,
-                "name": "Belt of Arugal",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Shadowfang Keep",
-                  "boss": "Archmage Arugal"
                 }
               }
             ],
@@ -3588,42 +3473,6 @@ WOWDATA.register(
             19
           ],
           "slots": {
-            "wrist": [
-              {
-                "id": 1974,
-                "name": "Mindthrust Bracers",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Shadowfang Keep",
-                  "detail": "trash (Son of Arugal)"
-                }
-              }
-            ],
-            "finger": [
-              {
-                "id": 1156,
-                "name": "Lavishly Jeweled Ring",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Deadmines",
-                  "boss": "Gilnid"
-                }
-              },
-              {
-                "id": 12996,
-                "name": "Band of Purification",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "world-drop"
-                },
-                "note": "BoE, may need AH"
-              }
-            ],
             "shoulder": [
               {
                 "id": 5404,
@@ -3799,20 +3648,6 @@ WOWDATA.register(
                 },
                 "note": "1H+shield leveling alt"
               }
-            ],
-            "offhand": [
-              {
-                "id": 5443,
-                "name": "Gold-plated Buckler",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Deadmines",
-                  "boss": "Miner Johnson"
-                },
-                "note": "1H+shield leveling alt; empty when using 2H"
-              }
             ]
           }
         },
@@ -3836,20 +3671,6 @@ WOWDATA.register(
                 }
               }
             ],
-            "neck": [
-              {
-                "id": 6695,
-                "name": "Stygian Bone Amulet",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Razorfen Kraul",
-                  "boss": "Groyat the Blind Hunter",
-                  "detail": "rare spawn"
-                }
-              }
-            ],
             "wrist": [
               {
                 "id": 18948,
@@ -3864,21 +3685,10 @@ WOWDATA.register(
             ],
             "finger": [
               {
-                "id": 2039,
-                "name": "Plains Ring",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Razorfen Kraul",
-                  "detail": "trash"
-                }
-              },
-              {
                 "id": 5351,
                 "name": "Bounty Hunter's Ring",
                 "quality": "uncommon",
-                "rank": 2,
+                "rank": 1,
                 "source": {
                   "type": "drop",
                   "zone": "The Barrens",
@@ -3938,7 +3748,7 @@ WOWDATA.register(
                 "id": 6323,
                 "name": "Baron's Scepter",
                 "quality": "rare",
-                "rank": 3,
+                "rank": 4,
                 "source": {
                   "type": "drop",
                   "instance": "Shadowfang Keep",
@@ -4035,20 +3845,6 @@ WOWDATA.register(
                 },
                 "note": "requires own Engineering 140 to use; only trinket obtainable this low"
               }
-            ],
-            "offhand": [
-              {
-                "id": 6320,
-                "name": "Commander's Crest",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Shadowfang Keep",
-                  "boss": "Commander Springvale"
-                },
-                "note": "1H+shield leveling alt; empty when using 2H"
-              }
             ]
           }
         },
@@ -4059,20 +3855,6 @@ WOWDATA.register(
             39
           ],
           "slots": {
-            "neck": [
-              {
-                "id": 7731,
-                "name": "Ghostshard Talisman",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scarlet Monastery",
-                  "boss": "Azshir the Sleepless",
-                  "detail": "Graveyard wing"
-                }
-              }
-            ],
             "head": [
               {
                 "id": 7719,
@@ -4291,26 +4073,11 @@ WOWDATA.register(
                 "id": 868,
                 "name": "Ardent Custodian",
                 "quality": "epic",
-                "rank": 3,
+                "rank": 4,
                 "source": {
                   "type": "world-drop"
                 },
                 "note": "notable BoE, can be pricey; 1H+shield leveling alt"
-              }
-            ],
-            "offhand": [
-              {
-                "id": 7726,
-                "name": "Aegis of the Scarlet Commander",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scarlet Monastery",
-                  "boss": "Scarlet Commander Mograine",
-                  "detail": "Cathedral wing"
-                },
-                "note": "empty when using 2H"
               }
             ]
           }
@@ -4535,25 +4302,13 @@ WOWDATA.register(
                 "id": 17943,
                 "name": "Fist of Stone",
                 "quality": "rare",
-                "rank": 3,
+                "rank": 4,
                 "source": {
                   "type": "drop",
                   "instance": "Maraudon",
                   "boss": "Landslide"
                 },
                 "note": "1H+shield leveling alt"
-              }
-            ],
-            "offhand": [
-              {
-                "id": 1979,
-                "name": "Wall of the Dead",
-                "quality": "epic",
-                "rank": 1,
-                "source": {
-                  "type": "world-drop"
-                },
-                "note": "expensive BoE epic; empty when using 2H"
               }
             ]
           }
@@ -4565,19 +4320,6 @@ WOWDATA.register(
             57
           ],
           "slots": {
-            "neck": [
-              {
-                "id": 18723,
-                "name": "Animated Chain Necklace",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Stratholme",
-                  "boss": "Ramstein the Gorger"
-                }
-              }
-            ],
             "back": [
               {
                 "id": 11677,
@@ -4614,31 +4356,6 @@ WOWDATA.register(
                   "instance": "Stratholme",
                   "boss": "Ramstein the Gorger"
                 }
-              },
-              {
-                "id": 12926,
-                "name": "Flaming Band",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Blackrock Spire",
-                  "boss": "Pyroguard Emberseer"
-                }
-              }
-            ],
-            "head": [
-              {
-                "id": 18480,
-                "name": "Scarab Plate Helm",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Dire Maul",
-                  "detail": "Gordok Tribute chest, North wing"
-                },
-                "note": "minor unused Int roll; best plate head found"
               }
             ],
             "shoulder": [
@@ -4781,20 +4498,6 @@ WOWDATA.register(
                 }
               }
             ],
-            "offhand": [
-              {
-                "id": 10835,
-                "name": "Crest of Supremacy",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Sunken Temple",
-                  "boss": "Shade of Eranikus"
-                },
-                "note": "1H+shield leveling alt; empty when using 2H"
-              }
-            ],
             "ranged": [
               {
                 "id": 22400,
@@ -4816,18 +4519,6 @@ WOWDATA.register(
             64
           ],
           "slots": {
-            "head": [
-              {
-                "id": 8345,
-                "name": "Wolfshead Helm",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "crafted",
-                  "detail": "Leatherworking, classic pattern, BoE"
-                }
-              }
-            ],
             "hands": [
               {
                 "id": 25716,
@@ -4969,18 +4660,6 @@ WOWDATA.register(
                   "instance": "Dire Maul",
                   "detail": "Gordok Tribute chest, North wing"
                 }
-              },
-              {
-                "id": 24154,
-                "name": "Witching Band",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Hellfire Ramparts",
-                  "boss": "Vazruden",
-                  "detail": "Requires level 60"
-                }
               }
             ],
             "trinket": [
@@ -5040,21 +4719,6 @@ WOWDATA.register(
                   "instance": "Hellfire Ramparts",
                   "boss": "Omor the Unscarred"
                 }
-              }
-            ],
-            "offhand": [
-              {
-                "id": 29919,
-                "name": "Adamantine Kite Shield",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "Fel Orc Scavengers / Bonechewer Blood",
-                  "zone": "Hellfire Peninsula",
-                  "detail": "~level 58"
-                },
-                "note": "1H+shield leveling alt; empty when using 2H"
               }
             ],
             "ranged": [
@@ -5289,20 +4953,6 @@ WOWDATA.register(
                 "note": "earlier-accessible group quest"
               }
             ],
-            "offhand": [
-              {
-                "id": 27887,
-                "name": "Platinum Shield of the Valorous",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Shadow Labyrinth",
-                  "boss": "Ambassador Hellmaw"
-                },
-                "note": "1H+shield leveling alt; empty when using 2H"
-              }
-            ],
             "ranged": [
               {
                 "id": 31033,
@@ -5321,5 +4971,4 @@ WOWDATA.register(
       ]
     }
   ]
-}
-);
+});
