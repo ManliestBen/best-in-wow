@@ -439,7 +439,9 @@ WOWDATA.register({
                   "type": "crafted",
                   "detail": "Blacksmithing, BoE",
                   "profession": "Blacksmithing"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 30832,
@@ -449,7 +451,9 @@ WOWDATA.register({
                 "source": {
                   "type": "reputation",
                   "detail": "Lower City — Exalted"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 27868,
@@ -460,7 +464,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Shattered Halls",
                   "boss": "Warbringer O'mrogg"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               }
             ],
             "offhand": [
@@ -472,7 +478,9 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "33 Badge of Justice — G'eras, Shattrath"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Shield"
               },
               {
                 "id": 29273,
@@ -482,7 +490,8 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "25 Badge of Justice — G'eras, Shattrath"
-                }
+                },
+                "hand": "held"
               },
               {
                 "id": 28260,
@@ -493,7 +502,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Mechanar",
                   "boss": "Nethermancer Sepethrea"
-                }
+                },
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -506,7 +516,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Mechanar",
                   "boss": "Cache of the Legion"
-                }
+                },
+                "weaponType": "Totem"
               },
               {
                 "id": 29389,
@@ -516,7 +527,8 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "15 Badge of Justice — G'eras, Shattrath"
-                }
+                },
+                "weaponType": "Totem"
               }
             ]
           }
@@ -890,7 +902,9 @@ WOWDATA.register({
                   "zone": "Shadowmoon Valley",
                   "boss": "Doomwalker",
                   "detail": "World boss"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 28770,
@@ -901,7 +915,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Prince Malchezaar"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 32450,
@@ -911,7 +927,9 @@ WOWDATA.register({
                 "source": {
                   "type": "pvp",
                   "detail": "Season 1 — Arena Points"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               }
             ],
             "offhand": [
@@ -923,7 +941,9 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "33 Badge of Justice — G'eras, Shattrath"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Shield"
               },
               {
                 "id": 28603,
@@ -934,7 +954,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Nightbane"
-                }
+                },
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -947,7 +968,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Mechanar",
                   "boss": "Cache of the Legion"
-                }
+                },
+                "weaponType": "Totem"
               }
             ]
           }
@@ -1236,7 +1258,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Kil'jaeden"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 34182,
@@ -1247,7 +1271,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau"
                 },
-                "note": "2H staff — offhand stays empty"
+                "note": "2H staff — offhand stays empty",
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "offhand": [
@@ -1260,7 +1286,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Hyjal Summit",
                   "boss": "Archimonde"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Shield"
               },
               {
                 "id": 34179,
@@ -1271,7 +1299,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Brutallus"
-                }
+                },
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -1284,7 +1313,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Black Temple",
                   "boss": "Teron Gorefiend"
-                }
+                },
+                "weaponType": "Totem"
               }
             ]
           }
@@ -1671,7 +1701,9 @@ WOWDATA.register({
                   "instance": "Auchenai Crypts",
                   "boss": "Exarch Maladaar",
                   "detail": "Heroic only — 2.40 speed"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Axe"
               },
               {
                 "id": 28438,
@@ -1683,7 +1715,9 @@ WOWDATA.register({
                   "detail": "Blacksmithing — Master Hammersmith only, 2.70 speed",
                   "profession": "Blacksmithing"
                 },
-                "bop": true
+                "bop": true,
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 29348,
@@ -1695,7 +1729,9 @@ WOWDATA.register({
                   "instance": "The Shattered Halls",
                   "boss": "Warchief Kargath Bladefist",
                   "detail": "Heroic only"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Fist Weapon"
               }
             ],
             "offhand": [
@@ -1710,7 +1746,9 @@ WOWDATA.register({
                   "boss": "Exarch Maladaar",
                   "detail": "Heroic only — 2.40 speed"
                 },
-                "note": "Farm a second one"
+                "note": "Farm a second one",
+                "hand": "one",
+                "weaponType": "Axe"
               },
               {
                 "id": 31139,
@@ -1720,7 +1758,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop",
                   "detail": "BoE world drop — 2.70 speed"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Mace"
               }
             ],
             "ranged": [
@@ -1734,7 +1774,8 @@ WOWDATA.register({
                   "instance": "Mana-Tombs",
                   "boss": "Pandemonius",
                   "detail": "Heroic only"
-                }
+                },
+                "weaponType": "Totem"
               },
               {
                 "id": 27984,
@@ -1745,7 +1786,8 @@ WOWDATA.register({
                 "source": {
                   "type": "vendor",
                   "detail": "Honor Hold — Marks of Honor Hold"
-                }
+                },
+                "weaponType": "Totem"
               },
               {
                 "id": 27947,
@@ -1756,7 +1798,8 @@ WOWDATA.register({
                 "source": {
                   "type": "vendor",
                   "detail": "Thrallmar — Marks of Thrallmar"
-                }
+                },
+                "weaponType": "Totem"
               }
             ]
           }
@@ -2115,7 +2158,9 @@ WOWDATA.register({
                 "source": {
                   "type": "pvp",
                   "detail": "Season 1 — Arena Points, 2.60 speed"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Axe"
               },
               {
                 "id": 28767,
@@ -2127,7 +2172,9 @@ WOWDATA.register({
                   "instance": "Karazhan",
                   "boss": "Prince Malchezaar",
                   "detail": "2.60 speed"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Axe"
               },
               {
                 "id": 27872,
@@ -2139,7 +2186,9 @@ WOWDATA.register({
                   "instance": "Auchenai Crypts",
                   "boss": "Exarch Maladaar",
                   "detail": "Heroic only"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Axe"
               }
             ],
             "offhand": [
@@ -2152,7 +2201,9 @@ WOWDATA.register({
                   "type": "pvp",
                   "detail": "Season 1 — Arena Points, 2.60 speed"
                 },
-                "note": "Second Cleaver — keep both hands slow"
+                "note": "Second Cleaver — keep both hands slow",
+                "hand": "one",
+                "weaponType": "Axe"
               },
               {
                 "id": 27872,
@@ -2164,7 +2215,9 @@ WOWDATA.register({
                   "instance": "Auchenai Crypts",
                   "boss": "Exarch Maladaar",
                   "detail": "Heroic only"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Axe"
               }
             ],
             "ranged": [
@@ -2178,7 +2231,8 @@ WOWDATA.register({
                   "instance": "Mana-Tombs",
                   "boss": "Pandemonius",
                   "detail": "Heroic only"
-                }
+                },
+                "weaponType": "Totem"
               }
             ]
           }
@@ -2467,7 +2521,9 @@ WOWDATA.register({
                   "instance": "Sunwell Plateau",
                   "boss": "Kil'jaeden",
                   "detail": "2.60 speed fist"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Fist Weapon"
               }
             ],
             "offhand": [
@@ -2480,7 +2536,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "detail": "Trash drop — 2.60 speed fist"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Fist Weapon"
               }
             ],
             "ranged": [
@@ -2492,7 +2550,8 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "20 Badge of Justice — G'eras, Shattrath"
-                }
+                },
+                "weaponType": "Totem"
               }
             ]
           }
@@ -2893,7 +2952,9 @@ WOWDATA.register({
                   "type": "crafted",
                   "detail": "Blacksmithing, BoE",
                   "profession": "Blacksmithing"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 29353,
@@ -2905,7 +2966,9 @@ WOWDATA.register({
                   "instance": "Shadow Labyrinth",
                   "boss": "Murmur",
                   "detail": "Heroic only"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 29175,
@@ -2915,7 +2978,9 @@ WOWDATA.register({
                 "source": {
                   "type": "reputation",
                   "detail": "The Sha'tar — Exalted"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               }
             ],
             "offhand": [
@@ -2927,7 +2992,9 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "33 Badge of Justice — G'eras, Shattrath"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Shield"
               },
               {
                 "id": 29274,
@@ -2937,7 +3004,8 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "25 Badge of Justice — G'eras, Shattrath"
-                }
+                },
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -2951,7 +3019,8 @@ WOWDATA.register({
                   "instance": "The Slave Pens",
                   "boss": "Mennu the Betrayer",
                   "detail": "Heroic only"
-                }
+                },
+                "weaponType": "Totem"
               },
               {
                 "id": 25645,
@@ -2962,7 +3031,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "The Impotent Leader",
                   "zone": "Nagrand"
-                }
+                },
+                "weaponType": "Totem"
               }
             ]
           }
@@ -3329,7 +3399,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Prince Malchezaar"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 28522,
@@ -3340,7 +3412,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Maiden of Virtue"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               }
             ],
             "offhand": [
@@ -3353,7 +3427,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Magtheridon's Lair",
                   "boss": "Magtheridon"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Shield"
               },
               {
                 "id": 29267,
@@ -3363,7 +3439,9 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "33 Badge of Justice — G'eras, Shattrath"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Shield"
               }
             ],
             "ranged": [
@@ -3376,7 +3454,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Maiden of Virtue"
-                }
+                },
+                "weaponType": "Totem"
               },
               {
                 "id": 27544,
@@ -3388,7 +3467,8 @@ WOWDATA.register({
                   "instance": "The Slave Pens",
                   "boss": "Mennu the Betrayer",
                   "detail": "Heroic only"
-                }
+                },
+                "weaponType": "Totem"
               }
             ]
           }
@@ -3686,7 +3766,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Kil'jaeden"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 34199,
@@ -3696,7 +3778,9 @@ WOWDATA.register({
                 "source": {
                   "type": "drop",
                   "instance": "Sunwell Plateau"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               }
             ],
             "offhand": [
@@ -3709,7 +3793,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Eredar Twins"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Shield"
               },
               {
                 "id": 34206,
@@ -3721,7 +3807,8 @@ WOWDATA.register({
                   "instance": "Sunwell Plateau",
                   "boss": "Eredar Twins"
                 },
-                "note": "Held in off-hand — give up shield armor"
+                "note": "Held in off-hand — give up shield armor",
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -3735,7 +3822,8 @@ WOWDATA.register({
                   "instance": "Karazhan",
                   "boss": "Maiden of Virtue"
                 },
-                "note": "Still BiS from Phase 1"
+                "note": "Still BiS from Phase 1",
+                "weaponType": "Totem"
               },
               {
                 "id": 33505,
@@ -3745,7 +3833,8 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "15 Badge of Justice — G'eras, Shattrath"
-                }
+                },
+                "weaponType": "Totem"
               }
             ]
           }

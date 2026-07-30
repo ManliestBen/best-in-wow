@@ -431,7 +431,9 @@ WOWDATA.register({
                   "type": "pvp",
                   "detail": "Season 1 Arena Points vendor"
                 },
-                "note": "Best pre-raid healing mace if you PvP"
+                "note": "Best pre-raid healing mace if you PvP",
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 23556,
@@ -442,7 +444,9 @@ WOWDATA.register({
                   "type": "crafted",
                   "detail": "Blacksmithing (BoE)",
                   "profession": "Blacksmithing"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 29353,
@@ -454,7 +458,9 @@ WOWDATA.register({
                   "instance": "Shadow Labyrinth",
                   "boss": "Murmur",
                   "detail": "Heroic only"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               }
             ],
             "offhand": [
@@ -466,7 +472,9 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "33 Badge of Justice — G'eras, Shattrath"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Shield"
               },
               {
                 "id": 27772,
@@ -478,7 +486,9 @@ WOWDATA.register({
                   "instance": "The Underbog",
                   "boss": "The Black Stalker",
                   "detail": "Heroic only"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Shield"
               },
               {
                 "id": 29274,
@@ -489,7 +499,8 @@ WOWDATA.register({
                   "type": "badge",
                   "detail": "25 Badge of Justice — G'eras, Shattrath"
                 },
-                "note": "Held in off-hand (no shield)"
+                "note": "Held in off-hand (no shield)",
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -503,7 +514,8 @@ WOWDATA.register({
                   "instance": "The Botanica",
                   "boss": "Commander Sarannis"
                 },
-                "note": "Holy Light builds"
+                "note": "Holy Light builds",
+                "weaponType": "Libram"
               },
               {
                 "id": 25644,
@@ -514,7 +526,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "The Ultimate Bloodsport",
                   "zone": "Nagrand"
-                }
+                },
+                "weaponType": "Libram"
               }
             ]
           }
@@ -897,7 +910,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Prince Malchezaar"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 28522,
@@ -908,7 +923,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Maiden of Virtue"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 32451,
@@ -918,7 +935,9 @@ WOWDATA.register({
                 "source": {
                   "type": "pvp",
                   "detail": "Season 1 Arena Points vendor"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               }
             ],
             "offhand": [
@@ -931,7 +950,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Magtheridon's Lair",
                   "boss": "Magtheridon"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Shield"
               },
               {
                 "id": 29267,
@@ -941,7 +962,9 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "33 Badge of Justice — G'eras, Shattrath"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Shield"
               },
               {
                 "id": 28728,
@@ -953,7 +976,8 @@ WOWDATA.register({
                   "instance": "Karazhan",
                   "boss": "Shade of Aran"
                 },
-                "note": "Held in off-hand (no shield)"
+                "note": "Held in off-hand (no shield)",
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -966,7 +990,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Opera Event"
-                }
+                },
+                "weaponType": "Libram"
               },
               {
                 "id": 28296,
@@ -977,7 +1002,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Botanica",
                   "boss": "Commander Sarannis"
-                }
+                },
+                "weaponType": "Libram"
               }
             ]
           }
@@ -1331,7 +1357,9 @@ WOWDATA.register({
                   "instance": "Sunwell Plateau",
                   "boss": "Kil'jaeden"
                 },
-                "note": "Highly contested"
+                "note": "Highly contested",
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 34199,
@@ -1342,7 +1370,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Eredar Twins"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 32500,
@@ -1353,7 +1383,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Black Temple",
                   "boss": "Illidan Stormrage"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               }
             ],
             "offhand": [
@@ -1366,7 +1398,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "M'uru"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Shield"
               },
               {
                 "id": 34206,
@@ -1378,7 +1412,8 @@ WOWDATA.register({
                   "instance": "Sunwell Plateau",
                   "boss": "Eredar Twins"
                 },
-                "note": "Held in off-hand (haste, no shield)"
+                "note": "Held in off-hand (haste, no shield)",
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -1392,7 +1427,8 @@ WOWDATA.register({
                   "instance": "Serpentshrine Cavern",
                   "boss": "The Lurker Below"
                 },
-                "note": "Holy Light builds"
+                "note": "Holy Light builds",
+                "weaponType": "Libram"
               },
               {
                 "id": 23006,
@@ -1405,7 +1441,8 @@ WOWDATA.register({
                   "boss": "Noth the Plaguebringer",
                   "detail": "Classic carryover"
                 },
-                "note": "Flash of Light builds"
+                "note": "Flash of Light builds",
+                "weaponType": "Libram"
               },
               {
                 "id": 33502,
@@ -1415,7 +1452,8 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "20 Badge of Justice — G'eras, Shattrath"
-                }
+                },
+                "weaponType": "Libram"
               }
             ]
           }
@@ -1862,7 +1900,9 @@ WOWDATA.register({
                 "source": {
                   "type": "reputation",
                   "detail": "Lower City — Exalted (Nakodu)"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 29153,
@@ -1873,7 +1913,9 @@ WOWDATA.register({
                 "source": {
                   "type": "reputation",
                   "detail": "Honor Hold — Exalted (Quartermaster Urgronn)"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Sword"
               },
               {
                 "id": 29155,
@@ -1884,7 +1926,9 @@ WOWDATA.register({
                 "source": {
                   "type": "reputation",
                   "detail": "Thrallmar — Exalted (Logistics Officer Ulrike)"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Sword"
               }
             ],
             "offhand": [
@@ -1896,7 +1940,9 @@ WOWDATA.register({
                 "source": {
                   "type": "reputation",
                   "detail": "The Sha'tar — Exalted (Almaador)"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Shield"
               },
               {
                 "id": 29266,
@@ -1906,7 +1952,9 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "33 Badge of Justice — G'eras, Shattrath"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Shield"
               }
             ],
             "ranged": [
@@ -1919,7 +1967,8 @@ WOWDATA.register({
                   "type": "badge",
                   "detail": "15 Badge of Justice — G'eras, Shattrath"
                 },
-                "note": "+40 block value with Holy Shield — key to uncrushability"
+                "note": "+40 block value with Holy Shield — key to uncrushability",
+                "weaponType": "Libram"
               },
               {
                 "id": 27917,
@@ -1931,7 +1980,8 @@ WOWDATA.register({
                   "instance": "Sethekk Halls",
                   "boss": "Darkweaver Syth"
                 },
-                "note": "Threat (Consecration)"
+                "note": "Threat (Consecration)",
+                "weaponType": "Libram"
               }
             ]
           }
@@ -2318,7 +2368,9 @@ WOWDATA.register({
                   "instance": "Gruul's Lair",
                   "boss": "Gruul the Dragonkiller"
                 },
-                "note": "Spell damage = threat"
+                "note": "Spell damage = threat",
+                "hand": "main",
+                "weaponType": "Sword"
               },
               {
                 "id": 30832,
@@ -2328,7 +2380,9 @@ WOWDATA.register({
                 "source": {
                   "type": "reputation",
                   "detail": "Lower City — Exalted (Nakodu)"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               }
             ],
             "offhand": [
@@ -2341,7 +2395,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Gruul's Lair",
                   "boss": "Gruul the Dragonkiller"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Shield"
               },
               {
                 "id": 28606,
@@ -2352,7 +2408,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Nightbane"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Shield"
               }
             ],
             "ranged": [
@@ -2365,7 +2423,8 @@ WOWDATA.register({
                   "type": "badge",
                   "detail": "15 Badge of Justice — G'eras, Shattrath"
                 },
-                "note": "+40 block value with Holy Shield"
+                "note": "+40 block value with Holy Shield",
+                "weaponType": "Libram"
               },
               {
                 "id": 27917,
@@ -2377,7 +2436,8 @@ WOWDATA.register({
                   "instance": "Sethekk Halls",
                   "boss": "Darkweaver Syth"
                 },
-                "note": "Threat (Consecration)"
+                "note": "Threat (Consecration)",
+                "weaponType": "Libram"
               }
             ]
           }
@@ -2736,7 +2796,9 @@ WOWDATA.register({
                   "instance": "Hyjal Summit",
                   "boss": "Archimonde"
                 },
-                "note": "Spell damage = threat"
+                "note": "Spell damage = threat",
+                "hand": "main",
+                "weaponType": "Sword"
               },
               {
                 "id": 34176,
@@ -2747,7 +2809,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Brutallus"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 34009,
@@ -2758,7 +2822,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Hyjal Summit / Black Temple",
                   "detail": "Trash drop"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               }
             ],
             "offhand": [
@@ -2771,7 +2837,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Felmyst"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Shield"
               },
               {
                 "id": 32375,
@@ -2782,7 +2850,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Black Temple",
                   "boss": "Illidan Stormrage"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Shield"
               }
             ],
             "ranged": [
@@ -2795,7 +2865,8 @@ WOWDATA.register({
                   "type": "badge",
                   "detail": "15 Badge of Justice — G'eras, Shattrath"
                 },
-                "note": "Avoidance / uncrushability"
+                "note": "Avoidance / uncrushability",
+                "weaponType": "Libram"
               },
               {
                 "id": 32368,
@@ -2807,7 +2878,8 @@ WOWDATA.register({
                   "instance": "Black Temple",
                   "boss": "Mother Shahraz"
                 },
-                "note": "Mitigation (block value)"
+                "note": "Mitigation (block value)",
+                "weaponType": "Libram"
               },
               {
                 "id": 33504,
@@ -2818,7 +2890,8 @@ WOWDATA.register({
                   "type": "badge",
                   "detail": "20 Badge of Justice — G'eras, Shattrath"
                 },
-                "note": "Threat"
+                "note": "Threat",
+                "weaponType": "Libram"
               }
             ]
           }
@@ -3234,7 +3307,9 @@ WOWDATA.register({
                   "detail": "Blacksmithing (BoP, Master Swordsmithing)",
                   "profession": "Blacksmithing"
                 },
-                "bop": true
+                "bop": true,
+                "hand": "two",
+                "weaponType": "Sword"
               },
               {
                 "id": 28441,
@@ -3247,7 +3322,9 @@ WOWDATA.register({
                   "profession": "Blacksmithing"
                 },
                 "note": "Equal pick for hammersmiths",
-                "bop": true
+                "bop": true,
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 24550,
@@ -3258,7 +3335,9 @@ WOWDATA.register({
                   "type": "pvp",
                   "detail": "Season 1 Arena Points vendor"
                 },
-                "note": "Best non-Blacksmith option"
+                "note": "Best non-Blacksmith option",
+                "hand": "two",
+                "weaponType": "Sword"
               }
             ],
             "ranged": [
@@ -3272,7 +3351,8 @@ WOWDATA.register({
                   "instance": "The Blood Furnace",
                   "boss": "The Maker",
                   "detail": "Heroic only"
-                }
+                },
+                "weaponType": "Libram"
               },
               {
                 "id": 31033,
@@ -3284,7 +3364,8 @@ WOWDATA.register({
                   "quest": "News of Victory",
                   "zone": "Shadowmoon Valley",
                   "detail": "Separate Alliance/Horde quest versions"
-                }
+                },
+                "weaponType": "Libram"
               }
             ]
           }
@@ -3662,7 +3743,9 @@ WOWDATA.register({
                   "profession": "Blacksmithing"
                 },
                 "note": "Deep Thunder equal for hammersmiths",
-                "bop": true
+                "bop": true,
+                "hand": "two",
+                "weaponType": "Sword"
               },
               {
                 "id": 30722,
@@ -3675,7 +3758,9 @@ WOWDATA.register({
                   "boss": "Doomwalker",
                   "detail": "World boss"
                 },
-                "note": "Best non-Blacksmith option"
+                "note": "Best non-Blacksmith option",
+                "hand": "two",
+                "weaponType": "Axe"
               },
               {
                 "id": 28773,
@@ -3686,7 +3771,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Prince Malchezaar"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Axe"
               }
             ],
             "ranged": [
@@ -3700,7 +3787,8 @@ WOWDATA.register({
                   "instance": "The Blood Furnace",
                   "boss": "The Maker",
                   "detail": "Heroic only"
-                }
+                },
+                "weaponType": "Libram"
               },
               {
                 "id": 31033,
@@ -3712,7 +3800,8 @@ WOWDATA.register({
                   "quest": "News of Victory",
                   "zone": "Shadowmoon Valley",
                   "detail": "Separate Alliance/Horde quest versions"
-                }
+                },
+                "weaponType": "Libram"
               }
             ]
           }
@@ -4065,7 +4154,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Kil'jaeden"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Sword"
               },
               {
                 "id": 34183,
@@ -4076,7 +4167,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "detail": "Trash drop"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Polearm"
               },
               {
                 "id": 34891,
@@ -4086,7 +4179,9 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "150 Badge of Justice — Smith Hauthaa, Isle of Quel'Danas"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Axe"
               }
             ],
             "ranged": [
@@ -4101,7 +4196,8 @@ WOWDATA.register({
                   "boss": "The Maker",
                   "detail": "Heroic only"
                 },
-                "note": "Still BiS in P5"
+                "note": "Still BiS in P5",
+                "weaponType": "Libram"
               },
               {
                 "id": 33503,
@@ -4111,7 +4207,8 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "20 Badge of Justice — G'eras, Shattrath"
-                }
+                },
+                "weaponType": "Libram"
               }
             ]
           }

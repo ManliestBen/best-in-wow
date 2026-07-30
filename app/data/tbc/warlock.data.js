@@ -427,7 +427,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop",
                   "detail": "BoE — very expensive"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Sword"
               },
               {
                 "id": 29153,
@@ -439,7 +441,9 @@ WOWDATA.register({
                   "type": "reputation",
                   "detail": "Honor Hold — Exalted (Logistics Officer Ulrike)"
                 },
-                "note": "Free and nearly as good"
+                "note": "Free and nearly as good",
+                "hand": "main",
+                "weaponType": "Sword"
               },
               {
                 "id": 29155,
@@ -451,7 +455,9 @@ WOWDATA.register({
                   "type": "reputation",
                   "detail": "Thrallmar — Exalted (Quartermaster Urgronn)"
                 },
-                "note": "Free and nearly as good"
+                "note": "Free and nearly as good",
+                "hand": "main",
+                "weaponType": "Sword"
               }
             ],
             "offhand": [
@@ -464,7 +470,8 @@ WOWDATA.register({
                   "type": "badge",
                   "detail": "G'eras, Shattrath — 25 Badges of Justice"
                 },
-                "note": "Fire builds"
+                "note": "Fire builds",
+                "hand": "held"
               },
               {
                 "id": 29273,
@@ -475,7 +482,8 @@ WOWDATA.register({
                   "type": "badge",
                   "detail": "G'eras, Shattrath — 25 Badges of Justice"
                 },
-                "note": "Generic spell damage — works for every school"
+                "note": "Generic spell damage — works for every school",
+                "hand": "held"
               },
               {
                 "id": 29272,
@@ -486,7 +494,8 @@ WOWDATA.register({
                   "type": "badge",
                   "detail": "G'eras, Shattrath — 25 Badges of Justice"
                 },
-                "note": "Shadow Bolt builds"
+                "note": "Shadow Bolt builds",
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -513,7 +522,8 @@ WOWDATA.register({
                   "boss": "The Black Stalker",
                   "detail": "Heroic only"
                 },
-                "note": "Shadow Bolt builds"
+                "note": "Shadow Bolt builds",
+                "weaponType": "Wand"
               },
               {
                 "id": 28386,
@@ -525,7 +535,8 @@ WOWDATA.register({
                   "instance": "The Arcatraz",
                   "boss": "Dalliah the Doomsayer"
                 },
-                "note": "Spell hit"
+                "note": "Spell hit",
+                "weaponType": "Wand"
               }
             ]
           }
@@ -876,7 +887,9 @@ WOWDATA.register({
                   "zone": "Shadowmoon Valley",
                   "boss": "Doomwalker",
                   "detail": "World boss"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 28770,
@@ -887,7 +900,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Prince Malchezaar"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 22630,
@@ -898,7 +913,9 @@ WOWDATA.register({
                   "type": "quest",
                   "detail": "Classic Naxxramas legacy"
                 },
-                "note": "Still competitive; +33 party spell damage aura"
+                "note": "Still competitive; +33 party spell damage aura",
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "offhand": [
@@ -911,7 +928,8 @@ WOWDATA.register({
                   "type": "badge",
                   "detail": "G'eras, Shattrath — 25 Badges of Justice"
                 },
-                "note": "Shadow Bolt builds"
+                "note": "Shadow Bolt builds",
+                "hand": "held"
               },
               {
                 "id": 29270,
@@ -922,7 +940,8 @@ WOWDATA.register({
                   "type": "badge",
                   "detail": "G'eras, Shattrath — 25 Badges of Justice"
                 },
-                "note": "Fire builds"
+                "note": "Fire builds",
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -935,7 +954,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Shade of Aran"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 28783,
@@ -946,7 +966,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Magtheridon's Lair",
                   "boss": "Magtheridon"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -1260,7 +1281,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Kil'jaeden"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 32374,
@@ -1272,7 +1295,9 @@ WOWDATA.register({
                   "instance": "Black Temple",
                   "boss": "Illidan Stormrage"
                 },
-                "note": "2H — leaves off-hand empty"
+                "note": "2H — leaves off-hand empty",
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "offhand": [
@@ -1285,7 +1310,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Brutallus"
-                }
+                },
+                "hand": "held"
               },
               {
                 "id": 30872,
@@ -1297,7 +1323,8 @@ WOWDATA.register({
                   "instance": "Hyjal Summit",
                   "boss": "Rage Winterchill"
                 },
-                "note": "Spell hit"
+                "note": "Spell hit",
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -1310,7 +1337,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "detail": "Trash drop"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 29982,
@@ -1321,7 +1349,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Tempest Keep",
                   "boss": "High Astromancer Solarian"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -1720,7 +1749,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop",
                   "detail": "BoE — very expensive"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Sword"
               },
               {
                 "id": 29153,
@@ -1732,7 +1763,9 @@ WOWDATA.register({
                   "type": "reputation",
                   "detail": "Honor Hold — Exalted (Logistics Officer Ulrike)"
                 },
-                "note": "Free and nearly as good"
+                "note": "Free and nearly as good",
+                "hand": "main",
+                "weaponType": "Sword"
               },
               {
                 "id": 29155,
@@ -1744,7 +1777,9 @@ WOWDATA.register({
                   "type": "reputation",
                   "detail": "Thrallmar — Exalted (Quartermaster Urgronn)"
                 },
-                "note": "Free and nearly as good"
+                "note": "Free and nearly as good",
+                "hand": "main",
+                "weaponType": "Sword"
               }
             ],
             "offhand": [
@@ -1757,7 +1792,8 @@ WOWDATA.register({
                   "type": "badge",
                   "detail": "G'eras, Shattrath — 25 Badges of Justice"
                 },
-                "note": "Best pure shadow damage"
+                "note": "Best pure shadow damage",
+                "hand": "held"
               },
               {
                 "id": 29273,
@@ -1768,7 +1804,8 @@ WOWDATA.register({
                   "type": "badge",
                   "detail": "G'eras, Shattrath — 25 Badges of Justice"
                 },
-                "note": "Generic spell damage — better vs shadow-immune targets"
+                "note": "Generic spell damage — better vs shadow-immune targets",
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -1782,7 +1819,8 @@ WOWDATA.register({
                   "instance": "The Underbog",
                   "boss": "The Black Stalker",
                   "detail": "Heroic only"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 28386,
@@ -1794,7 +1832,8 @@ WOWDATA.register({
                   "instance": "The Arcatraz",
                   "boss": "Dalliah the Doomsayer"
                 },
-                "note": "Spell hit"
+                "note": "Spell hit",
+                "weaponType": "Wand"
               }
             ]
           }
@@ -2140,7 +2179,9 @@ WOWDATA.register({
                   "zone": "Shadowmoon Valley",
                   "boss": "Doomwalker",
                   "detail": "World boss"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 28770,
@@ -2151,7 +2192,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Prince Malchezaar"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 22630,
@@ -2162,7 +2205,9 @@ WOWDATA.register({
                   "type": "quest",
                   "detail": "Classic Naxxramas legacy"
                 },
-                "note": "Still competitive; +33 party spell damage aura"
+                "note": "Still competitive; +33 party spell damage aura",
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "offhand": [
@@ -2174,7 +2219,8 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "G'eras, Shattrath — 25 Badges of Justice"
-                }
+                },
+                "hand": "held"
               },
               {
                 "id": 29273,
@@ -2185,7 +2231,8 @@ WOWDATA.register({
                   "type": "badge",
                   "detail": "G'eras, Shattrath — 25 Badges of Justice"
                 },
-                "note": "Better vs shadow-immune targets"
+                "note": "Better vs shadow-immune targets",
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -2198,7 +2245,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Shade of Aran"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 28783,
@@ -2209,7 +2257,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Magtheridon's Lair",
                   "boss": "Magtheridon"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -2523,7 +2572,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Kil'jaeden"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 34182,
@@ -2535,7 +2586,9 @@ WOWDATA.register({
                   "instance": "Sunwell Plateau",
                   "boss": "Felmyst"
                 },
-                "note": "2H — strong haste-heavy Affliction alternative, leaves off-hand empty"
+                "note": "2H — strong haste-heavy Affliction alternative, leaves off-hand empty",
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "offhand": [
@@ -2548,7 +2601,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Brutallus"
-                }
+                },
+                "hand": "held"
               },
               {
                 "id": 30872,
@@ -2560,7 +2614,8 @@ WOWDATA.register({
                   "instance": "Hyjal Summit",
                   "boss": "Rage Winterchill"
                 },
-                "note": "Spell hit"
+                "note": "Spell hit",
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -2573,7 +2628,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "detail": "Trash drop"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 29982,
@@ -2584,7 +2640,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Tempest Keep",
                   "boss": "High Astromancer Solarian"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }

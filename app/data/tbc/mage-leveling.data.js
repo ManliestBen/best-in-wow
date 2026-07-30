@@ -218,7 +218,9 @@ WOWDATA.register({
                   "quest": "Leaders of the Fang",
                   "instance": "Wailing Caverns"
                 },
-                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 2567,
@@ -228,7 +230,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "BoE, Unique-Equipped; 1H dagger"
+                "note": "BoE, Unique-Equipped; 1H dagger",
+                "hand": "one",
+                "weaponType": "Dagger"
               },
               {
                 "id": 1482,
@@ -240,7 +244,9 @@ WOWDATA.register({
                   "instance": "Shadowfang Keep",
                   "boss": "Son of Arugal"
                 },
-                "note": "Proc adds shadow damage"
+                "note": "Proc adds shadow damage",
+                "hand": "one",
+                "weaponType": "Sword"
               }
             ],
             "ranged": [
@@ -254,7 +260,8 @@ WOWDATA.register({
                   "instance": "The Deadmines",
                   "boss": "\"Cookie\"",
                   "detail": "Requires level 17"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 5243,
@@ -267,7 +274,8 @@ WOWDATA.register({
                   "boss": "Deviate Faerie Dragon",
                   "detail": "Rare spawn"
                 },
-                "note": "Low drop chance, but a big DPS spike if you get it"
+                "note": "Low drop chance, but a big DPS spike if you get it",
+                "weaponType": "Wand"
               },
               {
                 "id": 11288,
@@ -278,7 +286,8 @@ WOWDATA.register({
                   "type": "crafted",
                   "detail": "Enchanting (BoE), requires level 13 — solid early-bracket pick",
                   "profession": "Enchanting"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -607,7 +616,9 @@ WOWDATA.register({
                   "quest": "Leaders of the Fang",
                   "instance": "Wailing Caverns"
                 },
-                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 16886,
@@ -619,7 +630,9 @@ WOWDATA.register({
                   "quest": "Baron Aquanis",
                   "instance": "Blackfathom Deeps"
                 },
-                "note": "Stat-stick; Dual Wield unlocks at level 20"
+                "note": "Stat-stick; Dual Wield unlocks at level 20",
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 2567,
@@ -629,7 +642,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "BoE, Unique-Equipped; 1H dagger"
+                "note": "BoE, Unique-Equipped; 1H dagger",
+                "hand": "one",
+                "weaponType": "Dagger"
               }
             ],
             "ranged": [
@@ -642,7 +657,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Blackfathom Villainy",
                   "instance": "Blackfathom Deeps"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 5198,
@@ -654,7 +670,8 @@ WOWDATA.register({
                   "instance": "The Deadmines",
                   "boss": "\"Cookie\"",
                   "detail": "Requires level 17"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 5243,
@@ -667,7 +684,8 @@ WOWDATA.register({
                   "boss": "Deviate Faerie Dragon",
                   "detail": "Rare spawn"
                 },
-                "note": "Low drop chance, but a big DPS spike if you get it"
+                "note": "Low drop chance, but a big DPS spike if you get it",
+                "weaponType": "Wand"
               }
             ]
           }
@@ -1053,7 +1071,9 @@ WOWDATA.register({
                   "quest": "Leaders of the Fang",
                   "instance": "Wailing Caverns"
                 },
-                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 16886,
@@ -1065,7 +1085,9 @@ WOWDATA.register({
                   "quest": "Baron Aquanis",
                   "instance": "Blackfathom Deeps"
                 },
-                "note": "Stat-stick; Dual Wield unlocks at level 20"
+                "note": "Stat-stick; Dual Wield unlocks at level 20",
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 2567,
@@ -1075,7 +1097,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "BoE, Unique-Equipped; 1H dagger"
+                "note": "BoE, Unique-Equipped; 1H dagger",
+                "hand": "one",
+                "weaponType": "Dagger"
               }
             ],
             "ranged": [
@@ -1089,7 +1113,8 @@ WOWDATA.register({
                   "instance": "Scarlet Monastery",
                   "boss": "Azshir the Sleepless",
                   "detail": "Graveyard wing"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 7001,
@@ -1100,7 +1125,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Blackfathom Villainy",
                   "instance": "Blackfathom Deeps"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 11289,
@@ -1111,7 +1137,8 @@ WOWDATA.register({
                   "type": "crafted",
                   "detail": "Enchanting (BoE), requires level 26",
                   "profession": "Enchanting"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -1507,7 +1534,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Often pricey on the AH"
+                "note": "Often pricey on the AH",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 9517,
@@ -1520,7 +1549,9 @@ WOWDATA.register({
                   "instance": "Uldaman",
                   "boss": "Obsidian Sentinel",
                   "detail": "Choice reward alongside Celestial Orb; requires level 40"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 7713,
@@ -1532,7 +1563,9 @@ WOWDATA.register({
                   "instance": "Scarlet Monastery",
                   "boss": "Arcanist Doan",
                   "detail": "Library wing"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "ranged": [
@@ -1545,7 +1578,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Mage's Wand",
                   "detail": "Mage-only quest from Tabetha, Dustwallow Marsh, level 40; choice of Ragefire/Icefury/Nether Force Wand — take Nether Force for Arcane"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 7514,
@@ -1556,7 +1590,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Mage's Wand",
                   "detail": "Mage-only quest from Tabetha, Dustwallow Marsh, level 40; choice of Ragefire/Icefury/Nether Force Wand — take Icefury for Frost"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 7513,
@@ -1567,7 +1602,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Mage's Wand",
                   "detail": "Mage-only quest from Tabetha, Dustwallow Marsh, level 40; choice of Ragefire/Icefury/Nether Force Wand — take Ragefire for Fire"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -2002,7 +2038,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Often pricey on the AH"
+                "note": "Often pricey on the AH",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 9517,
@@ -2015,7 +2053,9 @@ WOWDATA.register({
                   "instance": "Uldaman",
                   "boss": "Obsidian Sentinel",
                   "detail": "Choice reward alongside Celestial Orb; requires level 40"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 7713,
@@ -2027,7 +2067,9 @@ WOWDATA.register({
                   "instance": "Scarlet Monastery",
                   "boss": "Arcanist Doan",
                   "detail": "Library wing"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "ranged": [
@@ -2040,7 +2082,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Mage's Wand",
                   "detail": "Mage-only quest from Tabetha, Dustwallow Marsh, level 40; choice of Ragefire/Icefury/Nether Force Wand — take Nether Force for Arcane"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 7514,
@@ -2051,7 +2094,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Mage's Wand",
                   "detail": "Mage-only quest from Tabetha, Dustwallow Marsh, level 40; choice of Ragefire/Icefury/Nether Force Wand — take Icefury for Frost"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 7513,
@@ -2062,7 +2106,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Mage's Wand",
                   "detail": "Mage-only quest from Tabetha, Dustwallow Marsh, level 40; choice of Ragefire/Icefury/Nether Force Wand — take Ragefire for Fire"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -2505,7 +2550,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Often pricey on the AH"
+                "note": "Often pricey on the AH",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 18082,
@@ -2516,7 +2563,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Zul'Farrak",
                   "boss": "Witch Doctor Zum'rah"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 9517,
@@ -2529,7 +2578,9 @@ WOWDATA.register({
                   "instance": "Uldaman",
                   "boss": "Obsidian Sentinel",
                   "detail": "Choice reward alongside Celestial Orb; requires level 40"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "ranged": [
@@ -2542,7 +2593,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Zul'Farrak",
                   "detail": "Low drop-rate boss drop"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 11263,
@@ -2553,7 +2605,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Mage's Wand",
                   "detail": "Mage-only quest from Tabetha, Dustwallow Marsh, level 40; choice of Ragefire/Icefury/Nether Force Wand — take Nether Force for Arcane"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 7514,
@@ -2564,7 +2617,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Mage's Wand",
                   "detail": "Mage-only quest from Tabetha, Dustwallow Marsh, level 40; choice of Ragefire/Icefury/Nether Force Wand — take Icefury for Frost"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -3009,7 +3063,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Often pricey on the AH"
+                "note": "Often pricey on the AH",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 18082,
@@ -3020,7 +3076,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Zul'Farrak",
                   "boss": "Witch Doctor Zum'rah"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 9517,
@@ -3033,7 +3091,9 @@ WOWDATA.register({
                   "instance": "Uldaman",
                   "boss": "Obsidian Sentinel",
                   "detail": "Choice reward alongside Celestial Orb; requires level 40"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "ranged": [
@@ -3047,7 +3107,8 @@ WOWDATA.register({
                   "instance": "Maraudon",
                   "boss": "Noxxion",
                   "detail": "Requires level 46"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 9483,
@@ -3058,7 +3119,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Zul'Farrak",
                   "detail": "Low drop-rate boss drop"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 11263,
@@ -3069,7 +3131,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Mage's Wand",
                   "detail": "Mage-only quest from Tabetha, Dustwallow Marsh, level 40; choice of Ragefire/Icefury/Nether Force Wand — take Nether Force for Arcane"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -3509,7 +3572,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Stratholme",
                   "boss": "Balzaphon"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 873,
@@ -3519,7 +3584,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Often pricey on the AH"
+                "note": "Often pricey on the AH",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 18082,
@@ -3530,7 +3597,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Zul'Farrak",
                   "boss": "Witch Doctor Zum'rah"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "ranged": [
@@ -3542,7 +3611,8 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop",
                   "detail": "BoE, Dire Maul trash"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 13396,
@@ -3554,7 +3624,8 @@ WOWDATA.register({
                   "instance": "Stratholme",
                   "boss": "Skul"
                 },
-                "note": "Shadow damage bonus wasted on Mage, but strong raw wand DPS for the bracket; requires level 52"
+                "note": "Shadow damage bonus wasted on Mage, but strong raw wand DPS for the bracket; requires level 52",
+                "weaponType": "Wand"
               },
               {
                 "id": 17745,
@@ -3566,7 +3637,8 @@ WOWDATA.register({
                   "instance": "Maraudon",
                   "boss": "Noxxion",
                   "detail": "Requires level 46"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -4016,7 +4088,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Nexus-King Salhadaar",
                   "zone": "Netherstorm"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 25760,
@@ -4027,7 +4101,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "The Ring of Blood: The Final Challenge",
                   "zone": "Nagrand"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 24069,
@@ -4039,7 +4115,9 @@ WOWDATA.register({
                   "instance": "Hellfire Ramparts",
                   "boss": "Omor the Unscarred",
                   "detail": "Requires level 60"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "ranged": [
@@ -4051,7 +4129,8 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop",
                   "detail": "BoE, Dire Maul trash"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 13396,
@@ -4063,7 +4142,8 @@ WOWDATA.register({
                   "instance": "Stratholme",
                   "boss": "Skul"
                 },
-                "note": "Shadow damage bonus wasted on Mage, but strong raw wand DPS for the bracket; requires level 52"
+                "note": "Shadow damage bonus wasted on Mage, but strong raw wand DPS for the bracket; requires level 52",
+                "weaponType": "Wand"
               },
               {
                 "id": 17745,
@@ -4075,7 +4155,8 @@ WOWDATA.register({
                   "instance": "Maraudon",
                   "boss": "Noxxion",
                   "detail": "Requires level 46"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -4532,7 +4613,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Nexus-King Salhadaar",
                   "zone": "Netherstorm"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 25760,
@@ -4543,7 +4626,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "The Ring of Blood: The Final Challenge",
                   "zone": "Nagrand"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 25950,
@@ -4554,7 +4639,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Mana-Tombs",
                   "boss": "Tavarok"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "ranged": [
@@ -4568,7 +4655,8 @@ WOWDATA.register({
                   "instance": "Mana-Tombs",
                   "boss": "Pandemonius",
                   "detail": "Requires level 64"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 29149,
@@ -4579,7 +4667,8 @@ WOWDATA.register({
                   "type": "reputation",
                   "zone": "Zangarmarsh",
                   "detail": "Sporeggar — Revered; requires level 62"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 24380,
@@ -4590,7 +4679,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Slave Pens",
                   "boss": "Rokmar the Crackler"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -5037,7 +5127,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Nexus-King Salhadaar",
                   "zone": "Netherstorm"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 27868,
@@ -5048,7 +5140,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Shattered Halls",
                   "boss": "Warbringer O'mrogg"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 25760,
@@ -5059,7 +5153,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "The Ring of Blood: The Final Challenge",
                   "zone": "Nagrand"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "ranged": [
@@ -5073,7 +5169,8 @@ WOWDATA.register({
                   "instance": "Shadow Labyrinth",
                   "boss": "Blackheart the Inciter"
                 },
-                "note": "Highest-DPS wand across the leveling brackets"
+                "note": "Highest-DPS wand across the leveling brackets",
+                "weaponType": "Wand"
               },
               {
                 "id": 27885,
@@ -5085,7 +5182,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Shadow Labyrinth",
                   "boss": "Ambassador Hellmaw"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 25939,
@@ -5097,7 +5195,8 @@ WOWDATA.register({
                   "instance": "Mana-Tombs",
                   "boss": "Pandemonius",
                   "detail": "Requires level 64"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -5317,7 +5416,9 @@ WOWDATA.register({
                   "quest": "Leaders of the Fang",
                   "instance": "Wailing Caverns"
                 },
-                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 2567,
@@ -5327,7 +5428,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "BoE, Unique-Equipped; 1H dagger"
+                "note": "BoE, Unique-Equipped; 1H dagger",
+                "hand": "one",
+                "weaponType": "Dagger"
               },
               {
                 "id": 1482,
@@ -5339,7 +5442,9 @@ WOWDATA.register({
                   "instance": "Shadowfang Keep",
                   "boss": "Son of Arugal"
                 },
-                "note": "Proc adds shadow damage"
+                "note": "Proc adds shadow damage",
+                "hand": "one",
+                "weaponType": "Sword"
               }
             ],
             "ranged": [
@@ -5353,7 +5458,8 @@ WOWDATA.register({
                   "instance": "The Deadmines",
                   "boss": "\"Cookie\"",
                   "detail": "Requires level 17"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 5243,
@@ -5366,7 +5472,8 @@ WOWDATA.register({
                   "boss": "Deviate Faerie Dragon",
                   "detail": "Rare spawn"
                 },
-                "note": "Low drop chance, but a big DPS spike if you get it"
+                "note": "Low drop chance, but a big DPS spike if you get it",
+                "weaponType": "Wand"
               },
               {
                 "id": 11288,
@@ -5377,7 +5484,8 @@ WOWDATA.register({
                   "type": "crafted",
                   "detail": "Enchanting (BoE), requires level 13 — solid early-bracket pick",
                   "profession": "Enchanting"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -5706,7 +5814,9 @@ WOWDATA.register({
                   "quest": "Leaders of the Fang",
                   "instance": "Wailing Caverns"
                 },
-                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 16886,
@@ -5718,7 +5828,9 @@ WOWDATA.register({
                   "quest": "Baron Aquanis",
                   "instance": "Blackfathom Deeps"
                 },
-                "note": "Stat-stick; Dual Wield unlocks at level 20"
+                "note": "Stat-stick; Dual Wield unlocks at level 20",
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 2567,
@@ -5728,7 +5840,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "BoE, Unique-Equipped; 1H dagger"
+                "note": "BoE, Unique-Equipped; 1H dagger",
+                "hand": "one",
+                "weaponType": "Dagger"
               }
             ],
             "ranged": [
@@ -5741,7 +5855,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Blackfathom Villainy",
                   "instance": "Blackfathom Deeps"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 5198,
@@ -5753,7 +5868,8 @@ WOWDATA.register({
                   "instance": "The Deadmines",
                   "boss": "\"Cookie\"",
                   "detail": "Requires level 17"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 5243,
@@ -5766,7 +5882,8 @@ WOWDATA.register({
                   "boss": "Deviate Faerie Dragon",
                   "detail": "Rare spawn"
                 },
-                "note": "Low drop chance, but a big DPS spike if you get it"
+                "note": "Low drop chance, but a big DPS spike if you get it",
+                "weaponType": "Wand"
               }
             ]
           }
@@ -6152,7 +6269,9 @@ WOWDATA.register({
                   "quest": "Leaders of the Fang",
                   "instance": "Wailing Caverns"
                 },
-                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 16886,
@@ -6164,7 +6283,9 @@ WOWDATA.register({
                   "quest": "Baron Aquanis",
                   "instance": "Blackfathom Deeps"
                 },
-                "note": "Stat-stick; Dual Wield unlocks at level 20"
+                "note": "Stat-stick; Dual Wield unlocks at level 20",
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 2567,
@@ -6174,7 +6295,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "BoE, Unique-Equipped; 1H dagger"
+                "note": "BoE, Unique-Equipped; 1H dagger",
+                "hand": "one",
+                "weaponType": "Dagger"
               }
             ],
             "ranged": [
@@ -6188,7 +6311,8 @@ WOWDATA.register({
                   "instance": "Scarlet Monastery",
                   "boss": "Azshir the Sleepless",
                   "detail": "Graveyard wing"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 7001,
@@ -6199,7 +6323,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Blackfathom Villainy",
                   "instance": "Blackfathom Deeps"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 11289,
@@ -6210,7 +6335,8 @@ WOWDATA.register({
                   "type": "crafted",
                   "detail": "Enchanting (BoE), requires level 26",
                   "profession": "Enchanting"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -6606,7 +6732,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Often pricey on the AH"
+                "note": "Often pricey on the AH",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 9517,
@@ -6619,7 +6747,9 @@ WOWDATA.register({
                   "instance": "Uldaman",
                   "boss": "Obsidian Sentinel",
                   "detail": "Choice reward alongside Celestial Orb; requires level 40"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 7713,
@@ -6631,7 +6761,9 @@ WOWDATA.register({
                   "instance": "Scarlet Monastery",
                   "boss": "Arcanist Doan",
                   "detail": "Library wing"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "ranged": [
@@ -6644,7 +6776,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Mage's Wand",
                   "detail": "Mage-only quest from Tabetha, Dustwallow Marsh, level 40; choice of Ragefire/Icefury/Nether Force Wand — take Nether Force for Arcane"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 7514,
@@ -6655,7 +6788,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Mage's Wand",
                   "detail": "Mage-only quest from Tabetha, Dustwallow Marsh, level 40; choice of Ragefire/Icefury/Nether Force Wand — take Icefury for Frost"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 7513,
@@ -6666,7 +6800,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Mage's Wand",
                   "detail": "Mage-only quest from Tabetha, Dustwallow Marsh, level 40; choice of Ragefire/Icefury/Nether Force Wand — take Ragefire for Fire"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -7101,7 +7236,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Often pricey on the AH"
+                "note": "Often pricey on the AH",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 9517,
@@ -7114,7 +7251,9 @@ WOWDATA.register({
                   "instance": "Uldaman",
                   "boss": "Obsidian Sentinel",
                   "detail": "Choice reward alongside Celestial Orb; requires level 40"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 7713,
@@ -7126,7 +7265,9 @@ WOWDATA.register({
                   "instance": "Scarlet Monastery",
                   "boss": "Arcanist Doan",
                   "detail": "Library wing"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "ranged": [
@@ -7139,7 +7280,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Mage's Wand",
                   "detail": "Mage-only quest from Tabetha, Dustwallow Marsh, level 40; choice of Ragefire/Icefury/Nether Force Wand — take Nether Force for Arcane"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 7514,
@@ -7150,7 +7292,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Mage's Wand",
                   "detail": "Mage-only quest from Tabetha, Dustwallow Marsh, level 40; choice of Ragefire/Icefury/Nether Force Wand — take Icefury for Frost"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 7513,
@@ -7161,7 +7304,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Mage's Wand",
                   "detail": "Mage-only quest from Tabetha, Dustwallow Marsh, level 40; choice of Ragefire/Icefury/Nether Force Wand — take Ragefire for Fire"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -7604,7 +7748,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Often pricey on the AH"
+                "note": "Often pricey on the AH",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 18082,
@@ -7615,7 +7761,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Zul'Farrak",
                   "boss": "Witch Doctor Zum'rah"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 9517,
@@ -7628,7 +7776,9 @@ WOWDATA.register({
                   "instance": "Uldaman",
                   "boss": "Obsidian Sentinel",
                   "detail": "Choice reward alongside Celestial Orb; requires level 40"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "ranged": [
@@ -7641,7 +7791,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Zul'Farrak",
                   "detail": "Low drop-rate boss drop"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 11263,
@@ -7652,7 +7803,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Mage's Wand",
                   "detail": "Mage-only quest from Tabetha, Dustwallow Marsh, level 40; choice of Ragefire/Icefury/Nether Force Wand — take Nether Force for Arcane"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 7514,
@@ -7663,7 +7815,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Mage's Wand",
                   "detail": "Mage-only quest from Tabetha, Dustwallow Marsh, level 40; choice of Ragefire/Icefury/Nether Force Wand — take Icefury for Frost"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -8108,7 +8261,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Often pricey on the AH"
+                "note": "Often pricey on the AH",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 18082,
@@ -8119,7 +8274,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Zul'Farrak",
                   "boss": "Witch Doctor Zum'rah"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 9517,
@@ -8132,7 +8289,9 @@ WOWDATA.register({
                   "instance": "Uldaman",
                   "boss": "Obsidian Sentinel",
                   "detail": "Choice reward alongside Celestial Orb; requires level 40"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "ranged": [
@@ -8146,7 +8305,8 @@ WOWDATA.register({
                   "instance": "Maraudon",
                   "boss": "Noxxion",
                   "detail": "Requires level 46"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 9483,
@@ -8157,7 +8317,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Zul'Farrak",
                   "detail": "Low drop-rate boss drop"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 11263,
@@ -8168,7 +8329,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Mage's Wand",
                   "detail": "Mage-only quest from Tabetha, Dustwallow Marsh, level 40; choice of Ragefire/Icefury/Nether Force Wand — take Nether Force for Arcane"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -8608,7 +8770,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Stratholme",
                   "boss": "Balzaphon"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 873,
@@ -8618,7 +8782,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Often pricey on the AH"
+                "note": "Often pricey on the AH",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 18082,
@@ -8629,7 +8795,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Zul'Farrak",
                   "boss": "Witch Doctor Zum'rah"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "ranged": [
@@ -8641,7 +8809,8 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop",
                   "detail": "BoE, Dire Maul trash"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 13396,
@@ -8653,7 +8822,8 @@ WOWDATA.register({
                   "instance": "Stratholme",
                   "boss": "Skul"
                 },
-                "note": "Shadow damage bonus wasted on Mage, but strong raw wand DPS for the bracket; requires level 52"
+                "note": "Shadow damage bonus wasted on Mage, but strong raw wand DPS for the bracket; requires level 52",
+                "weaponType": "Wand"
               },
               {
                 "id": 17745,
@@ -8665,7 +8835,8 @@ WOWDATA.register({
                   "instance": "Maraudon",
                   "boss": "Noxxion",
                   "detail": "Requires level 46"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -9115,7 +9286,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Nexus-King Salhadaar",
                   "zone": "Netherstorm"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 25760,
@@ -9126,7 +9299,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "The Ring of Blood: The Final Challenge",
                   "zone": "Nagrand"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 24069,
@@ -9138,7 +9313,9 @@ WOWDATA.register({
                   "instance": "Hellfire Ramparts",
                   "boss": "Omor the Unscarred",
                   "detail": "Requires level 60"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "ranged": [
@@ -9150,7 +9327,8 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop",
                   "detail": "BoE, Dire Maul trash"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 13396,
@@ -9162,7 +9340,8 @@ WOWDATA.register({
                   "instance": "Stratholme",
                   "boss": "Skul"
                 },
-                "note": "Shadow damage bonus wasted on Mage, but strong raw wand DPS for the bracket; requires level 52"
+                "note": "Shadow damage bonus wasted on Mage, but strong raw wand DPS for the bracket; requires level 52",
+                "weaponType": "Wand"
               },
               {
                 "id": 17745,
@@ -9174,7 +9353,8 @@ WOWDATA.register({
                   "instance": "Maraudon",
                   "boss": "Noxxion",
                   "detail": "Requires level 46"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -9631,7 +9811,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Nexus-King Salhadaar",
                   "zone": "Netherstorm"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 25760,
@@ -9642,7 +9824,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "The Ring of Blood: The Final Challenge",
                   "zone": "Nagrand"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 25950,
@@ -9653,7 +9837,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Mana-Tombs",
                   "boss": "Tavarok"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "ranged": [
@@ -9667,7 +9853,8 @@ WOWDATA.register({
                   "instance": "Mana-Tombs",
                   "boss": "Pandemonius",
                   "detail": "Requires level 64"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 29149,
@@ -9678,7 +9865,8 @@ WOWDATA.register({
                   "type": "reputation",
                   "zone": "Zangarmarsh",
                   "detail": "Sporeggar — Revered; requires level 62"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 24380,
@@ -9689,7 +9877,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Slave Pens",
                   "boss": "Rokmar the Crackler"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -10136,7 +10325,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Nexus-King Salhadaar",
                   "zone": "Netherstorm"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 27868,
@@ -10147,7 +10338,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Shattered Halls",
                   "boss": "Warbringer O'mrogg"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 25760,
@@ -10158,7 +10351,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "The Ring of Blood: The Final Challenge",
                   "zone": "Nagrand"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "ranged": [
@@ -10172,7 +10367,8 @@ WOWDATA.register({
                   "instance": "Shadow Labyrinth",
                   "boss": "Blackheart the Inciter"
                 },
-                "note": "Highest-DPS wand across the leveling brackets"
+                "note": "Highest-DPS wand across the leveling brackets",
+                "weaponType": "Wand"
               },
               {
                 "id": 27885,
@@ -10184,7 +10380,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Shadow Labyrinth",
                   "boss": "Ambassador Hellmaw"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 25939,
@@ -10196,7 +10393,8 @@ WOWDATA.register({
                   "instance": "Mana-Tombs",
                   "boss": "Pandemonius",
                   "detail": "Requires level 64"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -10416,7 +10614,9 @@ WOWDATA.register({
                   "quest": "Leaders of the Fang",
                   "instance": "Wailing Caverns"
                 },
-                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 2567,
@@ -10426,7 +10626,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "BoE, Unique-Equipped; 1H dagger"
+                "note": "BoE, Unique-Equipped; 1H dagger",
+                "hand": "one",
+                "weaponType": "Dagger"
               },
               {
                 "id": 1482,
@@ -10438,7 +10640,9 @@ WOWDATA.register({
                   "instance": "Shadowfang Keep",
                   "boss": "Son of Arugal"
                 },
-                "note": "Proc adds shadow damage"
+                "note": "Proc adds shadow damage",
+                "hand": "one",
+                "weaponType": "Sword"
               }
             ],
             "ranged": [
@@ -10452,7 +10656,8 @@ WOWDATA.register({
                   "instance": "The Deadmines",
                   "boss": "\"Cookie\"",
                   "detail": "Requires level 17"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 5243,
@@ -10465,7 +10670,8 @@ WOWDATA.register({
                   "boss": "Deviate Faerie Dragon",
                   "detail": "Rare spawn"
                 },
-                "note": "Low drop chance, but a big DPS spike if you get it"
+                "note": "Low drop chance, but a big DPS spike if you get it",
+                "weaponType": "Wand"
               },
               {
                 "id": 11288,
@@ -10476,7 +10682,8 @@ WOWDATA.register({
                   "type": "crafted",
                   "detail": "Enchanting (BoE), requires level 13 — solid early-bracket pick",
                   "profession": "Enchanting"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -10805,7 +11012,9 @@ WOWDATA.register({
                   "quest": "Leaders of the Fang",
                   "instance": "Wailing Caverns"
                 },
-                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 16886,
@@ -10817,7 +11026,9 @@ WOWDATA.register({
                   "quest": "Baron Aquanis",
                   "instance": "Blackfathom Deeps"
                 },
-                "note": "Stat-stick; Dual Wield unlocks at level 20"
+                "note": "Stat-stick; Dual Wield unlocks at level 20",
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 2567,
@@ -10827,7 +11038,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "BoE, Unique-Equipped; 1H dagger"
+                "note": "BoE, Unique-Equipped; 1H dagger",
+                "hand": "one",
+                "weaponType": "Dagger"
               }
             ],
             "ranged": [
@@ -10840,7 +11053,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Blackfathom Villainy",
                   "instance": "Blackfathom Deeps"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 5198,
@@ -10852,7 +11066,8 @@ WOWDATA.register({
                   "instance": "The Deadmines",
                   "boss": "\"Cookie\"",
                   "detail": "Requires level 17"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 5243,
@@ -10865,7 +11080,8 @@ WOWDATA.register({
                   "boss": "Deviate Faerie Dragon",
                   "detail": "Rare spawn"
                 },
-                "note": "Low drop chance, but a big DPS spike if you get it"
+                "note": "Low drop chance, but a big DPS spike if you get it",
+                "weaponType": "Wand"
               }
             ]
           }
@@ -11251,7 +11467,9 @@ WOWDATA.register({
                   "quest": "Leaders of the Fang",
                   "instance": "Wailing Caverns"
                 },
-                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 16886,
@@ -11263,7 +11481,9 @@ WOWDATA.register({
                   "quest": "Baron Aquanis",
                   "instance": "Blackfathom Deeps"
                 },
-                "note": "Stat-stick; Dual Wield unlocks at level 20"
+                "note": "Stat-stick; Dual Wield unlocks at level 20",
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 2567,
@@ -11273,7 +11493,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "BoE, Unique-Equipped; 1H dagger"
+                "note": "BoE, Unique-Equipped; 1H dagger",
+                "hand": "one",
+                "weaponType": "Dagger"
               }
             ],
             "ranged": [
@@ -11287,7 +11509,8 @@ WOWDATA.register({
                   "instance": "Scarlet Monastery",
                   "boss": "Azshir the Sleepless",
                   "detail": "Graveyard wing"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 7001,
@@ -11298,7 +11521,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Blackfathom Villainy",
                   "instance": "Blackfathom Deeps"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 11289,
@@ -11309,7 +11533,8 @@ WOWDATA.register({
                   "type": "crafted",
                   "detail": "Enchanting (BoE), requires level 26",
                   "profession": "Enchanting"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -11705,7 +11930,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Often pricey on the AH"
+                "note": "Often pricey on the AH",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 9517,
@@ -11718,7 +11945,9 @@ WOWDATA.register({
                   "instance": "Uldaman",
                   "boss": "Obsidian Sentinel",
                   "detail": "Choice reward alongside Celestial Orb; requires level 40"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 7713,
@@ -11730,7 +11959,9 @@ WOWDATA.register({
                   "instance": "Scarlet Monastery",
                   "boss": "Arcanist Doan",
                   "detail": "Library wing"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "ranged": [
@@ -11743,7 +11974,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Mage's Wand",
                   "detail": "Mage-only quest from Tabetha, Dustwallow Marsh, level 40; choice of Ragefire/Icefury/Nether Force Wand — take Nether Force for Arcane"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 7514,
@@ -11754,7 +11986,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Mage's Wand",
                   "detail": "Mage-only quest from Tabetha, Dustwallow Marsh, level 40; choice of Ragefire/Icefury/Nether Force Wand — take Icefury for Frost"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 7513,
@@ -11765,7 +11998,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Mage's Wand",
                   "detail": "Mage-only quest from Tabetha, Dustwallow Marsh, level 40; choice of Ragefire/Icefury/Nether Force Wand — take Ragefire for Fire"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -12200,7 +12434,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Often pricey on the AH"
+                "note": "Often pricey on the AH",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 9517,
@@ -12213,7 +12449,9 @@ WOWDATA.register({
                   "instance": "Uldaman",
                   "boss": "Obsidian Sentinel",
                   "detail": "Choice reward alongside Celestial Orb; requires level 40"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 7713,
@@ -12225,7 +12463,9 @@ WOWDATA.register({
                   "instance": "Scarlet Monastery",
                   "boss": "Arcanist Doan",
                   "detail": "Library wing"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "ranged": [
@@ -12238,7 +12478,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Mage's Wand",
                   "detail": "Mage-only quest from Tabetha, Dustwallow Marsh, level 40; choice of Ragefire/Icefury/Nether Force Wand — take Nether Force for Arcane"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 7514,
@@ -12249,7 +12490,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Mage's Wand",
                   "detail": "Mage-only quest from Tabetha, Dustwallow Marsh, level 40; choice of Ragefire/Icefury/Nether Force Wand — take Icefury for Frost"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 7513,
@@ -12260,7 +12502,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Mage's Wand",
                   "detail": "Mage-only quest from Tabetha, Dustwallow Marsh, level 40; choice of Ragefire/Icefury/Nether Force Wand — take Ragefire for Fire"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -12703,7 +12946,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Often pricey on the AH"
+                "note": "Often pricey on the AH",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 18082,
@@ -12714,7 +12959,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Zul'Farrak",
                   "boss": "Witch Doctor Zum'rah"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 9517,
@@ -12727,7 +12974,9 @@ WOWDATA.register({
                   "instance": "Uldaman",
                   "boss": "Obsidian Sentinel",
                   "detail": "Choice reward alongside Celestial Orb; requires level 40"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "ranged": [
@@ -12740,7 +12989,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Zul'Farrak",
                   "detail": "Low drop-rate boss drop"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 11263,
@@ -12751,7 +13001,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Mage's Wand",
                   "detail": "Mage-only quest from Tabetha, Dustwallow Marsh, level 40; choice of Ragefire/Icefury/Nether Force Wand — take Nether Force for Arcane"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 7514,
@@ -12762,7 +13013,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Mage's Wand",
                   "detail": "Mage-only quest from Tabetha, Dustwallow Marsh, level 40; choice of Ragefire/Icefury/Nether Force Wand — take Icefury for Frost"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -13207,7 +13459,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Often pricey on the AH"
+                "note": "Often pricey on the AH",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 18082,
@@ -13218,7 +13472,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Zul'Farrak",
                   "boss": "Witch Doctor Zum'rah"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 9517,
@@ -13231,7 +13487,9 @@ WOWDATA.register({
                   "instance": "Uldaman",
                   "boss": "Obsidian Sentinel",
                   "detail": "Choice reward alongside Celestial Orb; requires level 40"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "ranged": [
@@ -13245,7 +13503,8 @@ WOWDATA.register({
                   "instance": "Maraudon",
                   "boss": "Noxxion",
                   "detail": "Requires level 46"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 9483,
@@ -13256,7 +13515,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Zul'Farrak",
                   "detail": "Low drop-rate boss drop"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 11263,
@@ -13267,7 +13527,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Mage's Wand",
                   "detail": "Mage-only quest from Tabetha, Dustwallow Marsh, level 40; choice of Ragefire/Icefury/Nether Force Wand — take Nether Force for Arcane"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -13707,7 +13968,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Stratholme",
                   "boss": "Balzaphon"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 873,
@@ -13717,7 +13980,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Often pricey on the AH"
+                "note": "Often pricey on the AH",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 18082,
@@ -13728,7 +13993,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Zul'Farrak",
                   "boss": "Witch Doctor Zum'rah"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "ranged": [
@@ -13740,7 +14007,8 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop",
                   "detail": "BoE, Dire Maul trash"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 13396,
@@ -13752,7 +14020,8 @@ WOWDATA.register({
                   "instance": "Stratholme",
                   "boss": "Skul"
                 },
-                "note": "Shadow damage bonus wasted on Mage, but strong raw wand DPS for the bracket; requires level 52"
+                "note": "Shadow damage bonus wasted on Mage, but strong raw wand DPS for the bracket; requires level 52",
+                "weaponType": "Wand"
               },
               {
                 "id": 17745,
@@ -13764,7 +14033,8 @@ WOWDATA.register({
                   "instance": "Maraudon",
                   "boss": "Noxxion",
                   "detail": "Requires level 46"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -14214,7 +14484,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Nexus-King Salhadaar",
                   "zone": "Netherstorm"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 25760,
@@ -14225,7 +14497,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "The Ring of Blood: The Final Challenge",
                   "zone": "Nagrand"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 24069,
@@ -14237,7 +14511,9 @@ WOWDATA.register({
                   "instance": "Hellfire Ramparts",
                   "boss": "Omor the Unscarred",
                   "detail": "Requires level 60"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "ranged": [
@@ -14249,7 +14525,8 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop",
                   "detail": "BoE, Dire Maul trash"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 13396,
@@ -14261,7 +14538,8 @@ WOWDATA.register({
                   "instance": "Stratholme",
                   "boss": "Skul"
                 },
-                "note": "Shadow damage bonus wasted on Mage, but strong raw wand DPS for the bracket; requires level 52"
+                "note": "Shadow damage bonus wasted on Mage, but strong raw wand DPS for the bracket; requires level 52",
+                "weaponType": "Wand"
               },
               {
                 "id": 17745,
@@ -14273,7 +14551,8 @@ WOWDATA.register({
                   "instance": "Maraudon",
                   "boss": "Noxxion",
                   "detail": "Requires level 46"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -14730,7 +15009,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Nexus-King Salhadaar",
                   "zone": "Netherstorm"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 25760,
@@ -14741,7 +15022,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "The Ring of Blood: The Final Challenge",
                   "zone": "Nagrand"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 25950,
@@ -14752,7 +15035,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Mana-Tombs",
                   "boss": "Tavarok"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "ranged": [
@@ -14766,7 +15051,8 @@ WOWDATA.register({
                   "instance": "Mana-Tombs",
                   "boss": "Pandemonius",
                   "detail": "Requires level 64"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 29149,
@@ -14777,7 +15063,8 @@ WOWDATA.register({
                   "type": "reputation",
                   "zone": "Zangarmarsh",
                   "detail": "Sporeggar — Revered; requires level 62"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 24380,
@@ -14788,7 +15075,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Slave Pens",
                   "boss": "Rokmar the Crackler"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -15235,7 +15523,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Nexus-King Salhadaar",
                   "zone": "Netherstorm"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 27868,
@@ -15246,7 +15536,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Shattered Halls",
                   "boss": "Warbringer O'mrogg"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 25760,
@@ -15257,7 +15549,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "The Ring of Blood: The Final Challenge",
                   "zone": "Nagrand"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "ranged": [
@@ -15271,7 +15565,8 @@ WOWDATA.register({
                   "instance": "Shadow Labyrinth",
                   "boss": "Blackheart the Inciter"
                 },
-                "note": "Highest-DPS wand across the leveling brackets"
+                "note": "Highest-DPS wand across the leveling brackets",
+                "weaponType": "Wand"
               },
               {
                 "id": 27885,
@@ -15283,7 +15578,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Shadow Labyrinth",
                   "boss": "Ambassador Hellmaw"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 25939,
@@ -15295,7 +15591,8 @@ WOWDATA.register({
                   "instance": "Mana-Tombs",
                   "boss": "Pandemonius",
                   "detail": "Requires level 64"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }

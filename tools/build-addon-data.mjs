@@ -65,6 +65,7 @@ for (const cd of bis) {
             sourceInstance: (it.source && it.source.instance) || null,
             profession: (it.source && it.source.profession) || null,
             bop: it.bop ? true : null,
+            hand: it.hand || null,
             note: it.note || null,
           })),
         ])),

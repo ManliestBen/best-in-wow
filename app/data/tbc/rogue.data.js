@@ -324,7 +324,9 @@ WOWDATA.register({
                   "profession": "Blacksmithing"
                 },
                 "note": "Main-hand mace — pair with Mace Specialization",
-                "bop": true
+                "bop": true,
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 31332,
@@ -335,7 +337,9 @@ WOWDATA.register({
                   "type": "world-drop",
                   "detail": "BoE world drop"
                 },
-                "note": "Extra-attack proc; best sword MH pre-raid"
+                "note": "Extra-attack proc; best sword MH pre-raid",
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 29348,
@@ -348,7 +352,9 @@ WOWDATA.register({
                   "boss": "Warchief Kargath Bladefist",
                   "detail": "Heroic only"
                 },
-                "note": "Fist weapon — use with Close Quarters Combat"
+                "note": "Fist weapon — use with Close Quarters Combat",
+                "hand": "main",
+                "weaponType": "Fist Weapon"
               }
             ],
             "offhand": [
@@ -362,7 +368,9 @@ WOWDATA.register({
                   "instance": "The Black Morass",
                   "boss": "Aeonus"
                 },
-                "note": "1.4 speed with hit and expertise — ideal off-hand"
+                "note": "1.4 speed with hit and expertise — ideal off-hand",
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 29124,
@@ -372,7 +380,9 @@ WOWDATA.register({
                 "source": {
                   "type": "reputation",
                   "detail": "The Aldor — Exalted, vendor purchase"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Sword"
               }
             ],
             "ranged": [
@@ -386,7 +396,8 @@ WOWDATA.register({
                   "type": "reputation",
                   "detail": "Honor Hold — Exalted"
                 },
-                "note": "Agility/hit stat stick"
+                "note": "Agility/hit stat stick",
+                "weaponType": "Gun"
               },
               {
                 "id": 29152,
@@ -398,7 +409,8 @@ WOWDATA.register({
                   "type": "reputation",
                   "detail": "Thrallmar — Exalted"
                 },
-                "note": "Agility/hit stat stick"
+                "note": "Agility/hit stat stick",
+                "weaponType": "Bow"
               }
             ]
           }
@@ -712,7 +724,9 @@ WOWDATA.register({
                   "profession": "Blacksmithing"
                 },
                 "note": "Main-hand mace — pair with Mace Specialization",
-                "bop": true
+                "bop": true,
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 28729,
@@ -724,7 +738,9 @@ WOWDATA.register({
                   "instance": "Karazhan",
                   "boss": "Netherspite"
                 },
-                "note": "Best sword main hand"
+                "note": "Best sword main hand",
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 28768,
@@ -736,7 +752,9 @@ WOWDATA.register({
                   "instance": "Karazhan",
                   "boss": "Prince Malchezaar"
                 },
-                "note": "Dagger — Mutilate builds"
+                "note": "Dagger — Mutilate builds",
+                "hand": "one",
+                "weaponType": "Dagger"
               }
             ],
             "offhand": [
@@ -750,7 +768,9 @@ WOWDATA.register({
                   "instance": "The Black Morass",
                   "boss": "Aeonus"
                 },
-                "note": "Still BiS off-hand in Phase 1"
+                "note": "Still BiS off-hand in Phase 1",
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 29124,
@@ -760,7 +780,9 @@ WOWDATA.register({
                 "source": {
                   "type": "reputation",
                   "detail": "The Aldor — Exalted, vendor purchase"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Sword"
               }
             ],
             "ranged": [
@@ -773,7 +795,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Prince Malchezaar"
-                }
+                },
+                "weaponType": "Bow"
               },
               {
                 "id": 29151,
@@ -784,7 +807,8 @@ WOWDATA.register({
                 "source": {
                   "type": "reputation",
                   "detail": "Honor Hold — Exalted"
-                }
+                },
+                "weaponType": "Gun"
               },
               {
                 "id": 29152,
@@ -795,7 +819,8 @@ WOWDATA.register({
                 "source": {
                   "type": "reputation",
                   "detail": "Thrallmar — Exalted"
-                }
+                },
+                "weaponType": "Bow"
               }
             ]
           }
@@ -1002,7 +1027,9 @@ WOWDATA.register({
                   "instance": "Black Temple",
                   "boss": "Illidan Stormrage"
                 },
-                "note": "Legendary — set bonus with the off-hand glaive"
+                "note": "Legendary — set bonus with the off-hand glaive",
+                "hand": "main",
+                "weaponType": "Sword"
               },
               {
                 "id": 34331,
@@ -1014,7 +1041,9 @@ WOWDATA.register({
                   "instance": "Sunwell Plateau",
                   "boss": "Kil'jaeden"
                 },
-                "note": "Fist — best non-Glaive main hand (Close Quarters Combat)"
+                "note": "Fist — best non-Glaive main hand (Close Quarters Combat)",
+                "hand": "main",
+                "weaponType": "Fist Weapon"
               }
             ],
             "offhand": [
@@ -1028,7 +1057,9 @@ WOWDATA.register({
                   "instance": "Black Temple",
                   "boss": "Illidan Stormrage"
                 },
-                "note": "Legendary off-hand glaive"
+                "note": "Legendary off-hand glaive",
+                "hand": "off",
+                "weaponType": "Sword"
               },
               {
                 "id": 32369,
@@ -1040,7 +1071,9 @@ WOWDATA.register({
                   "instance": "Black Temple",
                   "boss": "Mother Shahraz"
                 },
-                "note": "Best non-Glaive off-hand sword"
+                "note": "Best non-Glaive off-hand sword",
+                "hand": "one",
+                "weaponType": "Sword"
               }
             ],
             "ranged": [
@@ -1053,7 +1086,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Kil'jaeden"
-                }
+                },
+                "weaponType": "Bow"
               }
             ]
           }

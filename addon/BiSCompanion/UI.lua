@@ -91,9 +91,14 @@ local function BuildGearList()
     return
   end
 
+  local blockedBy = B:OffhandBlockedBy(bracket)
   for _, slotKey in ipairs(B.SLOT_ORDER) do
     local items = B:SlotItems(bracket, slotKey)
-    if #items > 0 then
+    if slotKey == "offhand" and blockedBy then
+      table.insert(listData, { kind = "blocked", slot = slotKey,
+        label = B.SLOT_NAMES[slotKey],
+        text = "two-handed weapon equipped — no off-hand" })
+    elseif #items > 0 then
       local n = math.min(B.WORN[slotKey] or 1, #items)
       for i = 1, n do
         local chosen = B:ChosenItem(items, slotKey, i)
@@ -259,7 +264,7 @@ local function UpdateRows()
     else
       row:Show()
       -- header rows are display-only: no hover highlight, no tooltip, no click.
-      row:EnableMouse(d.kind ~= "header")
+      row:EnableMouse(d.kind ~= "header" and d.kind ~= "blocked")
       if d.kind == "msg" then
         row.slotText:SetText("")
         row.check:Hide()
@@ -292,6 +297,11 @@ local function UpdateRows()
         row.check:Hide()
         row.slotText:SetText("")
         row.nameText:SetText("|cffc8aa6e" .. (d.text or "") .. "|r")
+        row.nameText:SetTextColor(1, 1, 1)
+      elseif d.kind == "blocked" then
+        row.check:Hide()
+        row.slotText:SetText(d.label or "")
+        row.nameText:SetText("|cff7a6640" .. (d.text or "") .. "|r")
         row.nameText:SetTextColor(1, 1, 1)
       elseif d.kind == "enchant" then
         row.check:Hide()
@@ -760,7 +770,7 @@ local function CreateMainFrame()
     row:SetScript("OnEnter", safe("row-tooltip", function(self)
       local d = self.data
       if not d then return end
-      if d.kind == "header" then return end
+      if d.kind == "header" or d.kind == "blocked" then return end
       GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
       if d.kind == "item" and d.item.id and d.item.id > 0 then
         GameTooltip:SetHyperlink("item:" .. d.item.id)
@@ -774,6 +784,9 @@ local function CreateMainFrame()
         local canExpand = d.expandable and not d.noExpand and B.db.tab == "gear"
         if d.tier then
           GameTooltip:AddLine("|cffc8aa6eRanked:|r " .. (B.RANK_LABEL[d.tier] or ("#" .. d.tier)))
+        end
+        if d.item.hand == "two" then
+          GameTooltip:AddLine("|cffc8aa6eTwo-handed|r — leaves no room for an off-hand", 1, 1, 1)
         end
         if d.alt then
           GameTooltip:AddLine("|cff777777Click: go for this one · Shift-click: link in chat|r")

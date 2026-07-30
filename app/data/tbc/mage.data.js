@@ -350,7 +350,9 @@ WOWDATA.register({
                   "type": "crafted",
                   "detail": "Blacksmithing (BoE)",
                   "profession": "Blacksmithing"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 29153,
@@ -361,7 +363,9 @@ WOWDATA.register({
                 "source": {
                   "type": "reputation",
                   "detail": "Honor Hold — Exalted"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Sword"
               },
               {
                 "id": 29155,
@@ -372,7 +376,9 @@ WOWDATA.register({
                 "source": {
                   "type": "reputation",
                   "detail": "Thrallmar — Exalted"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Sword"
               }
             ],
             "offhand": [
@@ -384,7 +390,8 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "25 Badge of Justice — G'eras, Shattrath City"
-                }
+                },
+                "hand": "held"
               },
               {
                 "id": 28412,
@@ -395,7 +402,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Arcatraz",
                   "boss": "Harbinger Skyriss"
-                }
+                },
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -408,7 +416,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Arcatraz",
                   "boss": "Dalliah the Doomsayer"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 29350,
@@ -420,7 +429,8 @@ WOWDATA.register({
                   "instance": "The Underbog",
                   "boss": "The Black Stalker",
                   "detail": "Heroic only"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -764,7 +774,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Prince Malchezaar"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 28802,
@@ -775,7 +787,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Gruul's Lair",
                   "boss": "Gruul the Dragonkiller"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Sword"
               }
             ],
             "offhand": [
@@ -788,7 +802,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Netherspite"
-                }
+                },
+                "hand": "held"
               },
               {
                 "id": 28412,
@@ -799,7 +814,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Arcatraz",
                   "boss": "Harbinger Skyriss"
-                }
+                },
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -812,7 +828,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Shade of Aran"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 28783,
@@ -823,7 +840,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Magtheridon's Lair",
                   "boss": "Magtheridon"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -1158,7 +1176,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Kil'jaeden"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 35102,
@@ -1168,7 +1188,9 @@ WOWDATA.register({
                 "source": {
                   "type": "pvp",
                   "detail": "Season 4 Arena — rating required"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 30910,
@@ -1179,7 +1201,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Hyjal Summit",
                   "boss": "Archimonde"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Sword"
               }
             ],
             "offhand": [
@@ -1192,7 +1216,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Brutallus"
-                }
+                },
+                "hand": "held"
               },
               {
                 "id": 30872,
@@ -1203,7 +1228,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Hyjal Summit",
                   "boss": "Rage Winterchill"
-                }
+                },
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -1216,7 +1242,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "detail": "Trash drop"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 29982,
@@ -1227,7 +1254,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Tempest Keep: The Eye",
                   "boss": "High Astromancer Solarian"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -1581,7 +1609,9 @@ WOWDATA.register({
                   "type": "crafted",
                   "detail": "Blacksmithing (BoE)",
                   "profession": "Blacksmithing"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 29153,
@@ -1592,7 +1622,9 @@ WOWDATA.register({
                 "source": {
                   "type": "reputation",
                   "detail": "Honor Hold — Exalted"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Sword"
               },
               {
                 "id": 29155,
@@ -1603,7 +1635,9 @@ WOWDATA.register({
                 "source": {
                   "type": "reputation",
                   "detail": "Thrallmar — Exalted"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Sword"
               }
             ],
             "offhand": [
@@ -1615,7 +1649,8 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "25 Badge of Justice — G'eras, Shattrath City"
-                }
+                },
+                "hand": "held"
               },
               {
                 "id": 28412,
@@ -1626,7 +1661,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Arcatraz",
                   "boss": "Harbinger Skyriss"
-                }
+                },
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -1640,7 +1676,8 @@ WOWDATA.register({
                   "instance": "The Underbog",
                   "boss": "The Black Stalker",
                   "detail": "Heroic only"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 28386,
@@ -1651,7 +1688,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Arcatraz",
                   "boss": "Dalliah the Doomsayer"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -1995,7 +2033,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Prince Malchezaar"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 28802,
@@ -2006,7 +2046,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Gruul's Lair",
                   "boss": "Gruul the Dragonkiller"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Sword"
               }
             ],
             "offhand": [
@@ -2019,7 +2061,8 @@ WOWDATA.register({
                   "type": "badge",
                   "detail": "25 Badge of Justice — G'eras, Shattrath City"
                 },
-                "note": "Cheap badge off-hand — pure damage"
+                "note": "Cheap badge off-hand — pure damage",
+                "hand": "held"
               },
               {
                 "id": 28603,
@@ -2030,7 +2073,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Nightbane"
-                }
+                },
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -2043,7 +2087,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Magtheridon's Lair",
                   "boss": "Magtheridon"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 28673,
@@ -2054,7 +2099,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Shade of Aran"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -2390,7 +2436,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Kil'jaeden"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 34182,
@@ -2402,7 +2450,9 @@ WOWDATA.register({
                   "instance": "Sunwell Plateau",
                   "boss": "Felmyst"
                 },
-                "note": "Two-handed staff — leave off-hand empty"
+                "note": "Two-handed staff — leave off-hand empty",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 35102,
@@ -2412,7 +2462,9 @@ WOWDATA.register({
                 "source": {
                   "type": "pvp",
                   "detail": "Season 4 Arena — rating required"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               }
             ],
             "offhand": [
@@ -2425,7 +2477,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Brutallus"
-                }
+                },
+                "hand": "held"
               },
               {
                 "id": 30872,
@@ -2436,7 +2489,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Hyjal Summit",
                   "boss": "Rage Winterchill"
-                }
+                },
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -2449,7 +2503,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "detail": "Trash drop"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 33192,
@@ -2459,7 +2514,8 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "25 Badge of Justice — G'eras, Shattrath City"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -2788,7 +2844,9 @@ WOWDATA.register({
                   "type": "crafted",
                   "detail": "Blacksmithing (BoE)",
                   "profession": "Blacksmithing"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 29153,
@@ -2799,7 +2857,9 @@ WOWDATA.register({
                 "source": {
                   "type": "reputation",
                   "detail": "Honor Hold — Exalted"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Sword"
               },
               {
                 "id": 29155,
@@ -2810,7 +2870,9 @@ WOWDATA.register({
                 "source": {
                   "type": "reputation",
                   "detail": "Thrallmar — Exalted"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Sword"
               }
             ],
             "offhand": [
@@ -2822,7 +2884,8 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "25 Badge of Justice — G'eras, Shattrath City"
-                }
+                },
+                "hand": "held"
               },
               {
                 "id": 28412,
@@ -2833,7 +2896,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Arcatraz",
                   "boss": "Harbinger Skyriss"
-                }
+                },
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -2847,7 +2911,8 @@ WOWDATA.register({
                   "instance": "The Underbog",
                   "boss": "The Black Stalker",
                   "detail": "Heroic only"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 28386,
@@ -2858,7 +2923,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Arcatraz",
                   "boss": "Dalliah the Doomsayer"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -3202,7 +3268,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Prince Malchezaar"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 28802,
@@ -3213,7 +3281,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Gruul's Lair",
                   "boss": "Gruul the Dragonkiller"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Sword"
               }
             ],
             "offhand": [
@@ -3226,7 +3296,8 @@ WOWDATA.register({
                   "type": "badge",
                   "detail": "25 Badge of Justice — G'eras, Shattrath City"
                 },
-                "note": "Badge off-hand with Frost damage"
+                "note": "Badge off-hand with Frost damage",
+                "hand": "held"
               },
               {
                 "id": 28734,
@@ -3237,7 +3308,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Netherspite"
-                }
+                },
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -3250,7 +3322,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Magtheridon's Lair",
                   "boss": "Magtheridon"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 28673,
@@ -3261,7 +3334,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Shade of Aran"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }

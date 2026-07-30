@@ -395,7 +395,9 @@ WOWDATA.register({
                 "source": {
                   "type": "reputation",
                   "detail": "Cenarion Expedition Exalted — Fedryen Swiftspear"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 29359,
@@ -407,7 +409,9 @@ WOWDATA.register({
                   "instance": "The Botanica",
                   "boss": "Warp Splinter",
                   "detail": "Heroic only"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 31334,
@@ -417,7 +421,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop",
                   "zone": "Outland (BoE)"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "ranged": [
@@ -431,7 +437,8 @@ WOWDATA.register({
                   "instance": "Stratholme (Classic)",
                   "boss": "Magistrate Barthilas"
                 },
-                "note": "Best with high rage"
+                "note": "Best with high rage",
+                "weaponType": "Idol"
               },
               {
                 "id": 28064,
@@ -442,7 +449,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Colossal Menace",
                   "zone": "Hellfire Peninsula"
-                }
+                },
+                "weaponType": "Idol"
               }
             ]
           }
@@ -792,7 +800,9 @@ WOWDATA.register({
                   "type": "reputation",
                   "detail": "Cenarion Expedition Exalted"
                 },
-                "note": "Mitigation"
+                "note": "Mitigation",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 28658,
@@ -804,7 +814,9 @@ WOWDATA.register({
                   "instance": "Karazhan",
                   "boss": "Terestian Illhoof"
                 },
-                "note": "Threat"
+                "note": "Threat",
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "ranged": [
@@ -817,7 +829,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Stratholme (Classic)",
                   "boss": "Magistrate Barthilas"
-                }
+                },
+                "weaponType": "Idol"
               },
               {
                 "id": 28064,
@@ -828,7 +841,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Colossal Menace",
                   "zone": "Hellfire Peninsula"
-                }
+                },
+                "weaponType": "Idol"
               }
             ]
           }
@@ -1154,7 +1168,9 @@ WOWDATA.register({
                   "instance": "Hyjal Summit",
                   "boss": "Anetheron"
                 },
-                "note": "Mitigation"
+                "note": "Mitigation",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 34198,
@@ -1166,7 +1182,9 @@ WOWDATA.register({
                   "instance": "Sunwell Plateau",
                   "boss": "Eredar Twins"
                 },
-                "note": "Threat"
+                "note": "Threat",
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "ranged": [
@@ -1178,7 +1196,8 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "G'eras, Shattrath — 20 Badge of Justice"
-                }
+                },
+                "weaponType": "Idol"
               },
               {
                 "id": 32257,
@@ -1189,7 +1208,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Black Temple",
                   "boss": "Supremus"
-                }
+                },
+                "weaponType": "Idol"
               }
             ]
           }
@@ -1548,7 +1568,9 @@ WOWDATA.register({
                   "instance": "The Steamvault",
                   "boss": "Mekgineer Steamrigger"
                 },
-                "note": "Staff — no offhand"
+                "note": "Staff — no offhand",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 29175,
@@ -1559,7 +1581,9 @@ WOWDATA.register({
                   "type": "reputation",
                   "detail": "The Sha'tar Exalted — Almaador"
                 },
-                "note": "1H — pair with offhand"
+                "note": "1H — pair with offhand",
+                "hand": "main",
+                "weaponType": "Mace"
               }
             ],
             "ranged": [
@@ -1573,7 +1597,8 @@ WOWDATA.register({
                   "instance": "Shadow Labyrinth",
                   "boss": "Ambassador Hellmaw"
                 },
-                "note": "BiS through Sunwell"
+                "note": "BiS through Sunwell",
+                "weaponType": "Idol"
               },
               {
                 "id": 25643,
@@ -1584,7 +1609,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "The Exorcism of Colonel Jules",
                   "zone": "Hellfire Peninsula"
-                }
+                },
+                "weaponType": "Idol"
               }
             ]
           }
@@ -1943,7 +1969,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Prince Malchezaar"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 28522,
@@ -1954,7 +1982,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Maiden of Virtue"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               }
             ],
             "offhand": [
@@ -1967,7 +1997,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Shade of Aran"
-                }
+                },
+                "hand": "held"
               },
               {
                 "id": 29274,
@@ -1977,7 +2008,8 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "G'eras, Shattrath — 25 Badge of Justice"
-                }
+                },
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -1991,7 +2023,8 @@ WOWDATA.register({
                   "instance": "Shadow Labyrinth",
                   "boss": "Ambassador Hellmaw"
                 },
-                "note": "BiS through Sunwell"
+                "note": "BiS through Sunwell",
+                "weaponType": "Idol"
               }
             ]
           }
@@ -2262,7 +2295,9 @@ WOWDATA.register({
                   "instance": "Sunwell Plateau",
                   "boss": "Kil'jaeden"
                 },
-                "note": "1H — pair with offhand"
+                "note": "1H — pair with offhand",
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 34337,
@@ -2274,7 +2309,9 @@ WOWDATA.register({
                   "instance": "Sunwell Plateau",
                   "boss": "Kil'jaeden"
                 },
-                "note": "Staff — no offhand"
+                "note": "Staff — no offhand",
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "offhand": [
@@ -2288,7 +2325,8 @@ WOWDATA.register({
                   "instance": "Sunwell Plateau",
                   "boss": "Eredar Twins"
                 },
-                "note": "Empty when using a staff"
+                "note": "Empty when using a staff",
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -2302,7 +2340,8 @@ WOWDATA.register({
                   "instance": "Shadow Labyrinth",
                   "boss": "Ambassador Hellmaw"
                 },
-                "note": "Still BiS for Lifebloom builds"
+                "note": "Still BiS for Lifebloom builds",
+                "weaponType": "Idol"
               }
             ]
           }
@@ -2664,7 +2703,9 @@ WOWDATA.register({
                   "type": "reputation",
                   "detail": "Lower City Exalted"
                 },
-                "note": "Has spell hit; 1H — pair with offhand"
+                "note": "Has spell hit; 1H — pair with offhand",
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 23554,
@@ -2675,7 +2716,9 @@ WOWDATA.register({
                   "type": "crafted",
                   "detail": "Blacksmithing (BoE)",
                   "profession": "Blacksmithing"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 29355,
@@ -2688,7 +2731,9 @@ WOWDATA.register({
                   "boss": "Talon King Ikiss",
                   "detail": "Heroic only"
                 },
-                "note": "Staff — no offhand"
+                "note": "Staff — no offhand",
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "offhand": [
@@ -2701,7 +2746,8 @@ WOWDATA.register({
                   "type": "badge",
                   "detail": "G'eras, Shattrath — 25 Badge of Justice"
                 },
-                "note": "Empty when using a staff"
+                "note": "Empty when using a staff",
+                "hand": "held"
               },
               {
                 "id": 28187,
@@ -2712,7 +2758,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Black Morass",
                   "boss": "Temporus"
-                }
+                },
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -2725,7 +2772,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Shattered Halls",
                   "boss": "Grand Warlock Nethekurse"
-                }
+                },
+                "weaponType": "Idol"
               },
               {
                 "id": 23197,
@@ -2735,7 +2783,8 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop",
                   "zone": "BoE"
-                }
+                },
+                "weaponType": "Idol"
               }
             ]
           }
@@ -3087,7 +3136,9 @@ WOWDATA.register({
                   "instance": "Karazhan",
                   "boss": "Prince Malchezaar"
                 },
-                "note": "1H — pair with offhand"
+                "note": "1H — pair with offhand",
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 28633,
@@ -3099,7 +3150,9 @@ WOWDATA.register({
                   "instance": "Karazhan",
                   "boss": "The Curator"
                 },
-                "note": "Staff — no offhand"
+                "note": "Staff — no offhand",
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "offhand": [
@@ -3112,7 +3165,8 @@ WOWDATA.register({
                   "type": "badge",
                   "detail": "G'eras, Shattrath — 25 Badge of Justice"
                 },
-                "note": "Empty when using a staff"
+                "note": "Empty when using a staff",
+                "hand": "held"
               },
               {
                 "id": 28734,
@@ -3123,7 +3177,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Netherspite"
-                }
+                },
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -3136,7 +3191,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Shattered Halls",
                   "boss": "Grand Warlock Nethekurse"
-                }
+                },
+                "weaponType": "Idol"
               }
             ]
           }
@@ -3475,7 +3531,9 @@ WOWDATA.register({
                   "instance": "Sunwell Plateau",
                   "boss": "Kil'jaeden"
                 },
-                "note": "1H — pair with offhand"
+                "note": "1H — pair with offhand",
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 34182,
@@ -3487,7 +3545,9 @@ WOWDATA.register({
                   "instance": "Sunwell Plateau",
                   "boss": "Felmyst"
                 },
-                "note": "Staff — no offhand"
+                "note": "Staff — no offhand",
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "offhand": [
@@ -3501,7 +3561,8 @@ WOWDATA.register({
                   "instance": "Sunwell Plateau",
                   "boss": "Brutallus"
                 },
-                "note": "Empty when using a staff"
+                "note": "Empty when using a staff",
+                "hand": "held"
               },
               {
                 "id": 30872,
@@ -3512,7 +3573,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Hyjal Summit",
                   "boss": "Rage Winterchill"
-                }
+                },
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -3526,7 +3588,8 @@ WOWDATA.register({
                   "quest": "Vanquish the Raven God",
                   "instance": "Sethekk Halls",
                   "detail": "Epic flight form chain, Heroic only"
-                }
+                },
+                "weaponType": "Idol"
               },
               {
                 "id": 27518,
@@ -3537,7 +3600,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Shattered Halls",
                   "boss": "Grand Warlock Nethekurse"
-                }
+                },
+                "weaponType": "Idol"
               }
             ]
           }
@@ -3886,7 +3950,9 @@ WOWDATA.register({
                   "instance": "The Botanica",
                   "boss": "Warp Splinter",
                   "detail": "Heroic only"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 31334,
@@ -3896,7 +3962,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop",
                   "zone": "Outland (BoE)"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 28476,
@@ -3906,7 +3974,9 @@ WOWDATA.register({
                 "source": {
                   "type": "pvp",
                   "detail": "Season 1 arena vendor"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ],
             "ranged": [
@@ -3918,7 +3988,8 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "G'eras, Shattrath — 15 Badge of Justice"
-                }
+                },
+                "weaponType": "Idol"
               },
               {
                 "id": 28372,
@@ -3929,7 +4000,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Arcatraz",
                   "boss": "Zereketh the Unbound"
-                }
+                },
+                "weaponType": "Idol"
               }
             ]
           }
@@ -4239,7 +4311,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Terestian Illhoof"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 28476,
@@ -4249,7 +4323,9 @@ WOWDATA.register({
                 "source": {
                   "type": "pvp",
                   "detail": "Season 1 arena vendor"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ],
             "ranged": [
@@ -4261,7 +4337,8 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "G'eras, Shattrath — 15 Badge of Justice"
-                }
+                },
+                "weaponType": "Idol"
               }
             ]
           }
@@ -4520,7 +4597,9 @@ WOWDATA.register({
                   "instance": "Sunwell Plateau",
                   "boss": "Eredar Twins"
                 },
-                "note": "Biggest single upgrade of P5"
+                "note": "Biggest single upgrade of P5",
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "ranged": [
@@ -4535,7 +4614,8 @@ WOWDATA.register({
                   "instance": "Sethekk Halls",
                   "detail": "Epic flight form chain, Heroic only"
                 },
-                "note": "Best for raid DPS"
+                "note": "Best for raid DPS",
+                "weaponType": "Idol"
               },
               {
                 "id": 29390,
@@ -4545,7 +4625,8 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "G'eras, Shattrath — 15 Badge of Justice"
-                }
+                },
+                "weaponType": "Idol"
               }
             ]
           }

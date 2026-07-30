@@ -323,7 +323,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Deadmines",
                   "boss": "Mr. Smite"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 5191,
@@ -335,7 +337,9 @@ WOWDATA.register({
                   "instance": "The Deadmines",
                   "boss": "Edwin VanCleef"
                 },
-                "note": "Stat-stick dagger; ranged weapon remains primary damage. No offhand until Dual Wield unlocks at level 20"
+                "note": "Stat-stick dagger; ranged weapon remains primary damage. No offhand until Dual Wield unlocks at level 20",
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 1482,
@@ -347,7 +351,9 @@ WOWDATA.register({
                   "instance": "Shadowfang Keep",
                   "boss": "Son of Arugal"
                 },
-                "note": "Proc adds shadow damage"
+                "note": "Proc adds shadow damage",
+                "hand": "one",
+                "weaponType": "Sword"
               }
             ],
             "ranged": [
@@ -361,7 +367,8 @@ WOWDATA.register({
                   "instance": "Wailing Caverns",
                   "detail": "Rare bow drop, reachable from level ~15"
                 },
-                "note": "Best ranged upgrade once you can clear Wailing Caverns"
+                "note": "Best ranged upgrade once you can clear Wailing Caverns",
+                "weaponType": "Bow"
               },
               {
                 "id": 2903,
@@ -374,7 +381,8 @@ WOWDATA.register({
                   "quest": "A Hunter's Boast",
                   "zone": "Loch Modan",
                   "detail": "Hunter class quest chain"
-                }
+                },
+                "weaponType": "Bow"
               },
               {
                 "id": 5596,
@@ -386,7 +394,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Crown of the Earth",
                   "zone": "Teldrassil"
-                }
+                },
+                "weaponType": "Bow"
               }
             ]
           }
@@ -718,7 +727,9 @@ WOWDATA.register({
                 "source": {
                   "type": "drop",
                   "instance": "Razorfen Kraul"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 7230,
@@ -729,7 +740,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Deadmines",
                   "boss": "Mr. Smite"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 16886,
@@ -741,7 +754,9 @@ WOWDATA.register({
                   "quest": "Baron Aquanis",
                   "instance": "Blackfathom Deeps"
                 },
-                "note": "Stat-stick; Dual Wield unlocks at level 20"
+                "note": "Stat-stick; Dual Wield unlocks at level 20",
+                "hand": "one",
+                "weaponType": "Sword"
               }
             ],
             "ranged": [
@@ -755,7 +770,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Answered Questions",
                   "zone": "Duskwood"
-                }
+                },
+                "weaponType": "Bow"
               },
               {
                 "id": 3493,
@@ -767,7 +783,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Ormer's Revenge",
                   "zone": "Wetlands"
-                }
+                },
+                "weaponType": "Bow"
               },
               {
                 "id": 6739,
@@ -780,7 +797,8 @@ WOWDATA.register({
                   "quest": "The Sacred Flame",
                   "zone": "Thousand Needles",
                   "detail": "Chain starts at Thunder Bluff, turned in at Freewind Post"
-                }
+                },
+                "weaponType": "Bow"
               }
             ]
           }
@@ -1176,7 +1194,9 @@ WOWDATA.register({
                   "instance": "Gnomeregan",
                   "boss": "Crowd Pummeler 9-60"
                 },
-                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling.",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 1976,
@@ -1186,7 +1206,9 @@ WOWDATA.register({
                 "source": {
                   "type": "drop",
                   "instance": "Razorfen Kraul"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 7230,
@@ -1197,7 +1219,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Deadmines",
                   "boss": "Mr. Smite"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ],
             "ranged": [
@@ -1212,7 +1236,8 @@ WOWDATA.register({
                   "quest": "An Unholy Alliance",
                   "zone": "Undercity",
                   "detail": "Chain starts with a scroll drop in Razorfen Downs"
-                }
+                },
+                "weaponType": "Gun"
               },
               {
                 "id": 5817,
@@ -1224,7 +1249,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Answered Questions",
                   "zone": "Duskwood"
-                }
+                },
+                "weaponType": "Bow"
               },
               {
                 "id": 3493,
@@ -1236,7 +1262,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Ormer's Revenge",
                   "zone": "Wetlands"
-                }
+                },
+                "weaponType": "Bow"
               }
             ]
           }
@@ -1629,7 +1656,9 @@ WOWDATA.register({
                   "instance": "Gnomeregan",
                   "boss": "Crowd Pummeler 9-60"
                 },
-                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling.",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 10758,
@@ -1642,7 +1671,9 @@ WOWDATA.register({
                   "boss": "Ragglesnout",
                   "detail": "Rare elite"
                 },
-                "note": "Two-hand sword; strong stat-stick even though ranged stays primary"
+                "note": "Two-hand sword; strong stat-stick even though ranged stays primary",
+                "hand": "two",
+                "weaponType": "Sword"
               },
               {
                 "id": 7714,
@@ -1655,7 +1686,9 @@ WOWDATA.register({
                   "boss": "Arcanist Doan",
                   "detail": "Library wing"
                 },
-                "note": "Fast dagger stat-stick"
+                "note": "Fast dagger stat-stick",
+                "hand": "main",
+                "weaponType": "Dagger"
               }
             ],
             "ranged": [
@@ -1668,7 +1701,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Colonel Kurzen",
                   "zone": "Stranglethorn Vale"
-                }
+                },
+                "weaponType": "Gun"
               },
               {
                 "id": 17042,
@@ -1681,7 +1715,8 @@ WOWDATA.register({
                   "quest": "An Unholy Alliance",
                   "zone": "Undercity",
                   "detail": "Chain starts with a scroll drop in Razorfen Downs"
-                }
+                },
+                "weaponType": "Gun"
               },
               {
                 "id": 5817,
@@ -1693,7 +1728,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Answered Questions",
                   "zone": "Duskwood"
-                }
+                },
+                "weaponType": "Bow"
               }
             ]
           }
@@ -2133,7 +2169,9 @@ WOWDATA.register({
                   "instance": "Scarlet Monastery",
                   "boss": "Scarlet Commander Mograine",
                   "detail": "Cathedral wing"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 9449,
@@ -2145,7 +2183,9 @@ WOWDATA.register({
                   "instance": "Gnomeregan",
                   "boss": "Crowd Pummeler 9-60"
                 },
-                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling.",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 9413,
@@ -2156,7 +2196,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Uldaman",
                   "boss": "Archaedas"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ],
             "ranged": [
@@ -2169,7 +2211,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Return to Primal Torntusk",
                   "zone": "The Hinterlands"
-                }
+                },
+                "weaponType": "Bow"
               },
               {
                 "id": 4127,
@@ -2180,7 +2223,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Colonel Kurzen",
                   "zone": "Stranglethorn Vale"
-                }
+                },
+                "weaponType": "Gun"
               },
               {
                 "id": 17042,
@@ -2193,7 +2237,8 @@ WOWDATA.register({
                   "quest": "An Unholy Alliance",
                   "zone": "Undercity",
                   "detail": "Chain starts with a scroll drop in Razorfen Downs"
-                }
+                },
+                "weaponType": "Gun"
               }
             ]
           }
@@ -2632,7 +2677,9 @@ WOWDATA.register({
                   "instance": "Scarlet Monastery",
                   "boss": "Scarlet Commander Mograine",
                   "detail": "Cathedral wing"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 9449,
@@ -2644,7 +2691,9 @@ WOWDATA.register({
                   "instance": "Gnomeregan",
                   "boss": "Crowd Pummeler 9-60"
                 },
-                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling.",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 9413,
@@ -2655,7 +2704,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Uldaman",
                   "boss": "Archaedas"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ],
             "ranged": [
@@ -2669,7 +2720,8 @@ WOWDATA.register({
                   "quest": "Corruption of Earth and Seed",
                   "zone": "Desolace",
                   "detail": "Maraudon entrance quest chain; also sold by a Desolace vendor"
-                }
+                },
+                "weaponType": "Bow"
               },
               {
                 "id": 19114,
@@ -2680,7 +2732,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Return to Primal Torntusk",
                   "zone": "The Hinterlands"
-                }
+                },
+                "weaponType": "Bow"
               },
               {
                 "id": 4127,
@@ -2691,7 +2744,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Colonel Kurzen",
                   "zone": "Stranglethorn Vale"
-                }
+                },
+                "weaponType": "Gun"
               }
             ]
           }
@@ -3128,7 +3182,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "very rare, expensive BoE epic"
+                "note": "very rare, expensive BoE epic",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 17766,
@@ -3139,7 +3195,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Maraudon",
                   "boss": "Princess Theradras"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 7723,
@@ -3151,7 +3209,9 @@ WOWDATA.register({
                   "instance": "Scarlet Monastery",
                   "boss": "Scarlet Commander Mograine",
                   "detail": "Cathedral wing"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ],
             "ranged": [
@@ -3165,7 +3225,8 @@ WOWDATA.register({
                   "quest": "Corruption of Earth and Seed",
                   "zone": "Desolace",
                   "detail": "Maraudon entrance quest chain; also sold by a Desolace vendor"
-                }
+                },
+                "weaponType": "Bow"
               },
               {
                 "id": 19114,
@@ -3176,7 +3237,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Return to Primal Torntusk",
                   "zone": "The Hinterlands"
-                }
+                },
+                "weaponType": "Bow"
               },
               {
                 "id": 4127,
@@ -3187,7 +3249,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Colonel Kurzen",
                   "zone": "Stranglethorn Vale"
-                }
+                },
+                "weaponType": "Gun"
               }
             ]
           }
@@ -3628,7 +3691,9 @@ WOWDATA.register({
                   "boss": "Highlord Omokk",
                   "detail": "Lower Blackrock Spire"
                 },
-                "note": "Bear-tank only — Strength/Stamina 2H mace, no benefit for cat form"
+                "note": "Bear-tank only — Strength/Stamina 2H mace, no benefit for cat form",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 2915,
@@ -3638,7 +3703,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "very rare, expensive BoE epic"
+                "note": "very rare, expensive BoE epic",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 17766,
@@ -3649,7 +3716,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Maraudon",
                   "boss": "Princess Theradras"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ],
             "ranged": [
@@ -3663,7 +3732,8 @@ WOWDATA.register({
                   "quest": "Corruption of Earth and Seed",
                   "zone": "Desolace",
                   "detail": "Maraudon entrance quest chain; also sold by a Desolace vendor"
-                }
+                },
+                "weaponType": "Bow"
               },
               {
                 "id": 19114,
@@ -3674,7 +3744,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Return to Primal Torntusk",
                   "zone": "The Hinterlands"
-                }
+                },
+                "weaponType": "Bow"
               },
               {
                 "id": 4127,
@@ -3685,7 +3756,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Colonel Kurzen",
                   "zone": "Stranglethorn Vale"
-                }
+                },
+                "weaponType": "Gun"
               }
             ]
           }
@@ -4127,7 +4199,9 @@ WOWDATA.register({
                   "quest": "The Ring of Blood: The Final Challenge",
                   "zone": "Nagrand"
                 },
-                "note": "Fist weapon"
+                "note": "Fist weapon",
+                "hand": "one",
+                "weaponType": "Fist Weapon"
               },
               {
                 "id": 24094,
@@ -4138,7 +4212,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Hellfire Ramparts",
                   "boss": "Omor the Unscarred"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 24020,
@@ -4149,7 +4225,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Hellfire Ramparts",
                   "boss": "Watchkeeper Gargolmar"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Sword"
               }
             ],
             "offhand": [
@@ -4162,7 +4240,9 @@ WOWDATA.register({
                   "type": "quest",
                   "zone": "Hellfire Peninsula"
                 },
-                "note": "Guaranteed quest reward, itemized specifically as an off-hand dagger"
+                "note": "Guaranteed quest reward, itemized specifically as an off-hand dagger",
+                "hand": "off",
+                "weaponType": "Dagger"
               },
               {
                 "id": 13368,
@@ -4173,7 +4253,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Stratholme",
                   "boss": "Baron Rivendare"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Dagger"
               },
               {
                 "id": 2243,
@@ -4183,7 +4265,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "expensive AH epic; optional upgrade"
+                "note": "expensive AH epic; optional upgrade",
+                "hand": "one",
+                "weaponType": "Mace"
               }
             ],
             "ranged": [
@@ -4198,7 +4282,8 @@ WOWDATA.register({
                   "zone": "Nagrand",
                   "detail": "Ends the Hemet Nesingwary chain at Nesingwary's Safari"
                 },
-                "note": "Strong enough to carry into early Karazhan gearing"
+                "note": "Strong enough to carry into early Karazhan gearing",
+                "weaponType": "Gun"
               },
               {
                 "id": 18680,
@@ -4209,7 +4294,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Scholomance",
                   "boss": "Lady Illucia Barov"
-                }
+                },
+                "weaponType": "Bow"
               },
               {
                 "id": 17753,
@@ -4221,7 +4307,8 @@ WOWDATA.register({
                   "quest": "Corruption of Earth and Seed",
                   "zone": "Desolace",
                   "detail": "Maraudon entrance quest chain; also sold by a Desolace vendor"
-                }
+                },
+                "weaponType": "Bow"
               }
             ]
           }
@@ -4665,7 +4752,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Underbog",
                   "boss": "Ghaz'an"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 25764,
@@ -4677,7 +4766,9 @@ WOWDATA.register({
                   "quest": "The Ring of Blood: The Final Challenge",
                   "zone": "Nagrand"
                 },
-                "note": "Fist weapon"
+                "note": "Fist weapon",
+                "hand": "one",
+                "weaponType": "Fist Weapon"
               },
               {
                 "id": 24094,
@@ -4688,7 +4779,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Hellfire Ramparts",
                   "boss": "Omor the Unscarred"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ],
             "ranged": [
@@ -4701,7 +4794,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Declawing Doomclaw",
                   "zone": "Netherstorm"
-                }
+                },
+                "weaponType": "Gun"
               },
               {
                 "id": 25639,
@@ -4714,7 +4808,8 @@ WOWDATA.register({
                   "zone": "Nagrand",
                   "detail": "Ends the Hemet Nesingwary chain at Nesingwary's Safari"
                 },
-                "note": "Strong enough to carry into early Karazhan gearing"
+                "note": "Strong enough to carry into early Karazhan gearing",
+                "weaponType": "Gun"
               },
               {
                 "id": 24381,
@@ -4725,7 +4820,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Slave Pens",
                   "boss": "Rokmar the Crackler"
-                }
+                },
+                "weaponType": "Crossbow"
               }
             ]
           }
@@ -5168,7 +5264,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Underbog",
                   "boss": "Ghaz'an"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 25764,
@@ -5180,7 +5278,9 @@ WOWDATA.register({
                   "quest": "The Ring of Blood: The Final Challenge",
                   "zone": "Nagrand"
                 },
-                "note": "Fist weapon"
+                "note": "Fist weapon",
+                "hand": "one",
+                "weaponType": "Fist Weapon"
               },
               {
                 "id": 27980,
@@ -5191,7 +5291,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sethekk Halls",
                   "boss": "Talon King Ikiss"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Mace"
               }
             ],
             "ranged": [
@@ -5204,7 +5306,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Declawing Doomclaw",
                   "zone": "Netherstorm"
-                }
+                },
+                "weaponType": "Gun"
               },
               {
                 "id": 25639,
@@ -5217,7 +5320,8 @@ WOWDATA.register({
                   "zone": "Nagrand",
                   "detail": "Ends the Hemet Nesingwary chain at Nesingwary's Safari"
                 },
-                "note": "Strong enough to carry into early Karazhan gearing"
+                "note": "Strong enough to carry into early Karazhan gearing",
+                "weaponType": "Gun"
               },
               {
                 "id": 24381,
@@ -5228,7 +5332,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Slave Pens",
                   "boss": "Rokmar the Crackler"
-                }
+                },
+                "weaponType": "Crossbow"
               }
             ]
           }

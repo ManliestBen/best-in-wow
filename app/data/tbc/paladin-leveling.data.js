@@ -262,7 +262,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Deadmines",
                   "detail": "trash (Defias Taskmaster)"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Axe"
               },
               {
                 "id": 3191,
@@ -273,7 +275,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Shadowfang Keep",
                   "boss": "Commander Springvale"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Axe"
               },
               {
                 "id": 7230,
@@ -284,7 +288,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Deadmines",
                   "boss": "Mr. Smite"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -635,7 +641,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "The Test of Righteousness chain",
                   "zone": "Redridge Mountains"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 1976,
@@ -645,7 +653,9 @@ WOWDATA.register({
                 "source": {
                   "type": "drop",
                   "instance": "Razorfen Kraul"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 5194,
@@ -656,7 +666,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Deadmines",
                   "detail": "trash (Defias Taskmaster)"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Axe"
               }
             ]
           }
@@ -1065,7 +1077,9 @@ WOWDATA.register({
                   "instance": "Gnomeregan",
                   "boss": "Crowd Pummeler 9-60"
                 },
-                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling.",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 6953,
@@ -1077,7 +1091,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "The Test of Righteousness chain",
                   "zone": "Redridge Mountains"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 6687,
@@ -1089,7 +1105,9 @@ WOWDATA.register({
                   "instance": "Razorfen Kraul",
                   "boss": "Overlord Ramtusk"
                 },
-                "note": "Faction-neutral alternative to the Alliance-only Thornblade"
+                "note": "Faction-neutral alternative to the Alliance-only Thornblade",
+                "hand": "two",
+                "weaponType": "Axe"
               }
             ]
           }
@@ -1501,7 +1519,9 @@ WOWDATA.register({
                   "instance": "Gnomeregan",
                   "boss": "Crowd Pummeler 9-60"
                 },
-                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling.",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 10758,
@@ -1514,7 +1534,9 @@ WOWDATA.register({
                   "boss": "Ragglesnout",
                   "detail": "Rare elite"
                 },
-                "note": "Two-hand sword; strong stat-stick even though ranged stays primary"
+                "note": "Two-hand sword; strong stat-stick even though ranged stays primary",
+                "hand": "two",
+                "weaponType": "Sword"
               },
               {
                 "id": 6953,
@@ -1526,7 +1548,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "The Test of Righteousness chain",
                   "zone": "Redridge Mountains"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -1976,7 +2000,9 @@ WOWDATA.register({
                   "instance": "Gnomeregan",
                   "boss": "Crowd Pummeler 9-60"
                 },
-                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling.",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 7723,
@@ -1988,7 +2014,9 @@ WOWDATA.register({
                   "instance": "Scarlet Monastery",
                   "boss": "Scarlet Commander Mograine",
                   "detail": "Cathedral wing"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 1982,
@@ -1998,7 +2026,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "very rare BoE (~0.01% drop) — expensive/optional"
+                "note": "very rare BoE (~0.01% drop) — expensive/optional",
+                "hand": "two",
+                "weaponType": "Sword"
               }
             ]
           }
@@ -2444,7 +2474,9 @@ WOWDATA.register({
                   "instance": "Gnomeregan",
                   "boss": "Crowd Pummeler 9-60"
                 },
-                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling.",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 7723,
@@ -2456,7 +2488,9 @@ WOWDATA.register({
                   "instance": "Scarlet Monastery",
                   "boss": "Scarlet Commander Mograine",
                   "detail": "Cathedral wing"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 13018,
@@ -2466,7 +2500,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "rare world drop (~0.17%)"
+                "note": "rare world drop (~0.17%)",
+                "hand": "two",
+                "weaponType": "Axe"
               }
             ]
           }
@@ -2913,7 +2949,9 @@ WOWDATA.register({
                   "instance": "Gnomeregan",
                   "boss": "Crowd Pummeler 9-60"
                 },
-                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling.",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 7723,
@@ -2925,7 +2963,9 @@ WOWDATA.register({
                   "instance": "Scarlet Monastery",
                   "boss": "Scarlet Commander Mograine",
                   "detail": "Cathedral wing"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 13018,
@@ -2935,7 +2975,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "rare world drop (~0.17%)"
+                "note": "rare world drop (~0.17%)",
+                "hand": "two",
+                "weaponType": "Axe"
               }
             ]
           }
@@ -3376,7 +3418,9 @@ WOWDATA.register({
                   "instance": "Gnomeregan",
                   "boss": "Crowd Pummeler 9-60"
                 },
-                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling.",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 7723,
@@ -3388,7 +3432,9 @@ WOWDATA.register({
                   "instance": "Scarlet Monastery",
                   "boss": "Scarlet Commander Mograine",
                   "detail": "Cathedral wing"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 13167,
@@ -3401,7 +3447,9 @@ WOWDATA.register({
                   "boss": "Highlord Omokk",
                   "detail": "Lower Blackrock Spire"
                 },
-                "note": "Bear-tank only — Strength/Stamina 2H mace, no benefit for cat form"
+                "note": "Bear-tank only — Strength/Stamina 2H mace, no benefit for cat form",
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -3854,7 +3902,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Nexus-King Salhadaar",
                   "zone": "Netherstorm"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Axe"
               },
               {
                 "id": 24094,
@@ -3865,7 +3915,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Hellfire Ramparts",
                   "boss": "Omor the Unscarred"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 31010,
@@ -3875,7 +3927,9 @@ WOWDATA.register({
                 "source": {
                   "type": "quest",
                   "zone": "Shadowmoon Valley"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Axe"
               }
             ]
           }
@@ -4332,7 +4386,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Slave Pens",
                   "boss": "Mennu the Betrayer"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Sword"
               },
               {
                 "id": 24384,
@@ -4343,7 +4399,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Hellfire Citadel: The Blood Furnace",
                   "boss": "The Maker"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 30009,
@@ -4354,7 +4412,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Nexus-King Salhadaar",
                   "zone": "Netherstorm"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Axe"
               }
             ],
             "offhand": [
@@ -4365,7 +4425,9 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "world-drop"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Mace"
               },
               {
                 "id": 25952,
@@ -4376,7 +4438,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Mana-Tombs",
                   "boss": "Tavarok"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 2243,
@@ -4386,7 +4450,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "expensive AH epic; optional upgrade"
+                "note": "expensive AH epic; optional upgrade",
+                "hand": "one",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -4835,7 +4901,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Slave Pens",
                   "boss": "Mennu the Betrayer"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Sword"
               },
               {
                 "id": 24384,
@@ -4846,7 +4914,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Hellfire Citadel: The Blood Furnace",
                   "boss": "The Maker"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 30009,
@@ -4857,7 +4927,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Nexus-King Salhadaar",
                   "zone": "Netherstorm"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Axe"
               }
             ],
             "offhand": [
@@ -4870,7 +4942,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sethekk Halls",
                   "boss": "Talon King Ikiss"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Mace"
               },
               {
                 "id": 31139,
@@ -4879,7 +4953,9 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "world-drop"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Mace"
               },
               {
                 "id": 25952,
@@ -4890,7 +4966,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Mana-Tombs",
                   "boss": "Tavarok"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Sword"
               }
             ]
           }
@@ -5216,7 +5294,9 @@ WOWDATA.register({
                   "instance": "Shadowfang Keep",
                   "boss": "Son of Arugal"
                 },
-                "note": "Proc adds shadow damage"
+                "note": "Proc adds shadow damage",
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 6323,
@@ -5227,7 +5307,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Shadowfang Keep",
                   "boss": "Baron Silverlaine"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Mace"
               },
               {
                 "id": 6633,
@@ -5238,7 +5320,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Shadowfang Keep",
                   "boss": "Razorclaw the Butcher"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Sword"
               }
             ],
             "offhand": [
@@ -5252,7 +5336,9 @@ WOWDATA.register({
                   "instance": "The Deadmines",
                   "boss": "Edwin VanCleef"
                 },
-                "note": "Stat-stick dagger; ranged weapon remains primary damage. No offhand until Dual Wield unlocks at level 20"
+                "note": "Stat-stick dagger; ranged weapon remains primary damage. No offhand until Dual Wield unlocks at level 20",
+                "hand": "one",
+                "weaponType": "Sword"
               }
             ]
           }
@@ -5621,7 +5707,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Blackfathom Deeps",
                   "detail": "trash"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Mace"
               },
               {
                 "id": 1727,
@@ -5632,7 +5720,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Razorfen Kraul",
                   "boss": "Razorfen Geomagus"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 16886,
@@ -5644,7 +5734,9 @@ WOWDATA.register({
                   "quest": "Baron Aquanis",
                   "instance": "Blackfathom Deeps"
                 },
-                "note": "Stat-stick; Dual Wield unlocks at level 20"
+                "note": "Stat-stick; Dual Wield unlocks at level 20",
+                "hand": "one",
+                "weaponType": "Sword"
               }
             ],
             "offhand": [
@@ -5658,7 +5750,9 @@ WOWDATA.register({
                   "instance": "Shadowfang Keep",
                   "boss": "Son of Arugal"
                 },
-                "note": "Proc adds shadow damage"
+                "note": "Proc adds shadow damage",
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 6323,
@@ -5669,7 +5763,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Shadowfang Keep",
                   "boss": "Baron Silverlaine"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Mace"
               },
               {
                 "id": 6633,
@@ -5680,7 +5776,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Shadowfang Keep",
                   "boss": "Razorclaw the Butcher"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Sword"
               }
             ]
           }
@@ -6088,7 +6186,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Razorfen Kraul",
                   "boss": "Death Speaker Jargba"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 3414,
@@ -6099,7 +6199,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Blackfathom Deeps",
                   "detail": "trash"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Mace"
               },
               {
                 "id": 1727,
@@ -6110,7 +6212,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Razorfen Kraul",
                   "boss": "Razorfen Geomagus"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Sword"
               }
             ],
             "offhand": [
@@ -6124,7 +6228,9 @@ WOWDATA.register({
                   "quest": "Baron Aquanis",
                   "instance": "Blackfathom Deeps"
                 },
-                "note": "Stat-stick; Dual Wield unlocks at level 20"
+                "note": "Stat-stick; Dual Wield unlocks at level 20",
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 1482,
@@ -6136,7 +6242,9 @@ WOWDATA.register({
                   "instance": "Shadowfang Keep",
                   "boss": "Son of Arugal"
                 },
-                "note": "Proc adds shadow damage"
+                "note": "Proc adds shadow damage",
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 6323,
@@ -6147,7 +6255,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Shadowfang Keep",
                   "boss": "Baron Silverlaine"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -6556,7 +6666,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Razorfen Kraul",
                   "boss": "Death Speaker Jargba"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 3414,
@@ -6567,7 +6679,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Blackfathom Deeps",
                   "detail": "trash"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Mace"
               },
               {
                 "id": 1727,
@@ -6578,7 +6692,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Razorfen Kraul",
                   "boss": "Razorfen Geomagus"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Sword"
               }
             ],
             "offhand": [
@@ -6592,7 +6708,9 @@ WOWDATA.register({
                   "quest": "Baron Aquanis",
                   "instance": "Blackfathom Deeps"
                 },
-                "note": "Stat-stick; Dual Wield unlocks at level 20"
+                "note": "Stat-stick; Dual Wield unlocks at level 20",
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 1482,
@@ -6604,7 +6722,9 @@ WOWDATA.register({
                   "instance": "Shadowfang Keep",
                   "boss": "Son of Arugal"
                 },
-                "note": "Proc adds shadow damage"
+                "note": "Proc adds shadow damage",
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 6323,
@@ -6615,7 +6735,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Shadowfang Keep",
                   "boss": "Baron Silverlaine"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -7056,7 +7178,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "notable BoE, can be pricey; 1H+shield leveling alt"
+                "note": "notable BoE, can be pricey; 1H+shield leveling alt",
+                "hand": "one",
+                "weaponType": "Mace"
               },
               {
                 "id": 6802,
@@ -7069,7 +7193,9 @@ WOWDATA.register({
                   "quest": "Into the Scarlet Monastery",
                   "zone": "Scarlet Monastery"
                 },
-                "note": "Horde-only"
+                "note": "Horde-only",
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 9427,
@@ -7080,7 +7206,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Uldaman",
                   "detail": "trash"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Mace"
               }
             ],
             "offhand": [
@@ -7093,7 +7221,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Blackfathom Deeps",
                   "detail": "trash"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Mace"
               },
               {
                 "id": 1727,
@@ -7104,7 +7234,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Razorfen Kraul",
                   "boss": "Razorfen Geomagus"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 16886,
@@ -7116,7 +7248,9 @@ WOWDATA.register({
                   "quest": "Baron Aquanis",
                   "instance": "Blackfathom Deeps"
                 },
-                "note": "Stat-stick; Dual Wield unlocks at level 20"
+                "note": "Stat-stick; Dual Wield unlocks at level 20",
+                "hand": "one",
+                "weaponType": "Sword"
               }
             ]
           }
@@ -7556,7 +7690,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "notable BoE, can be pricey; 1H+shield leveling alt"
+                "note": "notable BoE, can be pricey; 1H+shield leveling alt",
+                "hand": "one",
+                "weaponType": "Mace"
               },
               {
                 "id": 809,
@@ -7567,7 +7703,9 @@ WOWDATA.register({
                   "type": "world-drop",
                   "detail": "Rare drop from Blue Dragonspawn (dragonkin trash)"
                 },
-                "note": "Expensive BoE — priciest pick in this bracket, but a big damage jump"
+                "note": "Expensive BoE — priciest pick in this bracket, but a big damage jump",
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 871,
@@ -7577,7 +7715,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Extra-attack proc; can be very expensive on the AH"
+                "note": "Extra-attack proc; can be very expensive on the AH",
+                "hand": "one",
+                "weaponType": "Axe"
               }
             ],
             "offhand": [
@@ -7592,7 +7732,9 @@ WOWDATA.register({
                   "quest": "Into the Scarlet Monastery",
                   "zone": "Scarlet Monastery"
                 },
-                "note": "Horde-only"
+                "note": "Horde-only",
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 9427,
@@ -7603,7 +7745,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Uldaman",
                   "detail": "trash"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Mace"
               },
               {
                 "id": 3414,
@@ -7614,7 +7758,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Blackfathom Deeps",
                   "detail": "trash"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -8052,7 +8198,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunken Temple",
                   "boss": "Avatar of Hakkar"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Mace"
               },
               {
                 "id": 868,
@@ -8062,7 +8210,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "notable BoE, can be pricey; 1H+shield leveling alt"
+                "note": "notable BoE, can be pricey; 1H+shield leveling alt",
+                "hand": "one",
+                "weaponType": "Mace"
               },
               {
                 "id": 809,
@@ -8073,7 +8223,9 @@ WOWDATA.register({
                   "type": "world-drop",
                   "detail": "Rare drop from Blue Dragonspawn (dragonkin trash)"
                 },
-                "note": "Expensive BoE — priciest pick in this bracket, but a big damage jump"
+                "note": "Expensive BoE — priciest pick in this bracket, but a big damage jump",
+                "hand": "one",
+                "weaponType": "Sword"
               }
             ],
             "offhand": [
@@ -8085,7 +8237,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Extra-attack proc; can be very expensive on the AH"
+                "note": "Extra-attack proc; can be very expensive on the AH",
+                "hand": "one",
+                "weaponType": "Axe"
               },
               {
                 "id": 6802,
@@ -8098,7 +8252,9 @@ WOWDATA.register({
                   "quest": "Into the Scarlet Monastery",
                   "zone": "Scarlet Monastery"
                 },
-                "note": "Horde-only"
+                "note": "Horde-only",
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 9427,
@@ -8109,7 +8265,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Uldaman",
                   "detail": "trash"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -8541,7 +8699,9 @@ WOWDATA.register({
                   "type": "world-drop",
                   "detail": "Rare drop from Skeletal Acolytes (Western Plaguelands / Scholomance undead trash)"
                 },
-                "note": "Expensive BoE"
+                "note": "Expensive BoE",
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 11684,
@@ -8553,7 +8713,9 @@ WOWDATA.register({
                   "instance": "Blackrock Depths",
                   "boss": "Emperor Dagran Thaurissan"
                 },
-                "note": "Very rare drop (~1%). Double Ironfoe is a classic Fury BiS combo; farm patiently"
+                "note": "Very rare drop (~1%). Double Ironfoe is a classic Fury BiS combo; farm patiently",
+                "hand": "one",
+                "weaponType": "Mace"
               },
               {
                 "id": 811,
@@ -8563,7 +8725,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Can be expensive on the AH"
+                "note": "Can be expensive on the AH",
+                "hand": "one",
+                "weaponType": "Axe"
               }
             ],
             "offhand": [
@@ -8576,7 +8740,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunken Temple",
                   "boss": "Avatar of Hakkar"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Mace"
               },
               {
                 "id": 868,
@@ -8586,7 +8752,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "notable BoE, can be pricey; 1H+shield leveling alt"
+                "note": "notable BoE, can be pricey; 1H+shield leveling alt",
+                "hand": "one",
+                "weaponType": "Mace"
               },
               {
                 "id": 809,
@@ -8597,7 +8765,9 @@ WOWDATA.register({
                   "type": "world-drop",
                   "detail": "Rare drop from Blue Dragonspawn (dragonkin trash)"
                 },
-                "note": "Expensive BoE — priciest pick in this bracket, but a big damage jump"
+                "note": "Expensive BoE — priciest pick in this bracket, but a big damage jump",
+                "hand": "one",
+                "weaponType": "Sword"
               }
             ]
           }
@@ -9032,7 +9202,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Hellfire Ramparts",
                   "boss": "Watchkeeper Gargolmar"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Sword"
               },
               {
                 "id": 25759,
@@ -9044,7 +9216,9 @@ WOWDATA.register({
                   "quest": "Ring of Blood: The Final Challenge",
                   "zone": "Nagrand"
                 },
-                "note": "group quest reward"
+                "note": "group quest reward",
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 2243,
@@ -9054,7 +9228,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "expensive AH epic; optional upgrade"
+                "note": "expensive AH epic; optional upgrade",
+                "hand": "one",
+                "weaponType": "Mace"
               }
             ],
             "offhand": [
@@ -9067,7 +9243,9 @@ WOWDATA.register({
                   "type": "world-drop",
                   "detail": "Rare drop from Skeletal Acolytes (Western Plaguelands / Scholomance undead trash)"
                 },
-                "note": "Expensive BoE"
+                "note": "Expensive BoE",
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 11684,
@@ -9079,7 +9257,9 @@ WOWDATA.register({
                   "instance": "Blackrock Depths",
                   "boss": "Emperor Dagran Thaurissan"
                 },
-                "note": "Very rare drop (~1%). Double Ironfoe is a classic Fury BiS combo; farm patiently"
+                "note": "Very rare drop (~1%). Double Ironfoe is a classic Fury BiS combo; farm patiently",
+                "hand": "one",
+                "weaponType": "Mace"
               },
               {
                 "id": 811,
@@ -9089,7 +9269,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Can be expensive on the AH"
+                "note": "Can be expensive on the AH",
+                "hand": "one",
+                "weaponType": "Axe"
               }
             ]
           }
@@ -9524,7 +9706,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Mana-Tombs",
                   "boss": "Tavarok"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 24020,
@@ -9535,7 +9719,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Hellfire Ramparts",
                   "boss": "Watchkeeper Gargolmar"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Sword"
               },
               {
                 "id": 31139,
@@ -9544,7 +9730,9 @@ WOWDATA.register({
                 "rank": 3,
                 "source": {
                   "type": "world-drop"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Mace"
               }
             ],
             "offhand": [
@@ -9556,7 +9744,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "expensive AH epic; optional upgrade"
+                "note": "expensive AH epic; optional upgrade",
+                "hand": "one",
+                "weaponType": "Mace"
               },
               {
                 "id": 2244,
@@ -9567,7 +9757,9 @@ WOWDATA.register({
                   "type": "world-drop",
                   "detail": "Rare drop from Skeletal Acolytes (Western Plaguelands / Scholomance undead trash)"
                 },
-                "note": "Expensive BoE"
+                "note": "Expensive BoE",
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 11684,
@@ -9579,7 +9771,9 @@ WOWDATA.register({
                   "instance": "Blackrock Depths",
                   "boss": "Emperor Dagran Thaurissan"
                 },
-                "note": "Very rare drop (~1%). Double Ironfoe is a classic Fury BiS combo; farm patiently"
+                "note": "Very rare drop (~1%). Double Ironfoe is a classic Fury BiS combo; farm patiently",
+                "hand": "one",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -10011,7 +10205,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sethekk Halls",
                   "boss": "Talon King Ikiss"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Mace"
               },
               {
                 "id": 25952,
@@ -10022,7 +10218,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Mana-Tombs",
                   "boss": "Tavarok"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 24020,
@@ -10033,7 +10231,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Hellfire Ramparts",
                   "boss": "Watchkeeper Gargolmar"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Sword"
               }
             ],
             "offhand": [
@@ -10044,7 +10244,9 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "world-drop"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Mace"
               },
               {
                 "id": 2243,
@@ -10054,7 +10256,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "expensive AH epic; optional upgrade"
+                "note": "expensive AH epic; optional upgrade",
+                "hand": "one",
+                "weaponType": "Mace"
               },
               {
                 "id": 2244,
@@ -10065,7 +10269,9 @@ WOWDATA.register({
                   "type": "world-drop",
                   "detail": "Rare drop from Skeletal Acolytes (Western Plaguelands / Scholomance undead trash)"
                 },
-                "note": "Expensive BoE"
+                "note": "Expensive BoE",
+                "hand": "one",
+                "weaponType": "Sword"
               }
             ]
           }
@@ -10368,7 +10574,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Shadowfang Keep",
                   "boss": "Commander Springvale"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Axe"
               },
               {
                 "id": 7230,
@@ -10379,7 +10587,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Deadmines",
                   "boss": "Mr. Smite"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 872,
@@ -10390,7 +10600,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Deadmines",
                   "boss": "Rhahk'Zor"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Axe"
               }
             ]
           }
@@ -10724,7 +10936,9 @@ WOWDATA.register({
                 "source": {
                   "type": "drop",
                   "instance": "Razorfen Kraul"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 3191,
@@ -10735,7 +10949,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Shadowfang Keep",
                   "boss": "Commander Springvale"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Axe"
               },
               {
                 "id": 6953,
@@ -10747,7 +10963,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "The Test of Righteousness chain",
                   "zone": "Redridge Mountains"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -11120,7 +11338,9 @@ WOWDATA.register({
                   "instance": "Gnomeregan",
                   "boss": "Crowd Pummeler 9-60"
                 },
-                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling.",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 6687,
@@ -11132,7 +11352,9 @@ WOWDATA.register({
                   "instance": "Razorfen Kraul",
                   "boss": "Overlord Ramtusk"
                 },
-                "note": "Faction-neutral alternative to the Alliance-only Thornblade"
+                "note": "Faction-neutral alternative to the Alliance-only Thornblade",
+                "hand": "two",
+                "weaponType": "Axe"
               },
               {
                 "id": 1976,
@@ -11142,7 +11364,9 @@ WOWDATA.register({
                 "source": {
                   "type": "drop",
                   "instance": "Razorfen Kraul"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -11529,7 +11753,9 @@ WOWDATA.register({
                   "boss": "Ragglesnout",
                   "detail": "Rare elite"
                 },
-                "note": "Two-hand sword; strong stat-stick even though ranged stays primary"
+                "note": "Two-hand sword; strong stat-stick even though ranged stays primary",
+                "hand": "two",
+                "weaponType": "Sword"
               },
               {
                 "id": 9449,
@@ -11541,7 +11767,9 @@ WOWDATA.register({
                   "instance": "Gnomeregan",
                   "boss": "Crowd Pummeler 9-60"
                 },
-                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling.",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 6687,
@@ -11553,7 +11781,9 @@ WOWDATA.register({
                   "instance": "Razorfen Kraul",
                   "boss": "Overlord Ramtusk"
                 },
-                "note": "Faction-neutral alternative to the Alliance-only Thornblade"
+                "note": "Faction-neutral alternative to the Alliance-only Thornblade",
+                "hand": "two",
+                "weaponType": "Axe"
               }
             ]
           }
@@ -11974,7 +12204,9 @@ WOWDATA.register({
                 "source": {
                   "type": "quest",
                   "quest": "In the Name of the Light"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Axe"
               },
               {
                 "id": 10758,
@@ -11987,7 +12219,9 @@ WOWDATA.register({
                   "boss": "Ragglesnout",
                   "detail": "Rare elite"
                 },
-                "note": "Two-hand sword; strong stat-stick even though ranged stays primary"
+                "note": "Two-hand sword; strong stat-stick even though ranged stays primary",
+                "hand": "two",
+                "weaponType": "Sword"
               },
               {
                 "id": 9449,
@@ -11999,7 +12233,9 @@ WOWDATA.register({
                   "instance": "Gnomeregan",
                   "boss": "Crowd Pummeler 9-60"
                 },
-                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling.",
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -12432,7 +12668,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "rare world drop (~0.17%)"
+                "note": "rare world drop (~0.17%)",
+                "hand": "two",
+                "weaponType": "Axe"
               },
               {
                 "id": 6830,
@@ -12443,7 +12681,9 @@ WOWDATA.register({
                 "source": {
                   "type": "quest",
                   "quest": "In the Name of the Light"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Axe"
               },
               {
                 "id": 10758,
@@ -12456,7 +12696,9 @@ WOWDATA.register({
                   "boss": "Ragglesnout",
                   "detail": "Rare elite"
                 },
-                "note": "Two-hand sword; strong stat-stick even though ranged stays primary"
+                "note": "Two-hand sword; strong stat-stick even though ranged stays primary",
+                "hand": "two",
+                "weaponType": "Sword"
               }
             ]
           }
@@ -12884,7 +13126,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "rare world drop (~0.17%)"
+                "note": "rare world drop (~0.17%)",
+                "hand": "two",
+                "weaponType": "Axe"
               },
               {
                 "id": 6830,
@@ -12895,7 +13139,9 @@ WOWDATA.register({
                 "source": {
                   "type": "quest",
                   "quest": "In the Name of the Light"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Axe"
               },
               {
                 "id": 2915,
@@ -12905,7 +13151,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "very rare, expensive BoE epic"
+                "note": "very rare, expensive BoE epic",
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -13343,7 +13591,9 @@ WOWDATA.register({
                   "boss": "Highlord Omokk",
                   "detail": "Lower Blackrock Spire"
                 },
-                "note": "Bear-tank only — Strength/Stamina 2H mace, no benefit for cat form"
+                "note": "Bear-tank only — Strength/Stamina 2H mace, no benefit for cat form",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 11931,
@@ -13354,7 +13604,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Blackrock Depths",
                   "boss": "Emperor Dagran Thaurissan"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Axe"
               },
               {
                 "id": 13018,
@@ -13364,7 +13616,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "rare world drop (~0.17%)"
+                "note": "rare world drop (~0.17%)",
+                "hand": "two",
+                "weaponType": "Axe"
               }
             ]
           }
@@ -13796,7 +14050,9 @@ WOWDATA.register({
                 "source": {
                   "type": "quest",
                   "zone": "Shadowmoon Valley"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Axe"
               },
               {
                 "id": 30009,
@@ -13807,7 +14063,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Nexus-King Salhadaar",
                   "zone": "Netherstorm"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Axe"
               },
               {
                 "id": 25762,
@@ -13819,7 +14077,9 @@ WOWDATA.register({
                   "quest": "Ring of Blood: The Final Challenge",
                   "zone": "Nagrand"
                 },
-                "note": "earlier-accessible group quest"
+                "note": "earlier-accessible group quest",
+                "hand": "two",
+                "weaponType": "Axe"
               }
             ]
           }
@@ -14250,7 +14510,9 @@ WOWDATA.register({
                 "source": {
                   "type": "quest",
                   "zone": "Shadowmoon Valley"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Axe"
               },
               {
                 "id": 30009,
@@ -14261,7 +14523,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Nexus-King Salhadaar",
                   "zone": "Netherstorm"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Axe"
               },
               {
                 "id": 25762,
@@ -14273,7 +14537,9 @@ WOWDATA.register({
                   "quest": "Ring of Blood: The Final Challenge",
                   "zone": "Nagrand"
                 },
-                "note": "earlier-accessible group quest"
+                "note": "earlier-accessible group quest",
+                "hand": "two",
+                "weaponType": "Axe"
               }
             ]
           }
@@ -14707,7 +14973,9 @@ WOWDATA.register({
                 "source": {
                   "type": "quest",
                   "zone": "Shadowmoon Valley"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Axe"
               },
               {
                 "id": 30009,
@@ -14718,7 +14986,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Nexus-King Salhadaar",
                   "zone": "Netherstorm"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Axe"
               },
               {
                 "id": 25762,
@@ -14730,7 +15000,9 @@ WOWDATA.register({
                   "quest": "Ring of Blood: The Final Challenge",
                   "zone": "Nagrand"
                 },
-                "note": "earlier-accessible group quest"
+                "note": "earlier-accessible group quest",
+                "hand": "two",
+                "weaponType": "Axe"
               }
             ]
           }

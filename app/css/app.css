@@ -726,3 +726,14 @@ a .iconsmall { vertical-align: middle; }
 .prof-grid button.active { color: var(--accent); border-color: var(--accent-dim); background: var(--accent-glow); }
 .prof-grid .prof-clear { color: var(--text-faint); border-style: dashed; }
 .lbl-hint { font-weight: 400; letter-spacing: 0; text-transform: none; color: var(--text-faint); font-size: 9.5px; }
+
+/* ---------- Two-handed weapon blocks the off-hand ---------- */
+.slot-cell.empty.blocked { border-style: dashed; opacity: 0.75; }
+.slot-cell.empty.blocked .sc-src { color: var(--gold-dim); }
+.sd-blocked { padding: 18px 16px; font-size: 12.5px; line-height: 1.65; color: var(--text-dim); }
+.sd-blocked b { color: var(--gold); }
+.hand-tag {
+  font-size: 9.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+  padding: 1px 5px; border-radius: 3px; margin-left: 6px;
+  background: rgba(200, 170, 110, 0.14); color: var(--gold);
+}

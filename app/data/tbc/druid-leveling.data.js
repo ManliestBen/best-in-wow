@@ -309,7 +309,9 @@ WOWDATA.register({
                   "quest": "Leaders of the Fang",
                   "instance": "Wailing Caverns"
                 },
-                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 7230,
@@ -320,7 +322,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Deadmines",
                   "boss": "Mr. Smite"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 6323,
@@ -331,7 +335,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Shadowfang Keep",
                   "boss": "Baron Silverlaine"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -671,7 +677,9 @@ WOWDATA.register({
                 "source": {
                   "type": "drop",
                   "instance": "Razorfen Kraul"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 6505,
@@ -683,7 +691,9 @@ WOWDATA.register({
                   "quest": "Leaders of the Fang",
                   "instance": "Wailing Caverns"
                 },
-                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 7230,
@@ -694,7 +704,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Deadmines",
                   "boss": "Mr. Smite"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -1089,7 +1101,9 @@ WOWDATA.register({
                   "instance": "Gnomeregan",
                   "boss": "Crowd Pummeler 9-60"
                 },
-                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling.",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 1976,
@@ -1099,7 +1113,9 @@ WOWDATA.register({
                 "source": {
                   "type": "drop",
                   "instance": "Razorfen Kraul"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 6505,
@@ -1111,7 +1127,9 @@ WOWDATA.register({
                   "quest": "Leaders of the Fang",
                   "instance": "Wailing Caverns"
                 },
-                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15",
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ]
           }
@@ -1499,7 +1517,9 @@ WOWDATA.register({
                   "instance": "Gnomeregan",
                   "boss": "Crowd Pummeler 9-60"
                 },
-                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling.",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 873,
@@ -1509,7 +1529,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Often pricey on the AH"
+                "note": "Often pricey on the AH",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 7713,
@@ -1521,7 +1543,9 @@ WOWDATA.register({
                   "instance": "Scarlet Monastery",
                   "boss": "Arcanist Doan",
                   "detail": "Library wing"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ]
           }
@@ -1955,7 +1979,9 @@ WOWDATA.register({
                   "instance": "Scarlet Monastery",
                   "boss": "Scarlet Commander Mograine",
                   "detail": "Cathedral wing"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 9413,
@@ -1966,7 +1992,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Uldaman",
                   "boss": "Archaedas"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 9449,
@@ -1978,7 +2006,9 @@ WOWDATA.register({
                   "instance": "Gnomeregan",
                   "boss": "Crowd Pummeler 9-60"
                 },
-                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling.",
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -2416,7 +2446,9 @@ WOWDATA.register({
                   "instance": "Scarlet Monastery",
                   "boss": "Scarlet Commander Mograine",
                   "detail": "Cathedral wing"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 18082,
@@ -2427,7 +2459,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Zul'Farrak",
                   "boss": "Witch Doctor Zum'rah"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 17743,
@@ -2439,7 +2473,9 @@ WOWDATA.register({
                   "quest": "Corruption of Earth and Seed",
                   "zone": "Desolace",
                   "detail": "Chain leads into Maraudon"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ]
           }
@@ -2875,7 +2911,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "very rare, expensive BoE epic"
+                "note": "very rare, expensive BoE epic",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 7723,
@@ -2887,7 +2925,9 @@ WOWDATA.register({
                   "instance": "Scarlet Monastery",
                   "boss": "Scarlet Commander Mograine",
                   "detail": "Cathedral wing"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 17766,
@@ -2898,7 +2938,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Maraudon",
                   "boss": "Princess Theradras"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -3336,7 +3378,9 @@ WOWDATA.register({
                   "boss": "Highlord Omokk",
                   "detail": "Lower Blackrock Spire"
                 },
-                "note": "Bear-tank only — Strength/Stamina 2H mace, no benefit for cat form"
+                "note": "Bear-tank only — Strength/Stamina 2H mace, no benefit for cat form",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 23124,
@@ -3347,7 +3391,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Stratholme",
                   "boss": "Balzaphon"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 2915,
@@ -3357,7 +3403,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "very rare, expensive BoE epic"
+                "note": "very rare, expensive BoE epic",
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -3796,7 +3844,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Hellfire Ramparts",
                   "boss": "Vazruden"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Polearm"
               },
               {
                 "id": 24094,
@@ -3807,7 +3857,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Hellfire Ramparts",
                   "boss": "Omor the Unscarred"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 25760,
@@ -3818,7 +3870,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "The Ring of Blood: The Final Challenge",
                   "zone": "Nagrand"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ]
           }
@@ -4262,7 +4316,9 @@ WOWDATA.register({
                   "instance": "Sethekk Halls",
                   "zone": "Terokkar Forest"
                 },
-                "note": "2H polearm — big Agility/Stamina jump over Manual Crowd Pummeler"
+                "note": "2H polearm — big Agility/Stamina jump over Manual Crowd Pummeler",
+                "hand": "two",
+                "weaponType": "Polearm"
               },
               {
                 "id": 24461,
@@ -4273,7 +4329,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Underbog",
                   "boss": "Ghaz'an"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 24044,
@@ -4284,7 +4342,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Hellfire Ramparts",
                   "boss": "Vazruden"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Polearm"
               }
             ]
           }
@@ -4724,7 +4784,9 @@ WOWDATA.register({
                   "instance": "Sethekk Halls",
                   "zone": "Terokkar Forest"
                 },
-                "note": "2H polearm — big Agility/Stamina jump over Manual Crowd Pummeler"
+                "note": "2H polearm — big Agility/Stamina jump over Manual Crowd Pummeler",
+                "hand": "two",
+                "weaponType": "Polearm"
               },
               {
                 "id": 24461,
@@ -4735,7 +4797,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Underbog",
                   "boss": "Ghaz'an"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 24044,
@@ -4746,7 +4810,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Hellfire Ramparts",
                   "boss": "Vazruden"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Polearm"
               }
             ]
           }
@@ -5000,7 +5066,9 @@ WOWDATA.register({
                   "quest": "Leaders of the Fang",
                   "instance": "Wailing Caverns"
                 },
-                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 7230,
@@ -5011,7 +5079,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Deadmines",
                   "boss": "Mr. Smite"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 2567,
@@ -5021,7 +5091,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "BoE, Unique-Equipped; 1H dagger"
+                "note": "BoE, Unique-Equipped; 1H dagger",
+                "hand": "one",
+                "weaponType": "Dagger"
               }
             ]
           }
@@ -5361,7 +5433,9 @@ WOWDATA.register({
                   "quest": "Leaders of the Fang",
                   "instance": "Wailing Caverns"
                 },
-                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 1976,
@@ -5371,7 +5445,9 @@ WOWDATA.register({
                 "source": {
                   "type": "drop",
                   "instance": "Razorfen Kraul"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 7230,
@@ -5382,7 +5458,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Deadmines",
                   "boss": "Mr. Smite"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -5791,7 +5869,9 @@ WOWDATA.register({
                   "instance": "Gnomeregan",
                   "boss": "Crowd Pummeler 9-60"
                 },
-                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling.",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 6505,
@@ -5803,7 +5883,9 @@ WOWDATA.register({
                   "quest": "Leaders of the Fang",
                   "instance": "Wailing Caverns"
                 },
-                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 1976,
@@ -5813,7 +5895,9 @@ WOWDATA.register({
                 "source": {
                   "type": "drop",
                   "instance": "Razorfen Kraul"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -6222,7 +6306,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Often pricey on the AH"
+                "note": "Often pricey on the AH",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 9449,
@@ -6234,7 +6320,9 @@ WOWDATA.register({
                   "instance": "Gnomeregan",
                   "boss": "Crowd Pummeler 9-60"
                 },
-                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling.",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 7713,
@@ -6246,7 +6334,9 @@ WOWDATA.register({
                   "instance": "Scarlet Monastery",
                   "boss": "Arcanist Doan",
                   "detail": "Library wing"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ]
           }
@@ -6692,7 +6782,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Often pricey on the AH"
+                "note": "Often pricey on the AH",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 9449,
@@ -6704,7 +6796,9 @@ WOWDATA.register({
                   "instance": "Gnomeregan",
                   "boss": "Crowd Pummeler 9-60"
                 },
-                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling.",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 7723,
@@ -6716,7 +6810,9 @@ WOWDATA.register({
                   "instance": "Scarlet Monastery",
                   "boss": "Scarlet Commander Mograine",
                   "detail": "Cathedral wing"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -7159,7 +7255,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Often pricey on the AH"
+                "note": "Often pricey on the AH",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 18082,
@@ -7170,7 +7268,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Zul'Farrak",
                   "boss": "Witch Doctor Zum'rah"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 17743,
@@ -7182,7 +7282,9 @@ WOWDATA.register({
                   "quest": "Corruption of Earth and Seed",
                   "zone": "Desolace",
                   "detail": "Chain leads into Maraudon"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ]
           }
@@ -7628,7 +7730,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Often pricey on the AH"
+                "note": "Often pricey on the AH",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 18082,
@@ -7639,7 +7743,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Zul'Farrak",
                   "boss": "Witch Doctor Zum'rah"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 17743,
@@ -7651,7 +7757,9 @@ WOWDATA.register({
                   "quest": "Corruption of Earth and Seed",
                   "zone": "Desolace",
                   "detail": "Chain leads into Maraudon"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ]
           }
@@ -8092,7 +8200,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Stratholme",
                   "boss": "Balzaphon"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 873,
@@ -8102,7 +8212,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Often pricey on the AH"
+                "note": "Often pricey on the AH",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 18082,
@@ -8113,7 +8225,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Zul'Farrak",
                   "boss": "Witch Doctor Zum'rah"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ]
           }
@@ -8564,7 +8678,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Nexus-King Salhadaar",
                   "zone": "Netherstorm"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 25760,
@@ -8575,7 +8691,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "The Ring of Blood: The Final Challenge",
                   "zone": "Nagrand"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 24069,
@@ -8587,7 +8705,9 @@ WOWDATA.register({
                   "instance": "Hellfire Ramparts",
                   "boss": "Omor the Unscarred",
                   "detail": "Requires level 60"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ]
           }
@@ -9044,7 +9164,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Nexus-King Salhadaar",
                   "zone": "Netherstorm"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 25760,
@@ -9055,7 +9177,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "The Ring of Blood: The Final Challenge",
                   "zone": "Nagrand"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 25950,
@@ -9066,7 +9190,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Mana-Tombs",
                   "boss": "Tavarok"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ]
           }
@@ -9513,7 +9639,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Nexus-King Salhadaar",
                   "zone": "Netherstorm"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 27868,
@@ -9524,7 +9652,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Shattered Halls",
                   "boss": "Warbringer O'mrogg"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 25760,
@@ -9535,7 +9665,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "The Ring of Blood: The Final Challenge",
                   "zone": "Nagrand"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ]
           }
@@ -9789,7 +9921,9 @@ WOWDATA.register({
                   "quest": "Leaders of the Fang",
                   "instance": "Wailing Caverns"
                 },
-                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 7230,
@@ -9800,7 +9934,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Deadmines",
                   "boss": "Mr. Smite"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 2567,
@@ -9810,7 +9946,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "BoE, Unique-Equipped; 1H dagger"
+                "note": "BoE, Unique-Equipped; 1H dagger",
+                "hand": "one",
+                "weaponType": "Dagger"
               }
             ]
           }
@@ -10150,7 +10288,9 @@ WOWDATA.register({
                   "quest": "Leaders of the Fang",
                   "instance": "Wailing Caverns"
                 },
-                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 1976,
@@ -10160,7 +10300,9 @@ WOWDATA.register({
                 "source": {
                   "type": "drop",
                   "instance": "Razorfen Kraul"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 7230,
@@ -10171,7 +10313,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Deadmines",
                   "boss": "Mr. Smite"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -10580,7 +10724,9 @@ WOWDATA.register({
                   "instance": "Gnomeregan",
                   "boss": "Crowd Pummeler 9-60"
                 },
-                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling.",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 6505,
@@ -10592,7 +10738,9 @@ WOWDATA.register({
                   "quest": "Leaders of the Fang",
                   "instance": "Wailing Caverns"
                 },
-                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 1976,
@@ -10602,7 +10750,9 @@ WOWDATA.register({
                 "source": {
                   "type": "drop",
                   "instance": "Razorfen Kraul"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -11011,7 +11161,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Often pricey on the AH"
+                "note": "Often pricey on the AH",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 9449,
@@ -11023,7 +11175,9 @@ WOWDATA.register({
                   "instance": "Gnomeregan",
                   "boss": "Crowd Pummeler 9-60"
                 },
-                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling.",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 7713,
@@ -11035,7 +11189,9 @@ WOWDATA.register({
                   "instance": "Scarlet Monastery",
                   "boss": "Arcanist Doan",
                   "detail": "Library wing"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ]
           }
@@ -11481,7 +11637,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Often pricey on the AH"
+                "note": "Often pricey on the AH",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 9449,
@@ -11493,7 +11651,9 @@ WOWDATA.register({
                   "instance": "Gnomeregan",
                   "boss": "Crowd Pummeler 9-60"
                 },
-                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling.",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 7723,
@@ -11505,7 +11665,9 @@ WOWDATA.register({
                   "instance": "Scarlet Monastery",
                   "boss": "Scarlet Commander Mograine",
                   "detail": "Cathedral wing"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -11948,7 +12110,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Often pricey on the AH"
+                "note": "Often pricey on the AH",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 18082,
@@ -11959,7 +12123,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Zul'Farrak",
                   "boss": "Witch Doctor Zum'rah"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 17743,
@@ -11971,7 +12137,9 @@ WOWDATA.register({
                   "quest": "Corruption of Earth and Seed",
                   "zone": "Desolace",
                   "detail": "Chain leads into Maraudon"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ]
           }
@@ -12417,7 +12585,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Often pricey on the AH"
+                "note": "Often pricey on the AH",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 18082,
@@ -12428,7 +12598,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Zul'Farrak",
                   "boss": "Witch Doctor Zum'rah"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 17743,
@@ -12440,7 +12612,9 @@ WOWDATA.register({
                   "quest": "Corruption of Earth and Seed",
                   "zone": "Desolace",
                   "detail": "Chain leads into Maraudon"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ]
           }
@@ -12881,7 +13055,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Stratholme",
                   "boss": "Balzaphon"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 873,
@@ -12891,7 +13067,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Often pricey on the AH"
+                "note": "Often pricey on the AH",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 18082,
@@ -12902,7 +13080,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Zul'Farrak",
                   "boss": "Witch Doctor Zum'rah"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ]
           }
@@ -13353,7 +13533,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Nexus-King Salhadaar",
                   "zone": "Netherstorm"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 25760,
@@ -13364,7 +13546,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "The Ring of Blood: The Final Challenge",
                   "zone": "Nagrand"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 24069,
@@ -13376,7 +13560,9 @@ WOWDATA.register({
                   "instance": "Hellfire Ramparts",
                   "boss": "Omor the Unscarred",
                   "detail": "Requires level 60"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ]
           }
@@ -13833,7 +14019,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Nexus-King Salhadaar",
                   "zone": "Netherstorm"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 25760,
@@ -13844,7 +14032,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "The Ring of Blood: The Final Challenge",
                   "zone": "Nagrand"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 25950,
@@ -13855,7 +14045,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Mana-Tombs",
                   "boss": "Tavarok"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ]
           }
@@ -14302,7 +14494,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Nexus-King Salhadaar",
                   "zone": "Netherstorm"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 27868,
@@ -14313,7 +14507,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Shattered Halls",
                   "boss": "Warbringer O'mrogg"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 25760,
@@ -14324,7 +14520,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "The Ring of Blood: The Final Challenge",
                   "zone": "Nagrand"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ]
           }
@@ -14649,7 +14847,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Deadmines",
                   "boss": "Mr. Smite"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 6505,
@@ -14661,7 +14861,9 @@ WOWDATA.register({
                   "quest": "Leaders of the Fang",
                   "instance": "Wailing Caverns"
                 },
-                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 6323,
@@ -14672,7 +14874,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Shadowfang Keep",
                   "boss": "Baron Silverlaine"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -15004,7 +15208,9 @@ WOWDATA.register({
                 "source": {
                   "type": "drop",
                   "instance": "Razorfen Kraul"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 7230,
@@ -15015,7 +15221,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Deadmines",
                   "boss": "Mr. Smite"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 6505,
@@ -15027,7 +15235,9 @@ WOWDATA.register({
                   "quest": "Leaders of the Fang",
                   "instance": "Wailing Caverns"
                 },
-                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15",
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ]
           }
@@ -15423,7 +15633,9 @@ WOWDATA.register({
                   "instance": "Gnomeregan",
                   "boss": "Crowd Pummeler 9-60"
                 },
-                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling.",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 1976,
@@ -15433,7 +15645,9 @@ WOWDATA.register({
                 "source": {
                   "type": "drop",
                   "instance": "Razorfen Kraul"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 7230,
@@ -15444,7 +15658,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Deadmines",
                   "boss": "Mr. Smite"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -15837,7 +16053,9 @@ WOWDATA.register({
                   "instance": "Gnomeregan",
                   "boss": "Crowd Pummeler 9-60"
                 },
-                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling.",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 873,
@@ -15847,7 +16065,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "Often pricey on the AH"
+                "note": "Often pricey on the AH",
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 7713,
@@ -15859,7 +16079,9 @@ WOWDATA.register({
                   "instance": "Scarlet Monastery",
                   "boss": "Arcanist Doan",
                   "detail": "Library wing"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ]
           }
@@ -16298,7 +16520,9 @@ WOWDATA.register({
                   "instance": "Scarlet Monastery",
                   "boss": "Scarlet Commander Mograine",
                   "detail": "Cathedral wing"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 9449,
@@ -16310,7 +16534,9 @@ WOWDATA.register({
                   "instance": "Gnomeregan",
                   "boss": "Crowd Pummeler 9-60"
                 },
-                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling.",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 9413,
@@ -16321,7 +16547,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Uldaman",
                   "boss": "Archaedas"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -16761,7 +16989,9 @@ WOWDATA.register({
                   "quest": "Corruption of Earth and Seed",
                   "zone": "Desolace",
                   "detail": "Chain leads into Maraudon"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 7723,
@@ -16773,7 +17003,9 @@ WOWDATA.register({
                   "instance": "Scarlet Monastery",
                   "boss": "Scarlet Commander Mograine",
                   "detail": "Cathedral wing"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 9449,
@@ -16785,7 +17017,9 @@ WOWDATA.register({
                   "instance": "Gnomeregan",
                   "boss": "Crowd Pummeler 9-60"
                 },
-                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling.",
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -17223,7 +17457,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "very rare, expensive BoE epic"
+                "note": "very rare, expensive BoE epic",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 17766,
@@ -17234,7 +17470,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Maraudon",
                   "boss": "Princess Theradras"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 17743,
@@ -17246,7 +17484,9 @@ WOWDATA.register({
                   "quest": "Corruption of Earth and Seed",
                   "zone": "Desolace",
                   "detail": "Chain leads into Maraudon"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ]
           }
@@ -17688,7 +17928,9 @@ WOWDATA.register({
                   "boss": "Highlord Omokk",
                   "detail": "Lower Blackrock Spire"
                 },
-                "note": "Bear-tank only — Strength/Stamina 2H mace, no benefit for cat form"
+                "note": "Bear-tank only — Strength/Stamina 2H mace, no benefit for cat form",
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 23124,
@@ -17699,7 +17941,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Stratholme",
                   "boss": "Balzaphon"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Staff"
               },
               {
                 "id": 2915,
@@ -17709,7 +17953,9 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "very rare, expensive BoE epic"
+                "note": "very rare, expensive BoE epic",
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -18150,7 +18396,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Hellfire Ramparts",
                   "boss": "Vazruden"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Polearm"
               },
               {
                 "id": 25764,
@@ -18162,7 +18410,9 @@ WOWDATA.register({
                   "quest": "The Ring of Blood: The Final Challenge",
                   "zone": "Nagrand"
                 },
-                "note": "Fist weapon"
+                "note": "Fist weapon",
+                "hand": "one",
+                "weaponType": "Fist Weapon"
               },
               {
                 "id": 24094,
@@ -18173,7 +18423,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Hellfire Ramparts",
                   "boss": "Omor the Unscarred"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               }
             ]
           }
@@ -18619,7 +18871,9 @@ WOWDATA.register({
                   "instance": "Sethekk Halls",
                   "zone": "Terokkar Forest"
                 },
-                "note": "2H polearm — big Agility/Stamina jump over Manual Crowd Pummeler"
+                "note": "2H polearm — big Agility/Stamina jump over Manual Crowd Pummeler",
+                "hand": "two",
+                "weaponType": "Polearm"
               },
               {
                 "id": 24461,
@@ -18630,7 +18884,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Underbog",
                   "boss": "Ghaz'an"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 24044,
@@ -18641,7 +18897,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Hellfire Ramparts",
                   "boss": "Vazruden"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Polearm"
               }
             ]
           }
@@ -19086,7 +19344,9 @@ WOWDATA.register({
                   "instance": "Sethekk Halls",
                   "zone": "Terokkar Forest"
                 },
-                "note": "2H polearm — big Agility/Stamina jump over Manual Crowd Pummeler"
+                "note": "2H polearm — big Agility/Stamina jump over Manual Crowd Pummeler",
+                "hand": "two",
+                "weaponType": "Polearm"
               },
               {
                 "id": 24461,
@@ -19097,7 +19357,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Underbog",
                   "boss": "Ghaz'an"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Mace"
               },
               {
                 "id": 24044,
@@ -19108,7 +19370,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Hellfire Ramparts",
                   "boss": "Vazruden"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Polearm"
               }
             ]
           }

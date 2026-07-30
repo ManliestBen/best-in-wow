@@ -416,7 +416,9 @@ WOWDATA.register({
                 "source": {
                   "type": "pvp",
                   "detail": "Arena Season 1"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 30832,
@@ -427,7 +429,9 @@ WOWDATA.register({
                 "source": {
                   "type": "reputation",
                   "detail": "Lower City — Exalted"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 23554,
@@ -439,7 +443,9 @@ WOWDATA.register({
                   "type": "crafted",
                   "detail": "Blacksmithing (BoE)",
                   "profession": "Blacksmithing"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               }
             ],
             "offhand": [
@@ -453,7 +459,8 @@ WOWDATA.register({
                   "type": "badge",
                   "detail": "25 Badges of Justice — G'eras, Shattrath"
                 },
-                "note": "Big shadow damage; holds for many phases"
+                "note": "Big shadow damage; holds for many phases",
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -466,7 +473,8 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop",
                   "detail": "BoE world drop — seek the 'of Shadow Wrath' random enchant"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 28386,
@@ -478,7 +486,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Arcatraz",
                   "boss": "Dalliah the Doomsayer"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 29350,
@@ -491,7 +500,8 @@ WOWDATA.register({
                   "instance": "The Underbog",
                   "boss": "The Black Stalker",
                   "detail": "Heroic only"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -868,7 +878,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Prince Malchezaar"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 28633,
@@ -881,7 +893,9 @@ WOWDATA.register({
                   "instance": "Karazhan",
                   "boss": "The Curator"
                 },
-                "note": "2H staff — replaces off hand"
+                "note": "2H staff — replaces off hand",
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "offhand": [
@@ -894,7 +908,8 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "25 Badges of Justice — G'eras, Shattrath"
-                }
+                },
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -909,7 +924,8 @@ WOWDATA.register({
                   "instance": "Karazhan",
                   "boss": "Shade of Aran"
                 },
-                "note": "Spell hit"
+                "note": "Spell hit",
+                "weaponType": "Wand"
               },
               {
                 "id": 25295,
@@ -920,7 +936,8 @@ WOWDATA.register({
                 "source": {
                   "type": "world-drop",
                   "detail": "BoE world drop — 'of Shadow Wrath' enchant"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -1212,7 +1229,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Kil'jaeden"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Dagger"
               },
               {
                 "id": 34182,
@@ -1225,7 +1244,9 @@ WOWDATA.register({
                   "instance": "Sunwell Plateau",
                   "boss": "Felmyst"
                 },
-                "note": "2H staff — replaces off hand"
+                "note": "2H staff — replaces off hand",
+                "hand": "two",
+                "weaponType": "Staff"
               }
             ],
             "offhand": [
@@ -1239,7 +1260,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Brutallus"
-                }
+                },
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -1253,7 +1275,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "detail": "Trash drop"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -1561,7 +1584,9 @@ WOWDATA.register({
                 "source": {
                   "type": "pvp",
                   "detail": "Arena Season 1"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 29353,
@@ -1574,7 +1599,9 @@ WOWDATA.register({
                   "instance": "The Shattered Halls",
                   "boss": "Warchief Kargath Bladefist",
                   "detail": "Heroic only"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               }
             ],
             "offhand": [
@@ -1587,7 +1614,8 @@ WOWDATA.register({
                 "source": {
                   "type": "reputation",
                   "detail": "Cenarion Expedition — Exalted"
-                }
+                },
+                "hand": "held"
               },
               {
                 "id": 29274,
@@ -1598,7 +1626,8 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "25 Badges of Justice — G'eras, Shattrath"
-                }
+                },
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -1612,7 +1641,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Shadow Labyrinth",
                   "boss": "Ambassador Hellmaw"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -1993,7 +2023,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Prince Malchezaar"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 28522,
@@ -2005,7 +2037,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Maiden of Virtue"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               }
             ],
             "offhand": [
@@ -2019,7 +2053,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Shade of Aran"
-                }
+                },
+                "hand": "held"
               },
               {
                 "id": 29170,
@@ -2030,7 +2065,8 @@ WOWDATA.register({
                 "source": {
                   "type": "reputation",
                   "detail": "Cenarion Expedition — Exalted"
-                }
+                },
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -2045,7 +2081,8 @@ WOWDATA.register({
                   "instance": "Karazhan",
                   "boss": "Opera Event",
                   "detail": "Wizard of Oz encounter"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 27885,
@@ -2057,7 +2094,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Shadow Labyrinth",
                   "boss": "Ambassador Hellmaw"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -2322,7 +2360,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Kil'jaeden"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               }
             ],
             "offhand": [
@@ -2336,7 +2376,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Eredar Twins"
-                }
+                },
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -2350,7 +2391,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "detail": "Trash drop"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -2658,7 +2700,9 @@ WOWDATA.register({
                 "source": {
                   "type": "pvp",
                   "detail": "Arena Season 1"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 29353,
@@ -2671,7 +2715,9 @@ WOWDATA.register({
                   "instance": "The Shattered Halls",
                   "boss": "Warchief Kargath Bladefist",
                   "detail": "Heroic only"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               }
             ],
             "offhand": [
@@ -2684,7 +2730,8 @@ WOWDATA.register({
                 "source": {
                   "type": "reputation",
                   "detail": "Cenarion Expedition — Exalted"
-                }
+                },
+                "hand": "held"
               },
               {
                 "id": 29274,
@@ -2695,7 +2742,8 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "25 Badges of Justice — G'eras, Shattrath"
-                }
+                },
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -2709,7 +2757,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Shadow Labyrinth",
                   "boss": "Ambassador Hellmaw"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }
@@ -3076,7 +3125,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Prince Malchezaar"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 28522,
@@ -3088,7 +3139,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Maiden of Virtue"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Mace"
               }
             ],
             "offhand": [
@@ -3102,7 +3155,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Shade of Aran"
-                }
+                },
+                "hand": "held"
               },
               {
                 "id": 29170,
@@ -3113,7 +3167,8 @@ WOWDATA.register({
                 "source": {
                   "type": "reputation",
                   "detail": "Cenarion Expedition — Exalted"
-                }
+                },
+                "hand": "held"
               }
             ],
             "ranged": [
@@ -3128,7 +3183,8 @@ WOWDATA.register({
                   "instance": "Karazhan",
                   "boss": "Opera Event",
                   "detail": "Wizard of Oz encounter"
-                }
+                },
+                "weaponType": "Wand"
               },
               {
                 "id": 27885,
@@ -3140,7 +3196,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Shadow Labyrinth",
                   "boss": "Ambassador Hellmaw"
-                }
+                },
+                "weaponType": "Wand"
               }
             ]
           }

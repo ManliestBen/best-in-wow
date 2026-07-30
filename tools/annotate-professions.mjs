@@ -1,7 +1,8 @@
 #!/usr/bin/env node
-// Tags crafted items with the profession that makes them and whether they bind
-// on pickup, so the app and addon can hide crafted BoP gear the character can't
-// actually make. BoE crafted pieces stay visible — anyone can buy those.
+// Tags items with facts the UI needs at runtime:
+//  - the profession that crafts them and whether they bind on pickup, so BoP
+//    crafts the character can't make are hidden (BoE stays: anyone can buy it)
+//  - how a weapon is held, so choosing a two-hander can disable the off-hand
 //
 //   node tools/annotate-professions.mjs [--dry-run]
 import { readFileSync, writeFileSync } from 'node:fs';
@@ -24,7 +25,7 @@ function professionFrom(text) {
   return null;
 }
 
-let tagged = 0, bopTagged = 0, unknown = [];
+let tagged = 0, bopTagged = 0, handTagged = 0, unknown = [];
 for (const file of findDataFiles(join(root, 'app', 'data'))) {
   const src = readFileSync(file, 'utf8');
   const errs = [];
@@ -37,6 +38,14 @@ for (const file of findDataFiles(join(root, 'app', 'data'))) {
     for (const spec of p.specs) for (const br of spec.brackets || []) {
       for (const items of Object.values(br.slots || {})) {
         for (const it of items || []) {
+          // how the weapon is held: 'two' means no off-hand can be worn with it
+          const tt = facts.get(it.id);
+          if (tt && tt.hand && it.hand !== tt.hand) {
+            it.hand = tt.hand; handTagged++; touched = true;
+          }
+          if (tt && tt.weaponType && it.weaponType !== tt.weaponType) {
+            it.weaponType = tt.weaponType; touched = true;
+          }
           if (!it.source || it.source.type !== 'crafted') continue;
           const prof = professionFrom(`${it.source.detail || ''} ${it.note || ''}`);
           if (prof && it.source.profession !== prof) { it.source.profession = prof; tagged++; touched = true; }
@@ -56,6 +65,7 @@ for (const file of findDataFiles(join(root, 'app', 'data'))) {
   }
 }
 
+console.log(`weapon hand tags written: ${handTagged}`);
 console.log(`profession tags written: ${tagged}`);
 console.log(`bind-on-pickup tags:    ${bopTagged}`);
 if (unknown.length) {

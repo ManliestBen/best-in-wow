@@ -216,13 +216,28 @@ function chosenItem(items, slotKey, wornIndex) {
   }
   return items[wornIndex] || null;
 }
+/* A two-handed main hand occupies both hands, so the off-hand can't be used.
+   The pick is the player's, so this has to be evaluated live rather than baked
+   into the data. */
+function chosenMainhand(bracket) {
+  const items = slotItems(bracket, 'mainhand');
+  return items.length ? chosenItem(items, 'mainhand', 0) : null;
+}
+function offhandBlockedBy(bracket) {
+  const mh = chosenMainhand(bracket);
+  return (mh && mh.hand === 'two') ? mh : null;
+}
+const isTwoHand = (it) => it && it.hand === 'two';
+
 const RANK_LABEL = ['Best', 'Better', 'Good'];
 const rankLabel = (i) => RANK_LABEL[i] || `Option ${i + 1}`;
 
 /* Worn items for progress/shopping: the chosen pick per position */
 function wornItems(bracket) {
   const out = [];
+  const blocked = offhandBlockedBy(bracket);
   for (const slot of core.slots) {
+    if (slot.key === 'offhand' && blocked) continue;
     const items = slotItems(bracket, slot.key);
     if (!items.length) continue;
     const n = slot.worn || 1;
@@ -489,22 +504,30 @@ function renderDoll() {
         if (arr && arr.length) everUsed.add(k);
   }
   // Expand worn:2 slots into two display cells
+  const blockedBy = offhandBlockedBy(bracket);
   const cells = [];
   for (const slot of core.slots) {
     const items = slotItems(bracket, slot.key);
     const n = slot.worn || 1;
     for (let i = 0; i < n; i++) {
-      const chosen = chosenItem(items, slot.key, i);
+      const blocked = slot.key === 'offhand' && blockedBy;
+      const chosen = blocked ? null : chosenItem(items, slot.key, i);
       cells.push({
         slot, index: i,
         label: n > 1 ? `${slot.name.replace(/s$/, '')} ${i + 1}` : slot.name,
         item: chosen,
         pickedRank: chosen ? items.indexOf(chosen) : -1,
+        blockedBy: blocked ? blockedBy : null,
       });
     }
   }
   el.innerHTML = '<div class="doll-grid">' + cells.map((c, idx) => {
     if (!c.item) {
+      if (c.blockedBy) {
+        return `<div class="slot-cell empty blocked" data-slot="${c.slot.key}"><div class="sc-body">
+          <div class="sc-slot">${esc(c.label)}</div>
+          <div class="sc-src">two-handed weapon equipped — no off-hand</div></div></div>`;
+      }
       const unused = !everUsed.has(c.slot.key);
       return `<div class="slot-cell empty"><div class="sc-body">
         <div class="sc-slot">${esc(c.label)}</div><div class="sc-src">${unused ? 'not used by this spec' : 'no data'}</div></div></div>`;
@@ -550,6 +573,26 @@ function renderSlotDetail() {
   const items = slotItems(bracket, state.selectedSlot);
   const enchant = spec && spec.enchants ? spec.enchants[state.selectedSlot] : null;
 
+  if (state.selectedSlot === 'offhand') {
+    const blockedBy = offhandBlockedBy(bracket);
+    if (blockedBy) {
+      el.innerHTML = `
+        <div class="sd-head">${esc(slotMeta ? slotMeta.name : 'Off Hand')}</div>
+        <div class="sd-blocked">
+          <b>No off-hand with a two-hander.</b><br>
+          You're going for ${itemLink(blockedBy)}, which is two-handed and fills both
+          hands. Pick a one-handed main hand if you want an off-hand as well.
+          <div style="margin-top:10px"><button class="mini-btn" id="show-mh">Choose a main hand</button></div>
+        </div>`;
+      const b = $('#show-mh');
+      if (b) b.addEventListener('click', () => {
+        state.selectedSlot = 'mainhand'; save(); renderDoll(); renderSlotDetail();
+      });
+      refreshTooltips();
+      return;
+    }
+  }
+
   const wornCount = slotMeta && slotMeta.worn ? slotMeta.worn : 1;
   const chosenIds = [];
   for (let w = 0; w < wornCount; w++) {
@@ -569,7 +612,8 @@ function renderSlotDetail() {
       return `<div class="sd-item ${targetedAt >= 0 ? 'targeted' : ''}">
         <div class="sd-rank tier-${tier}">${esc(rankLabel(i))}${
           targetedAt >= 0 ? ` <span class="sd-going">— going for this${wornCount > 1 ? ` (${esc(slotMeta.name.replace(/s$/, ''))} ${targetedAt + 1})` : ''}</span>` : ''}</div>
-        <div class="sd-name">${itemLink(it)}</div>
+        <div class="sd-name">${itemLink(it)}${isTwoHand(it)
+          ? ' <span class="hand-tag">two-handed</span>' : ''}</div>
         <div class="sd-src">${src.label ? `<span class="src-badge">${esc(src.label)}</span>` : ''}${esc(src.text)}
           ${it.faction && it.faction !== 'both' ? ` <span class="faction-tag ${esc(it.faction)}">${esc(it.faction)}</span>` : ''}</div>
         ${it.note ? `<div class="sd-note">${esc(it.note)}</div>` : ''}

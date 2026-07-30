@@ -371,7 +371,9 @@ WOWDATA.register({
                   "instance": "Auchenai Crypts",
                   "boss": "Shirrak the Dead Watcher",
                   "detail": "Heroic only"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Fist Weapon"
               },
               {
                 "id": 27903,
@@ -383,7 +385,9 @@ WOWDATA.register({
                   "instance": "Shadow Labyrinth",
                   "boss": "Murmur"
                 },
-                "note": "2H polearm — leave offhand empty"
+                "note": "2H polearm — leave offhand empty",
+                "hand": "two",
+                "weaponType": "Polearm"
               }
             ],
             "offhand": [
@@ -397,7 +401,9 @@ WOWDATA.register({
                   "detail": "Dealer Jadyan, Protectorate Watch Post",
                   "zone": "Netherstorm"
                 },
-                "note": "Cheap off-hand fist; empty when using a 2H"
+                "note": "Cheap off-hand fist; empty when using a 2H",
+                "hand": "off",
+                "weaponType": "Fist Weapon"
               },
               {
                 "id": 28315,
@@ -408,7 +414,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Botanica",
                   "boss": "High Botanist Freywinn"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Fist Weapon"
               }
             ],
             "ranged": [
@@ -422,7 +430,8 @@ WOWDATA.register({
                   "instance": "The Steamvault",
                   "boss": "Warlord Kalithresh",
                   "detail": "Heroic only"
-                }
+                },
+                "weaponType": "Bow"
               },
               {
                 "id": 29152,
@@ -434,7 +443,8 @@ WOWDATA.register({
                   "type": "reputation",
                   "detail": "Honor Hold — Exalted",
                   "zone": "Hellfire Peninsula"
-                }
+                },
+                "weaponType": "Bow"
               },
               {
                 "id": 29151,
@@ -446,7 +456,8 @@ WOWDATA.register({
                   "type": "reputation",
                   "detail": "Thrallmar — Exalted",
                   "zone": "Hellfire Peninsula"
-                }
+                },
+                "weaponType": "Gun"
               }
             ]
           }
@@ -725,7 +736,9 @@ WOWDATA.register({
                   "instance": "Auchenai Crypts",
                   "boss": "Shirrak the Dead Watcher",
                   "detail": "Heroic only"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Fist Weapon"
               },
               {
                 "id": 28584,
@@ -736,7 +749,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Opera Event (The Big Bad Wolf)"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Fist Weapon"
               }
             ],
             "offhand": [
@@ -750,7 +765,9 @@ WOWDATA.register({
                   "detail": "Dealer Jadyan, Protectorate Watch Post",
                   "zone": "Netherstorm"
                 },
-                "note": "Cheap off-hand fist; empty when using a 2H"
+                "note": "Cheap off-hand fist; empty when using a 2H",
+                "hand": "off",
+                "weaponType": "Fist Weapon"
               },
               {
                 "id": 28572,
@@ -761,7 +778,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Opera Event"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Dagger"
               }
             ],
             "ranged": [
@@ -774,7 +793,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Prince Malchezaar"
-                }
+                },
+                "weaponType": "Bow"
               },
               {
                 "id": 29351,
@@ -786,7 +806,8 @@ WOWDATA.register({
                   "instance": "The Steamvault",
                   "boss": "Warlord Kalithresh",
                   "detail": "Heroic only"
-                }
+                },
+                "weaponType": "Bow"
               }
             ]
           }
@@ -1023,7 +1044,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Tempest Keep",
                   "boss": "Al'ar"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Fist Weapon"
               },
               {
                 "id": 29924,
@@ -1034,7 +1057,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Tempest Keep",
                   "boss": "Al'ar"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Axe"
               }
             ],
             "offhand": [
@@ -1047,7 +1072,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Tempest Keep",
                   "boss": "Al'ar"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Fist Weapon"
               }
             ],
             "ranged": [
@@ -1060,7 +1087,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Serpentshrine Cavern",
                   "boss": "Lady Vashj"
-                }
+                },
+                "weaponType": "Bow"
               }
             ]
           }
@@ -1311,7 +1339,9 @@ WOWDATA.register({
                   "instance": "Zul'Aman",
                   "boss": "Hex Lord Malacrass"
                 },
-                "note": "Dual-wield — one in each hand"
+                "note": "Dual-wield — one in each hand",
+                "hand": "one",
+                "weaponType": "Dagger"
               }
             ],
             "offhand": [
@@ -1325,7 +1355,9 @@ WOWDATA.register({
                   "instance": "Zul'Aman",
                   "boss": "Hex Lord Malacrass"
                 },
-                "note": "Second copy"
+                "note": "Second copy",
+                "hand": "one",
+                "weaponType": "Dagger"
               }
             ],
             "ranged": [
@@ -1338,7 +1370,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Hyjal Summit",
                   "boss": "Archimonde"
-                }
+                },
+                "weaponType": "Bow"
               }
             ]
           }
@@ -1599,7 +1632,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Kil'jaeden"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Fist Weapon"
               }
             ],
             "offhand": [
@@ -1612,7 +1647,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Kil'jaeden"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Dagger"
               }
             ],
             "ranged": [
@@ -1626,7 +1663,8 @@ WOWDATA.register({
                   "instance": "Sunwell Plateau",
                   "boss": "Kil'jaeden"
                 },
-                "note": "Legendary — needs no ammo"
+                "note": "Legendary — needs no ammo",
+                "weaponType": "Bow"
               },
               {
                 "id": 30906,
@@ -1637,7 +1675,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Hyjal Summit",
                   "boss": "Archimonde"
-                }
+                },
+                "weaponType": "Bow"
               }
             ]
           }
@@ -2010,7 +2049,9 @@ WOWDATA.register({
                   "instance": "Auchenai Crypts",
                   "boss": "Shirrak the Dead Watcher",
                   "detail": "Heroic only"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Fist Weapon"
               },
               {
                 "id": 27903,
@@ -2022,7 +2063,9 @@ WOWDATA.register({
                   "instance": "Shadow Labyrinth",
                   "boss": "Murmur"
                 },
-                "note": "2H polearm — leave offhand empty"
+                "note": "2H polearm — leave offhand empty",
+                "hand": "two",
+                "weaponType": "Polearm"
               }
             ],
             "offhand": [
@@ -2036,7 +2079,9 @@ WOWDATA.register({
                   "detail": "Dealer Jadyan, Protectorate Watch Post",
                   "zone": "Netherstorm"
                 },
-                "note": "Cheap off-hand fist; empty when using a 2H"
+                "note": "Cheap off-hand fist; empty when using a 2H",
+                "hand": "off",
+                "weaponType": "Fist Weapon"
               },
               {
                 "id": 28315,
@@ -2047,7 +2092,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Botanica",
                   "boss": "High Botanist Freywinn"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Fist Weapon"
               }
             ],
             "ranged": [
@@ -2061,7 +2108,8 @@ WOWDATA.register({
                   "instance": "The Steamvault",
                   "boss": "Warlord Kalithresh",
                   "detail": "Heroic only"
-                }
+                },
+                "weaponType": "Bow"
               },
               {
                 "id": 29152,
@@ -2073,7 +2121,8 @@ WOWDATA.register({
                   "type": "reputation",
                   "detail": "Honor Hold — Exalted",
                   "zone": "Hellfire Peninsula"
-                }
+                },
+                "weaponType": "Bow"
               },
               {
                 "id": 29151,
@@ -2085,7 +2134,8 @@ WOWDATA.register({
                   "type": "reputation",
                   "detail": "Thrallmar — Exalted",
                   "zone": "Hellfire Peninsula"
-                }
+                },
+                "weaponType": "Gun"
               }
             ]
           }
@@ -2364,7 +2414,9 @@ WOWDATA.register({
                   "instance": "Auchenai Crypts",
                   "boss": "Shirrak the Dead Watcher",
                   "detail": "Heroic only"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Fist Weapon"
               },
               {
                 "id": 28584,
@@ -2375,7 +2427,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Opera Event (The Big Bad Wolf)"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Fist Weapon"
               }
             ],
             "offhand": [
@@ -2389,7 +2443,9 @@ WOWDATA.register({
                   "detail": "Dealer Jadyan, Protectorate Watch Post",
                   "zone": "Netherstorm"
                 },
-                "note": "Cheap off-hand fist; empty when using a 2H"
+                "note": "Cheap off-hand fist; empty when using a 2H",
+                "hand": "off",
+                "weaponType": "Fist Weapon"
               },
               {
                 "id": 28572,
@@ -2400,7 +2456,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Opera Event"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Dagger"
               }
             ],
             "ranged": [
@@ -2413,7 +2471,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Prince Malchezaar"
-                }
+                },
+                "weaponType": "Bow"
               },
               {
                 "id": 29351,
@@ -2425,7 +2484,8 @@ WOWDATA.register({
                   "instance": "The Steamvault",
                   "boss": "Warlord Kalithresh",
                   "detail": "Heroic only"
-                }
+                },
+                "weaponType": "Bow"
               }
             ]
           }
@@ -2686,7 +2746,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Kil'jaeden"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Fist Weapon"
               }
             ],
             "offhand": [
@@ -2699,7 +2761,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Kil'jaeden"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Dagger"
               }
             ],
             "ranged": [
@@ -2713,7 +2777,8 @@ WOWDATA.register({
                   "instance": "Sunwell Plateau",
                   "boss": "Kil'jaeden"
                 },
-                "note": "Legendary — needs no ammo"
+                "note": "Legendary — needs no ammo",
+                "weaponType": "Bow"
               },
               {
                 "id": 30906,
@@ -2724,7 +2789,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Hyjal Summit",
                   "boss": "Archimonde"
-                }
+                },
+                "weaponType": "Bow"
               }
             ]
           }
@@ -3085,7 +3151,9 @@ WOWDATA.register({
                   "instance": "Auchenai Crypts",
                   "boss": "Shirrak the Dead Watcher",
                   "detail": "Heroic only"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Fist Weapon"
               },
               {
                 "id": 27903,
@@ -3097,7 +3165,9 @@ WOWDATA.register({
                   "instance": "Shadow Labyrinth",
                   "boss": "Murmur"
                 },
-                "note": "2H polearm — leave offhand empty"
+                "note": "2H polearm — leave offhand empty",
+                "hand": "two",
+                "weaponType": "Polearm"
               }
             ],
             "offhand": [
@@ -3111,7 +3181,9 @@ WOWDATA.register({
                   "detail": "Dealer Jadyan, Protectorate Watch Post",
                   "zone": "Netherstorm"
                 },
-                "note": "Cheap off-hand fist; empty when using a 2H"
+                "note": "Cheap off-hand fist; empty when using a 2H",
+                "hand": "off",
+                "weaponType": "Fist Weapon"
               },
               {
                 "id": 28315,
@@ -3122,7 +3194,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Botanica",
                   "boss": "High Botanist Freywinn"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Fist Weapon"
               }
             ],
             "ranged": [
@@ -3136,7 +3210,8 @@ WOWDATA.register({
                   "instance": "The Steamvault",
                   "boss": "Warlord Kalithresh",
                   "detail": "Heroic only"
-                }
+                },
+                "weaponType": "Bow"
               },
               {
                 "id": 29152,
@@ -3148,7 +3223,8 @@ WOWDATA.register({
                   "type": "reputation",
                   "detail": "Honor Hold — Exalted",
                   "zone": "Hellfire Peninsula"
-                }
+                },
+                "weaponType": "Bow"
               },
               {
                 "id": 29151,
@@ -3160,7 +3236,8 @@ WOWDATA.register({
                   "type": "reputation",
                   "detail": "Thrallmar — Exalted",
                   "zone": "Hellfire Peninsula"
-                }
+                },
+                "weaponType": "Gun"
               }
             ]
           }
@@ -3425,7 +3502,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Opera Event (The Big Bad Wolf)"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Fist Weapon"
               },
               {
                 "id": 27846,
@@ -3437,7 +3516,9 @@ WOWDATA.register({
                   "instance": "Auchenai Crypts",
                   "boss": "Shirrak the Dead Watcher",
                   "detail": "Heroic only"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Fist Weapon"
               }
             ],
             "offhand": [
@@ -3450,7 +3531,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Opera Event"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Dagger"
               },
               {
                 "id": 29372,
@@ -3462,7 +3545,9 @@ WOWDATA.register({
                   "detail": "Dealer Jadyan, Protectorate Watch Post",
                   "zone": "Netherstorm"
                 },
-                "note": "Cheap off-hand fist; empty when using a 2H"
+                "note": "Cheap off-hand fist; empty when using a 2H",
+                "hand": "off",
+                "weaponType": "Fist Weapon"
               }
             ],
             "ranged": [
@@ -3475,7 +3560,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Prince Malchezaar"
-                }
+                },
+                "weaponType": "Bow"
               },
               {
                 "id": 29351,
@@ -3487,7 +3573,8 @@ WOWDATA.register({
                   "instance": "The Steamvault",
                   "boss": "Warlord Kalithresh",
                   "detail": "Heroic only"
-                }
+                },
+                "weaponType": "Bow"
               }
             ]
           }
@@ -3750,7 +3837,9 @@ WOWDATA.register({
                   "boss": null,
                   "detail": "Trash drop (BoE)"
                 },
-                "note": "2H polearm — leave offhand empty"
+                "note": "2H polearm — leave offhand empty",
+                "hand": "two",
+                "weaponType": "Polearm"
               },
               {
                 "id": 34331,
@@ -3761,7 +3850,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Kil'jaeden"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Fist Weapon"
               }
             ],
             "ranged": [
@@ -3775,7 +3866,8 @@ WOWDATA.register({
                   "instance": "Sunwell Plateau",
                   "boss": "Kil'jaeden"
                 },
-                "note": "Legendary — needs no ammo"
+                "note": "Legendary — needs no ammo",
+                "weaponType": "Bow"
               },
               {
                 "id": 30906,
@@ -3786,7 +3878,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Hyjal Summit",
                   "boss": "Archimonde"
-                }
+                },
+                "weaponType": "Bow"
               }
             ]
           }

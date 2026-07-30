@@ -415,7 +415,9 @@ WOWDATA.register({
                   "profession": "Blacksmithing"
                 },
                 "note": "Remains BiS through Phase 1",
-                "bop": true
+                "bop": true,
+                "hand": "two",
+                "weaponType": "Sword"
               },
               {
                 "id": 29356,
@@ -427,7 +429,9 @@ WOWDATA.register({
                   "instance": "The Black Morass",
                   "boss": "Aeonus",
                   "detail": "Heroic only"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Sword"
               },
               {
                 "id": 30009,
@@ -438,7 +442,9 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Nexus-King Salhadaar",
                   "zone": "Netherstorm"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Axe"
               }
             ],
             "ranged": [
@@ -452,7 +458,8 @@ WOWDATA.register({
                   "boss": "Doomwalker",
                   "zone": "Shadowmoon Valley",
                   "detail": "World boss"
-                }
+                },
+                "weaponType": "Gun"
               },
               {
                 "id": 30279,
@@ -463,7 +470,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Declawing Doomclaw",
                   "zone": "Netherstorm"
-                }
+                },
+                "weaponType": "Gun"
               },
               {
                 "id": 29204,
@@ -474,7 +482,8 @@ WOWDATA.register({
                   "type": "crafted",
                   "detail": "Blacksmithing (thrown)",
                   "profession": "Blacksmithing"
-                }
+                },
+                "weaponType": "Thrown"
               }
             ]
           }
@@ -816,7 +825,9 @@ WOWDATA.register({
                   "profession": "Blacksmithing"
                 },
                 "note": "Still BiS with Sword Specialization",
-                "bop": true
+                "bop": true,
+                "hand": "two",
+                "weaponType": "Sword"
               },
               {
                 "id": 28773,
@@ -828,7 +839,9 @@ WOWDATA.register({
                   "instance": "Karazhan",
                   "boss": "Prince Malchezaar"
                 },
-                "note": "Talent Axe Specialization if using"
+                "note": "Talent Axe Specialization if using",
+                "hand": "two",
+                "weaponType": "Axe"
               },
               {
                 "id": 28573,
@@ -839,7 +852,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Opera Event"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Sword"
               }
             ],
             "ranged": [
@@ -853,7 +868,8 @@ WOWDATA.register({
                   "boss": "Doomwalker",
                   "zone": "Shadowmoon Valley",
                   "detail": "World boss"
-                }
+                },
+                "weaponType": "Gun"
               },
               {
                 "id": 30279,
@@ -864,7 +880,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Declawing Doomclaw",
                   "zone": "Netherstorm"
-                }
+                },
+                "weaponType": "Gun"
               }
             ]
           }
@@ -1099,7 +1116,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Kil'jaeden"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Sword"
               },
               {
                 "id": 30902,
@@ -1110,7 +1129,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Hyjal Summit",
                   "boss": "Archimonde"
-                }
+                },
+                "hand": "two",
+                "weaponType": "Sword"
               }
             ],
             "ranged": [
@@ -1123,7 +1144,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Eredar Twins"
-                }
+                },
+                "weaponType": "Bow"
               }
             ]
           }
@@ -1541,7 +1563,9 @@ WOWDATA.register({
                   "profession": "Blacksmithing"
                 },
                 "note": "Upgrades to Wicked Edge of the Planes in P2",
-                "bop": true
+                "bop": true,
+                "hand": "main",
+                "weaponType": "Axe"
               },
               {
                 "id": 30733,
@@ -1553,7 +1577,9 @@ WOWDATA.register({
                   "boss": "Doom Lord Kazzak",
                   "zone": "Hellfire Peninsula",
                   "detail": "World boss"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 29348,
@@ -1565,7 +1591,9 @@ WOWDATA.register({
                   "instance": "The Shattered Halls",
                   "boss": "Warchief Kargath Bladefist",
                   "detail": "Heroic only"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Fist Weapon"
               }
             ],
             "offhand": [
@@ -1577,7 +1605,9 @@ WOWDATA.register({
                 "source": {
                   "type": "reputation",
                   "detail": "The Aldor — Exalted"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Sword"
               }
             ],
             "ranged": [
@@ -1591,7 +1621,8 @@ WOWDATA.register({
                   "boss": "Doomwalker",
                   "zone": "Shadowmoon Valley",
                   "detail": "World boss"
-                }
+                },
+                "weaponType": "Gun"
               },
               {
                 "id": 30279,
@@ -1602,7 +1633,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Declawing Doomclaw",
                   "zone": "Netherstorm"
-                }
+                },
+                "weaponType": "Gun"
               },
               {
                 "id": 29204,
@@ -1613,7 +1645,8 @@ WOWDATA.register({
                   "type": "crafted",
                   "detail": "Blacksmithing (thrown)",
                   "profession": "Blacksmithing"
-                }
+                },
+                "weaponType": "Thrown"
               }
             ]
           }
@@ -1954,7 +1987,9 @@ WOWDATA.register({
                   "detail": "Blacksmithing — Master Hammersmith",
                   "profession": "Blacksmithing"
                 },
-                "bop": true
+                "bop": true,
+                "hand": "main",
+                "weaponType": "Mace"
               },
               {
                 "id": 28767,
@@ -1965,7 +2000,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Prince Malchezaar"
-                }
+                },
+                "hand": "main",
+                "weaponType": "Axe"
               },
               {
                 "id": 28432,
@@ -1977,7 +2014,9 @@ WOWDATA.register({
                   "detail": "Blacksmithing — Master Axesmith",
                   "profession": "Blacksmithing"
                 },
-                "bop": true
+                "bop": true,
+                "hand": "main",
+                "weaponType": "Axe"
               }
             ],
             "offhand": [
@@ -1989,7 +2028,9 @@ WOWDATA.register({
                 "source": {
                   "type": "drop",
                   "instance": "Karazhan"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 30733,
@@ -2001,7 +2042,9 @@ WOWDATA.register({
                   "boss": "Doom Lord Kazzak",
                   "zone": "Hellfire Peninsula",
                   "detail": "World boss"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Sword"
               }
             ],
             "ranged": [
@@ -2014,7 +2057,8 @@ WOWDATA.register({
                   "type": "quest",
                   "quest": "Declawing Doomclaw",
                   "zone": "Netherstorm"
-                }
+                },
+                "weaponType": "Gun"
               },
               {
                 "id": 30724,
@@ -2026,7 +2070,8 @@ WOWDATA.register({
                   "boss": "Doomwalker",
                   "zone": "Shadowmoon Valley",
                   "detail": "World boss"
-                }
+                },
+                "weaponType": "Gun"
               }
             ]
           }
@@ -2262,7 +2307,9 @@ WOWDATA.register({
                   "instance": "Black Temple",
                   "boss": "Illidan Stormrage"
                 },
-                "note": "Main-hand glaive; BiS from P3 through Sunwell"
+                "note": "Main-hand glaive; BiS from P3 through Sunwell",
+                "hand": "main",
+                "weaponType": "Sword"
               }
             ],
             "offhand": [
@@ -2276,7 +2323,9 @@ WOWDATA.register({
                   "instance": "Black Temple",
                   "boss": "Illidan Stormrage"
                 },
-                "note": "Off-hand glaive"
+                "note": "Off-hand glaive",
+                "hand": "off",
+                "weaponType": "Sword"
               }
             ],
             "ranged": [
@@ -2289,7 +2338,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Eredar Twins"
-                }
+                },
+                "weaponType": "Bow"
               }
             ]
           }
@@ -2675,7 +2725,9 @@ WOWDATA.register({
                   "instance": "The Mechanar",
                   "boss": "Pathaleon the Calculator",
                   "detail": "Heroic only — low drop rate"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 28189,
@@ -2686,7 +2738,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Black Morass",
                   "boss": "Aeonus"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 29156,
@@ -2697,7 +2751,9 @@ WOWDATA.register({
                 "source": {
                   "type": "reputation",
                   "detail": "Honor Hold — Exalted"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 29165,
@@ -2708,7 +2764,9 @@ WOWDATA.register({
                 "source": {
                   "type": "reputation",
                   "detail": "Thrallmar — Exalted"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Axe"
               }
             ],
             "offhand": [
@@ -2720,7 +2778,9 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "G'eras, Shattrath — 33 Badges of Justice"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Shield"
               },
               {
                 "id": 29176,
@@ -2730,7 +2790,9 @@ WOWDATA.register({
                 "source": {
                   "type": "reputation",
                   "detail": "The Sha'tar — Exalted"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Shield"
               },
               {
                 "id": 27887,
@@ -2741,7 +2803,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Shadow Labyrinth",
                   "boss": "Ambassador Hellmaw"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Shield"
               }
             ],
             "ranged": [
@@ -2754,7 +2818,8 @@ WOWDATA.register({
                   "type": "crafted",
                   "detail": "Blacksmithing (thrown)",
                   "profession": "Blacksmithing"
-                }
+                },
+                "weaponType": "Thrown"
               },
               {
                 "id": 30279,
@@ -2766,7 +2831,8 @@ WOWDATA.register({
                   "quest": "Declawing Doomclaw",
                   "zone": "Netherstorm"
                 },
-                "note": "Hit rating — threat option"
+                "note": "Hit rating — threat option",
+                "weaponType": "Gun"
               }
             ]
           }
@@ -3113,7 +3179,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Karazhan",
                   "boss": "Chess Event"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Sword"
               },
               {
                 "id": 29362,
@@ -3125,7 +3193,9 @@ WOWDATA.register({
                   "instance": "The Mechanar",
                   "boss": "Pathaleon the Calculator",
                   "detail": "Heroic only — low drop rate"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Sword"
               }
             ],
             "offhand": [
@@ -3138,7 +3208,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Gruul's Lair",
                   "boss": "Gruul the Dragonkiller"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Shield"
               },
               {
                 "id": 29266,
@@ -3148,7 +3220,9 @@ WOWDATA.register({
                 "source": {
                   "type": "badge",
                   "detail": "G'eras, Shattrath — 33 Badges of Justice"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Shield"
               }
             ],
             "ranged": [
@@ -3162,7 +3236,8 @@ WOWDATA.register({
                   "boss": "Doomwalker",
                   "zone": "Shadowmoon Valley",
                   "detail": "World boss"
-                }
+                },
+                "weaponType": "Gun"
               },
               {
                 "id": 29204,
@@ -3173,7 +3248,8 @@ WOWDATA.register({
                   "type": "crafted",
                   "detail": "Blacksmithing (thrown)",
                   "profession": "Blacksmithing"
-                }
+                },
+                "weaponType": "Thrown"
               }
             ]
           }
@@ -3371,7 +3447,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Kalecgos"
-                }
+                },
+                "hand": "one",
+                "weaponType": "Sword"
               }
             ],
             "offhand": [
@@ -3384,7 +3462,9 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Sunwell Plateau",
                   "boss": "Felmyst"
-                }
+                },
+                "hand": "off",
+                "weaponType": "Shield"
               }
             ],
             "ranged": [
@@ -3397,7 +3477,8 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Black Temple",
                   "boss": "Supremus"
-                }
+                },
+                "weaponType": "Crossbow"
               }
             ]
           }

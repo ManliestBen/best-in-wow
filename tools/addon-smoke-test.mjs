@@ -581,6 +581,46 @@ safeCall("no-overlapping-headers", function()
   print("@@OVERLAP@@ header lines are mutually exclusive")
 end)
 
+-- choosing a two-handed main hand must disable the off-hand
+safeCall("two-hander-blocks-offhand", function()
+  if not BISC:ClassData() then return end
+  local spec = BISC:DetectSpec()
+  -- find a bracket that offers both a two-handed main hand option and an off-hand
+  local target, twoHandId
+  for _, br in ipairs(spec.brackets or {}) do
+    local mh = BISC:SlotItems(br, "mainhand")
+    local oh = BISC:SlotItems(br, "offhand")
+    if #oh > 0 then
+      for _, it in ipairs(mh) do
+        if it.hand == "two" then target, twoHandId = br, it.id break end
+      end
+    end
+    if target then break end
+  end
+  if not target then
+    print("@@2H@@ skipped: no bracket offers a 2H main hand alongside an off-hand")
+    return
+  end
+  BISC.db.bracket = target.id
+  BISC.db.bracketPinned = true
+
+  -- with a one-handed pick the off-hand counts
+  BISC:SetTarget("mainhand", 1, nil)
+  local before = 0
+  for _, w in ipairs(BISC:WornItems(target)) do if w.slot == "offhand" then before = before + 1 end end
+
+  -- now go for the two-hander
+  BISC:SetTarget("mainhand", 1, twoHandId)
+  if not BISC:OffhandBlockedBy(target) then error("2H main hand did not block the off-hand") end
+  local after = 0
+  for _, w in ipairs(BISC:WornItems(target)) do if w.slot == "offhand" then after = after + 1 end end
+  if after ~= 0 then error("off-hand still counted toward progress with a 2H main hand") end
+
+  BISC.UI:ShowTab("gear")
+  BISC:SetTarget("mainhand", 1, nil)
+  print("@@2H@@ off-hand slots before=" .. before .. " with 2H=" .. after)
+end)
+
 -- professions must gate bind-on-pickup crafts
 safeCall("professions", function()
   local mine = BISC:Professions()

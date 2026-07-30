@@ -312,12 +312,15 @@ end
 function B:WornItems(bracket)
   local out = {}
   if not bracket then return out end
+  local blocked = self:OffhandBlockedBy(bracket)
   for _, slotKey in ipairs(self.SLOT_ORDER) do
-    local items = self:SlotItems(bracket, slotKey)
-    local n = math.min(self.WORN[slotKey] or 1, #items)
-    for i = 1, n do
-      local it = self:ChosenItem(items, slotKey, i)
-      if it then table.insert(out, { slot = slotKey, item = it, index = i }) end
+    if not (slotKey == "offhand" and blocked) then
+      local items = self:SlotItems(bracket, slotKey)
+      local n = math.min(self.WORN[slotKey] or 1, #items)
+      for i = 1, n do
+        local it = self:ChosenItem(items, slotKey, i)
+        if it then table.insert(out, { slot = slotKey, item = it, index = i }) end
+      end
     end
   end
   return out
@@ -358,6 +361,16 @@ function B:ChosenItem(items, slotKey, index)
     end
   end
   return items[index]
+end
+
+-- A two-handed main hand fills both hands, so no off-hand can be worn with it.
+-- The main hand is the player's pick, so this is evaluated live.
+function B:OffhandBlockedBy(bracket)
+  local items = self:SlotItems(bracket, "mainhand")
+  if #items == 0 then return nil end
+  local mh = self:ChosenItem(items, "mainhand", 1)
+  if mh and mh.hand == "two" then return mh end
+  return nil
 end
 
 -- "Have it" = equipped, in bags, or in bank.
