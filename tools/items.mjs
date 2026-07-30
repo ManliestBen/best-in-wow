@@ -16,6 +16,9 @@ const WEAPON_SUBCLASS = {
   15: 'Dagger', 16: 'Thrown', 18: 'Crossbow', 19: 'Wand', 20: 'Fishing Pole',
 };
 const TWO_HANDED_SUBCLASS = new Set([1, 5, 6, 8, 10]);   // axe2h, mace2h, polearm, sword2h, staff
+const SLOT_WORDS = new Set(['Head', 'Neck', 'Shoulder', 'Back', 'Chest', 'Robe', 'Wrist',
+  'Hands', 'Waist', 'Legs', 'Feet', 'Finger', 'Trinket', 'Ranged', 'Relic', 'Shirt',
+  'Tabard', 'Two-Hand', 'One-Hand', 'Main Hand', 'Off Hand', 'Held In Off-hand', 'Thrown']);
 
 function stripTags(html) {
   return String(html || '')
@@ -36,7 +39,7 @@ export function parseTooltip(id, raw) {
   };
   let m;
   if ((m = html.match(/<!--ilvl-->(\d+)/))) t.itemLevel = Number(m[1]);
-  if ((m = text.match(/Requires Level (\d+)/))) t.reqLevel = Number(m[1]);
+  if ((m = html.match(/Requires Level (?:<!--rlvl-->)?\s*(\d+)/))) t.reqLevel = Number(m[1]);
   if ((m = html.match(/<!--amr-->(\d+) Armor/))) t.armor = Number(m[1]);
   if ((m = html.match(/<!--dps-->\(([\d.]+) damage per second\)/))) t.dps = Number(m[1]);
   t.unique = /Unique(-Equipped)?/.test(text);
@@ -48,6 +51,14 @@ export function parseTooltip(id, raw) {
     t.itemClass = Number(st[2]);
     t.subClass = Number(st[3]);
     t.typeName = (st[4] || '').trim() || null;
+  } else {
+    // Cloaks (and other items with no armour/weapon subclass) have a bare slot
+    // cell with no paired type cell: <tr><td>Back</td></tr>. Missing this hid
+    // every cloak in the dataset.
+    for (const g of html.matchAll(/<td>([^<]{2,24})<\/td>/g)) {
+      const v = g[1].trim();
+      if (SLOT_WORDS.has(v)) { t.slotText = v; break; }
+    }
   }
   if (t.itemClass === 4) {
     t.armorType = ARMOR_SUBCLASS[t.subClass] || null;

@@ -220,3 +220,26 @@ Both fields are written by `tools/annotate-professions.mjs`.
 | `node tools/addon-smoke-test.mjs` | run the addon's Lua against a mocked WoW API |
 
 The audit must report **0 findings** before data changes are committed.
+
+
+## The item pool (`data/item-pool.json`)
+
+Every verified item entry we have ever had, keyed by item id, maintained by
+`tools/build-pool.mjs`. The generated leveling brackets are built **from the
+pool**, not from whatever the previous generation happened to write.
+
+That separation exists because of a real failure: the tooltip parser couldn't
+see cloaks (their tooltips carry a bare `<td>Back</td>` with no armour-type
+cell), so a generation run produced files with no cloaks — and since the
+candidate pool was derived from those same files, every cloak was lost outright
+rather than merely unused. The pool is additive and never shrinks, so a bad run
+can only produce bad *output*, never destroy item knowledge.
+
+- `node tools/build-pool.mjs` merges the current data files into the pool.
+- `node tools/build-pool.mjs --from-git <ref>` also harvests an older commit,
+  which is how the cloaks were recovered.
+- Item names and qualities in the pool are overwritten from Wowhead tooltips,
+  since ids are authoritative and a few historical entries were mislabelled.
+
+Regeneration order: `build-pool` → `gen-leveling` → `annotate-professions` →
+`validate-data` → `audit-items` (must be 0) → `build-addon-data`.

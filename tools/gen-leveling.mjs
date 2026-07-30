@@ -23,8 +23,18 @@ const TOP_N = 3;                       // Best / Better / Good
 const TOP_N_MULTI = 4;                 // rings and trinkets are worn in pairs
 const facts = loadFacts();
 
-/* ---------------- registry of verified entries ---------------- */
+/* ---------------- registry of verified entries ----------------
+   Seeded from data/item-pool.json, which accumulates every verified entry we
+   have ever had. Deriving the pool from the current files instead would let a
+   bad generation run erase item knowledge permanently — which is exactly how
+   every cloak went missing once. */
 const registry = new Map();
+const poolPath = join(root, 'data', 'item-pool.json');
+if (existsSync(poolPath)) {
+  for (const [id, entry] of Object.entries(JSON.parse(readFileSync(poolPath, 'utf8')))) {
+    registry.set(Number(id), entry);
+  }
+}
 const classMeta = new Map();
 for (const file of findDataFiles(join(root, 'app', 'data'))) {
   const errs = [];
