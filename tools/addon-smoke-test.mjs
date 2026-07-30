@@ -96,7 +96,17 @@ HARNESS = {
   dropdownButtons = {},      -- every info table passed to UIDropDownMenu_AddButton, ever
   insertLinkCalls = 0,
   chatOpenCalls = 0,
+  prints = {},               -- every chat line the addon printed
 }
+
+-- print is the JS bridge; wrap it so tests can assert on what the addon said.
+local __rawprint = print
+function print(...)
+  local parts = {}
+  for i = 1, select("#", ...) do parts[#parts + 1] = tostring((select(i, ...))) end
+  table.insert(HARNESS.prints, table.concat(parts, " "))
+  return __rawprint(...)
+end
 
 -- ---- generic auto-noop frame factory ----
 -- Any method not explicitly implemented below returns a fresh no-op function
@@ -283,6 +293,10 @@ function UnitLevel(unit)
 end
 function UnitFactionGroup(unit)
   return ${luaStringLiteral(faction)}
+end
+
+function UnitRace(unit)
+  return "Orc", "Orc"
 end
 
 -- professions come from the skill list in game
@@ -579,6 +593,47 @@ safeCall("no-overlapping-headers", function()
     error("instance-info line still drawn on the Gear tab (overlaps stat priority)")
   end
   print("@@OVERLAP@@ header lines are mutually exclusive")
+end)
+
+-- a BiS item dropping should announce itself
+safeCall("loot-alert", function()
+  if not BISC:ClassData() then return end
+  local spec = BISC:DetectSpec()
+  local br = BISC:CurrentBracket(spec)
+  local probe
+  for _, slotKey in ipairs(BISC.SLOT_ORDER) do
+    local items = BISC:SlotItems(br, slotKey)
+    if items[1] and items[1].id and items[1].id > 0 then probe = items[1] break end
+  end
+  if not probe then error("no item found to simulate a drop") end
+
+  local before = #HARNESS.prints
+  for _, fr in ipairs(HARNESS.frames) do
+    if fr.__events and fr.__events["CHAT_MSG_LOOT"] and fr.__scripts.OnEvent then
+      fr.__scripts.OnEvent(fr, "CHAT_MSG_LOOT",
+        "You receive loot: |cffa335ee|Hitem:" .. probe.id .. ":0:0:0|h[" .. probe.name .. "]|h|r.")
+    end
+  end
+  if #HARNESS.prints <= before then error("looting a BiS item printed nothing") end
+
+  -- junk must stay quiet
+  local quiet = #HARNESS.prints
+  for _, fr in ipairs(HARNESS.frames) do
+    if fr.__events and fr.__events["CHAT_MSG_LOOT"] and fr.__scripts.OnEvent then
+      fr.__scripts.OnEvent(fr, "CHAT_MSG_LOOT", "You receive loot: |Hitem:99999:0:0:0|h[Junk]|h.")
+    end
+  end
+  if #HARNESS.prints > quiet then error("a non-BiS drop should not print") end
+  print("@@LOOT@@ alerted on " .. tostring(probe.name) .. ", stayed quiet on junk")
+end)
+
+-- searching spans every spec of the class
+safeCall("class-wide-search", function()
+  if not BISC:ClassData() then return end
+  local hits = BISC:SearchClassItems("band")
+  local specHits = BISC:SearchSpecItems(BISC:DetectSpec(), "band")
+  if #hits < #specHits then error("class-wide search returned fewer hits than one spec") end
+  print("@@SEARCH@@ class-wide " .. #hits .. " vs single-spec " .. #specHits)
 end)
 
 -- choosing a two-handed main hand must disable the off-hand

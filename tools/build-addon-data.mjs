@@ -74,6 +74,20 @@ for (const cd of bis) {
   };
 }
 
+// Racial gearing notes: the app shows these in the sidebar, so the addon needs
+// them too. Keyed by the token UnitRace() returns.
+const RACE_TOKEN = {
+  human: 'Human', dwarf: 'Dwarf', nightelf: 'NightElf', gnome: 'Gnome',
+  draenei: 'Draenei', orc: 'Orc', undead: 'Scourge', tauren: 'Tauren',
+  troll: 'Troll', bloodelf: 'BloodElf',
+};
+const races = {};
+for (const r of core.races || []) {
+  const token = RACE_TOKEN[r.id] || r.id;
+  if (r.gearNotes) races[token] = { name: r.name, notes: r.gearNotes };
+}
+for (const exp of Object.values(data)) exp.races = races;
+
 const PHASE_ORDER = { classic: -1, preraid: 0, p1: 1, p2: 2, p3: 3, p4: 4, p5: 5 };
 for (const qd of quests) {
   const exp = data[qd.expansion];

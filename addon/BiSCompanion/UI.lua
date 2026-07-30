@@ -78,14 +78,16 @@ local function BuildGearList()
   end
 
   if searchQuery ~= "" then
-    local results = B:SearchSpecItems(spec, searchQuery)
+    local results = B:SearchClassItems(searchQuery)
     if #results == 0 then
       table.insert(listData, { kind = "msg", text = "No matches for \"" .. searchQuery .. "\"." })
       return
     end
     for _, r in ipairs(results) do
       table.insert(listData, {
-        kind = "item", slot = r.slot, item = r.item, label = r.bracketId, noExpand = true,
+        kind = "item", slot = r.slot, item = r.item, noExpand = true,
+        label = r.bracketId,
+        searchSpec = r.specName,
       })
     end
     return
@@ -265,6 +267,7 @@ local function UpdateRows()
       row:Show()
       -- header rows are display-only: no hover highlight, no tooltip, no click.
       row:EnableMouse(d.kind ~= "header" and d.kind ~= "blocked")
+      if row.srcText then row.srcText:SetText("") end
       if d.kind == "msg" then
         row.slotText:SetText("")
         row.check:Hide()
@@ -282,6 +285,10 @@ local function UpdateRows()
         if d.expandable and not d.alt then suffix = suffix .. " |cff777777[+options]|r" end
         row.nameText:SetText(ItemColor(d.item) .. ItemDisplayName(d.item) .. "|r" .. suffix)
         row.nameText:SetTextColor(1, 1, 1)
+        if row.srcText then
+          -- in search results the spec matters more than the drop location
+          row.srcText:SetText(d.searchSpec or d.item.sourceText or "")
+        end
       elseif d.kind == "quest" then
         row.slotText:SetText("")
         local done = B:QuestDone(d.quest)
@@ -328,7 +335,8 @@ local function UpdateRows()
     else
       f.statLine:SetText("")
     end
-    f.notesBtn:SetShown(spec ~= nil and spec.notes ~= nil)
+    local _, rnote = B:RacialNote()
+    f.notesBtn:SetShown((spec ~= nil and spec.notes ~= nil) or rnote ~= nil)
   elseif tab == "shopping" then
     local bracket = B:CurrentBracket(spec)
     local have, total = B:Progress(bracket)
@@ -726,10 +734,18 @@ local function CreateMainFrame()
   f.notesBtn:SetText("?")
   f.notesBtn:SetScript("OnEnter", safe("spec-notes", function(self)
     local spec = B:DetectSpec()
-    if not spec or not spec.notes then return end
+    local rname, rnote = B:RacialNote()
+    if not (spec and spec.notes) and not rnote then return end
     GameTooltip:SetOwner(self, "ANCHOR_LEFT")
-    GameTooltip:AddLine("|cffc8aa6eSpec notes|r")
-    GameTooltip:AddLine(spec.notes, 1, 1, 1, true)
+    if spec and spec.notes then
+      GameTooltip:AddLine("|cffc8aa6eSpec notes|r")
+      GameTooltip:AddLine(spec.notes, 1, 1, 1, true)
+    end
+    if rnote then
+      GameTooltip:AddLine(" ")
+      GameTooltip:AddLine("|cffc8aa6e" .. (rname or "Racial") .. " racials|r")
+      GameTooltip:AddLine(rnote, 1, 1, 1, true)
+    end
     GameTooltip:Show()
   end))
   f.notesBtn:SetScript("OnLeave", function() GameTooltip:Hide() end)
@@ -761,9 +777,18 @@ local function CreateMainFrame()
 
     row.nameText = row:CreateFontString(nil, "OVERLAY", "GameFontNormal")
     row.nameText:SetPoint("LEFT", 100, 0)
-    row.nameText:SetPoint("RIGHT", -4, 0)
+    row.nameText:SetPoint("RIGHT", -170, 0)
     row.nameText:SetJustifyH("LEFT")
     row.nameText:SetWordWrap(false)
+
+    -- where it comes from, mirroring the source line the web app puts under
+    -- each item; dim and right-aligned so it never fights with the name
+    row.srcText = row:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+    row.srcText:SetPoint("RIGHT", -4, 0)
+    row.srcText:SetWidth(164)
+    row.srcText:SetJustifyH("RIGHT")
+    row.srcText:SetWordWrap(false)
+    row.srcText:SetTextColor(0.55, 0.5, 0.4)
 
     row:SetHighlightTexture("Interface\\QuestFrame\\UI-QuestTitleHighlight", "ADD")
 
@@ -784,6 +809,12 @@ local function CreateMainFrame()
         local canExpand = d.expandable and not d.noExpand and B.db.tab == "gear"
         if d.tier then
           GameTooltip:AddLine("|cffc8aa6eRanked:|r " .. (B.RANK_LABEL[d.tier] or ("#" .. d.tier)))
+        end
+        local spec = B:DetectSpec()
+        local ench = spec and spec.enchants and d.slot and spec.enchants[d.slot]
+        if ench then
+          GameTooltip:AddLine(" ")
+          GameTooltip:AddLine("|cff80c0ffEnchant:|r " .. ench, 1, 1, 1, true)
         end
         if d.item.hand == "two" then
           GameTooltip:AddLine("|cffc8aa6eTwo-handed|r — leaves no room for an off-hand", 1, 1, 1)

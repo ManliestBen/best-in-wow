@@ -67,6 +67,7 @@ function B:InitDB()
   if c.tooltips == nil then c.tooltips = true end
   if c.zoneAlerts == nil then c.zoneAlerts = true end
   c.targets = c.targets or {}
+  if c.lootAlerts == nil then c.lootAlerts = true end
   self.db = c
 end
 
@@ -107,6 +108,8 @@ function B:Diagnostics()
   local profs = {}
   for p in pairs(self:Professions()) do table.insert(profs, p) end
   table.sort(profs)
+  local rname = self:RacialNote()
+  add("  race: " .. tostring(rname or "unknown"))
   add("  professions: " .. (#profs > 0 and table.concat(profs, ", ") or "none detected"))
   for _, line in ipairs(out) do print(line) end
 end
@@ -114,6 +117,16 @@ end
 function B:PlayerClass()
   local _, token = UnitClass("player")
   return token
+end
+
+-- Racial gearing note for this character, matching what the web app shows.
+function B:RacialNote()
+  if type(UnitRace) ~= "function" then return nil end
+  local _, token = UnitRace("player")
+  local exp = self:ExpData()
+  local r = exp and exp.races and token and exp.races[token]
+  if not r then return nil end
+  return r.name, r.notes
 end
 
 function B:PlayerFaction()
@@ -537,6 +550,52 @@ function B:QuestDone(q)
   return false
 end
 
+-- When an item on your list drops, say so. The whole point of the addon is not
+-- having to remember 15 item names mid-run.
+function B:OnLoot(msg)
+  if not self.db or self.db.lootAlerts == false or not msg then return end
+  local id = tonumber(msg:match("|Hitem:(%d+)"))
+  if not id or not self.TooltipHits then return end
+  local hits = self:TooltipHits(id)
+  if not hits or #hits == 0 then return end
+
+  local spec = self:DetectSpec()
+  local mine, other
+  for _, h in ipairs(hits) do
+    if spec and h.specId == spec.id then mine = mine or h else other = other or h end
+  end
+  local h = mine or other
+  if not h then return end
+  local name = GetItemInfo and GetItemInfo(id) or ("item " .. id)
+  local tag = (h.rank == 1) and "|cff80ff40Best|r" or ("|cffc8aa6e" .. (self.RANK_LABEL[h.rank] or "option") .. "|r")
+  print("|cff80ff40BiS Companion|r " .. tostring(name) .. " is " .. tag ..
+    " for " .. h.specName .. " · " .. h.bracketName .. " (" .. h.slot .. ")" ..
+    (mine and "" or " |cff777777— other spec|r"))
+  if type(PlaySound) == "function" then
+    pcall(PlaySound, SOUNDKIT and SOUNDKIT.IG_QUEST_LIST_COMPLETE or 878)
+  end
+end
+
+-- Search every spec of the class, not just the one being viewed: the web app
+-- searches the whole dataset, and mid-run you want to know if a drop matters
+-- for any of your specs.
+function B:SearchClassItems(query)
+  local cd = self:ClassData()
+  if not cd or not query or query == "" then return {} end
+  local out, seen = {}, {}
+  for _, spec in ipairs(cd.specs or {}) do
+    for _, r in ipairs(self:SearchSpecItems(spec, query)) do
+      local key = (r.item.id and r.item.id > 0) and r.item.id or ("n-" .. tostring(r.item.name))
+      if not seen[key] then
+        seen[key] = true
+        r.specName = spec.name
+        table.insert(out, r)
+      end
+    end
+  end
+  return out
+end
+
 -- Collected count across worn BiS pieces for the progress line.
 function B:Progress(bracket)
   local have, total = 0, 0
@@ -557,9 +616,12 @@ frame:RegisterEvent("PLAYER_LEVEL_UP")
 frame:RegisterEvent("CHARACTER_POINTS_CHANGED")
 frame:RegisterEvent("SPELLS_CHANGED")
 frame:RegisterEvent("SKILL_LINES_CHANGED")
+frame:RegisterEvent("CHAT_MSG_LOOT")
 frame:SetScript("OnEvent", function(_, event, arg1)
   if event == "ADDON_LOADED" and arg1 == ADDON then
     B:InitDB()
+  elseif event == "CHAT_MSG_LOOT" then
+    B:Safe("loot-alert", function() B:OnLoot(arg1) end)
   elseif event == "SKILL_LINES_CHANGED" then
     B:InvalidateProfessions()
     if B.UI and B.UI.Refresh then B.UI:Refresh() end
@@ -596,6 +658,11 @@ SlashCmdList.BISCOMPANION = function(msg)
     B.db.spec, B.db.bracket, B.db.bracketPinned = nil, B:DefaultBracket(), nil
     if B.UI then B.UI:Refresh() end
     return
+  elseif msg == "loot" then
+    B.db.lootAlerts = not B.db.lootAlerts
+    print("|cff80ff40BiS Companion|r loot alerts " ..
+      (B.db.lootAlerts and "|cff80ff40on|r" or "|cffff4040off|r"))
+    return
   elseif msg == "minimap" then
     B.db.hideMinimap = not B.db.hideMinimap
     if B.UpdateMinimapButton then B:UpdateMinimapButton() end
@@ -619,7 +686,7 @@ SlashCmdList.BISCOMPANION = function(msg)
     if B.UI then B.UI:ShowTab("shopping") end
     return
   elseif msg ~= "" and msg ~= "show" then
-    print("|cff80ff40BiS Companion|r commands: /bis · /bis tbc · /bis wotlk · /bis reset · /bis shop · /bis tips · /bis zone · /bis minimap · /bis debug")
+    print("|cff80ff40BiS Companion|r commands: /bis · /bis tbc · /bis wotlk · /bis reset · /bis shop · /bis tips · /bis zone · /bis loot · /bis minimap · /bis debug")
     return
   end
   if B.UI then B.UI:Toggle() end
