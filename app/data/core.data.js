@@ -9,13 +9,17 @@ WOWDATA.register(
       "wowheadPath": "tbc",
       "maxLevel": 70,
       "brackets": [
-        { "id": "lvl19",   "name": "Levels 10–19",  "sub": "Early dungeons & quests" },
-        { "id": "lvl29",   "name": "Levels 20–29",  "sub": "SFK · BFD · Stockade era" },
-        { "id": "lvl39",   "name": "Levels 30–39",  "sub": "SM · RFK · Uldaman era" },
-        { "id": "lvl49",   "name": "Levels 40–49",  "sub": "ZF · Mara · ST era" },
-        { "id": "lvl59",   "name": "Levels 50–57",  "sub": "BRD · LBRS · Strat/Scholo era" },
-        { "id": "lvl60",   "name": "Levels 58–64",  "sub": "Outland leveling" },
-        { "id": "lvl65",   "name": "Levels 65–69",  "sub": "Late Outland leveling" },
+        { "id": "lvl20", "name": "Levels 10–20", "sub": "First dungeons", "levelRange": [10, 20] },
+        { "id": "lvl25", "name": "Levels 21–25", "sub": "SFK · BFD · Stockade", "levelRange": [21, 25] },
+        { "id": "lvl30", "name": "Levels 26–30", "sub": "Gnomeregan · RFK", "levelRange": [26, 30] },
+        { "id": "lvl35", "name": "Levels 31–35", "sub": "SM · Uldaman", "levelRange": [31, 35] },
+        { "id": "lvl40", "name": "Levels 36–40", "sub": "ZF · Mail/Plate unlock", "levelRange": [36, 40] },
+        { "id": "lvl45", "name": "Levels 41–45", "sub": "Maraudon · ST", "levelRange": [41, 45] },
+        { "id": "lvl50", "name": "Levels 46–50", "sub": "ST · Sunken Temple era", "levelRange": [46, 50] },
+        { "id": "lvl55", "name": "Levels 51–55", "sub": "BRD · LBRS", "levelRange": [51, 55] },
+        { "id": "lvl60", "name": "Levels 56–60", "sub": "Strat · Scholo · UBRS", "levelRange": [56, 60] },
+        { "id": "lvl65", "name": "Levels 61–65", "sub": "Hellfire · Zangarmarsh", "levelRange": [61, 65] },
+        { "id": "lvl69", "name": "Levels 66–69", "sub": "Terokkar · Nagrand · Blade’s Edge", "levelRange": [66, 69] },
         { "id": "preraid", "name": "70 · Pre-Raid", "sub": "Dungeons, heroics, crafted, rep" },
         { "id": "p1",      "name": "Phase 1",       "sub": "Karazhan · Gruul · Magtheridon" },
         { "id": "p2",      "name": "Phase 2",       "sub": "Serpentshrine · Tempest Keep" },
@@ -40,6 +44,15 @@ WOWDATA.register(
     }
   },
 
+  "professions": [
+    { "id": "Alchemy",        "name": "Alchemy" },
+    { "id": "Blacksmithing",  "name": "Blacksmithing" },
+    { "id": "Enchanting",     "name": "Enchanting" },
+    { "id": "Engineering",    "name": "Engineering" },
+    { "id": "Jewelcrafting",  "name": "Jewelcrafting" },
+    { "id": "Leatherworking", "name": "Leatherworking" },
+    { "id": "Tailoring",      "name": "Tailoring" }
+  ],
   "factions": [
     { "id": "alliance", "name": "Alliance", "color": "#4a7bd6" },
     { "id": "horde",    "name": "Horde",    "color": "#c23c2a" }

@@ -63,7 +63,8 @@ WOWDATA.register({
                 "rank": 3,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing"
+                  "detail": "Blacksmithing",
+                  "profession": "Blacksmithing"
                 }
               }
             ],
@@ -160,7 +161,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring"
+                  "detail": "Tailoring",
+                  "profession": "Tailoring"
                 }
               },
               {
@@ -218,7 +220,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing"
+                  "detail": "Blacksmithing",
+                  "profession": "Blacksmithing"
                 }
               }
             ],
@@ -230,7 +233,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking"
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
                 }
               },
               {
@@ -240,7 +244,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing"
+                  "detail": "Blacksmithing",
+                  "profession": "Blacksmithing"
                 }
               }
             ],
@@ -301,7 +306,8 @@ WOWDATA.register({
                 "rank": 3,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking"
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
                 }
               }
             ],
@@ -313,7 +319,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking"
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
                 }
               },
               {
@@ -404,9 +411,11 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing — Master Swordsmith"
+                  "detail": "Blacksmithing — Master Swordsmith",
+                  "profession": "Blacksmithing"
                 },
-                "note": "Remains BiS through Phase 1"
+                "note": "Remains BiS through Phase 1",
+                "bop": true
               },
               {
                 "id": 29356,
@@ -463,7 +472,8 @@ WOWDATA.register({
                 "rank": 3,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing (thrown)"
+                  "detail": "Blacksmithing (thrown)",
+                  "profession": "Blacksmithing"
                 }
               }
             ]
@@ -560,7 +570,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring"
+                  "detail": "Tailoring",
+                  "profession": "Tailoring"
                 }
               },
               {
@@ -621,7 +632,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing"
+                  "detail": "Blacksmithing",
+                  "profession": "Blacksmithing"
                 }
               }
             ],
@@ -644,7 +656,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking"
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
                 }
               }
             ],
@@ -716,7 +729,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking"
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
                 }
               }
             ],
@@ -798,9 +812,11 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing — Master Swordsmith"
+                  "detail": "Blacksmithing — Master Swordsmith",
+                  "profession": "Blacksmithing"
                 },
-                "note": "Still BiS with Sword Specialization"
+                "note": "Still BiS with Sword Specialization",
+                "bop": true
               },
               {
                 "id": 28773,
@@ -881,8 +897,10 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting — Sunwell recipe"
-                }
+                  "detail": "Jewelcrafting — Sunwell recipe",
+                  "profession": "Jewelcrafting"
+                },
+                "bop": true
               },
               {
                 "id": 32260,
@@ -1019,7 +1037,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting — Sunwell recipe"
+                  "detail": "Jewelcrafting — Sunwell recipe",
+                  "profession": "Jewelcrafting"
                 }
               },
               {
@@ -1170,7 +1189,8 @@ WOWDATA.register({
                 "rank": 3,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing"
+                  "detail": "Blacksmithing",
+                  "profession": "Blacksmithing"
                 }
               }
             ],
@@ -1267,7 +1287,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring"
+                  "detail": "Tailoring",
+                  "profession": "Tailoring"
                 }
               },
               {
@@ -1325,7 +1346,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing"
+                  "detail": "Blacksmithing",
+                  "profession": "Blacksmithing"
                 }
               }
             ],
@@ -1337,7 +1359,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking"
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
                 }
               },
               {
@@ -1347,7 +1370,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing"
+                  "detail": "Blacksmithing",
+                  "profession": "Blacksmithing"
                 }
               }
             ],
@@ -1408,7 +1432,8 @@ WOWDATA.register({
                 "rank": 3,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking"
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
                 }
               }
             ],
@@ -1420,7 +1445,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking"
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
                 }
               },
               {
@@ -1511,9 +1537,11 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing — Master Axesmith"
+                  "detail": "Blacksmithing — Master Axesmith",
+                  "profession": "Blacksmithing"
                 },
-                "note": "Upgrades to Wicked Edge of the Planes in P2"
+                "note": "Upgrades to Wicked Edge of the Planes in P2",
+                "bop": true
               },
               {
                 "id": 30733,
@@ -1583,7 +1611,8 @@ WOWDATA.register({
                 "rank": 3,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing (thrown)"
+                  "detail": "Blacksmithing (thrown)",
+                  "profession": "Blacksmithing"
                 }
               }
             ]
@@ -1680,7 +1709,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring"
+                  "detail": "Tailoring",
+                  "profession": "Tailoring"
                 }
               },
               {
@@ -1741,7 +1771,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing"
+                  "detail": "Blacksmithing",
+                  "profession": "Blacksmithing"
                 }
               }
             ],
@@ -1764,7 +1795,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking"
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
                 }
               }
             ],
@@ -1836,7 +1868,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking"
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
                 }
               }
             ],
@@ -1918,8 +1951,10 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing — Master Hammersmith"
-                }
+                  "detail": "Blacksmithing — Master Hammersmith",
+                  "profession": "Blacksmithing"
+                },
+                "bop": true
               },
               {
                 "id": 28767,
@@ -1939,8 +1974,10 @@ WOWDATA.register({
                 "rank": 3,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing — Master Axesmith"
-                }
+                  "detail": "Blacksmithing — Master Axesmith",
+                  "profession": "Blacksmithing"
+                },
+                "bop": true
               }
             ],
             "offhand": [
@@ -2022,8 +2059,10 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting — Sunwell recipe"
-                }
+                  "detail": "Jewelcrafting — Sunwell recipe",
+                  "profession": "Jewelcrafting"
+                },
+                "bop": true
               },
               {
                 "id": 32260,
@@ -2160,7 +2199,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting — Sunwell recipe"
+                  "detail": "Jewelcrafting — Sunwell recipe",
+                  "profession": "Jewelcrafting"
                 }
               },
               {
@@ -2291,7 +2331,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing"
+                  "detail": "Blacksmithing",
+                  "profession": "Blacksmithing"
                 }
               },
               {
@@ -2301,7 +2342,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing"
+                  "detail": "Blacksmithing",
+                  "profession": "Blacksmithing"
                 }
               },
               {
@@ -2393,7 +2435,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring"
+                  "detail": "Tailoring",
+                  "profession": "Tailoring"
                 }
               }
             ],
@@ -2426,8 +2469,10 @@ WOWDATA.register({
                 "rank": 3,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing (BoP)"
-                }
+                  "detail": "Blacksmithing (BoP)",
+                  "profession": "Blacksmithing"
+                },
+                "bop": true
               }
             ],
             "wrist": [
@@ -2438,7 +2483,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing"
+                  "detail": "Blacksmithing",
+                  "profession": "Blacksmithing"
                 }
               },
               {
@@ -2462,7 +2508,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing"
+                  "detail": "Blacksmithing",
+                  "profession": "Blacksmithing"
                 }
               }
             ],
@@ -2510,7 +2557,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing"
+                  "detail": "Blacksmithing",
+                  "profession": "Blacksmithing"
                 }
               },
               {
@@ -2704,7 +2752,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing (thrown)"
+                  "detail": "Blacksmithing (thrown)",
+                  "profession": "Blacksmithing"
                 }
               },
               {
@@ -2749,7 +2798,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing"
+                  "detail": "Blacksmithing",
+                  "profession": "Blacksmithing"
                 }
               }
             ],
@@ -2870,7 +2920,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing"
+                  "detail": "Blacksmithing",
+                  "profession": "Blacksmithing"
                 }
               }
             ],
@@ -2894,7 +2945,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing"
+                  "detail": "Blacksmithing",
+                  "profession": "Blacksmithing"
                 }
               }
             ],
@@ -3046,7 +3098,8 @@ WOWDATA.register({
                 "rank": 4,
                 "source": {
                   "type": "crafted",
-                  "detail": "Engineering"
+                  "detail": "Engineering",
+                  "profession": "Engineering"
                 }
               }
             ],
@@ -3118,7 +3171,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing (thrown)"
+                  "detail": "Blacksmithing (thrown)",
+                  "profession": "Blacksmithing"
                 }
               }
             ]
@@ -3216,7 +3270,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing — Sunwell recipe"
+                  "detail": "Blacksmithing — Sunwell recipe",
+                  "profession": "Blacksmithing"
                 }
               }
             ],

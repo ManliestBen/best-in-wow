@@ -39,7 +39,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking; pattern drops in Heroic Slave Pens"
+                  "detail": "Leatherworking; pattern drops in Heroic Slave Pens",
+                  "profession": "Leatherworking"
                 }
               },
               {
@@ -146,7 +147,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 }
               }
             ],
@@ -158,7 +160,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking — Heavy Clefthoof 3-piece"
+                  "detail": "Leatherworking — Heavy Clefthoof 3-piece",
+                  "profession": "Leatherworking"
                 }
               },
               {
@@ -271,7 +274,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking — Heavy Clefthoof 3-piece"
+                  "detail": "Leatherworking — Heavy Clefthoof 3-piece",
+                  "profession": "Leatherworking"
                 }
               },
               {
@@ -295,7 +299,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking — Heavy Clefthoof 3-piece"
+                  "detail": "Leatherworking — Heavy Clefthoof 3-piece",
+                  "profession": "Leatherworking"
                 }
               },
               {
@@ -570,7 +575,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking"
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
                 },
                 "note": "Armor-cap filler"
               }
@@ -1096,7 +1102,8 @@ WOWDATA.register({
                 "rank": 3,
                 "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting (BoP)"
+                  "detail": "Jewelcrafting (BoP)",
+                  "profession": "Jewelcrafting"
                 },
                 "note": "When armor-capped"
               }
@@ -1223,7 +1230,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 }
               },
               {
@@ -1270,8 +1278,10 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Mooncloth Tailoring (BoP — tailors only)"
-                }
+                  "detail": "Mooncloth Tailoring (BoP — tailors only)",
+                  "profession": "Tailoring"
+                },
+                "bop": true
               },
               {
                 "id": 27775,
@@ -1316,8 +1326,10 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Mooncloth Tailoring (BoP — tailors only)"
-                }
+                  "detail": "Mooncloth Tailoring (BoP — tailors only)",
+                  "profession": "Tailoring"
+                },
+                "bop": true
               },
               {
                 "id": 29522,
@@ -1326,8 +1338,10 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tribal Leatherworking (BoP)"
-                }
+                  "detail": "Tribal Leatherworking (BoP)",
+                  "profession": "Leatherworking"
+                },
+                "bop": true
               }
             ],
             "wrist": [
@@ -1348,8 +1362,10 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tribal Leatherworking (BoP)"
-                }
+                  "detail": "Tribal Leatherworking (BoP)",
+                  "profession": "Leatherworking"
+                },
+                "bop": true
               }
             ],
             "hands": [
@@ -1360,7 +1376,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 }
               }
             ],
@@ -1372,8 +1389,10 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Mooncloth Tailoring (BoP — tailors only)"
-                }
+                  "detail": "Mooncloth Tailoring (BoP — tailors only)",
+                  "profession": "Tailoring"
+                },
+                "bop": true
               },
               {
                 "id": 29524,
@@ -1382,8 +1401,10 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tribal Leatherworking (BoP)"
-                }
+                  "detail": "Tribal Leatherworking (BoP)",
+                  "profession": "Leatherworking"
+                },
+                "bop": true
               }
             ],
             "legs": [
@@ -1394,7 +1415,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 }
               },
               {
@@ -1582,7 +1604,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 }
               },
               {
@@ -1642,8 +1665,10 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Mooncloth Tailoring (BoP — tailors only)"
-                }
+                  "detail": "Mooncloth Tailoring (BoP — tailors only)",
+                  "profession": "Tailoring"
+                },
+                "bop": true
               },
               {
                 "id": 29089,
@@ -1689,8 +1714,10 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Mooncloth Tailoring (BoP — tailors only)"
-                }
+                  "detail": "Mooncloth Tailoring (BoP — tailors only)",
+                  "profession": "Tailoring"
+                },
+                "bop": true
               },
               {
                 "id": 29087,
@@ -1723,8 +1750,10 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tribal Leatherworking (BoP)"
-                }
+                  "detail": "Tribal Leatherworking (BoP)",
+                  "profession": "Leatherworking"
+                },
+                "bop": true
               }
             ],
             "hands": [
@@ -1759,8 +1788,10 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Mooncloth Tailoring (BoP — tailors only)"
-                }
+                  "detail": "Mooncloth Tailoring (BoP — tailors only)",
+                  "profession": "Tailoring"
+                },
+                "bop": true
               },
               {
                 "id": 28655,
@@ -1782,7 +1813,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 }
               },
               {
@@ -2003,8 +2035,10 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting (BoP)"
-                }
+                  "detail": "Jewelcrafting (BoP)",
+                  "profession": "Jewelcrafting"
+                },
+                "bop": true
               },
               {
                 "id": 33281,
@@ -2074,8 +2108,10 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking (pattern from Sunwell Plateau)"
-                }
+                  "detail": "Leatherworking (pattern from Sunwell Plateau)",
+                  "profession": "Leatherworking"
+                },
+                "bop": true
               }
             ],
             "wrist": [
@@ -2111,7 +2147,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking (pattern from Sunwell Plateau)"
+                  "detail": "Leatherworking (pattern from Sunwell Plateau)",
+                  "profession": "Leatherworking"
                 }
               }
             ],
@@ -2175,7 +2212,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting (BoP)"
+                  "detail": "Jewelcrafting (BoP)",
+                  "profession": "Jewelcrafting"
                 }
               },
               {
@@ -2304,7 +2342,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE) — Spellstrike 2-piece with pants"
+                  "detail": "Tailoring (BoE) — Spellstrike 2-piece with pants",
+                  "profession": "Tailoring"
                 }
               },
               {
@@ -2400,8 +2439,10 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Spellfire Tailoring (BoP — tailors only)"
-                }
+                  "detail": "Spellfire Tailoring (BoP — tailors only)",
+                  "profession": "Tailoring"
+                },
+                "bop": true
               },
               {
                 "id": 29522,
@@ -2410,8 +2451,10 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tribal Leatherworking (BoP)"
-                }
+                  "detail": "Tribal Leatherworking (BoP)",
+                  "profession": "Leatherworking"
+                },
+                "bop": true
               }
             ],
             "wrist": [
@@ -2422,8 +2465,10 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tribal Leatherworking (BoP)"
-                }
+                  "detail": "Tribal Leatherworking (BoP)",
+                  "profession": "Leatherworking"
+                },
+                "bop": true
               },
               {
                 "id": 24250,
@@ -2432,7 +2477,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 }
               }
             ],
@@ -2444,8 +2490,10 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Spellfire Tailoring (BoP — tailors only)"
-                }
+                  "detail": "Spellfire Tailoring (BoP — tailors only)",
+                  "profession": "Tailoring"
+                },
+                "bop": true
               },
               {
                 "id": 27493,
@@ -2468,8 +2516,10 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Spellfire Tailoring (BoP — tailors only)"
-                }
+                  "detail": "Spellfire Tailoring (BoP — tailors only)",
+                  "profession": "Tailoring"
+                },
+                "bop": true
               },
               {
                 "id": 24256,
@@ -2478,7 +2528,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 }
               }
             ],
@@ -2490,7 +2541,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE) — Spellstrike 2-piece with hood"
+                  "detail": "Tailoring (BoE) — Spellstrike 2-piece with hood",
+                  "profession": "Tailoring"
                 }
               },
               {
@@ -2621,7 +2673,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing (BoE)"
+                  "detail": "Blacksmithing (BoE)",
+                  "profession": "Blacksmithing"
                 }
               },
               {
@@ -2800,8 +2853,10 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Spellfire Tailoring (BoP — tailors only)"
-                }
+                  "detail": "Spellfire Tailoring (BoP — tailors only)",
+                  "profession": "Tailoring"
+                },
+                "bop": true
               },
               {
                 "id": 29091,
@@ -2824,8 +2879,10 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tribal Leatherworking (BoP)"
-                }
+                  "detail": "Tribal Leatherworking (BoP)",
+                  "profession": "Leatherworking"
+                },
+                "bop": true
               },
               {
                 "id": 28515,
@@ -2873,8 +2930,10 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Spellfire Tailoring (BoP — tailors only)"
-                }
+                  "detail": "Spellfire Tailoring (BoP — tailors only)",
+                  "profession": "Tailoring"
+                },
+                "bop": true
               },
               {
                 "id": 28799,
@@ -2896,7 +2955,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE) — Spellstrike 2-piece with hood"
+                  "detail": "Tailoring (BoE) — Spellstrike 2-piece with hood",
+                  "profession": "Tailoring"
                 }
               },
               {
@@ -3120,8 +3180,10 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting (Sunwell recipe)"
-                }
+                  "detail": "Jewelcrafting (Sunwell recipe)",
+                  "profession": "Jewelcrafting"
+                },
+                "bop": true
               },
               {
                 "id": 34204,
@@ -3193,8 +3255,10 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (Sunwell recipe)"
-                }
+                  "detail": "Tailoring (Sunwell recipe)",
+                  "profession": "Tailoring"
+                },
+                "bop": true
               },
               {
                 "id": 34232,
@@ -3228,7 +3292,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 }
               }
             ],
@@ -3251,7 +3316,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 }
               }
             ],
@@ -3275,7 +3341,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 },
                 "note": "Hit belt"
               }
@@ -3337,7 +3404,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting (BoE)"
+                  "detail": "Jewelcrafting (BoE)",
+                  "profession": "Jewelcrafting"
                 }
               },
               {
@@ -3510,7 +3578,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking (Classic pattern, BoE)"
+                  "detail": "Leatherworking (Classic pattern, BoE)",
+                  "profession": "Leatherworking"
                 },
                 "note": "Never replaced until Sunwell"
               }
@@ -3523,7 +3592,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting 360"
+                  "detail": "Jewelcrafting 360",
+                  "profession": "Jewelcrafting"
                 }
               },
               {
@@ -3605,8 +3675,10 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Elemental Leatherworking (BoP)"
-                }
+                  "detail": "Elemental Leatherworking (BoP)",
+                  "profession": "Leatherworking"
+                },
+                "bop": true
               }
             ],
             "wrist": [
@@ -3653,7 +3725,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking (BoE)"
+                  "detail": "Leatherworking (BoE)",
+                  "profession": "Leatherworking"
                 }
               }
             ],
@@ -3715,7 +3788,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking (BoE)"
+                  "detail": "Leatherworking (BoE)",
+                  "profession": "Leatherworking"
                 }
               },
               {
@@ -3875,7 +3949,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking (Classic pattern, BoE)"
+                  "detail": "Leatherworking (Classic pattern, BoE)",
+                  "profession": "Leatherworking"
                 },
                 "note": "Powershifting"
               }
@@ -3888,7 +3963,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting 360"
+                  "detail": "Jewelcrafting 360",
+                  "profession": "Jewelcrafting"
                 }
               },
               {
@@ -3948,7 +4024,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 },
                 "note": "Hit set"
               }
@@ -4215,7 +4292,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking (Classic pattern, BoE)"
+                  "detail": "Leatherworking (Classic pattern, BoE)",
+                  "profession": "Leatherworking"
                 },
                 "note": "Still fine while gearing"
               }
@@ -4239,8 +4317,10 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting (BoP)"
-                }
+                  "detail": "Jewelcrafting (BoP)",
+                  "profession": "Jewelcrafting"
+                },
+                "bop": true
               }
             ],
             "shoulder": [
@@ -4314,7 +4394,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking (pattern from Sunwell Plateau)"
+                  "detail": "Leatherworking (pattern from Sunwell Plateau)",
+                  "profession": "Leatherworking"
                 }
               }
             ],

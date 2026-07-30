@@ -176,3 +176,47 @@ Icy Veins Classic). Verify item/quest IDs you are not certain of via WebSearch o
 WebFetch against `https://www.wowhead.com/tbc/item=<id>` (the page title shows the
 item name). Every `rank: 1` item's ID must be verified. Prefer omitting an
 alternate over inventing an ID.
+
+
+## Generated leveling brackets (added 2026-07-30)
+
+Leveling brackets are no longer hand-authored. `tools/gen-leveling.mjs` writes
+`app/data/tbc/<class>-leveling.data.js` from the pool of verified items, and the
+endgame brackets (`preraid`, `p1`–`p5`) remain curated by hand.
+
+- **Bands are 5 levels wide** from 20 up: `lvl20` (10–20), `lvl25` (21–25),
+  `lvl30`, `lvl35`, `lvl40`, `lvl45`, `lvl50`, `lvl55`, `lvl60` (56–60),
+  `lvl65` (61–65), `lvl69` (66–69).
+- **Each slot lists a ranked top 3** (four for rings and trinkets, which are worn
+  in pairs). The app labels them Best / Better / Good and lets the player choose
+  which one they're chasing; progress and the shopping list follow that choice.
+- Picks must satisfy `legalFor()` and `suitsProfile()` in `tools/items.mjs`:
+  class armor proficiency (mail at 40 for hunters/shamans, plate at 40 for
+  warriors/paladins), weapon proficiency, level and item-level bands, and the
+  spec's stat profile.
+- **No item id appears twice in one bracket** — one item can only be worn once,
+  and most of these are quest rewards or unique-equipped.
+
+### Extra item fields
+
+| field | meaning |
+| --- | --- |
+| `bop` | `true` when the item binds on pickup |
+| `source.profession` | for `type: "crafted"`, the profession that makes it |
+
+A crafted item that is `bop` and names a profession is hidden from characters
+who don't have that profession. BoE crafts stay listed — anyone can buy those.
+Both fields are written by `tools/annotate-professions.mjs`.
+
+## Verification tooling
+
+| command | purpose |
+| --- | --- |
+| `node tools/validate-data.mjs` | schema check |
+| `node tools/audit-items.mjs` | every placement vs. Wowhead tooltips (cached) |
+| `node tools/fix-items.mjs <audit.json>` | apply the audit's findings |
+| `node tools/gen-leveling.mjs` | regenerate the leveling bands |
+| `node tools/annotate-professions.mjs` | tag crafted items with profession/bind |
+| `node tools/addon-smoke-test.mjs` | run the addon's Lua against a mocked WoW API |
+
+The audit must report **0 findings** before data changes are committed.

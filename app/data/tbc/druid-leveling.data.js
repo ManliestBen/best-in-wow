@@ -11,12 +11,25 @@ WOWDATA.register({
       "role": "tank",
       "brackets": [
         {
-          "id": "lvl19",
+          "id": "lvl20",
           "levelRange": [
             10,
-            19
+            20
           ],
           "slots": {
+            "neck": [
+              {
+                "id": 21933,
+                "name": "Thick Bronze Necklace",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (skill 50), requires level 17",
+                  "profession": "Jewelcrafting"
+                }
+              }
+            ],
             "shoulder": [
               {
                 "id": 5404,
@@ -28,17 +41,28 @@ WOWDATA.register({
                   "instance": "Wailing Caverns",
                   "boss": "Lady Anacondra"
                 }
-              }
-            ],
-            "back": [
+              },
               {
-                "id": 6466,
-                "name": "Deviate Scale Cloak",
+                "id": 10657,
+                "name": "Talbar Mantle",
                 "quality": "uncommon",
-                "rank": 1,
+                "rank": 2,
+                "faction": "horde",
                 "source": {
-                  "type": "crafted",
-                  "detail": "Leatherworking; pattern sold by Kalldan Felmoon near Wailing Caverns, requires Deviate Scale farmed in the instance"
+                  "type": "quest",
+                  "quest": "The Glowing Shard chain",
+                  "instance": "Wailing Caverns"
+                }
+              },
+              {
+                "id": 5254,
+                "name": "Rugged Spaulders",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Rethilgore"
                 }
               }
             ],
@@ -53,6 +77,42 @@ WOWDATA.register({
                   "instance": "The Deadmines",
                   "detail": "Defias trash; part of the Blackened Defias set"
                 }
+              },
+              {
+                "id": 6473,
+                "name": "Armor of the Fang",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns",
+                  "boss": "Lord Pythas"
+                }
+              },
+              {
+                "id": 2041,
+                "name": "Tunic of Westfall",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Defias Brotherhood",
+                  "zone": "Westfall",
+                  "detail": "Final reward, quest giver Gryan Stoutmantle"
+                }
+              }
+            ],
+            "wrist": [
+              {
+                "id": 4794,
+                "name": "Wolf Bracers",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE"
               }
             ],
             "hands": [
@@ -63,7 +123,28 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking; pattern sold by Kalldan Felmoon, requires Deviate Scale farmed in Wailing Caverns"
+                  "detail": "Leatherworking; pattern sold by Kalldan Felmoon, requires Deviate Scale farmed in Wailing Caverns",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 10413,
+                "name": "Gloves of the Fang",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns"
+                }
+              },
+              {
+                "id": 10401,
+                "name": "Blackened Defias Gloves",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines"
                 }
               }
             ],
@@ -75,46 +156,146 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking; requires Deviate Scale farmed in Wailing Caverns"
+                  "detail": "Leatherworking; requires Deviate Scale farmed in Wailing Caverns",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 10412,
+                "name": "Belt of the Fang",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns"
+                }
+              },
+              {
+                "id": 6319,
+                "name": "Girdle of the Blindwatcher",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Odo the Blindwatcher"
                 }
               }
             ],
             "legs": [
               {
-                "id": 10400,
-                "name": "Blackened Defias Leggings",
-                "quality": "uncommon",
+                "id": 10410,
+                "name": "Leggings of the Fang",
+                "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
-                  "instance": "The Deadmines",
-                  "detail": "Defias trash; part of the Blackened Defias set"
+                  "instance": "Wailing Caverns"
                 }
+              },
+              {
+                "id": 5199,
+                "name": "Smelting Pants",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "detail": "trash"
+                },
+                "note": "Leather; Stamina/Spirit — no cloth legs exist this low"
+              },
+              {
+                "id": 12987,
+                "name": "Darkweave Breeches",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE"
               }
             ],
             "feet": [
               {
-                "id": 10402,
-                "name": "Blackened Defias Boots",
-                "quality": "uncommon",
+                "id": 10411,
+                "name": "Footpads of the Fang",
+                "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
-                  "instance": "The Deadmines",
-                  "detail": "Defias trash; part of the Blackened Defias set"
+                  "instance": "Wailing Caverns"
                 }
+              },
+              {
+                "id": 1121,
+                "name": "Feet of the Lynx",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Duskwood",
+                  "detail": "Rare drop from Flesh Eater"
+                }
+              },
+              {
+                "id": 14374,
+                "name": "Sanguine Sandals",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE"
               }
             ],
             "finger": [
               {
+                "id": 1076,
+                "name": "Defias Renegade Ring",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Stockade",
+                  "detail": "trash"
+                }
+              },
+              {
+                "id": 5351,
+                "name": "Bounty Hunter's Ring",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "zone": "The Barrens",
+                  "boss": "Hezrul Bloodmark",
+                  "detail": "rare spawn"
+                }
+              },
+              {
                 "id": 12996,
                 "name": "Band of Purification",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 3,
                 "source": {
                   "type": "world-drop"
                 },
                 "note": "BoE, may need AH"
+              }
+            ],
+            "trinket": [
+              {
+                "id": 4381,
+                "name": "Minor Recombobulator",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
+                },
+                "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
               }
             ],
             "mainhand": [
@@ -129,28 +310,73 @@ WOWDATA.register({
                   "instance": "Wailing Caverns"
                 },
                 "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+              },
+              {
+                "id": 7230,
+                "name": "Smite's Mighty Hammer",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Mr. Smite"
+                }
+              },
+              {
+                "id": 6323,
+                "name": "Baron's Scepter",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Baron Silverlaine"
+                }
               }
             ]
           }
         },
         {
-          "id": "lvl29",
+          "id": "lvl25",
           "levelRange": [
-            20,
-            29
+            21,
+            25
           ],
           "slots": {
-            "neck": [
+            "head": [
               {
-                "id": 6695,
-                "name": "Stygian Bone Amulet",
-                "quality": "rare",
+                "id": 4385,
+                "name": "Green Tinted Goggles",
+                "quality": "uncommon",
                 "rank": 1,
                 "source": {
-                  "type": "drop",
-                  "instance": "Razorfen Kraul",
-                  "boss": "Groyat the Blind Hunter",
-                  "detail": "rare spawn"
+                  "type": "crafted",
+                  "detail": "Engineering (skill 150) — cheap cloth BoP head piece, no character level requirement; classic twink filler",
+                  "profession": "Engineering"
+                }
+              },
+              {
+                "id": 7048,
+                "name": "Azure Silk Hood",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE), requires level 24 — cheap",
+                  "profession": "Tailoring"
+                }
+              }
+            ],
+            "neck": [
+              {
+                "id": 21933,
+                "name": "Thick Bronze Necklace",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (skill 50), requires level 17",
+                  "profession": "Jewelcrafting"
                 }
               }
             ],
@@ -164,21 +390,30 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Wailing Caverns",
                   "boss": "Lady Anacondra"
-                },
-                "note": "Holds over from the lvl19 bracket if not already picked up"
-              }
-            ],
-            "back": [
+                }
+              },
               {
-                "id": 6466,
-                "name": "Deviate Scale Cloak",
+                "id": 10657,
+                "name": "Talbar Mantle",
                 "quality": "uncommon",
-                "rank": 1,
+                "rank": 2,
+                "faction": "horde",
                 "source": {
-                  "type": "crafted",
-                  "detail": "Leatherworking; pattern sold by Kalldan Felmoon near Wailing Caverns, requires Deviate Scale farmed in the instance"
-                },
-                "note": "Still fine into the low 20s"
+                  "type": "quest",
+                  "quest": "The Glowing Shard chain",
+                  "instance": "Wailing Caverns"
+                }
+              },
+              {
+                "id": 5254,
+                "name": "Rugged Spaulders",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Rethilgore"
+                }
               }
             ],
             "chest": [
@@ -191,19 +426,77 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "The Deadmines",
                   "detail": "Defias trash; part of the Blackened Defias set"
+                }
+              },
+              {
+                "id": 6473,
+                "name": "Armor of the Fang",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns",
+                  "boss": "Lord Pythas"
+                }
+              },
+              {
+                "id": 2041,
+                "name": "Tunic of Westfall",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Defias Brotherhood",
+                  "zone": "Westfall",
+                  "detail": "Final reward, quest giver Gryan Stoutmantle"
+                }
+              }
+            ],
+            "wrist": [
+              {
+                "id": 4794,
+                "name": "Wolf Bracers",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
                 },
-                "note": "Carries over; no better leather chest found yet"
+                "note": "BoE"
               }
             ],
             "hands": [
               {
+                "id": 1978,
+                "name": "Wolfclaw Gloves",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Overlord Ramtusk"
+                }
+              },
+              {
+                "id": 888,
+                "name": "Naga Battle Gloves",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackfathom Deeps",
+                  "boss": "Lady Sarevess"
+                }
+              },
+              {
                 "id": 6467,
                 "name": "Deviate Scale Gloves",
                 "quality": "uncommon",
-                "rank": 1,
+                "rank": 3,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking; pattern sold by Kalldan Felmoon, requires Deviate Scale farmed in Wailing Caverns"
+                  "detail": "Leatherworking; pattern sold by Kalldan Felmoon, requires Deviate Scale farmed in Wailing Caverns",
+                  "profession": "Leatherworking"
                 }
               }
             ],
@@ -215,59 +508,109 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking; requires Deviate Scale farmed in Wailing Caverns"
+                  "detail": "Leatherworking; requires Deviate Scale farmed in Wailing Caverns",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 10412,
+                "name": "Belt of the Fang",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns"
+                }
+              },
+              {
+                "id": 6319,
+                "name": "Girdle of the Blindwatcher",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Odo the Blindwatcher"
                 }
               }
             ],
             "legs": [
               {
-                "id": 10400,
-                "name": "Blackened Defias Leggings",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Deadmines",
-                  "detail": "Defias trash; part of the Blackened Defias set"
-                },
-                "note": "Carries over from the lvl19 bracket"
-              }
-            ],
-            "wrist": [
-              {
-                "id": 18948,
-                "name": "Barbaric Bracers",
+                "id": 10410,
+                "name": "Leggings of the Fang",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
-                  "type": "crafted",
-                  "detail": "Leatherworking 155 (BoE, often on AH)"
+                  "type": "drop",
+                  "instance": "Wailing Caverns"
                 }
+              },
+              {
+                "id": 5199,
+                "name": "Smelting Pants",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "detail": "trash"
+                },
+                "note": "Leather; Stamina/Spirit — no cloth legs exist this low"
+              },
+              {
+                "id": 12987,
+                "name": "Darkweave Breeches",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE"
               }
             ],
             "feet": [
               {
+                "id": 10411,
+                "name": "Footpads of the Fang",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns"
+                }
+              },
+              {
                 "id": 1121,
                 "name": "Feet of the Lynx",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 2,
                 "source": {
                   "type": "world-drop",
                   "zone": "Duskwood",
                   "detail": "Rare drop from Flesh Eater"
                 }
+              },
+              {
+                "id": 14374,
+                "name": "Sanguine Sandals",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE"
               }
             ],
             "finger": [
               {
-                "id": 1076,
-                "name": "Defias Renegade Ring",
-                "quality": "uncommon",
+                "id": 6414,
+                "name": "Seal of Sylvanas",
+                "quality": "epic",
                 "rank": 1,
+                "faction": "horde",
                 "source": {
-                  "type": "drop",
-                  "instance": "The Stockade",
-                  "detail": "trash"
+                  "type": "quest",
+                  "zone": "Tirisfal Glades / Undercity"
                 }
               },
               {
@@ -280,53 +623,123 @@ WOWDATA.register({
                   "instance": "Razorfen Kraul",
                   "detail": "trash"
                 }
+              },
+              {
+                "id": 2933,
+                "name": "Seal of Wrynn",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Unsent Letter",
+                  "zone": "Stormwind City"
+                }
+              },
+              {
+                "id": 1076,
+                "name": "Defias Renegade Ring",
+                "quality": "uncommon",
+                "rank": 4,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Stockade",
+                  "detail": "trash"
+                }
+              }
+            ],
+            "trinket": [
+              {
+                "id": 4381,
+                "name": "Minor Recombobulator",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
+                },
+                "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
               }
             ],
             "mainhand": [
               {
-                "id": 9449,
-                "name": "Manual Crowd Pummeler",
+                "id": 1976,
+                "name": "Slaghammer",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
-                  "instance": "Gnomeregan",
-                  "boss": "Crowd Pummeler 9-60"
-                },
-                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+                  "instance": "Razorfen Kraul"
+                }
               },
               {
-                "id": 6904,
-                "name": "Bite of Serra'kis",
+                "id": 6505,
+                "name": "Crescent Staff",
                 "quality": "rare",
                 "rank": 2,
                 "source": {
-                  "type": "drop",
-                  "instance": "Blackfathom Deeps",
-                  "boss": "Old Serra'kis"
+                  "type": "quest",
+                  "quest": "Leaders of the Fang",
+                  "instance": "Wailing Caverns"
                 },
-                "note": "Fast dagger with a nature poison proc — a cat-friendly alternative to the slower Crowd Pummeler"
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+              },
+              {
+                "id": 7230,
+                "name": "Smite's Mighty Hammer",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Mr. Smite"
+                }
               }
             ]
           }
         },
         {
-          "id": "lvl39",
+          "id": "lvl30",
           "levelRange": [
-            30,
-            39
+            26,
+            30
           ],
           "slots": {
             "head": [
               {
-                "id": 9420,
-                "name": "Adventurer's Pith Helmet",
-                "quality": "rare",
+                "id": 4385,
+                "name": "Green Tinted Goggles",
+                "quality": "uncommon",
                 "rank": 1,
                 "source": {
+                  "type": "crafted",
+                  "detail": "Engineering (skill 150) — cheap cloth BoP head piece, no character level requirement; classic twink filler",
+                  "profession": "Engineering"
+                }
+              },
+              {
+                "id": 7691,
+                "name": "Embalmed Shroud",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
                   "type": "drop",
-                  "instance": "Uldaman",
-                  "detail": "trash"
+                  "instance": "Scarlet Monastery",
+                  "boss": "Fallen Champion",
+                  "detail": "Graveyard wing"
+                }
+              },
+              {
+                "id": 6688,
+                "name": "Whisperwind Headdress",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Earthcaller Halmgar",
+                  "detail": "rare spawn"
                 }
               }
             ],
@@ -343,69 +756,125 @@ WOWDATA.register({
                   "detail": "Graveyard wing"
                 },
                 "note": "Stamina-focused; the spell-damage proc is wasted but it's the best neck available this early"
+              },
+              {
+                "id": 6695,
+                "name": "Stygian Bone Amulet",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Groyat the Blind Hunter",
+                  "detail": "rare spawn"
+                }
+              },
+              {
+                "id": 21933,
+                "name": "Thick Bronze Necklace",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (skill 50), requires level 17",
+                  "profession": "Jewelcrafting"
+                }
               }
             ],
             "shoulder": [
               {
-                "id": 10774,
-                "name": "Fleshhide Shoulders",
-                "quality": "rare",
+                "id": 5964,
+                "name": "Barbaric Shoulders",
+                "quality": "uncommon",
                 "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Barbaric leather set)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 5404,
+                "name": "Serpent's Shoulders",
+                "quality": "rare",
+                "rank": 2,
                 "source": {
                   "type": "drop",
-                  "instance": "Razorfen Downs",
-                  "boss": "Glutton"
+                  "instance": "Wailing Caverns",
+                  "boss": "Lady Anacondra"
                 }
-              }
-            ],
-            "back": [
+              },
               {
-                "id": 5257,
-                "name": "Dark Hooded Cape",
-                "quality": "rare",
-                "rank": 1,
+                "id": 10657,
+                "name": "Talbar Mantle",
+                "quality": "uncommon",
+                "rank": 3,
+                "faction": "horde",
                 "source": {
-                  "type": "world-drop",
-                  "zone": "Arathi Highlands",
-                  "detail": "Dropped by the rare spawn Nimar the Slayer"
+                  "type": "quest",
+                  "quest": "The Glowing Shard chain",
+                  "instance": "Wailing Caverns"
                 }
               }
             ],
             "chest": [
               {
-                "id": 10583,
-                "name": "Quillward Harness",
+                "id": 10399,
+                "name": "Blackened Defias Armor",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
-                  "instance": "Razorfen Downs",
-                  "boss": "Death's Head Necromancer"
+                  "instance": "The Deadmines",
+                  "detail": "Defias trash; part of the Blackened Defias set"
                 }
               },
               {
-                "id": 14601,
-                "name": "Warden's Wraps",
-                "quality": "uncommon",
+                "id": 6473,
+                "name": "Armor of the Fang",
+                "quality": "rare",
                 "rank": 2,
                 "source": {
-                  "type": "world-drop",
-                  "zone": "Desolace"
+                  "type": "drop",
+                  "instance": "Wailing Caverns",
+                  "boss": "Lord Pythas"
+                }
+              },
+              {
+                "id": 2041,
+                "name": "Tunic of Westfall",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Defias Brotherhood",
+                  "zone": "Westfall",
+                  "detail": "Final reward, quest giver Gryan Stoutmantle"
                 }
               }
             ],
             "wrist": [
               {
-                "id": 19508,
-                "name": "Branded Leather Bracers",
-                "quality": "uncommon",
+                "id": 18948,
+                "name": "Barbaric Bracers",
+                "quality": "rare",
                 "rank": 1,
                 "source": {
-                  "type": "drop",
-                  "instance": "Scarlet Monastery",
-                  "boss": "High Inquisitor Fairbanks",
-                  "detail": "Cathedral wing"
+                  "type": "crafted",
+                  "detail": "Leatherworking 155 (BoE, often on AH)",
+                  "profession": "Leatherworking"
                 }
+              },
+              {
+                "id": 4794,
+                "name": "Wolf Bracers",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE"
               }
             ],
             "hands": [
@@ -420,48 +889,172 @@ WOWDATA.register({
                   "detail": "trash"
                 },
                 "note": "Small agility/stamina leather glove upgrade"
+              },
+              {
+                "id": 1978,
+                "name": "Wolfclaw Gloves",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Overlord Ramtusk"
+                }
+              },
+              {
+                "id": 888,
+                "name": "Naga Battle Gloves",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackfathom Deeps",
+                  "boss": "Lady Sarevess"
+                }
               }
             ],
             "waist": [
               {
-                "id": 7387,
-                "name": "Dusky Belt",
-                "quality": "uncommon",
+                "id": 6468,
+                "name": "Deviate Scale Belt",
+                "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking (Dusky Leather set)"
+                  "detail": "Leatherworking; requires Deviate Scale farmed in Wailing Caverns",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 10412,
+                "name": "Belt of the Fang",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns"
+                }
+              },
+              {
+                "id": 6319,
+                "name": "Girdle of the Blindwatcher",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Odo the Blindwatcher"
                 }
               }
             ],
             "legs": [
               {
-                "id": 1718,
-                "name": "Basilisk Hide Pants",
+                "id": 10410,
+                "name": "Leggings of the Fang",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
-                  "type": "world-drop"
+                  "type": "drop",
+                  "instance": "Wailing Caverns"
+                }
+              },
+              {
+                "id": 5199,
+                "name": "Smelting Pants",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "detail": "trash"
+                },
+                "note": "Leather; Stamina/Spirit — no cloth legs exist this low"
+              },
+              {
+                "id": 7709,
+                "name": "Blighted Leggings",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Azshir the Sleepless",
+                  "detail": "Graveyard wing"
                 }
               }
             ],
             "feet": [
               {
-                "id": 2276,
-                "name": "Swampwalker Boots",
+                "id": 10411,
+                "name": "Footpads of the Fang",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns"
+                }
+              },
+              {
+                "id": 6406,
+                "name": "Nightsky Boots",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
                   "type": "world-drop"
+                }
+              },
+              {
+                "id": 1121,
+                "name": "Feet of the Lynx",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Duskwood",
+                  "detail": "Rare drop from Flesh Eater"
                 }
               }
             ],
             "finger": [
               {
+                "id": 6414,
+                "name": "Seal of Sylvanas",
+                "quality": "epic",
+                "rank": 1,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "zone": "Tirisfal Glades / Undercity"
+                }
+              },
+              {
+                "id": 2039,
+                "name": "Plains Ring",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "detail": "trash"
+                }
+              },
+              {
+                "id": 2933,
+                "name": "Seal of Wrynn",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Unsent Letter",
+                  "zone": "Stormwind City"
+                }
+              },
+              {
                 "id": 7686,
                 "name": "Ironspine's Eye",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 4,
                 "source": {
                   "type": "drop",
                   "instance": "Scarlet Monastery",
@@ -469,30 +1062,20 @@ WOWDATA.register({
                   "detail": "Graveyard wing, rare spawn"
                 },
                 "note": "Unique-Equipped"
-              },
-              {
-                "id": 2262,
-                "name": "Mark of Kern",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scarlet Monastery"
-                },
-                "note": "Unique-Equipped"
               }
             ],
             "trinket": [
               {
-                "id": 9149,
-                "name": "Philosopher's Stone",
+                "id": 4381,
+                "name": "Minor Recombobulator",
                 "quality": "uncommon",
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Alchemy (skill 200), BoP"
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
                 },
-                "note": "Usable from level 35 — the only trinket available this early"
+                "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
               }
             ],
             "mainhand": [
@@ -506,28 +1089,448 @@ WOWDATA.register({
                   "instance": "Gnomeregan",
                   "boss": "Crowd Pummeler 9-60"
                 },
-                "note": "Still one of the best feral weapons available; the haste proc holds up mechanically well into the 50s."
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
               },
               {
-                "id": 10761,
-                "name": "Coldrage Dagger",
+                "id": 1976,
+                "name": "Slaghammer",
                 "quality": "rare",
                 "rank": 2,
                 "source": {
                   "type": "drop",
-                  "instance": "Razorfen Downs",
-                  "boss": "Amnennar the Coldbringer"
+                  "instance": "Razorfen Kraul"
+                }
+              },
+              {
+                "id": 6505,
+                "name": "Crescent Staff",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Leaders of the Fang",
+                  "instance": "Wailing Caverns"
                 },
-                "note": "Frost slow proc; fast alternative for cat form"
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
               }
             ]
           }
         },
         {
-          "id": "lvl49",
+          "id": "lvl35",
           "levelRange": [
-            40,
-            49
+            31,
+            35
+          ],
+          "slots": {
+            "head": [
+              {
+                "id": 9420,
+                "name": "Adventurer's Pith Helmet",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Uldaman",
+                  "detail": "trash"
+                }
+              },
+              {
+                "id": 9375,
+                "name": "Expert Goldminer's Helmet",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Uldaman",
+                  "boss": "Digmaster Shovelphlange"
+                }
+              },
+              {
+                "id": 4385,
+                "name": "Green Tinted Goggles",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering (skill 150) — cheap cloth BoP head piece, no character level requirement; classic twink filler",
+                  "profession": "Engineering"
+                }
+              }
+            ],
+            "neck": [
+              {
+                "id": 7731,
+                "name": "Ghostshard Talisman",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Azshir the Sleepless",
+                  "detail": "Graveyard wing"
+                },
+                "note": "Stamina-focused; the spell-damage proc is wasted but it's the best neck available this early"
+              },
+              {
+                "id": 6695,
+                "name": "Stygian Bone Amulet",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Groyat the Blind Hunter",
+                  "detail": "rare spawn"
+                }
+              },
+              {
+                "id": 21933,
+                "name": "Thick Bronze Necklace",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (skill 50), requires level 17",
+                  "profession": "Jewelcrafting"
+                }
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 5964,
+                "name": "Barbaric Shoulders",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Barbaric leather set)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 5404,
+                "name": "Serpent's Shoulders",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns",
+                  "boss": "Lady Anacondra"
+                }
+              },
+              {
+                "id": 10657,
+                "name": "Talbar Mantle",
+                "quality": "uncommon",
+                "rank": 3,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Glowing Shard chain",
+                  "instance": "Wailing Caverns"
+                }
+              }
+            ],
+            "chest": [
+              {
+                "id": 10399,
+                "name": "Blackened Defias Armor",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "detail": "Defias trash; part of the Blackened Defias set"
+                }
+              },
+              {
+                "id": 6473,
+                "name": "Armor of the Fang",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns",
+                  "boss": "Lord Pythas"
+                }
+              },
+              {
+                "id": 10583,
+                "name": "Quillward Harness",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Downs",
+                  "boss": "Death's Head Necromancer"
+                }
+              }
+            ],
+            "wrist": [
+              {
+                "id": 18948,
+                "name": "Barbaric Bracers",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking 155 (BoE, often on AH)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 4794,
+                "name": "Wolf Bracers",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE"
+              }
+            ],
+            "hands": [
+              {
+                "id": 7690,
+                "name": "Ebon Vise",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "detail": "trash"
+                },
+                "note": "Small agility/stamina leather glove upgrade"
+              },
+              {
+                "id": 1978,
+                "name": "Wolfclaw Gloves",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Overlord Ramtusk"
+                }
+              },
+              {
+                "id": 888,
+                "name": "Naga Battle Gloves",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackfathom Deeps",
+                  "boss": "Lady Sarevess"
+                }
+              }
+            ],
+            "waist": [
+              {
+                "id": 7387,
+                "name": "Dusky Belt",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Dusky Leather set)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 6468,
+                "name": "Deviate Scale Belt",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking; requires Deviate Scale farmed in Wailing Caverns",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 10412,
+                "name": "Belt of the Fang",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns"
+                }
+              }
+            ],
+            "legs": [
+              {
+                "id": 10410,
+                "name": "Leggings of the Fang",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns"
+                }
+              },
+              {
+                "id": 9407,
+                "name": "Stoneweaver Leggings",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Uldaman",
+                  "boss": "Ironaya"
+                }
+              },
+              {
+                "id": 5199,
+                "name": "Smelting Pants",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "detail": "trash"
+                },
+                "note": "Leather; Stamina/Spirit — no cloth legs exist this low"
+              }
+            ],
+            "feet": [
+              {
+                "id": 2276,
+                "name": "Swampwalker Boots",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                }
+              },
+              {
+                "id": 10411,
+                "name": "Footpads of the Fang",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns"
+                }
+              },
+              {
+                "id": 6406,
+                "name": "Nightsky Boots",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
+                }
+              }
+            ],
+            "finger": [
+              {
+                "id": 6414,
+                "name": "Seal of Sylvanas",
+                "quality": "epic",
+                "rank": 1,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "zone": "Tirisfal Glades / Undercity"
+                }
+              },
+              {
+                "id": 2039,
+                "name": "Plains Ring",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "detail": "trash"
+                }
+              },
+              {
+                "id": 2933,
+                "name": "Seal of Wrynn",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Unsent Letter",
+                  "zone": "Stormwind City"
+                }
+              },
+              {
+                "id": 7686,
+                "name": "Ironspine's Eye",
+                "quality": "rare",
+                "rank": 4,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Ironspine",
+                  "detail": "Graveyard wing, rare spawn"
+                },
+                "note": "Unique-Equipped"
+              }
+            ],
+            "trinket": [
+              {
+                "id": 4381,
+                "name": "Minor Recombobulator",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
+                },
+                "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
+              }
+            ],
+            "mainhand": [
+              {
+                "id": 9449,
+                "name": "Manual Crowd Pummeler",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Gnomeregan",
+                  "boss": "Crowd Pummeler 9-60"
+                },
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+              },
+              {
+                "id": 873,
+                "name": "Staff of Jordan",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "Often pricey on the AH"
+              },
+              {
+                "id": 7713,
+                "name": "Illusionary Rod",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Arcanist Doan",
+                  "detail": "Library wing"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "lvl40",
+          "levelRange": [
+            36,
+            40
           ],
           "slots": {
             "head": [
@@ -538,9 +1541,490 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking (Classic pattern, BoE)"
+                  "detail": "Leatherworking (Classic pattern, BoE)",
+                  "profession": "Leatherworking"
                 },
                 "note": "Grants bonus energy/rage on shifting into Cat/Bear form; one of very few Druid-only items and stays relevant for a very long time."
+              },
+              {
+                "id": 9420,
+                "name": "Adventurer's Pith Helmet",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Uldaman",
+                  "detail": "trash"
+                }
+              },
+              {
+                "id": 7720,
+                "name": "Whitemane's Chapeau",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "High Inquisitor Whitemane",
+                  "detail": "Cathedral wing"
+                },
+                "note": "Cloth"
+              }
+            ],
+            "neck": [
+              {
+                "id": 7731,
+                "name": "Ghostshard Talisman",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Azshir the Sleepless",
+                  "detail": "Graveyard wing"
+                },
+                "note": "Stamina-focused; the spell-damage proc is wasted but it's the best neck available this early"
+              },
+              {
+                "id": 7722,
+                "name": "Triune Amulet",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "High Inquisitor Whitemane",
+                  "detail": "Cathedral wing"
+                }
+              },
+              {
+                "id": 6695,
+                "name": "Stygian Bone Amulet",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Groyat the Blind Hunter",
+                  "detail": "rare spawn"
+                }
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 10774,
+                "name": "Fleshhide Shoulders",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Downs",
+                  "boss": "Glutton"
+                }
+              },
+              {
+                "id": 5964,
+                "name": "Barbaric Shoulders",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Barbaric leather set)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 5404,
+                "name": "Serpent's Shoulders",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns",
+                  "boss": "Lady Anacondra"
+                }
+              }
+            ],
+            "chest": [
+              {
+                "id": 14601,
+                "name": "Warden's Wraps",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Desolace"
+                }
+              },
+              {
+                "id": 10399,
+                "name": "Blackened Defias Armor",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "detail": "Defias trash; part of the Blackened Defias set"
+                }
+              },
+              {
+                "id": 10762,
+                "name": "Robes of the Lich",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Downs",
+                  "boss": "Amnennar the Coldbringer"
+                }
+              }
+            ],
+            "wrist": [
+              {
+                "id": 18948,
+                "name": "Barbaric Bracers",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking 155 (BoE, often on AH)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 19508,
+                "name": "Branded Leather Bracers",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "High Inquisitor Fairbanks",
+                  "detail": "Cathedral wing"
+                }
+              },
+              {
+                "id": 4794,
+                "name": "Wolf Bracers",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE"
+              }
+            ],
+            "hands": [
+              {
+                "id": 7690,
+                "name": "Ebon Vise",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "detail": "trash"
+                },
+                "note": "Small agility/stamina leather glove upgrade"
+              },
+              {
+                "id": 1978,
+                "name": "Wolfclaw Gloves",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Overlord Ramtusk"
+                }
+              },
+              {
+                "id": 888,
+                "name": "Naga Battle Gloves",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackfathom Deeps",
+                  "boss": "Lady Sarevess"
+                }
+              }
+            ],
+            "waist": [
+              {
+                "id": 7387,
+                "name": "Dusky Belt",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Dusky Leather set)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 6468,
+                "name": "Deviate Scale Belt",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking; requires Deviate Scale farmed in Wailing Caverns",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 10412,
+                "name": "Belt of the Fang",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns"
+                }
+              }
+            ],
+            "legs": [
+              {
+                "id": 9414,
+                "name": "Oilskin Leggings",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Uldaman",
+                  "boss": "Grimlok"
+                }
+              },
+              {
+                "id": 1718,
+                "name": "Basilisk Hide Pants",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "world-drop"
+                }
+              },
+              {
+                "id": 10410,
+                "name": "Leggings of the Fang",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns"
+                }
+              }
+            ],
+            "feet": [
+              {
+                "id": 2276,
+                "name": "Swampwalker Boots",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                }
+              },
+              {
+                "id": 10411,
+                "name": "Footpads of the Fang",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns"
+                }
+              },
+              {
+                "id": 6406,
+                "name": "Nightsky Boots",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
+                }
+              }
+            ],
+            "finger": [
+              {
+                "id": 6414,
+                "name": "Seal of Sylvanas",
+                "quality": "epic",
+                "rank": 1,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "zone": "Tirisfal Glades / Undercity"
+                }
+              },
+              {
+                "id": 2039,
+                "name": "Plains Ring",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "detail": "trash"
+                }
+              },
+              {
+                "id": 2933,
+                "name": "Seal of Wrynn",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Unsent Letter",
+                  "zone": "Stormwind City"
+                }
+              },
+              {
+                "id": 7686,
+                "name": "Ironspine's Eye",
+                "quality": "rare",
+                "rank": 4,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Ironspine",
+                  "detail": "Graveyard wing, rare spawn"
+                },
+                "note": "Unique-Equipped"
+              }
+            ],
+            "trinket": [
+              {
+                "id": 4130,
+                "name": "Smotts' Compass",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "detail": "Required level 50; Equip: +12 Dodge Rating"
+                }
+              },
+              {
+                "id": 9149,
+                "name": "Philosopher's Stone",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Alchemy (skill 200), BoP",
+                  "profession": "Alchemy"
+                },
+                "note": "Usable from level 35 — the only trinket available this early",
+                "bop": true
+              },
+              {
+                "id": 11122,
+                "name": "Carrot on a Stick",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Gahz'rilla",
+                  "instance": "Zul'Farrak"
+                },
+                "note": "No combat stats; mount-speed utility filler"
+              },
+              {
+                "id": 4381,
+                "name": "Minor Recombobulator",
+                "quality": "uncommon",
+                "rank": 4,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
+                },
+                "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
+              }
+            ],
+            "mainhand": [
+              {
+                "id": 7723,
+                "name": "Mograine's Might",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Scarlet Commander Mograine",
+                  "detail": "Cathedral wing"
+                }
+              },
+              {
+                "id": 9413,
+                "name": "The Rockpounder",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Uldaman",
+                  "boss": "Archaedas"
+                }
+              },
+              {
+                "id": 9449,
+                "name": "Manual Crowd Pummeler",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Gnomeregan",
+                  "boss": "Crowd Pummeler 9-60"
+                },
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+              }
+            ]
+          }
+        },
+        {
+          "id": "lvl45",
+          "levelRange": [
+            41,
+            45
+          ],
+          "slots": {
+            "head": [
+              {
+                "id": 8345,
+                "name": "Wolfshead Helm",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Classic pattern, BoE)",
+                  "profession": "Leatherworking"
+                },
+                "note": "Grants bonus energy/rage on shifting into Cat/Bear form; one of very few Druid-only items and stays relevant for a very long time."
+              },
+              {
+                "id": 9479,
+                "name": "Embrace of the Lycan",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Chief Ukorz Sandscalp"
+                },
+                "note": "leather; best available at this level"
+              },
+              {
+                "id": 9420,
+                "name": "Adventurer's Pith Helmet",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Uldaman",
+                  "detail": "trash"
+                }
               }
             ],
             "neck": [
@@ -554,6 +2038,491 @@ WOWDATA.register({
                   "instance": "Zul'Farrak",
                   "boss": "Theka the Martyr"
                 }
+              },
+              {
+                "id": 7731,
+                "name": "Ghostshard Talisman",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Azshir the Sleepless",
+                  "detail": "Graveyard wing"
+                },
+                "note": "Stamina-focused; the spell-damage proc is wasted but it's the best neck available this early"
+              },
+              {
+                "id": 7722,
+                "name": "Triune Amulet",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "High Inquisitor Whitemane",
+                  "detail": "Cathedral wing"
+                }
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 10774,
+                "name": "Fleshhide Shoulders",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Downs",
+                  "boss": "Glutton"
+                }
+              },
+              {
+                "id": 5964,
+                "name": "Barbaric Shoulders",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Barbaric leather set)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 5404,
+                "name": "Serpent's Shoulders",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns",
+                  "boss": "Lady Anacondra"
+                }
+              }
+            ],
+            "chest": [
+              {
+                "id": 14601,
+                "name": "Warden's Wraps",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Desolace"
+                }
+              },
+              {
+                "id": 10399,
+                "name": "Blackened Defias Armor",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "detail": "Defias trash; part of the Blackened Defias set"
+                }
+              },
+              {
+                "id": 10762,
+                "name": "Robes of the Lich",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Downs",
+                  "boss": "Amnennar the Coldbringer"
+                }
+              }
+            ],
+            "wrist": [
+              {
+                "id": 18948,
+                "name": "Barbaric Bracers",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking 155 (BoE, often on AH)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 19508,
+                "name": "Branded Leather Bracers",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "High Inquisitor Fairbanks",
+                  "detail": "Cathedral wing"
+                }
+              },
+              {
+                "id": 9433,
+                "name": "Forgotten Wraps",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop"
+                },
+                "note": "Cloth Intellect wrist"
+              }
+            ],
+            "hands": [
+              {
+                "id": 7690,
+                "name": "Ebon Vise",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "detail": "trash"
+                },
+                "note": "Small agility/stamina leather glove upgrade"
+              },
+              {
+                "id": 18083,
+                "name": "Jumanza Grips",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Witch Doctor Zum'rah"
+                }
+              },
+              {
+                "id": 1978,
+                "name": "Wolfclaw Gloves",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Overlord Ramtusk"
+                }
+              }
+            ],
+            "waist": [
+              {
+                "id": 7387,
+                "name": "Dusky Belt",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Dusky Leather set)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 17755,
+                "name": "Satyrmane Sash",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Lord Vyletongue"
+                }
+              },
+              {
+                "id": 6468,
+                "name": "Deviate Scale Belt",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking; requires Deviate Scale farmed in Wailing Caverns",
+                  "profession": "Leatherworking"
+                }
+              }
+            ],
+            "legs": [
+              {
+                "id": 9414,
+                "name": "Oilskin Leggings",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Uldaman",
+                  "boss": "Grimlok"
+                }
+              },
+              {
+                "id": 1718,
+                "name": "Basilisk Hide Pants",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "world-drop"
+                }
+              },
+              {
+                "id": 9484,
+                "name": "Spellshock Leggings",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Sandarr Dunereaver"
+                },
+                "note": "BoE, can be moderately expensive on AH"
+              }
+            ],
+            "feet": [
+              {
+                "id": 2276,
+                "name": "Swampwalker Boots",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                }
+              },
+              {
+                "id": 12470,
+                "name": "Sandstalker Ankleguards",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Zerillis",
+                  "detail": "rare spawn"
+                }
+              },
+              {
+                "id": 10411,
+                "name": "Footpads of the Fang",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns"
+                }
+              }
+            ],
+            "finger": [
+              {
+                "id": 6414,
+                "name": "Seal of Sylvanas",
+                "quality": "epic",
+                "rank": 1,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "zone": "Tirisfal Glades / Undercity"
+                }
+              },
+              {
+                "id": 2039,
+                "name": "Plains Ring",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "detail": "trash"
+                }
+              },
+              {
+                "id": 2933,
+                "name": "Seal of Wrynn",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Unsent Letter",
+                  "zone": "Stormwind City"
+                }
+              },
+              {
+                "id": 7686,
+                "name": "Ironspine's Eye",
+                "quality": "rare",
+                "rank": 4,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Ironspine",
+                  "detail": "Graveyard wing, rare spawn"
+                },
+                "note": "Unique-Equipped"
+              }
+            ],
+            "trinket": [
+              {
+                "id": 4130,
+                "name": "Smotts' Compass",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "detail": "Required level 50; Equip: +12 Dodge Rating"
+                }
+              },
+              {
+                "id": 9149,
+                "name": "Philosopher's Stone",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Alchemy (skill 200), BoP",
+                  "profession": "Alchemy"
+                },
+                "note": "Usable from level 35 — the only trinket available this early",
+                "bop": true
+              },
+              {
+                "id": 11122,
+                "name": "Carrot on a Stick",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Gahz'rilla",
+                  "instance": "Zul'Farrak"
+                },
+                "note": "No combat stats; mount-speed utility filler"
+              },
+              {
+                "id": 4381,
+                "name": "Minor Recombobulator",
+                "quality": "uncommon",
+                "rank": 4,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
+                },
+                "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
+              }
+            ],
+            "mainhand": [
+              {
+                "id": 7723,
+                "name": "Mograine's Might",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Scarlet Commander Mograine",
+                  "detail": "Cathedral wing"
+                }
+              },
+              {
+                "id": 18082,
+                "name": "Zum'rah's Vexing Cane",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Witch Doctor Zum'rah"
+                }
+              },
+              {
+                "id": 17743,
+                "name": "Resurgence Rod",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Corruption of Earth and Seed",
+                  "zone": "Desolace",
+                  "detail": "Chain leads into Maraudon"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "lvl50",
+          "levelRange": [
+            46,
+            50
+          ],
+          "slots": {
+            "head": [
+              {
+                "id": 8345,
+                "name": "Wolfshead Helm",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Classic pattern, BoE)",
+                  "profession": "Leatherworking"
+                },
+                "note": "Grants bonus energy/rage on shifting into Cat/Bear form; one of very few Druid-only items and stays relevant for a very long time."
+              },
+              {
+                "id": 9479,
+                "name": "Embrace of the Lycan",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Chief Ukorz Sandscalp"
+                },
+                "note": "leather; best available at this level"
+              },
+              {
+                "id": 9420,
+                "name": "Adventurer's Pith Helmet",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Uldaman",
+                  "detail": "trash"
+                }
+              }
+            ],
+            "neck": [
+              {
+                "id": 9641,
+                "name": "Lifeblood Amulet",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Theka the Martyr"
+                }
+              },
+              {
+                "id": 17707,
+                "name": "Gemshard Heart",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Princess Theradras"
+                }
+              },
+              {
+                "id": 7731,
+                "name": "Ghostshard Talisman",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Azshir the Sleepless",
+                  "detail": "Graveyard wing"
+                },
+                "note": "Stamina-focused; the spell-damage proc is wasted but it's the best neck available this early"
               }
             ],
             "shoulder": [
@@ -567,40 +2536,188 @@ WOWDATA.register({
                   "instance": "Maraudon",
                   "boss": "Razorlash"
                 }
-              }
-            ],
-            "back": [
+              },
               {
-                "id": 11858,
-                "name": "Battlehard Cape",
-                "quality": "uncommon",
-                "rank": 1,
+                "id": 10774,
+                "name": "Fleshhide Shoulders",
+                "quality": "rare",
+                "rank": 2,
                 "source": {
-                  "type": "quest",
-                  "quest": "A Grim Discovery",
-                  "zone": "Feralas"
+                  "type": "drop",
+                  "instance": "Razorfen Downs",
+                  "boss": "Glutton"
                 }
+              },
+              {
+                "id": 15061,
+                "name": "Living Shoulders",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking 270",
+                  "profession": "Leatherworking"
+                },
+                "note": "moderately expensive BoE (Living Essence mats)"
               }
             ],
             "chest": [
               {
+                "id": 15064,
+                "name": "Warbear Harness",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
                 "id": 17742,
                 "name": "Fungus Shroud Armor",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 2,
                 "source": {
                   "type": "drop",
                   "instance": "Maraudon"
                 },
                 "note": "Leather agility/stamina chest — solid upgrade for the low 40s"
+              },
+              {
+                "id": 14601,
+                "name": "Warden's Wraps",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Desolace"
+                }
+              }
+            ],
+            "wrist": [
+              {
+                "id": 18948,
+                "name": "Barbaric Bracers",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking 155 (BoE, often on AH)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 19508,
+                "name": "Branded Leather Bracers",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "High Inquisitor Fairbanks",
+                  "detail": "Cathedral wing"
+                }
+              },
+              {
+                "id": 9433,
+                "name": "Forgotten Wraps",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop"
+                },
+                "note": "Cloth Intellect wrist"
+              }
+            ],
+            "hands": [
+              {
+                "id": 7690,
+                "name": "Ebon Vise",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "detail": "trash"
+                },
+                "note": "Small agility/stamina leather glove upgrade"
+              },
+              {
+                "id": 18083,
+                "name": "Jumanza Grips",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Witch Doctor Zum'rah"
+                }
+              },
+              {
+                "id": 1978,
+                "name": "Wolfclaw Gloves",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Overlord Ramtusk"
+                }
+              }
+            ],
+            "waist": [
+              {
+                "id": 7387,
+                "name": "Dusky Belt",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Dusky Leather set)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 11662,
+                "name": "Ban'thok Sash",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Depths",
+                  "boss": "Ok'thor the Breaker"
+                }
+              },
+              {
+                "id": 17755,
+                "name": "Satyrmane Sash",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Lord Vyletongue"
+                }
               }
             ],
             "legs": [
               {
+                "id": 9414,
+                "name": "Oilskin Leggings",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Uldaman",
+                  "boss": "Grimlok"
+                }
+              },
+              {
                 "id": 10785,
                 "name": "Atal'ai Leggings",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 2,
                 "source": {
                   "type": "drop",
                   "instance": "Sunken Temple",
@@ -609,14 +2726,12 @@ WOWDATA.register({
                 "note": "Random enchant roll — look for Agility or Stamina"
               },
               {
-                "id": 9414,
-                "name": "Oilskin Leggings",
+                "id": 1718,
+                "name": "Basilisk Hide Pants",
                 "quality": "rare",
-                "rank": 2,
+                "rank": 3,
                 "source": {
-                  "type": "drop",
-                  "instance": "Uldaman",
-                  "boss": "Grimlok"
+                  "type": "world-drop"
                 }
               }
             ],
@@ -633,10 +2748,19 @@ WOWDATA.register({
                 }
               },
               {
+                "id": 2276,
+                "name": "Swampwalker Boots",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "world-drop"
+                }
+              },
+              {
                 "id": 12470,
                 "name": "Sandstalker Ankleguards",
                 "quality": "rare",
-                "rank": 2,
+                "rank": 3,
                 "source": {
                   "type": "drop",
                   "instance": "Zul'Farrak",
@@ -647,74 +2771,143 @@ WOWDATA.register({
             ],
             "finger": [
               {
-                "id": 11118,
-                "name": "Archaedic Stone",
-                "quality": "rare",
+                "id": 6414,
+                "name": "Seal of Sylvanas",
+                "quality": "epic",
                 "rank": 1,
+                "faction": "horde",
                 "source": {
-                  "type": "drop",
-                  "instance": "Uldaman",
-                  "boss": "Archaedas"
-                },
-                "note": "Random-enchant ring; look for an Agility ('of the Monkey'/'of the Bear') roll"
+                  "type": "quest",
+                  "zone": "Tirisfal Glades / Undercity"
+                }
               },
               {
-                "id": 17713,
-                "name": "Blackstone Ring",
+                "id": 2039,
+                "name": "Plains Ring",
                 "quality": "rare",
                 "rank": 2,
                 "source": {
                   "type": "drop",
-                  "instance": "Maraudon",
-                  "boss": "Princess Theradras"
+                  "instance": "Razorfen Kraul",
+                  "detail": "trash"
+                }
+              },
+              {
+                "id": 11824,
+                "name": "Cyclopean Band",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Depths",
+                  "detail": "Ring of Law event (Ok'thor the Breaker)"
+                },
+                "note": "BoP, Unique-Equipped"
+              },
+              {
+                "id": 2933,
+                "name": "Seal of Wrynn",
+                "quality": "rare",
+                "rank": 4,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Unsent Letter",
+                  "zone": "Stormwind City"
                 }
               }
             ],
             "trinket": [
               {
-                "id": 9149,
-                "name": "Philosopher's Stone",
+                "id": 4130,
+                "name": "Smotts' Compass",
                 "quality": "uncommon",
                 "rank": 1,
                 "source": {
+                  "type": "quest",
+                  "detail": "Required level 50; Equip: +12 Dodge Rating"
+                }
+              },
+              {
+                "id": 9149,
+                "name": "Philosopher's Stone",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
                   "type": "crafted",
-                  "detail": "Alchemy (skill 200), BoP"
+                  "detail": "Alchemy (skill 200), BoP",
+                  "profession": "Alchemy"
                 },
-                "note": "Holds over from the lvl39 bracket"
+                "note": "Usable from level 35 — the only trinket available this early",
+                "bop": true
               },
               {
                 "id": 11122,
                 "name": "Carrot on a Stick",
                 "quality": "uncommon",
-                "rank": 2,
+                "rank": 3,
                 "source": {
                   "type": "quest",
                   "quest": "Gahz'rilla",
                   "instance": "Zul'Farrak"
                 },
                 "note": "No combat stats; mount-speed utility filler"
+              },
+              {
+                "id": 4381,
+                "name": "Minor Recombobulator",
+                "quality": "uncommon",
+                "rank": 4,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
+                },
+                "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
               }
             ],
             "mainhand": [
               {
-                "id": 9449,
-                "name": "Manual Crowd Pummeler",
-                "quality": "rare",
+                "id": 2915,
+                "name": "Taran Icebreaker",
+                "quality": "epic",
                 "rank": 1,
                 "source": {
+                  "type": "world-drop"
+                },
+                "note": "very rare, expensive BoE epic"
+              },
+              {
+                "id": 7723,
+                "name": "Mograine's Might",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
                   "type": "drop",
-                  "instance": "Gnomeregan",
-                  "boss": "Crowd Pummeler 9-60"
+                  "instance": "Scarlet Monastery",
+                  "boss": "Scarlet Commander Mograine",
+                  "detail": "Cathedral wing"
+                }
+              },
+              {
+                "id": 17766,
+                "name": "Princess Theradras' Scepter",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Princess Theradras"
                 }
               }
             ]
           }
         },
         {
-          "id": "lvl59",
+          "id": "lvl55",
           "levelRange": [
-            50,
-            57
+            51,
+            55
           ],
           "slots": {
             "head": [
@@ -725,53 +2918,97 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking (Classic pattern, BoE)"
-                }
+                  "detail": "Leatherworking (Classic pattern, BoE)",
+                  "profession": "Leatherworking"
+                },
+                "note": "Grants bonus energy/rage on shifting into Cat/Bear form; one of very few Druid-only items and stays relevant for a very long time."
               },
               {
-                "id": 12960,
-                "name": "Tribal War Feathers",
+                "id": 18698,
+                "name": "Tattered Leather Hood",
                 "quality": "rare",
                 "rank": 2,
                 "source": {
                   "type": "drop",
-                  "instance": "Blackrock Spire",
-                  "boss": "Gyth",
-                  "detail": "Lower Blackrock Spire"
+                  "instance": "Scholomance"
+                }
+              },
+              {
+                "id": 9479,
+                "name": "Embrace of the Lycan",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Chief Ukorz Sandscalp"
                 },
-                "note": "Random-enchant leather head; base armor/stamina works as a stopgap even though the roll usually favors casters"
+                "note": "leather; best available at this level"
               }
             ],
             "neck": [
               {
-                "id": 18381,
-                "name": "Evil Eye Pendant",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Dire Maul",
-                  "boss": "Immol'thar"
-                }
-              },
-              {
                 "id": 11755,
                 "name": "Verek's Collar",
                 "quality": "rare",
-                "rank": 2,
+                "rank": 1,
                 "source": {
                   "type": "drop",
                   "instance": "Blackrock Depths",
                   "boss": "Verek"
                 }
+              },
+              {
+                "id": 9641,
+                "name": "Lifeblood Amulet",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Theka the Martyr"
+                }
+              },
+              {
+                "id": 17707,
+                "name": "Gemshard Heart",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Princess Theradras"
+                }
               }
             ],
             "shoulder": [
               {
+                "id": 17749,
+                "name": "Phytoskin Spaulders",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Razorlash"
+                }
+              },
+              {
+                "id": 10774,
+                "name": "Fleshhide Shoulders",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Downs",
+                  "boss": "Glutton"
+                }
+              },
+              {
                 "id": 16708,
                 "name": "Shadowcraft Spaulders",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 3,
                 "source": {
                   "type": "drop",
                   "instance": "Stratholme",
@@ -780,39 +3017,37 @@ WOWDATA.register({
                 "note": "Rogue Shadowcraft set piece — great agility/stamina shoulders for feral too"
               }
             ],
-            "back": [
+            "chest": [
               {
-                "id": 12552,
-                "name": "Blisterbane Wrap",
+                "id": 15064,
+                "name": "Warbear Harness",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
-                  "type": "drop",
-                  "instance": "Blackrock Depths"
+                  "type": "crafted",
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
                 }
               },
               {
-                "id": 13397,
-                "name": "Stoneskin Gargoyle Cape",
+                "id": 17742,
+                "name": "Fungus Shroud Armor",
                 "quality": "rare",
                 "rank": 2,
                 "source": {
                   "type": "drop",
-                  "instance": "Stratholme",
-                  "boss": "Stonespine"
-                }
-              }
-            ],
-            "chest": [
+                  "instance": "Maraudon"
+                },
+                "note": "Leather agility/stamina chest — solid upgrade for the low 40s"
+              },
               {
-                "id": 13944,
-                "name": "Tombstone Breastplate",
-                "quality": "rare",
-                "rank": 1,
+                "id": 14601,
+                "name": "Warden's Wraps",
+                "quality": "uncommon",
+                "rank": 3,
                 "source": {
-                  "type": "drop",
-                  "instance": "Scholomance",
-                  "boss": "Darkmaster Gandling"
+                  "type": "world-drop",
+                  "zone": "Desolace"
                 }
               }
             ],
@@ -826,46 +3061,137 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Dire Maul"
                 }
+              },
+              {
+                "id": 18948,
+                "name": "Barbaric Bracers",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking 155 (BoE, often on AH)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 18497,
+                "name": "Sublime Wristguards",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Dire Maul",
+                  "boss": "Guard Slip'kik"
+                }
               }
             ],
             "hands": [
               {
-                "id": 18377,
-                "name": "Quickdraw Gloves",
+                "id": 7690,
+                "name": "Ebon Vise",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "detail": "trash"
+                },
+                "note": "Small agility/stamina leather glove upgrade"
+              },
+              {
+                "id": 18309,
+                "name": "Gloves of Restoration",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
                   "instance": "Dire Maul",
-                  "boss": "Immol'thar"
+                  "boss": "Alzzin the Wildshaper",
+                  "detail": "East wing"
+                }
+              },
+              {
+                "id": 18083,
+                "name": "Jumanza Grips",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Witch Doctor Zum'rah"
                 }
               }
             ],
             "waist": [
               {
-                "id": 18505,
-                "name": "Mugger's Belt",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Dire Maul",
-                  "boss": "Captain Kromcrush"
-                }
-              }
-            ],
-            "legs": [
-              {
-                "id": 16709,
-                "name": "Shadowcraft Pants",
+                "id": 23126,
+                "name": "Waistband of Balzaphon",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
                   "instance": "Stratholme",
-                  "boss": "Baron Rivendare"
+                  "boss": "Balzaphon"
+                }
+              },
+              {
+                "id": 7387,
+                "name": "Dusky Belt",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Dusky Leather set)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 11662,
+                "name": "Ban'thok Sash",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Depths",
+                  "boss": "Ok'thor the Breaker"
+                }
+              }
+            ],
+            "legs": [
+              {
+                "id": 9414,
+                "name": "Oilskin Leggings",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Uldaman",
+                  "boss": "Grimlok"
+                }
+              },
+              {
+                "id": 15065,
+                "name": "Warbear Woolies",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
                 },
-                "note": "Rogue Shadowcraft set piece"
+                "note": "Cheaper Str/Stam alt"
+              },
+              {
+                "id": 10785,
+                "name": "Atal'ai Leggings",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Sunken Temple",
+                  "detail": "Balcony mini-bosses"
+                },
+                "note": "Random enchant roll — look for Agility or Stamina"
               }
             ],
             "feet": [
@@ -880,6 +3206,26 @@ WOWDATA.register({
                   "boss": "Rattlegore"
                 },
                 "note": "Rogue Shadowcraft set piece"
+              },
+              {
+                "id": 17728,
+                "name": "Albino Crocscale Boots",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Rotgrip"
+                }
+              },
+              {
+                "id": 2276,
+                "name": "Swampwalker Boots",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
+                }
               }
             ],
             "finger": [
@@ -905,50 +3251,85 @@ WOWDATA.register({
                   "boss": "Lethtendris",
                   "detail": "East wing"
                 }
+              },
+              {
+                "id": 6414,
+                "name": "Seal of Sylvanas",
+                "quality": "epic",
+                "rank": 3,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "zone": "Tirisfal Glades / Undercity"
+                }
+              },
+              {
+                "id": 2039,
+                "name": "Plains Ring",
+                "quality": "rare",
+                "rank": 4,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "detail": "trash"
+                }
               }
             ],
             "trinket": [
               {
-                "id": 11815,
-                "name": "Hand of Justice",
-                "quality": "rare",
+                "id": 4130,
+                "name": "Smotts' Compass",
+                "quality": "uncommon",
                 "rank": 1,
                 "source": {
-                  "type": "world-drop"
-                },
-                "note": "Expensive BoE — extra-attack proc is excellent threat/DPS for both bear and cat"
+                  "type": "quest",
+                  "detail": "Required level 50; Equip: +12 Dodge Rating"
+                }
               },
               {
-                "id": 19991,
-                "name": "Devilsaur Eye",
-                "quality": "rare",
+                "id": 9149,
+                "name": "Philosopher's Stone",
+                "quality": "uncommon",
                 "rank": 2,
                 "source": {
-                  "type": "world-drop",
-                  "zone": "Un'Goro Crater",
-                  "detail": "Devilsaur loot"
+                  "type": "crafted",
+                  "detail": "Alchemy (skill 200), BoP",
+                  "profession": "Alchemy"
                 },
-                "note": "Expensive BoE — on-use AP and hit burst"
+                "note": "Usable from level 35 — the only trinket available this early",
+                "bop": true
+              },
+              {
+                "id": 11122,
+                "name": "Carrot on a Stick",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Gahz'rilla",
+                  "instance": "Zul'Farrak"
+                },
+                "note": "No combat stats; mount-speed utility filler"
+              },
+              {
+                "id": 4381,
+                "name": "Minor Recombobulator",
+                "quality": "uncommon",
+                "rank": 4,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
+                },
+                "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
               }
             ],
             "mainhand": [
               {
-                "id": 9449,
-                "name": "Manual Crowd Pummeler",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Gnomeregan",
-                  "boss": "Crowd Pummeler 9-60"
-                },
-                "note": "Falling behind on stats but the haste proc still makes it worth using until a Ramparts-tier weapon drops"
-              },
-              {
                 "id": 13167,
                 "name": "Fist of Omokk",
                 "quality": "rare",
-                "rank": 2,
+                "rank": 1,
                 "source": {
                   "type": "drop",
                   "instance": "Blackrock Spire",
@@ -956,6 +3337,27 @@ WOWDATA.register({
                   "detail": "Lower Blackrock Spire"
                 },
                 "note": "Bear-tank only — Strength/Stamina 2H mace, no benefit for cat form"
+              },
+              {
+                "id": 23124,
+                "name": "Staff of Balzaphon",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Stratholme",
+                  "boss": "Balzaphon"
+                }
+              },
+              {
+                "id": 2915,
+                "name": "Taran Icebreaker",
+                "quality": "epic",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "very rare, expensive BoE epic"
               }
             ]
           }
@@ -963,377 +3365,291 @@ WOWDATA.register({
         {
           "id": "lvl60",
           "levelRange": [
-            58,
-            64
+            56,
+            60
           ],
           "slots": {
             "head": [
               {
+                "id": 29940,
+                "name": "Veteran's Skullcap",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "zone": "Hellfire Peninsula"
+                }
+              },
+              {
+                "id": 25710,
+                "name": "Moonkin Headdress",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Blood is Life",
+                  "instance": "The Blood Furnace",
+                  "zone": "Hellfire Peninsula"
+                },
+                "note": "Stamina/Intellect/Spirit/spell crit/spell damage — a genuine Balance-flavoured piece"
+              },
+              {
                 "id": 8345,
                 "name": "Wolfshead Helm",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 3,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking (Classic pattern, BoE)"
-                }
+                  "detail": "Leatherworking (Classic pattern, BoE)",
+                  "profession": "Leatherworking"
+                },
+                "note": "Grants bonus energy/rage on shifting into Cat/Bear form; one of very few Druid-only items and stays relevant for a very long time."
               }
             ],
             "neck": [
               {
-                "id": 24073,
-                "name": "Garrote-String Necklace",
+                "id": 30378,
+                "name": "Thalodien's Charm",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
-                  "type": "drop",
-                  "instance": "Hellfire Ramparts",
-                  "boss": "Omor the Unscarred"
+                  "type": "quest",
+                  "quest": "Shutting Down Manaforge Ara",
+                  "zone": "Netherstorm"
+                }
+              },
+              {
+                "id": 29815,
+                "name": "Chain of Glowing Tendrils",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Hitting the Motherlode",
+                  "zone": "Netherstorm"
+                }
+              },
+              {
+                "id": 25487,
+                "name": "Wind Dancer's Pendant",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Avruu's Orb",
+                  "zone": "Hellfire Peninsula"
                 }
               }
             ],
             "shoulder": [
               {
-                "id": 24398,
-                "name": "Mantle of the Dusk-Dweller",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Blood Furnace",
-                  "boss": "Keli'dan the Breaker"
-                }
-              }
-            ],
-            "back": [
-              {
-                "id": 25712,
-                "name": "Perfectly Balanced Cape",
-                "quality": "rare",
+                "id": 25925,
+                "name": "Terrorcloth Mantle",
+                "quality": "uncommon",
                 "rank": 1,
                 "source": {
                   "type": "quest",
-                  "quest": "Heart of Rage",
-                  "instance": "The Blood Furnace",
-                  "zone": "Hellfire Peninsula"
+                  "quest": "The Terror of Marshlight Lake",
+                  "zone": "Zangarmarsh"
+                }
+              },
+              {
+                "id": 17749,
+                "name": "Phytoskin Spaulders",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Razorlash"
+                }
+              },
+              {
+                "id": 10774,
+                "name": "Fleshhide Shoulders",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Downs",
+                  "boss": "Glutton"
                 }
               }
             ],
             "chest": [
               {
-                "id": 24396,
-                "name": "Vest of Vengeance",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "zone": "Hellfire Peninsula",
-                  "detail": "Hellfire Citadel dungeon drop"
-                }
-              },
-              {
                 "id": 29938,
                 "name": "Battle Seeker Chestguard",
                 "quality": "uncommon",
-                "rank": 2,
+                "rank": 1,
                 "source": {
                   "type": "quest",
                   "quest": "Waste Not, Want Not (Alliance) / I Work... For the Horde! (Horde)",
                   "zone": "Hellfire Peninsula"
                 }
-              }
-            ],
-            "wrist": [
-              {
-                "id": 24023,
-                "name": "Bracers of Finesse",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Hellfire Ramparts",
-                  "boss": "Watchkeeper Gargolmar"
-                }
-              }
-            ],
-            "hands": [
-              {
-                "id": 24365,
-                "name": "Deft Handguards",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Slave Pens",
-                  "boss": "Quagmirran"
-                }
-              }
-            ],
-            "waist": [
-              {
-                "id": 24063,
-                "name": "Shifting Sash of Midnight",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Hellfire Ramparts",
-                  "detail": "Reinforced Fel Iron Chest lockbox"
-                }
-              }
-            ],
-            "legs": [
-              {
-                "id": 29939,
-                "name": "Flayer-Hide Leggings",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "Disrupt Their Reinforcements",
-                  "zone": "Hellfire Peninsula"
-                }
-              }
-            ],
-            "feet": [
-              {
-                "id": 25717,
-                "name": "Sure-Step Boots",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "Weaken the Ramparts",
-                  "instance": "Hellfire Ramparts",
-                  "zone": "Hellfire Peninsula"
-                }
-              }
-            ],
-            "finger": [
-              {
-                "id": 19432,
-                "name": "Circle of Applied Force",
-                "quality": "epic",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Lower Blackrock Spire",
-                  "boss": "Pyroguard Emberseer"
-                },
-                "note": "Unique-Equipped"
               },
-              {
-                "id": 27733,
-                "name": "Warden's Ring of Precision",
-                "quality": "uncommon",
-                "rank": 2,
-                "source": {
-                  "type": "quest",
-                  "quest": "Drain Schematics",
-                  "zone": "Zangarmarsh"
-                }
-              }
-            ],
-            "trinket": [
-              {
-                "id": 11815,
-                "name": "Hand of Justice",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "world-drop"
-                },
-                "note": "Expensive BoE"
-              },
-              {
-                "id": 28041,
-                "name": "Bladefist's Breadth",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "quest",
-                  "quest": "Overlord (Alliance) / Cruel's Intentions (Horde)",
-                  "zone": "Hellfire Peninsula"
-                },
-                "note": "On-use +200 Attack Power"
-              },
-              {
-                "id": 28042,
-                "name": "Regal Protectorate",
-                "quality": "rare",
-                "rank": 3,
-                "source": {
-                  "type": "drop",
-                  "detail": "Coilfang Reservoir-tier drop"
-                },
-                "note": "Bear-tank only — defense rating plus an on-use health cooldown"
-              }
-            ],
-            "mainhand": [
-              {
-                "id": 9449,
-                "name": "Manual Crowd Pummeler",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Gnomeregan",
-                  "boss": "Crowd Pummeler 9-60"
-                },
-                "note": "Carries you into Hellfire Peninsula until a proper Outland weapon drops"
-              }
-            ],
-            "ranged": [
-              {
-                "id": 23198,
-                "name": "Idol of Brutality",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Stratholme (Classic)",
-                  "boss": "Magistrate Barthilas"
-                },
-                "note": "Best with high rage"
-              },
-              {
-                "id": 28064,
-                "name": "Idol of the Wild",
-                "quality": "uncommon",
-                "rank": 2,
-                "source": {
-                  "type": "quest",
-                  "quest": "Colossal Menace",
-                  "zone": "Hellfire Peninsula"
-                }
-              }
-            ]
-          }
-        },
-        {
-          "id": "lvl65",
-          "levelRange": [
-            65,
-            69
-          ],
-          "slots": {
-            "head": [
-              {
-                "id": 29332,
-                "name": "Terokk's Mask",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "Terokk's Legacy",
-                  "instance": "Sethekk Halls",
-                  "zone": "Terokkar Forest"
-                }
-              },
-              {
-                "id": 28182,
-                "name": "Helm of the Claw",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "quest",
-                  "quest": "The Warlord's Hideout",
-                  "instance": "The Steamvault",
-                  "zone": "Zangarmarsh"
-                }
-              }
-            ],
-            "neck": [
-              {
-                "id": 29335,
-                "name": "Talon Lord's Collar",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "Brother Against Brother",
-                  "instance": "Sethekk Halls",
-                  "zone": "Terokkar Forest"
-                }
-              }
-            ],
-            "shoulder": [
-              {
-                "id": 27434,
-                "name": "Mantle of Perenolde",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Old Hillsbrad Foothills",
-                  "boss": "Epoch Hunter"
-                }
-              }
-            ],
-            "back": [
-              {
-                "id": 27519,
-                "name": "Cloak of Malice",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Shattered Halls",
-                  "boss": "Grand Warlock Nethekurse"
-                }
-              }
-            ],
-            "chest": [
               {
                 "id": 29340,
                 "name": "Auchenai Monk's Tunic",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 2,
                 "source": {
                   "type": "quest",
                   "quest": "Everything Will Be Alright",
                   "instance": "Auchenai Crypts",
                   "zone": "Terokkar Forest"
                 }
+              },
+              {
+                "id": 15064,
+                "name": "Warbear Harness",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
+                }
               }
             ],
             "wrist": [
               {
+                "id": 30944,
+                "name": "Umberhowl's Collar",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Cipher of Damnation - The Third Fragment Recovered",
+                  "zone": "Shadowmoon Valley"
+                }
+              },
+              {
                 "id": 24023,
                 "name": "Bracers of Finesse",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 2,
                 "source": {
                   "type": "drop",
                   "instance": "Hellfire Ramparts",
                   "boss": "Watchkeeper Gargolmar"
-                },
-                "note": "Carries over from the 58-64 bracket"
+                }
+              },
+              {
+                "id": 28029,
+                "name": "Goldenvine Wraps",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "both",
+                "source": {
+                  "type": "quest",
+                  "instance": "The Slave Pens / The Underbog",
+                  "quest": "Lost in Action"
+                }
               }
             ],
             "hands": [
               {
+                "id": 30943,
+                "name": "Verdant Gloves",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Akama's Promise",
+                  "zone": "Shadowmoon Valley"
+                }
+              },
+              {
                 "id": 25669,
                 "name": "Thick Draenic Gloves",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 2,
                 "source": {
                   "type": "quest",
                   "zone": "Nagrand",
                   "detail": "Thick Draenic Armor quest set"
                 }
+              },
+              {
+                "id": 18377,
+                "name": "Quickdraw Gloves",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Dire Maul",
+                  "boss": "Immol'thar"
+                }
               }
             ],
-            "legs": [
+            "waist": [
               {
-                "id": 31544,
-                "name": "Clefthoof Hide Leggings",
+                "id": 30372,
+                "name": "Socrethar's Girdle",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "quest",
+                  "quest": "Turning Point",
+                  "zone": "Shadowmoon Valley"
+                }
+              },
+              {
+                "id": 24063,
+                "name": "Shifting Sash of Midnight",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Ramparts",
+                  "detail": "Reinforced Fel Iron Chest lockbox"
+                }
+              },
+              {
+                "id": 14636,
+                "name": "Cadaverous Belt",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scholomance"
+                },
+                "note": "Rogue Cadaverous Garb set piece"
+              }
+            ],
+            "legs": [
+              {
+                "id": 30257,
+                "name": "Shattrath Leggings",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Special Delivery to Shattrath City",
+                  "zone": "Netherstorm"
+                }
+              },
+              {
+                "id": 31544,
+                "name": "Clefthoof Hide Leggings",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
                   "quest": "Showdown",
                   "zone": "Blade's Edge Mountains"
+                }
+              },
+              {
+                "id": 29939,
+                "name": "Flayer-Hide Leggings",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Disrupt Their Reinforcements",
+                  "zone": "Hellfire Peninsula"
                 }
               }
             ],
@@ -1349,26 +3665,498 @@ WOWDATA.register({
                   "instance": "Old Hillsbrad Foothills",
                   "zone": "Caverns of Time, Tanaris"
                 }
+              },
+              {
+                "id": 28074,
+                "name": "Studded Green Anklewraps",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Natural Remedies",
+                  "zone": "Hellfire Peninsula"
+                }
+              },
+              {
+                "id": 25717,
+                "name": "Sure-Step Boots",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Weaken the Ramparts",
+                  "instance": "Hellfire Ramparts",
+                  "zone": "Hellfire Peninsula"
+                }
+              }
+            ],
+            "finger": [
+              {
+                "id": 25541,
+                "name": "Cenarion Ring of Casting",
+                "quality": "rare",
+                "rank": 1,
+                "faction": "both",
+                "source": {
+                  "type": "quest",
+                  "instance": "The Slave Pens / The Underbog",
+                  "quest": "Lost in Action"
+                }
+              },
+              {
+                "id": 25499,
+                "name": "Felblood Band",
+                "quality": "uncommon",
+                "rank": 2,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Cleansing Must Be Stopped",
+                  "zone": "Hellfire Peninsula"
+                }
+              },
+              {
+                "id": 19432,
+                "name": "Circle of Applied Force",
+                "quality": "epic",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Lower Blackrock Spire",
+                  "boss": "Pyroguard Emberseer"
+                },
+                "note": "Unique-Equipped"
+              },
+              {
+                "id": 13373,
+                "name": "Band of Flesh",
+                "quality": "rare",
+                "rank": 4,
+                "source": {
+                  "type": "drop",
+                  "instance": "Stratholme",
+                  "boss": "Ramstein the Gorger"
+                }
+              }
+            ],
+            "trinket": [
+              {
+                "id": 23836,
+                "name": "Goblin Rocket Launcher",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering",
+                  "profession": "Engineering"
+                }
+              },
+              {
+                "id": 28042,
+                "name": "Regal Protectorate",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "detail": "Coilfang Reservoir-tier drop"
+                },
+                "note": "Bear-tank only — defense rating plus an on-use health cooldown"
+              },
+              {
+                "id": 4130,
+                "name": "Smotts' Compass",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "detail": "Required level 50; Equip: +12 Dodge Rating"
+                }
+              },
+              {
+                "id": 9149,
+                "name": "Philosopher's Stone",
+                "quality": "uncommon",
+                "rank": 4,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Alchemy (skill 200), BoP",
+                  "profession": "Alchemy"
+                },
+                "note": "Usable from level 35 — the only trinket available this early",
+                "bop": true
+              }
+            ],
+            "mainhand": [
+              {
+                "id": 24044,
+                "name": "Hellreaver",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Ramparts",
+                  "boss": "Vazruden"
+                }
+              },
+              {
+                "id": 24094,
+                "name": "Heart Fire Warhammer",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Ramparts",
+                  "boss": "Omor the Unscarred"
+                }
+              },
+              {
+                "id": 25760,
+                "name": "Battle Mage's Baton",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Ring of Blood: The Final Challenge",
+                  "zone": "Nagrand"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "lvl65",
+          "levelRange": [
+            61,
+            65
+          ],
+          "slots": {
+            "head": [
+              {
+                "id": 27415,
+                "name": "Darkguard Face Mask",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Auchenai Crypts",
+                  "boss": "Exarch Maladaar"
+                }
+              },
+              {
+                "id": 29940,
+                "name": "Veteran's Skullcap",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "zone": "Hellfire Peninsula"
+                }
+              },
+              {
+                "id": 29332,
+                "name": "Terokk's Mask",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Terokk's Legacy",
+                  "instance": "Sethekk Halls",
+                  "zone": "Terokkar Forest"
+                }
+              }
+            ],
+            "neck": [
+              {
+                "id": 29336,
+                "name": "Mark of the Ravenguard",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Brother Against Brother",
+                  "detail": "Sethekk Halls quest"
+                }
+              },
+              {
+                "id": 30378,
+                "name": "Thalodien's Charm",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Shutting Down Manaforge Ara",
+                  "zone": "Netherstorm"
+                }
+              },
+              {
+                "id": 29815,
+                "name": "Chain of Glowing Tendrils",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Hitting the Motherlode",
+                  "zone": "Netherstorm"
+                }
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 24398,
+                "name": "Mantle of the Dusk-Dweller",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Blood Furnace",
+                  "boss": "Keli'dan the Breaker"
+                }
+              },
+              {
+                "id": 25925,
+                "name": "Terrorcloth Mantle",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Terror of Marshlight Lake",
+                  "zone": "Zangarmarsh"
+                }
+              },
+              {
+                "id": 17749,
+                "name": "Phytoskin Spaulders",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Razorlash"
+                }
+              }
+            ],
+            "chest": [
+              {
+                "id": 25838,
+                "name": "Warden's Hauberk",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "reputation",
+                  "detail": "Cenarion Expedition Honored — Zangarmarsh quartermaster"
+                },
+                "note": "Honored is reachable while leveling"
+              },
+              {
+                "id": 29938,
+                "name": "Battle Seeker Chestguard",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Waste Not, Want Not (Alliance) / I Work... For the Horde! (Horde)",
+                  "zone": "Hellfire Peninsula"
+                }
+              },
+              {
+                "id": 29340,
+                "name": "Auchenai Monk's Tunic",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Everything Will Be Alright",
+                  "instance": "Auchenai Crypts",
+                  "zone": "Terokkar Forest"
+                }
+              }
+            ],
+            "wrist": [
+              {
+                "id": 30944,
+                "name": "Umberhowl's Collar",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Cipher of Damnation - The Third Fragment Recovered",
+                  "zone": "Shadowmoon Valley"
+                }
+              },
+              {
+                "id": 21849,
+                "name": "Netherweave Bracers",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring — BoE",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 24023,
+                "name": "Bracers of Finesse",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Ramparts",
+                  "boss": "Watchkeeper Gargolmar"
+                }
+              }
+            ],
+            "hands": [
+              {
+                "id": 30943,
+                "name": "Verdant Gloves",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Akama's Promise",
+                  "zone": "Shadowmoon Valley"
+                }
+              },
+              {
+                "id": 30341,
+                "name": "Flesh Handler's Gauntlets",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Flesh Lies...",
+                  "zone": "Netherstorm"
+                },
+                "note": "Threat"
+              },
+              {
+                "id": 21851,
+                "name": "Netherweave Gloves",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "Stamina-only filler"
               }
             ],
             "waist": [
               {
+                "id": 30942,
+                "name": "Manimal's Cinch",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Enraged Spirits of Air",
+                  "zone": "Shadowmoon Valley"
+                }
+              },
+              {
                 "id": 31464,
                 "name": "Naaru Belt of Precision",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 2,
                 "source": {
                   "type": "quest",
                   "quest": "How to Break Into the Arcatraz",
                   "instance": "The Mechanar / The Botanica",
                   "zone": "Netherstorm"
                 }
+              },
+              {
+                "id": 21850,
+                "name": "Netherweave Belt",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "Stamina-only filler until a better piece drops"
+              }
+            ],
+            "legs": [
+              {
+                "id": 30257,
+                "name": "Shattrath Leggings",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Special Delivery to Shattrath City",
+                  "zone": "Netherstorm"
+                }
+              },
+              {
+                "id": 31544,
+                "name": "Clefthoof Hide Leggings",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Showdown",
+                  "zone": "Blade's Edge Mountains"
+                }
+              },
+              {
+                "id": 21852,
+                "name": "Netherweave Pants",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "Stamina-only filler"
+              }
+            ],
+            "feet": [
+              {
+                "id": 29318,
+                "name": "Southshore Sneakers",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Return to Andormu",
+                  "instance": "Old Hillsbrad Foothills",
+                  "zone": "Caverns of Time, Tanaris"
+                }
+              },
+              {
+                "id": 28074,
+                "name": "Studded Green Anklewraps",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Natural Remedies",
+                  "zone": "Hellfire Peninsula"
+                }
+              },
+              {
+                "id": 25717,
+                "name": "Sure-Step Boots",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Weaken the Ramparts",
+                  "instance": "Hellfire Ramparts",
+                  "zone": "Hellfire Peninsula"
+                }
               }
             ],
             "finger": [
               {
-                "id": 29321,
-                "name": "Time-bending Gem",
+                "id": 29323,
+                "name": "Andormu's Tear",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
@@ -1376,6 +4164,468 @@ WOWDATA.register({
                   "quest": "Hero of the Brood",
                   "instance": "The Black Morass",
                   "zone": "Caverns of Time, Tanaris"
+                },
+                "note": "Defense/dodge/block — bear-tank oriented"
+              },
+              {
+                "id": 29321,
+                "name": "Time-bending Gem",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Hero of the Brood",
+                  "instance": "The Black Morass",
+                  "zone": "Caverns of Time, Tanaris"
+                }
+              },
+              {
+                "id": 27413,
+                "name": "Ring of the Exarchs",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Auchenai Crypts",
+                  "boss": "Exarch Maladaar"
+                }
+              },
+              {
+                "id": 25541,
+                "name": "Cenarion Ring of Casting",
+                "quality": "rare",
+                "rank": 4,
+                "faction": "both",
+                "source": {
+                  "type": "quest",
+                  "instance": "The Slave Pens / The Underbog",
+                  "quest": "Lost in Action"
+                }
+              }
+            ],
+            "trinket": [
+              {
+                "id": 23836,
+                "name": "Goblin Rocket Launcher",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering",
+                  "profession": "Engineering"
+                }
+              },
+              {
+                "id": 28042,
+                "name": "Regal Protectorate",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "detail": "Coilfang Reservoir-tier drop"
+                },
+                "note": "Bear-tank only — defense rating plus an on-use health cooldown"
+              },
+              {
+                "id": 4130,
+                "name": "Smotts' Compass",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "detail": "Required level 50; Equip: +12 Dodge Rating"
+                }
+              },
+              {
+                "id": 9149,
+                "name": "Philosopher's Stone",
+                "quality": "uncommon",
+                "rank": 4,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Alchemy (skill 200), BoP",
+                  "profession": "Alchemy"
+                },
+                "note": "Usable from level 35 — the only trinket available this early",
+                "bop": true
+              }
+            ],
+            "mainhand": [
+              {
+                "id": 29329,
+                "name": "Terokk's Quill",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Terokk's Legacy",
+                  "instance": "Sethekk Halls",
+                  "zone": "Terokkar Forest"
+                },
+                "note": "2H polearm — big Agility/Stamina jump over Manual Crowd Pummeler"
+              },
+              {
+                "id": 24461,
+                "name": "Hatebringer",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Underbog",
+                  "boss": "Ghaz'an"
+                }
+              },
+              {
+                "id": 24044,
+                "name": "Hellreaver",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Ramparts",
+                  "boss": "Vazruden"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "lvl69",
+          "levelRange": [
+            66,
+            69
+          ],
+          "slots": {
+            "head": [
+              {
+                "id": 28561,
+                "name": "Exorcist's Leather Helm",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "zone": "Terokkar Forest"
+                }
+              },
+              {
+                "id": 27415,
+                "name": "Darkguard Face Mask",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Auchenai Crypts",
+                  "boss": "Exarch Maladaar"
+                }
+              },
+              {
+                "id": 29940,
+                "name": "Veteran's Skullcap",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "zone": "Hellfire Peninsula"
+                }
+              }
+            ],
+            "neck": [
+              {
+                "id": 29336,
+                "name": "Mark of the Ravenguard",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Brother Against Brother",
+                  "detail": "Sethekk Halls quest"
+                }
+              },
+              {
+                "id": 30378,
+                "name": "Thalodien's Charm",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Shutting Down Manaforge Ara",
+                  "zone": "Netherstorm"
+                }
+              },
+              {
+                "id": 29815,
+                "name": "Chain of Glowing Tendrils",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Hitting the Motherlode",
+                  "zone": "Netherstorm"
+                }
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 27995,
+                "name": "Sun-Gilded Shouldercaps",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Black Morass",
+                  "boss": "Chrono Lord Deja"
+                }
+              },
+              {
+                "id": 27994,
+                "name": "Mantle of Three Terrors",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Black Morass",
+                  "boss": "Chrono Lord Deja"
+                }
+              },
+              {
+                "id": 24398,
+                "name": "Mantle of the Dusk-Dweller",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Blood Furnace",
+                  "boss": "Keli'dan the Breaker"
+                }
+              }
+            ],
+            "chest": [
+              {
+                "id": 21855,
+                "name": "Netherweave Tunic",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring — BoE",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 21854,
+                "name": "Netherweave Robe",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "Stamina-only filler if the Auchenai quest chain isn't done yet"
+              },
+              {
+                "id": 25838,
+                "name": "Warden's Hauberk",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "reputation",
+                  "detail": "Cenarion Expedition Honored — Zangarmarsh quartermaster"
+                },
+                "note": "Honored is reachable while leveling"
+              }
+            ],
+            "wrist": [
+              {
+                "id": 30944,
+                "name": "Umberhowl's Collar",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Cipher of Damnation - The Third Fragment Recovered",
+                  "zone": "Shadowmoon Valley"
+                }
+              },
+              {
+                "id": 21849,
+                "name": "Netherweave Bracers",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring — BoE",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 24023,
+                "name": "Bracers of Finesse",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Ramparts",
+                  "boss": "Watchkeeper Gargolmar"
+                }
+              }
+            ],
+            "hands": [
+              {
+                "id": 30943,
+                "name": "Verdant Gloves",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Akama's Promise",
+                  "zone": "Shadowmoon Valley"
+                }
+              },
+              {
+                "id": 30341,
+                "name": "Flesh Handler's Gauntlets",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Flesh Lies...",
+                  "zone": "Netherstorm"
+                },
+                "note": "Threat"
+              },
+              {
+                "id": 21851,
+                "name": "Netherweave Gloves",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "Stamina-only filler"
+              }
+            ],
+            "waist": [
+              {
+                "id": 30942,
+                "name": "Manimal's Cinch",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Enraged Spirits of Air",
+                  "zone": "Shadowmoon Valley"
+                }
+              },
+              {
+                "id": 31464,
+                "name": "Naaru Belt of Precision",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "How to Break Into the Arcatraz",
+                  "instance": "The Mechanar / The Botanica",
+                  "zone": "Netherstorm"
+                }
+              },
+              {
+                "id": 21850,
+                "name": "Netherweave Belt",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "Stamina-only filler until a better piece drops"
+              }
+            ],
+            "legs": [
+              {
+                "id": 30257,
+                "name": "Shattrath Leggings",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Special Delivery to Shattrath City",
+                  "zone": "Netherstorm"
+                }
+              },
+              {
+                "id": 31544,
+                "name": "Clefthoof Hide Leggings",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Showdown",
+                  "zone": "Blade's Edge Mountains"
+                }
+              },
+              {
+                "id": 21852,
+                "name": "Netherweave Pants",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "Stamina-only filler"
+              }
+            ],
+            "feet": [
+              {
+                "id": 25691,
+                "name": "Heavy Clefthoof Boots",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking — Heavy Clefthoof 3-piece",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 29318,
+                "name": "Southshore Sneakers",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Return to Andormu",
+                  "instance": "Old Hillsbrad Foothills",
+                  "zone": "Caverns of Time, Tanaris"
+                }
+              },
+              {
+                "id": 28074,
+                "name": "Studded Green Anklewraps",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Natural Remedies",
+                  "zone": "Hellfire Peninsula"
+                }
+              }
+            ],
+            "finger": [
+              {
+                "id": 27436,
+                "name": "Iron Band of the Unbreakable",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Old Hillsbrad Foothills",
+                  "boss": "Lieutenant Drake"
                 }
               },
               {
@@ -1390,1471 +4640,76 @@ WOWDATA.register({
                   "zone": "Caverns of Time, Tanaris"
                 },
                 "note": "Defense/dodge/block — bear-tank oriented"
-              }
-            ],
-            "trinket": [
-              {
-                "id": 28034,
-                "name": "Hourglass of the Unraveller",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Black Morass",
-                  "boss": "Temporus"
-                }
               },
               {
-                "id": 28041,
-                "name": "Bladefist's Breadth",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "quest",
-                  "quest": "Overlord (Alliance) / Cruel's Intentions (Horde)",
-                  "zone": "Hellfire Peninsula"
-                },
-                "note": "Carries over from the low 60s"
-              }
-            ],
-            "mainhand": [
-              {
-                "id": 29329,
-                "name": "Terokk's Quill",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "Terokk's Legacy",
-                  "instance": "Sethekk Halls",
-                  "zone": "Terokkar Forest"
-                },
-                "note": "2H polearm — big Agility/Stamina jump over Manual Crowd Pummeler"
-              }
-            ],
-            "ranged": [
-              {
-                "id": 23198,
-                "name": "Idol of Brutality",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Stratholme (Classic)",
-                  "boss": "Magistrate Barthilas"
-                }
-              },
-              {
-                "id": 28064,
-                "name": "Idol of the Wild",
+                "id": 24078,
+                "name": "Heavy Adamantite Ring",
                 "quality": "uncommon",
-                "rank": 2,
-                "source": {
-                  "type": "quest",
-                  "quest": "Colossal Menace",
-                  "zone": "Hellfire Peninsula"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "feral-cat",
-      "name": "Feral (Cat)",
-      "role": "dps",
-      "brackets": [
-        {
-          "id": "lvl19",
-          "levelRange": [
-            10,
-            19
-          ],
-          "slots": {
-            "shoulder": [
-              {
-                "id": 5404,
-                "name": "Serpent's Shoulders",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Wailing Caverns",
-                  "boss": "Lady Anacondra"
-                }
-              }
-            ],
-            "back": [
-              {
-                "id": 6466,
-                "name": "Deviate Scale Cloak",
-                "quality": "uncommon",
-                "rank": 1,
+                "rank": 3,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking; pattern sold by Kalldan Felmoon near Wailing Caverns, requires Deviate Scale farmed in the instance"
-                }
-              }
-            ],
-            "chest": [
-              {
-                "id": 10399,
-                "name": "Blackened Defias Armor",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Deadmines",
-                  "detail": "Defias trash; part of the Blackened Defias set"
-                }
-              }
-            ],
-            "hands": [
-              {
-                "id": 6467,
-                "name": "Deviate Scale Gloves",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "crafted",
-                  "detail": "Leatherworking; pattern sold by Kalldan Felmoon, requires Deviate Scale farmed in Wailing Caverns"
-                }
-              }
-            ],
-            "waist": [
-              {
-                "id": 6468,
-                "name": "Deviate Scale Belt",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "crafted",
-                  "detail": "Leatherworking; requires Deviate Scale farmed in Wailing Caverns"
-                }
-              }
-            ],
-            "legs": [
-              {
-                "id": 10400,
-                "name": "Blackened Defias Leggings",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Deadmines",
-                  "detail": "Defias trash; part of the Blackened Defias set"
-                }
-              }
-            ],
-            "feet": [
-              {
-                "id": 10402,
-                "name": "Blackened Defias Boots",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Deadmines",
-                  "detail": "Defias trash; part of the Blackened Defias set"
-                }
-              }
-            ],
-            "finger": [
-              {
-                "id": 1156,
-                "name": "Lavishly Jeweled Ring",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Deadmines",
-                  "boss": "Gilnid"
+                  "detail": "Jewelcrafting — BoE",
+                  "profession": "Jewelcrafting"
                 },
-                "note": "Unique-Equipped; Intellect roll, but the only ring available this early"
+                "note": "Stamina-only fallback if you haven't run The Black Morass yet"
               },
-              {
-                "id": 12996,
-                "name": "Band of Purification",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "world-drop"
-                },
-                "note": "BoE, may need AH"
-              }
-            ],
-            "mainhand": [
-              {
-                "id": 7230,
-                "name": "Smite's Mighty Hammer",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Deadmines",
-                  "boss": "Mr. Smite"
-                }
-              }
-            ]
-          }
-        },
-        {
-          "id": "lvl29",
-          "levelRange": [
-            20,
-            29
-          ],
-          "slots": {
-            "neck": [
-              {
-                "id": 6695,
-                "name": "Stygian Bone Amulet",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Razorfen Kraul",
-                  "boss": "Groyat the Blind Hunter",
-                  "detail": "rare spawn"
-                }
-              }
-            ],
-            "shoulder": [
-              {
-                "id": 5404,
-                "name": "Serpent's Shoulders",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Wailing Caverns",
-                  "boss": "Lady Anacondra"
-                },
-                "note": "Holds over from the lvl19 bracket if not already picked up"
-              }
-            ],
-            "back": [
-              {
-                "id": 6466,
-                "name": "Deviate Scale Cloak",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "crafted",
-                  "detail": "Leatherworking; pattern sold by Kalldan Felmoon near Wailing Caverns, requires Deviate Scale farmed in the instance"
-                },
-                "note": "Still fine into the low 20s"
-              }
-            ],
-            "chest": [
-              {
-                "id": 10399,
-                "name": "Blackened Defias Armor",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Deadmines",
-                  "detail": "Defias trash; part of the Blackened Defias set"
-                },
-                "note": "Carries over; no better leather chest found yet"
-              }
-            ],
-            "hands": [
-              {
-                "id": 6467,
-                "name": "Deviate Scale Gloves",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "crafted",
-                  "detail": "Leatherworking; pattern sold by Kalldan Felmoon, requires Deviate Scale farmed in Wailing Caverns"
-                }
-              }
-            ],
-            "waist": [
-              {
-                "id": 6468,
-                "name": "Deviate Scale Belt",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "crafted",
-                  "detail": "Leatherworking; requires Deviate Scale farmed in Wailing Caverns"
-                }
-              }
-            ],
-            "legs": [
-              {
-                "id": 10400,
-                "name": "Blackened Defias Leggings",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Deadmines",
-                  "detail": "Defias trash; part of the Blackened Defias set"
-                },
-                "note": "Carries over from the lvl19 bracket"
-              }
-            ],
-            "wrist": [
-              {
-                "id": 18948,
-                "name": "Barbaric Bracers",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "crafted",
-                  "detail": "Leatherworking 155 (BoE, often on AH)"
-                }
-              }
-            ],
-            "feet": [
-              {
-                "id": 1121,
-                "name": "Feet of the Lynx",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "world-drop",
-                  "zone": "Duskwood",
-                  "detail": "Rare drop from Flesh Eater"
-                }
-              }
-            ],
-            "finger": [
-              {
-                "id": 1076,
-                "name": "Defias Renegade Ring",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Stockade",
-                  "detail": "trash"
-                }
-              },
-              {
-                "id": 2039,
-                "name": "Plains Ring",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Razorfen Kraul",
-                  "detail": "trash"
-                }
-              }
-            ],
-            "mainhand": [
-              {
-                "id": 6904,
-                "name": "Bite of Serra'kis",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Blackfathom Deeps",
-                  "boss": "Old Serra'kis"
-                },
-                "note": "Fast dagger with a nature poison proc — ideal Cat Form weapon speed"
-              },
-              {
-                "id": 9449,
-                "name": "Manual Crowd Pummeler",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Gnomeregan",
-                  "boss": "Crowd Pummeler 9-60"
-                },
-                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
-              }
-            ]
-          }
-        },
-        {
-          "id": "lvl39",
-          "levelRange": [
-            30,
-            39
-          ],
-          "slots": {
-            "head": [
-              {
-                "id": 9420,
-                "name": "Adventurer's Pith Helmet",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Uldaman",
-                  "detail": "trash"
-                }
-              }
-            ],
-            "neck": [
-              {
-                "id": 7731,
-                "name": "Ghostshard Talisman",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scarlet Monastery",
-                  "boss": "Azshir the Sleepless",
-                  "detail": "Graveyard wing"
-                },
-                "note": "Stamina-focused; the spell-damage proc is wasted but it's the best neck available this early"
-              }
-            ],
-            "shoulder": [
-              {
-                "id": 10774,
-                "name": "Fleshhide Shoulders",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Razorfen Downs",
-                  "boss": "Glutton"
-                }
-              }
-            ],
-            "back": [
-              {
-                "id": 5257,
-                "name": "Dark Hooded Cape",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "world-drop",
-                  "zone": "Arathi Highlands",
-                  "detail": "Dropped by the rare spawn Nimar the Slayer"
-                }
-              }
-            ],
-            "chest": [
-              {
-                "id": 10583,
-                "name": "Quillward Harness",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Razorfen Downs",
-                  "boss": "Death's Head Necromancer"
-                }
-              },
-              {
-                "id": 14601,
-                "name": "Warden's Wraps",
-                "quality": "uncommon",
-                "rank": 2,
-                "source": {
-                  "type": "world-drop",
-                  "zone": "Desolace"
-                }
-              }
-            ],
-            "wrist": [
-              {
-                "id": 19508,
-                "name": "Branded Leather Bracers",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scarlet Monastery",
-                  "boss": "High Inquisitor Fairbanks",
-                  "detail": "Cathedral wing"
-                }
-              }
-            ],
-            "hands": [
-              {
-                "id": 7690,
-                "name": "Ebon Vise",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scarlet Monastery",
-                  "detail": "trash"
-                },
-                "note": "Small agility/stamina leather glove upgrade"
-              }
-            ],
-            "waist": [
-              {
-                "id": 7387,
-                "name": "Dusky Belt",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "crafted",
-                  "detail": "Leatherworking (Dusky Leather set)"
-                }
-              }
-            ],
-            "legs": [
-              {
-                "id": 1718,
-                "name": "Basilisk Hide Pants",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "world-drop"
-                }
-              }
-            ],
-            "feet": [
-              {
-                "id": 2276,
-                "name": "Swampwalker Boots",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "world-drop"
-                }
-              }
-            ],
-            "finger": [
-              {
-                "id": 7686,
-                "name": "Ironspine's Eye",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scarlet Monastery",
-                  "boss": "Ironspine",
-                  "detail": "Graveyard wing, rare spawn"
-                },
-                "note": "Unique-Equipped"
-              },
-              {
-                "id": 2262,
-                "name": "Mark of Kern",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scarlet Monastery"
-                },
-                "note": "Unique-Equipped"
-              }
-            ],
-            "trinket": [
-              {
-                "id": 9149,
-                "name": "Philosopher's Stone",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "crafted",
-                  "detail": "Alchemy (skill 200), BoP"
-                },
-                "note": "Usable from level 35 — the only trinket available this early"
-              }
-            ],
-            "mainhand": [
-              {
-                "id": 9449,
-                "name": "Manual Crowd Pummeler",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Gnomeregan",
-                  "boss": "Crowd Pummeler 9-60"
-                },
-                "note": "Still one of the best feral weapons available; the haste proc holds up mechanically well into the 50s."
-              },
-              {
-                "id": 10761,
-                "name": "Coldrage Dagger",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Razorfen Downs",
-                  "boss": "Amnennar the Coldbringer"
-                },
-                "note": "Frost slow proc; fast Cat Form alternative"
-              }
-            ]
-          }
-        },
-        {
-          "id": "lvl49",
-          "levelRange": [
-            40,
-            49
-          ],
-          "slots": {
-            "head": [
-              {
-                "id": 8345,
-                "name": "Wolfshead Helm",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "crafted",
-                  "detail": "Leatherworking (Classic pattern, BoE)"
-                },
-                "note": "Grants bonus energy on shifting into Cat Form (powershifting); one of very few Druid-only items and stays relevant for a very long time."
-              }
-            ],
-            "neck": [
-              {
-                "id": 9641,
-                "name": "Lifeblood Amulet",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Zul'Farrak",
-                  "boss": "Theka the Martyr"
-                }
-              }
-            ],
-            "shoulder": [
-              {
-                "id": 17749,
-                "name": "Phytoskin Spaulders",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Maraudon",
-                  "boss": "Razorlash"
-                }
-              }
-            ],
-            "back": [
-              {
-                "id": 11858,
-                "name": "Battlehard Cape",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "A Grim Discovery",
-                  "zone": "Feralas"
-                }
-              }
-            ],
-            "chest": [
-              {
-                "id": 17742,
-                "name": "Fungus Shroud Armor",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Maraudon"
-                },
-                "note": "Leather agility/stamina chest — solid upgrade for the low 40s"
-              }
-            ],
-            "legs": [
-              {
-                "id": 10785,
-                "name": "Atal'ai Leggings",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Sunken Temple",
-                  "detail": "Balcony mini-bosses"
-                },
-                "note": "Random enchant roll — look for Agility or Stamina"
-              },
-              {
-                "id": 9414,
-                "name": "Oilskin Leggings",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Uldaman",
-                  "boss": "Grimlok"
-                }
-              }
-            ],
-            "feet": [
-              {
-                "id": 17728,
-                "name": "Albino Crocscale Boots",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Maraudon",
-                  "boss": "Rotgrip"
-                }
-              },
-              {
-                "id": 12470,
-                "name": "Sandstalker Ankleguards",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Zul'Farrak",
-                  "boss": "Zerillis",
-                  "detail": "rare spawn"
-                }
-              }
-            ],
-            "finger": [
-              {
-                "id": 11118,
-                "name": "Archaedic Stone",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Uldaman",
-                  "boss": "Archaedas"
-                },
-                "note": "Random-enchant ring; look for an Agility ('of the Monkey'/'of the Bear') roll"
-              },
-              {
-                "id": 17713,
-                "name": "Blackstone Ring",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Maraudon",
-                  "boss": "Princess Theradras"
-                }
-              }
-            ],
-            "trinket": [
-              {
-                "id": 9149,
-                "name": "Philosopher's Stone",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "crafted",
-                  "detail": "Alchemy (skill 200), BoP"
-                },
-                "note": "Holds over from the lvl39 bracket"
-              },
-              {
-                "id": 11122,
-                "name": "Carrot on a Stick",
-                "quality": "uncommon",
-                "rank": 2,
-                "source": {
-                  "type": "quest",
-                  "quest": "Gahz'rilla",
-                  "instance": "Zul'Farrak"
-                },
-                "note": "No combat stats; mount-speed utility filler"
-              }
-            ],
-            "mainhand": [
-              {
-                "id": 9449,
-                "name": "Manual Crowd Pummeler",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Gnomeregan",
-                  "boss": "Crowd Pummeler 9-60"
-                }
-              }
-            ]
-          }
-        },
-        {
-          "id": "lvl59",
-          "levelRange": [
-            50,
-            57
-          ],
-          "slots": {
-            "head": [
-              {
-                "id": 8345,
-                "name": "Wolfshead Helm",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "crafted",
-                  "detail": "Leatherworking (Classic pattern, BoE)"
-                }
-              },
-              {
-                "id": 12960,
-                "name": "Tribal War Feathers",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Blackrock Spire",
-                  "boss": "Gyth",
-                  "detail": "Lower Blackrock Spire"
-                },
-                "note": "Random-enchant leather head; base armor/stamina works as a stopgap even though the roll usually favors casters"
-              }
-            ],
-            "neck": [
-              {
-                "id": 18381,
-                "name": "Evil Eye Pendant",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Dire Maul",
-                  "boss": "Immol'thar"
-                }
-              },
-              {
-                "id": 11755,
-                "name": "Verek's Collar",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Blackrock Depths",
-                  "boss": "Verek"
-                }
-              }
-            ],
-            "shoulder": [
-              {
-                "id": 16708,
-                "name": "Shadowcraft Spaulders",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Stratholme",
-                  "boss": "Cannon Master Willey"
-                },
-                "note": "Rogue Shadowcraft set piece — great agility/stamina shoulders for feral too"
-              }
-            ],
-            "back": [
-              {
-                "id": 12552,
-                "name": "Blisterbane Wrap",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Blackrock Depths"
-                }
-              },
-              {
-                "id": 13397,
-                "name": "Stoneskin Gargoyle Cape",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Stratholme",
-                  "boss": "Stonespine"
-                }
-              }
-            ],
-            "chest": [
-              {
-                "id": 13944,
-                "name": "Tombstone Breastplate",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scholomance",
-                  "boss": "Darkmaster Gandling"
-                }
-              }
-            ],
-            "wrist": [
-              {
-                "id": 18700,
-                "name": "Malefic Bracers",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Dire Maul"
-                }
-              }
-            ],
-            "hands": [
-              {
-                "id": 18377,
-                "name": "Quickdraw Gloves",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Dire Maul",
-                  "boss": "Immol'thar"
-                }
-              }
-            ],
-            "waist": [
-              {
-                "id": 18505,
-                "name": "Mugger's Belt",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Dire Maul",
-                  "boss": "Captain Kromcrush"
-                }
-              }
-            ],
-            "legs": [
-              {
-                "id": 16709,
-                "name": "Shadowcraft Pants",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Stratholme",
-                  "boss": "Baron Rivendare"
-                },
-                "note": "Rogue Shadowcraft set piece"
-              }
-            ],
-            "feet": [
-              {
-                "id": 16711,
-                "name": "Shadowcraft Boots",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scholomance",
-                  "boss": "Rattlegore"
-                },
-                "note": "Rogue Shadowcraft set piece"
-              }
-            ],
-            "finger": [
-              {
-                "id": 13373,
-                "name": "Band of Flesh",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Stratholme",
-                  "boss": "Ramstein the Gorger"
-                }
-              },
-              {
-                "id": 18302,
-                "name": "Band of Vigor",
-                "quality": "uncommon",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Dire Maul",
-                  "boss": "Lethtendris",
-                  "detail": "East wing"
-                }
-              }
-            ],
-            "trinket": [
-              {
-                "id": 11815,
-                "name": "Hand of Justice",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "world-drop"
-                },
-                "note": "Expensive BoE — extra-attack proc is excellent DPS for cat"
-              },
-              {
-                "id": 19991,
-                "name": "Devilsaur Eye",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "world-drop",
-                  "zone": "Un'Goro Crater",
-                  "detail": "Devilsaur loot"
-                },
-                "note": "Expensive BoE — on-use AP and hit burst"
-              }
-            ],
-            "mainhand": [
-              {
-                "id": 9449,
-                "name": "Manual Crowd Pummeler",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Gnomeregan",
-                  "boss": "Crowd Pummeler 9-60"
-                },
-                "note": "Falling behind on stats but the haste proc still makes it worth using until a Ramparts-tier weapon drops"
-              }
-            ]
-          }
-        },
-        {
-          "id": "lvl60",
-          "levelRange": [
-            58,
-            64
-          ],
-          "slots": {
-            "head": [
-              {
-                "id": 8345,
-                "name": "Wolfshead Helm",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "crafted",
-                  "detail": "Leatherworking (Classic pattern, BoE)"
-                }
-              }
-            ],
-            "neck": [
-              {
-                "id": 24073,
-                "name": "Garrote-String Necklace",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Hellfire Ramparts",
-                  "boss": "Omor the Unscarred"
-                }
-              }
-            ],
-            "shoulder": [
-              {
-                "id": 24398,
-                "name": "Mantle of the Dusk-Dweller",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Blood Furnace",
-                  "boss": "Keli'dan the Breaker"
-                }
-              }
-            ],
-            "back": [
-              {
-                "id": 25712,
-                "name": "Perfectly Balanced Cape",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "Heart of Rage",
-                  "instance": "The Blood Furnace",
-                  "zone": "Hellfire Peninsula"
-                }
-              }
-            ],
-            "chest": [
-              {
-                "id": 24396,
-                "name": "Vest of Vengeance",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "zone": "Hellfire Peninsula",
-                  "detail": "Hellfire Citadel dungeon drop"
-                }
-              },
-              {
-                "id": 29938,
-                "name": "Battle Seeker Chestguard",
-                "quality": "uncommon",
-                "rank": 2,
-                "source": {
-                  "type": "quest",
-                  "quest": "Waste Not, Want Not (Alliance) / I Work... For the Horde! (Horde)",
-                  "zone": "Hellfire Peninsula"
-                }
-              }
-            ],
-            "wrist": [
-              {
-                "id": 24023,
-                "name": "Bracers of Finesse",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Hellfire Ramparts",
-                  "boss": "Watchkeeper Gargolmar"
-                }
-              }
-            ],
-            "hands": [
-              {
-                "id": 24365,
-                "name": "Deft Handguards",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Slave Pens",
-                  "boss": "Quagmirran"
-                }
-              }
-            ],
-            "waist": [
-              {
-                "id": 24063,
-                "name": "Shifting Sash of Midnight",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Hellfire Ramparts",
-                  "detail": "Reinforced Fel Iron Chest lockbox"
-                }
-              }
-            ],
-            "legs": [
-              {
-                "id": 29939,
-                "name": "Flayer-Hide Leggings",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "Disrupt Their Reinforcements",
-                  "zone": "Hellfire Peninsula"
-                }
-              }
-            ],
-            "feet": [
-              {
-                "id": 25717,
-                "name": "Sure-Step Boots",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "Weaken the Ramparts",
-                  "instance": "Hellfire Ramparts",
-                  "zone": "Hellfire Peninsula"
-                }
-              }
-            ],
-            "finger": [
-              {
-                "id": 19432,
-                "name": "Circle of Applied Force",
-                "quality": "epic",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Lower Blackrock Spire",
-                  "boss": "Pyroguard Emberseer"
-                },
-                "note": "Unique-Equipped"
-              },
-              {
-                "id": 27733,
-                "name": "Warden's Ring of Precision",
-                "quality": "uncommon",
-                "rank": 2,
-                "source": {
-                  "type": "quest",
-                  "quest": "Drain Schematics",
-                  "zone": "Zangarmarsh"
-                }
-              }
-            ],
-            "trinket": [
-              {
-                "id": 11815,
-                "name": "Hand of Justice",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "world-drop"
-                },
-                "note": "Expensive BoE"
-              },
-              {
-                "id": 28041,
-                "name": "Bladefist's Breadth",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "quest",
-                  "quest": "Overlord (Alliance) / Cruel's Intentions (Horde)",
-                  "zone": "Hellfire Peninsula"
-                },
-                "note": "On-use +200 Attack Power"
-              }
-            ],
-            "mainhand": [
-              {
-                "id": 9449,
-                "name": "Manual Crowd Pummeler",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Gnomeregan",
-                  "boss": "Crowd Pummeler 9-60"
-                },
-                "note": "Carries you into Hellfire Peninsula until a proper Outland weapon drops"
-              }
-            ],
-            "ranged": [
-              {
-                "id": 23198,
-                "name": "Idol of Brutality",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Stratholme (Classic)",
-                  "boss": "Magistrate Barthilas"
-                },
-                "note": "Best with high rage"
-              },
-              {
-                "id": 28064,
-                "name": "Idol of the Wild",
-                "quality": "uncommon",
-                "rank": 2,
-                "source": {
-                  "type": "quest",
-                  "quest": "Colossal Menace",
-                  "zone": "Hellfire Peninsula"
-                }
-              }
-            ]
-          }
-        },
-        {
-          "id": "lvl65",
-          "levelRange": [
-            65,
-            69
-          ],
-          "slots": {
-            "head": [
-              {
-                "id": 29332,
-                "name": "Terokk's Mask",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "Terokk's Legacy",
-                  "instance": "Sethekk Halls",
-                  "zone": "Terokkar Forest"
-                }
-              },
-              {
-                "id": 28182,
-                "name": "Helm of the Claw",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "quest",
-                  "quest": "The Warlord's Hideout",
-                  "instance": "The Steamvault",
-                  "zone": "Zangarmarsh"
-                }
-              }
-            ],
-            "neck": [
-              {
-                "id": 29335,
-                "name": "Talon Lord's Collar",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "Brother Against Brother",
-                  "instance": "Sethekk Halls",
-                  "zone": "Terokkar Forest"
-                }
-              }
-            ],
-            "shoulder": [
-              {
-                "id": 27434,
-                "name": "Mantle of Perenolde",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Old Hillsbrad Foothills",
-                  "boss": "Epoch Hunter"
-                }
-              }
-            ],
-            "back": [
-              {
-                "id": 27519,
-                "name": "Cloak of Malice",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Shattered Halls",
-                  "boss": "Grand Warlock Nethekurse"
-                }
-              }
-            ],
-            "chest": [
-              {
-                "id": 29340,
-                "name": "Auchenai Monk's Tunic",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "Everything Will Be Alright",
-                  "instance": "Auchenai Crypts",
-                  "zone": "Terokkar Forest"
-                }
-              }
-            ],
-            "wrist": [
-              {
-                "id": 24023,
-                "name": "Bracers of Finesse",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Hellfire Ramparts",
-                  "boss": "Watchkeeper Gargolmar"
-                },
-                "note": "Carries over from the 58-64 bracket"
-              }
-            ],
-            "hands": [
-              {
-                "id": 25669,
-                "name": "Thick Draenic Gloves",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "zone": "Nagrand",
-                  "detail": "Thick Draenic Armor quest set"
-                }
-              }
-            ],
-            "legs": [
-              {
-                "id": 31544,
-                "name": "Clefthoof Hide Leggings",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "Showdown",
-                  "zone": "Blade's Edge Mountains"
-                }
-              }
-            ],
-            "feet": [
-              {
-                "id": 29318,
-                "name": "Southshore Sneakers",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "Return to Andormu",
-                  "instance": "Old Hillsbrad Foothills",
-                  "zone": "Caverns of Time, Tanaris"
-                }
-              }
-            ],
-            "waist": [
-              {
-                "id": 31464,
-                "name": "Naaru Belt of Precision",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "How to Break Into the Arcatraz",
-                  "instance": "The Mechanar / The Botanica",
-                  "zone": "Netherstorm"
-                }
-              }
-            ],
-            "finger": [
               {
                 "id": 29321,
                 "name": "Time-bending Gem",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 4,
                 "source": {
                   "type": "quest",
                   "quest": "Hero of the Brood",
                   "instance": "The Black Morass",
                   "zone": "Caverns of Time, Tanaris"
                 }
-              },
-              {
-                "id": 27925,
-                "name": "Ravenclaw Band",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Sethekk Halls",
-                  "boss": "Talon King Ikiss"
-                }
               }
             ],
             "trinket": [
               {
-                "id": 28034,
-                "name": "Hourglass of the Unraveller",
+                "id": 27891,
+                "name": "Adamantine Figurine",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
-                  "instance": "The Black Morass",
-                  "boss": "Temporus"
-                }
+                  "instance": "Shadow Labyrinth",
+                  "boss": "Blackheart the Inciter"
+                },
+                "note": "Use: +1280 Armor for 20s"
               },
               {
-                "id": 28041,
-                "name": "Bladefist's Breadth",
+                "id": 23836,
+                "name": "Goblin Rocket Launcher",
                 "quality": "rare",
                 "rank": 2,
                 "source": {
-                  "type": "quest",
-                  "quest": "Overlord (Alliance) / Cruel's Intentions (Horde)",
-                  "zone": "Hellfire Peninsula"
+                  "type": "crafted",
+                  "detail": "Engineering",
+                  "profession": "Engineering"
+                }
+              },
+              {
+                "id": 28042,
+                "name": "Regal Protectorate",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "detail": "Coilfang Reservoir-tier drop"
                 },
-                "note": "Carries over from the low 60s"
+                "note": "Bear-tank only — defense rating plus an on-use health cooldown"
+              },
+              {
+                "id": 4130,
+                "name": "Smotts' Compass",
+                "quality": "uncommon",
+                "rank": 4,
+                "source": {
+                  "type": "quest",
+                  "detail": "Required level 50; Equip: +12 Dodge Rating"
+                }
               }
             ],
             "mainhand": [
@@ -2870,29 +4725,27 @@ WOWDATA.register({
                   "zone": "Terokkar Forest"
                 },
                 "note": "2H polearm — big Agility/Stamina jump over Manual Crowd Pummeler"
-              }
-            ],
-            "ranged": [
+              },
               {
-                "id": 23198,
-                "name": "Idol of Brutality",
+                "id": 24461,
+                "name": "Hatebringer",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 2,
                 "source": {
                   "type": "drop",
-                  "instance": "Stratholme (Classic)",
-                  "boss": "Magistrate Barthilas"
+                  "instance": "The Underbog",
+                  "boss": "Ghaz'an"
                 }
               },
               {
-                "id": 28064,
-                "name": "Idol of the Wild",
-                "quality": "uncommon",
-                "rank": 2,
+                "id": 24044,
+                "name": "Hellreaver",
+                "quality": "rare",
+                "rank": 3,
                 "source": {
-                  "type": "quest",
-                  "quest": "Colossal Menace",
-                  "zone": "Hellfire Peninsula"
+                  "type": "drop",
+                  "instance": "Hellfire Ramparts",
+                  "boss": "Vazruden"
                 }
               }
             ]
@@ -2901,17 +4754,42 @@ WOWDATA.register({
       ]
     },
     {
-      "id": "balance",
-      "name": "Balance",
-      "role": "dps",
+      "id": "restoration",
+      "name": "Restoration",
+      "role": "healer",
       "brackets": [
         {
-          "id": "lvl19",
+          "id": "lvl20",
           "levelRange": [
             10,
-            19
+            20
           ],
           "slots": {
+            "neck": [
+              {
+                "id": 21934,
+                "name": "Ornate Tigerseye Necklace",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (BoE)",
+                  "profession": "Jewelcrafting"
+                },
+                "note": "+2 Spirit; the only real neck option this low"
+              },
+              {
+                "id": 21933,
+                "name": "Thick Bronze Necklace",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (skill 50), requires level 17",
+                  "profession": "Jewelcrafting"
+                }
+              }
+            ],
             "shoulder": [
               {
                 "id": 10657,
@@ -2928,16 +4806,15 @@ WOWDATA.register({
             ],
             "chest": [
               {
-                "id": 14150,
-                "name": "Robe of Evocation",
+                "id": 2292,
+                "name": "Necrology Robes",
                 "quality": "rare",
                 "rank": 1,
-                "faction": "horde",
                 "source": {
                   "type": "drop",
-                  "detail": "Early-level drop (exact source varies)"
-                },
-                "note": "Cloth — +Int and spell crit at level 13"
+                  "instance": "Shadowfang Keep",
+                  "detail": "trash"
+                }
               },
               {
                 "id": 5202,
@@ -2951,6 +4828,18 @@ WOWDATA.register({
                   "boss": "Edwin VanCleef"
                 },
                 "note": "Cloth — Stamina/Spirit alternative for Alliance"
+              },
+              {
+                "id": 14150,
+                "name": "Robe of Evocation",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "horde",
+                "source": {
+                  "type": "drop",
+                  "detail": "Early-level drop (exact source varies)"
+                },
+                "note": "Cloth — +Int and spell crit at level 13"
               }
             ],
             "wrist": [
@@ -2980,26 +4869,56 @@ WOWDATA.register({
                 "note": "Cloth; requires level 17"
               }
             ],
-            "back": [
+            "waist": [
               {
-                "id": 6632,
-                "name": "Feyscale Cloak",
+                "id": 6319,
+                "name": "Girdle of the Blindwatcher",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
-                  "instance": "Wailing Caverns",
-                  "boss": "Deviate Faerie Dragon",
-                  "detail": "Rare spawn"
+                  "instance": "Shadowfang Keep",
+                  "boss": "Odo the Blindwatcher"
+                }
+              },
+              {
+                "id": 2911,
+                "name": "Keller's Girdle",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE"
+              },
+              {
+                "id": 6468,
+                "name": "Deviate Scale Belt",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking; requires Deviate Scale farmed in Wailing Caverns",
+                  "profession": "Leatherworking"
                 }
               }
             ],
             "legs": [
               {
+                "id": 12987,
+                "name": "Darkweave Breeches",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE"
+              },
+              {
                 "id": 5199,
                 "name": "Smelting Pants",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 2,
                 "source": {
                   "type": "drop",
                   "instance": "The Deadmines",
@@ -3008,28 +4927,66 @@ WOWDATA.register({
                 "note": "Leather; Stamina/Spirit — no cloth legs exist this low"
               }
             ],
+            "feet": [
+              {
+                "id": 14374,
+                "name": "Sanguine Sandals",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE"
+              }
+            ],
             "finger": [
+              {
+                "id": 30804,
+                "name": "Bronze Band of Force",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (BoE)",
+                  "profession": "Jewelcrafting"
+                },
+                "note": "Unique-Equipped; with Band of Purification gives Horde 2/2"
+              },
               {
                 "id": 1156,
                 "name": "Lavishly Jeweled Ring",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 2,
                 "source": {
                   "type": "drop",
                   "instance": "The Deadmines",
                   "boss": "Gilnid"
                 },
-                "note": "Unique-Equipped"
+                "note": "Unique-Equipped; Intellect roll, but the only ring available this early"
               },
               {
                 "id": 12996,
                 "name": "Band of Purification",
                 "quality": "rare",
-                "rank": 2,
+                "rank": 3,
                 "source": {
                   "type": "world-drop"
                 },
                 "note": "BoE, may need AH"
+              }
+            ],
+            "trinket": [
+              {
+                "id": 4381,
+                "name": "Minor Recombobulator",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
+                },
+                "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
               }
             ],
             "mainhand": [
@@ -3044,61 +5001,93 @@ WOWDATA.register({
                   "instance": "Wailing Caverns"
                 },
                 "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+              },
+              {
+                "id": 7230,
+                "name": "Smite's Mighty Hammer",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Mr. Smite"
+                }
+              },
+              {
+                "id": 2567,
+                "name": "Evocator's Blade",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE, Unique-Equipped; 1H dagger"
               }
             ]
           }
         },
         {
-          "id": "lvl29",
+          "id": "lvl25",
           "levelRange": [
-            20,
-            29
+            21,
+            25
           ],
           "slots": {
             "head": [
               {
-                "id": 9492,
-                "name": "Electromagnetic Gigaflux Reactivator",
-                "quality": "rare",
+                "id": 4385,
+                "name": "Green Tinted Goggles",
+                "quality": "uncommon",
                 "rank": 1,
                 "source": {
-                  "type": "drop",
-                  "instance": "Gnomeregan",
-                  "boss": "Mekgineer Thermaplugg"
-                },
-                "note": "Cloth caster head with a fun on-use nature nuke"
-              },
-              {
-                "id": 7050,
-                "name": "Silk Headband",
-                "quality": "common",
-                "rank": 2,
-                "source": {
                   "type": "crafted",
-                  "detail": "Tailoring — cheap AH filler"
+                  "detail": "Engineering (skill 150) — cheap cloth BoP head piece, no character level requirement; classic twink filler",
+                  "profession": "Engineering"
                 }
               }
             ],
             "neck": [
               {
-                "id": 6695,
-                "name": "Stygian Bone Amulet",
-                "quality": "rare",
+                "id": 21934,
+                "name": "Ornate Tigerseye Necklace",
+                "quality": "uncommon",
                 "rank": 1,
                 "source": {
-                  "type": "drop",
-                  "instance": "Razorfen Kraul",
-                  "boss": "Groyat the Blind Hunter",
-                  "detail": "rare spawn"
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (BoE)",
+                  "profession": "Jewelcrafting"
+                },
+                "note": "+2 Spirit; the only real neck option this low"
+              },
+              {
+                "id": 21933,
+                "name": "Thick Bronze Necklace",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (skill 50), requires level 17",
+                  "profession": "Jewelcrafting"
                 }
               }
             ],
             "shoulder": [
               {
+                "id": 6685,
+                "name": "Death Speaker Mantle",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Death Speaker Jargba"
+                }
+              },
+              {
                 "id": 3748,
                 "name": "Feline Mantle",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 2,
                 "source": {
                   "type": "drop",
                   "instance": "Shadowfang Keep",
@@ -3107,14 +5096,50 @@ WOWDATA.register({
                 "note": "Cloth — Intellect/Spirit"
               },
               {
-                "id": 6685,
-                "name": "Death Speaker Mantle",
+                "id": 10657,
+                "name": "Talbar Mantle",
+                "quality": "uncommon",
+                "rank": 3,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Glowing Shard chain",
+                  "instance": "Wailing Caverns"
+                }
+              }
+            ],
+            "chest": [
+              {
+                "id": 6324,
+                "name": "Robes of Arugal",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Archmage Arugal"
+                }
+              },
+              {
+                "id": 2292,
+                "name": "Necrology Robes",
                 "quality": "rare",
                 "rank": 2,
                 "source": {
                   "type": "drop",
-                  "instance": "Razorfen Kraul",
-                  "boss": "Death Speaker Jargba"
+                  "instance": "Shadowfang Keep",
+                  "detail": "trash"
+                }
+              },
+              {
+                "id": 4324,
+                "name": "Azure Silk Vest",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE), requires level 25 — cheap; minor Frost damage proc",
+                  "profession": "Tailoring"
                 }
               }
             ],
@@ -3128,33 +5153,42 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Shadowfang Keep",
                   "detail": "trash (Son of Arugal); requires level 17"
-                },
-                "note": "Carries over — few dedicated Intellect wrist options exist before the 40s"
-              }
-            ],
-            "back": [
-              {
-                "id": 6901,
-                "name": "Glowing Thresher Cape",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Blackfathom Deeps",
-                  "boss": "Old Serra'kis"
                 }
               }
             ],
-            "chest": [
+            "hands": [
               {
-                "id": 6682,
-                "name": "Death Speaker Robes",
+                "id": 5195,
+                "name": "Gold-flecked Gloves",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
-                  "instance": "Razorfen Kraul",
-                  "boss": "Death Speaker Jargba"
+                  "instance": "The Deadmines",
+                  "boss": "Sneed"
+                },
+                "note": "Cloth; requires level 17"
+              },
+              {
+                "id": 7049,
+                "name": "Truefaith Gloves",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 4319,
+                "name": "Azure Silk Gloves",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 }
               }
             ],
@@ -3169,6 +5203,27 @@ WOWDATA.register({
                   "instance": "Shadowfang Keep",
                   "boss": "Archmage Arugal"
                 }
+              },
+              {
+                "id": 6319,
+                "name": "Girdle of the Blindwatcher",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Odo the Blindwatcher"
+                }
+              },
+              {
+                "id": 2911,
+                "name": "Keller's Girdle",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE"
               }
             ],
             "legs": [
@@ -3194,52 +5249,91 @@ WOWDATA.register({
                   "quest": "Morbent Fel",
                   "zone": "Duskwood"
                 }
+              },
+              {
+                "id": 6282,
+                "name": "Sacred Burial Trousers",
+                "quality": "uncommon",
+                "rank": 3,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "quest": "Battle of Hillsbrad chain",
+                  "zone": "Tarren Mill"
+                }
               }
             ],
             "feet": [
               {
-                "id": 6406,
-                "name": "Nightsky Boots",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "world-drop"
-                }
-              }
-            ],
-            "hands": [
-              {
-                "id": 4319,
-                "name": "Azure Silk Gloves",
+                "id": 4321,
+                "name": "Spider Silk Slippers",
                 "quality": "uncommon",
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
-                }
-              }
-            ],
-            "finger": [
-              {
-                "id": 2039,
-                "name": "Plains Ring",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Razorfen Kraul",
-                  "detail": "trash"
+                  "detail": "Tailoring (BoE), requires level 23",
+                  "profession": "Tailoring"
                 }
               },
               {
-                "id": 12996,
-                "name": "Band of Purification",
-                "quality": "rare",
+                "id": 14374,
+                "name": "Sanguine Sandals",
+                "quality": "uncommon",
                 "rank": 2,
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "BoE, may need AH; requires level 18"
+                "note": "BoE"
+              }
+            ],
+            "finger": [
+              {
+                "id": 30804,
+                "name": "Bronze Band of Force",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (BoE)",
+                  "profession": "Jewelcrafting"
+                },
+                "note": "Unique-Equipped; with Band of Purification gives Horde 2/2"
+              },
+              {
+                "id": 1156,
+                "name": "Lavishly Jeweled Ring",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Gilnid"
+                },
+                "note": "Unique-Equipped; Intellect roll, but the only ring available this early"
+              },
+              {
+                "id": 13094,
+                "name": "The Queen's Jewel",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Duskwood",
+                  "detail": "Nightbane Vile Fang (rare spawn)"
+                },
+                "note": "BoE, Unique-Equipped"
+              },
+              {
+                "id": 2933,
+                "name": "Seal of Wrynn",
+                "quality": "rare",
+                "rank": 4,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Unsent Letter",
+                  "zone": "Stormwind City"
+                }
               }
             ],
             "trinket": [
@@ -3250,15 +5344,137 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Engineering 140, BoP"
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
                 },
                 "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
               }
             ],
             "mainhand": [
               {
-                "id": 2816,
-                "name": "Death Speaker Scepter",
+                "id": 6505,
+                "name": "Crescent Staff",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Leaders of the Fang",
+                  "instance": "Wailing Caverns"
+                },
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+              },
+              {
+                "id": 1976,
+                "name": "Slaghammer",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul"
+                }
+              },
+              {
+                "id": 7230,
+                "name": "Smite's Mighty Hammer",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Mr. Smite"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "lvl30",
+          "levelRange": [
+            26,
+            30
+          ],
+          "slots": {
+            "head": [
+              {
+                "id": 7691,
+                "name": "Embalmed Shroud",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Fallen Champion",
+                  "detail": "Graveyard wing"
+                }
+              },
+              {
+                "id": 6688,
+                "name": "Whisperwind Headdress",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Earthcaller Halmgar",
+                  "detail": "rare spawn"
+                }
+              },
+              {
+                "id": 9492,
+                "name": "Electromagnetic Gigaflux Reactivator",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Gnomeregan",
+                  "boss": "Mekgineer Thermaplugg"
+                },
+                "note": "Cloth caster head with a fun on-use nature nuke"
+              }
+            ],
+            "neck": [
+              {
+                "id": 7731,
+                "name": "Ghostshard Talisman",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Azshir the Sleepless",
+                  "detail": "Graveyard wing"
+                },
+                "note": "Stamina-focused; the spell-damage proc is wasted but it's the best neck available this early"
+              },
+              {
+                "id": 6695,
+                "name": "Stygian Bone Amulet",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Groyat the Blind Hunter",
+                  "detail": "rare spawn"
+                }
+              },
+              {
+                "id": 21934,
+                "name": "Ornate Tigerseye Necklace",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (BoE)",
+                  "profession": "Jewelcrafting"
+                },
+                "note": "+2 Spirit; the only real neck option this low"
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 6685,
+                "name": "Death Speaker Mantle",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
@@ -3268,90 +5484,433 @@ WOWDATA.register({
                 }
               },
               {
-                "id": 3414,
-                "name": "Crested Scepter",
+                "id": 3748,
+                "name": "Feline Mantle",
                 "quality": "rare",
                 "rank": 2,
                 "source": {
                   "type": "drop",
-                  "instance": "Blackfathom Deeps",
-                  "detail": "trash"
-                }
-              }
-            ]
-          }
-        },
-        {
-          "id": "lvl39",
-          "levelRange": [
-            30,
-            39
-          ],
-          "slots": {
-            "head": [
-              {
-                "id": 7720,
-                "name": "Whitemane's Chapeau",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scarlet Monastery",
-                  "boss": "High Inquisitor Whitemane",
-                  "detail": "Cathedral wing"
+                  "instance": "Shadowfang Keep",
+                  "boss": "Wolf Master Nandos"
                 },
-                "note": "Cloth"
+                "note": "Cloth — Intellect/Spirit"
               },
               {
-                "id": 7691,
-                "name": "Embalmed Shroud",
+                "id": 7684,
+                "name": "Bloodmage Mantle",
                 "quality": "rare",
-                "rank": 2,
+                "rank": 3,
                 "source": {
                   "type": "drop",
                   "instance": "Scarlet Monastery",
-                  "boss": "Fallen Champion",
+                  "boss": "Bloodmage Thalnos",
                   "detail": "Graveyard wing"
                 }
               }
             ],
-            "neck": [
+            "chest": [
               {
-                "id": 7722,
-                "name": "Triune Amulet",
+                "id": 6324,
+                "name": "Robes of Arugal",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
-                  "instance": "Scarlet Monastery",
-                  "boss": "High Inquisitor Whitemane",
-                  "detail": "Cathedral wing"
+                  "instance": "Shadowfang Keep",
+                  "boss": "Archmage Arugal"
                 }
               },
               {
-                "id": 7731,
-                "name": "Ghostshard Talisman",
+                "id": 7728,
+                "name": "Beguiler Robes",
                 "quality": "rare",
                 "rank": 2,
+                "source": {
+                  "type": "world-drop",
+                  "detail": "BoE, Scarlet Monastery trash"
+                }
+              },
+              {
+                "id": 2292,
+                "name": "Necrology Robes",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "detail": "trash"
+                }
+              }
+            ],
+            "wrist": [
+              {
+                "id": 13106,
+                "name": "Glowing Magical Bracelets",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE; usable from level 26, still the best wrist option through this bracket"
+              },
+              {
+                "id": 1974,
+                "name": "Mindthrust Bracers",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "detail": "trash (Son of Arugal); requires level 17"
+                }
+              },
+              {
+                "id": 18948,
+                "name": "Barbaric Bracers",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking 155 (BoE, often on AH)",
+                  "profession": "Leatherworking"
+                }
+              }
+            ],
+            "hands": [
+              {
+                "id": 5195,
+                "name": "Gold-flecked Gloves",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Sneed"
+                },
+                "note": "Cloth; requires level 17"
+              },
+              {
+                "id": 7049,
+                "name": "Truefaith Gloves",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 4319,
+                "name": "Azure Silk Gloves",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                }
+              }
+            ],
+            "waist": [
+              {
+                "id": 6392,
+                "name": "Belt of Arugal",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Archmage Arugal"
+                }
+              },
+              {
+                "id": 6319,
+                "name": "Girdle of the Blindwatcher",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Odo the Blindwatcher"
+                }
+              },
+              {
+                "id": 2911,
+                "name": "Keller's Girdle",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE"
+              }
+            ],
+            "legs": [
+              {
+                "id": 7709,
+                "name": "Blighted Leggings",
+                "quality": "uncommon",
+                "rank": 1,
                 "source": {
                   "type": "drop",
                   "instance": "Scarlet Monastery",
                   "boss": "Azshir the Sleepless",
                   "detail": "Graveyard wing"
                 }
+              },
+              {
+                "id": 6903,
+                "name": "Gaze Dreamer Pants",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackfathom Deeps",
+                  "boss": "Twilight Lord Kelris"
+                }
+              },
+              {
+                "id": 2954,
+                "name": "Night Watch Pantaloons",
+                "quality": "uncommon",
+                "rank": 3,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "Morbent Fel",
+                  "zone": "Duskwood"
+                }
               }
             ],
-            "shoulder": [
+            "feet": [
               {
-                "id": 7684,
-                "name": "Bloodmage Mantle",
+                "id": 4321,
+                "name": "Spider Silk Slippers",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE), requires level 23",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 4325,
+                "name": "Boots of the Enchanter",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 6406,
+                "name": "Nightsky Boots",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
+                }
+              }
+            ],
+            "finger": [
+              {
+                "id": 30804,
+                "name": "Bronze Band of Force",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (BoE)",
+                  "profession": "Jewelcrafting"
+                },
+                "note": "Unique-Equipped; with Band of Purification gives Horde 2/2"
+              },
+              {
+                "id": 1156,
+                "name": "Lavishly Jeweled Ring",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Gilnid"
+                },
+                "note": "Unique-Equipped; Intellect roll, but the only ring available this early"
+              },
+              {
+                "id": 13094,
+                "name": "The Queen's Jewel",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Duskwood",
+                  "detail": "Nightbane Vile Fang (rare spawn)"
+                },
+                "note": "BoE, Unique-Equipped"
+              },
+              {
+                "id": 2933,
+                "name": "Seal of Wrynn",
+                "quality": "rare",
+                "rank": 4,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Unsent Letter",
+                  "zone": "Stormwind City"
+                }
+              }
+            ],
+            "trinket": [
+              {
+                "id": 4381,
+                "name": "Minor Recombobulator",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
+                },
+                "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
+              }
+            ],
+            "mainhand": [
+              {
+                "id": 9449,
+                "name": "Manual Crowd Pummeler",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Gnomeregan",
+                  "boss": "Crowd Pummeler 9-60"
+                },
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+              },
+              {
+                "id": 6505,
+                "name": "Crescent Staff",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Leaders of the Fang",
+                  "instance": "Wailing Caverns"
+                },
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+              },
+              {
+                "id": 1976,
+                "name": "Slaghammer",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "lvl35",
+          "levelRange": [
+            31,
+            35
+          ],
+          "slots": {
+            "head": [
+              {
+                "id": 7691,
+                "name": "Embalmed Shroud",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
                   "instance": "Scarlet Monastery",
-                  "boss": "Bloodmage Thalnos",
+                  "boss": "Fallen Champion",
                   "detail": "Graveyard wing"
+                }
+              },
+              {
+                "id": 6688,
+                "name": "Whisperwind Headdress",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Earthcaller Halmgar",
+                  "detail": "rare spawn"
+                }
+              },
+              {
+                "id": 9492,
+                "name": "Electromagnetic Gigaflux Reactivator",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Gnomeregan",
+                  "boss": "Mekgineer Thermaplugg"
+                },
+                "note": "Cloth caster head with a fun on-use nature nuke"
+              }
+            ],
+            "neck": [
+              {
+                "id": 7731,
+                "name": "Ghostshard Talisman",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Azshir the Sleepless",
+                  "detail": "Graveyard wing"
+                },
+                "note": "Stamina-focused; the spell-damage proc is wasted but it's the best neck available this early"
+              },
+              {
+                "id": 17773,
+                "name": "Prodigious Shadowshard Pendant",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Shadowshard Fragments",
+                  "zone": "Desolace / Maraudon"
+                }
+              },
+              {
+                "id": 6695,
+                "name": "Stygian Bone Amulet",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Groyat the Blind Hunter",
+                  "detail": "rare spawn"
+                }
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 6685,
+                "name": "Death Speaker Mantle",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Death Speaker Jargba"
                 }
               },
               {
@@ -3365,6 +5924,18 @@ WOWDATA.register({
                   "boss": "Arcanist Doan",
                   "detail": "Library wing"
                 }
+              },
+              {
+                "id": 3748,
+                "name": "Feline Mantle",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Wolf Master Nandos"
+                },
+                "note": "Cloth — Intellect/Spirit"
               }
             ],
             "chest": [
@@ -3381,26 +5952,130 @@ WOWDATA.register({
                 }
               },
               {
-                "id": 10762,
-                "name": "Robes of the Lich",
+                "id": 6324,
+                "name": "Robes of Arugal",
                 "quality": "rare",
                 "rank": 2,
                 "source": {
                   "type": "drop",
-                  "instance": "Razorfen Downs",
-                  "boss": "Amnennar the Coldbringer"
+                  "instance": "Shadowfang Keep",
+                  "boss": "Archmage Arugal"
+                }
+              },
+              {
+                "id": 7728,
+                "name": "Beguiler Robes",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop",
+                  "detail": "BoE, Scarlet Monastery trash"
                 }
               }
             ],
-            "back": [
+            "wrist": [
               {
-                "id": 7053,
-                "name": "Azure Silk Cloak",
+                "id": 13106,
+                "name": "Glowing Magical Bracelets",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE; usable from level 26, still the best wrist option through this bracket"
+              },
+              {
+                "id": 1974,
+                "name": "Mindthrust Bracers",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "detail": "trash (Son of Arugal); requires level 17"
+                }
+              },
+              {
+                "id": 18948,
+                "name": "Barbaric Bracers",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking 155 (BoE, often on AH)",
+                  "profession": "Leatherworking"
+                }
+              }
+            ],
+            "hands": [
+              {
+                "id": 5195,
+                "name": "Gold-flecked Gloves",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Sneed"
+                },
+                "note": "Cloth; requires level 17"
+              },
+              {
+                "id": 7049,
+                "name": "Truefaith Gloves",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 4319,
+                "name": "Azure Silk Gloves",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                }
+              }
+            ],
+            "waist": [
+              {
+                "id": 4329,
+                "name": "Star Belt",
                 "quality": "uncommon",
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "mildly AH-reliant"
+              },
+              {
+                "id": 6392,
+                "name": "Belt of Arugal",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Archmage Arugal"
+                }
+              },
+              {
+                "id": 6319,
+                "name": "Girdle of the Blindwatcher",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Odo the Blindwatcher"
                 }
               }
             ],
@@ -3418,26 +6093,386 @@ WOWDATA.register({
                 }
               },
               {
-                "id": 9407,
-                "name": "Stoneweaver Leggings",
+                "id": 6903,
+                "name": "Gaze Dreamer Pants",
                 "quality": "rare",
                 "rank": 2,
                 "source": {
                   "type": "drop",
-                  "instance": "Uldaman",
-                  "boss": "Ironaya"
+                  "instance": "Blackfathom Deeps",
+                  "boss": "Twilight Lord Kelris"
+                }
+              },
+              {
+                "id": 2954,
+                "name": "Night Watch Pantaloons",
+                "quality": "uncommon",
+                "rank": 3,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "Morbent Fel",
+                  "zone": "Duskwood"
                 }
               }
             ],
             "feet": [
               {
-                "id": 4325,
-                "name": "Boots of the Enchanter",
+                "id": 4321,
+                "name": "Spider Silk Slippers",
                 "quality": "uncommon",
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE), requires level 23",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 4325,
+                "name": "Boots of the Enchanter",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 6406,
+                "name": "Nightsky Boots",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
+                }
+              }
+            ],
+            "finger": [
+              {
+                "id": 30804,
+                "name": "Bronze Band of Force",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (BoE)",
+                  "profession": "Jewelcrafting"
+                },
+                "note": "Unique-Equipped; with Band of Purification gives Horde 2/2"
+              },
+              {
+                "id": 1156,
+                "name": "Lavishly Jeweled Ring",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Gilnid"
+                },
+                "note": "Unique-Equipped; Intellect roll, but the only ring available this early"
+              },
+              {
+                "id": 13094,
+                "name": "The Queen's Jewel",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Duskwood",
+                  "detail": "Nightbane Vile Fang (rare spawn)"
+                },
+                "note": "BoE, Unique-Equipped"
+              },
+              {
+                "id": 2933,
+                "name": "Seal of Wrynn",
+                "quality": "rare",
+                "rank": 4,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Unsent Letter",
+                  "zone": "Stormwind City"
+                }
+              }
+            ],
+            "trinket": [
+              {
+                "id": 4381,
+                "name": "Minor Recombobulator",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
+                },
+                "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
+              }
+            ],
+            "mainhand": [
+              {
+                "id": 873,
+                "name": "Staff of Jordan",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "Often pricey on the AH"
+              },
+              {
+                "id": 9449,
+                "name": "Manual Crowd Pummeler",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Gnomeregan",
+                  "boss": "Crowd Pummeler 9-60"
+                },
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+              },
+              {
+                "id": 7713,
+                "name": "Illusionary Rod",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Arcanist Doan",
+                  "detail": "Library wing"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "lvl40",
+          "levelRange": [
+            36,
+            40
+          ],
+          "slots": {
+            "head": [
+              {
+                "id": 8345,
+                "name": "Wolfshead Helm",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Classic pattern, BoE)",
+                  "profession": "Leatherworking"
+                },
+                "note": "Grants bonus energy/rage on shifting into Cat/Bear form; one of very few Druid-only items and stays relevant for a very long time."
+              },
+              {
+                "id": 7691,
+                "name": "Embalmed Shroud",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Fallen Champion",
+                  "detail": "Graveyard wing"
+                }
+              },
+              {
+                "id": 6688,
+                "name": "Whisperwind Headdress",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Earthcaller Halmgar",
+                  "detail": "rare spawn"
+                }
+              }
+            ],
+            "neck": [
+              {
+                "id": 20037,
+                "name": "Arcane Crystal Pendant",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Destroy Morphaz",
+                  "instance": "Temple of Atal'Hakkar (Sunken Temple)",
+                  "detail": "Mage-only chain starting with Magecraft from Archmage Xylem in Azshara, ~level 52; choice of Fire Ruby/Glacial Spike/Arcane Crystal Pendant — take Arcane Crystal Pendant for Arcane"
+                }
+              },
+              {
+                "id": 7722,
+                "name": "Triune Amulet",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "High Inquisitor Whitemane",
+                  "detail": "Cathedral wing"
+                }
+              },
+              {
+                "id": 10769,
+                "name": "Glowing Eye of Mordresh",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Downs",
+                  "boss": "Mordresh Fire Eye"
+                }
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 6685,
+                "name": "Death Speaker Mantle",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Death Speaker Jargba"
+                }
+              },
+              {
+                "id": 7712,
+                "name": "Mantle of Doan",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Arcanist Doan",
+                  "detail": "Library wing"
+                }
+              },
+              {
+                "id": 3748,
+                "name": "Feline Mantle",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Wolf Master Nandos"
+                },
+                "note": "Cloth — Intellect/Spirit"
+              }
+            ],
+            "chest": [
+              {
+                "id": 10021,
+                "name": "Dreamweave Vest",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring 250 (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 7711,
+                "name": "Robe of Doan",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Arcanist Doan",
+                  "detail": "Library wing"
+                }
+              },
+              {
+                "id": 6324,
+                "name": "Robes of Arugal",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Archmage Arugal"
+                }
+              }
+            ],
+            "wrist": [
+              {
+                "id": 13106,
+                "name": "Glowing Magical Bracelets",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE; usable from level 26, still the best wrist option through this bracket"
+              },
+              {
+                "id": 1974,
+                "name": "Mindthrust Bracers",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "detail": "trash (Son of Arugal); requires level 17"
+                }
+              },
+              {
+                "id": 18948,
+                "name": "Barbaric Bracers",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking 155 (BoE, often on AH)",
+                  "profession": "Leatherworking"
+                }
+              }
+            ],
+            "hands": [
+              {
+                "id": 10019,
+                "name": "Dreamweave Gloves",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring 250 (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 5195,
+                "name": "Gold-flecked Gloves",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Sneed"
+                },
+                "note": "Cloth; requires level 17"
+              },
+              {
+                "id": 7049,
+                "name": "Truefaith Gloves",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 }
               }
             ],
@@ -3449,103 +6484,268 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 },
                 "note": "mildly AH-reliant"
+              },
+              {
+                "id": 6392,
+                "name": "Belt of Arugal",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Archmage Arugal"
+                }
+              },
+              {
+                "id": 6319,
+                "name": "Girdle of the Blindwatcher",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Odo the Blindwatcher"
+                }
               }
             ],
-            "hands": [
+            "legs": [
               {
-                "id": 7049,
-                "name": "Truefaith Gloves",
+                "id": 7709,
+                "name": "Blighted Leggings",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Azshir the Sleepless",
+                  "detail": "Graveyard wing"
+                }
+              },
+              {
+                "id": 6903,
+                "name": "Gaze Dreamer Pants",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackfathom Deeps",
+                  "boss": "Twilight Lord Kelris"
+                }
+              },
+              {
+                "id": 2954,
+                "name": "Night Watch Pantaloons",
+                "quality": "uncommon",
+                "rank": 3,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "Morbent Fel",
+                  "zone": "Duskwood"
+                }
+              }
+            ],
+            "feet": [
+              {
+                "id": 4321,
+                "name": "Spider Silk Slippers",
                 "quality": "uncommon",
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE), requires level 23",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 4325,
+                "name": "Boots of the Enchanter",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 6406,
+                "name": "Nightsky Boots",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
                 }
               }
             ],
             "finger": [
               {
+                "id": 30804,
+                "name": "Bronze Band of Force",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (BoE)",
+                  "profession": "Jewelcrafting"
+                },
+                "note": "Unique-Equipped; with Band of Purification gives Horde 2/2"
+              },
+              {
+                "id": 1156,
+                "name": "Lavishly Jeweled Ring",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Gilnid"
+                },
+                "note": "Unique-Equipped; Intellect roll, but the only ring available this early"
+              },
+              {
+                "id": 13094,
+                "name": "The Queen's Jewel",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Duskwood",
+                  "detail": "Nightbane Vile Fang (rare spawn)"
+                },
+                "note": "BoE, Unique-Equipped"
+              },
+              {
                 "id": 2933,
                 "name": "Seal of Wrynn",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 4,
                 "faction": "alliance",
                 "source": {
                   "type": "quest",
                   "quest": "The Unsent Letter",
                   "zone": "Stormwind City"
                 }
-              },
-              {
-                "id": 2262,
-                "name": "Mark of Kern",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scarlet Monastery"
-                },
-                "note": "Stamina + Attack Power — filler for Horde, who lack the Seal of Wrynn quest"
               }
             ],
             "trinket": [
               {
+                "id": 19991,
+                "name": "Devilsaur Eye",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Un'Goro Crater",
+                  "detail": "Devilsaur loot"
+                },
+                "note": "Expensive BoE — on-use AP and hit burst"
+              },
+              {
+                "id": 11122,
+                "name": "Carrot on a Stick",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Gahz'rilla",
+                  "instance": "Zul'Farrak"
+                },
+                "note": "No combat stats; mount-speed utility filler"
+              },
+              {
+                "id": 4381,
+                "name": "Minor Recombobulator",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
+                },
+                "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
+              },
+              {
                 "id": 9149,
                 "name": "Philosopher's Stone",
                 "quality": "uncommon",
-                "rank": 1,
+                "rank": 4,
                 "source": {
                   "type": "crafted",
-                  "detail": "Alchemy (skill 200), BoP"
+                  "detail": "Alchemy (skill 200), BoP",
+                  "profession": "Alchemy"
                 },
-                "note": "Usable from level 35 — the only trinket available this early"
+                "note": "Usable from level 35 — the only trinket available this early",
+                "bop": true
               }
             ],
             "mainhand": [
               {
-                "id": 7713,
-                "name": "Illusionary Rod",
+                "id": 873,
+                "name": "Staff of Jordan",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
-                  "type": "drop",
-                  "instance": "Scarlet Monastery",
-                  "boss": "Arcanist Doan",
-                  "detail": "Library wing"
-                }
+                  "type": "world-drop"
+                },
+                "note": "Often pricey on the AH"
               },
               {
-                "id": 7714,
-                "name": "Hypnotic Blade",
+                "id": 9449,
+                "name": "Manual Crowd Pummeler",
                 "quality": "rare",
                 "rank": 2,
                 "source": {
                   "type": "drop",
-                  "instance": "Scarlet Monastery",
-                  "boss": "Arcanist Doan",
-                  "detail": "Library wing"
+                  "instance": "Gnomeregan",
+                  "boss": "Crowd Pummeler 9-60"
                 },
-                "note": "Fast dagger stat-stick"
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+              },
+              {
+                "id": 7723,
+                "name": "Mograine's Might",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Scarlet Commander Mograine",
+                  "detail": "Cathedral wing"
+                }
               }
             ]
           }
         },
         {
-          "id": "lvl49",
+          "id": "lvl45",
           "levelRange": [
-            40,
-            49
+            41,
+            45
           ],
           "slots": {
             "head": [
               {
+                "id": 8345,
+                "name": "Wolfshead Helm",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Classic pattern, BoE)",
+                  "profession": "Leatherworking"
+                },
+                "note": "Grants bonus energy/rage on shifting into Cat/Bear form; one of very few Druid-only items and stays relevant for a very long time."
+              },
+              {
                 "id": 9470,
                 "name": "Bad Mojo Mask",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 2,
                 "source": {
                   "type": "drop",
                   "instance": "Zul'Farrak",
@@ -3556,85 +6756,121 @@ WOWDATA.register({
                 "id": 10041,
                 "name": "Dreamweave Circlet",
                 "quality": "rare",
-                "rank": 2,
+                "rank": 3,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring 250 (BoE)"
+                  "detail": "Tailoring 250 (BoE)",
+                  "profession": "Tailoring"
                 }
               }
             ],
             "neck": [
               {
-                "id": 9641,
-                "name": "Lifeblood Amulet",
+                "id": 20037,
+                "name": "Arcane Crystal Pendant",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
-                  "type": "drop",
-                  "instance": "Zul'Farrak",
-                  "boss": "Theka the Martyr"
+                  "type": "quest",
+                  "quest": "Destroy Morphaz",
+                  "instance": "Temple of Atal'Hakkar (Sunken Temple)",
+                  "detail": "Mage-only chain starting with Magecraft from Archmage Xylem in Azshara, ~level 52; choice of Fire Ruby/Glacial Spike/Arcane Crystal Pendant — take Arcane Crystal Pendant for Arcane"
                 }
               },
               {
-                "id": 17707,
-                "name": "Gemshard Heart",
+                "id": 7722,
+                "name": "Triune Amulet",
                 "quality": "rare",
                 "rank": 2,
                 "source": {
                   "type": "drop",
-                  "instance": "Maraudon",
-                  "boss": "Princess Theradras"
+                  "instance": "Scarlet Monastery",
+                  "boss": "High Inquisitor Whitemane",
+                  "detail": "Cathedral wing"
+                }
+              },
+              {
+                "id": 10769,
+                "name": "Glowing Eye of Mordresh",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Downs",
+                  "boss": "Mordresh Fire Eye"
                 }
               }
             ],
             "shoulder": [
               {
-                "id": 17732,
-                "name": "Rotgrip Mantle",
+                "id": 6685,
+                "name": "Death Speaker Mantle",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
-                  "instance": "Maraudon",
-                  "boss": "Rotgrip"
+                  "instance": "Razorfen Kraul",
+                  "boss": "Death Speaker Jargba"
                 }
-              }
-            ],
-            "back": [
+              },
               {
-                "id": 11858,
-                "name": "Battlehard Cape",
-                "quality": "uncommon",
-                "rank": 1,
+                "id": 7712,
+                "name": "Mantle of Doan",
+                "quality": "rare",
+                "rank": 2,
                 "source": {
-                  "type": "quest",
-                  "quest": "A Grim Discovery",
-                  "zone": "Feralas"
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Arcanist Doan",
+                  "detail": "Library wing"
                 }
+              },
+              {
+                "id": 3748,
+                "name": "Feline Mantle",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Wolf Master Nandos"
+                },
+                "note": "Cloth — Intellect/Spirit"
               }
             ],
             "chest": [
               {
-                "id": 17741,
-                "name": "Nature's Embrace",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Maraudon",
-                  "boss": "Meshlok the Harvester",
-                  "detail": "rare spawn"
-                },
-                "note": "mp5 pick; spell damage stat does not boost healing"
-              },
-              {
                 "id": 10021,
                 "name": "Dreamweave Vest",
                 "quality": "rare",
-                "rank": 2,
+                "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring 250 (BoE)"
+                  "detail": "Tailoring 250 (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 7711,
+                "name": "Robe of Doan",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Arcanist Doan",
+                  "detail": "Library wing"
+                }
+              },
+              {
+                "id": 6324,
+                "name": "Robes of Arugal",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Archmage Arugal"
                 }
               }
             ],
@@ -3648,6 +6884,529 @@ WOWDATA.register({
                   "type": "drop"
                 },
                 "note": "Cloth Intellect wrist"
+              },
+              {
+                "id": 13106,
+                "name": "Glowing Magical Bracelets",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE; usable from level 26, still the best wrist option through this bracket"
+              },
+              {
+                "id": 1974,
+                "name": "Mindthrust Bracers",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "detail": "trash (Son of Arugal); requires level 17"
+                }
+              }
+            ],
+            "hands": [
+              {
+                "id": 10019,
+                "name": "Dreamweave Gloves",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring 250 (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 5195,
+                "name": "Gold-flecked Gloves",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Sneed"
+                },
+                "note": "Cloth; requires level 17"
+              },
+              {
+                "id": 18083,
+                "name": "Jumanza Grips",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Witch Doctor Zum'rah"
+                }
+              }
+            ],
+            "waist": [
+              {
+                "id": 17755,
+                "name": "Satyrmane Sash",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Lord Vyletongue"
+                }
+              },
+              {
+                "id": 4329,
+                "name": "Star Belt",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "mildly AH-reliant"
+              },
+              {
+                "id": 6392,
+                "name": "Belt of Arugal",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Archmage Arugal"
+                }
+              }
+            ],
+            "legs": [
+              {
+                "id": 9484,
+                "name": "Spellshock Leggings",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Sandarr Dunereaver"
+                },
+                "note": "BoE, can be moderately expensive on AH"
+              },
+              {
+                "id": 7709,
+                "name": "Blighted Leggings",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Azshir the Sleepless",
+                  "detail": "Graveyard wing"
+                }
+              },
+              {
+                "id": 6903,
+                "name": "Gaze Dreamer Pants",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackfathom Deeps",
+                  "boss": "Twilight Lord Kelris"
+                }
+              }
+            ],
+            "feet": [
+              {
+                "id": 4321,
+                "name": "Spider Silk Slippers",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE), requires level 23",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 4325,
+                "name": "Boots of the Enchanter",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 6406,
+                "name": "Nightsky Boots",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
+                }
+              }
+            ],
+            "finger": [
+              {
+                "id": 30804,
+                "name": "Bronze Band of Force",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (BoE)",
+                  "profession": "Jewelcrafting"
+                },
+                "note": "Unique-Equipped; with Band of Purification gives Horde 2/2"
+              },
+              {
+                "id": 862,
+                "name": "Runed Ring",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "detail": "multiple bosses, random-suffix"
+                },
+                "note": "BoE; stat roll varies (base is spell dmg/healing)"
+              },
+              {
+                "id": 1156,
+                "name": "Lavishly Jeweled Ring",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Gilnid"
+                },
+                "note": "Unique-Equipped; Intellect roll, but the only ring available this early"
+              },
+              {
+                "id": 13094,
+                "name": "The Queen's Jewel",
+                "quality": "rare",
+                "rank": 4,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Duskwood",
+                  "detail": "Nightbane Vile Fang (rare spawn)"
+                },
+                "note": "BoE, Unique-Equipped"
+              }
+            ],
+            "trinket": [
+              {
+                "id": 19991,
+                "name": "Devilsaur Eye",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Un'Goro Crater",
+                  "detail": "Devilsaur loot"
+                },
+                "note": "Expensive BoE — on-use AP and hit burst"
+              },
+              {
+                "id": 11122,
+                "name": "Carrot on a Stick",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Gahz'rilla",
+                  "instance": "Zul'Farrak"
+                },
+                "note": "No combat stats; mount-speed utility filler"
+              },
+              {
+                "id": 4381,
+                "name": "Minor Recombobulator",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
+                },
+                "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
+              },
+              {
+                "id": 9149,
+                "name": "Philosopher's Stone",
+                "quality": "uncommon",
+                "rank": 4,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Alchemy (skill 200), BoP",
+                  "profession": "Alchemy"
+                },
+                "note": "Usable from level 35 — the only trinket available this early",
+                "bop": true
+              }
+            ],
+            "mainhand": [
+              {
+                "id": 873,
+                "name": "Staff of Jordan",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "Often pricey on the AH"
+              },
+              {
+                "id": 18082,
+                "name": "Zum'rah's Vexing Cane",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Witch Doctor Zum'rah"
+                }
+              },
+              {
+                "id": 17743,
+                "name": "Resurgence Rod",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Corruption of Earth and Seed",
+                  "zone": "Desolace",
+                  "detail": "Chain leads into Maraudon"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "lvl50",
+          "levelRange": [
+            46,
+            50
+          ],
+          "slots": {
+            "head": [
+              {
+                "id": 8345,
+                "name": "Wolfshead Helm",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Classic pattern, BoE)",
+                  "profession": "Leatherworking"
+                },
+                "note": "Grants bonus energy/rage on shifting into Cat/Bear form; one of very few Druid-only items and stays relevant for a very long time."
+              },
+              {
+                "id": 9470,
+                "name": "Bad Mojo Mask",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Shadowpriest Sezz'ziz"
+                }
+              },
+              {
+                "id": 21774,
+                "name": "Emerald Crown of Destruction",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting — BoE",
+                  "profession": "Jewelcrafting"
+                }
+              }
+            ],
+            "neck": [
+              {
+                "id": 20037,
+                "name": "Arcane Crystal Pendant",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Destroy Morphaz",
+                  "instance": "Temple of Atal'Hakkar (Sunken Temple)",
+                  "detail": "Mage-only chain starting with Magecraft from Archmage Xylem in Azshara, ~level 52; choice of Fire Ruby/Glacial Spike/Arcane Crystal Pendant — take Arcane Crystal Pendant for Arcane"
+                }
+              },
+              {
+                "id": 17707,
+                "name": "Gemshard Heart",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Princess Theradras"
+                }
+              },
+              {
+                "id": 7722,
+                "name": "Triune Amulet",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "High Inquisitor Whitemane",
+                  "detail": "Cathedral wing"
+                }
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 11624,
+                "name": "Kentic Amice",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Depths",
+                  "boss": "High Interrogator Gerstahn"
+                }
+              },
+              {
+                "id": 6685,
+                "name": "Death Speaker Mantle",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Death Speaker Jargba"
+                }
+              },
+              {
+                "id": 7712,
+                "name": "Mantle of Doan",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Arcanist Doan",
+                  "detail": "Library wing"
+                }
+              }
+            ],
+            "chest": [
+              {
+                "id": 12462,
+                "name": "Embrace of the Wind Serpent",
+                "quality": "epic",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Sunken Temple",
+                  "boss": "Shade of Hakkar"
+                }
+              },
+              {
+                "id": 10021,
+                "name": "Dreamweave Vest",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring 250 (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 7711,
+                "name": "Robe of Doan",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Arcanist Doan",
+                  "detail": "Library wing"
+                }
+              }
+            ],
+            "wrist": [
+              {
+                "id": 9433,
+                "name": "Forgotten Wraps",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop"
+                },
+                "note": "Cloth Intellect wrist"
+              },
+              {
+                "id": 12546,
+                "name": "Aristocratic Cuffs",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Depths",
+                  "detail": "rare trash drop"
+                },
+                "note": "BoE"
+              },
+              {
+                "id": 13106,
+                "name": "Glowing Magical Bracelets",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE; usable from level 26, still the best wrist option through this bracket"
+              }
+            ],
+            "hands": [
+              {
+                "id": 10019,
+                "name": "Dreamweave Gloves",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring 250 (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 13863,
+                "name": "Runecloth Gloves",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 5195,
+                "name": "Gold-flecked Gloves",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Sneed"
+                },
+                "note": "Cloth; requires level 17"
               }
             ],
             "waist": [
@@ -3663,10 +7422,21 @@ WOWDATA.register({
                 }
               },
               {
+                "id": 11662,
+                "name": "Ban'thok Sash",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Depths",
+                  "boss": "Ok'thor the Breaker"
+                }
+              },
+              {
                 "id": 17755,
                 "name": "Satyrmane Sash",
                 "quality": "rare",
-                "rank": 2,
+                "rank": 3,
                 "source": {
                   "type": "drop",
                   "instance": "Maraudon",
@@ -3686,6 +7456,29 @@ WOWDATA.register({
                   "boss": "Sandarr Dunereaver"
                 },
                 "note": "BoE, can be moderately expensive on AH"
+              },
+              {
+                "id": 7709,
+                "name": "Blighted Leggings",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Azshir the Sleepless",
+                  "detail": "Graveyard wing"
+                }
+              },
+              {
+                "id": 6903,
+                "name": "Gaze Dreamer Pants",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackfathom Deeps",
+                  "boss": "Twilight Lord Kelris"
+                }
               }
             ],
             "feet": [
@@ -3699,53 +7492,100 @@ WOWDATA.register({
                   "instance": "Maraudon",
                   "boss": "Razorlash"
                 }
-              }
-            ],
-            "hands": [
+              },
               {
-                "id": 18083,
-                "name": "Jumanza Grips",
-                "quality": "rare",
-                "rank": 1,
+                "id": 4321,
+                "name": "Spider Silk Slippers",
+                "quality": "uncommon",
+                "rank": 2,
                 "source": {
-                  "type": "drop",
-                  "instance": "Zul'Farrak",
-                  "boss": "Witch Doctor Zum'rah"
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE), requires level 23",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 4325,
+                "name": "Boots of the Enchanter",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 }
               }
             ],
             "finger": [
               {
-                "id": 11118,
-                "name": "Archaedic Stone",
+                "id": 12543,
+                "name": "Songstone of Ironforge",
                 "quality": "rare",
                 "rank": 1,
+                "faction": "alliance",
                 "source": {
-                  "type": "drop",
-                  "instance": "Uldaman",
-                  "boss": "Archaedas"
-                },
-                "note": "Random-enchant ring; look for an Intellect/Spirit roll (e.g. of the Whale, of Intellect)"
+                  "type": "quest",
+                  "quest": "The Princess's Surprise",
+                  "instance": "Blackrock Depths",
+                  "detail": "Moira chain"
+                }
               },
               {
-                "id": 17713,
-                "name": "Blackstone Ring",
+                "id": 12545,
+                "name": "Eye of Orgrimmar",
                 "quality": "rare",
                 "rank": 2,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Princess Saved?",
+                  "instance": "Blackrock Depths",
+                  "detail": "Moira chain"
+                }
+              },
+              {
+                "id": 11824,
+                "name": "Cyclopean Band",
+                "quality": "rare",
+                "rank": 3,
                 "source": {
                   "type": "drop",
-                  "instance": "Maraudon",
-                  "boss": "Princess Theradras"
+                  "instance": "Blackrock Depths",
+                  "detail": "Ring of Law event (Ok'thor the Breaker)"
                 },
-                "note": "Stamina/hit/AP — AP is wasted, but the only alternative ring this bracket"
+                "note": "BoP, Unique-Equipped"
+              },
+              {
+                "id": 30804,
+                "name": "Bronze Band of Force",
+                "quality": "rare",
+                "rank": 4,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (BoE)",
+                  "profession": "Jewelcrafting"
+                },
+                "note": "Unique-Equipped; with Band of Purification gives Horde 2/2"
               }
             ],
             "trinket": [
               {
+                "id": 19991,
+                "name": "Devilsaur Eye",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Un'Goro Crater",
+                  "detail": "Devilsaur loot"
+                },
+                "note": "Expensive BoE — on-use AP and hit burst"
+              },
+              {
                 "id": 11122,
                 "name": "Carrot on a Stick",
                 "quality": "uncommon",
-                "rank": 1,
+                "rank": 2,
                 "source": {
                   "type": "quest",
                   "quest": "Gahz'rilla",
@@ -3754,110 +7594,217 @@ WOWDATA.register({
                 "note": "No combat stats; mount-speed utility filler"
               },
               {
+                "id": 4381,
+                "name": "Minor Recombobulator",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
+                },
+                "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
+              },
+              {
                 "id": 9149,
                 "name": "Philosopher's Stone",
                 "quality": "uncommon",
-                "rank": 2,
+                "rank": 4,
                 "source": {
                   "type": "crafted",
-                  "detail": "Alchemy (skill 200), BoP"
+                  "detail": "Alchemy (skill 200), BoP",
+                  "profession": "Alchemy"
                 },
-                "note": "Holds over from the lvl39 bracket"
+                "note": "Usable from level 35 — the only trinket available this early",
+                "bop": true
               }
             ],
             "mainhand": [
               {
+                "id": 873,
+                "name": "Staff of Jordan",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "Often pricey on the AH"
+              },
+              {
                 "id": 18082,
                 "name": "Zum'rah's Vexing Cane",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 2,
                 "source": {
                   "type": "drop",
                   "instance": "Zul'Farrak",
                   "boss": "Witch Doctor Zum'rah"
+                }
+              },
+              {
+                "id": 17743,
+                "name": "Resurgence Rod",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Corruption of Earth and Seed",
+                  "zone": "Desolace",
+                  "detail": "Chain leads into Maraudon"
                 }
               }
             ]
           }
         },
         {
-          "id": "lvl59",
+          "id": "lvl55",
           "levelRange": [
-            50,
-            57
+            51,
+            55
           ],
           "slots": {
             "head": [
               {
-                "id": 21774,
-                "name": "Emerald Crown of Destruction",
+                "id": 18727,
+                "name": "Crimson Felt Hat",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
+                  "type": "drop",
+                  "instance": "Stratholme",
+                  "boss": "Magistrate Barthilas"
+                }
+              },
+              {
+                "id": 8345,
+                "name": "Wolfshead Helm",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting — BoE"
+                  "detail": "Leatherworking (Classic pattern, BoE)",
+                  "profession": "Leatherworking"
+                },
+                "note": "Grants bonus energy/rage on shifting into Cat/Bear form; one of very few Druid-only items and stays relevant for a very long time."
+              },
+              {
+                "id": 9470,
+                "name": "Bad Mojo Mask",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Shadowpriest Sezz'ziz"
                 }
               }
             ],
             "neck": [
               {
-                "id": 18691,
-                "name": "Dark Advisor's Pendant",
+                "id": 20037,
+                "name": "Arcane Crystal Pendant",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
+                  "type": "quest",
+                  "quest": "Destroy Morphaz",
+                  "instance": "Temple of Atal'Hakkar (Sunken Temple)",
+                  "detail": "Mage-only chain starting with Magecraft from Archmage Xylem in Azshara, ~level 52; choice of Fire Ruby/Glacial Spike/Arcane Crystal Pendant — take Arcane Crystal Pendant for Arcane"
+                }
+              },
+              {
+                "id": 17707,
+                "name": "Gemshard Heart",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
                   "type": "drop",
-                  "instance": "Scholomance",
-                  "boss": "Vectus"
+                  "instance": "Maraudon",
+                  "boss": "Princess Theradras"
+                }
+              },
+              {
+                "id": 7722,
+                "name": "Triune Amulet",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "High Inquisitor Whitemane",
+                  "detail": "Cathedral wing"
                 }
               }
             ],
             "shoulder": [
               {
-                "id": 13185,
-                "name": "Sunderseer Mantle",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Blackrock Spire",
-                  "boss": "Crystal Fang"
-                }
-              },
-              {
                 "id": 11624,
                 "name": "Kentic Amice",
                 "quality": "rare",
-                "rank": 2,
+                "rank": 1,
                 "source": {
                   "type": "drop",
                   "instance": "Blackrock Depths",
                   "boss": "High Interrogator Gerstahn"
                 }
-              }
-            ],
-            "back": [
+              },
               {
-                "id": 18510,
-                "name": "Hide of the Wild",
-                "quality": "epic",
-                "rank": 1,
+                "id": 6685,
+                "name": "Death Speaker Mantle",
+                "quality": "rare",
+                "rank": 2,
                 "source": {
-                  "type": "crafted",
-                  "detail": "Leatherworking 300, recipe drops in Dire Maul East"
-                },
-                "note": "Expensive BoE"
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Death Speaker Jargba"
+                }
+              },
+              {
+                "id": 7712,
+                "name": "Mantle of Doan",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Arcanist Doan",
+                  "detail": "Library wing"
+                }
               }
             ],
             "chest": [
               {
-                "id": 18486,
-                "name": "Mooncloth Robe",
-                "quality": "rare",
+                "id": 12462,
+                "name": "Embrace of the Wind Serpent",
+                "quality": "epic",
                 "rank": 1,
                 "source": {
+                  "type": "drop",
+                  "instance": "Sunken Temple",
+                  "boss": "Shade of Hakkar"
+                }
+              },
+              {
+                "id": 10021,
+                "name": "Dreamweave Vest",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
                   "type": "crafted",
-                  "detail": "Mooncloth Tailoring — pattern from the Darkmoon Faire (BoE)"
+                  "detail": "Tailoring 250 (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 7711,
+                "name": "Robe of Doan",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Arcanist Doan",
+                  "detail": "Library wing"
                 }
               }
             ],
@@ -3872,78 +7819,215 @@ WOWDATA.register({
                   "instance": "Blackrock Spire",
                   "boss": "Shadow Hunter Vosh'gajin"
                 }
-              }
-            ],
-            "waist": [
+              },
               {
-                "id": 23126,
-                "name": "Waistband of Balzaphon",
+                "id": 18497,
+                "name": "Sublime Wristguards",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 2,
                 "source": {
                   "type": "drop",
-                  "instance": "Stratholme",
-                  "boss": "Balzaphon"
+                  "instance": "Dire Maul",
+                  "boss": "Guard Slip'kik"
                 }
-              }
-            ],
-            "legs": [
+              },
               {
-                "id": 14545,
-                "name": "Ghostloom Leggings",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scholomance"
-                }
-              }
-            ],
-            "feet": [
-              {
-                "id": 13954,
-                "name": "Verdant Footpads",
+                "id": 9433,
+                "name": "Forgotten Wraps",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 3,
                 "source": {
-                  "type": "drop",
-                  "instance": "Stratholme",
-                  "boss": "Stonespine"
-                }
+                  "type": "drop"
+                },
+                "note": "Cloth Intellect wrist"
               }
             ],
             "hands": [
               {
-                "id": 18309,
-                "name": "Gloves of Restoration",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Dire Maul",
-                  "boss": "Alzzin the Wildshaper",
-                  "detail": "East wing"
-                }
-              }
-            ],
-            "finger": [
-              {
-                "id": 12926,
-                "name": "Flaming Band",
+                "id": 13253,
+                "name": "Hands of Power",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
                   "instance": "Blackrock Spire",
-                  "boss": "Pyroguard Emberseer"
+                  "boss": "Quartermaster Zigris"
+                }
+              },
+              {
+                "id": 10019,
+                "name": "Dreamweave Gloves",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring 250 (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 13863,
+                "name": "Runecloth Gloves",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                }
+              }
+            ],
+            "waist": [
+              {
+                "id": 17750,
+                "name": "Chloromesh Girdle",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Razorlash"
+                }
+              },
+              {
+                "id": 11662,
+                "name": "Ban'thok Sash",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Depths",
+                  "boss": "Ok'thor the Breaker"
+                }
+              },
+              {
+                "id": 17755,
+                "name": "Satyrmane Sash",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Lord Vyletongue"
+                }
+              }
+            ],
+            "legs": [
+              {
+                "id": 13170,
+                "name": "Skyshroud Leggings",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Spire",
+                  "boss": "Highlord Omokk"
+                }
+              },
+              {
+                "id": 9484,
+                "name": "Spellshock Leggings",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Sandarr Dunereaver"
                 },
-                "note": "Random enchantment"
+                "note": "BoE, can be moderately expensive on AH"
+              },
+              {
+                "id": 7709,
+                "name": "Blighted Leggings",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Azshir the Sleepless",
+                  "detail": "Graveyard wing"
+                }
+              }
+            ],
+            "feet": [
+              {
+                "id": 11822,
+                "name": "Omnicast Boots",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Depths",
+                  "boss": "Golem Lord Argelmach"
+                }
+              },
+              {
+                "id": 17748,
+                "name": "Vinerot Sandals",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Razorlash"
+                }
+              },
+              {
+                "id": 4321,
+                "name": "Spider Silk Slippers",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE), requires level 23",
+                  "profession": "Tailoring"
+                }
+              }
+            ],
+            "finger": [
+              {
+                "id": 12543,
+                "name": "Songstone of Ironforge",
+                "quality": "rare",
+                "rank": 1,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Princess's Surprise",
+                  "instance": "Blackrock Depths",
+                  "detail": "Moira chain"
+                }
+              },
+              {
+                "id": 12545,
+                "name": "Eye of Orgrimmar",
+                "quality": "rare",
+                "rank": 2,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Princess Saved?",
+                  "instance": "Blackrock Depths",
+                  "detail": "Moira chain"
+                }
+              },
+              {
+                "id": 11824,
+                "name": "Cyclopean Band",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Depths",
+                  "detail": "Ring of Law event (Ok'thor the Breaker)"
+                },
+                "note": "BoP, Unique-Equipped"
               },
               {
                 "id": 18314,
                 "name": "Ring of Demonic Guile",
                 "quality": "rare",
-                "rank": 2,
+                "rank": 4,
                 "source": {
                   "type": "drop"
                 }
@@ -3962,17 +8046,40 @@ WOWDATA.register({
                 }
               },
               {
-                "id": 18371,
-                "name": "Mindtap Talisman",
-                "quality": "uncommon",
+                "id": 11832,
+                "name": "Burst of Knowledge",
+                "quality": "rare",
                 "rank": 2,
                 "source": {
                   "type": "drop",
-                  "instance": "Dire Maul",
-                  "boss": "Magister Kalendris",
-                  "detail": "West wing"
+                  "instance": "Blackrock Depths",
+                  "boss": "Ambassador Flamelash"
                 },
-                "note": "mp5 regen"
+                "note": "Requires level 53"
+              },
+              {
+                "id": 19991,
+                "name": "Devilsaur Eye",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Un'Goro Crater",
+                  "detail": "Devilsaur loot"
+                },
+                "note": "Expensive BoE — on-use AP and hit burst"
+              },
+              {
+                "id": 11122,
+                "name": "Carrot on a Stick",
+                "quality": "uncommon",
+                "rank": 4,
+                "source": {
+                  "type": "quest",
+                  "quest": "Gahz'rilla",
+                  "instance": "Zul'Farrak"
+                },
+                "note": "No combat stats; mount-speed utility filler"
               }
             ],
             "mainhand": [
@@ -3986,6 +8093,27 @@ WOWDATA.register({
                   "instance": "Stratholme",
                   "boss": "Balzaphon"
                 }
+              },
+              {
+                "id": 873,
+                "name": "Staff of Jordan",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "Often pricey on the AH"
+              },
+              {
+                "id": 18082,
+                "name": "Zum'rah's Vexing Cane",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Witch Doctor Zum'rah"
+                }
               }
             ]
           }
@@ -3993,332 +8121,119 @@ WOWDATA.register({
         {
           "id": "lvl60",
           "levelRange": [
-            58,
-            64
+            56,
+            60
           ],
           "slots": {
             "head": [
               {
-                "id": 25710,
-                "name": "Moonkin Headdress",
+                "id": 28169,
+                "name": "Mag'hari Ritualist's Horns",
                 "quality": "rare",
                 "rank": 1,
+                "faction": "horde",
                 "source": {
                   "type": "quest",
-                  "quest": "The Blood is Life",
-                  "instance": "The Blood Furnace",
-                  "zone": "Hellfire Peninsula"
+                  "quest": "Hero of the Mag'har",
+                  "zone": "Nagrand"
                 },
-                "note": "Stamina/Intellect/Spirit/spell crit/spell damage — a genuine Balance-flavoured piece"
+                "note": "Horde only — no Alliance equivalent"
               },
               {
-                "id": 8345,
-                "name": "Wolfshead Helm",
+                "id": 31546,
+                "name": "Tourmaline Crown",
                 "quality": "rare",
                 "rank": 2,
                 "source": {
-                  "type": "crafted",
-                  "detail": "Leatherworking (Classic pattern, BoE)"
+                  "type": "quest",
+                  "quest": "Showdown",
+                  "zone": "Blade's Edge Mountains"
                 }
               },
               {
-                "id": 28183,
-                "name": "Hydromancer's Headwrap",
+                "id": 31110,
+                "name": "Druidic Helmet of Second Sight",
                 "quality": "rare",
                 "rank": 3,
-                "faction": "both",
                 "source": {
                   "type": "quest",
-                  "quest": "The Warlord's Hideout",
-                  "instance": "The Steamvault",
-                  "zone": "Zangarmarsh"
-                },
-                "note": "Cloth — more raw spellpower, no shapeshift proc"
+                  "quest": "Teron Gorefiend, I am...",
+                  "zone": "Shadowmoon Valley"
+                }
               }
             ],
             "neck": [
               {
+                "id": 31692,
+                "name": "Natasha's Ember Necklace",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Hound-Master",
+                  "zone": "Blade's Edge Mountains"
+                }
+              },
+              {
                 "id": 25714,
                 "name": "Crimson Pendant of Clarity",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 2,
                 "source": {
                   "type": "quest",
                   "quest": "Heart of Rage",
                   "instance": "The Blood Furnace",
                   "zone": "Hellfire Peninsula"
                 }
+              },
+              {
+                "id": 28168,
+                "name": "Insignia of the Mag'hari Hero",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "quest": "Hero of the Mag'har",
+                  "zone": "Nagrand"
+                }
               }
             ],
             "shoulder": [
               {
+                "id": 30925,
+                "name": "Spaulders of the Torn-Heart",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Cipher of Damnation",
+                  "zone": "Shadowmoon Valley"
+                }
+              },
+              {
+                "id": 24024,
+                "name": "Pauldrons of Arcane Rage",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Ramparts",
+                  "boss": "Watchkeeper Gargolmar",
+                  "detail": "Requires level 60"
+                }
+              },
+              {
                 "id": 25718,
                 "name": "Mantle of Magical Might",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 3,
                 "faction": "both",
                 "source": {
                   "type": "quest",
                   "instance": "Hellfire Ramparts",
                   "quest": "Weaken the Ramparts"
                 }
-              }
-            ],
-            "back": [
-              {
-                "id": 24459,
-                "name": "Cloak of Healing Rays",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Underbog",
-                  "boss": "Ghaz'an"
-                }
-              }
-            ],
-            "chest": [
-              {
-                "id": 24455,
-                "name": "Tunic of the Nightwatcher",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "zone": "Hellfire Peninsula",
-                  "detail": "Hellfire Citadel dungeon drop"
-                }
-              }
-            ],
-            "wrist": [
-              {
-                "id": 28029,
-                "name": "Goldenvine Wraps",
-                "quality": "rare",
-                "rank": 1,
-                "faction": "both",
-                "source": {
-                  "type": "quest",
-                  "instance": "The Slave Pens / The Underbog",
-                  "quest": "Lost in Action"
-                }
-              }
-            ],
-            "waist": [
-              {
-                "id": 21850,
-                "name": "Netherweave Belt",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "crafted",
-                  "detail": "Tailoring (BoE)"
-                },
-                "note": "Stamina-only filler until a better piece drops"
-              }
-            ],
-            "legs": [
-              {
-                "id": 29343,
-                "name": "Haramad's Leggings of the Third Coin",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "Undercutting the Competition",
-                  "instance": "Mana-Tombs",
-                  "zone": "Terokkar Forest"
-                }
-              },
-              {
-                "id": 24391,
-                "name": "Kilt of the Night Strider",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "zone": "Hellfire Peninsula",
-                  "detail": "Hellfire Citadel dungeon drop"
-                },
-                "note": "Socketed alternative with mana regen"
-              }
-            ],
-            "feet": [
-              {
-                "id": 21853,
-                "name": "Netherweave Boots",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "crafted",
-                  "detail": "Tailoring (BoE)"
-                },
-                "note": "Stamina-only filler"
-              }
-            ],
-            "hands": [
-              {
-                "id": 21851,
-                "name": "Netherweave Gloves",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "crafted",
-                  "detail": "Tailoring (BoE)"
-                },
-                "note": "Stamina-only filler"
-              }
-            ],
-            "finger": [
-              {
-                "id": 25713,
-                "name": "Holy Healing Band",
-                "quality": "rare",
-                "rank": 1,
-                "faction": "both",
-                "source": {
-                  "type": "quest",
-                  "instance": "The Blood Furnace",
-                  "quest": "Heart of Rage"
-                }
-              },
-              {
-                "id": 25541,
-                "name": "Cenarion Ring of Casting",
-                "quality": "rare",
-                "rank": 2,
-                "faction": "both",
-                "source": {
-                  "type": "quest",
-                  "instance": "The Slave Pens / The Underbog",
-                  "quest": "Lost in Action"
-                }
-              }
-            ],
-            "trinket": [
-              {
-                "id": 28108,
-                "name": "Power Infused Mushroom",
-                "quality": "rare",
-                "rank": 1,
-                "faction": "both",
-                "source": {
-                  "type": "quest",
-                  "instance": "The Underbog",
-                  "quest": "Stalk the Stalker"
-                },
-                "note": "On-kill mana proc"
-              },
-              {
-                "id": 28040,
-                "name": "Vengeance of the Illidari",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "quest",
-                  "quest": "Overlord (Alliance) / Cruel's Intentions (Horde)",
-                  "zone": "Hellfire Peninsula"
-                },
-                "note": "One of the best-known early caster leveling trinkets"
-              }
-            ],
-            "mainhand": [
-              {
-                "id": 18534,
-                "name": "Rod of the Ogre Magi",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "detail": "Rare-spawn drop — Mizzle the Crafty"
-                }
-              }
-            ],
-            "ranged": [
-              {
-                "id": 23197,
-                "name": "Idol of the Moon",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "world-drop"
-                },
-                "note": "BoE, price varies by server"
-              }
-            ]
-          }
-        },
-        {
-          "id": "lvl65",
-          "levelRange": [
-            65,
-            69
-          ],
-          "slots": {
-            "head": [
-              {
-                "id": 8345,
-                "name": "Wolfshead Helm",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "crafted",
-                  "detail": "Leatherworking (Classic pattern, BoE)"
-                }
-              },
-              {
-                "id": 28183,
-                "name": "Hydromancer's Headwrap",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "quest",
-                  "quest": "The Warlord's Hideout",
-                  "instance": "The Steamvault",
-                  "zone": "Zangarmarsh"
-                },
-                "note": "Cloth — more raw spellpower, no shapeshift proc"
-              }
-            ],
-            "neck": [
-              {
-                "id": 29333,
-                "name": "Torc of the Sethekk Prophet",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "Brother Against Brother",
-                  "instance": "Sethekk Halls",
-                  "zone": "Terokkar Forest"
-                }
-              },
-              {
-                "id": 28134,
-                "name": "Brooch of Heightened Potential",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Shadow Labyrinth",
-                  "boss": "Blackheart the Inciter"
-                },
-                "note": "Hit rating"
-              }
-            ],
-            "shoulder": [
-              {
-                "id": 25718,
-                "name": "Mantle of Magical Might",
-                "quality": "rare",
-                "rank": 1,
-                "faction": "both",
-                "source": {
-                  "type": "quest",
-                  "instance": "Hellfire Ramparts",
-                  "quest": "Weaken the Ramparts"
-                },
-                "note": "Carries over from the 58-64 bracket"
               }
             ],
             "chest": [
@@ -4334,33 +8249,98 @@ WOWDATA.register({
                   "zone": "Terokkar Forest"
                 },
                 "note": "Cloth — no leather caster chest exists yet; spell hit rating"
+              },
+              {
+                "id": 31717,
+                "name": "Shadowcast Tunic",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Foot of the Citadel",
+                  "zone": "Hellfire Peninsula"
+                }
+              },
+              {
+                "id": 12462,
+                "name": "Embrace of the Wind Serpent",
+                "quality": "epic",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Sunken Temple",
+                  "boss": "Shade of Hakkar"
+                }
               }
             ],
             "wrist": [
               {
-                "id": 28174,
-                "name": "Shattrath Wraps",
-                "quality": "rare",
+                "id": 25778,
+                "name": "Manacles of Remembrance",
+                "quality": "uncommon",
                 "rank": 1,
-                "faction": "both",
                 "source": {
                   "type": "quest",
-                  "instance": "Shadow Labyrinth",
-                  "quest": "The Soul Devices"
+                  "quest": "Finding the Survivors",
+                  "zone": "Nagrand"
+                }
+              },
+              {
+                "id": 12626,
+                "name": "Funeral Cuffs",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Spire",
+                  "boss": "Shadow Hunter Vosh'gajin"
+                }
+              },
+              {
+                "id": 18497,
+                "name": "Sublime Wristguards",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Dire Maul",
+                  "boss": "Guard Slip'kik"
                 }
               }
             ],
-            "back": [
+            "hands": [
               {
-                "id": 31465,
-                "name": "Sha'tari Anchorite's Cloak",
+                "id": 29317,
+                "name": "Tempest's Touch",
                 "quality": "rare",
                 "rank": 1,
-                "faction": "both",
                 "source": {
                   "type": "quest",
-                  "instance": "The Mechanar / The Botanica",
-                  "quest": "How to Break Into the Arcatraz"
+                  "quest": "Return to Andormu",
+                  "instance": "Old Hillsbrad Foothills",
+                  "zone": "Caverns of Time, Tanaris"
+                }
+              },
+              {
+                "id": 13253,
+                "name": "Hands of Power",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Spire",
+                  "boss": "Quartermaster Zigris"
+                }
+              },
+              {
+                "id": 10019,
+                "name": "Dreamweave Gloves",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring 250 (BoE)",
+                  "profession": "Tailoring"
                 }
               }
             ],
@@ -4378,15 +8358,25 @@ WOWDATA.register({
                 }
               },
               {
-                "id": 31461,
-                "name": "A'dal's Gift",
+                "id": 12589,
+                "name": "Dustfeather Sash",
                 "quality": "rare",
                 "rank": 2,
-                "faction": "both",
                 "source": {
-                  "type": "quest",
-                  "instance": "The Mechanar / The Botanica",
-                  "quest": "How to Break Into the Arcatraz"
+                  "type": "drop",
+                  "instance": "Blackrock Spire",
+                  "boss": "Solakar Flamewreath"
+                }
+              },
+              {
+                "id": 17750,
+                "name": "Chloromesh Girdle",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Razorlash"
                 }
               }
             ],
@@ -4404,56 +8394,1031 @@ WOWDATA.register({
                 }
               },
               {
-                "id": 29343,
-                "name": "Haramad's Leggings of the Third Coin",
+                "id": 25711,
+                "name": "Deadly Borer Leggings",
                 "quality": "rare",
                 "rank": 2,
+                "faction": "both",
                 "source": {
                   "type": "quest",
-                  "quest": "Undercutting the Competition",
-                  "instance": "Mana-Tombs",
-                  "zone": "Terokkar Forest"
+                  "instance": "The Blood Furnace",
+                  "quest": "The Blood is Life"
+                }
+              },
+              {
+                "id": 19683,
+                "name": "Bloodvine Leggings",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring — BoE",
+                  "profession": "Tailoring"
                 }
               }
             ],
             "feet": [
               {
-                "id": 27919,
-                "name": "Light-Woven Slippers",
+                "id": 30368,
+                "name": "Slippers of the High Priestess",
+                "quality": "rare",
+                "rank": 1,
+                "faction": "both",
+                "source": {
+                  "type": "quest",
+                  "quest": "Deathblow to the Legion",
+                  "zone": "Netherstorm"
+                },
+                "note": "BoP; excellent priest itemization"
+              },
+              {
+                "id": 14631,
+                "name": "Necropile Boots",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scholomance",
+                  "boss": "Lady Illucia Barov"
+                }
+              },
+              {
+                "id": 31789,
+                "name": "Marshfang Boots",
                 "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Blacksting's Bane",
+                  "zone": "Zangarmarsh"
+                }
+              }
+            ],
+            "finger": [
+              {
+                "id": 24154,
+                "name": "Witching Band",
+                "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
-                  "instance": "Sethekk Halls",
-                  "boss": "Darkweaver Syth"
+                  "instance": "Hellfire Ramparts",
+                  "boss": "Vazruden",
+                  "detail": "Requires level 60"
+                }
+              },
+              {
+                "id": 25541,
+                "name": "Cenarion Ring of Casting",
+                "quality": "rare",
+                "rank": 2,
+                "faction": "both",
+                "source": {
+                  "type": "quest",
+                  "instance": "The Slave Pens / The Underbog",
+                  "quest": "Lost in Action"
+                }
+              },
+              {
+                "id": 12543,
+                "name": "Songstone of Ironforge",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Princess's Surprise",
+                  "instance": "Blackrock Depths",
+                  "detail": "Moira chain"
+                }
+              },
+              {
+                "id": 12545,
+                "name": "Eye of Orgrimmar",
+                "quality": "rare",
+                "rank": 4,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Princess Saved?",
+                  "instance": "Blackrock Depths",
+                  "detail": "Moira chain"
+                }
+              }
+            ],
+            "trinket": [
+              {
+                "id": 25634,
+                "name": "Oshu'gun Relic",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Gava'xi",
+                  "zone": "Nagrand"
+                }
+              },
+              {
+                "id": 12930,
+                "name": "Briarwood Reed",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Spire",
+                  "boss": "Jed Runewatcher"
+                }
+              },
+              {
+                "id": 28041,
+                "name": "Bladefist's Breadth",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Overlord (Alliance) / Cruel's Intentions (Horde)",
+                  "zone": "Hellfire Peninsula"
+                },
+                "note": "On-use +200 Attack Power"
+              },
+              {
+                "id": 25936,
+                "name": "Terokkar Tablet of Vim",
+                "quality": "uncommon",
+                "rank": 4,
+                "source": {
+                  "type": "quest",
+                  "quest": "Torgos!",
+                  "zone": "Terokkar Forest"
+                },
+                "note": "Group quest, Bone Wastes"
+              }
+            ],
+            "mainhand": [
+              {
+                "id": 30011,
+                "name": "Ameer's Impulse Taser",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Nexus-King Salhadaar",
+                  "zone": "Netherstorm"
+                }
+              },
+              {
+                "id": 25760,
+                "name": "Battle Mage's Baton",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Ring of Blood: The Final Challenge",
+                  "zone": "Nagrand"
+                }
+              },
+              {
+                "id": 24069,
+                "name": "Crystalfire Staff",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Ramparts",
+                  "boss": "Omor the Unscarred",
+                  "detail": "Requires level 60"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "lvl65",
+          "levelRange": [
+            61,
+            65
+          ],
+          "slots": {
+            "head": [
+              {
+                "id": 28169,
+                "name": "Mag'hari Ritualist's Horns",
+                "quality": "rare",
+                "rank": 1,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "quest": "Hero of the Mag'har",
+                  "zone": "Nagrand"
+                },
+                "note": "Horde only — no Alliance equivalent"
+              },
+              {
+                "id": 31546,
+                "name": "Tourmaline Crown",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Showdown",
+                  "zone": "Blade's Edge Mountains"
+                }
+              },
+              {
+                "id": 28183,
+                "name": "Hydromancer's Headwrap",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "both",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Warlord's Hideout",
+                  "instance": "The Steamvault",
+                  "zone": "Zangarmarsh"
+                },
+                "note": "Cloth — more raw spellpower, no shapeshift proc"
+              }
+            ],
+            "neck": [
+              {
+                "id": 31692,
+                "name": "Natasha's Ember Necklace",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Hound-Master",
+                  "zone": "Blade's Edge Mountains"
+                }
+              },
+              {
+                "id": 24462,
+                "name": "Luminous Pearls of Insight",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Underbog",
+                  "boss": "Ghaz'an",
+                  "detail": "Requires level 63"
+                }
+              },
+              {
+                "id": 25714,
+                "name": "Crimson Pendant of Clarity",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Heart of Rage",
+                  "instance": "The Blood Furnace",
+                  "zone": "Hellfire Peninsula"
+                }
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 30925,
+                "name": "Spaulders of the Torn-Heart",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Cipher of Damnation",
+                  "zone": "Shadowmoon Valley"
+                }
+              },
+              {
+                "id": 24024,
+                "name": "Pauldrons of Arcane Rage",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Ramparts",
+                  "boss": "Watchkeeper Gargolmar",
+                  "detail": "Requires level 60"
+                }
+              },
+              {
+                "id": 25718,
+                "name": "Mantle of Magical Might",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "both",
+                "source": {
+                  "type": "quest",
+                  "instance": "Hellfire Ramparts",
+                  "quest": "Weaken the Ramparts"
+                }
+              }
+            ],
+            "chest": [
+              {
+                "id": 29341,
+                "name": "Auchenai Anchorite's Robe",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Everything Will Be Alright",
+                  "instance": "Auchenai Crypts",
+                  "zone": "Terokkar Forest"
+                },
+                "note": "Cloth — no leather caster chest exists yet; spell hit rating"
+              },
+              {
+                "id": 31717,
+                "name": "Shadowcast Tunic",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Foot of the Citadel",
+                  "zone": "Hellfire Peninsula"
+                }
+              },
+              {
+                "id": 12462,
+                "name": "Embrace of the Wind Serpent",
+                "quality": "epic",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Sunken Temple",
+                  "boss": "Shade of Hakkar"
+                }
+              }
+            ],
+            "wrist": [
+              {
+                "id": 21849,
+                "name": "Netherweave Bracers",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring — BoE",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 24392,
+                "name": "Arcing Bracers",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Citadel: The Blood Furnace",
+                  "boss": "Broggok"
+                }
+              },
+              {
+                "id": 28174,
+                "name": "Shattrath Wraps",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "both",
+                "source": {
+                  "type": "quest",
+                  "instance": "Shadow Labyrinth",
+                  "quest": "The Soul Devices"
                 }
               }
             ],
             "hands": [
               {
+                "id": 21851,
+                "name": "Netherweave Gloves",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "Stamina-only filler"
+              },
+              {
                 "id": 29317,
                 "name": "Tempest's Touch",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 2,
                 "source": {
                   "type": "quest",
                   "quest": "Return to Andormu",
                   "instance": "Old Hillsbrad Foothills",
                   "zone": "Caverns of Time, Tanaris"
                 }
+              },
+              {
+                "id": 24452,
+                "name": "Starlight Gauntlets",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Underbog",
+                  "boss": "Hungarfen"
+                }
+              }
+            ],
+            "waist": [
+              {
+                "id": 21850,
+                "name": "Netherweave Belt",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "Stamina-only filler until a better piece drops"
+              },
+              {
+                "id": 31461,
+                "name": "A'dal's Gift",
+                "quality": "rare",
+                "rank": 2,
+                "faction": "both",
+                "source": {
+                  "type": "quest",
+                  "instance": "The Mechanar / The Botanica",
+                  "quest": "How to Break Into the Arcatraz"
+                }
+              },
+              {
+                "id": 24395,
+                "name": "Mindfire Waistband",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Blood Furnace",
+                  "boss": "Keli'dan the Breaker",
+                  "detail": "Requires level 61"
+                }
+              }
+            ],
+            "legs": [
+              {
+                "id": 21852,
+                "name": "Netherweave Pants",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "Stamina-only filler"
+              },
+              {
+                "id": 24359,
+                "name": "Princely Reign Leggings",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Slave Pens",
+                  "boss": "Mennu the Betrayer"
+                }
+              },
+              {
+                "id": 29314,
+                "name": "Leggings of the Third Coin",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Levixus the Soul Caller",
+                  "instance": "Auchenai Crypts",
+                  "zone": "Terokkar Forest"
+                }
+              }
+            ],
+            "feet": [
+              {
+                "id": 21853,
+                "name": "Netherweave Boots",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "Stamina-only filler"
+              },
+              {
+                "id": 30368,
+                "name": "Slippers of the High Priestess",
+                "quality": "rare",
+                "rank": 2,
+                "faction": "both",
+                "source": {
+                  "type": "quest",
+                  "quest": "Deathblow to the Legion",
+                  "zone": "Netherstorm"
+                },
+                "note": "BoP; excellent priest itemization"
+              },
+              {
+                "id": 14631,
+                "name": "Necropile Boots",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scholomance",
+                  "boss": "Lady Illucia Barov"
+                }
               }
             ],
             "finger": [
               {
+                "id": 24154,
+                "name": "Witching Band",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Ramparts",
+                  "boss": "Vazruden",
+                  "detail": "Requires level 60"
+                }
+              },
+              {
                 "id": 29320,
                 "name": "Band of the Guardian",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 2,
                 "source": {
                   "type": "quest",
                   "quest": "Hero of the Brood",
                   "instance": "The Black Morass",
                   "zone": "Caverns of Time, Tanaris"
+                }
+              },
+              {
+                "id": 25541,
+                "name": "Cenarion Ring of Casting",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "both",
+                "source": {
+                  "type": "quest",
+                  "instance": "The Slave Pens / The Underbog",
+                  "quest": "Lost in Action"
+                }
+              },
+              {
+                "id": 12543,
+                "name": "Songstone of Ironforge",
+                "quality": "rare",
+                "rank": 4,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Princess's Surprise",
+                  "instance": "Blackrock Depths",
+                  "detail": "Moira chain"
+                }
+              }
+            ],
+            "trinket": [
+              {
+                "id": 25634,
+                "name": "Oshu'gun Relic",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Gava'xi",
+                  "zone": "Nagrand"
+                }
+              },
+              {
+                "id": 26055,
+                "name": "Oculus of the Hidden Eye",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Auchenai Crypts",
+                  "boss": "Shirrak the Dead Watcher"
+                }
+              },
+              {
+                "id": 12930,
+                "name": "Briarwood Reed",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Spire",
+                  "boss": "Jed Runewatcher"
+                }
+              },
+              {
+                "id": 28041,
+                "name": "Bladefist's Breadth",
+                "quality": "rare",
+                "rank": 4,
+                "source": {
+                  "type": "quest",
+                  "quest": "Overlord (Alliance) / Cruel's Intentions (Horde)",
+                  "zone": "Hellfire Peninsula"
+                },
+                "note": "On-use +200 Attack Power"
+              }
+            ],
+            "mainhand": [
+              {
+                "id": 30011,
+                "name": "Ameer's Impulse Taser",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Nexus-King Salhadaar",
+                  "zone": "Netherstorm"
+                }
+              },
+              {
+                "id": 25760,
+                "name": "Battle Mage's Baton",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Ring of Blood: The Final Challenge",
+                  "zone": "Nagrand"
+                }
+              },
+              {
+                "id": 25950,
+                "name": "Staff of Polarities",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Mana-Tombs",
+                  "boss": "Tavarok"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "lvl69",
+          "levelRange": [
+            66,
+            69
+          ],
+          "slots": {
+            "head": [
+              {
+                "id": 28169,
+                "name": "Mag'hari Ritualist's Horns",
+                "quality": "rare",
+                "rank": 1,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "quest": "Hero of the Mag'har",
+                  "zone": "Nagrand"
+                },
+                "note": "Horde only — no Alliance equivalent"
+              },
+              {
+                "id": 31546,
+                "name": "Tourmaline Crown",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Showdown",
+                  "zone": "Blade's Edge Mountains"
+                }
+              },
+              {
+                "id": 28183,
+                "name": "Hydromancer's Headwrap",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "both",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Warlord's Hideout",
+                  "instance": "The Steamvault",
+                  "zone": "Zangarmarsh"
+                },
+                "note": "Cloth — more raw spellpower, no shapeshift proc"
+              }
+            ],
+            "neck": [
+              {
+                "id": 31692,
+                "name": "Natasha's Ember Necklace",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Hound-Master",
+                  "zone": "Blade's Edge Mountains"
+                }
+              },
+              {
+                "id": 28134,
+                "name": "Brooch of Heightened Potential",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadow Labyrinth",
+                  "boss": "Blackheart the Inciter"
+                },
+                "note": "Hit rating"
+              },
+              {
+                "id": 24462,
+                "name": "Luminous Pearls of Insight",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Underbog",
+                  "boss": "Ghaz'an",
+                  "detail": "Requires level 63"
+                }
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 27994,
+                "name": "Mantle of Three Terrors",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Black Morass",
+                  "boss": "Chrono Lord Deja"
+                }
+              },
+              {
+                "id": 30925,
+                "name": "Spaulders of the Torn-Heart",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Cipher of Damnation",
+                  "zone": "Shadowmoon Valley"
+                }
+              },
+              {
+                "id": 24024,
+                "name": "Pauldrons of Arcane Rage",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Ramparts",
+                  "boss": "Watchkeeper Gargolmar",
+                  "detail": "Requires level 60"
+                }
+              }
+            ],
+            "chest": [
+              {
+                "id": 31297,
+                "name": "Robe of the Crimson Order",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop",
+                  "detail": "BoE — heavy spell hit, non-tailor pick"
+                }
+              },
+              {
+                "id": 21855,
+                "name": "Netherweave Tunic",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring — BoE",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 21854,
+                "name": "Netherweave Robe",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "Stamina-only filler if the Auchenai quest chain isn't done yet"
+              }
+            ],
+            "wrist": [
+              {
+                "id": 21849,
+                "name": "Netherweave Bracers",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring — BoE",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 24250,
+                "name": "Bracers of Havok",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 24392,
+                "name": "Arcing Bracers",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Citadel: The Blood Furnace",
+                  "boss": "Broggok"
+                }
+              }
+            ],
+            "hands": [
+              {
+                "id": 21851,
+                "name": "Netherweave Gloves",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "Stamina-only filler"
+              },
+              {
+                "id": 29317,
+                "name": "Tempest's Touch",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Return to Andormu",
+                  "instance": "Old Hillsbrad Foothills",
+                  "zone": "Caverns of Time, Tanaris"
+                }
+              },
+              {
+                "id": 24452,
+                "name": "Starlight Gauntlets",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Underbog",
+                  "boss": "Hungarfen"
+                }
+              }
+            ],
+            "waist": [
+              {
+                "id": 21850,
+                "name": "Netherweave Belt",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "Stamina-only filler until a better piece drops"
+              },
+              {
+                "id": 31461,
+                "name": "A'dal's Gift",
+                "quality": "rare",
+                "rank": 2,
+                "faction": "both",
+                "source": {
+                  "type": "quest",
+                  "instance": "The Mechanar / The Botanica",
+                  "quest": "How to Break Into the Arcatraz"
+                }
+              },
+              {
+                "id": 24395,
+                "name": "Mindfire Waistband",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Blood Furnace",
+                  "boss": "Keli'dan the Breaker",
+                  "detail": "Requires level 61"
+                }
+              }
+            ],
+            "legs": [
+              {
+                "id": 27948,
+                "name": "Trousers of Oblivion",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Sethekk Halls",
+                  "boss": "Talon King Ikiss"
+                }
+              },
+              {
+                "id": 21852,
+                "name": "Netherweave Pants",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "Stamina-only filler"
+              },
+              {
+                "id": 24359,
+                "name": "Princely Reign Leggings",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Slave Pens",
+                  "boss": "Mennu the Betrayer"
+                }
+              }
+            ],
+            "feet": [
+              {
+                "id": 21853,
+                "name": "Netherweave Boots",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "Stamina-only filler"
+              },
+              {
+                "id": 30368,
+                "name": "Slippers of the High Priestess",
+                "quality": "rare",
+                "rank": 2,
+                "faction": "both",
+                "source": {
+                  "type": "quest",
+                  "quest": "Deathblow to the Legion",
+                  "zone": "Netherstorm"
+                },
+                "note": "BoP; excellent priest itemization"
+              },
+              {
+                "id": 21860,
+                "name": "Imbued Netherweave Boots",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring — BoE",
+                  "profession": "Tailoring"
+                }
+              }
+            ],
+            "finger": [
+              {
+                "id": 28555,
+                "name": "Seal of the Exorcist",
+                "quality": "epic",
+                "rank": 1,
+                "source": {
+                  "type": "vendor",
+                  "detail": "50 Spirit Shards — Spirit Sage vendor, Auchindoun"
                 }
               },
               {
@@ -4466,20 +9431,43 @@ WOWDATA.register({
                   "instance": "The Steamvault",
                   "boss": "Hydromancer Thespia"
                 }
+              },
+              {
+                "id": 24154,
+                "name": "Witching Band",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Ramparts",
+                  "boss": "Vazruden",
+                  "detail": "Requires level 60"
+                }
+              },
+              {
+                "id": 29320,
+                "name": "Band of the Guardian",
+                "quality": "rare",
+                "rank": 4,
+                "source": {
+                  "type": "quest",
+                  "quest": "Hero of the Brood",
+                  "instance": "The Black Morass",
+                  "zone": "Caverns of Time, Tanaris"
+                }
               }
             ],
             "trinket": [
               {
-                "id": 28034,
-                "name": "Hourglass of the Unraveller",
-                "quality": "rare",
+                "id": 25634,
+                "name": "Oshu'gun Relic",
+                "quality": "uncommon",
                 "rank": 1,
                 "source": {
-                  "type": "drop",
-                  "instance": "The Black Morass",
-                  "boss": "Temporus"
-                },
-                "note": "Only the crit rating helps casters — the attack power proc is wasted, but it's still an upgrade"
+                  "type": "quest",
+                  "quest": "Gava'xi",
+                  "zone": "Nagrand"
+                }
               },
               {
                 "id": 26055,
@@ -4491,40 +9479,62 @@ WOWDATA.register({
                   "instance": "Auchenai Crypts",
                   "boss": "Shirrak the Dead Watcher"
                 }
+              },
+              {
+                "id": 12930,
+                "name": "Briarwood Reed",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Spire",
+                  "boss": "Jed Runewatcher"
+                }
+              },
+              {
+                "id": 28034,
+                "name": "Hourglass of the Unraveller",
+                "quality": "rare",
+                "rank": 4,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Black Morass",
+                  "boss": "Temporus"
+                }
               }
             ],
             "mainhand": [
               {
-                "id": 18534,
-                "name": "Rod of the Ogre Magi",
+                "id": 30011,
+                "name": "Ameer's Impulse Taser",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
-                  "type": "drop",
-                  "detail": "Rare-spawn drop — Mizzle the Crafty"
-                },
-                "note": "Carries over cleanly if you didn't get it at 58-64"
-              }
-            ],
-            "ranged": [
-              {
-                "id": 27518,
-                "name": "Ivory Idol of the Moongoddess",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Shattered Halls",
-                  "boss": "Grand Warlock Nethekurse"
+                  "type": "quest",
+                  "quest": "Nexus-King Salhadaar",
+                  "zone": "Netherstorm"
                 }
               },
               {
-                "id": 23197,
-                "name": "Idol of the Moon",
+                "id": 27868,
+                "name": "Runesong Dagger",
                 "quality": "rare",
                 "rank": 2,
                 "source": {
-                  "type": "world-drop"
+                  "type": "drop",
+                  "instance": "The Shattered Halls",
+                  "boss": "Warbringer O'mrogg"
+                }
+              },
+              {
+                "id": 25760,
+                "name": "Battle Mage's Baton",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Ring of Blood: The Final Challenge",
+                  "zone": "Nagrand"
                 }
               }
             ]
@@ -4533,17 +9543,42 @@ WOWDATA.register({
       ]
     },
     {
-      "id": "restoration",
-      "name": "Restoration",
-      "role": "healer",
+      "id": "balance",
+      "name": "Balance",
+      "role": "dps",
       "brackets": [
         {
-          "id": "lvl19",
+          "id": "lvl20",
           "levelRange": [
             10,
-            19
+            20
           ],
           "slots": {
+            "neck": [
+              {
+                "id": 21934,
+                "name": "Ornate Tigerseye Necklace",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (BoE)",
+                  "profession": "Jewelcrafting"
+                },
+                "note": "+2 Spirit; the only real neck option this low"
+              },
+              {
+                "id": 21933,
+                "name": "Thick Bronze Necklace",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (skill 50), requires level 17",
+                  "profession": "Jewelcrafting"
+                }
+              }
+            ],
             "shoulder": [
               {
                 "id": 10657,
@@ -4560,16 +9595,15 @@ WOWDATA.register({
             ],
             "chest": [
               {
-                "id": 14150,
-                "name": "Robe of Evocation",
+                "id": 2292,
+                "name": "Necrology Robes",
                 "quality": "rare",
                 "rank": 1,
-                "faction": "horde",
                 "source": {
                   "type": "drop",
-                  "detail": "Early-level drop (exact source varies)"
-                },
-                "note": "Cloth — +Int and spell crit at level 13"
+                  "instance": "Shadowfang Keep",
+                  "detail": "trash"
+                }
               },
               {
                 "id": 5202,
@@ -4583,6 +9617,18 @@ WOWDATA.register({
                   "boss": "Edwin VanCleef"
                 },
                 "note": "Cloth — Stamina/Spirit alternative for Alliance"
+              },
+              {
+                "id": 14150,
+                "name": "Robe of Evocation",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "horde",
+                "source": {
+                  "type": "drop",
+                  "detail": "Early-level drop (exact source varies)"
+                },
+                "note": "Cloth — +Int and spell crit at level 13"
               }
             ],
             "wrist": [
@@ -4612,26 +9658,56 @@ WOWDATA.register({
                 "note": "Cloth; requires level 17"
               }
             ],
-            "back": [
+            "waist": [
               {
-                "id": 6632,
-                "name": "Feyscale Cloak",
+                "id": 6319,
+                "name": "Girdle of the Blindwatcher",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
-                  "instance": "Wailing Caverns",
-                  "boss": "Deviate Faerie Dragon",
-                  "detail": "Rare spawn"
+                  "instance": "Shadowfang Keep",
+                  "boss": "Odo the Blindwatcher"
+                }
+              },
+              {
+                "id": 2911,
+                "name": "Keller's Girdle",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE"
+              },
+              {
+                "id": 6468,
+                "name": "Deviate Scale Belt",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking; requires Deviate Scale farmed in Wailing Caverns",
+                  "profession": "Leatherworking"
                 }
               }
             ],
             "legs": [
               {
+                "id": 12987,
+                "name": "Darkweave Breeches",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE"
+              },
+              {
                 "id": 5199,
                 "name": "Smelting Pants",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 2,
                 "source": {
                   "type": "drop",
                   "instance": "The Deadmines",
@@ -4640,28 +9716,66 @@ WOWDATA.register({
                 "note": "Leather; Stamina/Spirit — no cloth legs exist this low"
               }
             ],
+            "feet": [
+              {
+                "id": 14374,
+                "name": "Sanguine Sandals",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE"
+              }
+            ],
             "finger": [
+              {
+                "id": 30804,
+                "name": "Bronze Band of Force",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (BoE)",
+                  "profession": "Jewelcrafting"
+                },
+                "note": "Unique-Equipped; with Band of Purification gives Horde 2/2"
+              },
               {
                 "id": 1156,
                 "name": "Lavishly Jeweled Ring",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 2,
                 "source": {
                   "type": "drop",
                   "instance": "The Deadmines",
                   "boss": "Gilnid"
                 },
-                "note": "Unique-Equipped"
+                "note": "Unique-Equipped; Intellect roll, but the only ring available this early"
               },
               {
                 "id": 12996,
                 "name": "Band of Purification",
                 "quality": "rare",
-                "rank": 2,
+                "rank": 3,
                 "source": {
                   "type": "world-drop"
                 },
                 "note": "BoE, may need AH"
+              }
+            ],
+            "trinket": [
+              {
+                "id": 4381,
+                "name": "Minor Recombobulator",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
+                },
+                "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
               }
             ],
             "mainhand": [
@@ -4676,61 +9790,93 @@ WOWDATA.register({
                   "instance": "Wailing Caverns"
                 },
                 "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+              },
+              {
+                "id": 7230,
+                "name": "Smite's Mighty Hammer",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Mr. Smite"
+                }
+              },
+              {
+                "id": 2567,
+                "name": "Evocator's Blade",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE, Unique-Equipped; 1H dagger"
               }
             ]
           }
         },
         {
-          "id": "lvl29",
+          "id": "lvl25",
           "levelRange": [
-            20,
-            29
+            21,
+            25
           ],
           "slots": {
             "head": [
               {
-                "id": 9492,
-                "name": "Electromagnetic Gigaflux Reactivator",
-                "quality": "rare",
+                "id": 4385,
+                "name": "Green Tinted Goggles",
+                "quality": "uncommon",
                 "rank": 1,
                 "source": {
-                  "type": "drop",
-                  "instance": "Gnomeregan",
-                  "boss": "Mekgineer Thermaplugg"
-                },
-                "note": "Cloth caster head with a fun on-use nature nuke"
-              },
-              {
-                "id": 7050,
-                "name": "Silk Headband",
-                "quality": "common",
-                "rank": 2,
-                "source": {
                   "type": "crafted",
-                  "detail": "Tailoring — cheap AH filler"
+                  "detail": "Engineering (skill 150) — cheap cloth BoP head piece, no character level requirement; classic twink filler",
+                  "profession": "Engineering"
                 }
               }
             ],
             "neck": [
               {
-                "id": 6695,
-                "name": "Stygian Bone Amulet",
-                "quality": "rare",
+                "id": 21934,
+                "name": "Ornate Tigerseye Necklace",
+                "quality": "uncommon",
                 "rank": 1,
                 "source": {
-                  "type": "drop",
-                  "instance": "Razorfen Kraul",
-                  "boss": "Groyat the Blind Hunter",
-                  "detail": "rare spawn"
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (BoE)",
+                  "profession": "Jewelcrafting"
+                },
+                "note": "+2 Spirit; the only real neck option this low"
+              },
+              {
+                "id": 21933,
+                "name": "Thick Bronze Necklace",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (skill 50), requires level 17",
+                  "profession": "Jewelcrafting"
                 }
               }
             ],
             "shoulder": [
               {
+                "id": 6685,
+                "name": "Death Speaker Mantle",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Death Speaker Jargba"
+                }
+              },
+              {
                 "id": 3748,
                 "name": "Feline Mantle",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 2,
                 "source": {
                   "type": "drop",
                   "instance": "Shadowfang Keep",
@@ -4739,14 +9885,50 @@ WOWDATA.register({
                 "note": "Cloth — Intellect/Spirit"
               },
               {
-                "id": 6685,
-                "name": "Death Speaker Mantle",
+                "id": 10657,
+                "name": "Talbar Mantle",
+                "quality": "uncommon",
+                "rank": 3,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Glowing Shard chain",
+                  "instance": "Wailing Caverns"
+                }
+              }
+            ],
+            "chest": [
+              {
+                "id": 6324,
+                "name": "Robes of Arugal",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Archmage Arugal"
+                }
+              },
+              {
+                "id": 2292,
+                "name": "Necrology Robes",
                 "quality": "rare",
                 "rank": 2,
                 "source": {
                   "type": "drop",
-                  "instance": "Razorfen Kraul",
-                  "boss": "Death Speaker Jargba"
+                  "instance": "Shadowfang Keep",
+                  "detail": "trash"
+                }
+              },
+              {
+                "id": 4324,
+                "name": "Azure Silk Vest",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE), requires level 25 — cheap; minor Frost damage proc",
+                  "profession": "Tailoring"
                 }
               }
             ],
@@ -4760,33 +9942,42 @@ WOWDATA.register({
                   "type": "drop",
                   "instance": "Shadowfang Keep",
                   "detail": "trash (Son of Arugal); requires level 17"
-                },
-                "note": "Carries over — few dedicated Intellect wrist options exist before the 40s"
-              }
-            ],
-            "back": [
-              {
-                "id": 6901,
-                "name": "Glowing Thresher Cape",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Blackfathom Deeps",
-                  "boss": "Old Serra'kis"
                 }
               }
             ],
-            "chest": [
+            "hands": [
               {
-                "id": 6682,
-                "name": "Death Speaker Robes",
+                "id": 5195,
+                "name": "Gold-flecked Gloves",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
-                  "instance": "Razorfen Kraul",
-                  "boss": "Death Speaker Jargba"
+                  "instance": "The Deadmines",
+                  "boss": "Sneed"
+                },
+                "note": "Cloth; requires level 17"
+              },
+              {
+                "id": 7049,
+                "name": "Truefaith Gloves",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 4319,
+                "name": "Azure Silk Gloves",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 }
               }
             ],
@@ -4801,6 +9992,27 @@ WOWDATA.register({
                   "instance": "Shadowfang Keep",
                   "boss": "Archmage Arugal"
                 }
+              },
+              {
+                "id": 6319,
+                "name": "Girdle of the Blindwatcher",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Odo the Blindwatcher"
+                }
+              },
+              {
+                "id": 2911,
+                "name": "Keller's Girdle",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE"
               }
             ],
             "legs": [
@@ -4826,52 +10038,91 @@ WOWDATA.register({
                   "quest": "Morbent Fel",
                   "zone": "Duskwood"
                 }
+              },
+              {
+                "id": 6282,
+                "name": "Sacred Burial Trousers",
+                "quality": "uncommon",
+                "rank": 3,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "quest": "Battle of Hillsbrad chain",
+                  "zone": "Tarren Mill"
+                }
               }
             ],
             "feet": [
               {
-                "id": 6406,
-                "name": "Nightsky Boots",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "world-drop"
-                }
-              }
-            ],
-            "hands": [
-              {
-                "id": 4319,
-                "name": "Azure Silk Gloves",
+                "id": 4321,
+                "name": "Spider Silk Slippers",
                 "quality": "uncommon",
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
-                }
-              }
-            ],
-            "finger": [
-              {
-                "id": 2039,
-                "name": "Plains Ring",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Razorfen Kraul",
-                  "detail": "trash"
+                  "detail": "Tailoring (BoE), requires level 23",
+                  "profession": "Tailoring"
                 }
               },
               {
-                "id": 12996,
-                "name": "Band of Purification",
-                "quality": "rare",
+                "id": 14374,
+                "name": "Sanguine Sandals",
+                "quality": "uncommon",
                 "rank": 2,
                 "source": {
                   "type": "world-drop"
                 },
-                "note": "BoE, may need AH; requires level 18"
+                "note": "BoE"
+              }
+            ],
+            "finger": [
+              {
+                "id": 30804,
+                "name": "Bronze Band of Force",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (BoE)",
+                  "profession": "Jewelcrafting"
+                },
+                "note": "Unique-Equipped; with Band of Purification gives Horde 2/2"
+              },
+              {
+                "id": 1156,
+                "name": "Lavishly Jeweled Ring",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Gilnid"
+                },
+                "note": "Unique-Equipped; Intellect roll, but the only ring available this early"
+              },
+              {
+                "id": 13094,
+                "name": "The Queen's Jewel",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Duskwood",
+                  "detail": "Nightbane Vile Fang (rare spawn)"
+                },
+                "note": "BoE, Unique-Equipped"
+              },
+              {
+                "id": 2933,
+                "name": "Seal of Wrynn",
+                "quality": "rare",
+                "rank": 4,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Unsent Letter",
+                  "zone": "Stormwind City"
+                }
               }
             ],
             "trinket": [
@@ -4882,15 +10133,137 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Engineering 140, BoP"
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
                 },
                 "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
               }
             ],
             "mainhand": [
               {
-                "id": 2816,
-                "name": "Death Speaker Scepter",
+                "id": 6505,
+                "name": "Crescent Staff",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Leaders of the Fang",
+                  "instance": "Wailing Caverns"
+                },
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+              },
+              {
+                "id": 1976,
+                "name": "Slaghammer",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul"
+                }
+              },
+              {
+                "id": 7230,
+                "name": "Smite's Mighty Hammer",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Mr. Smite"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "lvl30",
+          "levelRange": [
+            26,
+            30
+          ],
+          "slots": {
+            "head": [
+              {
+                "id": 7691,
+                "name": "Embalmed Shroud",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Fallen Champion",
+                  "detail": "Graveyard wing"
+                }
+              },
+              {
+                "id": 6688,
+                "name": "Whisperwind Headdress",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Earthcaller Halmgar",
+                  "detail": "rare spawn"
+                }
+              },
+              {
+                "id": 9492,
+                "name": "Electromagnetic Gigaflux Reactivator",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Gnomeregan",
+                  "boss": "Mekgineer Thermaplugg"
+                },
+                "note": "Cloth caster head with a fun on-use nature nuke"
+              }
+            ],
+            "neck": [
+              {
+                "id": 7731,
+                "name": "Ghostshard Talisman",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Azshir the Sleepless",
+                  "detail": "Graveyard wing"
+                },
+                "note": "Stamina-focused; the spell-damage proc is wasted but it's the best neck available this early"
+              },
+              {
+                "id": 6695,
+                "name": "Stygian Bone Amulet",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Groyat the Blind Hunter",
+                  "detail": "rare spawn"
+                }
+              },
+              {
+                "id": 21934,
+                "name": "Ornate Tigerseye Necklace",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (BoE)",
+                  "profession": "Jewelcrafting"
+                },
+                "note": "+2 Spirit; the only real neck option this low"
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 6685,
+                "name": "Death Speaker Mantle",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
@@ -4900,90 +10273,433 @@ WOWDATA.register({
                 }
               },
               {
-                "id": 3414,
-                "name": "Crested Scepter",
+                "id": 3748,
+                "name": "Feline Mantle",
                 "quality": "rare",
                 "rank": 2,
                 "source": {
                   "type": "drop",
-                  "instance": "Blackfathom Deeps",
-                  "detail": "trash"
-                }
-              }
-            ]
-          }
-        },
-        {
-          "id": "lvl39",
-          "levelRange": [
-            30,
-            39
-          ],
-          "slots": {
-            "head": [
-              {
-                "id": 7720,
-                "name": "Whitemane's Chapeau",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scarlet Monastery",
-                  "boss": "High Inquisitor Whitemane",
-                  "detail": "Cathedral wing"
+                  "instance": "Shadowfang Keep",
+                  "boss": "Wolf Master Nandos"
                 },
-                "note": "Cloth"
+                "note": "Cloth — Intellect/Spirit"
               },
               {
-                "id": 7691,
-                "name": "Embalmed Shroud",
+                "id": 7684,
+                "name": "Bloodmage Mantle",
                 "quality": "rare",
-                "rank": 2,
+                "rank": 3,
                 "source": {
                   "type": "drop",
                   "instance": "Scarlet Monastery",
-                  "boss": "Fallen Champion",
+                  "boss": "Bloodmage Thalnos",
                   "detail": "Graveyard wing"
                 }
               }
             ],
-            "neck": [
+            "chest": [
               {
-                "id": 7722,
-                "name": "Triune Amulet",
+                "id": 6324,
+                "name": "Robes of Arugal",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
-                  "instance": "Scarlet Monastery",
-                  "boss": "High Inquisitor Whitemane",
-                  "detail": "Cathedral wing"
+                  "instance": "Shadowfang Keep",
+                  "boss": "Archmage Arugal"
                 }
               },
               {
-                "id": 7731,
-                "name": "Ghostshard Talisman",
+                "id": 7728,
+                "name": "Beguiler Robes",
                 "quality": "rare",
                 "rank": 2,
+                "source": {
+                  "type": "world-drop",
+                  "detail": "BoE, Scarlet Monastery trash"
+                }
+              },
+              {
+                "id": 2292,
+                "name": "Necrology Robes",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "detail": "trash"
+                }
+              }
+            ],
+            "wrist": [
+              {
+                "id": 13106,
+                "name": "Glowing Magical Bracelets",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE; usable from level 26, still the best wrist option through this bracket"
+              },
+              {
+                "id": 1974,
+                "name": "Mindthrust Bracers",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "detail": "trash (Son of Arugal); requires level 17"
+                }
+              },
+              {
+                "id": 18948,
+                "name": "Barbaric Bracers",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking 155 (BoE, often on AH)",
+                  "profession": "Leatherworking"
+                }
+              }
+            ],
+            "hands": [
+              {
+                "id": 5195,
+                "name": "Gold-flecked Gloves",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Sneed"
+                },
+                "note": "Cloth; requires level 17"
+              },
+              {
+                "id": 7049,
+                "name": "Truefaith Gloves",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 4319,
+                "name": "Azure Silk Gloves",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                }
+              }
+            ],
+            "waist": [
+              {
+                "id": 6392,
+                "name": "Belt of Arugal",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Archmage Arugal"
+                }
+              },
+              {
+                "id": 6319,
+                "name": "Girdle of the Blindwatcher",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Odo the Blindwatcher"
+                }
+              },
+              {
+                "id": 2911,
+                "name": "Keller's Girdle",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE"
+              }
+            ],
+            "legs": [
+              {
+                "id": 7709,
+                "name": "Blighted Leggings",
+                "quality": "uncommon",
+                "rank": 1,
                 "source": {
                   "type": "drop",
                   "instance": "Scarlet Monastery",
                   "boss": "Azshir the Sleepless",
                   "detail": "Graveyard wing"
                 }
+              },
+              {
+                "id": 6903,
+                "name": "Gaze Dreamer Pants",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackfathom Deeps",
+                  "boss": "Twilight Lord Kelris"
+                }
+              },
+              {
+                "id": 2954,
+                "name": "Night Watch Pantaloons",
+                "quality": "uncommon",
+                "rank": 3,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "Morbent Fel",
+                  "zone": "Duskwood"
+                }
               }
             ],
-            "shoulder": [
+            "feet": [
               {
-                "id": 7684,
-                "name": "Bloodmage Mantle",
+                "id": 4321,
+                "name": "Spider Silk Slippers",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE), requires level 23",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 4325,
+                "name": "Boots of the Enchanter",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 6406,
+                "name": "Nightsky Boots",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
+                }
+              }
+            ],
+            "finger": [
+              {
+                "id": 30804,
+                "name": "Bronze Band of Force",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (BoE)",
+                  "profession": "Jewelcrafting"
+                },
+                "note": "Unique-Equipped; with Band of Purification gives Horde 2/2"
+              },
+              {
+                "id": 1156,
+                "name": "Lavishly Jeweled Ring",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Gilnid"
+                },
+                "note": "Unique-Equipped; Intellect roll, but the only ring available this early"
+              },
+              {
+                "id": 13094,
+                "name": "The Queen's Jewel",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Duskwood",
+                  "detail": "Nightbane Vile Fang (rare spawn)"
+                },
+                "note": "BoE, Unique-Equipped"
+              },
+              {
+                "id": 2933,
+                "name": "Seal of Wrynn",
+                "quality": "rare",
+                "rank": 4,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Unsent Letter",
+                  "zone": "Stormwind City"
+                }
+              }
+            ],
+            "trinket": [
+              {
+                "id": 4381,
+                "name": "Minor Recombobulator",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
+                },
+                "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
+              }
+            ],
+            "mainhand": [
+              {
+                "id": 9449,
+                "name": "Manual Crowd Pummeler",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Gnomeregan",
+                  "boss": "Crowd Pummeler 9-60"
+                },
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+              },
+              {
+                "id": 6505,
+                "name": "Crescent Staff",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Leaders of the Fang",
+                  "instance": "Wailing Caverns"
+                },
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+              },
+              {
+                "id": 1976,
+                "name": "Slaghammer",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "lvl35",
+          "levelRange": [
+            31,
+            35
+          ],
+          "slots": {
+            "head": [
+              {
+                "id": 7691,
+                "name": "Embalmed Shroud",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
                   "instance": "Scarlet Monastery",
-                  "boss": "Bloodmage Thalnos",
+                  "boss": "Fallen Champion",
                   "detail": "Graveyard wing"
+                }
+              },
+              {
+                "id": 6688,
+                "name": "Whisperwind Headdress",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Earthcaller Halmgar",
+                  "detail": "rare spawn"
+                }
+              },
+              {
+                "id": 9492,
+                "name": "Electromagnetic Gigaflux Reactivator",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Gnomeregan",
+                  "boss": "Mekgineer Thermaplugg"
+                },
+                "note": "Cloth caster head with a fun on-use nature nuke"
+              }
+            ],
+            "neck": [
+              {
+                "id": 7731,
+                "name": "Ghostshard Talisman",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Azshir the Sleepless",
+                  "detail": "Graveyard wing"
+                },
+                "note": "Stamina-focused; the spell-damage proc is wasted but it's the best neck available this early"
+              },
+              {
+                "id": 17773,
+                "name": "Prodigious Shadowshard Pendant",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Shadowshard Fragments",
+                  "zone": "Desolace / Maraudon"
+                }
+              },
+              {
+                "id": 6695,
+                "name": "Stygian Bone Amulet",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Groyat the Blind Hunter",
+                  "detail": "rare spawn"
+                }
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 6685,
+                "name": "Death Speaker Mantle",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Death Speaker Jargba"
                 }
               },
               {
@@ -4997,6 +10713,18 @@ WOWDATA.register({
                   "boss": "Arcanist Doan",
                   "detail": "Library wing"
                 }
+              },
+              {
+                "id": 3748,
+                "name": "Feline Mantle",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Wolf Master Nandos"
+                },
+                "note": "Cloth — Intellect/Spirit"
               }
             ],
             "chest": [
@@ -5013,26 +10741,130 @@ WOWDATA.register({
                 }
               },
               {
-                "id": 10762,
-                "name": "Robes of the Lich",
+                "id": 6324,
+                "name": "Robes of Arugal",
                 "quality": "rare",
                 "rank": 2,
                 "source": {
                   "type": "drop",
-                  "instance": "Razorfen Downs",
-                  "boss": "Amnennar the Coldbringer"
+                  "instance": "Shadowfang Keep",
+                  "boss": "Archmage Arugal"
+                }
+              },
+              {
+                "id": 7728,
+                "name": "Beguiler Robes",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop",
+                  "detail": "BoE, Scarlet Monastery trash"
                 }
               }
             ],
-            "back": [
+            "wrist": [
               {
-                "id": 7053,
-                "name": "Azure Silk Cloak",
+                "id": 13106,
+                "name": "Glowing Magical Bracelets",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE; usable from level 26, still the best wrist option through this bracket"
+              },
+              {
+                "id": 1974,
+                "name": "Mindthrust Bracers",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "detail": "trash (Son of Arugal); requires level 17"
+                }
+              },
+              {
+                "id": 18948,
+                "name": "Barbaric Bracers",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking 155 (BoE, often on AH)",
+                  "profession": "Leatherworking"
+                }
+              }
+            ],
+            "hands": [
+              {
+                "id": 5195,
+                "name": "Gold-flecked Gloves",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Sneed"
+                },
+                "note": "Cloth; requires level 17"
+              },
+              {
+                "id": 7049,
+                "name": "Truefaith Gloves",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 4319,
+                "name": "Azure Silk Gloves",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                }
+              }
+            ],
+            "waist": [
+              {
+                "id": 4329,
+                "name": "Star Belt",
                 "quality": "uncommon",
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "mildly AH-reliant"
+              },
+              {
+                "id": 6392,
+                "name": "Belt of Arugal",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Archmage Arugal"
+                }
+              },
+              {
+                "id": 6319,
+                "name": "Girdle of the Blindwatcher",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Odo the Blindwatcher"
                 }
               }
             ],
@@ -5050,26 +10882,386 @@ WOWDATA.register({
                 }
               },
               {
-                "id": 9407,
-                "name": "Stoneweaver Leggings",
+                "id": 6903,
+                "name": "Gaze Dreamer Pants",
                 "quality": "rare",
                 "rank": 2,
                 "source": {
                   "type": "drop",
-                  "instance": "Uldaman",
-                  "boss": "Ironaya"
+                  "instance": "Blackfathom Deeps",
+                  "boss": "Twilight Lord Kelris"
+                }
+              },
+              {
+                "id": 2954,
+                "name": "Night Watch Pantaloons",
+                "quality": "uncommon",
+                "rank": 3,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "Morbent Fel",
+                  "zone": "Duskwood"
                 }
               }
             ],
             "feet": [
               {
-                "id": 4325,
-                "name": "Boots of the Enchanter",
+                "id": 4321,
+                "name": "Spider Silk Slippers",
                 "quality": "uncommon",
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE), requires level 23",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 4325,
+                "name": "Boots of the Enchanter",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 6406,
+                "name": "Nightsky Boots",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
+                }
+              }
+            ],
+            "finger": [
+              {
+                "id": 30804,
+                "name": "Bronze Band of Force",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (BoE)",
+                  "profession": "Jewelcrafting"
+                },
+                "note": "Unique-Equipped; with Band of Purification gives Horde 2/2"
+              },
+              {
+                "id": 1156,
+                "name": "Lavishly Jeweled Ring",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Gilnid"
+                },
+                "note": "Unique-Equipped; Intellect roll, but the only ring available this early"
+              },
+              {
+                "id": 13094,
+                "name": "The Queen's Jewel",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Duskwood",
+                  "detail": "Nightbane Vile Fang (rare spawn)"
+                },
+                "note": "BoE, Unique-Equipped"
+              },
+              {
+                "id": 2933,
+                "name": "Seal of Wrynn",
+                "quality": "rare",
+                "rank": 4,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Unsent Letter",
+                  "zone": "Stormwind City"
+                }
+              }
+            ],
+            "trinket": [
+              {
+                "id": 4381,
+                "name": "Minor Recombobulator",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
+                },
+                "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
+              }
+            ],
+            "mainhand": [
+              {
+                "id": 873,
+                "name": "Staff of Jordan",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "Often pricey on the AH"
+              },
+              {
+                "id": 9449,
+                "name": "Manual Crowd Pummeler",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Gnomeregan",
+                  "boss": "Crowd Pummeler 9-60"
+                },
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+              },
+              {
+                "id": 7713,
+                "name": "Illusionary Rod",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Arcanist Doan",
+                  "detail": "Library wing"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "lvl40",
+          "levelRange": [
+            36,
+            40
+          ],
+          "slots": {
+            "head": [
+              {
+                "id": 8345,
+                "name": "Wolfshead Helm",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Classic pattern, BoE)",
+                  "profession": "Leatherworking"
+                },
+                "note": "Grants bonus energy/rage on shifting into Cat/Bear form; one of very few Druid-only items and stays relevant for a very long time."
+              },
+              {
+                "id": 7691,
+                "name": "Embalmed Shroud",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Fallen Champion",
+                  "detail": "Graveyard wing"
+                }
+              },
+              {
+                "id": 6688,
+                "name": "Whisperwind Headdress",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Earthcaller Halmgar",
+                  "detail": "rare spawn"
+                }
+              }
+            ],
+            "neck": [
+              {
+                "id": 20037,
+                "name": "Arcane Crystal Pendant",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Destroy Morphaz",
+                  "instance": "Temple of Atal'Hakkar (Sunken Temple)",
+                  "detail": "Mage-only chain starting with Magecraft from Archmage Xylem in Azshara, ~level 52; choice of Fire Ruby/Glacial Spike/Arcane Crystal Pendant — take Arcane Crystal Pendant for Arcane"
+                }
+              },
+              {
+                "id": 7722,
+                "name": "Triune Amulet",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "High Inquisitor Whitemane",
+                  "detail": "Cathedral wing"
+                }
+              },
+              {
+                "id": 10769,
+                "name": "Glowing Eye of Mordresh",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Downs",
+                  "boss": "Mordresh Fire Eye"
+                }
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 6685,
+                "name": "Death Speaker Mantle",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Death Speaker Jargba"
+                }
+              },
+              {
+                "id": 7712,
+                "name": "Mantle of Doan",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Arcanist Doan",
+                  "detail": "Library wing"
+                }
+              },
+              {
+                "id": 3748,
+                "name": "Feline Mantle",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Wolf Master Nandos"
+                },
+                "note": "Cloth — Intellect/Spirit"
+              }
+            ],
+            "chest": [
+              {
+                "id": 10021,
+                "name": "Dreamweave Vest",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring 250 (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 7711,
+                "name": "Robe of Doan",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Arcanist Doan",
+                  "detail": "Library wing"
+                }
+              },
+              {
+                "id": 6324,
+                "name": "Robes of Arugal",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Archmage Arugal"
+                }
+              }
+            ],
+            "wrist": [
+              {
+                "id": 13106,
+                "name": "Glowing Magical Bracelets",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE; usable from level 26, still the best wrist option through this bracket"
+              },
+              {
+                "id": 1974,
+                "name": "Mindthrust Bracers",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "detail": "trash (Son of Arugal); requires level 17"
+                }
+              },
+              {
+                "id": 18948,
+                "name": "Barbaric Bracers",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking 155 (BoE, often on AH)",
+                  "profession": "Leatherworking"
+                }
+              }
+            ],
+            "hands": [
+              {
+                "id": 10019,
+                "name": "Dreamweave Gloves",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring 250 (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 5195,
+                "name": "Gold-flecked Gloves",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Sneed"
+                },
+                "note": "Cloth; requires level 17"
+              },
+              {
+                "id": 7049,
+                "name": "Truefaith Gloves",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 }
               }
             ],
@@ -5081,20 +11273,3663 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 },
                 "note": "mildly AH-reliant"
+              },
+              {
+                "id": 6392,
+                "name": "Belt of Arugal",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Archmage Arugal"
+                }
+              },
+              {
+                "id": 6319,
+                "name": "Girdle of the Blindwatcher",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Odo the Blindwatcher"
+                }
               }
             ],
-            "hands": [
+            "legs": [
               {
-                "id": 7049,
-                "name": "Truefaith Gloves",
+                "id": 7709,
+                "name": "Blighted Leggings",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Azshir the Sleepless",
+                  "detail": "Graveyard wing"
+                }
+              },
+              {
+                "id": 6903,
+                "name": "Gaze Dreamer Pants",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackfathom Deeps",
+                  "boss": "Twilight Lord Kelris"
+                }
+              },
+              {
+                "id": 2954,
+                "name": "Night Watch Pantaloons",
+                "quality": "uncommon",
+                "rank": 3,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "Morbent Fel",
+                  "zone": "Duskwood"
+                }
+              }
+            ],
+            "feet": [
+              {
+                "id": 4321,
+                "name": "Spider Silk Slippers",
                 "quality": "uncommon",
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE), requires level 23",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 4325,
+                "name": "Boots of the Enchanter",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 6406,
+                "name": "Nightsky Boots",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
+                }
+              }
+            ],
+            "finger": [
+              {
+                "id": 30804,
+                "name": "Bronze Band of Force",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (BoE)",
+                  "profession": "Jewelcrafting"
+                },
+                "note": "Unique-Equipped; with Band of Purification gives Horde 2/2"
+              },
+              {
+                "id": 1156,
+                "name": "Lavishly Jeweled Ring",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Gilnid"
+                },
+                "note": "Unique-Equipped; Intellect roll, but the only ring available this early"
+              },
+              {
+                "id": 13094,
+                "name": "The Queen's Jewel",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Duskwood",
+                  "detail": "Nightbane Vile Fang (rare spawn)"
+                },
+                "note": "BoE, Unique-Equipped"
+              },
+              {
+                "id": 2933,
+                "name": "Seal of Wrynn",
+                "quality": "rare",
+                "rank": 4,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Unsent Letter",
+                  "zone": "Stormwind City"
+                }
+              }
+            ],
+            "trinket": [
+              {
+                "id": 19991,
+                "name": "Devilsaur Eye",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Un'Goro Crater",
+                  "detail": "Devilsaur loot"
+                },
+                "note": "Expensive BoE — on-use AP and hit burst"
+              },
+              {
+                "id": 11122,
+                "name": "Carrot on a Stick",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Gahz'rilla",
+                  "instance": "Zul'Farrak"
+                },
+                "note": "No combat stats; mount-speed utility filler"
+              },
+              {
+                "id": 4381,
+                "name": "Minor Recombobulator",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
+                },
+                "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
+              },
+              {
+                "id": 9149,
+                "name": "Philosopher's Stone",
+                "quality": "uncommon",
+                "rank": 4,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Alchemy (skill 200), BoP",
+                  "profession": "Alchemy"
+                },
+                "note": "Usable from level 35 — the only trinket available this early",
+                "bop": true
+              }
+            ],
+            "mainhand": [
+              {
+                "id": 873,
+                "name": "Staff of Jordan",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "Often pricey on the AH"
+              },
+              {
+                "id": 9449,
+                "name": "Manual Crowd Pummeler",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Gnomeregan",
+                  "boss": "Crowd Pummeler 9-60"
+                },
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+              },
+              {
+                "id": 7723,
+                "name": "Mograine's Might",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Scarlet Commander Mograine",
+                  "detail": "Cathedral wing"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "lvl45",
+          "levelRange": [
+            41,
+            45
+          ],
+          "slots": {
+            "head": [
+              {
+                "id": 8345,
+                "name": "Wolfshead Helm",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Classic pattern, BoE)",
+                  "profession": "Leatherworking"
+                },
+                "note": "Grants bonus energy/rage on shifting into Cat/Bear form; one of very few Druid-only items and stays relevant for a very long time."
+              },
+              {
+                "id": 9470,
+                "name": "Bad Mojo Mask",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Shadowpriest Sezz'ziz"
+                }
+              },
+              {
+                "id": 10041,
+                "name": "Dreamweave Circlet",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring 250 (BoE)",
+                  "profession": "Tailoring"
+                }
+              }
+            ],
+            "neck": [
+              {
+                "id": 20037,
+                "name": "Arcane Crystal Pendant",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Destroy Morphaz",
+                  "instance": "Temple of Atal'Hakkar (Sunken Temple)",
+                  "detail": "Mage-only chain starting with Magecraft from Archmage Xylem in Azshara, ~level 52; choice of Fire Ruby/Glacial Spike/Arcane Crystal Pendant — take Arcane Crystal Pendant for Arcane"
+                }
+              },
+              {
+                "id": 7722,
+                "name": "Triune Amulet",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "High Inquisitor Whitemane",
+                  "detail": "Cathedral wing"
+                }
+              },
+              {
+                "id": 10769,
+                "name": "Glowing Eye of Mordresh",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Downs",
+                  "boss": "Mordresh Fire Eye"
+                }
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 6685,
+                "name": "Death Speaker Mantle",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Death Speaker Jargba"
+                }
+              },
+              {
+                "id": 7712,
+                "name": "Mantle of Doan",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Arcanist Doan",
+                  "detail": "Library wing"
+                }
+              },
+              {
+                "id": 3748,
+                "name": "Feline Mantle",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Wolf Master Nandos"
+                },
+                "note": "Cloth — Intellect/Spirit"
+              }
+            ],
+            "chest": [
+              {
+                "id": 10021,
+                "name": "Dreamweave Vest",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring 250 (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 7711,
+                "name": "Robe of Doan",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Arcanist Doan",
+                  "detail": "Library wing"
+                }
+              },
+              {
+                "id": 6324,
+                "name": "Robes of Arugal",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Archmage Arugal"
+                }
+              }
+            ],
+            "wrist": [
+              {
+                "id": 9433,
+                "name": "Forgotten Wraps",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop"
+                },
+                "note": "Cloth Intellect wrist"
+              },
+              {
+                "id": 13106,
+                "name": "Glowing Magical Bracelets",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE; usable from level 26, still the best wrist option through this bracket"
+              },
+              {
+                "id": 1974,
+                "name": "Mindthrust Bracers",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "detail": "trash (Son of Arugal); requires level 17"
+                }
+              }
+            ],
+            "hands": [
+              {
+                "id": 10019,
+                "name": "Dreamweave Gloves",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring 250 (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 5195,
+                "name": "Gold-flecked Gloves",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Sneed"
+                },
+                "note": "Cloth; requires level 17"
+              },
+              {
+                "id": 18083,
+                "name": "Jumanza Grips",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Witch Doctor Zum'rah"
+                }
+              }
+            ],
+            "waist": [
+              {
+                "id": 17755,
+                "name": "Satyrmane Sash",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Lord Vyletongue"
+                }
+              },
+              {
+                "id": 4329,
+                "name": "Star Belt",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "mildly AH-reliant"
+              },
+              {
+                "id": 6392,
+                "name": "Belt of Arugal",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Archmage Arugal"
+                }
+              }
+            ],
+            "legs": [
+              {
+                "id": 9484,
+                "name": "Spellshock Leggings",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Sandarr Dunereaver"
+                },
+                "note": "BoE, can be moderately expensive on AH"
+              },
+              {
+                "id": 7709,
+                "name": "Blighted Leggings",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Azshir the Sleepless",
+                  "detail": "Graveyard wing"
+                }
+              },
+              {
+                "id": 6903,
+                "name": "Gaze Dreamer Pants",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackfathom Deeps",
+                  "boss": "Twilight Lord Kelris"
+                }
+              }
+            ],
+            "feet": [
+              {
+                "id": 4321,
+                "name": "Spider Silk Slippers",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE), requires level 23",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 4325,
+                "name": "Boots of the Enchanter",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 6406,
+                "name": "Nightsky Boots",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
+                }
+              }
+            ],
+            "finger": [
+              {
+                "id": 30804,
+                "name": "Bronze Band of Force",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (BoE)",
+                  "profession": "Jewelcrafting"
+                },
+                "note": "Unique-Equipped; with Band of Purification gives Horde 2/2"
+              },
+              {
+                "id": 862,
+                "name": "Runed Ring",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "detail": "multiple bosses, random-suffix"
+                },
+                "note": "BoE; stat roll varies (base is spell dmg/healing)"
+              },
+              {
+                "id": 1156,
+                "name": "Lavishly Jeweled Ring",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Gilnid"
+                },
+                "note": "Unique-Equipped; Intellect roll, but the only ring available this early"
+              },
+              {
+                "id": 13094,
+                "name": "The Queen's Jewel",
+                "quality": "rare",
+                "rank": 4,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Duskwood",
+                  "detail": "Nightbane Vile Fang (rare spawn)"
+                },
+                "note": "BoE, Unique-Equipped"
+              }
+            ],
+            "trinket": [
+              {
+                "id": 19991,
+                "name": "Devilsaur Eye",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Un'Goro Crater",
+                  "detail": "Devilsaur loot"
+                },
+                "note": "Expensive BoE — on-use AP and hit burst"
+              },
+              {
+                "id": 11122,
+                "name": "Carrot on a Stick",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Gahz'rilla",
+                  "instance": "Zul'Farrak"
+                },
+                "note": "No combat stats; mount-speed utility filler"
+              },
+              {
+                "id": 4381,
+                "name": "Minor Recombobulator",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
+                },
+                "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
+              },
+              {
+                "id": 9149,
+                "name": "Philosopher's Stone",
+                "quality": "uncommon",
+                "rank": 4,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Alchemy (skill 200), BoP",
+                  "profession": "Alchemy"
+                },
+                "note": "Usable from level 35 — the only trinket available this early",
+                "bop": true
+              }
+            ],
+            "mainhand": [
+              {
+                "id": 873,
+                "name": "Staff of Jordan",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "Often pricey on the AH"
+              },
+              {
+                "id": 18082,
+                "name": "Zum'rah's Vexing Cane",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Witch Doctor Zum'rah"
+                }
+              },
+              {
+                "id": 17743,
+                "name": "Resurgence Rod",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Corruption of Earth and Seed",
+                  "zone": "Desolace",
+                  "detail": "Chain leads into Maraudon"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "lvl50",
+          "levelRange": [
+            46,
+            50
+          ],
+          "slots": {
+            "head": [
+              {
+                "id": 8345,
+                "name": "Wolfshead Helm",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Classic pattern, BoE)",
+                  "profession": "Leatherworking"
+                },
+                "note": "Grants bonus energy/rage on shifting into Cat/Bear form; one of very few Druid-only items and stays relevant for a very long time."
+              },
+              {
+                "id": 9470,
+                "name": "Bad Mojo Mask",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Shadowpriest Sezz'ziz"
+                }
+              },
+              {
+                "id": 21774,
+                "name": "Emerald Crown of Destruction",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting — BoE",
+                  "profession": "Jewelcrafting"
+                }
+              }
+            ],
+            "neck": [
+              {
+                "id": 20037,
+                "name": "Arcane Crystal Pendant",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Destroy Morphaz",
+                  "instance": "Temple of Atal'Hakkar (Sunken Temple)",
+                  "detail": "Mage-only chain starting with Magecraft from Archmage Xylem in Azshara, ~level 52; choice of Fire Ruby/Glacial Spike/Arcane Crystal Pendant — take Arcane Crystal Pendant for Arcane"
+                }
+              },
+              {
+                "id": 17707,
+                "name": "Gemshard Heart",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Princess Theradras"
+                }
+              },
+              {
+                "id": 7722,
+                "name": "Triune Amulet",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "High Inquisitor Whitemane",
+                  "detail": "Cathedral wing"
+                }
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 11624,
+                "name": "Kentic Amice",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Depths",
+                  "boss": "High Interrogator Gerstahn"
+                }
+              },
+              {
+                "id": 6685,
+                "name": "Death Speaker Mantle",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Death Speaker Jargba"
+                }
+              },
+              {
+                "id": 7712,
+                "name": "Mantle of Doan",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Arcanist Doan",
+                  "detail": "Library wing"
+                }
+              }
+            ],
+            "chest": [
+              {
+                "id": 12462,
+                "name": "Embrace of the Wind Serpent",
+                "quality": "epic",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Sunken Temple",
+                  "boss": "Shade of Hakkar"
+                }
+              },
+              {
+                "id": 10021,
+                "name": "Dreamweave Vest",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring 250 (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 7711,
+                "name": "Robe of Doan",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Arcanist Doan",
+                  "detail": "Library wing"
+                }
+              }
+            ],
+            "wrist": [
+              {
+                "id": 9433,
+                "name": "Forgotten Wraps",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop"
+                },
+                "note": "Cloth Intellect wrist"
+              },
+              {
+                "id": 12546,
+                "name": "Aristocratic Cuffs",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Depths",
+                  "detail": "rare trash drop"
+                },
+                "note": "BoE"
+              },
+              {
+                "id": 13106,
+                "name": "Glowing Magical Bracelets",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE; usable from level 26, still the best wrist option through this bracket"
+              }
+            ],
+            "hands": [
+              {
+                "id": 10019,
+                "name": "Dreamweave Gloves",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring 250 (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 13863,
+                "name": "Runecloth Gloves",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 5195,
+                "name": "Gold-flecked Gloves",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Sneed"
+                },
+                "note": "Cloth; requires level 17"
+              }
+            ],
+            "waist": [
+              {
+                "id": 17750,
+                "name": "Chloromesh Girdle",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Razorlash"
+                }
+              },
+              {
+                "id": 11662,
+                "name": "Ban'thok Sash",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Depths",
+                  "boss": "Ok'thor the Breaker"
+                }
+              },
+              {
+                "id": 17755,
+                "name": "Satyrmane Sash",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Lord Vyletongue"
+                }
+              }
+            ],
+            "legs": [
+              {
+                "id": 9484,
+                "name": "Spellshock Leggings",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Sandarr Dunereaver"
+                },
+                "note": "BoE, can be moderately expensive on AH"
+              },
+              {
+                "id": 7709,
+                "name": "Blighted Leggings",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Azshir the Sleepless",
+                  "detail": "Graveyard wing"
+                }
+              },
+              {
+                "id": 6903,
+                "name": "Gaze Dreamer Pants",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackfathom Deeps",
+                  "boss": "Twilight Lord Kelris"
+                }
+              }
+            ],
+            "feet": [
+              {
+                "id": 17748,
+                "name": "Vinerot Sandals",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Razorlash"
+                }
+              },
+              {
+                "id": 4321,
+                "name": "Spider Silk Slippers",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE), requires level 23",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 4325,
+                "name": "Boots of the Enchanter",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                }
+              }
+            ],
+            "finger": [
+              {
+                "id": 12543,
+                "name": "Songstone of Ironforge",
+                "quality": "rare",
+                "rank": 1,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Princess's Surprise",
+                  "instance": "Blackrock Depths",
+                  "detail": "Moira chain"
+                }
+              },
+              {
+                "id": 12545,
+                "name": "Eye of Orgrimmar",
+                "quality": "rare",
+                "rank": 2,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Princess Saved?",
+                  "instance": "Blackrock Depths",
+                  "detail": "Moira chain"
+                }
+              },
+              {
+                "id": 11824,
+                "name": "Cyclopean Band",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Depths",
+                  "detail": "Ring of Law event (Ok'thor the Breaker)"
+                },
+                "note": "BoP, Unique-Equipped"
+              },
+              {
+                "id": 30804,
+                "name": "Bronze Band of Force",
+                "quality": "rare",
+                "rank": 4,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (BoE)",
+                  "profession": "Jewelcrafting"
+                },
+                "note": "Unique-Equipped; with Band of Purification gives Horde 2/2"
+              }
+            ],
+            "trinket": [
+              {
+                "id": 19991,
+                "name": "Devilsaur Eye",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Un'Goro Crater",
+                  "detail": "Devilsaur loot"
+                },
+                "note": "Expensive BoE — on-use AP and hit burst"
+              },
+              {
+                "id": 11122,
+                "name": "Carrot on a Stick",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Gahz'rilla",
+                  "instance": "Zul'Farrak"
+                },
+                "note": "No combat stats; mount-speed utility filler"
+              },
+              {
+                "id": 4381,
+                "name": "Minor Recombobulator",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
+                },
+                "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
+              },
+              {
+                "id": 9149,
+                "name": "Philosopher's Stone",
+                "quality": "uncommon",
+                "rank": 4,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Alchemy (skill 200), BoP",
+                  "profession": "Alchemy"
+                },
+                "note": "Usable from level 35 — the only trinket available this early",
+                "bop": true
+              }
+            ],
+            "mainhand": [
+              {
+                "id": 873,
+                "name": "Staff of Jordan",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "Often pricey on the AH"
+              },
+              {
+                "id": 18082,
+                "name": "Zum'rah's Vexing Cane",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Witch Doctor Zum'rah"
+                }
+              },
+              {
+                "id": 17743,
+                "name": "Resurgence Rod",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Corruption of Earth and Seed",
+                  "zone": "Desolace",
+                  "detail": "Chain leads into Maraudon"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "lvl55",
+          "levelRange": [
+            51,
+            55
+          ],
+          "slots": {
+            "head": [
+              {
+                "id": 18727,
+                "name": "Crimson Felt Hat",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Stratholme",
+                  "boss": "Magistrate Barthilas"
+                }
+              },
+              {
+                "id": 8345,
+                "name": "Wolfshead Helm",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Classic pattern, BoE)",
+                  "profession": "Leatherworking"
+                },
+                "note": "Grants bonus energy/rage on shifting into Cat/Bear form; one of very few Druid-only items and stays relevant for a very long time."
+              },
+              {
+                "id": 9470,
+                "name": "Bad Mojo Mask",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Shadowpriest Sezz'ziz"
+                }
+              }
+            ],
+            "neck": [
+              {
+                "id": 20037,
+                "name": "Arcane Crystal Pendant",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Destroy Morphaz",
+                  "instance": "Temple of Atal'Hakkar (Sunken Temple)",
+                  "detail": "Mage-only chain starting with Magecraft from Archmage Xylem in Azshara, ~level 52; choice of Fire Ruby/Glacial Spike/Arcane Crystal Pendant — take Arcane Crystal Pendant for Arcane"
+                }
+              },
+              {
+                "id": 17707,
+                "name": "Gemshard Heart",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Princess Theradras"
+                }
+              },
+              {
+                "id": 7722,
+                "name": "Triune Amulet",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "High Inquisitor Whitemane",
+                  "detail": "Cathedral wing"
+                }
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 11624,
+                "name": "Kentic Amice",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Depths",
+                  "boss": "High Interrogator Gerstahn"
+                }
+              },
+              {
+                "id": 6685,
+                "name": "Death Speaker Mantle",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Death Speaker Jargba"
+                }
+              },
+              {
+                "id": 7712,
+                "name": "Mantle of Doan",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Arcanist Doan",
+                  "detail": "Library wing"
+                }
+              }
+            ],
+            "chest": [
+              {
+                "id": 12462,
+                "name": "Embrace of the Wind Serpent",
+                "quality": "epic",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Sunken Temple",
+                  "boss": "Shade of Hakkar"
+                }
+              },
+              {
+                "id": 10021,
+                "name": "Dreamweave Vest",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring 250 (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 7711,
+                "name": "Robe of Doan",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Arcanist Doan",
+                  "detail": "Library wing"
+                }
+              }
+            ],
+            "wrist": [
+              {
+                "id": 12626,
+                "name": "Funeral Cuffs",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Spire",
+                  "boss": "Shadow Hunter Vosh'gajin"
+                }
+              },
+              {
+                "id": 18497,
+                "name": "Sublime Wristguards",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Dire Maul",
+                  "boss": "Guard Slip'kik"
+                }
+              },
+              {
+                "id": 9433,
+                "name": "Forgotten Wraps",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop"
+                },
+                "note": "Cloth Intellect wrist"
+              }
+            ],
+            "hands": [
+              {
+                "id": 13253,
+                "name": "Hands of Power",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Spire",
+                  "boss": "Quartermaster Zigris"
+                }
+              },
+              {
+                "id": 10019,
+                "name": "Dreamweave Gloves",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring 250 (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 13863,
+                "name": "Runecloth Gloves",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                }
+              }
+            ],
+            "waist": [
+              {
+                "id": 17750,
+                "name": "Chloromesh Girdle",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Razorlash"
+                }
+              },
+              {
+                "id": 11662,
+                "name": "Ban'thok Sash",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Depths",
+                  "boss": "Ok'thor the Breaker"
+                }
+              },
+              {
+                "id": 17755,
+                "name": "Satyrmane Sash",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Lord Vyletongue"
+                }
+              }
+            ],
+            "legs": [
+              {
+                "id": 13170,
+                "name": "Skyshroud Leggings",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Spire",
+                  "boss": "Highlord Omokk"
+                }
+              },
+              {
+                "id": 9484,
+                "name": "Spellshock Leggings",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Sandarr Dunereaver"
+                },
+                "note": "BoE, can be moderately expensive on AH"
+              },
+              {
+                "id": 7709,
+                "name": "Blighted Leggings",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Azshir the Sleepless",
+                  "detail": "Graveyard wing"
+                }
+              }
+            ],
+            "feet": [
+              {
+                "id": 11822,
+                "name": "Omnicast Boots",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Depths",
+                  "boss": "Golem Lord Argelmach"
+                }
+              },
+              {
+                "id": 17748,
+                "name": "Vinerot Sandals",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Razorlash"
+                }
+              },
+              {
+                "id": 4321,
+                "name": "Spider Silk Slippers",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE), requires level 23",
+                  "profession": "Tailoring"
+                }
+              }
+            ],
+            "finger": [
+              {
+                "id": 12543,
+                "name": "Songstone of Ironforge",
+                "quality": "rare",
+                "rank": 1,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Princess's Surprise",
+                  "instance": "Blackrock Depths",
+                  "detail": "Moira chain"
+                }
+              },
+              {
+                "id": 12545,
+                "name": "Eye of Orgrimmar",
+                "quality": "rare",
+                "rank": 2,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Princess Saved?",
+                  "instance": "Blackrock Depths",
+                  "detail": "Moira chain"
+                }
+              },
+              {
+                "id": 11824,
+                "name": "Cyclopean Band",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Depths",
+                  "detail": "Ring of Law event (Ok'thor the Breaker)"
+                },
+                "note": "BoP, Unique-Equipped"
+              },
+              {
+                "id": 18314,
+                "name": "Ring of Demonic Guile",
+                "quality": "rare",
+                "rank": 4,
+                "source": {
+                  "type": "drop"
+                }
+              }
+            ],
+            "trinket": [
+              {
+                "id": 12930,
+                "name": "Briarwood Reed",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Spire",
+                  "boss": "Jed Runewatcher"
+                }
+              },
+              {
+                "id": 11832,
+                "name": "Burst of Knowledge",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Depths",
+                  "boss": "Ambassador Flamelash"
+                },
+                "note": "Requires level 53"
+              },
+              {
+                "id": 19991,
+                "name": "Devilsaur Eye",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Un'Goro Crater",
+                  "detail": "Devilsaur loot"
+                },
+                "note": "Expensive BoE — on-use AP and hit burst"
+              },
+              {
+                "id": 11122,
+                "name": "Carrot on a Stick",
+                "quality": "uncommon",
+                "rank": 4,
+                "source": {
+                  "type": "quest",
+                  "quest": "Gahz'rilla",
+                  "instance": "Zul'Farrak"
+                },
+                "note": "No combat stats; mount-speed utility filler"
+              }
+            ],
+            "mainhand": [
+              {
+                "id": 23124,
+                "name": "Staff of Balzaphon",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Stratholme",
+                  "boss": "Balzaphon"
+                }
+              },
+              {
+                "id": 873,
+                "name": "Staff of Jordan",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "Often pricey on the AH"
+              },
+              {
+                "id": 18082,
+                "name": "Zum'rah's Vexing Cane",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Witch Doctor Zum'rah"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "lvl60",
+          "levelRange": [
+            56,
+            60
+          ],
+          "slots": {
+            "head": [
+              {
+                "id": 28169,
+                "name": "Mag'hari Ritualist's Horns",
+                "quality": "rare",
+                "rank": 1,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "quest": "Hero of the Mag'har",
+                  "zone": "Nagrand"
+                },
+                "note": "Horde only — no Alliance equivalent"
+              },
+              {
+                "id": 31546,
+                "name": "Tourmaline Crown",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Showdown",
+                  "zone": "Blade's Edge Mountains"
+                }
+              },
+              {
+                "id": 31110,
+                "name": "Druidic Helmet of Second Sight",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Teron Gorefiend, I am...",
+                  "zone": "Shadowmoon Valley"
+                }
+              }
+            ],
+            "neck": [
+              {
+                "id": 31692,
+                "name": "Natasha's Ember Necklace",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Hound-Master",
+                  "zone": "Blade's Edge Mountains"
+                }
+              },
+              {
+                "id": 25714,
+                "name": "Crimson Pendant of Clarity",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Heart of Rage",
+                  "instance": "The Blood Furnace",
+                  "zone": "Hellfire Peninsula"
+                }
+              },
+              {
+                "id": 28168,
+                "name": "Insignia of the Mag'hari Hero",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "quest": "Hero of the Mag'har",
+                  "zone": "Nagrand"
+                }
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 30925,
+                "name": "Spaulders of the Torn-Heart",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Cipher of Damnation",
+                  "zone": "Shadowmoon Valley"
+                }
+              },
+              {
+                "id": 24024,
+                "name": "Pauldrons of Arcane Rage",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Ramparts",
+                  "boss": "Watchkeeper Gargolmar",
+                  "detail": "Requires level 60"
+                }
+              },
+              {
+                "id": 25718,
+                "name": "Mantle of Magical Might",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "both",
+                "source": {
+                  "type": "quest",
+                  "instance": "Hellfire Ramparts",
+                  "quest": "Weaken the Ramparts"
+                }
+              }
+            ],
+            "chest": [
+              {
+                "id": 29341,
+                "name": "Auchenai Anchorite's Robe",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Everything Will Be Alright",
+                  "instance": "Auchenai Crypts",
+                  "zone": "Terokkar Forest"
+                },
+                "note": "Cloth — no leather caster chest exists yet; spell hit rating"
+              },
+              {
+                "id": 31717,
+                "name": "Shadowcast Tunic",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Foot of the Citadel",
+                  "zone": "Hellfire Peninsula"
+                }
+              },
+              {
+                "id": 12462,
+                "name": "Embrace of the Wind Serpent",
+                "quality": "epic",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Sunken Temple",
+                  "boss": "Shade of Hakkar"
+                }
+              }
+            ],
+            "wrist": [
+              {
+                "id": 25778,
+                "name": "Manacles of Remembrance",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Finding the Survivors",
+                  "zone": "Nagrand"
+                }
+              },
+              {
+                "id": 12626,
+                "name": "Funeral Cuffs",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Spire",
+                  "boss": "Shadow Hunter Vosh'gajin"
+                }
+              },
+              {
+                "id": 18497,
+                "name": "Sublime Wristguards",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Dire Maul",
+                  "boss": "Guard Slip'kik"
+                }
+              }
+            ],
+            "hands": [
+              {
+                "id": 29317,
+                "name": "Tempest's Touch",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Return to Andormu",
+                  "instance": "Old Hillsbrad Foothills",
+                  "zone": "Caverns of Time, Tanaris"
+                }
+              },
+              {
+                "id": 13253,
+                "name": "Hands of Power",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Spire",
+                  "boss": "Quartermaster Zigris"
+                }
+              },
+              {
+                "id": 10019,
+                "name": "Dreamweave Gloves",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring 250 (BoE)",
+                  "profession": "Tailoring"
+                }
+              }
+            ],
+            "waist": [
+              {
+                "id": 29328,
+                "name": "Consortium Prince's Wrap",
+                "quality": "rare",
+                "rank": 1,
+                "faction": "both",
+                "source": {
+                  "type": "quest",
+                  "instance": "Mana-Tombs",
+                  "quest": "Someone Else's Hard Work Pays Off"
+                }
+              },
+              {
+                "id": 12589,
+                "name": "Dustfeather Sash",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Spire",
+                  "boss": "Solakar Flamewreath"
+                }
+              },
+              {
+                "id": 17750,
+                "name": "Chloromesh Girdle",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Razorlash"
+                }
+              }
+            ],
+            "legs": [
+              {
+                "id": 29314,
+                "name": "Leggings of the Third Coin",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Levixus the Soul Caller",
+                  "instance": "Auchenai Crypts",
+                  "zone": "Terokkar Forest"
+                }
+              },
+              {
+                "id": 25711,
+                "name": "Deadly Borer Leggings",
+                "quality": "rare",
+                "rank": 2,
+                "faction": "both",
+                "source": {
+                  "type": "quest",
+                  "instance": "The Blood Furnace",
+                  "quest": "The Blood is Life"
+                }
+              },
+              {
+                "id": 19683,
+                "name": "Bloodvine Leggings",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring — BoE",
+                  "profession": "Tailoring"
+                }
+              }
+            ],
+            "feet": [
+              {
+                "id": 30368,
+                "name": "Slippers of the High Priestess",
+                "quality": "rare",
+                "rank": 1,
+                "faction": "both",
+                "source": {
+                  "type": "quest",
+                  "quest": "Deathblow to the Legion",
+                  "zone": "Netherstorm"
+                },
+                "note": "BoP; excellent priest itemization"
+              },
+              {
+                "id": 14631,
+                "name": "Necropile Boots",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scholomance",
+                  "boss": "Lady Illucia Barov"
+                }
+              },
+              {
+                "id": 31789,
+                "name": "Marshfang Boots",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Blacksting's Bane",
+                  "zone": "Zangarmarsh"
+                }
+              }
+            ],
+            "finger": [
+              {
+                "id": 24154,
+                "name": "Witching Band",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Ramparts",
+                  "boss": "Vazruden",
+                  "detail": "Requires level 60"
+                }
+              },
+              {
+                "id": 25541,
+                "name": "Cenarion Ring of Casting",
+                "quality": "rare",
+                "rank": 2,
+                "faction": "both",
+                "source": {
+                  "type": "quest",
+                  "instance": "The Slave Pens / The Underbog",
+                  "quest": "Lost in Action"
+                }
+              },
+              {
+                "id": 12543,
+                "name": "Songstone of Ironforge",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Princess's Surprise",
+                  "instance": "Blackrock Depths",
+                  "detail": "Moira chain"
+                }
+              },
+              {
+                "id": 12545,
+                "name": "Eye of Orgrimmar",
+                "quality": "rare",
+                "rank": 4,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Princess Saved?",
+                  "instance": "Blackrock Depths",
+                  "detail": "Moira chain"
+                }
+              }
+            ],
+            "trinket": [
+              {
+                "id": 25634,
+                "name": "Oshu'gun Relic",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Gava'xi",
+                  "zone": "Nagrand"
+                }
+              },
+              {
+                "id": 12930,
+                "name": "Briarwood Reed",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Spire",
+                  "boss": "Jed Runewatcher"
+                }
+              },
+              {
+                "id": 28041,
+                "name": "Bladefist's Breadth",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Overlord (Alliance) / Cruel's Intentions (Horde)",
+                  "zone": "Hellfire Peninsula"
+                },
+                "note": "On-use +200 Attack Power"
+              },
+              {
+                "id": 25936,
+                "name": "Terokkar Tablet of Vim",
+                "quality": "uncommon",
+                "rank": 4,
+                "source": {
+                  "type": "quest",
+                  "quest": "Torgos!",
+                  "zone": "Terokkar Forest"
+                },
+                "note": "Group quest, Bone Wastes"
+              }
+            ],
+            "mainhand": [
+              {
+                "id": 30011,
+                "name": "Ameer's Impulse Taser",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Nexus-King Salhadaar",
+                  "zone": "Netherstorm"
+                }
+              },
+              {
+                "id": 25760,
+                "name": "Battle Mage's Baton",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Ring of Blood: The Final Challenge",
+                  "zone": "Nagrand"
+                }
+              },
+              {
+                "id": 24069,
+                "name": "Crystalfire Staff",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Ramparts",
+                  "boss": "Omor the Unscarred",
+                  "detail": "Requires level 60"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "lvl65",
+          "levelRange": [
+            61,
+            65
+          ],
+          "slots": {
+            "head": [
+              {
+                "id": 28169,
+                "name": "Mag'hari Ritualist's Horns",
+                "quality": "rare",
+                "rank": 1,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "quest": "Hero of the Mag'har",
+                  "zone": "Nagrand"
+                },
+                "note": "Horde only — no Alliance equivalent"
+              },
+              {
+                "id": 31546,
+                "name": "Tourmaline Crown",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Showdown",
+                  "zone": "Blade's Edge Mountains"
+                }
+              },
+              {
+                "id": 28183,
+                "name": "Hydromancer's Headwrap",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "both",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Warlord's Hideout",
+                  "instance": "The Steamvault",
+                  "zone": "Zangarmarsh"
+                },
+                "note": "Cloth — more raw spellpower, no shapeshift proc"
+              }
+            ],
+            "neck": [
+              {
+                "id": 31692,
+                "name": "Natasha's Ember Necklace",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Hound-Master",
+                  "zone": "Blade's Edge Mountains"
+                }
+              },
+              {
+                "id": 24462,
+                "name": "Luminous Pearls of Insight",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Underbog",
+                  "boss": "Ghaz'an",
+                  "detail": "Requires level 63"
+                }
+              },
+              {
+                "id": 25714,
+                "name": "Crimson Pendant of Clarity",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Heart of Rage",
+                  "instance": "The Blood Furnace",
+                  "zone": "Hellfire Peninsula"
+                }
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 30925,
+                "name": "Spaulders of the Torn-Heart",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Cipher of Damnation",
+                  "zone": "Shadowmoon Valley"
+                }
+              },
+              {
+                "id": 24024,
+                "name": "Pauldrons of Arcane Rage",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Ramparts",
+                  "boss": "Watchkeeper Gargolmar",
+                  "detail": "Requires level 60"
+                }
+              },
+              {
+                "id": 25718,
+                "name": "Mantle of Magical Might",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "both",
+                "source": {
+                  "type": "quest",
+                  "instance": "Hellfire Ramparts",
+                  "quest": "Weaken the Ramparts"
+                }
+              }
+            ],
+            "chest": [
+              {
+                "id": 29341,
+                "name": "Auchenai Anchorite's Robe",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Everything Will Be Alright",
+                  "instance": "Auchenai Crypts",
+                  "zone": "Terokkar Forest"
+                },
+                "note": "Cloth — no leather caster chest exists yet; spell hit rating"
+              },
+              {
+                "id": 31717,
+                "name": "Shadowcast Tunic",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Foot of the Citadel",
+                  "zone": "Hellfire Peninsula"
+                }
+              },
+              {
+                "id": 12462,
+                "name": "Embrace of the Wind Serpent",
+                "quality": "epic",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Sunken Temple",
+                  "boss": "Shade of Hakkar"
+                }
+              }
+            ],
+            "wrist": [
+              {
+                "id": 21849,
+                "name": "Netherweave Bracers",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring — BoE",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 24392,
+                "name": "Arcing Bracers",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Citadel: The Blood Furnace",
+                  "boss": "Broggok"
+                }
+              },
+              {
+                "id": 28174,
+                "name": "Shattrath Wraps",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "both",
+                "source": {
+                  "type": "quest",
+                  "instance": "Shadow Labyrinth",
+                  "quest": "The Soul Devices"
+                }
+              }
+            ],
+            "hands": [
+              {
+                "id": 21851,
+                "name": "Netherweave Gloves",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "Stamina-only filler"
+              },
+              {
+                "id": 29317,
+                "name": "Tempest's Touch",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Return to Andormu",
+                  "instance": "Old Hillsbrad Foothills",
+                  "zone": "Caverns of Time, Tanaris"
+                }
+              },
+              {
+                "id": 24452,
+                "name": "Starlight Gauntlets",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Underbog",
+                  "boss": "Hungarfen"
+                }
+              }
+            ],
+            "waist": [
+              {
+                "id": 21850,
+                "name": "Netherweave Belt",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "Stamina-only filler until a better piece drops"
+              },
+              {
+                "id": 31461,
+                "name": "A'dal's Gift",
+                "quality": "rare",
+                "rank": 2,
+                "faction": "both",
+                "source": {
+                  "type": "quest",
+                  "instance": "The Mechanar / The Botanica",
+                  "quest": "How to Break Into the Arcatraz"
+                }
+              },
+              {
+                "id": 24395,
+                "name": "Mindfire Waistband",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Blood Furnace",
+                  "boss": "Keli'dan the Breaker",
+                  "detail": "Requires level 61"
+                }
+              }
+            ],
+            "legs": [
+              {
+                "id": 21852,
+                "name": "Netherweave Pants",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "Stamina-only filler"
+              },
+              {
+                "id": 24359,
+                "name": "Princely Reign Leggings",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Slave Pens",
+                  "boss": "Mennu the Betrayer"
+                }
+              },
+              {
+                "id": 29314,
+                "name": "Leggings of the Third Coin",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Levixus the Soul Caller",
+                  "instance": "Auchenai Crypts",
+                  "zone": "Terokkar Forest"
+                }
+              }
+            ],
+            "feet": [
+              {
+                "id": 21853,
+                "name": "Netherweave Boots",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "Stamina-only filler"
+              },
+              {
+                "id": 30368,
+                "name": "Slippers of the High Priestess",
+                "quality": "rare",
+                "rank": 2,
+                "faction": "both",
+                "source": {
+                  "type": "quest",
+                  "quest": "Deathblow to the Legion",
+                  "zone": "Netherstorm"
+                },
+                "note": "BoP; excellent priest itemization"
+              },
+              {
+                "id": 14631,
+                "name": "Necropile Boots",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scholomance",
+                  "boss": "Lady Illucia Barov"
+                }
+              }
+            ],
+            "finger": [
+              {
+                "id": 24154,
+                "name": "Witching Band",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Ramparts",
+                  "boss": "Vazruden",
+                  "detail": "Requires level 60"
+                }
+              },
+              {
+                "id": 29320,
+                "name": "Band of the Guardian",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Hero of the Brood",
+                  "instance": "The Black Morass",
+                  "zone": "Caverns of Time, Tanaris"
+                }
+              },
+              {
+                "id": 25541,
+                "name": "Cenarion Ring of Casting",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "both",
+                "source": {
+                  "type": "quest",
+                  "instance": "The Slave Pens / The Underbog",
+                  "quest": "Lost in Action"
+                }
+              },
+              {
+                "id": 12543,
+                "name": "Songstone of Ironforge",
+                "quality": "rare",
+                "rank": 4,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Princess's Surprise",
+                  "instance": "Blackrock Depths",
+                  "detail": "Moira chain"
+                }
+              }
+            ],
+            "trinket": [
+              {
+                "id": 25634,
+                "name": "Oshu'gun Relic",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Gava'xi",
+                  "zone": "Nagrand"
+                }
+              },
+              {
+                "id": 26055,
+                "name": "Oculus of the Hidden Eye",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Auchenai Crypts",
+                  "boss": "Shirrak the Dead Watcher"
+                }
+              },
+              {
+                "id": 12930,
+                "name": "Briarwood Reed",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Spire",
+                  "boss": "Jed Runewatcher"
+                }
+              },
+              {
+                "id": 28041,
+                "name": "Bladefist's Breadth",
+                "quality": "rare",
+                "rank": 4,
+                "source": {
+                  "type": "quest",
+                  "quest": "Overlord (Alliance) / Cruel's Intentions (Horde)",
+                  "zone": "Hellfire Peninsula"
+                },
+                "note": "On-use +200 Attack Power"
+              }
+            ],
+            "mainhand": [
+              {
+                "id": 30011,
+                "name": "Ameer's Impulse Taser",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Nexus-King Salhadaar",
+                  "zone": "Netherstorm"
+                }
+              },
+              {
+                "id": 25760,
+                "name": "Battle Mage's Baton",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Ring of Blood: The Final Challenge",
+                  "zone": "Nagrand"
+                }
+              },
+              {
+                "id": 25950,
+                "name": "Staff of Polarities",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Mana-Tombs",
+                  "boss": "Tavarok"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "lvl69",
+          "levelRange": [
+            66,
+            69
+          ],
+          "slots": {
+            "head": [
+              {
+                "id": 28169,
+                "name": "Mag'hari Ritualist's Horns",
+                "quality": "rare",
+                "rank": 1,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "quest": "Hero of the Mag'har",
+                  "zone": "Nagrand"
+                },
+                "note": "Horde only — no Alliance equivalent"
+              },
+              {
+                "id": 31546,
+                "name": "Tourmaline Crown",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Showdown",
+                  "zone": "Blade's Edge Mountains"
+                }
+              },
+              {
+                "id": 28183,
+                "name": "Hydromancer's Headwrap",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "both",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Warlord's Hideout",
+                  "instance": "The Steamvault",
+                  "zone": "Zangarmarsh"
+                },
+                "note": "Cloth — more raw spellpower, no shapeshift proc"
+              }
+            ],
+            "neck": [
+              {
+                "id": 31692,
+                "name": "Natasha's Ember Necklace",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Hound-Master",
+                  "zone": "Blade's Edge Mountains"
+                }
+              },
+              {
+                "id": 28134,
+                "name": "Brooch of Heightened Potential",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadow Labyrinth",
+                  "boss": "Blackheart the Inciter"
+                },
+                "note": "Hit rating"
+              },
+              {
+                "id": 24462,
+                "name": "Luminous Pearls of Insight",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Underbog",
+                  "boss": "Ghaz'an",
+                  "detail": "Requires level 63"
+                }
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 27994,
+                "name": "Mantle of Three Terrors",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Black Morass",
+                  "boss": "Chrono Lord Deja"
+                }
+              },
+              {
+                "id": 30925,
+                "name": "Spaulders of the Torn-Heart",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Cipher of Damnation",
+                  "zone": "Shadowmoon Valley"
+                }
+              },
+              {
+                "id": 24024,
+                "name": "Pauldrons of Arcane Rage",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Ramparts",
+                  "boss": "Watchkeeper Gargolmar",
+                  "detail": "Requires level 60"
+                }
+              }
+            ],
+            "chest": [
+              {
+                "id": 31297,
+                "name": "Robe of the Crimson Order",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop",
+                  "detail": "BoE — heavy spell hit, non-tailor pick"
+                }
+              },
+              {
+                "id": 21855,
+                "name": "Netherweave Tunic",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring — BoE",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 21854,
+                "name": "Netherweave Robe",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "Stamina-only filler if the Auchenai quest chain isn't done yet"
+              }
+            ],
+            "wrist": [
+              {
+                "id": 21849,
+                "name": "Netherweave Bracers",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring — BoE",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 24250,
+                "name": "Bracers of Havok",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                }
+              },
+              {
+                "id": 24392,
+                "name": "Arcing Bracers",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Citadel: The Blood Furnace",
+                  "boss": "Broggok"
+                }
+              }
+            ],
+            "hands": [
+              {
+                "id": 21851,
+                "name": "Netherweave Gloves",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "Stamina-only filler"
+              },
+              {
+                "id": 29317,
+                "name": "Tempest's Touch",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Return to Andormu",
+                  "instance": "Old Hillsbrad Foothills",
+                  "zone": "Caverns of Time, Tanaris"
+                }
+              },
+              {
+                "id": 24452,
+                "name": "Starlight Gauntlets",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Underbog",
+                  "boss": "Hungarfen"
+                }
+              }
+            ],
+            "waist": [
+              {
+                "id": 21850,
+                "name": "Netherweave Belt",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "Stamina-only filler until a better piece drops"
+              },
+              {
+                "id": 31461,
+                "name": "A'dal's Gift",
+                "quality": "rare",
+                "rank": 2,
+                "faction": "both",
+                "source": {
+                  "type": "quest",
+                  "instance": "The Mechanar / The Botanica",
+                  "quest": "How to Break Into the Arcatraz"
+                }
+              },
+              {
+                "id": 24395,
+                "name": "Mindfire Waistband",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Blood Furnace",
+                  "boss": "Keli'dan the Breaker",
+                  "detail": "Requires level 61"
+                }
+              }
+            ],
+            "legs": [
+              {
+                "id": 27948,
+                "name": "Trousers of Oblivion",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Sethekk Halls",
+                  "boss": "Talon King Ikiss"
+                }
+              },
+              {
+                "id": 21852,
+                "name": "Netherweave Pants",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "Stamina-only filler"
+              },
+              {
+                "id": 24359,
+                "name": "Princely Reign Leggings",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Slave Pens",
+                  "boss": "Mennu the Betrayer"
+                }
+              }
+            ],
+            "feet": [
+              {
+                "id": 21853,
+                "name": "Netherweave Boots",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
+                },
+                "note": "Stamina-only filler"
+              },
+              {
+                "id": 30368,
+                "name": "Slippers of the High Priestess",
+                "quality": "rare",
+                "rank": 2,
+                "faction": "both",
+                "source": {
+                  "type": "quest",
+                  "quest": "Deathblow to the Legion",
+                  "zone": "Netherstorm"
+                },
+                "note": "BoP; excellent priest itemization"
+              },
+              {
+                "id": 21860,
+                "name": "Imbued Netherweave Boots",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Tailoring — BoE",
+                  "profession": "Tailoring"
+                }
+              }
+            ],
+            "finger": [
+              {
+                "id": 28555,
+                "name": "Seal of the Exorcist",
+                "quality": "epic",
+                "rank": 1,
+                "source": {
+                  "type": "vendor",
+                  "detail": "50 Spirit Shards — Spirit Sage vendor, Auchindoun"
+                }
+              },
+              {
+                "id": 27784,
+                "name": "Scintillating Coral Band",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Steamvault",
+                  "boss": "Hydromancer Thespia"
+                }
+              },
+              {
+                "id": 24154,
+                "name": "Witching Band",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Ramparts",
+                  "boss": "Vazruden",
+                  "detail": "Requires level 60"
+                }
+              },
+              {
+                "id": 29320,
+                "name": "Band of the Guardian",
+                "quality": "rare",
+                "rank": 4,
+                "source": {
+                  "type": "quest",
+                  "quest": "Hero of the Brood",
+                  "instance": "The Black Morass",
+                  "zone": "Caverns of Time, Tanaris"
+                }
+              }
+            ],
+            "trinket": [
+              {
+                "id": 25634,
+                "name": "Oshu'gun Relic",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Gava'xi",
+                  "zone": "Nagrand"
+                }
+              },
+              {
+                "id": 26055,
+                "name": "Oculus of the Hidden Eye",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Auchenai Crypts",
+                  "boss": "Shirrak the Dead Watcher"
+                }
+              },
+              {
+                "id": 12930,
+                "name": "Briarwood Reed",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Spire",
+                  "boss": "Jed Runewatcher"
+                }
+              },
+              {
+                "id": 28034,
+                "name": "Hourglass of the Unraveller",
+                "quality": "rare",
+                "rank": 4,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Black Morass",
+                  "boss": "Temporus"
+                }
+              }
+            ],
+            "mainhand": [
+              {
+                "id": 30011,
+                "name": "Ameer's Impulse Taser",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Nexus-King Salhadaar",
+                  "zone": "Netherstorm"
+                }
+              },
+              {
+                "id": 27868,
+                "name": "Runesong Dagger",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Shattered Halls",
+                  "boss": "Warbringer O'mrogg"
+                }
+              },
+              {
+                "id": 25760,
+                "name": "Battle Mage's Baton",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Ring of Blood: The Final Challenge",
+                  "zone": "Nagrand"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "feral-cat",
+      "name": "Feral (Cat)",
+      "role": "dps",
+      "brackets": [
+        {
+          "id": "lvl20",
+          "levelRange": [
+            10,
+            20
+          ],
+          "slots": {
+            "neck": [
+              {
+                "id": 21933,
+                "name": "Thick Bronze Necklace",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (skill 50), requires level 17",
+                  "profession": "Jewelcrafting"
+                }
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 5404,
+                "name": "Serpent's Shoulders",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns",
+                  "boss": "Lady Anacondra"
+                }
+              },
+              {
+                "id": 5254,
+                "name": "Rugged Spaulders",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Rethilgore"
+                }
+              },
+              {
+                "id": 10657,
+                "name": "Talbar Mantle",
+                "quality": "uncommon",
+                "rank": 3,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Glowing Shard chain",
+                  "instance": "Wailing Caverns"
+                }
+              }
+            ],
+            "chest": [
+              {
+                "id": 2041,
+                "name": "Tunic of Westfall",
+                "quality": "rare",
+                "rank": 1,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Defias Brotherhood",
+                  "zone": "Westfall",
+                  "detail": "Final reward, quest giver Gryan Stoutmantle"
+                }
+              },
+              {
+                "id": 10399,
+                "name": "Blackened Defias Armor",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "detail": "Defias trash; part of the Blackened Defias set"
+                }
+              },
+              {
+                "id": 6473,
+                "name": "Armor of the Fang",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns",
+                  "boss": "Lord Pythas"
+                }
+              }
+            ],
+            "wrist": [
+              {
+                "id": 4794,
+                "name": "Wolf Bracers",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE"
+              }
+            ],
+            "hands": [
+              {
+                "id": 10413,
+                "name": "Gloves of the Fang",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns"
+                }
+              },
+              {
+                "id": 10401,
+                "name": "Blackened Defias Gloves",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines"
+                }
+              },
+              {
+                "id": 6467,
+                "name": "Deviate Scale Gloves",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking; pattern sold by Kalldan Felmoon, requires Deviate Scale farmed in Wailing Caverns",
+                  "profession": "Leatherworking"
+                }
+              }
+            ],
+            "waist": [
+              {
+                "id": 10403,
+                "name": "Blackened Defias Belt",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Edwin VanCleef"
+                },
+                "note": "Equip: +18 Attack Power"
+              },
+              {
+                "id": 6468,
+                "name": "Deviate Scale Belt",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking; requires Deviate Scale farmed in Wailing Caverns",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 10412,
+                "name": "Belt of the Fang",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns"
+                }
+              }
+            ],
+            "legs": [
+              {
+                "id": 10410,
+                "name": "Leggings of the Fang",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns"
+                }
+              },
+              {
+                "id": 10400,
+                "name": "Blackened Defias Leggings",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "detail": "Defias trash; part of the Blackened Defias set"
+                }
+              },
+              {
+                "id": 5199,
+                "name": "Smelting Pants",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "detail": "trash"
+                },
+                "note": "Leather; Stamina/Spirit — no cloth legs exist this low"
+              }
+            ],
+            "feet": [
+              {
+                "id": 1121,
+                "name": "Feet of the Lynx",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Duskwood",
+                  "detail": "Rare drop from Flesh Eater"
+                }
+              },
+              {
+                "id": 10402,
+                "name": "Blackened Defias Boots",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "detail": "Defias trash; part of the Blackened Defias set"
+                }
+              },
+              {
+                "id": 10411,
+                "name": "Footpads of the Fang",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns"
+                }
+              }
+            ],
+            "finger": [
+              {
+                "id": 1076,
+                "name": "Defias Renegade Ring",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Stockade",
+                  "detail": "trash"
+                }
+              },
+              {
+                "id": 5351,
+                "name": "Bounty Hunter's Ring",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "zone": "The Barrens",
+                  "boss": "Hezrul Bloodmark",
+                  "detail": "rare spawn"
+                }
+              },
+              {
+                "id": 1156,
+                "name": "Lavishly Jeweled Ring",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Gilnid"
+                },
+                "note": "Unique-Equipped; Intellect roll, but the only ring available this early"
+              },
+              {
+                "id": 12996,
+                "name": "Band of Purification",
+                "quality": "rare",
+                "rank": 4,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE, may need AH"
+              }
+            ],
+            "trinket": [
+              {
+                "id": 4381,
+                "name": "Minor Recombobulator",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
+                },
+                "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
+              }
+            ],
+            "mainhand": [
+              {
+                "id": 7230,
+                "name": "Smite's Mighty Hammer",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Mr. Smite"
+                }
+              },
+              {
+                "id": 6505,
+                "name": "Crescent Staff",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Leaders of the Fang",
+                  "instance": "Wailing Caverns"
+                },
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+              },
+              {
+                "id": 6323,
+                "name": "Baron's Scepter",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Baron Silverlaine"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "lvl25",
+          "levelRange": [
+            21,
+            25
+          ],
+          "slots": {
+            "head": [
+              {
+                "id": 4385,
+                "name": "Green Tinted Goggles",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering (skill 150) — cheap cloth BoP head piece, no character level requirement; classic twink filler",
+                  "profession": "Engineering"
+                }
+              }
+            ],
+            "neck": [
+              {
+                "id": 21933,
+                "name": "Thick Bronze Necklace",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (skill 50), requires level 17",
+                  "profession": "Jewelcrafting"
+                }
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 5404,
+                "name": "Serpent's Shoulders",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns",
+                  "boss": "Lady Anacondra"
+                }
+              },
+              {
+                "id": 5254,
+                "name": "Rugged Spaulders",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Rethilgore"
+                }
+              },
+              {
+                "id": 10657,
+                "name": "Talbar Mantle",
+                "quality": "uncommon",
+                "rank": 3,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Glowing Shard chain",
+                  "instance": "Wailing Caverns"
+                }
+              }
+            ],
+            "chest": [
+              {
+                "id": 2041,
+                "name": "Tunic of Westfall",
+                "quality": "rare",
+                "rank": 1,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Defias Brotherhood",
+                  "zone": "Westfall",
+                  "detail": "Final reward, quest giver Gryan Stoutmantle"
+                }
+              },
+              {
+                "id": 10399,
+                "name": "Blackened Defias Armor",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "detail": "Defias trash; part of the Blackened Defias set"
+                }
+              },
+              {
+                "id": 6473,
+                "name": "Armor of the Fang",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns",
+                  "boss": "Lord Pythas"
+                }
+              }
+            ],
+            "wrist": [
+              {
+                "id": 4794,
+                "name": "Wolf Bracers",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE"
+              }
+            ],
+            "hands": [
+              {
+                "id": 888,
+                "name": "Naga Battle Gloves",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackfathom Deeps",
+                  "boss": "Lady Sarevess"
+                }
+              },
+              {
+                "id": 1978,
+                "name": "Wolfclaw Gloves",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Overlord Ramtusk"
+                }
+              },
+              {
+                "id": 10413,
+                "name": "Gloves of the Fang",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns"
+                }
+              }
+            ],
+            "waist": [
+              {
+                "id": 10403,
+                "name": "Blackened Defias Belt",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Edwin VanCleef"
+                },
+                "note": "Equip: +18 Attack Power"
+              },
+              {
+                "id": 6468,
+                "name": "Deviate Scale Belt",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking; requires Deviate Scale farmed in Wailing Caverns",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 10412,
+                "name": "Belt of the Fang",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns"
+                }
+              }
+            ],
+            "legs": [
+              {
+                "id": 10410,
+                "name": "Leggings of the Fang",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns"
+                }
+              },
+              {
+                "id": 10400,
+                "name": "Blackened Defias Leggings",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "detail": "Defias trash; part of the Blackened Defias set"
+                }
+              },
+              {
+                "id": 5199,
+                "name": "Smelting Pants",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "detail": "trash"
+                },
+                "note": "Leather; Stamina/Spirit — no cloth legs exist this low"
+              }
+            ],
+            "feet": [
+              {
+                "id": 1121,
+                "name": "Feet of the Lynx",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Duskwood",
+                  "detail": "Rare drop from Flesh Eater"
+                }
+              },
+              {
+                "id": 10402,
+                "name": "Blackened Defias Boots",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "detail": "Defias trash; part of the Blackened Defias set"
+                }
+              },
+              {
+                "id": 10411,
+                "name": "Footpads of the Fang",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns"
                 }
               }
             ],
@@ -5112,62 +14947,928 @@ WOWDATA.register({
                 }
               },
               {
-                "id": 2262,
-                "name": "Mark of Kern",
-                "quality": "rare",
+                "id": 1076,
+                "name": "Defias Renegade Ring",
+                "quality": "uncommon",
                 "rank": 2,
                 "source": {
                   "type": "drop",
-                  "instance": "Scarlet Monastery"
-                },
-                "note": "Stamina + Attack Power — filler for Horde, who lack the Seal of Wrynn quest"
+                  "instance": "The Stockade",
+                  "detail": "trash"
+                }
+              },
+              {
+                "id": 5351,
+                "name": "Bounty Hunter's Ring",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "zone": "The Barrens",
+                  "boss": "Hezrul Bloodmark",
+                  "detail": "rare spawn"
+                }
+              },
+              {
+                "id": 6414,
+                "name": "Seal of Sylvanas",
+                "quality": "epic",
+                "rank": 4,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "zone": "Tirisfal Glades / Undercity"
+                }
               }
             ],
             "trinket": [
               {
-                "id": 9149,
-                "name": "Philosopher's Stone",
+                "id": 4381,
+                "name": "Minor Recombobulator",
                 "quality": "uncommon",
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Alchemy (skill 200), BoP"
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
                 },
-                "note": "Usable from level 35 — the only trinket available this early"
+                "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
               }
             ],
             "mainhand": [
               {
-                "id": 7713,
-                "name": "Illusionary Rod",
+                "id": 1976,
+                "name": "Slaghammer",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
-                  "instance": "Scarlet Monastery",
-                  "boss": "Arcanist Doan",
-                  "detail": "Library wing"
+                  "instance": "Razorfen Kraul"
                 }
               },
               {
-                "id": 7721,
-                "name": "Hand of Righteousness",
+                "id": 7230,
+                "name": "Smite's Mighty Hammer",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Mr. Smite"
+                }
+              },
+              {
+                "id": 6505,
+                "name": "Crescent Staff",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Leaders of the Fang",
+                  "instance": "Wailing Caverns"
+                },
+                "note": "2H +7 Int/Spirit/Stamina stat-stick; reachable from ~level 15"
+              }
+            ]
+          }
+        },
+        {
+          "id": "lvl30",
+          "levelRange": [
+            26,
+            30
+          ],
+          "slots": {
+            "head": [
+              {
+                "id": 4385,
+                "name": "Green Tinted Goggles",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering (skill 150) — cheap cloth BoP head piece, no character level requirement; classic twink filler",
+                  "profession": "Engineering"
+                }
+              },
+              {
+                "id": 7691,
+                "name": "Embalmed Shroud",
                 "quality": "rare",
                 "rank": 2,
                 "source": {
                   "type": "drop",
                   "instance": "Scarlet Monastery",
-                  "detail": "Whitemane/Mograine encounter, Cathedral wing"
+                  "boss": "Fallen Champion",
+                  "detail": "Graveyard wing"
+                }
+              },
+              {
+                "id": 6688,
+                "name": "Whisperwind Headdress",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Earthcaller Halmgar",
+                  "detail": "rare spawn"
+                }
+              }
+            ],
+            "neck": [
+              {
+                "id": 7731,
+                "name": "Ghostshard Talisman",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Azshir the Sleepless",
+                  "detail": "Graveyard wing"
+                },
+                "note": "Stamina-focused; the spell-damage proc is wasted but it's the best neck available this early"
+              },
+              {
+                "id": 6695,
+                "name": "Stygian Bone Amulet",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Groyat the Blind Hunter",
+                  "detail": "rare spawn"
+                }
+              },
+              {
+                "id": 21933,
+                "name": "Thick Bronze Necklace",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (skill 50), requires level 17",
+                  "profession": "Jewelcrafting"
+                }
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 5404,
+                "name": "Serpent's Shoulders",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns",
+                  "boss": "Lady Anacondra"
+                }
+              },
+              {
+                "id": 5254,
+                "name": "Rugged Spaulders",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Rethilgore"
+                }
+              },
+              {
+                "id": 5964,
+                "name": "Barbaric Shoulders",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Barbaric leather set)",
+                  "profession": "Leatherworking"
+                }
+              }
+            ],
+            "chest": [
+              {
+                "id": 7374,
+                "name": "Dusky Leather Armor",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Dusky Leather set)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 2041,
+                "name": "Tunic of Westfall",
+                "quality": "rare",
+                "rank": 2,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Defias Brotherhood",
+                  "zone": "Westfall",
+                  "detail": "Final reward, quest giver Gryan Stoutmantle"
+                }
+              },
+              {
+                "id": 10399,
+                "name": "Blackened Defias Armor",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "detail": "Defias trash; part of the Blackened Defias set"
+                }
+              }
+            ],
+            "wrist": [
+              {
+                "id": 18948,
+                "name": "Barbaric Bracers",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking 155 (BoE, often on AH)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 4794,
+                "name": "Wolf Bracers",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE"
+              }
+            ],
+            "hands": [
+              {
+                "id": 7756,
+                "name": "Dog Training Gloves",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Houndmaster Loksey",
+                  "detail": "Library wing"
+                }
+              },
+              {
+                "id": 888,
+                "name": "Naga Battle Gloves",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackfathom Deeps",
+                  "boss": "Lady Sarevess"
+                }
+              },
+              {
+                "id": 1978,
+                "name": "Wolfclaw Gloves",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Overlord Ramtusk"
+                }
+              }
+            ],
+            "waist": [
+              {
+                "id": 10403,
+                "name": "Blackened Defias Belt",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Edwin VanCleef"
+                },
+                "note": "Equip: +18 Attack Power"
+              },
+              {
+                "id": 6468,
+                "name": "Deviate Scale Belt",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking; requires Deviate Scale farmed in Wailing Caverns",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 10412,
+                "name": "Belt of the Fang",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns"
+                }
+              }
+            ],
+            "legs": [
+              {
+                "id": 7373,
+                "name": "Dusky Leather Leggings",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Dusky Leather set)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 10410,
+                "name": "Leggings of the Fang",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns"
+                }
+              },
+              {
+                "id": 10400,
+                "name": "Blackened Defias Leggings",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "detail": "Defias trash; part of the Blackened Defias set"
+                }
+              }
+            ],
+            "feet": [
+              {
+                "id": 1121,
+                "name": "Feet of the Lynx",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Duskwood",
+                  "detail": "Rare drop from Flesh Eater"
+                }
+              },
+              {
+                "id": 10402,
+                "name": "Blackened Defias Boots",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "detail": "Defias trash; part of the Blackened Defias set"
+                }
+              },
+              {
+                "id": 10411,
+                "name": "Footpads of the Fang",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns"
+                }
+              }
+            ],
+            "finger": [
+              {
+                "id": 7686,
+                "name": "Ironspine's Eye",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Ironspine",
+                  "detail": "Graveyard wing, rare spawn"
+                },
+                "note": "Unique-Equipped"
+              },
+              {
+                "id": 2933,
+                "name": "Seal of Wrynn",
+                "quality": "rare",
+                "rank": 2,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Unsent Letter",
+                  "zone": "Stormwind City"
+                }
+              },
+              {
+                "id": 1076,
+                "name": "Defias Renegade Ring",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Stockade",
+                  "detail": "trash"
+                }
+              },
+              {
+                "id": 5351,
+                "name": "Bounty Hunter's Ring",
+                "quality": "uncommon",
+                "rank": 4,
+                "source": {
+                  "type": "drop",
+                  "zone": "The Barrens",
+                  "boss": "Hezrul Bloodmark",
+                  "detail": "rare spawn"
+                }
+              }
+            ],
+            "trinket": [
+              {
+                "id": 4381,
+                "name": "Minor Recombobulator",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
+                },
+                "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
+              }
+            ],
+            "mainhand": [
+              {
+                "id": 9449,
+                "name": "Manual Crowd Pummeler",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Gnomeregan",
+                  "boss": "Crowd Pummeler 9-60"
+                },
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+              },
+              {
+                "id": 1976,
+                "name": "Slaghammer",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul"
+                }
+              },
+              {
+                "id": 7230,
+                "name": "Smite's Mighty Hammer",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Mr. Smite"
                 }
               }
             ]
           }
         },
         {
-          "id": "lvl49",
+          "id": "lvl35",
           "levelRange": [
-            40,
-            49
+            31,
+            35
+          ],
+          "slots": {
+            "head": [
+              {
+                "id": 9420,
+                "name": "Adventurer's Pith Helmet",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Uldaman",
+                  "detail": "trash"
+                }
+              },
+              {
+                "id": 9375,
+                "name": "Expert Goldminer's Helmet",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Uldaman",
+                  "boss": "Digmaster Shovelphlange"
+                }
+              },
+              {
+                "id": 4385,
+                "name": "Green Tinted Goggles",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering (skill 150) — cheap cloth BoP head piece, no character level requirement; classic twink filler",
+                  "profession": "Engineering"
+                }
+              }
+            ],
+            "neck": [
+              {
+                "id": 7731,
+                "name": "Ghostshard Talisman",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Azshir the Sleepless",
+                  "detail": "Graveyard wing"
+                },
+                "note": "Stamina-focused; the spell-damage proc is wasted but it's the best neck available this early"
+              },
+              {
+                "id": 6695,
+                "name": "Stygian Bone Amulet",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Groyat the Blind Hunter",
+                  "detail": "rare spawn"
+                }
+              },
+              {
+                "id": 21933,
+                "name": "Thick Bronze Necklace",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Jewelcrafting (skill 50), requires level 17",
+                  "profession": "Jewelcrafting"
+                }
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 5404,
+                "name": "Serpent's Shoulders",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns",
+                  "boss": "Lady Anacondra"
+                }
+              },
+              {
+                "id": 5254,
+                "name": "Rugged Spaulders",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Rethilgore"
+                }
+              },
+              {
+                "id": 5964,
+                "name": "Barbaric Shoulders",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Barbaric leather set)",
+                  "profession": "Leatherworking"
+                }
+              }
+            ],
+            "chest": [
+              {
+                "id": 10583,
+                "name": "Quillward Harness",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Downs",
+                  "boss": "Death's Head Necromancer"
+                }
+              },
+              {
+                "id": 7374,
+                "name": "Dusky Leather Armor",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Dusky Leather set)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 2041,
+                "name": "Tunic of Westfall",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Defias Brotherhood",
+                  "zone": "Westfall",
+                  "detail": "Final reward, quest giver Gryan Stoutmantle"
+                }
+              }
+            ],
+            "wrist": [
+              {
+                "id": 18948,
+                "name": "Barbaric Bracers",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking 155 (BoE, often on AH)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 4794,
+                "name": "Wolf Bracers",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE"
+              }
+            ],
+            "hands": [
+              {
+                "id": 7756,
+                "name": "Dog Training Gloves",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Houndmaster Loksey",
+                  "detail": "Library wing"
+                }
+              },
+              {
+                "id": 888,
+                "name": "Naga Battle Gloves",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackfathom Deeps",
+                  "boss": "Lady Sarevess"
+                }
+              },
+              {
+                "id": 1978,
+                "name": "Wolfclaw Gloves",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Overlord Ramtusk"
+                }
+              }
+            ],
+            "waist": [
+              {
+                "id": 10403,
+                "name": "Blackened Defias Belt",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Edwin VanCleef"
+                },
+                "note": "Equip: +18 Attack Power"
+              },
+              {
+                "id": 7387,
+                "name": "Dusky Belt",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Dusky Leather set)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 6468,
+                "name": "Deviate Scale Belt",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking; requires Deviate Scale farmed in Wailing Caverns",
+                  "profession": "Leatherworking"
+                }
+              }
+            ],
+            "legs": [
+              {
+                "id": 7373,
+                "name": "Dusky Leather Leggings",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Dusky Leather set)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 10410,
+                "name": "Leggings of the Fang",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns"
+                }
+              },
+              {
+                "id": 10400,
+                "name": "Blackened Defias Leggings",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "detail": "Defias trash; part of the Blackened Defias set"
+                }
+              }
+            ],
+            "feet": [
+              {
+                "id": 2276,
+                "name": "Swampwalker Boots",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                }
+              },
+              {
+                "id": 7390,
+                "name": "Dusky Boots",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Dusky Leather set)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 1121,
+                "name": "Feet of the Lynx",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Duskwood",
+                  "detail": "Rare drop from Flesh Eater"
+                }
+              }
+            ],
+            "finger": [
+              {
+                "id": 2262,
+                "name": "Mark of Kern",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery"
+                },
+                "note": "Unique-Equipped"
+              },
+              {
+                "id": 7686,
+                "name": "Ironspine's Eye",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Ironspine",
+                  "detail": "Graveyard wing, rare spawn"
+                },
+                "note": "Unique-Equipped"
+              },
+              {
+                "id": 2933,
+                "name": "Seal of Wrynn",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Unsent Letter",
+                  "zone": "Stormwind City"
+                }
+              },
+              {
+                "id": 1076,
+                "name": "Defias Renegade Ring",
+                "quality": "uncommon",
+                "rank": 4,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Stockade",
+                  "detail": "trash"
+                }
+              }
+            ],
+            "trinket": [
+              {
+                "id": 4381,
+                "name": "Minor Recombobulator",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
+                },
+                "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
+              }
+            ],
+            "mainhand": [
+              {
+                "id": 9449,
+                "name": "Manual Crowd Pummeler",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Gnomeregan",
+                  "boss": "Crowd Pummeler 9-60"
+                },
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+              },
+              {
+                "id": 873,
+                "name": "Staff of Jordan",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "Often pricey on the AH"
+              },
+              {
+                "id": 7713,
+                "name": "Illusionary Rod",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Arcanist Doan",
+                  "detail": "Library wing"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "lvl40",
+          "levelRange": [
+            36,
+            40
           ],
           "slots": {
             "head": [
@@ -5178,18 +15879,958 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking (Classic pattern, BoE)"
+                  "detail": "Leatherworking (Classic pattern, BoE)",
+                  "profession": "Leatherworking"
                 },
-                "note": "One of very few Druid-only items available this early — Spirit plus a shapeshift-energy proc."
+                "note": "Grants bonus energy/rage on shifting into Cat/Bear form; one of very few Druid-only items and stays relevant for a very long time."
               },
               {
-                "id": 10041,
-                "name": "Dreamweave Circlet",
+                "id": 9420,
+                "name": "Adventurer's Pith Helmet",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Uldaman",
+                  "detail": "trash"
+                }
+              },
+              {
+                "id": 9375,
+                "name": "Expert Goldminer's Helmet",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Uldaman",
+                  "boss": "Digmaster Shovelphlange"
+                }
+              }
+            ],
+            "neck": [
+              {
+                "id": 7731,
+                "name": "Ghostshard Talisman",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Azshir the Sleepless",
+                  "detail": "Graveyard wing"
+                },
+                "note": "Stamina-focused; the spell-damage proc is wasted but it's the best neck available this early"
+              },
+              {
+                "id": 7722,
+                "name": "Triune Amulet",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "High Inquisitor Whitemane",
+                  "detail": "Cathedral wing"
+                }
+              },
+              {
+                "id": 6695,
+                "name": "Stygian Bone Amulet",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Kraul",
+                  "boss": "Groyat the Blind Hunter",
+                  "detail": "rare spawn"
+                }
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 10774,
+                "name": "Fleshhide Shoulders",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Downs",
+                  "boss": "Glutton"
+                }
+              },
+              {
+                "id": 5404,
+                "name": "Serpent's Shoulders",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns",
+                  "boss": "Lady Anacondra"
+                }
+              },
+              {
+                "id": 5254,
+                "name": "Rugged Spaulders",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Rethilgore"
+                }
+              }
+            ],
+            "chest": [
+              {
+                "id": 10583,
+                "name": "Quillward Harness",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Downs",
+                  "boss": "Death's Head Necromancer"
+                }
+              },
+              {
+                "id": 7374,
+                "name": "Dusky Leather Armor",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Dusky Leather set)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 14601,
+                "name": "Warden's Wraps",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Desolace"
+                }
+              }
+            ],
+            "wrist": [
+              {
+                "id": 19508,
+                "name": "Branded Leather Bracers",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "High Inquisitor Fairbanks",
+                  "detail": "Cathedral wing"
+                }
+              },
+              {
+                "id": 18948,
+                "name": "Barbaric Bracers",
                 "quality": "rare",
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring 250 (BoE)"
+                  "detail": "Leatherworking 155 (BoE, often on AH)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 4794,
+                "name": "Wolf Bracers",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE"
+              }
+            ],
+            "hands": [
+              {
+                "id": 867,
+                "name": "Gloves of Holy Might",
+                "quality": "epic",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "Expensive BoE epic — pure crit + AP, no wasted stats"
+              },
+              {
+                "id": 7756,
+                "name": "Dog Training Gloves",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Houndmaster Loksey",
+                  "detail": "Library wing"
+                }
+              },
+              {
+                "id": 888,
+                "name": "Naga Battle Gloves",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackfathom Deeps",
+                  "boss": "Lady Sarevess"
+                }
+              }
+            ],
+            "waist": [
+              {
+                "id": 10403,
+                "name": "Blackened Defias Belt",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Edwin VanCleef"
+                },
+                "note": "Equip: +18 Attack Power"
+              },
+              {
+                "id": 7387,
+                "name": "Dusky Belt",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Dusky Leather set)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 6468,
+                "name": "Deviate Scale Belt",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking; requires Deviate Scale farmed in Wailing Caverns",
+                  "profession": "Leatherworking"
+                }
+              }
+            ],
+            "legs": [
+              {
+                "id": 1718,
+                "name": "Basilisk Hide Pants",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                }
+              },
+              {
+                "id": 9414,
+                "name": "Oilskin Leggings",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Uldaman",
+                  "boss": "Grimlok"
+                }
+              },
+              {
+                "id": 7373,
+                "name": "Dusky Leather Leggings",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Dusky Leather set)",
+                  "profession": "Leatherworking"
+                }
+              }
+            ],
+            "feet": [
+              {
+                "id": 2276,
+                "name": "Swampwalker Boots",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                }
+              },
+              {
+                "id": 7390,
+                "name": "Dusky Boots",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Dusky Leather set)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 1121,
+                "name": "Feet of the Lynx",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Duskwood",
+                  "detail": "Rare drop from Flesh Eater"
+                }
+              }
+            ],
+            "finger": [
+              {
+                "id": 2262,
+                "name": "Mark of Kern",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery"
+                },
+                "note": "Unique-Equipped"
+              },
+              {
+                "id": 7686,
+                "name": "Ironspine's Eye",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Ironspine",
+                  "detail": "Graveyard wing, rare spawn"
+                },
+                "note": "Unique-Equipped"
+              },
+              {
+                "id": 2933,
+                "name": "Seal of Wrynn",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Unsent Letter",
+                  "zone": "Stormwind City"
+                }
+              },
+              {
+                "id": 1076,
+                "name": "Defias Renegade Ring",
+                "quality": "uncommon",
+                "rank": 4,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Stockade",
+                  "detail": "trash"
+                }
+              }
+            ],
+            "trinket": [
+              {
+                "id": 19991,
+                "name": "Devilsaur Eye",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Un'Goro Crater",
+                  "detail": "Devilsaur loot"
+                },
+                "note": "Expensive BoE — on-use AP and hit burst"
+              },
+              {
+                "id": 11122,
+                "name": "Carrot on a Stick",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Gahz'rilla",
+                  "instance": "Zul'Farrak"
+                },
+                "note": "No combat stats; mount-speed utility filler"
+              },
+              {
+                "id": 9149,
+                "name": "Philosopher's Stone",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Alchemy (skill 200), BoP",
+                  "profession": "Alchemy"
+                },
+                "note": "Usable from level 35 — the only trinket available this early",
+                "bop": true
+              },
+              {
+                "id": 4381,
+                "name": "Minor Recombobulator",
+                "quality": "uncommon",
+                "rank": 4,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
+                },
+                "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
+              }
+            ],
+            "mainhand": [
+              {
+                "id": 7723,
+                "name": "Mograine's Might",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Scarlet Commander Mograine",
+                  "detail": "Cathedral wing"
+                }
+              },
+              {
+                "id": 9449,
+                "name": "Manual Crowd Pummeler",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Gnomeregan",
+                  "boss": "Crowd Pummeler 9-60"
+                },
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+              },
+              {
+                "id": 9413,
+                "name": "The Rockpounder",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Uldaman",
+                  "boss": "Archaedas"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "lvl45",
+          "levelRange": [
+            41,
+            45
+          ],
+          "slots": {
+            "head": [
+              {
+                "id": 8345,
+                "name": "Wolfshead Helm",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Classic pattern, BoE)",
+                  "profession": "Leatherworking"
+                },
+                "note": "Grants bonus energy/rage on shifting into Cat/Bear form; one of very few Druid-only items and stays relevant for a very long time."
+              },
+              {
+                "id": 9479,
+                "name": "Embrace of the Lycan",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Chief Ukorz Sandscalp"
+                },
+                "note": "leather; best available at this level"
+              },
+              {
+                "id": 9420,
+                "name": "Adventurer's Pith Helmet",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Uldaman",
+                  "detail": "trash"
+                }
+              }
+            ],
+            "neck": [
+              {
+                "id": 9641,
+                "name": "Lifeblood Amulet",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Theka the Martyr"
+                }
+              },
+              {
+                "id": 7731,
+                "name": "Ghostshard Talisman",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Azshir the Sleepless",
+                  "detail": "Graveyard wing"
+                },
+                "note": "Stamina-focused; the spell-damage proc is wasted but it's the best neck available this early"
+              },
+              {
+                "id": 7722,
+                "name": "Triune Amulet",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "High Inquisitor Whitemane",
+                  "detail": "Cathedral wing"
+                }
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 10774,
+                "name": "Fleshhide Shoulders",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Downs",
+                  "boss": "Glutton"
+                }
+              },
+              {
+                "id": 5404,
+                "name": "Serpent's Shoulders",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns",
+                  "boss": "Lady Anacondra"
+                }
+              },
+              {
+                "id": 5254,
+                "name": "Rugged Spaulders",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Shadowfang Keep",
+                  "boss": "Rethilgore"
+                }
+              }
+            ],
+            "chest": [
+              {
+                "id": 10583,
+                "name": "Quillward Harness",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Downs",
+                  "boss": "Death's Head Necromancer"
+                }
+              },
+              {
+                "id": 7374,
+                "name": "Dusky Leather Armor",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Dusky Leather set)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 14601,
+                "name": "Warden's Wraps",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Desolace"
+                }
+              }
+            ],
+            "wrist": [
+              {
+                "id": 19508,
+                "name": "Branded Leather Bracers",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "High Inquisitor Fairbanks",
+                  "detail": "Cathedral wing"
+                }
+              },
+              {
+                "id": 18948,
+                "name": "Barbaric Bracers",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking 155 (BoE, often on AH)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 4794,
+                "name": "Wolf Bracers",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE"
+              }
+            ],
+            "hands": [
+              {
+                "id": 867,
+                "name": "Gloves of Holy Might",
+                "quality": "epic",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "Expensive BoE epic — pure crit + AP, no wasted stats"
+              },
+              {
+                "id": 7756,
+                "name": "Dog Training Gloves",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Houndmaster Loksey",
+                  "detail": "Library wing"
+                }
+              },
+              {
+                "id": 888,
+                "name": "Naga Battle Gloves",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackfathom Deeps",
+                  "boss": "Lady Sarevess"
+                }
+              }
+            ],
+            "waist": [
+              {
+                "id": 10403,
+                "name": "Blackened Defias Belt",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Edwin VanCleef"
+                },
+                "note": "Equip: +18 Attack Power"
+              },
+              {
+                "id": 7387,
+                "name": "Dusky Belt",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Dusky Leather set)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 6468,
+                "name": "Deviate Scale Belt",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking; requires Deviate Scale farmed in Wailing Caverns",
+                  "profession": "Leatherworking"
+                }
+              }
+            ],
+            "legs": [
+              {
+                "id": 1718,
+                "name": "Basilisk Hide Pants",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                }
+              },
+              {
+                "id": 9414,
+                "name": "Oilskin Leggings",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Uldaman",
+                  "boss": "Grimlok"
+                }
+              },
+              {
+                "id": 7373,
+                "name": "Dusky Leather Leggings",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Dusky Leather set)",
+                  "profession": "Leatherworking"
+                }
+              }
+            ],
+            "feet": [
+              {
+                "id": 12470,
+                "name": "Sandstalker Ankleguards",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Zerillis",
+                  "detail": "rare spawn"
+                }
+              },
+              {
+                "id": 2276,
+                "name": "Swampwalker Boots",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "world-drop"
+                }
+              },
+              {
+                "id": 7390,
+                "name": "Dusky Boots",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Dusky Leather set)",
+                  "profession": "Leatherworking"
+                }
+              }
+            ],
+            "finger": [
+              {
+                "id": 2262,
+                "name": "Mark of Kern",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery"
+                },
+                "note": "Unique-Equipped"
+              },
+              {
+                "id": 7686,
+                "name": "Ironspine's Eye",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Ironspine",
+                  "detail": "Graveyard wing, rare spawn"
+                },
+                "note": "Unique-Equipped"
+              },
+              {
+                "id": 2933,
+                "name": "Seal of Wrynn",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Unsent Letter",
+                  "zone": "Stormwind City"
+                }
+              },
+              {
+                "id": 1076,
+                "name": "Defias Renegade Ring",
+                "quality": "uncommon",
+                "rank": 4,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Stockade",
+                  "detail": "trash"
+                }
+              }
+            ],
+            "trinket": [
+              {
+                "id": 19991,
+                "name": "Devilsaur Eye",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Un'Goro Crater",
+                  "detail": "Devilsaur loot"
+                },
+                "note": "Expensive BoE — on-use AP and hit burst"
+              },
+              {
+                "id": 11122,
+                "name": "Carrot on a Stick",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Gahz'rilla",
+                  "instance": "Zul'Farrak"
+                },
+                "note": "No combat stats; mount-speed utility filler"
+              },
+              {
+                "id": 9149,
+                "name": "Philosopher's Stone",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Alchemy (skill 200), BoP",
+                  "profession": "Alchemy"
+                },
+                "note": "Usable from level 35 — the only trinket available this early",
+                "bop": true
+              },
+              {
+                "id": 4381,
+                "name": "Minor Recombobulator",
+                "quality": "uncommon",
+                "rank": 4,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
+                },
+                "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
+              }
+            ],
+            "mainhand": [
+              {
+                "id": 17743,
+                "name": "Resurgence Rod",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Corruption of Earth and Seed",
+                  "zone": "Desolace",
+                  "detail": "Chain leads into Maraudon"
+                }
+              },
+              {
+                "id": 7723,
+                "name": "Mograine's Might",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Scarlet Commander Mograine",
+                  "detail": "Cathedral wing"
+                }
+              },
+              {
+                "id": 9449,
+                "name": "Manual Crowd Pummeler",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Gnomeregan",
+                  "boss": "Crowd Pummeler 9-60"
+                },
+                "note": "Iconic classic feral weapon — the on-use haste effect keeps it relevant long after the base stats fall behind. Shared BiS for bear and cat leveling."
+              }
+            ]
+          }
+        },
+        {
+          "id": "lvl50",
+          "levelRange": [
+            46,
+            50
+          ],
+          "slots": {
+            "head": [
+              {
+                "id": 8345,
+                "name": "Wolfshead Helm",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Classic pattern, BoE)",
+                  "profession": "Leatherworking"
+                },
+                "note": "Grants bonus energy/rage on shifting into Cat/Bear form; one of very few Druid-only items and stays relevant for a very long time."
+              },
+              {
+                "id": 9479,
+                "name": "Embrace of the Lycan",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Chief Ukorz Sandscalp"
+                },
+                "note": "leather; best available at this level"
+              },
+              {
+                "id": 9420,
+                "name": "Adventurer's Pith Helmet",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Uldaman",
+                  "detail": "trash"
                 }
               }
             ],
@@ -5215,12 +16856,234 @@ WOWDATA.register({
                   "instance": "Maraudon",
                   "boss": "Princess Theradras"
                 }
+              },
+              {
+                "id": 7731,
+                "name": "Ghostshard Talisman",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Azshir the Sleepless",
+                  "detail": "Graveyard wing"
+                },
+                "note": "Stamina-focused; the spell-damage proc is wasted but it's the best neck available this early"
               }
             ],
             "shoulder": [
               {
-                "id": 17732,
-                "name": "Rotgrip Mantle",
+                "id": 17749,
+                "name": "Phytoskin Spaulders",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Razorlash"
+                }
+              },
+              {
+                "id": 10774,
+                "name": "Fleshhide Shoulders",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Downs",
+                  "boss": "Glutton"
+                }
+              },
+              {
+                "id": 5404,
+                "name": "Serpent's Shoulders",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Wailing Caverns",
+                  "boss": "Lady Anacondra"
+                }
+              }
+            ],
+            "chest": [
+              {
+                "id": 17742,
+                "name": "Fungus Shroud Armor",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon"
+                },
+                "note": "Leather agility/stamina chest — solid upgrade for the low 40s"
+              },
+              {
+                "id": 10583,
+                "name": "Quillward Harness",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Downs",
+                  "boss": "Death's Head Necromancer"
+                }
+              },
+              {
+                "id": 7374,
+                "name": "Dusky Leather Armor",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Dusky Leather set)",
+                  "profession": "Leatherworking"
+                }
+              }
+            ],
+            "wrist": [
+              {
+                "id": 19508,
+                "name": "Branded Leather Bracers",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "High Inquisitor Fairbanks",
+                  "detail": "Cathedral wing"
+                }
+              },
+              {
+                "id": 18948,
+                "name": "Barbaric Bracers",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking 155 (BoE, often on AH)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 4794,
+                "name": "Wolf Bracers",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "BoE"
+              }
+            ],
+            "hands": [
+              {
+                "id": 867,
+                "name": "Gloves of Holy Might",
+                "quality": "epic",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "Expensive BoE epic — pure crit + AP, no wasted stats"
+              },
+              {
+                "id": 7756,
+                "name": "Dog Training Gloves",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Houndmaster Loksey",
+                  "detail": "Library wing"
+                }
+              },
+              {
+                "id": 888,
+                "name": "Naga Battle Gloves",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackfathom Deeps",
+                  "boss": "Lady Sarevess"
+                }
+              }
+            ],
+            "waist": [
+              {
+                "id": 10403,
+                "name": "Blackened Defias Belt",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Edwin VanCleef"
+                },
+                "note": "Equip: +18 Attack Power"
+              },
+              {
+                "id": 7387,
+                "name": "Dusky Belt",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Dusky Leather set)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 11662,
+                "name": "Ban'thok Sash",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Depths",
+                  "boss": "Ok'thor the Breaker"
+                }
+              }
+            ],
+            "legs": [
+              {
+                "id": 1718,
+                "name": "Basilisk Hide Pants",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                }
+              },
+              {
+                "id": 9414,
+                "name": "Oilskin Leggings",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Uldaman",
+                  "boss": "Grimlok"
+                }
+              },
+              {
+                "id": 7373,
+                "name": "Dusky Leather Leggings",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Dusky Leather set)",
+                  "profession": "Leatherworking"
+                }
+              }
+            ],
+            "feet": [
+              {
+                "id": 17728,
+                "name": "Albino Crocscale Boots",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
@@ -5228,192 +17091,171 @@ WOWDATA.register({
                   "instance": "Maraudon",
                   "boss": "Rotgrip"
                 }
-              }
-            ],
-            "back": [
+              },
               {
-                "id": 11858,
-                "name": "Battlehard Cape",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "A Grim Discovery",
-                  "zone": "Feralas"
-                }
-              }
-            ],
-            "chest": [
-              {
-                "id": 17741,
-                "name": "Nature's Embrace",
+                "id": 12470,
+                "name": "Sandstalker Ankleguards",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 2,
                 "source": {
                   "type": "drop",
-                  "instance": "Maraudon",
-                  "boss": "Meshlok the Harvester",
+                  "instance": "Zul'Farrak",
+                  "boss": "Zerillis",
                   "detail": "rare spawn"
-                },
-                "note": "mp5 pick"
-              },
-              {
-                "id": 10021,
-                "name": "Dreamweave Vest",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "crafted",
-                  "detail": "Tailoring 250 (BoE)"
-                }
-              }
-            ],
-            "wrist": [
-              {
-                "id": 9433,
-                "name": "Forgotten Wraps",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop"
-                },
-                "note": "Cloth Intellect wrist"
-              }
-            ],
-            "waist": [
-              {
-                "id": 17750,
-                "name": "Chloromesh Girdle",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Maraudon",
-                  "boss": "Razorlash"
                 }
               },
               {
-                "id": 17755,
-                "name": "Satyrmane Sash",
+                "id": 2276,
+                "name": "Swampwalker Boots",
                 "quality": "rare",
-                "rank": 2,
+                "rank": 3,
                 "source": {
-                  "type": "drop",
-                  "instance": "Maraudon",
-                  "boss": "Lord Vyletongue"
-                }
-              }
-            ],
-            "legs": [
-              {
-                "id": 9484,
-                "name": "Spellshock Leggings",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Zul'Farrak",
-                  "boss": "Sandarr Dunereaver"
-                },
-                "note": "BoE, can be moderately expensive on AH"
-              }
-            ],
-            "feet": [
-              {
-                "id": 17748,
-                "name": "Vinerot Sandals",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Maraudon",
-                  "boss": "Razorlash"
-                }
-              }
-            ],
-            "hands": [
-              {
-                "id": 18083,
-                "name": "Jumanza Grips",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Zul'Farrak",
-                  "boss": "Witch Doctor Zum'rah"
+                  "type": "world-drop"
                 }
               }
             ],
             "finger": [
               {
-                "id": 11118,
-                "name": "Archaedic Stone",
+                "id": 17713,
+                "name": "Blackstone Ring",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
-                  "instance": "Uldaman",
-                  "boss": "Archaedas"
-                },
-                "note": "Random-enchant ring; look for an Intellect/Spirit roll (e.g. of the Whale, of Intellect)"
+                  "instance": "Maraudon",
+                  "boss": "Princess Theradras"
+                }
               },
               {
-                "id": 17713,
-                "name": "Blackstone Ring",
+                "id": 2262,
+                "name": "Mark of Kern",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery"
+                },
+                "note": "Unique-Equipped"
+              },
+              {
+                "id": 7686,
+                "name": "Ironspine's Eye",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Ironspine",
+                  "detail": "Graveyard wing, rare spawn"
+                },
+                "note": "Unique-Equipped"
+              },
+              {
+                "id": 2933,
+                "name": "Seal of Wrynn",
+                "quality": "rare",
+                "rank": 4,
+                "faction": "alliance",
+                "source": {
+                  "type": "quest",
+                  "quest": "The Unsent Letter",
+                  "zone": "Stormwind City"
+                }
+              }
+            ],
+            "trinket": [
+              {
+                "id": 19991,
+                "name": "Devilsaur Eye",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Un'Goro Crater",
+                  "detail": "Devilsaur loot"
+                },
+                "note": "Expensive BoE — on-use AP and hit burst"
+              },
+              {
+                "id": 11122,
+                "name": "Carrot on a Stick",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Gahz'rilla",
+                  "instance": "Zul'Farrak"
+                },
+                "note": "No combat stats; mount-speed utility filler"
+              },
+              {
+                "id": 9149,
+                "name": "Philosopher's Stone",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Alchemy (skill 200), BoP",
+                  "profession": "Alchemy"
+                },
+                "note": "Usable from level 35 — the only trinket available this early",
+                "bop": true
+              },
+              {
+                "id": 4381,
+                "name": "Minor Recombobulator",
+                "quality": "uncommon",
+                "rank": 4,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Engineering 140, BoP",
+                  "profession": "Engineering"
+                },
+                "note": "Requires own Engineering 140 to use; only trinket obtainable this low"
+              }
+            ],
+            "mainhand": [
+              {
+                "id": 2915,
+                "name": "Taran Icebreaker",
+                "quality": "epic",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "very rare, expensive BoE epic"
+              },
+              {
+                "id": 17766,
+                "name": "Princess Theradras' Scepter",
                 "quality": "rare",
                 "rank": 2,
                 "source": {
                   "type": "drop",
                   "instance": "Maraudon",
                   "boss": "Princess Theradras"
-                },
-                "note": "Stamina/hit/AP — AP is wasted, but the only alternative ring this bracket"
-              }
-            ],
-            "trinket": [
-              {
-                "id": 11122,
-                "name": "Carrot on a Stick",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "Gahz'rilla",
-                  "instance": "Zul'Farrak"
-                },
-                "note": "No healing stats; mount-speed utility filler"
+                }
               },
               {
-                "id": 9149,
-                "name": "Philosopher's Stone",
-                "quality": "uncommon",
-                "rank": 2,
-                "source": {
-                  "type": "crafted",
-                  "detail": "Alchemy (skill 200), BoP"
-                },
-                "note": "Holds over from the lvl39 bracket"
-              }
-            ],
-            "mainhand": [
-              {
-                "id": 873,
-                "name": "Staff of Jordan",
+                "id": 17743,
+                "name": "Resurgence Rod",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 3,
                 "source": {
-                  "type": "world-drop"
-                },
-                "note": "Often pricey on the AH"
+                  "type": "quest",
+                  "quest": "Corruption of Earth and Seed",
+                  "zone": "Desolace",
+                  "detail": "Chain leads into Maraudon"
+                }
               }
             ]
           }
         },
         {
-          "id": "lvl59",
+          "id": "lvl55",
           "levelRange": [
-            50,
-            57
+            51,
+            55
           ],
           "slots": {
             "head": [
@@ -5424,209 +17266,450 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking (Classic pattern, BoE)"
-                }
-              },
-              {
-                "id": 21774,
-                "name": "Emerald Crown of Destruction",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "crafted",
-                  "detail": "Jewelcrafting — BoE"
-                }
-              }
-            ],
-            "neck": [
-              {
-                "id": 18691,
-                "name": "Dark Advisor's Pendant",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Scholomance",
-                  "boss": "Vectus"
-                }
-              }
-            ],
-            "shoulder": [
-              {
-                "id": 13185,
-                "name": "Sunderseer Mantle",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Blackrock Spire",
-                  "boss": "Crystal Fang"
-                }
-              },
-              {
-                "id": 11624,
-                "name": "Kentic Amice",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Blackrock Depths",
-                  "boss": "High Interrogator Gerstahn"
-                }
-              }
-            ],
-            "back": [
-              {
-                "id": 18510,
-                "name": "Hide of the Wild",
-                "quality": "epic",
-                "rank": 1,
-                "source": {
-                  "type": "crafted",
-                  "detail": "Leatherworking 300, recipe drops in Dire Maul East"
+                  "detail": "Leatherworking (Classic pattern, BoE)",
+                  "profession": "Leatherworking"
                 },
-                "note": "Expensive BoE — a genuine healing proc"
-              }
-            ],
-            "chest": [
+                "note": "Grants bonus energy/rage on shifting into Cat/Bear form; one of very few Druid-only items and stays relevant for a very long time."
+              },
               {
-                "id": 18486,
-                "name": "Mooncloth Robe",
+                "id": 9479,
+                "name": "Embrace of the Lycan",
                 "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "crafted",
-                  "detail": "Mooncloth Tailoring — pattern from the Darkmoon Faire (BoE)"
-                }
-              }
-            ],
-            "wrist": [
-              {
-                "id": 12626,
-                "name": "Funeral Cuffs",
-                "quality": "rare",
-                "rank": 1,
+                "rank": 2,
                 "source": {
                   "type": "drop",
-                  "instance": "Blackrock Spire",
-                  "boss": "Shadow Hunter Vosh'gajin"
-                }
-              }
-            ],
-            "waist": [
+                  "instance": "Zul'Farrak",
+                  "boss": "Chief Ukorz Sandscalp"
+                },
+                "note": "leather; best available at this level"
+              },
               {
-                "id": 23126,
-                "name": "Waistband of Balzaphon",
+                "id": 18698,
+                "name": "Tattered Leather Hood",
                 "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Stratholme",
-                  "boss": "Balzaphon"
-                }
-              }
-            ],
-            "legs": [
-              {
-                "id": 14545,
-                "name": "Ghostloom Leggings",
-                "quality": "uncommon",
-                "rank": 1,
+                "rank": 3,
                 "source": {
                   "type": "drop",
                   "instance": "Scholomance"
                 }
               }
             ],
-            "feet": [
+            "neck": [
               {
-                "id": 13954,
-                "name": "Verdant Footpads",
+                "id": 11755,
+                "name": "Verek's Collar",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Depths",
+                  "boss": "Verek"
+                }
+              },
+              {
+                "id": 9641,
+                "name": "Lifeblood Amulet",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Theka the Martyr"
+                }
+              },
+              {
+                "id": 17707,
+                "name": "Gemshard Heart",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Princess Theradras"
+                }
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 16708,
+                "name": "Shadowcraft Spaulders",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
                   "instance": "Stratholme",
-                  "boss": "Stonespine"
+                  "boss": "Cannon Master Willey"
                 },
-                "note": "Nature/healing proc"
+                "note": "Rogue Shadowcraft set piece — great agility/stamina shoulders for feral too"
+              },
+              {
+                "id": 17749,
+                "name": "Phytoskin Spaulders",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Razorlash"
+                }
+              },
+              {
+                "id": 10774,
+                "name": "Fleshhide Shoulders",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Downs",
+                  "boss": "Glutton"
+                }
               }
             ],
-            "hands": [
+            "chest": [
               {
-                "id": 18309,
-                "name": "Gloves of Restoration",
+                "id": 17742,
+                "name": "Fungus Shroud Armor",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
-                  "instance": "Dire Maul",
-                  "boss": "Alzzin the Wildshaper",
-                  "detail": "East wing"
+                  "instance": "Maraudon"
+                },
+                "note": "Leather agility/stamina chest — solid upgrade for the low 40s"
+              },
+              {
+                "id": 10583,
+                "name": "Quillward Harness",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Razorfen Downs",
+                  "boss": "Death's Head Necromancer"
+                }
+              },
+              {
+                "id": 7374,
+                "name": "Dusky Leather Armor",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Dusky Leather set)",
+                  "profession": "Leatherworking"
+                }
+              }
+            ],
+            "wrist": [
+              {
+                "id": 18700,
+                "name": "Malefic Bracers",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Dire Maul"
+                }
+              },
+              {
+                "id": 19508,
+                "name": "Branded Leather Bracers",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "High Inquisitor Fairbanks",
+                  "detail": "Cathedral wing"
+                }
+              },
+              {
+                "id": 18948,
+                "name": "Barbaric Bracers",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking 155 (BoE, often on AH)",
+                  "profession": "Leatherworking"
+                }
+              }
+            ],
+            "hands": [
+              {
+                "id": 15063,
+                "name": "Devilsaur Gauntlets",
+                "quality": "epic",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
+                },
+                "note": "2pc set bonus with Devilsaur Leggings: +20 hit rating; can be pricey on AH"
+              },
+              {
+                "id": 867,
+                "name": "Gloves of Holy Might",
+                "quality": "epic",
+                "rank": 2,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "Expensive BoE epic — pure crit + AP, no wasted stats"
+              },
+              {
+                "id": 7756,
+                "name": "Dog Training Gloves",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Houndmaster Loksey",
+                  "detail": "Library wing"
+                }
+              }
+            ],
+            "waist": [
+              {
+                "id": 10403,
+                "name": "Blackened Defias Belt",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Deadmines",
+                  "boss": "Edwin VanCleef"
+                },
+                "note": "Equip: +18 Attack Power"
+              },
+              {
+                "id": 7387,
+                "name": "Dusky Belt",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (Dusky Leather set)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 11662,
+                "name": "Ban'thok Sash",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Blackrock Depths",
+                  "boss": "Ok'thor the Breaker"
+                }
+              }
+            ],
+            "legs": [
+              {
+                "id": 15062,
+                "name": "Devilsaur Leggings",
+                "quality": "epic",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
+                },
+                "note": "2pc set bonus with Devilsaur Gauntlets; can be pricey on AH"
+              },
+              {
+                "id": 1718,
+                "name": "Basilisk Hide Pants",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "world-drop"
+                }
+              },
+              {
+                "id": 9414,
+                "name": "Oilskin Leggings",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Uldaman",
+                  "boss": "Grimlok"
+                }
+              }
+            ],
+            "feet": [
+              {
+                "id": 16711,
+                "name": "Shadowcraft Boots",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scholomance",
+                  "boss": "Rattlegore"
+                },
+                "note": "Rogue Shadowcraft set piece"
+              },
+              {
+                "id": 17728,
+                "name": "Albino Crocscale Boots",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Rotgrip"
+                }
+              },
+              {
+                "id": 12470,
+                "name": "Sandstalker Ankleguards",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Zul'Farrak",
+                  "boss": "Zerillis",
+                  "detail": "rare spawn"
                 }
               }
             ],
             "finger": [
               {
-                "id": 12926,
-                "name": "Flaming Band",
+                "id": 17713,
+                "name": "Blackstone Ring",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
-                  "instance": "Blackrock Spire",
-                  "boss": "Pyroguard Emberseer"
-                },
-                "note": "Random enchantment"
+                  "instance": "Maraudon",
+                  "boss": "Princess Theradras"
+                }
               },
               {
-                "id": 18314,
-                "name": "Ring of Demonic Guile",
+                "id": 2262,
+                "name": "Mark of Kern",
                 "quality": "rare",
                 "rank": 2,
                 "source": {
-                  "type": "drop"
+                  "type": "drop",
+                  "instance": "Scarlet Monastery"
+                },
+                "note": "Unique-Equipped"
+              },
+              {
+                "id": 18302,
+                "name": "Band of Vigor",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Dire Maul",
+                  "boss": "Lethtendris",
+                  "detail": "East wing"
                 }
+              },
+              {
+                "id": 7686,
+                "name": "Ironspine's Eye",
+                "quality": "rare",
+                "rank": 4,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scarlet Monastery",
+                  "boss": "Ironspine",
+                  "detail": "Graveyard wing, rare spawn"
+                },
+                "note": "Unique-Equipped"
               }
             ],
             "trinket": [
               {
-                "id": 12930,
-                "name": "Briarwood Reed",
+                "id": 19991,
+                "name": "Devilsaur Eye",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Un'Goro Crater",
+                  "detail": "Devilsaur loot"
+                },
+                "note": "Expensive BoE — on-use AP and hit burst"
+              },
+              {
+                "id": 11815,
+                "name": "Hand of Justice",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "Expensive BoE — extra-attack proc is excellent threat/DPS for both bear and cat"
+              },
+              {
+                "id": 11122,
+                "name": "Carrot on a Stick",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Gahz'rilla",
+                  "instance": "Zul'Farrak"
+                },
+                "note": "No combat stats; mount-speed utility filler"
+              },
+              {
+                "id": 9149,
+                "name": "Philosopher's Stone",
+                "quality": "uncommon",
+                "rank": 4,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Alchemy (skill 200), BoP",
+                  "profession": "Alchemy"
+                },
+                "note": "Usable from level 35 — the only trinket available this early",
+                "bop": true
+              }
+            ],
+            "mainhand": [
+              {
+                "id": 13167,
+                "name": "Fist of Omokk",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
                   "instance": "Blackrock Spire",
-                  "boss": "Jed Runewatcher"
+                  "boss": "Highlord Omokk",
+                  "detail": "Lower Blackrock Spire"
                 },
-                "note": "Damage AND healing done"
+                "note": "Bear-tank only — Strength/Stamina 2H mace, no benefit for cat form"
               },
-              {
-                "id": 18371,
-                "name": "Mindtap Talisman",
-                "quality": "uncommon",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Dire Maul",
-                  "boss": "Magister Kalendris",
-                  "detail": "West wing"
-                },
-                "note": "mp5 regen"
-              }
-            ],
-            "mainhand": [
               {
                 "id": 23124,
                 "name": "Staff of Balzaphon",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 2,
                 "source": {
                   "type": "drop",
                   "instance": "Stratholme",
                   "boss": "Balzaphon"
                 }
+              },
+              {
+                "id": 2915,
+                "name": "Taran Icebreaker",
+                "quality": "epic",
+                "rank": 3,
+                "source": {
+                  "type": "world-drop"
+                },
+                "note": "very rare, expensive BoE epic"
               }
             ]
           }
@@ -5634,244 +17717,463 @@ WOWDATA.register({
         {
           "id": "lvl60",
           "levelRange": [
-            58,
-            64
+            56,
+            60
           ],
           "slots": {
             "head": [
               {
-                "id": 25710,
-                "name": "Moonkin Headdress",
+                "id": 16707,
+                "name": "Shadowcraft Cap",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
-                  "type": "quest",
-                  "quest": "The Blood is Life",
-                  "instance": "The Blood Furnace",
-                  "zone": "Hellfire Peninsula"
+                  "type": "drop",
+                  "instance": "Scholomance",
+                  "boss": "Darkmaster Gandling"
                 },
-                "note": "Stamina/Intellect/Spirit/spell crit/spell damage — good on a healer too"
+                "note": "Rogue Shadowcraft set piece"
               },
               {
-                "id": 8345,
-                "name": "Wolfshead Helm",
-                "quality": "rare",
+                "id": 29940,
+                "name": "Veteran's Skullcap",
+                "quality": "uncommon",
                 "rank": 2,
                 "source": {
-                  "type": "crafted",
-                  "detail": "Leatherworking (Classic pattern, BoE)"
+                  "type": "quest",
+                  "zone": "Hellfire Peninsula"
+                }
+              },
+              {
+                "id": 31658,
+                "name": "Scout's Hood",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Saving the Sporeloks",
+                  "zone": "Zangarmarsh"
                 }
               }
             ],
             "neck": [
               {
-                "id": 25714,
-                "name": "Crimson Pendant of Clarity",
+                "id": 25562,
+                "name": "Earthen Mark of Razing",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
+                  "type": "drop",
+                  "zone": "Nagrand",
+                  "boss": "Gurok the Usurper",
+                  "detail": "Summoned group elite"
+                }
+              },
+              {
+                "id": 31695,
+                "name": "Natasha's Choker",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
                   "type": "quest",
-                  "quest": "Heart of Rage",
-                  "instance": "The Blood Furnace",
-                  "zone": "Hellfire Peninsula"
+                  "quest": "The Hound-Master",
+                  "zone": "Blade's Edge Mountains"
+                }
+              },
+              {
+                "id": 28168,
+                "name": "Insignia of the Mag'hari Hero",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "quest": "Hero of the Mag'har",
+                  "zone": "Nagrand"
                 }
               }
             ],
             "shoulder": [
               {
-                "id": 25718,
-                "name": "Mantle of Magical Might",
-                "quality": "rare",
-                "rank": 1,
-                "faction": "both",
-                "source": {
-                  "type": "quest",
-                  "instance": "Hellfire Ramparts",
-                  "quest": "Weaken the Ramparts"
-                }
-              }
-            ],
-            "back": [
-              {
-                "id": 24459,
-                "name": "Cloak of Healing Rays",
+                "id": 16708,
+                "name": "Shadowcraft Spaulders",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
-                  "instance": "The Underbog",
-                  "boss": "Ghaz'an"
+                  "instance": "Stratholme",
+                  "boss": "Cannon Master Willey"
+                },
+                "note": "Rogue Shadowcraft set piece — great agility/stamina shoulders for feral too"
+              },
+              {
+                "id": 12927,
+                "name": "Truestrike Shoulders",
+                "quality": "uncommon",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Lower Blackrock Spire",
+                  "boss": "Pyroguard Emberseer"
+                }
+              },
+              {
+                "id": 17749,
+                "name": "Phytoskin Spaulders",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Maraudon",
+                  "boss": "Razorlash"
                 }
               }
             ],
             "chest": [
               {
-                "id": 24455,
-                "name": "Tunic of the Nightwatcher",
+                "id": 14637,
+                "name": "Cadaverous Armor",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
-                  "zone": "Hellfire Peninsula",
-                  "detail": "Hellfire Citadel dungeon drop"
+                  "instance": "Scholomance"
+                },
+                "note": "Rogue Cadaverous Garb set piece; solid Agility/Stamina leather regardless of class"
+              },
+              {
+                "id": 29340,
+                "name": "Auchenai Monk's Tunic",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Everything Will Be Alright",
+                  "instance": "Auchenai Crypts",
+                  "zone": "Terokkar Forest"
+                }
+              },
+              {
+                "id": 29938,
+                "name": "Battle Seeker Chestguard",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Waste Not, Want Not (Alliance) / I Work... For the Horde! (Horde)",
+                  "zone": "Hellfire Peninsula"
                 }
               }
             ],
             "wrist": [
               {
-                "id": 28029,
-                "name": "Goldenvine Wraps",
+                "id": 24023,
+                "name": "Bracers of Finesse",
                 "quality": "rare",
                 "rank": 1,
-                "faction": "both",
                 "source": {
-                  "type": "quest",
-                  "instance": "The Slave Pens / The Underbog",
-                  "quest": "Lost in Action"
-                }
-              }
-            ],
-            "waist": [
-              {
-                "id": 21850,
-                "name": "Netherweave Belt",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "crafted",
-                  "detail": "Tailoring (BoE)"
-                },
-                "note": "Stamina-only filler until a better piece drops"
-              }
-            ],
-            "legs": [
-              {
-                "id": 25711,
-                "name": "Deadly Borer Leggings",
-                "quality": "rare",
-                "rank": 1,
-                "faction": "both",
-                "source": {
-                  "type": "quest",
-                  "instance": "The Blood Furnace",
-                  "quest": "The Blood is Life"
+                  "type": "drop",
+                  "instance": "Hellfire Ramparts",
+                  "boss": "Watchkeeper Gargolmar"
                 }
               },
               {
-                "id": 24391,
-                "name": "Kilt of the Night Strider",
+                "id": 30944,
+                "name": "Umberhowl's Collar",
                 "quality": "rare",
                 "rank": 2,
                 "source": {
-                  "type": "drop",
-                  "zone": "Hellfire Peninsula",
-                  "detail": "Hellfire Citadel dungeon drop"
-                },
-                "note": "Socketed alternative with mana regen"
-              }
-            ],
-            "feet": [
+                  "type": "quest",
+                  "quest": "The Cipher of Damnation - The Third Fragment Recovered",
+                  "zone": "Shadowmoon Valley"
+                }
+              },
               {
-                "id": 21853,
-                "name": "Netherweave Boots",
-                "quality": "uncommon",
-                "rank": 1,
+                "id": 18700,
+                "name": "Malefic Bracers",
+                "quality": "rare",
+                "rank": 3,
                 "source": {
-                  "type": "crafted",
-                  "detail": "Tailoring (BoE)"
-                },
-                "note": "Stamina-only filler"
+                  "type": "drop",
+                  "instance": "Dire Maul"
+                }
               }
             ],
             "hands": [
               {
-                "id": 29327,
-                "name": "Cryo-mitts",
+                "id": 25669,
+                "name": "Thick Draenic Gloves",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "quest",
-                  "quest": "Someone Else's Hard Work Pays Off",
-                  "instance": "Mana-Tombs",
-                  "zone": "Terokkar Forest"
+                  "zone": "Nagrand",
+                  "detail": "Thick Draenic Armor quest set"
+                }
+              },
+              {
+                "id": 14640,
+                "name": "Cadaverous Gloves",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scholomance"
+                },
+                "note": "Rogue Cadaverous Garb set piece"
+              },
+              {
+                "id": 15063,
+                "name": "Devilsaur Gauntlets",
+                "quality": "epic",
+                "rank": 3,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
+                },
+                "note": "2pc set bonus with Devilsaur Leggings: +20 hit rating; can be pricey on AH"
+              }
+            ],
+            "waist": [
+              {
+                "id": 30372,
+                "name": "Socrethar's Girdle",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Turning Point",
+                  "zone": "Shadowmoon Valley"
+                }
+              },
+              {
+                "id": 14636,
+                "name": "Cadaverous Belt",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scholomance"
+                },
+                "note": "Rogue Cadaverous Garb set piece"
+              },
+              {
+                "id": 24063,
+                "name": "Shifting Sash of Midnight",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Ramparts",
+                  "detail": "Reinforced Fel Iron Chest lockbox"
+                }
+              }
+            ],
+            "legs": [
+              {
+                "id": 31544,
+                "name": "Clefthoof Hide Leggings",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Showdown",
+                  "zone": "Blade's Edge Mountains"
+                }
+              },
+              {
+                "id": 16709,
+                "name": "Shadowcraft Pants",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Stratholme",
+                  "boss": "Baron Rivendare"
+                },
+                "note": "Rogue Shadowcraft set piece"
+              },
+              {
+                "id": 29939,
+                "name": "Flayer-Hide Leggings",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Disrupt Their Reinforcements",
+                  "zone": "Hellfire Peninsula"
+                }
+              }
+            ],
+            "feet": [
+              {
+                "id": 25717,
+                "name": "Sure-Step Boots",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Weaken the Ramparts",
+                  "instance": "Hellfire Ramparts",
+                  "zone": "Hellfire Peninsula"
+                }
+              },
+              {
+                "id": 16711,
+                "name": "Shadowcraft Boots",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scholomance",
+                  "boss": "Rattlegore"
+                },
+                "note": "Rogue Shadowcraft set piece"
+              },
+              {
+                "id": 25515,
+                "name": "Mud Encrusted Boots",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "A Damp, Dark Place",
+                  "zone": "Zangarmarsh"
                 }
               }
             ],
             "finger": [
               {
-                "id": 25713,
-                "name": "Holy Healing Band",
+                "id": 30860,
+                "name": "Kaylaan's Signet",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "quest",
-                  "quest": "Heart of Rage",
-                  "instance": "The Blood Furnace",
-                  "zone": "Hellfire Peninsula"
+                  "quest": "Deathblow to the Legion",
+                  "detail": "Aldor only"
                 }
               },
               {
-                "id": 25541,
-                "name": "Cenarion Ring of Casting",
+                "id": 31077,
+                "name": "Slayer's Mark of the Redemption",
                 "quality": "rare",
                 "rank": 2,
-                "faction": "both",
                 "source": {
                   "type": "quest",
-                  "instance": "The Slave Pens / The Underbog",
-                  "quest": "Lost in Action"
+                  "quest": "Dissension Amongst the Ranks...",
+                  "zone": "Shadowmoon Valley",
+                  "detail": "Group quest; separate Alliance and Horde versions"
+                }
+              },
+              {
+                "id": 27733,
+                "name": "Warden's Ring of Precision",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Drain Schematics",
+                  "zone": "Zangarmarsh"
+                }
+              },
+              {
+                "id": 30365,
+                "name": "Overseer's Signet",
+                "quality": "rare",
+                "rank": 4,
+                "source": {
+                  "type": "quest",
+                  "quest": "Shutting Down Manaforge Ara",
+                  "zone": "Netherstorm"
                 }
               }
             ],
             "trinket": [
               {
-                "id": 28108,
-                "name": "Power Infused Mushroom",
+                "id": 28041,
+                "name": "Bladefist's Breadth",
                 "quality": "rare",
                 "rank": 1,
-                "faction": "both",
-                "source": {
-                  "type": "quest",
-                  "instance": "The Underbog",
-                  "quest": "Stalk the Stalker"
-                },
-                "note": "On-kill mana proc"
-              },
-              {
-                "id": 28040,
-                "name": "Vengeance of the Illidari",
-                "quality": "rare",
-                "rank": 2,
                 "source": {
                   "type": "quest",
                   "quest": "Overlord (Alliance) / Cruel's Intentions (Horde)",
                   "zone": "Hellfire Peninsula"
                 },
-                "note": "Crit + on-use spell damage/healing burst"
+                "note": "On-use +200 Attack Power"
+              },
+              {
+                "id": 19991,
+                "name": "Devilsaur Eye",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Un'Goro Crater",
+                  "detail": "Devilsaur loot"
+                },
+                "note": "Expensive BoE — on-use AP and hit burst"
+              },
+              {
+                "id": 25937,
+                "name": "Terokkar Tablet of Precision",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Torgos!",
+                  "zone": "Terokkar Forest",
+                  "detail": "group quest, Bone Wastes"
+                }
+              },
+              {
+                "id": 23206,
+                "name": "Mark of the Champion",
+                "quality": "epic",
+                "rank": 4,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Fall of Kel'Thuzad",
+                  "instance": "Naxxramas (Classic)"
+                },
+                "note": "Undead/demons only"
               }
             ],
             "mainhand": [
               {
-                "id": 18534,
-                "name": "Rod of the Ogre Magi",
+                "id": 24044,
+                "name": "Hellreaver",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
-                  "detail": "Rare-spawn drop — Mizzle the Crafty"
+                  "instance": "Hellfire Ramparts",
+                  "boss": "Vazruden"
                 }
-              }
-            ],
-            "ranged": [
+              },
               {
-                "id": 23197,
-                "name": "Idol of the Moon",
+                "id": 25764,
+                "name": "Mag'hari Fury Brand",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 2,
                 "source": {
-                  "type": "world-drop"
+                  "type": "quest",
+                  "quest": "The Ring of Blood: The Final Challenge",
+                  "zone": "Nagrand"
                 },
-                "note": "Moonfire-focused, but the only idol available this early; holds the relic slot until Idol of the Emerald Queen at 65"
+                "note": "Fist weapon"
+              },
+              {
+                "id": 24094,
+                "name": "Heart Fire Warhammer",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Ramparts",
+                  "boss": "Omor the Unscarred"
+                }
               }
             ]
           }
@@ -5879,24 +18181,25 @@ WOWDATA.register({
         {
           "id": "lvl65",
           "levelRange": [
-            65,
-            69
+            61,
+            65
           ],
           "slots": {
             "head": [
               {
-                "id": 8345,
-                "name": "Wolfshead Helm",
+                "id": 27415,
+                "name": "Darkguard Face Mask",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
-                  "type": "crafted",
-                  "detail": "Leatherworking (Classic pattern, BoE)"
+                  "type": "drop",
+                  "instance": "Auchenai Crypts",
+                  "boss": "Exarch Maladaar"
                 }
               },
               {
-                "id": 28183,
-                "name": "Hydromancer's Headwrap",
+                "id": 28182,
+                "name": "Helm of the Claw",
                 "quality": "rare",
                 "rank": 2,
                 "source": {
@@ -5904,205 +18207,13 @@ WOWDATA.register({
                   "quest": "The Warlord's Hideout",
                   "instance": "The Steamvault",
                   "zone": "Zangarmarsh"
-                },
-                "note": "Cloth — more raw spellpower, no shapeshift proc"
-              }
-            ],
-            "neck": [
-              {
-                "id": 29334,
-                "name": "Sethekk Oracle's Focus",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "Brother Against Brother",
-                  "instance": "Sethekk Halls",
-                  "zone": "Terokkar Forest"
-                }
-              }
-            ],
-            "shoulder": [
-              {
-                "id": 25718,
-                "name": "Mantle of Magical Might",
-                "quality": "rare",
-                "rank": 1,
-                "faction": "both",
-                "source": {
-                  "type": "quest",
-                  "instance": "Hellfire Ramparts",
-                  "quest": "Weaken the Ramparts"
-                },
-                "note": "Carries over from the 58-64 bracket"
-              }
-            ],
-            "chest": [
-              {
-                "id": 29341,
-                "name": "Auchenai Anchorite's Robe",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "Everything Will Be Alright",
-                  "instance": "Auchenai Crypts",
-                  "zone": "Terokkar Forest"
-                },
-                "note": "Cloth — no leather caster chest exists yet"
-              }
-            ],
-            "wrist": [
-              {
-                "id": 28174,
-                "name": "Shattrath Wraps",
-                "quality": "rare",
-                "rank": 1,
-                "faction": "both",
-                "source": {
-                  "type": "quest",
-                  "instance": "Shadow Labyrinth",
-                  "quest": "The Soul Devices"
-                }
-              }
-            ],
-            "back": [
-              {
-                "id": 27789,
-                "name": "Cloak of Whispering Shells",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "The Steamvault",
-                  "boss": "Hydromancer Thespia"
                 }
               },
               {
-                "id": 25945,
-                "name": "Cloak of Revival",
+                "id": 29332,
+                "name": "Terokk's Mask",
                 "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "drop",
-                  "instance": "Mana-Tombs",
-                  "boss": "Tavarok"
-                }
-              }
-            ],
-            "waist": [
-              {
-                "id": 29328,
-                "name": "Consortium Prince's Wrap",
-                "quality": "rare",
-                "rank": 1,
-                "faction": "both",
-                "source": {
-                  "type": "quest",
-                  "instance": "Mana-Tombs",
-                  "quest": "Someone Else's Hard Work Pays Off"
-                }
-              }
-            ],
-            "legs": [
-              {
-                "id": 29314,
-                "name": "Leggings of the Third Coin",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "Levixus the Soul Caller",
-                  "instance": "Auchenai Crypts",
-                  "zone": "Terokkar Forest"
-                }
-              },
-              {
-                "id": 29345,
-                "name": "Haramad's Leg Wraps",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "quest",
-                  "quest": "Undercutting the Competition",
-                  "instance": "Mana-Tombs",
-                  "zone": "Terokkar Forest"
-                },
-                "note": "Cloth"
-              }
-            ],
-            "feet": [
-              {
-                "id": 27919,
-                "name": "Light-Woven Slippers",
-                "quality": "uncommon",
-                "rank": 1,
-                "source": {
-                  "type": "drop",
-                  "instance": "Sethekk Halls",
-                  "boss": "Darkweaver Syth"
-                }
-              }
-            ],
-            "hands": [
-              {
-                "id": 29327,
-                "name": "Cryo-mitts",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "Someone Else's Hard Work Pays Off",
-                  "instance": "Mana-Tombs",
-                  "zone": "Terokkar Forest"
-                }
-              },
-              {
-                "id": 29315,
-                "name": "Gloves of Penitence",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "quest",
-                  "quest": "Levixus the Soul Caller",
-                  "instance": "Auchenai Crypts",
-                  "zone": "Terokkar Forest"
-                },
-                "note": "Cloth, but very strong healing stats"
-              }
-            ],
-            "finger": [
-              {
-                "id": 29322,
-                "name": "Keeper's Ring of Piety",
-                "quality": "rare",
-                "rank": 1,
-                "source": {
-                  "type": "quest",
-                  "quest": "Hero of the Brood",
-                  "instance": "The Black Morass",
-                  "zone": "Caverns of Time, Tanaris"
-                }
-              },
-              {
-                "id": 25713,
-                "name": "Holy Healing Band",
-                "quality": "rare",
-                "rank": 2,
-                "source": {
-                  "type": "quest",
-                  "quest": "Heart of Rage",
-                  "instance": "The Blood Furnace",
-                  "zone": "Hellfire Peninsula"
-                }
-              }
-            ],
-            "offhand": [
-              {
-                "id": 29330,
-                "name": "The Saga of Terokk",
-                "quality": "rare",
-                "rank": 1,
+                "rank": 3,
                 "source": {
                   "type": "quest",
                   "quest": "Terokk's Legacy",
@@ -6111,56 +18222,893 @@ WOWDATA.register({
                 }
               }
             ],
+            "neck": [
+              {
+                "id": 25562,
+                "name": "Earthen Mark of Razing",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "zone": "Nagrand",
+                  "boss": "Gurok the Usurper",
+                  "detail": "Summoned group elite"
+                }
+              },
+              {
+                "id": 31695,
+                "name": "Natasha's Choker",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Hound-Master",
+                  "zone": "Blade's Edge Mountains"
+                }
+              },
+              {
+                "id": 28168,
+                "name": "Insignia of the Mag'hari Hero",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "quest": "Hero of the Mag'har",
+                  "zone": "Nagrand"
+                }
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 24398,
+                "name": "Mantle of the Dusk-Dweller",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Blood Furnace",
+                  "boss": "Keli'dan the Breaker"
+                }
+              },
+              {
+                "id": 16708,
+                "name": "Shadowcraft Spaulders",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Stratholme",
+                  "boss": "Cannon Master Willey"
+                },
+                "note": "Rogue Shadowcraft set piece — great agility/stamina shoulders for feral too"
+              },
+              {
+                "id": 12927,
+                "name": "Truestrike Shoulders",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Lower Blackrock Spire",
+                  "boss": "Pyroguard Emberseer"
+                }
+              }
+            ],
+            "chest": [
+              {
+                "id": 14637,
+                "name": "Cadaverous Armor",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scholomance"
+                },
+                "note": "Rogue Cadaverous Garb set piece; solid Agility/Stamina leather regardless of class"
+              },
+              {
+                "id": 24396,
+                "name": "Vest of Vengeance",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "zone": "Hellfire Peninsula",
+                  "detail": "Hellfire Citadel dungeon drop"
+                }
+              },
+              {
+                "id": 29340,
+                "name": "Auchenai Monk's Tunic",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Everything Will Be Alright",
+                  "instance": "Auchenai Crypts",
+                  "zone": "Terokkar Forest"
+                }
+              }
+            ],
+            "wrist": [
+              {
+                "id": 24023,
+                "name": "Bracers of Finesse",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Ramparts",
+                  "boss": "Watchkeeper Gargolmar"
+                }
+              },
+              {
+                "id": 28171,
+                "name": "Spymistress's Wristguards",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Soul Devices",
+                  "instance": "Shadow Labyrinth"
+                }
+              },
+              {
+                "id": 30944,
+                "name": "Umberhowl's Collar",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Cipher of Damnation - The Third Fragment Recovered",
+                  "zone": "Shadowmoon Valley"
+                }
+              }
+            ],
+            "hands": [
+              {
+                "id": 25669,
+                "name": "Thick Draenic Gloves",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "zone": "Nagrand",
+                  "detail": "Thick Draenic Armor quest set"
+                }
+              },
+              {
+                "id": 14640,
+                "name": "Cadaverous Gloves",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scholomance"
+                },
+                "note": "Rogue Cadaverous Garb set piece"
+              },
+              {
+                "id": 24365,
+                "name": "Deft Handguards",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Slave Pens",
+                  "boss": "Quagmirran"
+                }
+              }
+            ],
+            "waist": [
+              {
+                "id": 30372,
+                "name": "Socrethar's Girdle",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Turning Point",
+                  "zone": "Shadowmoon Valley"
+                }
+              },
+              {
+                "id": 31464,
+                "name": "Naaru Belt of Precision",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "How to Break Into the Arcatraz",
+                  "instance": "The Mechanar / The Botanica",
+                  "zone": "Netherstorm"
+                }
+              },
+              {
+                "id": 14636,
+                "name": "Cadaverous Belt",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scholomance"
+                },
+                "note": "Rogue Cadaverous Garb set piece"
+              }
+            ],
+            "legs": [
+              {
+                "id": 25670,
+                "name": "Thick Draenic Pants",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "zone": "Nagrand"
+                },
+                "note": "Thick Draenic Armor quest set"
+              },
+              {
+                "id": 31544,
+                "name": "Clefthoof Hide Leggings",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Showdown",
+                  "zone": "Blade's Edge Mountains"
+                }
+              },
+              {
+                "id": 16709,
+                "name": "Shadowcraft Pants",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Stratholme",
+                  "boss": "Baron Rivendare"
+                },
+                "note": "Rogue Shadowcraft set piece"
+              }
+            ],
+            "feet": [
+              {
+                "id": 25717,
+                "name": "Sure-Step Boots",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Weaken the Ramparts",
+                  "instance": "Hellfire Ramparts",
+                  "zone": "Hellfire Peninsula"
+                }
+              },
+              {
+                "id": 16711,
+                "name": "Shadowcraft Boots",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scholomance",
+                  "boss": "Rattlegore"
+                },
+                "note": "Rogue Shadowcraft set piece"
+              },
+              {
+                "id": 25515,
+                "name": "Mud Encrusted Boots",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "A Damp, Dark Place",
+                  "zone": "Zangarmarsh"
+                }
+              }
+            ],
+            "finger": [
+              {
+                "id": 30860,
+                "name": "Kaylaan's Signet",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Deathblow to the Legion",
+                  "detail": "Aldor only"
+                }
+              },
+              {
+                "id": 31077,
+                "name": "Slayer's Mark of the Redemption",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Dissension Amongst the Ranks...",
+                  "zone": "Shadowmoon Valley",
+                  "detail": "Group quest; separate Alliance and Horde versions"
+                }
+              },
+              {
+                "id": 25962,
+                "name": "Longstrider's Loop",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Mana-Tombs",
+                  "boss": "Nexus-Prince Shaffar"
+                }
+              },
+              {
+                "id": 27413,
+                "name": "Ring of the Exarchs",
+                "quality": "rare",
+                "rank": 4,
+                "source": {
+                  "type": "drop",
+                  "instance": "Auchenai Crypts",
+                  "boss": "Exarch Maladaar"
+                }
+              }
+            ],
             "trinket": [
               {
-                "id": 28034,
-                "name": "Hourglass of the Unraveller",
+                "id": 28041,
+                "name": "Bladefist's Breadth",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Overlord (Alliance) / Cruel's Intentions (Horde)",
+                  "zone": "Hellfire Peninsula"
+                },
+                "note": "On-use +200 Attack Power"
+              },
+              {
+                "id": 19991,
+                "name": "Devilsaur Eye",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Un'Goro Crater",
+                  "detail": "Devilsaur loot"
+                },
+                "note": "Expensive BoE — on-use AP and hit burst"
+              },
+              {
+                "id": 25937,
+                "name": "Terokkar Tablet of Precision",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Torgos!",
+                  "zone": "Terokkar Forest",
+                  "detail": "group quest, Bone Wastes"
+                }
+              },
+              {
+                "id": 23206,
+                "name": "Mark of the Champion",
+                "quality": "epic",
+                "rank": 4,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Fall of Kel'Thuzad",
+                  "instance": "Naxxramas (Classic)"
+                },
+                "note": "Undead/demons only"
+              }
+            ],
+            "mainhand": [
+              {
+                "id": 29329,
+                "name": "Terokk's Quill",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Terokk's Legacy",
+                  "instance": "Sethekk Halls",
+                  "zone": "Terokkar Forest"
+                },
+                "note": "2H polearm — big Agility/Stamina jump over Manual Crowd Pummeler"
+              },
+              {
+                "id": 24461,
+                "name": "Hatebringer",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Underbog",
+                  "boss": "Ghaz'an"
+                }
+              },
+              {
+                "id": 24044,
+                "name": "Hellreaver",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Ramparts",
+                  "boss": "Vazruden"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "lvl69",
+          "levelRange": [
+            66,
+            69
+          ],
+          "slots": {
+            "head": [
+              {
+                "id": 27415,
+                "name": "Darkguard Face Mask",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Auchenai Crypts",
+                  "boss": "Exarch Maladaar"
+                }
+              },
+              {
+                "id": 28182,
+                "name": "Helm of the Claw",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Warlord's Hideout",
+                  "instance": "The Steamvault",
+                  "zone": "Zangarmarsh"
+                }
+              },
+              {
+                "id": 29332,
+                "name": "Terokk's Mask",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Terokk's Legacy",
+                  "instance": "Sethekk Halls",
+                  "zone": "Terokkar Forest"
+                }
+              }
+            ],
+            "neck": [
+              {
+                "id": 25562,
+                "name": "Earthen Mark of Razing",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "zone": "Nagrand",
+                  "boss": "Gurok the Usurper",
+                  "detail": "Summoned group elite"
+                }
+              },
+              {
+                "id": 31695,
+                "name": "Natasha's Choker",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Hound-Master",
+                  "zone": "Blade's Edge Mountains"
+                }
+              },
+              {
+                "id": 28168,
+                "name": "Insignia of the Mag'hari Hero",
+                "quality": "rare",
+                "rank": 3,
+                "faction": "horde",
+                "source": {
+                  "type": "quest",
+                  "quest": "Hero of the Mag'har",
+                  "zone": "Nagrand"
+                }
+              }
+            ],
+            "shoulder": [
+              {
+                "id": 27995,
+                "name": "Sun-Gilded Shouldercaps",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
                   "type": "drop",
                   "instance": "The Black Morass",
-                  "boss": "Temporus"
+                  "boss": "Chrono Lord Deja"
                 }
               },
               {
-                "id": 27416,
-                "name": "Fetish of the Fallen",
-                "quality": "uncommon",
+                "id": 24398,
+                "name": "Mantle of the Dusk-Dweller",
+                "quality": "rare",
                 "rank": 2,
                 "source": {
                   "type": "drop",
-                  "instance": "Auchenai Crypts",
-                  "boss": "Exarch Maladaar"
+                  "instance": "The Blood Furnace",
+                  "boss": "Keli'dan the Breaker"
+                }
+              },
+              {
+                "id": 16708,
+                "name": "Shadowcraft Spaulders",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Stratholme",
+                  "boss": "Cannon Master Willey"
                 },
-                "note": "On-kill heal proc; AP is wasted but the survivability utility is welcome"
+                "note": "Rogue Shadowcraft set piece — great agility/stamina shoulders for feral too"
+              }
+            ],
+            "chest": [
+              {
+                "id": 27787,
+                "name": "Chestguard of No Remorse",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "The Steamvault",
+                  "boss": "Hydromancer Thespia"
+                },
+                "note": "Leather — no mail chest itemized for agility drops in this bracket"
+              },
+              {
+                "id": 14637,
+                "name": "Cadaverous Armor",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scholomance"
+                },
+                "note": "Rogue Cadaverous Garb set piece; solid Agility/Stamina leather regardless of class"
+              },
+              {
+                "id": 24396,
+                "name": "Vest of Vengeance",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "zone": "Hellfire Peninsula",
+                  "detail": "Hellfire Citadel dungeon drop"
+                }
+              }
+            ],
+            "wrist": [
+              {
+                "id": 24023,
+                "name": "Bracers of Finesse",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Ramparts",
+                  "boss": "Watchkeeper Gargolmar"
+                }
+              },
+              {
+                "id": 28171,
+                "name": "Spymistress's Wristguards",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Soul Devices",
+                  "instance": "Shadow Labyrinth"
+                }
+              },
+              {
+                "id": 30944,
+                "name": "Umberhowl's Collar",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Cipher of Damnation - The Third Fragment Recovered",
+                  "zone": "Shadowmoon Valley"
+                }
+              }
+            ],
+            "hands": [
+              {
+                "id": 25685,
+                "name": "Fel Leather Gloves",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (BoE)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 25669,
+                "name": "Thick Draenic Gloves",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "zone": "Nagrand",
+                  "detail": "Thick Draenic Armor quest set"
+                }
+              },
+              {
+                "id": 14640,
+                "name": "Cadaverous Gloves",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scholomance"
+                },
+                "note": "Rogue Cadaverous Garb set piece"
+              }
+            ],
+            "waist": [
+              {
+                "id": 30372,
+                "name": "Socrethar's Girdle",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Turning Point",
+                  "zone": "Shadowmoon Valley"
+                }
+              },
+              {
+                "id": 31464,
+                "name": "Naaru Belt of Precision",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "How to Break Into the Arcatraz",
+                  "instance": "The Mechanar / The Botanica",
+                  "zone": "Netherstorm"
+                }
+              },
+              {
+                "id": 14636,
+                "name": "Cadaverous Belt",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scholomance"
+                },
+                "note": "Rogue Cadaverous Garb set piece"
+              }
+            ],
+            "legs": [
+              {
+                "id": 25670,
+                "name": "Thick Draenic Pants",
+                "quality": "uncommon",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "zone": "Nagrand"
+                },
+                "note": "Thick Draenic Armor quest set"
+              },
+              {
+                "id": 25687,
+                "name": "Fel Leather Leggings",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 31544,
+                "name": "Clefthoof Hide Leggings",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Showdown",
+                  "zone": "Blade's Edge Mountains"
+                }
+              }
+            ],
+            "feet": [
+              {
+                "id": 25686,
+                "name": "Fel Leather Boots",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "crafted",
+                  "detail": "Leatherworking (BoE)",
+                  "profession": "Leatherworking"
+                }
+              },
+              {
+                "id": 25717,
+                "name": "Sure-Step Boots",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Weaken the Ramparts",
+                  "instance": "Hellfire Ramparts",
+                  "zone": "Hellfire Peninsula"
+                }
+              },
+              {
+                "id": 16711,
+                "name": "Shadowcraft Boots",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Scholomance",
+                  "boss": "Rattlegore"
+                },
+                "note": "Rogue Shadowcraft set piece"
+              }
+            ],
+            "finger": [
+              {
+                "id": 30860,
+                "name": "Kaylaan's Signet",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Deathblow to the Legion",
+                  "detail": "Aldor only"
+                }
+              },
+              {
+                "id": 31077,
+                "name": "Slayer's Mark of the Redemption",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "quest",
+                  "quest": "Dissension Amongst the Ranks...",
+                  "zone": "Shadowmoon Valley",
+                  "detail": "Group quest; separate Alliance and Horde versions"
+                }
+              },
+              {
+                "id": 27925,
+                "name": "Ravenclaw Band",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Sethekk Halls",
+                  "boss": "Talon King Ikiss"
+                }
+              },
+              {
+                "id": 25962,
+                "name": "Longstrider's Loop",
+                "quality": "rare",
+                "rank": 4,
+                "source": {
+                  "type": "drop",
+                  "instance": "Mana-Tombs",
+                  "boss": "Nexus-Prince Shaffar"
+                }
+              }
+            ],
+            "trinket": [
+              {
+                "id": 28041,
+                "name": "Bladefist's Breadth",
+                "quality": "rare",
+                "rank": 1,
+                "source": {
+                  "type": "quest",
+                  "quest": "Overlord (Alliance) / Cruel's Intentions (Horde)",
+                  "zone": "Hellfire Peninsula"
+                },
+                "note": "On-use +200 Attack Power"
+              },
+              {
+                "id": 19991,
+                "name": "Devilsaur Eye",
+                "quality": "rare",
+                "rank": 2,
+                "source": {
+                  "type": "world-drop",
+                  "zone": "Un'Goro Crater",
+                  "detail": "Devilsaur loot"
+                },
+                "note": "Expensive BoE — on-use AP and hit burst"
+              },
+              {
+                "id": 25937,
+                "name": "Terokkar Tablet of Precision",
+                "quality": "uncommon",
+                "rank": 3,
+                "source": {
+                  "type": "quest",
+                  "quest": "Torgos!",
+                  "zone": "Terokkar Forest",
+                  "detail": "group quest, Bone Wastes"
+                }
+              },
+              {
+                "id": 23206,
+                "name": "Mark of the Champion",
+                "quality": "epic",
+                "rank": 4,
+                "source": {
+                  "type": "quest",
+                  "quest": "The Fall of Kel'Thuzad",
+                  "instance": "Naxxramas (Classic)"
+                },
+                "note": "Undead/demons only"
               }
             ],
             "mainhand": [
               {
-                "id": 25836,
-                "name": "Preserver's Cudgel",
+                "id": 29329,
+                "name": "Terokk's Quill",
                 "quality": "rare",
                 "rank": 1,
                 "source": {
-                  "type": "reputation",
-                  "detail": "Cenarion Expedition Honored — Zangarmarsh quartermaster"
+                  "type": "quest",
+                  "quest": "Terokk's Legacy",
+                  "instance": "Sethekk Halls",
+                  "zone": "Terokkar Forest"
                 },
-                "note": "Honored is reachable while leveling"
-              }
-            ],
-            "ranged": [
+                "note": "2H polearm — big Agility/Stamina jump over Manual Crowd Pummeler"
+              },
               {
-                "id": 27886,
-                "name": "Idol of the Emerald Queen",
+                "id": 24461,
+                "name": "Hatebringer",
                 "quality": "rare",
-                "rank": 1,
+                "rank": 2,
                 "source": {
                   "type": "drop",
-                  "instance": "Shadow Labyrinth",
-                  "boss": "Ambassador Hellmaw"
-                },
-                "note": "BiS Lifebloom idol — stays BiS all the way through Sunwell"
+                  "instance": "The Underbog",
+                  "boss": "Ghaz'an"
+                }
+              },
+              {
+                "id": 24044,
+                "name": "Hellreaver",
+                "quality": "rare",
+                "rank": 3,
+                "source": {
+                  "type": "drop",
+                  "instance": "Hellfire Ramparts",
+                  "boss": "Vazruden"
+                }
               }
             ]
           }

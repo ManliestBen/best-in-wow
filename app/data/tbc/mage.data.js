@@ -1,7 +1,4 @@
-/* BiS Companion data — TBC Classic Mage (Fire / Arcane / Frost) best-in-slot gear.
-   Item IDs verified against the Wowhead TBC database (wowhead.com/tbc/item=<id>). */
-WOWDATA.register(
-{
+WOWDATA.register({
   "kind": "bis",
   "expansion": "tbc",
   "class": "mage",
@@ -42,7 +39,8 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE) — Spellstrike set"
+                  "detail": "Tailoring (BoE) — Spellstrike set",
+                  "profession": "Tailoring"
                 }
               },
               {
@@ -137,9 +135,11 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoP) — Spellfire set"
+                  "detail": "Tailoring (BoP) — Spellfire set",
+                  "profession": "Tailoring"
                 },
-                "note": "Spellfire 2-piece is core to the pre-raid Fire setup"
+                "note": "Spellfire 2-piece is core to the pre-raid Fire setup",
+                "bop": true
               },
               {
                 "id": 28191,
@@ -174,7 +174,8 @@ WOWDATA.register(
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 }
               }
             ],
@@ -186,8 +187,10 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoP) — Spellfire set"
-                }
+                  "detail": "Tailoring (BoP) — Spellfire set",
+                  "profession": "Tailoring"
+                },
+                "bop": true
               },
               {
                 "id": 27508,
@@ -210,8 +213,10 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoP) — Spellfire set"
-                }
+                  "detail": "Tailoring (BoP) — Spellfire set",
+                  "profession": "Tailoring"
+                },
+                "bop": true
               },
               {
                 "id": 24256,
@@ -220,7 +225,8 @@ WOWDATA.register(
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 }
               }
             ],
@@ -232,7 +238,8 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE) — Spellstrike set"
+                  "detail": "Tailoring (BoE) — Spellstrike set",
+                  "profession": "Tailoring"
                 }
               },
               {
@@ -341,7 +348,8 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing (BoE)"
+                  "detail": "Blacksmithing (BoE)",
+                  "profession": "Blacksmithing"
                 }
               },
               {
@@ -444,7 +452,8 @@ WOWDATA.register(
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE) — Spellstrike set"
+                  "detail": "Tailoring (BoE) — Spellstrike set",
+                  "profession": "Tailoring"
                 },
                 "note": "Holds up well if the token eludes you"
               }
@@ -531,9 +540,11 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoP) — Spellfire set"
+                  "detail": "Tailoring (BoP) — Spellfire set",
+                  "profession": "Tailoring"
                 },
-                "note": "Keep for the Spellfire 2-piece all phase"
+                "note": "Keep for the Spellfire 2-piece all phase",
+                "bop": true
               },
               {
                 "id": 28602,
@@ -580,9 +591,11 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoP) — Spellfire set"
+                  "detail": "Tailoring (BoP) — Spellfire set",
+                  "profession": "Tailoring"
                 },
-                "note": "Spellfire 2-piece"
+                "note": "Spellfire 2-piece",
+                "bop": true
               },
               {
                 "id": 28780,
@@ -604,8 +617,10 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoP) — Spellfire set"
-                }
+                  "detail": "Tailoring (BoP) — Spellfire set",
+                  "profession": "Tailoring"
+                },
+                "bop": true
               },
               {
                 "id": 30673,
@@ -639,7 +654,8 @@ WOWDATA.register(
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE) — Spellstrike set"
+                  "detail": "Tailoring (BoE) — Spellstrike set",
+                  "profession": "Tailoring"
                 }
               }
             ],
@@ -862,8 +878,10 @@ WOWDATA.register(
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting (BoP)"
-                }
+                  "detail": "Jewelcrafting (BoP)",
+                  "profession": "Jewelcrafting"
+                },
+                "bop": true
               }
             ],
             "shoulder": [
@@ -924,9 +942,11 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoP)"
+                  "detail": "Tailoring (BoP)",
+                  "profession": "Tailoring"
                 },
-                "note": "Best chest by a wide margin — requires Tailoring"
+                "note": "Best chest by a wide margin — requires Tailoring",
+                "bop": true
               },
               {
                 "id": 34399,
@@ -958,7 +978,8 @@ WOWDATA.register(
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 }
               }
             ],
@@ -1004,7 +1025,8 @@ WOWDATA.register(
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 }
               }
             ],
@@ -1063,7 +1085,8 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting (BoE)"
+                  "detail": "Jewelcrafting (BoE)",
+                  "profession": "Jewelcrafting"
                 }
               },
               {
@@ -1268,7 +1291,8 @@ WOWDATA.register(
                 "rank": 3,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE) — Spellstrike set"
+                  "detail": "Tailoring (BoE) — Spellstrike set",
+                  "profession": "Tailoring"
                 }
               }
             ],
@@ -1341,9 +1365,11 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoP) — Spellfire set"
+                  "detail": "Tailoring (BoP) — Spellfire set",
+                  "profession": "Tailoring"
                 },
-                "note": "Spellfire 2-piece still worth it for Arcane"
+                "note": "Spellfire 2-piece still worth it for Arcane",
+                "bop": true
               },
               {
                 "id": 28191,
@@ -1378,7 +1404,8 @@ WOWDATA.register(
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 }
               }
             ],
@@ -1390,8 +1417,10 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoP) — Spellfire set"
-                }
+                  "detail": "Tailoring (BoP) — Spellfire set",
+                  "profession": "Tailoring"
+                },
+                "bop": true
               },
               {
                 "id": 27508,
@@ -1414,8 +1443,10 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoP) — Spellfire set"
-                }
+                  "detail": "Tailoring (BoP) — Spellfire set",
+                  "profession": "Tailoring"
+                },
+                "bop": true
               },
               {
                 "id": 24256,
@@ -1424,7 +1455,8 @@ WOWDATA.register(
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 }
               }
             ],
@@ -1449,7 +1481,8 @@ WOWDATA.register(
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE) — Spellstrike set"
+                  "detail": "Tailoring (BoE) — Spellstrike set",
+                  "profession": "Tailoring"
                 }
               }
             ],
@@ -1546,7 +1579,8 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing (BoE)"
+                  "detail": "Blacksmithing (BoE)",
+                  "profession": "Blacksmithing"
                 }
               },
               {
@@ -1737,9 +1771,11 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoP) — Spellfire set"
+                  "detail": "Tailoring (BoP) — Spellfire set",
+                  "profession": "Tailoring"
                 },
-                "note": "Keep for the Spellfire 2-piece"
+                "note": "Keep for the Spellfire 2-piece",
+                "bop": true
               },
               {
                 "id": 28602,
@@ -1786,9 +1822,11 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoP) — Spellfire set"
+                  "detail": "Tailoring (BoP) — Spellfire set",
+                  "profession": "Tailoring"
                 },
-                "note": "Spellfire 2-piece"
+                "note": "Spellfire 2-piece",
+                "bop": true
               },
               {
                 "id": 28780,
@@ -1810,8 +1848,10 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoP) — Spellfire set"
-                }
+                  "detail": "Tailoring (BoP) — Spellfire set",
+                  "profession": "Tailoring"
+                },
+                "bop": true
               },
               {
                 "id": 28799,
@@ -2060,8 +2100,10 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting (BoP)"
-                }
+                  "detail": "Jewelcrafting (BoP)",
+                  "profession": "Jewelcrafting"
+                },
+                "bop": true
               },
               {
                 "id": 34204,
@@ -2143,8 +2185,10 @@ WOWDATA.register(
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoP)"
-                }
+                  "detail": "Tailoring (BoP)",
+                  "profession": "Tailoring"
+                },
+                "bop": true
               }
             ],
             "wrist": [
@@ -2284,7 +2328,8 @@ WOWDATA.register(
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting (BoE)"
+                  "detail": "Jewelcrafting (BoE)",
+                  "profession": "Jewelcrafting"
                 }
               },
               {
@@ -2455,7 +2500,8 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE) — Spellstrike set"
+                  "detail": "Tailoring (BoE) — Spellstrike set",
+                  "profession": "Tailoring"
                 }
               },
               {
@@ -2491,8 +2537,10 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoP) — Frozen Shadoweave set"
-                }
+                  "detail": "Tailoring (BoP) — Frozen Shadoweave set",
+                  "profession": "Tailoring"
+                },
+                "bop": true
               },
               {
                 "id": 27796,
@@ -2538,9 +2586,11 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoP) — Frozen Shadoweave set"
+                  "detail": "Tailoring (BoP) — Frozen Shadoweave set",
+                  "profession": "Tailoring"
                 },
-                "note": "Frozen Shadoweave 3-piece boosts Frost damage and leeches health"
+                "note": "Frozen Shadoweave 3-piece boosts Frost damage and leeches health",
+                "bop": true
               },
               {
                 "id": 28191,
@@ -2563,7 +2613,8 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 }
               },
               {
@@ -2614,7 +2665,8 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 }
               }
             ],
@@ -2626,7 +2678,8 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE) — Spellstrike set"
+                  "detail": "Tailoring (BoE) — Spellstrike set",
+                  "profession": "Tailoring"
                 }
               },
               {
@@ -2650,8 +2703,10 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoP) — Frozen Shadoweave set"
-                }
+                  "detail": "Tailoring (BoP) — Frozen Shadoweave set",
+                  "profession": "Tailoring"
+                },
+                "bop": true
               },
               {
                 "id": 28406,
@@ -2731,7 +2786,8 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing (BoE)"
+                  "detail": "Blacksmithing (BoE)",
+                  "profession": "Blacksmithing"
                 }
               },
               {
@@ -2834,7 +2890,8 @@ WOWDATA.register(
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE) — Spellstrike set"
+                  "detail": "Tailoring (BoE) — Spellstrike set",
+                  "profession": "Tailoring"
                 }
               }
             ],
@@ -2870,9 +2927,11 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoP) — Frozen Shadoweave set"
+                  "detail": "Tailoring (BoP) — Frozen Shadoweave set",
+                  "profession": "Tailoring"
                 },
-                "note": "Keep for the Frozen Shadoweave bonus"
+                "note": "Keep for the Frozen Shadoweave bonus",
+                "bop": true
               },
               {
                 "id": 29079,
@@ -2919,9 +2978,11 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoP) — Frozen Shadoweave set"
+                  "detail": "Tailoring (BoP) — Frozen Shadoweave set",
+                  "profession": "Tailoring"
                 },
-                "note": "Frozen Shadoweave 3-piece"
+                "note": "Frozen Shadoweave 3-piece",
+                "bop": true
               },
               {
                 "id": 28602,
@@ -2943,7 +3004,8 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 }
               },
               {
@@ -2993,7 +3055,8 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE)"
+                  "detail": "Tailoring (BoE)",
+                  "profession": "Tailoring"
                 }
               },
               {
@@ -3028,7 +3091,8 @@ WOWDATA.register(
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoE) — Spellstrike set"
+                  "detail": "Tailoring (BoE) — Spellstrike set",
+                  "profession": "Tailoring"
                 }
               }
             ],
@@ -3040,9 +3104,11 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (BoP) — Frozen Shadoweave set"
+                  "detail": "Tailoring (BoP) — Frozen Shadoweave set",
+                  "profession": "Tailoring"
                 },
-                "note": "Frozen Shadoweave 3-piece"
+                "note": "Frozen Shadoweave 3-piece",
+                "bop": true
               },
               {
                 "id": 28517,
@@ -3203,5 +3269,4 @@ WOWDATA.register(
       ]
     }
   ]
-}
-);
+});

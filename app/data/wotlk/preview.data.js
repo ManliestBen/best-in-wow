@@ -1,7 +1,4 @@
-/* BiS Companion data — WotLK PREVIEW: Death Knight (Frost DPS, Blood Tank), Mage (Fire/FFB), Priest (Shadow). Pre-raid + Phase 1 (Naxxramas/OS/EoE). Item IDs verified against Wowhead. */
-
-WOWDATA.register(
-{
+WOWDATA.register({
   "kind": "bis",
   "expansion": "wotlk",
   "class": "deathknight",
@@ -38,7 +35,8 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing (440), BoE"
+                  "detail": "Blacksmithing (440), BoE",
+                  "profession": "Blacksmithing"
                 }
               }
             ],
@@ -50,8 +48,10 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting (440), BoP pattern"
-                }
+                  "detail": "Jewelcrafting (440), BoP pattern",
+                  "profession": "Jewelcrafting"
+                },
+                "bop": true
               }
             ],
             "shoulder": [
@@ -100,7 +100,8 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing (420)"
+                  "detail": "Blacksmithing (420)",
+                  "profession": "Blacksmithing"
                 }
               }
             ],
@@ -223,7 +224,8 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing (440), BoE"
+                  "detail": "Blacksmithing (440), BoE",
+                  "profession": "Blacksmithing"
                 },
                 "note": "Runeforge: Rune of Razorice"
               }
@@ -564,7 +566,8 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing (440), BoE"
+                  "detail": "Blacksmithing (440), BoE",
+                  "profession": "Blacksmithing"
                 }
               },
               {
@@ -598,7 +601,8 @@ WOWDATA.register(
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting, BoE"
+                  "detail": "Jewelcrafting, BoE",
+                  "profession": "Jewelcrafting"
                 }
               }
             ],
@@ -634,7 +638,8 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking, BoE"
+                  "detail": "Leatherworking, BoE",
+                  "profession": "Leatherworking"
                 }
               },
               {
@@ -770,7 +775,8 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing (440), BoE"
+                  "detail": "Blacksmithing (440), BoE",
+                  "profession": "Blacksmithing"
                 }
               },
               {
@@ -792,7 +798,8 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting, BoE"
+                  "detail": "Jewelcrafting, BoE",
+                  "profession": "Jewelcrafting"
                 }
               },
               {
@@ -826,9 +833,11 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting (BoP)"
+                  "detail": "Jewelcrafting (BoP)",
+                  "profession": "Jewelcrafting"
                 },
-                "note": "Jewelcrafters only"
+                "note": "Jewelcrafters only",
+                "bop": true
               },
               {
                 "id": 37220,
@@ -873,7 +882,8 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing (440), BoE"
+                  "detail": "Blacksmithing (440), BoE",
+                  "profession": "Blacksmithing"
                 },
                 "note": "Two-handed — Rune of the Stoneskin Gargoyle"
               },
@@ -1215,9 +1225,11 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting (BoP)"
+                  "detail": "Jewelcrafting (BoP)",
+                  "profession": "Jewelcrafting"
                 },
-                "note": "Jewelcrafters only"
+                "note": "Jewelcrafters only",
+                "bop": true
               },
               {
                 "id": 37220,
@@ -1309,11 +1321,9 @@ WOWDATA.register(
       ]
     }
   ]
-}
-);
+});
 
-WOWDATA.register(
-{
+WOWDATA.register({
   "kind": "bis",
   "expansion": "wotlk",
   "class": "mage",
@@ -1389,8 +1399,10 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (420), BoP pattern"
-                }
+                  "detail": "Tailoring (420), BoP pattern",
+                  "profession": "Tailoring"
+                },
+                "bop": true
               }
             ],
             "wrist": [
@@ -1439,7 +1451,8 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting, BoE"
+                  "detail": "Jewelcrafting, BoE",
+                  "profession": "Jewelcrafting"
                 }
               },
               {
@@ -1459,7 +1472,8 @@ WOWDATA.register(
                 "rank": 3,
                 "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting, BoE"
+                  "detail": "Jewelcrafting, BoE",
+                  "profession": "Jewelcrafting"
                 }
               }
             ],
@@ -1570,7 +1584,8 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing (440), BoE"
+                  "detail": "Blacksmithing (440), BoE",
+                  "profession": "Blacksmithing"
                 }
               }
             ]
@@ -1926,11 +1941,9 @@ WOWDATA.register(
       ]
     }
   ]
-}
-);
+});
 
-WOWDATA.register(
-{
+WOWDATA.register({
   "kind": "bis",
   "expansion": "wotlk",
   "class": "priest",
@@ -2006,8 +2019,10 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring (420), BoP pattern"
-                }
+                  "detail": "Tailoring (420), BoP pattern",
+                  "profession": "Tailoring"
+                },
+                "bop": true
               }
             ],
             "wrist": [
@@ -2056,7 +2071,8 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting, BoE"
+                  "detail": "Jewelcrafting, BoE",
+                  "profession": "Jewelcrafting"
                 }
               },
               {
@@ -2076,7 +2092,8 @@ WOWDATA.register(
                 "rank": 3,
                 "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting, BoE"
+                  "detail": "Jewelcrafting, BoE",
+                  "profession": "Jewelcrafting"
                 }
               }
             ],
@@ -2187,7 +2204,8 @@ WOWDATA.register(
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Blacksmithing (440), BoE"
+                  "detail": "Blacksmithing (440), BoE",
+                  "profession": "Blacksmithing"
                 }
               }
             ]
@@ -2542,5 +2560,4 @@ WOWDATA.register(
       ]
     }
   ]
-}
-);
+});

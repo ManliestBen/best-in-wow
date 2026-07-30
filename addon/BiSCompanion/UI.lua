@@ -96,16 +96,26 @@ local function BuildGearList()
     if #items > 0 then
       local n = math.min(B.WORN[slotKey] or 1, #items)
       for i = 1, n do
+        local chosen = B:ChosenItem(items, slotKey, i)
+        local tierIndex
+        for idx, it in ipairs(items) do if it == chosen then tierIndex = idx end end
         table.insert(listData, {
-          kind = "item", slot = slotKey, item = items[i],
+          kind = "item", slot = slotKey, item = chosen, wornIndex = i,
           label = SlotLabel(slotKey, i),
-          expandable = #items > n,
+          tier = tierIndex,
+          expandable = #items > 1,
         })
       end
+      -- expanded view lists every option with its tier so you can pick one
       if expandedSlot == slotKey then
-        for i = n + 1, #items do
-          table.insert(listData, { kind = "item", slot = slotKey, item = items[i],
-            label = "  · alt " .. (i - n), alt = true })
+        for idx, it in ipairs(items) do
+          local isChosen = false
+          for w = 1, n do if B:ChosenItem(items, slotKey, w) == it then isChosen = true end end
+          if not isChosen then
+            table.insert(listData, { kind = "item", slot = slotKey, item = it, alt = true,
+              tier = idx, wornIndex = 1,
+              label = "  " .. (B.RANK_LABEL[idx] or ("#" .. idx)) })
+          end
         end
       end
     end
@@ -261,7 +271,10 @@ local function UpdateRows()
         row.check:SetShown(true)
         row.check:SetText(have and "|cff80ff40✓|r" or "|cff555555·|r")
         local suffix = ""
-        if d.expandable and not d.alt then suffix = " |cff777777[+alts]|r" end
+        if d.tier and d.tier > 1 and not d.alt then
+          suffix = " |cff7ec8ff[" .. (B.RANK_LABEL[d.tier] or ("#" .. d.tier)) .. "]|r"
+        end
+        if d.expandable and not d.alt then suffix = suffix .. " |cff777777[+options]|r" end
         row.nameText:SetText(ItemColor(d.item) .. ItemDisplayName(d.item) .. "|r" .. suffix)
         row.nameText:SetTextColor(1, 1, 1)
       elseif d.kind == "quest" then
@@ -759,7 +772,14 @@ local function CreateMainFrame()
           GameTooltip:AddLine("|cff80ff40" .. d.item.note .. "|r", 1, 1, 1, true)
         end
         local canExpand = d.expandable and not d.noExpand and B.db.tab == "gear"
-        GameTooltip:AddLine("|cff777777Click: link in chat" .. (canExpand and " · Right-click: show alternates|r" or "|r"))
+        if d.tier then
+          GameTooltip:AddLine("|cffc8aa6eRanked:|r " .. (B.RANK_LABEL[d.tier] or ("#" .. d.tier)))
+        end
+        if d.alt then
+          GameTooltip:AddLine("|cff777777Click: go for this one · Shift-click: link in chat|r")
+        else
+          GameTooltip:AddLine("|cff777777Click: link in chat" .. (canExpand and " · Right-click: show all options|r" or "|r"))
+        end
         GameTooltip:Show()
       elseif d.kind == "enchant" then
         GameTooltip:AddLine(d.label or "Enchant", 1, 0.82, 0)
@@ -800,6 +820,12 @@ local function CreateMainFrame()
             expandedSlot = (expandedSlot ~= d.slot) and d.slot or nil
             BuildList(); UpdateRows()
           end
+        elseif IsShiftKeyDown and IsShiftKeyDown() then
+          LinkItem(d.item)
+        elseif d.alt then
+          -- picking one of the listed options: this is what you're going for
+          B:SetTarget(d.slot, d.wornIndex or 1, d.item.id)
+          UI:Refresh()
         else
           LinkItem(d.item)
         end

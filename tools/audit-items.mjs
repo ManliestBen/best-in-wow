@@ -11,6 +11,7 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { loadAll, mergeBis } from './lib.mjs';
+import { BRACKET_LEVELS as SHARED_BRACKET_LEVELS, suitsProfile, loadFacts as sharedLoadFacts, parseTooltip as sharedParse } from './items.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const CACHE_DIR = process.env.BISC_CACHE ||
@@ -176,11 +177,7 @@ const SPEC_PROFILE = {
 const CASTER_STATS = ['Intellect', 'Spirit', 'Spell Power', 'Spell Damage', 'Healing',
   'Damage And Healing', 'Spell Critical Strike', 'Spell Hit', 'Mana Per 5', 'Mp5', 'Spell Haste'];
 
-const BRACKET_LEVELS = {
-  lvl19: [10, 19], lvl29: [20, 29], lvl39: [30, 39], lvl49: [40, 49],
-  lvl59: [50, 57], lvl60: [58, 64], lvl65: [65, 69],
-  preraid: [70, 70], p1: [70, 70], p2: [70, 70], p3: [70, 70], p4: [70, 70], p5: [70, 70],
-};
+const BRACKET_LEVELS = SHARED_BRACKET_LEVELS;
 const ARMOR_SLOTS = new Set(['head', 'shoulder', 'chest', 'wrist', 'hands', 'waist', 'legs', 'feet', 'back']);
 // Weapon value is dominated by damage-per-second, not stats, so judging a
 // weapon by its stat line produces nonsense (Verigan's Fist is a perfectly
@@ -298,20 +295,37 @@ for (const e of entries) {
   const casterStat = statSum(ti.stats, CASTER_STATS);
   const stam = statSum(ti.stats, ['Stamina']);
   const anyStat = Object.keys(ti.stats).length > 0;
-  if (anyStat && STAT_JUDGED_SLOTS.has(e.slot) && !EFFECT_ITEMS.has(e.item.id)) {
-    if (profile === AGI_STRICT && str > 0 && agi === 0) {
-      flag(e, 'wrong-primary-stat',
-        `+${str} Strength and no Agility (Strength does nothing for a hunter)`);
-    }
-    if (profile === STR && agi === 0 && str === 0 && casterStat > 0) {
-      flag(e, 'wrong-primary-stat', `caster stats only on a strength spec`);
-    }
-    if (profile === CAST && casterStat === 0 && (str > 0 || agi > 0)) {
-      flag(e, 'wrong-primary-stat', `melee stats and no caster stats on a caster spec`);
-    }
-    if (profile === TANK && casterStat > 0 && stam === 0 && str === 0 && agi === 0) {
-      flag(e, 'wrong-primary-stat', `caster stats only on a tank spec`);
-    }
+  if (!suitsProfile(ti, profile, e.slot)) {
+    const agi = statSum(ti.stats, ['Agility']), str = statSum(ti.stats, ['Strength']);
+    flag(e, 'wrong-primary-stat',
+      `stats do not serve a ${profile} spec (+${str} Strength, +${agi} Agility)`);
+  }
+}
+
+// One item cannot be equipped in two places at once.
+const seenPerBracket = new Map();
+for (const e of entries) {
+  const k = `${e.cls}/${e.spec}/${e.bracket}`;
+  if (!seenPerBracket.has(k)) seenPerBracket.set(k, new Map());
+  const m = seenPerBracket.get(k);
+  if (!m.has(e.item.id)) m.set(e.item.id, []);
+  m.get(e.item.id).push(e);
+}
+for (const [, m] of seenPerBracket) {
+  for (const [, list] of m) {
+    const slots = [...new Set(list.map(e => e.slot))];
+    if (slots.length <= 1) continue;
+    const e = list[0];
+    const ti = info.get(e.item.id);
+    const bothHands = slots.length === 2 && slots.includes('mainhand') && slots.includes('offhand');
+    const questOnly = (e.item.source && e.item.source.type) === 'quest';
+    const unique = ti && ti.unique;
+    // Dual-wielding two copies of a raid drop is legitimate; a quest reward or a
+    // unique-equipped item can only ever be worn once.
+    if (bothHands && !questOnly && !unique) continue;
+    flag(e, 'same-item-two-slots',
+      `also listed under ${slots.filter(s => s !== e.slot).join(', ')}` +
+      (questOnly ? ' (quest reward — only obtainable once)' : unique ? ' (unique-equipped)' : ''));
   }
 }
 

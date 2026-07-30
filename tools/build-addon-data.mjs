@@ -63,6 +63,8 @@ for (const cd of bis) {
             sourceText: sourceText(it) || null,
             sourceType: (it.source && it.source.type) || null,
             sourceInstance: (it.source && it.source.instance) || null,
+            profession: (it.source && it.source.profession) || null,
+            bop: it.bop ? true : null,
             note: it.note || null,
           })),
         ])),

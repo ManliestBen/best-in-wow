@@ -114,7 +114,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring — BoE"
+                  "detail": "Tailoring — BoE",
+                  "profession": "Tailoring"
                 }
               },
               {
@@ -147,8 +148,10 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking — BoP, requires Elemental Leatherworking"
-                }
+                  "detail": "Leatherworking — BoP, requires Elemental Leatherworking",
+                  "profession": "Leatherworking"
+                },
+                "bop": true
               },
               {
                 "id": 28228,
@@ -170,8 +173,10 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking — BoP, requires Elemental Leatherworking"
-                }
+                  "detail": "Leatherworking — BoP, requires Elemental Leatherworking",
+                  "profession": "Leatherworking"
+                },
+                "bop": true
               },
               {
                 "id": 29246,
@@ -205,7 +210,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking"
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
                 }
               }
             ],
@@ -217,8 +223,10 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking — BoP, requires Elemental Leatherworking"
-                }
+                  "detail": "Leatherworking — BoP, requires Elemental Leatherworking",
+                  "profession": "Leatherworking"
+                },
+                "bop": true
               },
               {
                 "id": 29516,
@@ -227,8 +235,10 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking — BoP, requires Dragonscale Leatherworking"
-                }
+                  "detail": "Leatherworking — BoP, requires Dragonscale Leatherworking",
+                  "profession": "Leatherworking"
+                },
+                "bop": true
               }
             ],
             "legs": [
@@ -264,7 +274,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking"
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
                 }
               },
               {
@@ -494,7 +505,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring — BoE"
+                  "detail": "Tailoring — BoE",
+                  "profession": "Tailoring"
                 }
               },
               {
@@ -527,8 +539,10 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking — BoP, requires Elemental Leatherworking"
-                }
+                  "detail": "Leatherworking — BoP, requires Elemental Leatherworking",
+                  "profession": "Leatherworking"
+                },
+                "bop": true
               }
             ],
             "wrist": [
@@ -551,8 +565,10 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking — BoP, requires Elemental Leatherworking"
-                }
+                  "detail": "Leatherworking — BoP, requires Elemental Leatherworking",
+                  "profession": "Leatherworking"
+                },
+                "bop": true
               }
             ],
             "hands": [
@@ -624,7 +640,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking"
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
                 }
               }
             ],
@@ -895,7 +912,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking — BoE"
+                  "detail": "Leatherworking — BoE",
+                  "profession": "Leatherworking"
                 }
               }
             ],
@@ -1510,7 +1528,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting — BoP — requires 375 Jewelcrafting"
+                  "detail": "Jewelcrafting — BoP — requires 375 Jewelcrafting",
+                  "profession": "Jewelcrafting"
                 }
               },
               {
@@ -1734,7 +1753,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring — BoE"
+                  "detail": "Tailoring — BoE",
+                  "profession": "Tailoring"
                 }
               },
               {
@@ -1767,8 +1787,10 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking — BoP, requires Elemental Leatherworking"
-                }
+                  "detail": "Leatherworking — BoP, requires Elemental Leatherworking",
+                  "profession": "Leatherworking"
+                },
+                "bop": true
               },
               {
                 "id": 28228,
@@ -1790,8 +1812,10 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking — BoP, requires Elemental Leatherworking"
-                }
+                  "detail": "Leatherworking — BoP, requires Elemental Leatherworking",
+                  "profession": "Leatherworking"
+                },
+                "bop": true
               },
               {
                 "id": 29246,
@@ -1825,7 +1849,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking"
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
                 }
               }
             ],
@@ -1837,8 +1862,10 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking — BoP, requires Elemental Leatherworking"
-                }
+                  "detail": "Leatherworking — BoP, requires Elemental Leatherworking",
+                  "profession": "Leatherworking"
+                },
+                "bop": true
               },
               {
                 "id": 29516,
@@ -1847,8 +1874,10 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking — BoP, requires Dragonscale Leatherworking"
-                }
+                  "detail": "Leatherworking — BoP, requires Dragonscale Leatherworking",
+                  "profession": "Leatherworking"
+                },
+                "bop": true
               }
             ],
             "legs": [
@@ -1884,7 +1913,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking"
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
                 }
               },
               {
@@ -2114,7 +2144,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring — BoE"
+                  "detail": "Tailoring — BoE",
+                  "profession": "Tailoring"
                 }
               },
               {
@@ -2147,8 +2178,10 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking — BoP, requires Elemental Leatherworking"
-                }
+                  "detail": "Leatherworking — BoP, requires Elemental Leatherworking",
+                  "profession": "Leatherworking"
+                },
+                "bop": true
               }
             ],
             "wrist": [
@@ -2171,8 +2204,10 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking — BoP, requires Elemental Leatherworking"
-                }
+                  "detail": "Leatherworking — BoP, requires Elemental Leatherworking",
+                  "profession": "Leatherworking"
+                },
+                "bop": true
               }
             ],
             "hands": [
@@ -2244,7 +2279,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking"
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
                 }
               }
             ],
@@ -2579,7 +2615,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting — BoP — requires 375 Jewelcrafting"
+                  "detail": "Jewelcrafting — BoP — requires 375 Jewelcrafting",
+                  "profession": "Jewelcrafting"
                 }
               },
               {
@@ -2812,7 +2849,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring — BoE"
+                  "detail": "Tailoring — BoE",
+                  "profession": "Tailoring"
                 }
               }
             ],
@@ -2835,8 +2873,10 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking — BoP, requires Elemental Leatherworking"
-                }
+                  "detail": "Leatherworking — BoP, requires Elemental Leatherworking",
+                  "profession": "Leatherworking"
+                },
+                "bop": true
               }
             ],
             "wrist": [
@@ -2847,7 +2887,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking"
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
                 }
               },
               {
@@ -2882,7 +2923,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking"
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
                 }
               }
             ],
@@ -2906,8 +2948,10 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking — BoP, requires Elemental Leatherworking"
-                }
+                  "detail": "Leatherworking — BoP, requires Elemental Leatherworking",
+                  "profession": "Leatherworking"
+                },
+                "bop": true
               }
             ],
             "legs": [
@@ -2956,7 +3000,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking"
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
                 }
               }
             ],
@@ -3195,7 +3240,8 @@ WOWDATA.register({
                 "rank": 2,
                 "source": {
                   "type": "crafted",
-                  "detail": "Tailoring — BoE"
+                  "detail": "Tailoring — BoE",
+                  "profession": "Tailoring"
                 }
               }
             ],
@@ -3220,7 +3266,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Leatherworking"
+                  "detail": "Leatherworking",
+                  "profession": "Leatherworking"
                 }
               },
               {
@@ -3630,7 +3677,8 @@ WOWDATA.register({
                 "rank": 1,
                 "source": {
                   "type": "crafted",
-                  "detail": "Jewelcrafting — BoP — requires 375 Jewelcrafting"
+                  "detail": "Jewelcrafting — BoP — requires 375 Jewelcrafting",
+                  "profession": "Jewelcrafting"
                 }
               },
               {

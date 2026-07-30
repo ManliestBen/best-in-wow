@@ -73,8 +73,7 @@ export const SLOT_KEYS = ['head', 'neck', 'shoulder', 'back', 'chest', 'wrist', 
   'waist', 'legs', 'feet', 'finger', 'trinket', 'mainhand', 'offhand', 'ranged'];
 export const QUALITIES = ['poor', 'common', 'uncommon', 'rare', 'epic', 'legendary'];
 export const SOURCE_TYPES = ['drop', 'quest', 'badge', 'reputation', 'crafted', 'vendor', 'pvp', 'world-drop'];
-export const BRACKET_IDS = ['lvl19', 'lvl29', 'lvl39', 'lvl49', 'lvl59', 'lvl60', 'lvl65',
-  'preraid', 'p1', 'p2', 'p3', 'p4', 'p5'];
+export const BRACKET_IDS = ['lvl20', 'lvl25', 'lvl30', 'lvl35', 'lvl40', 'lvl45', 'lvl50', 'lvl55', 'lvl60', 'lvl65', 'lvl69', 'preraid', 'p1', 'p2', 'p3', 'p4', 'p5'];
 export const FACTIONS = ['alliance', 'horde', 'both'];
 
 // Merge multi-file class registrations (endgame + leveling extensions) the same

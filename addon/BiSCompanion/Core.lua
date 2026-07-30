@@ -38,16 +38,21 @@ B.SHORT_EXP = { tbc = "TBC", wotlk = "WotLK" }
 function B:DefaultBracket(lvl)
   lvl = lvl or UnitLevel("player") or 0
   if lvl <= 0 then return "preraid" end
-  if lvl <= 19 then return "lvl19"
-  elseif lvl <= 29 then return "lvl29"
-  elseif lvl <= 39 then return "lvl39"
-  elseif lvl <= 49 then return "lvl49"
-  elseif lvl <= 57 then return "lvl59"
-  elseif lvl <= 64 then return "lvl60"
-  elseif lvl <= 69 then return "lvl65"
+  if lvl <= 20 then return "lvl20"
+  elseif lvl <= 25 then return "lvl25"
+  elseif lvl <= 30 then return "lvl30"
+  elseif lvl <= 35 then return "lvl35"
+  elseif lvl <= 40 then return "lvl40"
+  elseif lvl <= 45 then return "lvl45"
+  elseif lvl <= 50 then return "lvl50"
+  elseif lvl <= 55 then return "lvl55"
+  elseif lvl <= 60 then return "lvl60"
+  elseif lvl <= 65 then return "lvl65"
+  elseif lvl <= 69 then return "lvl69"
   end
   return "preraid"
 end
+
 
 function B:InitDB()
   BiSCompanionDB = BiSCompanionDB or {}
@@ -61,6 +66,7 @@ function B:InitDB()
   c.showBothFactions = c.showBothFactions or false
   if c.tooltips == nil then c.tooltips = true end
   if c.zoneAlerts == nil then c.zoneAlerts = true end
+  c.targets = c.targets or {}
   self.db = c
 end
 
@@ -98,6 +104,10 @@ function B:Diagnostics()
   local br = self:CurrentBracket(spec)
   add("  bracket data: " .. (br and (br.id .. ", " .. #self:WornItems(br) .. " worn items") or "none"))
   add("  instances: " .. #self:Instances())
+  local profs = {}
+  for p in pairs(self:Professions()) do table.insert(profs, p) end
+  table.sort(profs)
+  add("  professions: " .. (#profs > 0 and table.concat(profs, ", ") or "none detected"))
   for _, line in ipairs(out) do print(line) end
 end
 
@@ -213,13 +223,50 @@ function B:CurrentBracket(spec)
   return spec.brackets[1]
 end
 
+-- Professions come from the character's own skill list, so there's nothing to
+-- configure in game: a bind-on-pickup craft you can't make is simply hidden.
+B.CRAFT_PROFESSIONS = { "Alchemy", "Blacksmithing", "Enchanting", "Engineering",
+  "Jewelcrafting", "Leatherworking", "Tailoring" }
+
+local professionCache
+function B:InvalidateProfessions() professionCache = nil end
+
+function B:Professions()
+  if professionCache then return professionCache end
+  professionCache = {}
+  if type(GetNumSkillLines) ~= "function" or type(GetSkillLineInfo) ~= "function" then
+    return professionCache
+  end
+  local n = GetNumSkillLines() or 0
+  for i = 1, n do
+    local name = GetSkillLineInfo(i)
+    if name then
+      for _, prof in ipairs(self.CRAFT_PROFESSIONS) do
+        if name == prof then professionCache[prof] = true end
+      end
+    end
+  end
+  return professionCache
+end
+
+-- A bind-on-pickup craft is only obtainable by someone with that profession;
+-- BoE crafts stay listed because they can be bought.
+function B:CanObtain(it)
+  local prof = it.profession
+  if not it.bop or not prof then return true end
+  local mine = self:Professions()
+  if not next(mine) then return true end   -- skills not loaded yet: show everything
+  return mine[prof] == true
+end
+
 -- Faction-filtered, rank-sorted items for a slot.
 function B:SlotItems(bracket, slotKey)
   local out = {}
   if not bracket or not bracket.slots or not bracket.slots[slotKey] then return out end
   local myFaction = self:PlayerFaction()
   for _, it in ipairs(bracket.slots[slotKey]) do
-    if not it.faction or it.faction == "both" or it.faction == myFaction then
+    if (not it.faction or it.faction == "both" or it.faction == myFaction)
+        and self:CanObtain(it) then
       table.insert(out, it)
     end
   end
@@ -269,10 +316,48 @@ function B:WornItems(bracket)
     local items = self:SlotItems(bracket, slotKey)
     local n = math.min(self.WORN[slotKey] or 1, #items)
     for i = 1, n do
-      table.insert(out, { slot = slotKey, item = items[i], index = i })
+      local it = self:ChosenItem(items, slotKey, i)
+      if it then table.insert(out, { slot = slotKey, item = it, index = i }) end
     end
   end
   return out
+end
+
+-- Each slot lists a ranked top 3 (Best / Better / Good). The player may be
+-- chasing the second or third, so remember their pick and let everything that
+-- counts progress follow it.
+B.RANK_LABEL = { "Best", "Better", "Good" }
+
+local function targetKey(self, slotKey, index)
+  local spec = self.db.spec or (self:DetectSpec() and self:DetectSpec().id) or "?"
+  return table.concat({ self.db.expansion, self:PlayerClass(), spec, tostring(self.db.bracket),
+    slotKey, tostring(index) }, ":")
+end
+
+function B:TargetId(slotKey, index)
+  return self.db.targets and self.db.targets[targetKey(self, slotKey, index)]
+end
+
+function B:SetTarget(slotKey, index, itemId)
+  self.db.targets = self.db.targets or {}
+  local k = targetKey(self, slotKey, index)
+  if itemId == nil or self.db.targets[k] == itemId then
+    self.db.targets[k] = nil
+  else
+    self.db.targets[k] = itemId
+  end
+end
+
+-- The item being chased for a slot position: their pick if still listed, else
+-- the default for that position.
+function B:ChosenItem(items, slotKey, index)
+  local want = self:TargetId(slotKey, index)
+  if want then
+    for _, it in ipairs(items) do
+      if it.id == want then return it end
+    end
+  end
+  return items[index]
 end
 
 -- "Have it" = equipped, in bags, or in bank.
@@ -458,9 +543,13 @@ frame:RegisterEvent("ZONE_CHANGED_NEW_AREA")
 frame:RegisterEvent("PLAYER_LEVEL_UP")
 frame:RegisterEvent("CHARACTER_POINTS_CHANGED")
 frame:RegisterEvent("SPELLS_CHANGED")
+frame:RegisterEvent("SKILL_LINES_CHANGED")
 frame:SetScript("OnEvent", function(_, event, arg1)
   if event == "ADDON_LOADED" and arg1 == ADDON then
     B:InitDB()
+  elseif event == "SKILL_LINES_CHANGED" then
+    B:InvalidateProfessions()
+    if B.UI and B.UI.Refresh then B.UI:Refresh() end
   elseif event == "CHARACTER_POINTS_CHANGED" or event == "SPELLS_CHANGED" then
     B:InvalidateTalents()
     if B.UI and B.UI.Refresh then B.UI:Refresh() end

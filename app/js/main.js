@@ -32,6 +32,8 @@ const defaults = {
   showBothFactions: false,
   showNotes: true,
   owned: {},      // "<exp>:<itemKey>" -> true
+  targets: {},    // "<exp>:<cls>:<spec>:<bracket>:<slot>:<wornIndex>" -> itemId
+  professions: [], // e.g. ["Leatherworking", "Skinning"] — hides BoP crafts you can't make
   questDone: {},  // "<exp>:<questKey>" -> true
 };
 
@@ -159,11 +161,22 @@ function sourceText(it) {
   return { label: label || '', text: bits.join(' · ') };
 }
 
+/* A bind-on-pickup craft is only obtainable by someone with that profession.
+   BoE crafts stay listed — those can be bought from anyone. */
+function craftable(it) {
+  const prof = it.source && it.source.profession;
+  if (!it.bop || !prof) return true;
+  if (!state.professions || !state.professions.length) return true;  // unset = show all
+  return state.professions.includes(prof);
+}
+
 function slotItems(bracket, slotKey) {
   if (!bracket || !bracket.slots) return [];
   const list = (bracket.slots[slotKey] || []).slice();
   list.sort((a, b) => (a.rank || 99) - (b.rank || 99));
-  return list.filter(it => !it.faction || it.faction === 'both' || it.faction === state.faction);
+  return list
+    .filter(it => !it.faction || it.faction === 'both' || it.faction === state.faction)
+    .filter(craftable);
 }
 
 function itemKey(it) { return `${state.expansion}:${it.id || 'n-' + it.name}`; }
@@ -177,7 +190,36 @@ function toggleOwned(it) {
   if (state.tab === 'shopping') renderShopping();
 }
 
-/* Worn items for progress/shopping: rank-1 of each slot, top-2 for rings/trinkets */
+/* ---------------- chosen targets ----------------
+   Each slot offers a ranked top 3 (Best / Better / Good). A player may be
+   chasing the second or third option — a cheaper craft, a dungeon they can
+   actually get a group for — so the choice is theirs and everything that
+   counts progress follows it. */
+function targetKey(slotKey, wornIndex) {
+  return [state.expansion, state.class, state.spec, state.bracket, slotKey, wornIndex].join(':');
+}
+function targetIdFor(slotKey, wornIndex) { return state.targets[targetKey(slotKey, wornIndex)]; }
+function setTarget(slotKey, wornIndex, itemId) {
+  const k = targetKey(slotKey, wornIndex);
+  if (itemId == null) delete state.targets[k]; else state.targets[k] = itemId;
+  save();
+  renderGearTab();
+  if (state.tab === 'shopping') renderShopping();
+}
+/* The item this character is actually going for in a slot: their pick if it is
+   still in the list, otherwise the default for that position. */
+function chosenItem(items, slotKey, wornIndex) {
+  const id = targetIdFor(slotKey, wornIndex);
+  if (id != null) {
+    const hit = items.find(it => it.id === id);
+    if (hit) return hit;
+  }
+  return items[wornIndex] || null;
+}
+const RANK_LABEL = ['Best', 'Better', 'Good'];
+const rankLabel = (i) => RANK_LABEL[i] || `Option ${i + 1}`;
+
+/* Worn items for progress/shopping: the chosen pick per position */
 function wornItems(bracket) {
   const out = [];
   for (const slot of core.slots) {
@@ -185,7 +227,8 @@ function wornItems(bracket) {
     if (!items.length) continue;
     const n = slot.worn || 1;
     for (let i = 0; i < Math.min(n, items.length); i++) {
-      out.push({ slot, item: items[i], wornIndex: i });
+      const item = chosenItem(items, slot.key, i);
+      if (item) out.push({ slot, item, wornIndex: i });
     }
   }
   return out;
@@ -364,6 +407,29 @@ function renderBrackets() {
     }));
 }
 
+function renderProfessions() {
+  const el = $('#prof-grid');
+  if (!el) return;
+  const list = core.professions || [];
+  el.innerHTML = list.map(p => {
+    const on = (state.professions || []).includes(p.id);
+    return `<button data-prof="${p.id}" class="${on ? 'active' : ''}">${esc(p.name)}</button>`;
+  }).join('') + (state.professions && state.professions.length
+    ? `<button data-prof-clear class="prof-clear">show all</button>` : '');
+  el.querySelectorAll('[data-prof]').forEach(btn =>
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.prof;
+      state.professions = state.professions || [];
+      const i = state.professions.indexOf(id);
+      if (i >= 0) state.professions.splice(i, 1);
+      else if (state.professions.length < 2) state.professions.push(id);
+      else state.professions = [state.professions[1], id];   // two primaries, drop the oldest
+      save(); renderAll();
+    }));
+  const clear = el.querySelector('[data-prof-clear]');
+  if (clear) clear.addEventListener('click', () => { state.professions = []; save(); renderAll(); });
+}
+
 function renderRacial() {
   const race = raceById(state.race);
   $('#racial-card').innerHTML = race && race.gearNotes
@@ -428,10 +494,12 @@ function renderDoll() {
     const items = slotItems(bracket, slot.key);
     const n = slot.worn || 1;
     for (let i = 0; i < n; i++) {
+      const chosen = chosenItem(items, slot.key, i);
       cells.push({
         slot, index: i,
         label: n > 1 ? `${slot.name.replace(/s$/, '')} ${i + 1}` : slot.name,
-        item: items[i] || null,
+        item: chosen,
+        pickedRank: chosen ? items.indexOf(chosen) : -1,
       });
     }
   }
@@ -447,7 +515,9 @@ function renderDoll() {
     return `<div class="slot-cell ${owned ? 'owned' : ''} ${sel ? 'selected' : ''}" data-slot="${c.slot.key}" data-cell="${idx}">
       <div class="sc-body">
         <div class="sc-slot">${esc(c.label)}</div>
-        <div class="sc-item">${itemLink(c.item)}</div>
+        <div class="sc-item">${itemLink(c.item)}${c.pickedRank > 0
+          ? `<span class="sc-tier tier-${['best','better','good'][c.pickedRank] || 'option'}">${esc(rankLabel(c.pickedRank))}</span>`
+          : ''}</div>
         <div class="sc-src">${src.label ? `<span class="src-badge">${esc(src.label)}</span>` : ''}${esc(src.text)}</div>
       </div>
       <button class="own-check ${owned ? 'on' : ''}" data-own="${idx}" title="Mark as obtained">✔</button>
@@ -480,14 +550,25 @@ function renderSlotDetail() {
   const items = slotItems(bracket, state.selectedSlot);
   const enchant = spec && spec.enchants ? spec.enchants[state.selectedSlot] : null;
 
+  const wornCount = slotMeta && slotMeta.worn ? slotMeta.worn : 1;
+  const chosenIds = [];
+  for (let w = 0; w < wornCount; w++) {
+    const c = chosenItem(items, state.selectedSlot, w);
+    chosenIds.push(c ? c.id : null);
+  }
+
   el.innerHTML = `
     <div class="sd-head">${esc(slotMeta ? slotMeta.name : state.selectedSlot)}</div>
     ${enchant ? `<div class="sd-enchant"><b>Enchant:</b> ${esc(enchant)}</div>` : ''}
+    ${items.length ? `<div class="sd-hint">Pick the one you're going for — progress and the shopping list follow your choice.</div>` : ''}
     ${items.length ? items.map((it, i) => {
       const src = sourceText(it);
       const owned = isOwned(it);
-      return `<div class="sd-item">
-        <div class="sd-rank ${i === 0 ? 'best' : ''}">${i === 0 ? '★ Best in Slot' : `Alternate ${i}`}</div>
+      const tier = ['best', 'better', 'good'][i] || 'option';
+      const targetedAt = chosenIds.indexOf(it.id);
+      return `<div class="sd-item ${targetedAt >= 0 ? 'targeted' : ''}">
+        <div class="sd-rank tier-${tier}">${esc(rankLabel(i))}${
+          targetedAt >= 0 ? ` <span class="sd-going">— going for this${wornCount > 1 ? ` (${esc(slotMeta.name.replace(/s$/, ''))} ${targetedAt + 1})` : ''}</span>` : ''}</div>
         <div class="sd-name">${itemLink(it)}</div>
         <div class="sd-src">${src.label ? `<span class="src-badge">${esc(src.label)}</span>` : ''}${esc(src.text)}
           ${it.faction && it.faction !== 'both' ? ` <span class="faction-tag ${esc(it.faction)}">${esc(it.faction)}</span>` : ''}</div>
@@ -495,10 +576,20 @@ function renderSlotDetail() {
         <div class="sd-row">
           <button class="own-check ${owned ? 'on' : ''}" data-di="${i}" title="Mark as obtained">✔</button>
           <span style="font-size:11px;color:var(--text-faint)">${owned ? 'obtained' : 'mark as obtained'}</span>
+          ${Array.from({ length: wornCount }, (_, w) => `
+            <button class="mini-btn ${chosenIds[w] === it.id ? 'on' : ''}" data-target="${i}" data-worn="${w}">
+              ${wornCount > 1 ? `Use as ${esc(slotMeta.name.replace(/s$/, ''))} ${w + 1}` : 'Go for this'}
+            </button>`).join('')}
         </div>
       </div>`;
     }).join('') : '<div class="detail-empty">No items recorded for this slot.</div>'}
   `;
+  el.querySelectorAll('[data-target]').forEach(btn =>
+    btn.addEventListener('click', () => {
+      const it = items[Number(btn.dataset.target)];
+      const w = Number(btn.dataset.worn);
+      setTarget(state.selectedSlot, w, targetIdFor(state.selectedSlot, w) === it.id ? null : it.id);
+    }));
   el.querySelectorAll('[data-di]').forEach(btn =>
     btn.addEventListener('click', () => {
       toggleOwned(items[Number(btn.dataset.di)]);
@@ -771,7 +862,7 @@ function renderAll() {
     b.classList.toggle('active', b.dataset.expBtn === state.expansion));
   renderTabs();
   renderRoster();
-  renderFaction(); renderRaces(); renderClasses(); renderSpecs(); renderBrackets(); renderRacial();
+  renderFaction(); renderRaces(); renderClasses(); renderSpecs(); renderBrackets(); renderProfessions(); renderRacial();
   renderGearTab();
   renderInstanceList(); renderInstanceDetail();
   renderShopping();

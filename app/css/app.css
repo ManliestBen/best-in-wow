@@ -692,3 +692,37 @@ a .iconsmall { vertical-align: middle; }
   transition: all 0.15s;
 }
 .roster-add:hover { color: var(--gold-bright); border-color: var(--gold); }
+
+/* ---------- Best / Better / Good picks ---------- */
+.sd-hint { padding: 8px 16px 2px; font-size: 11.5px; color: var(--text-faint); line-height: 1.5; }
+.sd-item.targeted { background: rgba(128, 255, 64, 0.06); border-left: 2px solid var(--accent); }
+.sd-rank.tier-best   { color: #80ff40; }
+.sd-rank.tier-better { color: #7ec8ff; }
+.sd-rank.tier-good   { color: var(--gold); }
+.sd-rank.tier-option { color: var(--text-dim); }
+.sd-going { color: var(--text-dim); font-weight: 500; text-transform: none; letter-spacing: 0; }
+.sc-tier {
+  font-size: 9px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+  padding: 1px 4px; border-radius: 3px; margin-left: 5px;
+  background: rgba(0, 0, 0, 0.4); color: var(--text-dim);
+}
+.sc-tier.tier-best   { color: #80ff40; }
+.sc-tier.tier-better { color: #7ec8ff; }
+.sc-tier.tier-good   { color: var(--gold); }
+
+/* ---------- Professions ---------- */
+.prof-grid { display: flex; flex-wrap: wrap; gap: 6px; }
+.prof-grid button {
+  font: 500 11.5px var(--sans);
+  padding: 5px 9px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.3);
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.prof-grid button:hover { color: var(--text); border-color: var(--border-bright); }
+.prof-grid button.active { color: var(--accent); border-color: var(--accent-dim); background: var(--accent-glow); }
+.prof-grid .prof-clear { color: var(--text-faint); border-style: dashed; }
+.lbl-hint { font-weight: 400; letter-spacing: 0; text-transform: none; color: var(--text-faint); font-size: 9.5px; }

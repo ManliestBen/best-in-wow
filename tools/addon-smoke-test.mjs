@@ -285,6 +285,11 @@ function UnitFactionGroup(unit)
   return ${luaStringLiteral(faction)}
 end
 
+-- professions come from the skill list in game
+local SKILLS = { "Leatherworking", "Skinning", "First Aid", "Riding" }
+function GetNumSkillLines() return #SKILLS end
+function GetSkillLineInfo(i) return SKILLS[i], false, false, 300, 0, 0, 300 end
+
 function GetNumTalentTabs()
   return 3
 end
@@ -545,14 +550,14 @@ safeCall("minimap+levelup", function()
   if mb.__scripts.OnDragStop then mb.__scripts.OnDragStop(mb) end
   print("@@MINIMAP@@ button created and all handlers ran")
 
-  BISC.db.bracket = "lvl19"; BISC.db.bracketPinned = nil
+  BISC.db.bracket = "lvl20"; BISC.db.bracketPinned = nil
   for _, fr in ipairs(HARNESS.frames) do
     if fr.__events and fr.__events["PLAYER_LEVEL_UP"] and fr.__scripts.OnEvent then
       fr.__scripts.OnEvent(fr, "PLAYER_LEVEL_UP", 24)
     end
   end
   print("@@LEVELUP@@ bracket now " .. tostring(BISC.db.bracket))
-  if BISC.db.bracket ~= "lvl29" then error("level 24 should move to lvl29, got " .. tostring(BISC.db.bracket)) end
+  if BISC.db.bracket ~= "lvl25" then error("level 24 should move to lvl25, got " .. tostring(BISC.db.bracket)) end
 end)
 -- statLine (gear) and instanceInfo (quests) share one anchor; if both ever
 -- show at once their text draws on top of itself.
@@ -574,6 +579,20 @@ safeCall("no-overlapping-headers", function()
     error("instance-info line still drawn on the Gear tab (overlaps stat priority)")
   end
   print("@@OVERLAP@@ header lines are mutually exclusive")
+end)
+
+-- professions must gate bind-on-pickup crafts
+safeCall("professions", function()
+  local mine = BISC:Professions()
+  if not mine["Leatherworking"] then error("Leatherworking not detected from the skill list") end
+  if mine["Tailoring"] then error("Tailoring detected but the character doesn't have it") end
+  local blocked = BISC:CanObtain({ bop = true, profession = "Tailoring" })
+  local allowed = BISC:CanObtain({ bop = true, profession = "Leatherworking" })
+  local boe = BISC:CanObtain({ profession = "Tailoring" })
+  if blocked then error("a BoP Tailoring craft should be hidden from a non-tailor") end
+  if not allowed then error("a BoP Leatherworking craft should be shown to a leatherworker") end
+  if not boe then error("a BoE craft should always be shown") end
+  print("@@PROF@@ leatherworking detected; BoP tailoring hidden, BoE shown")
 end)
 
 -- bracket stepping (< > buttons and menu selection)
